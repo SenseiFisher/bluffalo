@@ -190,7 +190,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
   // ── START_GAME ─────────────────────────────────────────────────────────────
   socket.on("START_GAME", (payload: unknown) => {
-    const p = payload as { total_rounds?: number };
+    const p = payload as { total_rounds?: number; prompt_timer_seconds?: number };
 
     // Find room this socket is in
     const roomCode = getRoomCodeForSocket(socket);
@@ -228,6 +228,11 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
     let totalRounds = typeof p?.total_rounds === "number" ? p.total_rounds : DEFAULT_TOTAL_ROUNDS;
     totalRounds = Math.max(MIN_ROUNDS, Math.min(MAX_ROUNDS, totalRounds));
+
+    const VALID_TIMER_PRESETS = [15, 30, 45, 60, 90, 120];
+    let promptTimerSeconds = typeof p?.prompt_timer_seconds === "number" ? p.prompt_timer_seconds : 60;
+    if (!VALID_TIMER_PRESETS.includes(promptTimerSeconds)) promptTimerSeconds = 60;
+    state.prompt_timer_seconds = promptTimerSeconds;
 
     const updatedState = startGame(state, totalRounds, broadcast);
     setRoom(roomCode, updatedState);

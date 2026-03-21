@@ -46,6 +46,7 @@ export interface GameState {
   timer_ends_at: number | null;
   round_number: number;
   total_rounds: number;
+  prompt_timer_seconds: number;
   is_final_round: boolean;
   used_fact_ids: string[];
   room_master_session_id: string;

@@ -77,6 +77,7 @@ export function createInitialGameState(
     timer_ends_at: null,
     round_number: 0,
     total_rounds: 7,
+    prompt_timer_seconds: 60,
     is_final_round: false,
     used_fact_ids: [],
     room_master_session_id: roomMasterSessionId,

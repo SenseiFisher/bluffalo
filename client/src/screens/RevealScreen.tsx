@@ -35,8 +35,8 @@ export default function RevealScreen() {
         <p className="text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-2">The Question</p>
         <p className="text-white text-lg font-semibold leading-relaxed">
           {parts[0]}
-          <span className="inline-block bg-indigo-700 border-b-2 border-yellow-400 px-3 py-0.5 mx-1 rounded text-yellow-400 font-black min-w-[6rem] text-center">
-            ???????
+          <span className="inline-block bg-indigo-700 border-b-2 border-yellow-400 px-3 py-0.5 mx-1 rounded min-w-[6rem] text-center">
+            &nbsp;
           </span>
           {parts[1] || ''}
         </p>

@@ -118,11 +118,12 @@ function startPromptPhase(state: GameState, broadcast: BroadcastFn): void {
   state.used_fact_ids.push(fact.content_id);
   state.phase = GamePhase.PROMPT;
   state.vote_options = [];
-  state.timer_ends_at = Date.now() + PROMPT_TIMER_MS;
+  const promptTimerMs = state.prompt_timer_seconds * 1000;
+  state.timer_ends_at = Date.now() + promptTimerMs;
 
   broadcast(state.room_code, state);
 
-  setTimer(state.room_code, PROMPT_TIMER_MS, () => {
+  setTimer(state.room_code, promptTimerMs, () => {
     const currentState = getCurrentState(state.room_code);
     if (currentState && currentState.phase === GamePhase.PROMPT) {
       advanceToReveal(currentState, broadcast);
