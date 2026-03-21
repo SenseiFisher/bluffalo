@@ -4,12 +4,24 @@ import { useGame } from '../context/GameContext'
 type Mode = 'home' | 'create' | 'join'
 
 export default function JoinScreen() {
-  const { emit, lastError, clearError } = useGame()
+  const { emit, lastError, clearError, storedSession, clearStoredSession } = useGame()
   const [mode, setMode] = useState<Mode>('home')
   const [displayName, setDisplayName] = useState('')
   const [roomCode, setRoomCode] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [localError, setLocalError] = useState<string | null>(null)
+
+  const handleRejoin = () => {
+    if (!storedSession) return
+    setIsLoading(true)
+    setLocalError(null)
+    clearError()
+    emit('JOIN_ROOM', {
+      room_code: storedSession.room_code,
+      display_name: storedSession.display_name,
+      session_id: storedSession.session_id,
+    })
+  }
 
   useEffect(() => {
     if (lastError) {
@@ -84,6 +96,32 @@ export default function JoinScreen() {
           The Social Deception Game
         </p>
       </div>
+
+      {/* Stored session banner */}
+      {storedSession && (
+        <div className="w-full max-w-md mb-4 bg-yellow-400/10 border border-yellow-400/50 rounded-2xl p-4 flex items-center justify-between gap-4">
+          <div className="min-w-0">
+            <p className="text-yellow-300 text-xs font-semibold uppercase tracking-wide mb-0.5">Game in progress</p>
+            <p className="text-white font-bold truncate">{storedSession.display_name}</p>
+            <p className="text-indigo-300 text-sm font-mono tracking-widest">{storedSession.room_code}</p>
+          </div>
+          <div className="flex flex-col gap-2 shrink-0">
+            <button
+              onClick={handleRejoin}
+              disabled={isLoading}
+              className="px-4 py-2 bg-yellow-400 hover:bg-yellow-300 text-indigo-950 font-black text-sm rounded-xl transition-all active:scale-95 disabled:opacity-50"
+            >
+              {isLoading ? 'Rejoining…' : 'Rejoin'}
+            </button>
+            <button
+              onClick={() => { clearStoredSession(); setLocalError(null) }}
+              className="px-4 py-2 text-indigo-400 hover:text-white text-xs text-center transition-colors"
+            >
+              Discard
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Card */}
       <div className="bg-indigo-900/80 backdrop-blur rounded-2xl shadow-2xl p-8 w-full max-w-md border border-indigo-700/50">

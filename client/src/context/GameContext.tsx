@@ -29,6 +29,8 @@ interface GameContextValue {
   clearError: () => void
   emit: (event: string, data?: unknown) => void
   isConnected: boolean
+  storedSession: StoredSession | null
+  clearStoredSession: () => void
 }
 
 const GameContext = createContext<GameContextValue>({
@@ -40,6 +42,8 @@ const GameContext = createContext<GameContextValue>({
   clearError: () => {},
   emit: () => {},
   isConnected: false,
+  storedSession: null,
+  clearStoredSession: () => {},
 })
 
 export function GameProvider({ children }: { children: React.ReactNode }) {
@@ -49,38 +53,34 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
   const [voteOptions, setVoteOptions] = useState<VoteOption[]>([])
   const [lastError, setLastError] = useState<ErrorPayload | null>(null)
   const [isConnected, setIsConnected] = useState(false)
-
-  const clearError = useCallback(() => setLastError(null), [])
-
-  const getStoredSession = (): StoredSession | null => {
+  const [storedSession, setStoredSession] = useState<StoredSession | null>(() => {
     try {
       const raw = localStorage.getItem('bluffalo_session')
       if (!raw) return null
       const parsed = JSON.parse(raw) as StoredSession
-      if (parsed.session_id && parsed.room_code && parsed.display_name) {
-        return parsed
-      }
-      return null
-    } catch {
-      return null
-    }
-  }
+      return (parsed.session_id && parsed.room_code && parsed.display_name) ? parsed : null
+    } catch { return null }
+  })
+
+  const clearError = useCallback(() => setLastError(null), [])
 
   const saveSession = (session: StoredSession) => {
     try {
       localStorage.setItem('bluffalo_session', JSON.stringify(session))
+      setStoredSession(session)
     } catch {
       // ignore
     }
   }
 
-  const clearSession = () => {
+  const clearSession = useCallback(() => {
     try {
       localStorage.removeItem('bluffalo_session')
+      setStoredSession(null)
     } catch {
       // ignore
     }
-  }
+  }, [])
 
   useEffect(() => {
     const socket = io({
@@ -93,16 +93,6 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
 
     socket.on('connect', () => {
       setIsConnected(true)
-
-      // Attempt auto-rejoin from localStorage
-      const stored = getStoredSession()
-      if (stored) {
-        socket.emit('JOIN_ROOM', {
-          room_code: stored.room_code,
-          display_name: stored.display_name,
-          session_id: stored.session_id,
-        })
-      }
     })
 
     socket.on('disconnect', () => {
@@ -184,6 +174,8 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         clearError,
         emit,
         isConnected,
+        storedSession,
+        clearStoredSession: clearSession,
       }}
     >
       {children}
