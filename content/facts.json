@@ -1,0 +1,602 @@
+[
+  {
+    "content_id": "FACT_001",
+    "fact_template": "The shortest war in history lasted only _______ minutes.",
+    "truth_keyword": "38",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_002",
+    "fact_template": "A group of flamingos is called a _______.",
+    "truth_keyword": "flamboyance",
+    "metadata": { "difficulty": "Medium", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_003",
+    "fact_template": "Honey never spoils — archaeologists have found 3000-year-old honey in Egyptian tombs that was still _______.",
+    "truth_keyword": "edible",
+    "metadata": { "difficulty": "Easy", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_004",
+    "fact_template": "The Eiffel Tower can grow up to _______ centimetres taller in summer due to thermal expansion.",
+    "truth_keyword": "15",
+    "metadata": { "difficulty": "Medium", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_005",
+    "fact_template": "Scotland's national animal is the _______.",
+    "truth_keyword": "unicorn",
+    "metadata": { "difficulty": "Medium", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_006",
+    "fact_template": "A day on _______ is longer than a year on it.",
+    "truth_keyword": "Venus",
+    "metadata": { "difficulty": "Medium", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_007",
+    "fact_template": "The average person walks the equivalent of _______ times around the Earth in a lifetime.",
+    "truth_keyword": "five",
+    "metadata": { "difficulty": "Hard", "category": "Human Body" }
+  },
+  {
+    "content_id": "FACT_008",
+    "fact_template": "Cleopatra lived closer in time to the Moon landing than to the construction of the _______.",
+    "truth_keyword": "Great Pyramid",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_009",
+    "fact_template": "The inventor of the Pringles can is buried inside one — his ashes were placed in a _______ container.",
+    "truth_keyword": "Pringles",
+    "metadata": { "difficulty": "Medium", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_010",
+    "fact_template": "Wombats are the only animals in the world that produce _______ shaped droppings.",
+    "truth_keyword": "cube",
+    "metadata": { "difficulty": "Easy", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_011",
+    "fact_template": "The full name of Los Angeles is El Pueblo de Nuestra Señora la Reina de los Ángeles del Río de _______.",
+    "truth_keyword": "Porciúncula",
+    "metadata": { "difficulty": "Hard", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_012",
+    "fact_template": "Octopuses have _______ hearts.",
+    "truth_keyword": "three",
+    "metadata": { "difficulty": "Easy", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_013",
+    "fact_template": "The word 'nerd' was first used by Dr. Seuss in his 1950 book _______.",
+    "truth_keyword": "If I Ran the Zoo",
+    "metadata": { "difficulty": "Hard", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_014",
+    "fact_template": "A bolt of lightning is five times hotter than the surface of the _______.",
+    "truth_keyword": "sun",
+    "metadata": { "difficulty": "Medium", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_015",
+    "fact_template": "The country with the most natural lakes in the world is _______.",
+    "truth_keyword": "Canada",
+    "metadata": { "difficulty": "Medium", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_016",
+    "fact_template": "Bananas are technically _______ from a botanical standpoint.",
+    "truth_keyword": "berries",
+    "metadata": { "difficulty": "Easy", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_017",
+    "fact_template": "The longest English word you can type using only the top row of a keyboard is _______.",
+    "truth_keyword": "typewriter",
+    "metadata": { "difficulty": "Medium", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_018",
+    "fact_template": "Crows can recognize and remember human _______ for years.",
+    "truth_keyword": "faces",
+    "metadata": { "difficulty": "Easy", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_019",
+    "fact_template": "The Great Wall of China is NOT visible from _______ with the naked eye.",
+    "truth_keyword": "space",
+    "metadata": { "difficulty": "Easy", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_020",
+    "fact_template": "Nintendo was founded in _______ and originally sold playing cards.",
+    "truth_keyword": "1889",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_021",
+    "fact_template": "The Oxford English Dictionary added the word _______ in 2001, making it the first emoji-inspired word.",
+    "truth_keyword": "unfriend",
+    "metadata": { "difficulty": "Hard", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_022",
+    "fact_template": "A group of owls is called a _______.",
+    "truth_keyword": "parliament",
+    "metadata": { "difficulty": "Medium", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_023",
+    "fact_template": "The average cloud weighs about _______ pounds.",
+    "truth_keyword": "1.1 million",
+    "metadata": { "difficulty": "Hard", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_024",
+    "fact_template": "Humans share _______ percent of their DNA with bananas.",
+    "truth_keyword": "60",
+    "metadata": { "difficulty": "Medium", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_025",
+    "fact_template": "The man who invented _______ was afraid of the dark.",
+    "truth_keyword": "the light bulb",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_026",
+    "fact_template": "A snail can sleep for up to _______ years.",
+    "truth_keyword": "three",
+    "metadata": { "difficulty": "Hard", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_027",
+    "fact_template": "The shortest complete sentence in the English language is _______.",
+    "truth_keyword": "Go.",
+    "metadata": { "difficulty": "Easy", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_028",
+    "fact_template": "Polar bear fur is actually _______ in color, not white.",
+    "truth_keyword": "transparent",
+    "metadata": { "difficulty": "Medium", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_029",
+    "fact_template": "The human nose can detect over _______ trillion different scents.",
+    "truth_keyword": "one",
+    "metadata": { "difficulty": "Hard", "category": "Human Body" }
+  },
+  {
+    "content_id": "FACT_030",
+    "fact_template": "The country of _______ has more pyramids than Egypt.",
+    "truth_keyword": "Sudan",
+    "metadata": { "difficulty": "Hard", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_031",
+    "fact_template": "A jiffy is an actual unit of time equal to _______ of a second.",
+    "truth_keyword": "one hundredth",
+    "metadata": { "difficulty": "Medium", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_032",
+    "fact_template": "The first product to have a _______ scanned was a pack of Wrigley's chewing gum in 1974.",
+    "truth_keyword": "barcode",
+    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_033",
+    "fact_template": "Lobsters were once so plentiful they were used as _______ in colonial America.",
+    "truth_keyword": "fertilizer",
+    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_034",
+    "fact_template": "The leg bones of a bat are so thin that no bat can _______ from a standing position.",
+    "truth_keyword": "walk",
+    "metadata": { "difficulty": "Hard", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_035",
+    "fact_template": "The first recorded use of the word 'hello' as a greeting dates to _______ when the telephone was invented.",
+    "truth_keyword": "1826",
+    "metadata": { "difficulty": "Hard", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_036",
+    "fact_template": "There are more possible iterations of a game of chess than there are _______ in the observable universe.",
+    "truth_keyword": "atoms",
+    "metadata": { "difficulty": "Easy", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_037",
+    "fact_template": "The world's oldest known recipe is for _______.",
+    "truth_keyword": "beer",
+    "metadata": { "difficulty": "Medium", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_038",
+    "fact_template": "A blue whale's heart is the size of a small _______.",
+    "truth_keyword": "car",
+    "metadata": { "difficulty": "Easy", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_039",
+    "fact_template": "The sentence 'The quick brown fox jumps over the lazy dog' uses every letter of the alphabet — this is called a _______.",
+    "truth_keyword": "pangram",
+    "metadata": { "difficulty": "Easy", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_040",
+    "fact_template": "Butterflies taste with their _______.",
+    "truth_keyword": "feet",
+    "metadata": { "difficulty": "Easy", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_041",
+    "fact_template": "The Great Fire of London in 1666 destroyed most of the city but killed only _______ people.",
+    "truth_keyword": "six",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_042",
+    "fact_template": "Technically, _______ is not a color — it's the absence of all color.",
+    "truth_keyword": "black",
+    "metadata": { "difficulty": "Medium", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_043",
+    "fact_template": "The tongue of a blue whale weighs as much as an adult _______.",
+    "truth_keyword": "elephant",
+    "metadata": { "difficulty": "Medium", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_044",
+    "fact_template": "The dot over the letters 'i' and 'j' is called a _______.",
+    "truth_keyword": "tittle",
+    "metadata": { "difficulty": "Hard", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_045",
+    "fact_template": "Oxford University is older than the _______ Empire.",
+    "truth_keyword": "Aztec",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_046",
+    "fact_template": "The only letter that doesn't appear in any U.S. state name is _______.",
+    "truth_keyword": "Q",
+    "metadata": { "difficulty": "Medium", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_047",
+    "fact_template": "Ketchup was sold as a _______ in the 1830s.",
+    "truth_keyword": "medicine",
+    "metadata": { "difficulty": "Medium", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_048",
+    "fact_template": "The plastic tip at the end of a shoelace is called an _______.",
+    "truth_keyword": "aglet",
+    "metadata": { "difficulty": "Hard", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_049",
+    "fact_template": "The world's largest desert is _______, not the Sahara.",
+    "truth_keyword": "Antarctica",
+    "metadata": { "difficulty": "Hard", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_050",
+    "fact_template": "Sharks are older than _______ — they existed before trees evolved.",
+    "truth_keyword": "trees",
+    "metadata": { "difficulty": "Medium", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_051",
+    "fact_template": "The first _______ was invented in 1908 and was made of silk.",
+    "truth_keyword": "tea bag",
+    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_052",
+    "fact_template": "In space, you cannot _______ because there's no air to create a sound wave.",
+    "truth_keyword": "cry",
+    "metadata": { "difficulty": "Hard", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_053",
+    "fact_template": "The average person produces enough _______ in their lifetime to fill two swimming pools.",
+    "truth_keyword": "saliva",
+    "metadata": { "difficulty": "Hard", "category": "Human Body" }
+  },
+  {
+    "content_id": "FACT_054",
+    "fact_template": "Peanuts are not actually _______ — they are legumes.",
+    "truth_keyword": "nuts",
+    "metadata": { "difficulty": "Easy", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_055",
+    "fact_template": "The fear of long words is called _______.",
+    "truth_keyword": "hippopotomonstrosesquippedaliophobia",
+    "metadata": { "difficulty": "Hard", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_056",
+    "fact_template": "Alaska is simultaneously the most northern, most western, AND most _______ state in the US.",
+    "truth_keyword": "eastern",
+    "metadata": { "difficulty": "Hard", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_057",
+    "fact_template": "The smell of rain is called _______.",
+    "truth_keyword": "petrichor",
+    "metadata": { "difficulty": "Medium", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_058",
+    "fact_template": "Sloths can hold their breath longer than _______, up to 40 minutes.",
+    "truth_keyword": "dolphins",
+    "metadata": { "difficulty": "Hard", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_059",
+    "fact_template": "Marie Curie's notebooks are still too _______ to handle safely without protection.",
+    "truth_keyword": "radioactive",
+    "metadata": { "difficulty": "Easy", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_060",
+    "fact_template": "The original name for the search engine Google was _______.",
+    "truth_keyword": "BackRub",
+    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_061",
+    "fact_template": "Cats have a dedicated _______ meow they use only to communicate with humans.",
+    "truth_keyword": "solicitation",
+    "metadata": { "difficulty": "Hard", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_062",
+    "fact_template": "The first item ever sold on eBay was a broken _______ for $14.83.",
+    "truth_keyword": "laser pointer",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_063",
+    "fact_template": "The shortest war ever fought was between _______ and Zanzibar.",
+    "truth_keyword": "Britain",
+    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_064",
+    "fact_template": "Figs are not technically a _______ — they are an inverted flower cluster.",
+    "truth_keyword": "fruit",
+    "metadata": { "difficulty": "Hard", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_065",
+    "fact_template": "Starfish don't have a _______— they absorb oxygen directly through their skin.",
+    "truth_keyword": "brain",
+    "metadata": { "difficulty": "Easy", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_066",
+    "fact_template": "The number of possible shuffles of a deck of 52 cards is greater than the number of _______ in the universe.",
+    "truth_keyword": "stars",
+    "metadata": { "difficulty": "Hard", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_067",
+    "fact_template": "The first known _______ game was played in China around 2300 BC.",
+    "truth_keyword": "domino",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_068",
+    "fact_template": "The city of _______ has more canals than Venice.",
+    "truth_keyword": "Birmingham",
+    "metadata": { "difficulty": "Hard", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_069",
+    "fact_template": "Humans are the only animals that blush — this is caused by a rush of _______ to the face.",
+    "truth_keyword": "adrenaline",
+    "metadata": { "difficulty": "Medium", "category": "Human Body" }
+  },
+  {
+    "content_id": "FACT_070",
+    "fact_template": "The Mona Lisa has no visible _______ or eyelashes.",
+    "truth_keyword": "eyebrows",
+    "metadata": { "difficulty": "Easy", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_071",
+    "fact_template": "Coca-Cola was originally green because of the color of the _______ used in the original recipe.",
+    "truth_keyword": "coca leaves",
+    "metadata": { "difficulty": "Hard", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_072",
+    "fact_template": "The Hawaiian alphabet has only _______ letters.",
+    "truth_keyword": "13",
+    "metadata": { "difficulty": "Medium", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_073",
+    "fact_template": "Horned lizards can squirt _______ from their eyes as a defense mechanism.",
+    "truth_keyword": "blood",
+    "metadata": { "difficulty": "Medium", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_074",
+    "fact_template": "The average person will spend six months of their life waiting for _______ to turn green.",
+    "truth_keyword": "red lights",
+    "metadata": { "difficulty": "Medium", "category": "Human Body" }
+  },
+  {
+    "content_id": "FACT_075",
+    "fact_template": "Wyoming and _______ are the only two US states that are perfect rectangles.",
+    "truth_keyword": "Colorado",
+    "metadata": { "difficulty": "Medium", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_076",
+    "fact_template": "The world record for the most _______ eaten in one minute is 9.",
+    "truth_keyword": "ghost peppers",
+    "metadata": { "difficulty": "Medium", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_077",
+    "fact_template": "Cows have best friends and become _______ when separated from them.",
+    "truth_keyword": "stressed",
+    "metadata": { "difficulty": "Easy", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_078",
+    "fact_template": "The inventor of the World Wide Web, Tim Berners-Lee, originally called it _______.",
+    "truth_keyword": "Mesh",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_079",
+    "fact_template": "The first computer bug was an actual _______ found in a Harvard computer in 1947.",
+    "truth_keyword": "moth",
+    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_080",
+    "fact_template": "In Switzerland it is illegal to own just one _______ because they are so social.",
+    "truth_keyword": "guinea pig",
+    "metadata": { "difficulty": "Hard", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_081",
+    "fact_template": "The average person walks about _______ steps per day.",
+    "truth_keyword": "8000",
+    "metadata": { "difficulty": "Easy", "category": "Human Body" }
+  },
+  {
+    "content_id": "FACT_082",
+    "fact_template": "Mount Everest is not the closest point to outer space — that honor goes to Mount _______.",
+    "truth_keyword": "Chimborazo",
+    "metadata": { "difficulty": "Hard", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_083",
+    "fact_template": "A group of cats is called a _______.",
+    "truth_keyword": "clowder",
+    "metadata": { "difficulty": "Hard", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_084",
+    "fact_template": "The word 'salary' comes from the Latin word for _______ because Roman soldiers were paid in it.",
+    "truth_keyword": "salt",
+    "metadata": { "difficulty": "Medium", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_085",
+    "fact_template": "Russia has a larger land area than the entire surface of _______.",
+    "truth_keyword": "Pluto",
+    "metadata": { "difficulty": "Hard", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_086",
+    "fact_template": "The first microwave oven was called the _______ Radarange.",
+    "truth_keyword": "Raytheon",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_087",
+    "fact_template": "Elephants are the only animals that cannot _______.",
+    "truth_keyword": "jump",
+    "metadata": { "difficulty": "Easy", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_088",
+    "fact_template": "The tongue print of every human is as unique as their _______.",
+    "truth_keyword": "fingerprint",
+    "metadata": { "difficulty": "Medium", "category": "Human Body" }
+  },
+  {
+    "content_id": "FACT_089",
+    "fact_template": "The longest word in the English language with no repeated letters is _______.",
+    "truth_keyword": "uncopyrightable",
+    "metadata": { "difficulty": "Hard", "category": "Language" }
+  },
+  {
+    "content_id": "FACT_090",
+    "fact_template": "The country with the longest coastline in the world is _______.",
+    "truth_keyword": "Canada",
+    "metadata": { "difficulty": "Medium", "category": "Geography" }
+  },
+  {
+    "content_id": "FACT_091",
+    "fact_template": "The average lightning bolt is only about _______ inches wide.",
+    "truth_keyword": "one",
+    "metadata": { "difficulty": "Hard", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_092",
+    "fact_template": "Cleopatra lived closer in time to the _______ than to the construction of the Great Pyramid.",
+    "truth_keyword": "iPhone",
+    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_093",
+    "fact_template": "Mosquitoes are attracted to people who have recently eaten _______.",
+    "truth_keyword": "bananas",
+    "metadata": { "difficulty": "Hard", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_094",
+    "fact_template": "The odds of being killed by a vending machine are higher than the odds of being killed by a _______.",
+    "truth_keyword": "shark",
+    "metadata": { "difficulty": "Medium", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_095",
+    "fact_template": "The first known novel ever written was 'The Tale of Genji,' written in Japan around the year _______ by a woman.",
+    "truth_keyword": "1000",
+    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+  },
+  {
+    "content_id": "FACT_096",
+    "fact_template": "In Japan, letting a sumo wrestler make your baby _______ is considered good luck.",
+    "truth_keyword": "cry",
+    "metadata": { "difficulty": "Medium", "category": "Sports" }
+  },
+  {
+    "content_id": "FACT_097",
+    "fact_template": "The most expensive spice in the world by weight is _______.",
+    "truth_keyword": "saffron",
+    "metadata": { "difficulty": "Easy", "category": "Food" }
+  },
+  {
+    "content_id": "FACT_098",
+    "fact_template": "A group of porcupines is called a _______.",
+    "truth_keyword": "prickle",
+    "metadata": { "difficulty": "Hard", "category": "Animals" }
+  },
+  {
+    "content_id": "FACT_099",
+    "fact_template": "The Space Shuttle's engines were shut down _______ seconds before landing.",
+    "truth_keyword": "zero",
+    "metadata": { "difficulty": "Hard", "category": "Science" }
+  },
+  {
+    "content_id": "FACT_100",
+    "fact_template": "Competitive eating champion Takeru Kobayashi once ate _______ hot dogs in 10 minutes.",
+    "truth_keyword": "110",
+    "metadata": { "difficulty": "Hard", "category": "Sports" }
+  }
+]
