@@ -35,7 +35,7 @@ export function createApp(): { app: express.Application; httpServer: ReturnType<
 
   // Serve compiled React in production
   if (process.env.NODE_ENV === "production") {
-    const publicDir = path.resolve(__dirname, "../../public");
+    const publicDir = path.resolve(__dirname, "../../../public");
     app.use(express.static(publicDir));
   }
 
@@ -51,7 +51,7 @@ export function createApp(): { app: express.Application; httpServer: ReturnType<
 
   // Fallback: serve React app for all other routes in production
   if (process.env.NODE_ENV === "production") {
-    const publicDir = path.resolve(__dirname, "../../public");
+    const publicDir = path.resolve(__dirname, "../../../public");
     app.get("*", (_req, res) => {
       res.sendFile(path.join(publicDir, "index.html"));
     });
