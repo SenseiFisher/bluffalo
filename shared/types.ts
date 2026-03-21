@@ -35,6 +35,7 @@ export interface VoteOption {
   text: string;
   is_truth: boolean;
   author_session_id: string | null;
+  author_display_name: string | null; // populated by server only during RESOLUTION/PODIUM
 }
 
 export interface GameState {

@@ -1,222 +1,261 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { useGame } from '../context/GameContext'
-import { useTimer } from '../hooks/useTimer'
 import { VoteOption } from '@shared/types'
 
-interface RevealedOption extends VoteOption {
-  voters: string[]
-  authors: string[]
-  revealIndex: number
+const STEP_DURATION = 2200 // ms between reveal steps
+
+interface AugmentedOption extends VoteOption {
+  voteCount: number
+  voterNames: string[]
 }
 
 export default function ResolutionScreen() {
   const { gameState, mySessionId } = useGame()
-  const timeRemaining = useTimer(gameState?.timer_ends_at ?? null)
-  const [revealedCount, setRevealedCount] = useState(0)
+  const [step, setStep] = useState(0)
 
   if (!gameState || !gameState.current_fact) return null
 
-  const factTemplate = gameState.current_fact.fact_template
-  const parts = factTemplate.split('_______')
+  const factParts = gameState.current_fact.fact_template.split('_______')
 
   // Build augmented options with voter info
-  const augmentedOptions: RevealedOption[] = gameState.vote_options.map(
-    (opt, idx) => {
-      const voters = gameState.players
+  const augmented: AugmentedOption[] = useMemo(() => {
+    return gameState.vote_options.map((opt) => {
+      const voterNames = gameState.players
         .filter((p) => p.round.voted_for_id === opt.option_id)
         .map((p) => p.display_name)
+      return { ...opt, voteCount: voterNames.length, voterNames }
+    })
+  }, [gameState.vote_options, gameState.players])
 
-      const authors = opt.author_session_id
-        ? gameState.players
-            .filter((p) => {
-              // Since session_id is stripped on players in client, we compare author_session_id
-              // against mySessionId to know if it's ours, but for display we need all authors
-              return false // Can't match stripped IDs to names easily here
-            })
-            .map((p) => p.display_name)
-        : []
+  // Sort: lies ascending by votes, truth always last
+  const lies = useMemo(
+    () => augmented.filter((o) => !o.is_truth).sort((a, b) => a.voteCount - b.voteCount),
+    [augmented]
+  )
+  const truth = useMemo(() => augmented.find((o) => o.is_truth) ?? null, [augmented])
 
-      return {
-        ...opt,
-        voters,
-        authors,
-        revealIndex: idx,
-      }
-    }
+  // Determine if truth is in the top 3 most voted (among all options)
+  const top3ByVotes = useMemo(() => {
+    return [...augmented].sort((a, b) => b.voteCount - a.voteCount).slice(0, 3)
+  }, [augmented])
+  const isTruthInTop3 = useMemo(
+    () => top3ByVotes.some((o) => o.is_truth),
+    [top3ByVotes]
   )
 
-  // Sort: lies first, truth last
-  const lies = augmentedOptions.filter((o) => !o.is_truth)
-  const truth = augmentedOptions.find((o) => o.is_truth)
-  const orderedOptions = [...lies, ...(truth ? [truth] : [])]
+  // Split into normal (one-by-one) and batch (revealed together)
+  const normalItems: AugmentedOption[] = useMemo(() => {
+    if (!truth) return lies
+    if (isTruthInTop3 && lies.length >= 2) return lies.slice(0, lies.length - 2)
+    return lies
+  }, [lies, truth, isTruthInTop3])
 
-  // Animate reveal: reveal one option every ~1.2 seconds
+  const batchItems: AugmentedOption[] = useMemo(() => {
+    if (!truth) return []
+    if (isTruthInTop3 && lies.length >= 2) return [...lies.slice(lies.length - 2), truth]
+    return [truth]
+  }, [lies, truth, isTruthInTop3])
+
+  // Total steps: 2 per normal item (show text, reveal author) + 2 for final batch
+  const totalSteps = (normalItems.length + 1) * 2
+
   useEffect(() => {
-    if (revealedCount >= orderedOptions.length) return
-    const timer = setTimeout(() => {
-      setRevealedCount((c) => c + 1)
-    }, 1200)
-    return () => clearTimeout(timer)
-  }, [revealedCount, orderedOptions.length])
+    setStep(0)
+  }, [gameState.round_number])
 
-  // Player round scores (new points earned this round)
+  useEffect(() => {
+    if (step >= totalSteps) return
+    const t = setTimeout(() => setStep((s) => s + 1), STEP_DURATION)
+    return () => clearTimeout(t)
+  }, [step, totalSteps])
+
+  // Helper: is a normal item's text visible?
+  const isNormalTextVisible = (idx: number) => step >= idx * 2 + 1
+  // Helper: is a normal item's author visible?
+  const isNormalAuthorVisible = (idx: number) => step >= idx * 2 + 2
+  // Helper: is the batch text visible?
+  const isBatchTextVisible = () => step >= normalItems.length * 2 + 1
+  // Helper: is the batch author visible?
+  const isBatchAuthorVisible = () => step >= normalItems.length * 2 + 2
+
+  const truthRevealed = isBatchAuthorVisible()
   const sortedPlayers = [...gameState.players].sort((a, b) => b.score - a.score)
+
+  const isMyOption = (opt: AugmentedOption) => opt.author_session_id === mySessionId
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex flex-col items-center p-4 pt-8 pb-16">
       {/* Header */}
-      <div className="flex justify-between items-center w-full max-w-lg mb-4">
-        <div className="text-indigo-300 text-sm font-semibold">
+      <div className="text-center mb-6">
+        <h2 className="text-4xl font-black text-white">The Big Reveal</h2>
+        <p className="text-indigo-300 mt-1 text-sm">
           Round {gameState.round_number} of {gameState.total_rounds}
-          {gameState.is_final_round && (
-            <span className="ml-2 text-yellow-400 font-bold">★ FINAL</span>
-          )}
-        </div>
-        <div className="text-2xl font-black text-yellow-400">{timeRemaining}s</div>
-      </div>
-
-      <div className="text-center mb-5">
-        <h2 className="text-3xl font-black text-white">The Big Reveal!</h2>
-      </div>
-
-      {/* Fact */}
-      <div className="w-full max-w-lg bg-indigo-800/70 border border-indigo-600 rounded-2xl p-4 mb-5 shadow-xl">
-        <p className="text-white text-lg font-semibold leading-relaxed">
-          {parts[0]}
-          {truth && revealedCount >= orderedOptions.length ? (
-            <span className="inline-block bg-green-600 border-2 border-green-400 px-3 py-0.5 mx-1 rounded text-white font-black animate-fade-in">
-              {gameState.current_fact.truth_keyword}
-            </span>
-          ) : (
-            <span className="inline-block bg-indigo-700 border-b-2 border-yellow-400 px-3 py-0.5 mx-1 rounded text-yellow-400 font-black min-w-[6rem] text-center">
-              ???????
-            </span>
-          )}
-          {parts[1] || ''}
+          {gameState.is_final_round && <span className="ml-2 text-yellow-400 font-bold">★ FINAL</span>}
         </p>
       </div>
 
-      {/* Reveal Options */}
-      <div className="w-full max-w-lg space-y-3 mb-6">
-        {orderedOptions.map((option, idx) => {
-          const isRevealed = idx < revealedCount
-          const isTruth = option.is_truth
-          const isMyLie = option.author_session_id === mySessionId
+      {/* Fact with blank */}
+      <div className="w-full max-w-lg bg-indigo-800/70 border border-indigo-600 rounded-2xl p-5 mb-6 shadow-xl">
+        <p className="text-white text-lg font-semibold leading-relaxed">
+          {factParts[0]}
+          {truthRevealed ? (
+            <span className="inline-block bg-green-600 border-2 border-green-400 px-3 py-0.5 mx-1 rounded text-white font-black animate-pulse">
+              {gameState.current_fact.truth_keyword}
+            </span>
+          ) : (
+            <span className="inline-block bg-indigo-700 border-b-2 border-yellow-400 px-3 py-0.5 mx-1 rounded min-w-[6rem] text-center">
+              &nbsp;
+            </span>
+          )}
+          {factParts[1] ?? ''}
+        </p>
+      </div>
 
-          if (!isRevealed) {
-            return (
+      {/* Reveal cards */}
+      <div className="w-full max-w-lg space-y-3 mb-8">
+
+        {/* Normal items — one at a time */}
+        {normalItems.map((opt, idx) => (
+          <RevealCard
+            key={opt.option_id}
+            option={opt}
+            textVisible={isNormalTextVisible(idx)}
+            authorVisible={isNormalAuthorVisible(idx)}
+            isMyLie={isMyOption(opt)}
+          />
+        ))}
+
+        {/* Batch items — all together */}
+        {batchItems.map((opt) => (
+          <RevealCard
+            key={opt.option_id}
+            option={opt}
+            textVisible={isBatchTextVisible()}
+            authorVisible={isBatchAuthorVisible()}
+            isMyLie={isMyOption(opt)}
+            isBatch={isTruthInTop3 && lies.length >= 2}
+          />
+        ))}
+      </div>
+
+      {/* Leaderboard — only shown after full reveal */}
+      {truthRevealed && (
+        <div className="w-full max-w-lg">
+          <h3 className="text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-3">
+            Standings After Round {gameState.round_number}
+          </h3>
+          <div className="space-y-2">
+            {sortedPlayers.map((player, idx) => (
               <div
-                key={option.option_id}
-                className="bg-indigo-800/40 border-2 border-indigo-700 rounded-xl px-5 py-4 opacity-40"
+                key={idx}
+                className="flex items-center justify-between bg-indigo-800/40 border border-indigo-700 rounded-xl px-4 py-2.5"
               >
-                <span className="text-indigo-500 font-bold text-lg">...</span>
-              </div>
-            )
-          }
-
-          return (
-            <div
-              key={option.option_id}
-              className={`rounded-xl px-5 py-4 border-2 animate-slide-up ${
-                isTruth
-                  ? 'bg-green-900/50 border-green-500'
-                  : 'bg-indigo-800/60 border-indigo-600'
-              }`}
-              style={{ animationDelay: '0ms' }}
-            >
-              <div className="flex items-start justify-between mb-2">
-                <span
-                  className={`text-xl font-black ${
-                    isTruth ? 'text-green-400' : 'text-white'
-                  }`}
-                >
-                  {option.text}
-                  {isTruth && (
-                    <span className="ml-2 text-green-400 text-base">✓ TRUTH</span>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className={`text-sm font-black w-6 text-center ${
+                    idx === 0 ? 'text-yellow-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-amber-600' : 'text-indigo-500'
+                  }`}>{idx + 1}</span>
+                  <span className="text-white font-semibold">{player.display_name}</span>
+                  {player.round.truth_found && (
+                    <span className="text-green-400 text-xs bg-green-900/40 px-2 py-0.5 rounded-full">+500 Truth</span>
                   )}
-                </span>
-              </div>
-
-              {/* Author info */}
-              {!isTruth && (
-                <div className="text-sm text-indigo-400">
-                  {isMyLie ? (
-                    <span className="text-yellow-400 font-semibold">YOUR LIE</span>
-                  ) : option.author_session_id ? (
-                    <span className="text-indigo-300">
-                      By a player
+                  {player.round.great_minds && (
+                    <span className="text-purple-400 text-xs bg-purple-900/40 px-2 py-0.5 rounded-full">+1000 Great Minds</span>
+                  )}
+                  {player.round.bamboozle_count > 0 && (
+                    <span className="text-orange-400 text-xs bg-orange-900/40 px-2 py-0.5 rounded-full">
+                      +{player.round.bamboozle_count * 250} Bamboozle
                     </span>
-                  ) : null}
+                  )}
                 </div>
-              )}
-
-              {/* Voters */}
-              {option.voters.length > 0 ? (
-                <div className="mt-2">
-                  <span className="text-indigo-400 text-xs uppercase tracking-wide">
-                    Fooled:{' '}
-                  </span>
-                  <span className="text-yellow-400 text-sm font-semibold">
-                    {option.voters.join(', ')}
-                  </span>
-                </div>
-              ) : (
-                !isTruth && (
-                  <div className="mt-1 text-indigo-600 text-xs">No votes</div>
-                )
-              )}
-            </div>
-          )
-        })}
-      </div>
-
-      {/* Leaderboard */}
-      <div className="w-full max-w-lg">
-        <h3 className="text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-3">
-          Standings After Round {gameState.round_number}
-        </h3>
-        <div className="space-y-2">
-          {sortedPlayers.map((player, idx) => (
-            <div
-              key={idx}
-              className="flex items-center justify-between bg-indigo-800/40 border border-indigo-700 rounded-xl px-4 py-2.5"
-            >
-              <div className="flex items-center gap-3">
-                <span
-                  className={`text-sm font-black w-6 text-center ${
-                    idx === 0
-                      ? 'text-yellow-400'
-                      : idx === 1
-                      ? 'text-gray-300'
-                      : idx === 2
-                      ? 'text-amber-600'
-                      : 'text-indigo-500'
-                  }`}
-                >
-                  {idx + 1}
-                </span>
-                <span className="text-white font-semibold">{player.display_name}</span>
-                {player.round.truth_found && (
-                  <span className="text-green-400 text-xs bg-green-900/40 px-2 py-0.5 rounded-full">
-                    +500 Truth
-                  </span>
-                )}
-                {player.round.great_minds && (
-                  <span className="text-purple-400 text-xs bg-purple-900/40 px-2 py-0.5 rounded-full">
-                    +1000 Great Minds
-                  </span>
-                )}
-                {player.round.bamboozle_count > 0 && (
-                  <span className="text-orange-400 text-xs bg-orange-900/40 px-2 py-0.5 rounded-full">
-                    +{player.round.bamboozle_count * 250} Bamboozle
-                  </span>
-                )}
+                <span className="text-yellow-400 font-black text-lg shrink-0">{player.score}</span>
               </div>
-              <span className="text-yellow-400 font-black text-lg">{player.score}</span>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+      )}
+    </div>
+  )
+}
+
+// ─── Individual reveal card ───────────────────────────────────────────────────
+
+interface RevealCardProps {
+  option: AugmentedOption
+  textVisible: boolean
+  authorVisible: boolean
+  isMyLie: boolean
+  isBatch?: boolean
+}
+
+function RevealCard({ option, textVisible, authorVisible, isMyLie, isBatch }: RevealCardProps) {
+  const isTruth = option.is_truth
+  const truthRevealed = isTruth && authorVisible
+
+  if (!textVisible) {
+    return (
+      <div className="bg-indigo-800/30 border-2 border-indigo-800 rounded-xl px-5 py-4 flex items-center gap-3">
+        <div className="w-2 h-2 rounded-full bg-indigo-700 animate-pulse" />
+        <div className="h-4 bg-indigo-700/50 rounded w-1/2 animate-pulse" />
       </div>
+    )
+  }
+
+  return (
+    <div
+      className={`rounded-xl border-2 overflow-hidden transition-all duration-500 ${
+        truthRevealed
+          ? 'border-green-500 bg-green-900/40'
+          : isBatch
+          ? 'border-yellow-500/50 bg-indigo-800/60'
+          : 'border-indigo-600 bg-indigo-800/60'
+      }`}
+    >
+      {/* Answer text row */}
+      <div className="px-5 py-3 flex items-center justify-between gap-3">
+        <span className={`text-xl font-black ${truthRevealed ? 'text-green-300' : 'text-white'}`}>
+          {option.text}
+          {truthRevealed && <span className="ml-2 text-green-400 text-sm font-bold">✓ THE TRUTH</span>}
+        </span>
+        {option.voteCount > 0 && (
+          <span className="shrink-0 text-yellow-400 font-bold text-sm">
+            {option.voteCount} vote{option.voteCount !== 1 ? 's' : ''}
+          </span>
+        )}
+      </div>
+
+      {/* Author + voters — revealed on second step */}
+      {authorVisible && (
+        <div className="px-5 pb-3 border-t border-indigo-700/50 pt-2 space-y-1 animate-fade-in">
+          {/* Author */}
+          {!isTruth && (
+            <p className="text-sm">
+              <span className="text-indigo-400">Written by </span>
+              <span className={`font-bold ${isMyLie ? 'text-yellow-400' : 'text-white'}`}>
+                {isMyLie ? 'you' : (option.author_display_name ?? 'someone')}
+                {isMyLie && ' 😏'}
+              </span>
+            </p>
+          )}
+          {/* Voters */}
+          {option.voterNames.length > 0 ? (
+            <p className="text-sm">
+              {isTruth ? (
+                <>
+                  <span className="text-indigo-400">Spotted by </span>
+                  <span className="text-green-400 font-bold">{option.voterNames.join(', ')}</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-indigo-400">Fooled </span>
+                  <span className="text-orange-400 font-bold">{option.voterNames.join(', ')}</span>
+                </>
+              )}
+            </p>
+          ) : (
+            !isTruth && <p className="text-indigo-600 text-xs">Nobody was fooled</p>
+          )}
+        </div>
+      )}
     </div>
   )
 }

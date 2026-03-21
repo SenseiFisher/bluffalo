@@ -160,6 +160,7 @@ export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void 
       text: p.round.submitted_lie,
       is_truth: false,
       author_session_id: p.session_id,
+      author_display_name: null,
     });
   }
 
@@ -168,6 +169,7 @@ export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void 
     text: state.current_fact!.truth_keyword,
     is_truth: true,
     author_session_id: null,
+    author_display_name: null,
   };
 
   state.vote_options = shuffle([...lies, truthOption]);
@@ -214,12 +216,14 @@ export function advanceToResolution(state: GameState, broadcast: BroadcastFn): v
   // Copy scored fields back to state
   Object.assign(state, scored);
 
+  // Dynamic timer: 4s per option (2 steps × 2s each) + 6s buffer, minimum 12s
+  const resolutionMs = Math.max(12_000, state.vote_options.length * 4_000 + 6_000);
   state.phase = GamePhase.RESOLUTION;
-  state.timer_ends_at = Date.now() + RESOLUTION_TIMER_MS;
+  state.timer_ends_at = Date.now() + resolutionMs;
 
   broadcast(state.room_code, state);
 
-  setTimer(state.room_code, RESOLUTION_TIMER_MS, () => {
+  setTimer(state.room_code, resolutionMs, () => {
     const currentState = getCurrentState(state.room_code);
     if (currentState && currentState.phase === GamePhase.RESOLUTION) {
       advanceToNextRound(currentState, broadcast);

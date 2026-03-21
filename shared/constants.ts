@@ -16,7 +16,7 @@ export const DEFAULT_TOTAL_ROUNDS = 7;
 export const MIN_ROUNDS = 3;
 export const MAX_ROUNDS = 20;
 export const DEFAULT_PROMPT_TIMER_SECONDS = 60;
-export const PROMPT_TIMER_PRESETS = [15, 30, 45, 60, 90, 120] as const;
+export const PROMPT_TIMER_PRESETS = [30, 45, 60, 90, 120, 150] as const;
 export const MIN_PLAYERS_TO_START = 2;
 
 // Input validation

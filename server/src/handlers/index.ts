@@ -44,14 +44,18 @@ function sanitizeStateForClient(state: GameState): GameState {
         state.phase === GamePhase.SELECTION)
         ? { ...state.current_fact, truth_keyword: "" }
         : state.current_fact,
-    // Mask is_truth during REVEAL and SELECTION
-    vote_options: state.vote_options.map((opt) => ({
-      ...opt,
-      is_truth:
-        state.phase === GamePhase.REVEAL || state.phase === GamePhase.SELECTION
-          ? false
-          : opt.is_truth,
-    })),
+    // Mask is_truth during REVEAL and SELECTION; reveal author names only during RESOLUTION/PODIUM
+    vote_options: state.vote_options.map((opt) => {
+      const maskTruth = state.phase === GamePhase.REVEAL || state.phase === GamePhase.SELECTION;
+      const revealAuthor = state.phase === GamePhase.RESOLUTION || state.phase === GamePhase.PODIUM;
+      return {
+        ...opt,
+        is_truth: maskTruth ? false : opt.is_truth,
+        author_display_name: revealAuthor && opt.author_session_id
+          ? (state.players.find((p) => p.session_id === opt.author_session_id)?.display_name ?? null)
+          : null,
+      };
+    }),
     // Strip session_id from all players
     players: state.players.map((p) => ({ ...p, session_id: "" })),
   };
@@ -229,7 +233,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
     let totalRounds = typeof p?.total_rounds === "number" ? p.total_rounds : DEFAULT_TOTAL_ROUNDS;
     totalRounds = Math.max(MIN_ROUNDS, Math.min(MAX_ROUNDS, totalRounds));
 
-    const VALID_TIMER_PRESETS = [15, 30, 45, 60, 90, 120];
+    const VALID_TIMER_PRESETS = [30, 45, 60, 90, 120, 150];
     let promptTimerSeconds = typeof p?.prompt_timer_seconds === "number" ? p.prompt_timer_seconds : 60;
     if (!VALID_TIMER_PRESETS.includes(promptTimerSeconds)) promptTimerSeconds = 60;
     state.prompt_timer_seconds = promptTimerSeconds;

@@ -5,7 +5,7 @@ export default function LobbyScreen() {
   const { gameState, mySessionId, emit, lastError, clearError } = useGame()
   const [totalRounds, setTotalRounds] = useState(7)
   const [promptTimerSeconds, setPromptTimerSeconds] = useState(60)
-  const TIMER_PRESETS = [15, 30, 45, 60, 90, 120]
+  const TIMER_PRESETS = [30, 45, 60, 90, 120, 150]
 
   if (!gameState) return null
 
