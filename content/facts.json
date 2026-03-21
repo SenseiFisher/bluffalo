@@ -3,600 +3,3519 @@
     "content_id": "FACT_001",
     "fact_template": "The shortest war in history lasted only _______ minutes.",
     "truth_keyword": "38",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_002",
     "fact_template": "A group of flamingos is called a _______.",
     "truth_keyword": "flamboyance",
-    "metadata": { "difficulty": "Medium", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_003",
     "fact_template": "Honey never spoils — archaeologists have found 3000-year-old honey in Egyptian tombs that was still _______.",
     "truth_keyword": "edible",
-    "metadata": { "difficulty": "Easy", "category": "Food" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_004",
     "fact_template": "The Eiffel Tower can grow up to _______ centimetres taller in summer due to thermal expansion.",
     "truth_keyword": "15",
-    "metadata": { "difficulty": "Medium", "category": "Science" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_005",
     "fact_template": "Scotland's national animal is the _______.",
     "truth_keyword": "unicorn",
-    "metadata": { "difficulty": "Medium", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_006",
     "fact_template": "A day on _______ is longer than a year on it.",
     "truth_keyword": "Venus",
-    "metadata": { "difficulty": "Medium", "category": "Science" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_007",
     "fact_template": "The average person walks the equivalent of _______ times around the Earth in a lifetime.",
     "truth_keyword": "five",
-    "metadata": { "difficulty": "Hard", "category": "Human Body" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Human Body"
+    }
   },
   {
     "content_id": "FACT_008",
     "fact_template": "Cleopatra lived closer in time to the Moon landing than to the construction of the _______.",
     "truth_keyword": "Great Pyramid",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_009",
     "fact_template": "The inventor of the Pringles can is buried inside one — his ashes were placed in a _______ container.",
     "truth_keyword": "Pringles",
-    "metadata": { "difficulty": "Medium", "category": "Food" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_010",
     "fact_template": "Wombats are the only animals in the world that produce _______ shaped droppings.",
     "truth_keyword": "cube",
-    "metadata": { "difficulty": "Easy", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_011",
     "fact_template": "The full name of Los Angeles is El Pueblo de Nuestra Señora la Reina de los Ángeles del Río de _______.",
     "truth_keyword": "Porciúncula",
-    "metadata": { "difficulty": "Hard", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_012",
     "fact_template": "Octopuses have _______ hearts.",
     "truth_keyword": "three",
-    "metadata": { "difficulty": "Easy", "category": "Animals" }
-  },
-  {
-    "content_id": "FACT_013",
-    "fact_template": "The word 'nerd' was first used by Dr. Seuss in his 1950 book _______.",
-    "truth_keyword": "If I Ran the Zoo",
-    "metadata": { "difficulty": "Hard", "category": "Language" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_014",
     "fact_template": "A bolt of lightning is five times hotter than the surface of the _______.",
     "truth_keyword": "sun",
-    "metadata": { "difficulty": "Medium", "category": "Science" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_015",
     "fact_template": "The country with the most natural lakes in the world is _______.",
     "truth_keyword": "Canada",
-    "metadata": { "difficulty": "Medium", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_016",
     "fact_template": "Bananas are technically _______ from a botanical standpoint.",
     "truth_keyword": "berries",
-    "metadata": { "difficulty": "Easy", "category": "Food" }
-  },
-  {
-    "content_id": "FACT_017",
-    "fact_template": "The longest English word you can type using only the top row of a keyboard is _______.",
-    "truth_keyword": "typewriter",
-    "metadata": { "difficulty": "Medium", "category": "Language" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_018",
     "fact_template": "Crows can recognize and remember human _______ for years.",
     "truth_keyword": "faces",
-    "metadata": { "difficulty": "Easy", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_019",
     "fact_template": "The Great Wall of China is NOT visible from _______ with the naked eye.",
     "truth_keyword": "space",
-    "metadata": { "difficulty": "Easy", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_020",
     "fact_template": "Nintendo was founded in _______ and originally sold playing cards.",
     "truth_keyword": "1889",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
-  },
-  {
-    "content_id": "FACT_021",
-    "fact_template": "The Oxford English Dictionary added the word _______ in 2001, making it the first emoji-inspired word.",
-    "truth_keyword": "unfriend",
-    "metadata": { "difficulty": "Hard", "category": "Language" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_022",
     "fact_template": "A group of owls is called a _______.",
     "truth_keyword": "parliament",
-    "metadata": { "difficulty": "Medium", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_023",
     "fact_template": "The average cloud weighs about _______ pounds.",
     "truth_keyword": "1.1 million",
-    "metadata": { "difficulty": "Hard", "category": "Science" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_024",
     "fact_template": "Humans share _______ percent of their DNA with bananas.",
     "truth_keyword": "60",
-    "metadata": { "difficulty": "Medium", "category": "Science" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_025",
     "fact_template": "The man who invented _______ was afraid of the dark.",
     "truth_keyword": "the light bulb",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_026",
     "fact_template": "A snail can sleep for up to _______ years.",
     "truth_keyword": "three",
-    "metadata": { "difficulty": "Hard", "category": "Animals" }
-  },
-  {
-    "content_id": "FACT_027",
-    "fact_template": "The shortest complete sentence in the English language is _______.",
-    "truth_keyword": "Go.",
-    "metadata": { "difficulty": "Easy", "category": "Language" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_028",
     "fact_template": "Polar bear fur is actually _______ in color, not white.",
     "truth_keyword": "transparent",
-    "metadata": { "difficulty": "Medium", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_029",
     "fact_template": "The human nose can detect over _______ trillion different scents.",
     "truth_keyword": "one",
-    "metadata": { "difficulty": "Hard", "category": "Human Body" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Human Body"
+    }
   },
   {
     "content_id": "FACT_030",
     "fact_template": "The country of _______ has more pyramids than Egypt.",
     "truth_keyword": "Sudan",
-    "metadata": { "difficulty": "Hard", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_031",
     "fact_template": "A jiffy is an actual unit of time equal to _______ of a second.",
     "truth_keyword": "one hundredth",
-    "metadata": { "difficulty": "Medium", "category": "Science" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_032",
     "fact_template": "The first product to have a _______ scanned was a pack of Wrigley's chewing gum in 1974.",
     "truth_keyword": "barcode",
-    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_033",
     "fact_template": "Lobsters were once so plentiful they were used as _______ in colonial America.",
     "truth_keyword": "fertilizer",
-    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_034",
     "fact_template": "The leg bones of a bat are so thin that no bat can _______ from a standing position.",
     "truth_keyword": "walk",
-    "metadata": { "difficulty": "Hard", "category": "Animals" }
-  },
-  {
-    "content_id": "FACT_035",
-    "fact_template": "The first recorded use of the word 'hello' as a greeting dates to _______ when the telephone was invented.",
-    "truth_keyword": "1826",
-    "metadata": { "difficulty": "Hard", "category": "Language" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_036",
     "fact_template": "There are more possible iterations of a game of chess than there are _______ in the observable universe.",
     "truth_keyword": "atoms",
-    "metadata": { "difficulty": "Easy", "category": "Science" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_037",
     "fact_template": "The world's oldest known recipe is for _______.",
     "truth_keyword": "beer",
-    "metadata": { "difficulty": "Medium", "category": "Food" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_038",
     "fact_template": "A blue whale's heart is the size of a small _______.",
     "truth_keyword": "car",
-    "metadata": { "difficulty": "Easy", "category": "Animals" }
-  },
-  {
-    "content_id": "FACT_039",
-    "fact_template": "The sentence 'The quick brown fox jumps over the lazy dog' uses every letter of the alphabet — this is called a _______.",
-    "truth_keyword": "pangram",
-    "metadata": { "difficulty": "Easy", "category": "Language" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_040",
     "fact_template": "Butterflies taste with their _______.",
     "truth_keyword": "feet",
-    "metadata": { "difficulty": "Easy", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_041",
     "fact_template": "The Great Fire of London in 1666 destroyed most of the city but killed only _______ people.",
     "truth_keyword": "six",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_042",
-    "fact_template": "Technically, _______ is not a color — it's the absence of all color.",
-    "truth_keyword": "black",
-    "metadata": { "difficulty": "Medium", "category": "Science" }
+    "fact_template": "Technically, the color black is not a color — it is the absence of all color, while white is made up of _______ combined.",
+    "truth_keyword": "all colors",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_043",
     "fact_template": "The tongue of a blue whale weighs as much as an adult _______.",
     "truth_keyword": "elephant",
-    "metadata": { "difficulty": "Medium", "category": "Animals" }
-  },
-  {
-    "content_id": "FACT_044",
-    "fact_template": "The dot over the letters 'i' and 'j' is called a _______.",
-    "truth_keyword": "tittle",
-    "metadata": { "difficulty": "Hard", "category": "Language" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_045",
     "fact_template": "Oxford University is older than the _______ Empire.",
     "truth_keyword": "Aztec",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
-  },
-  {
-    "content_id": "FACT_046",
-    "fact_template": "The only letter that doesn't appear in any U.S. state name is _______.",
-    "truth_keyword": "Q",
-    "metadata": { "difficulty": "Medium", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_047",
     "fact_template": "Ketchup was sold as a _______ in the 1830s.",
     "truth_keyword": "medicine",
-    "metadata": { "difficulty": "Medium", "category": "Food" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_048",
     "fact_template": "The plastic tip at the end of a shoelace is called an _______.",
     "truth_keyword": "aglet",
-    "metadata": { "difficulty": "Hard", "category": "Language" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Language"
+    }
   },
   {
     "content_id": "FACT_049",
     "fact_template": "The world's largest desert is _______, not the Sahara.",
     "truth_keyword": "Antarctica",
-    "metadata": { "difficulty": "Hard", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_050",
     "fact_template": "Sharks are older than _______ — they existed before trees evolved.",
     "truth_keyword": "trees",
-    "metadata": { "difficulty": "Medium", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_051",
     "fact_template": "The first _______ was invented in 1908 and was made of silk.",
     "truth_keyword": "tea bag",
-    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_052",
     "fact_template": "In space, you cannot _______ because there's no air to create a sound wave.",
     "truth_keyword": "cry",
-    "metadata": { "difficulty": "Hard", "category": "Science" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_053",
     "fact_template": "The average person produces enough _______ in their lifetime to fill two swimming pools.",
     "truth_keyword": "saliva",
-    "metadata": { "difficulty": "Hard", "category": "Human Body" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Human Body"
+    }
   },
   {
     "content_id": "FACT_054",
     "fact_template": "Peanuts are not actually _______ — they are legumes.",
     "truth_keyword": "nuts",
-    "metadata": { "difficulty": "Easy", "category": "Food" }
-  },
-  {
-    "content_id": "FACT_055",
-    "fact_template": "The fear of long words is called _______.",
-    "truth_keyword": "hippopotomonstrosesquippedaliophobia",
-    "metadata": { "difficulty": "Hard", "category": "Language" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_056",
     "fact_template": "Alaska is simultaneously the most northern, most western, AND most _______ state in the US.",
     "truth_keyword": "eastern",
-    "metadata": { "difficulty": "Hard", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_057",
     "fact_template": "The smell of rain is called _______.",
     "truth_keyword": "petrichor",
-    "metadata": { "difficulty": "Medium", "category": "Science" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_058",
     "fact_template": "Sloths can hold their breath longer than _______, up to 40 minutes.",
     "truth_keyword": "dolphins",
-    "metadata": { "difficulty": "Hard", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_059",
     "fact_template": "Marie Curie's notebooks are still too _______ to handle safely without protection.",
     "truth_keyword": "radioactive",
-    "metadata": { "difficulty": "Easy", "category": "Science" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_060",
     "fact_template": "The original name for the search engine Google was _______.",
     "truth_keyword": "BackRub",
-    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_061",
     "fact_template": "Cats have a dedicated _______ meow they use only to communicate with humans.",
     "truth_keyword": "solicitation",
-    "metadata": { "difficulty": "Hard", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_062",
     "fact_template": "The first item ever sold on eBay was a broken _______ for $14.83.",
     "truth_keyword": "laser pointer",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_063",
     "fact_template": "The shortest war ever fought was between _______ and Zanzibar.",
     "truth_keyword": "Britain",
-    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_064",
     "fact_template": "Figs are not technically a _______ — they are an inverted flower cluster.",
     "truth_keyword": "fruit",
-    "metadata": { "difficulty": "Hard", "category": "Food" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_065",
     "fact_template": "Starfish don't have a _______— they absorb oxygen directly through their skin.",
     "truth_keyword": "brain",
-    "metadata": { "difficulty": "Easy", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_066",
     "fact_template": "The number of possible shuffles of a deck of 52 cards is greater than the number of _______ in the universe.",
     "truth_keyword": "stars",
-    "metadata": { "difficulty": "Hard", "category": "Science" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_067",
     "fact_template": "The first known _______ game was played in China around 2300 BC.",
     "truth_keyword": "domino",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_068",
     "fact_template": "The city of _______ has more canals than Venice.",
     "truth_keyword": "Birmingham",
-    "metadata": { "difficulty": "Hard", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_069",
-    "fact_template": "Humans are the only animals that blush — this is caused by a rush of _______ to the face.",
-    "truth_keyword": "adrenaline",
-    "metadata": { "difficulty": "Medium", "category": "Human Body" }
+    "fact_template": "Humans are the only animals that _______.",
+    "truth_keyword": "blush",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Human Body"
+    }
   },
   {
     "content_id": "FACT_070",
     "fact_template": "The Mona Lisa has no visible _______ or eyelashes.",
     "truth_keyword": "eyebrows",
-    "metadata": { "difficulty": "Easy", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_071",
     "fact_template": "Coca-Cola was originally green because of the color of the _______ used in the original recipe.",
     "truth_keyword": "coca leaves",
-    "metadata": { "difficulty": "Hard", "category": "Food" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_072",
     "fact_template": "The Hawaiian alphabet has only _______ letters.",
     "truth_keyword": "13",
-    "metadata": { "difficulty": "Medium", "category": "Language" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Language"
+    }
   },
   {
     "content_id": "FACT_073",
     "fact_template": "Horned lizards can squirt _______ from their eyes as a defense mechanism.",
     "truth_keyword": "blood",
-    "metadata": { "difficulty": "Medium", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_074",
     "fact_template": "The average person will spend six months of their life waiting for _______ to turn green.",
     "truth_keyword": "red lights",
-    "metadata": { "difficulty": "Medium", "category": "Human Body" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Human Body"
+    }
   },
   {
     "content_id": "FACT_075",
     "fact_template": "Wyoming and _______ are the only two US states that are perfect rectangles.",
     "truth_keyword": "Colorado",
-    "metadata": { "difficulty": "Medium", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_076",
     "fact_template": "The world record for the most _______ eaten in one minute is 9.",
     "truth_keyword": "ghost peppers",
-    "metadata": { "difficulty": "Medium", "category": "Food" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_077",
     "fact_template": "Cows have best friends and become _______ when separated from them.",
     "truth_keyword": "stressed",
-    "metadata": { "difficulty": "Easy", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_078",
     "fact_template": "The inventor of the World Wide Web, Tim Berners-Lee, originally called it _______.",
     "truth_keyword": "Mesh",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_079",
     "fact_template": "The first computer bug was an actual _______ found in a Harvard computer in 1947.",
     "truth_keyword": "moth",
-    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_080",
     "fact_template": "In Switzerland it is illegal to own just one _______ because they are so social.",
     "truth_keyword": "guinea pig",
-    "metadata": { "difficulty": "Hard", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_081",
     "fact_template": "The average person walks about _______ steps per day.",
     "truth_keyword": "8000",
-    "metadata": { "difficulty": "Easy", "category": "Human Body" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Human Body"
+    }
   },
   {
     "content_id": "FACT_082",
     "fact_template": "Mount Everest is not the closest point to outer space — that honor goes to Mount _______.",
     "truth_keyword": "Chimborazo",
-    "metadata": { "difficulty": "Hard", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_083",
     "fact_template": "A group of cats is called a _______.",
     "truth_keyword": "clowder",
-    "metadata": { "difficulty": "Hard", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_084",
     "fact_template": "The word 'salary' comes from the Latin word for _______ because Roman soldiers were paid in it.",
     "truth_keyword": "salt",
-    "metadata": { "difficulty": "Medium", "category": "Language" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Language"
+    }
   },
   {
     "content_id": "FACT_085",
     "fact_template": "Russia has a larger land area than the entire surface of _______.",
     "truth_keyword": "Pluto",
-    "metadata": { "difficulty": "Hard", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_086",
     "fact_template": "The first microwave oven was called the _______ Radarange.",
     "truth_keyword": "Raytheon",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_087",
     "fact_template": "Elephants are the only animals that cannot _______.",
     "truth_keyword": "jump",
-    "metadata": { "difficulty": "Easy", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_088",
     "fact_template": "The tongue print of every human is as unique as their _______.",
     "truth_keyword": "fingerprint",
-    "metadata": { "difficulty": "Medium", "category": "Human Body" }
-  },
-  {
-    "content_id": "FACT_089",
-    "fact_template": "The longest word in the English language with no repeated letters is _______.",
-    "truth_keyword": "uncopyrightable",
-    "metadata": { "difficulty": "Hard", "category": "Language" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Human Body"
+    }
   },
   {
     "content_id": "FACT_090",
     "fact_template": "The country with the longest coastline in the world is _______.",
     "truth_keyword": "Canada",
-    "metadata": { "difficulty": "Medium", "category": "Geography" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Geography"
+    }
   },
   {
     "content_id": "FACT_091",
     "fact_template": "The average lightning bolt is only about _______ inches wide.",
     "truth_keyword": "one",
-    "metadata": { "difficulty": "Hard", "category": "Science" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_092",
     "fact_template": "Cleopatra lived closer in time to the _______ than to the construction of the Great Pyramid.",
     "truth_keyword": "iPhone",
-    "metadata": { "difficulty": "Medium", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_093",
     "fact_template": "Mosquitoes are attracted to people who have recently eaten _______.",
     "truth_keyword": "bananas",
-    "metadata": { "difficulty": "Hard", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_094",
     "fact_template": "The odds of being killed by a vending machine are higher than the odds of being killed by a _______.",
     "truth_keyword": "shark",
-    "metadata": { "difficulty": "Medium", "category": "Science" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_095",
     "fact_template": "The first known novel ever written was 'The Tale of Genji,' written in Japan around the year _______ by a woman.",
     "truth_keyword": "1000",
-    "metadata": { "difficulty": "Hard", "category": "Historical Oddities" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Historical Oddities"
+    }
   },
   {
     "content_id": "FACT_096",
     "fact_template": "In Japan, letting a sumo wrestler make your baby _______ is considered good luck.",
     "truth_keyword": "cry",
-    "metadata": { "difficulty": "Medium", "category": "Sports" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Sports"
+    }
   },
   {
     "content_id": "FACT_097",
     "fact_template": "The most expensive spice in the world by weight is _______.",
     "truth_keyword": "saffron",
-    "metadata": { "difficulty": "Easy", "category": "Food" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "Food"
+    }
   },
   {
     "content_id": "FACT_098",
     "fact_template": "A group of porcupines is called a _______.",
     "truth_keyword": "prickle",
-    "metadata": { "difficulty": "Hard", "category": "Animals" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Animals"
+    }
   },
   {
     "content_id": "FACT_099",
     "fact_template": "The Space Shuttle's engines were shut down _______ seconds before landing.",
     "truth_keyword": "zero",
-    "metadata": { "difficulty": "Hard", "category": "Science" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Science"
+    }
   },
   {
     "content_id": "FACT_100",
     "fact_template": "Competitive eating champion Takeru Kobayashi once ate _______ hot dogs in 10 minutes.",
     "truth_keyword": "110",
-    "metadata": { "difficulty": "Hard", "category": "Sports" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "Sports"
+    }
+  },
+  {
+    "content_id": "FACT_101",
+    "fact_template": "In 2013, Dell issued a recall after customers complained their laptops smelled like _______.",
+    "truth_keyword": "cat urine",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_102",
+    "fact_template": "According to a University of Jena study, the people who have the most memorable faces are _______ people.",
+    "truth_keyword": "ugly",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_103",
+    "fact_template": "In October of 2013, eight sixth-graders from a New York college prep school were hospitalized after someone released _______ in a classroom.",
+    "truth_keyword": "Axe body spray",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_104",
+    "fact_template": "The post office in Port Vila, Vanuatu is unusual because it is _______.",
+    "truth_keyword": "underwater",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_105",
+    "fact_template": "The Kila Raipur Sports Festival in Punjab, India includes a dangerous event where participants lie on the ground and allow a tractor to _______ them.",
+    "truth_keyword": "drive over",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_106",
+    "fact_template": "After an allergic reaction to steroids used to treat asthma, a 28-year-old woman started growing _______ on her head instead of hair.",
+    "truth_keyword": "fingernails",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_108",
+    "fact_template": "The city of Olney, Illinois organizes an annual event in order to _______ squirrels.",
+    "truth_keyword": "count",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_109",
+    "fact_template": "An auto repair shop in Florence, New Jersey claims to house an operational toilet once owned by _______.",
+    "truth_keyword": "Hitler",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_110",
+    "fact_template": "A Kickstarter campaign met its $30,000 goal on April 7, 2012 for its shoes designed for _______.",
+    "truth_keyword": "atheists",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_111",
+    "fact_template": "Kevin Spacey’s older brother is a _______ impersonator.",
+    "truth_keyword": "Rod Stewart",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_112",
+    "fact_template": "Andrew Wilson, a man from Branson, Missouri, legally changed his name to simply _______.",
+    "truth_keyword": "They",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_113",
+    "fact_template": "Under Peter the Great, noblemen had to pay 100 rubles a year for a _______ license.",
+    "truth_keyword": "beard",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_114",
+    "fact_template": "In 2008, a couple was killed in South Africa while having sex on a _______.",
+    "truth_keyword": "railroad track",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_115",
+    "fact_template": "In the 16th century, gin was referred to as the Mother’s _______.",
+    "truth_keyword": "Ruin",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_116",
+    "fact_template": "Amerigo Vespucci, the man for whom America was named, was a _______ dealer.",
+    "truth_keyword": "pickle",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_117",
+    "fact_template": "Walter Arnold received the world’s first speeding ticket in 1896 for going _______ miles per hour.",
+    "truth_keyword": "8",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_119",
+    "fact_template": "Frank Hayes is the first jockey to win a race while _______.",
+    "truth_keyword": "dead",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_120",
+    "fact_template": "Tashirojima is an island off of Japan that is completely overrun by _______.",
+    "truth_keyword": "cats",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_121",
+    "fact_template": "The Isle of Man flag depicts three _______ interlinked together.",
+    "truth_keyword": "legs",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_123",
+    "fact_template": "Maryland’s official state sport is _______.",
+    "truth_keyword": "jousting",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_124",
+    "fact_template": "In 1967, a small town in Ecuador elected an inanimate object mayor. The elected mayor was a _______.",
+    "truth_keyword": "foot powder",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_125",
+    "fact_template": "A group known as the “Robin Hooders” in Keene, New Hampshire pay for other people’s _______.",
+    "truth_keyword": "parking meters",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_126",
+    "fact_template": "As a way to protest Belarus’ police state, a Swedish group dropped hundreds of _______ from an airplane.",
+    "truth_keyword": "teddy bears",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_127",
+    "fact_template": "A man in western Pennsylvania got a DUI for having an open can of beer while riding a _______.",
+    "truth_keyword": "lawn mower",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_128",
+    "fact_template": "Anatidaephobia is the fear that somewhere in the world a _______ is watching you.",
+    "truth_keyword": "duck",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_129",
+    "fact_template": "For his voiceover work in Texas Chainsaw Massacre, John Larroquette was paid not with money, but with _______.",
+    "truth_keyword": "marijuana",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_130",
+    "fact_template": "Famed American poet Charles Bukowski’s tombstone is engraved with the words “Don’t _______.”",
+    "truth_keyword": "Try",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_131",
+    "fact_template": "Huggies Brazil developed a phone app that tells you when a baby’s diaper is wet. It’s called _______.",
+    "truth_keyword": "TweetPee",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_132",
+    "fact_template": "A beaver’s anal secretions can be used as a _______ substitute in some foods.",
+    "truth_keyword": "vanilla",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_133",
+    "fact_template": "A spectator in an Illinois courtroom was sentenced to six months in jail for _______ during a trial.",
+    "truth_keyword": "yawning",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_134",
+    "fact_template": "The German Primate Center conducted a study called “Why Female Monkeys _______ During Sex.”",
+    "truth_keyword": "Shout",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_135",
+    "fact_template": "According to a Logitech study, 49% of lost remote controls are found in the couch, while 4% are found in the _______.",
+    "truth_keyword": "fridge",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_136",
+    "fact_template": "In 2010, Customs officers on the Norway-Sweden border intercepted a truck trying to smuggle 28 tons of _______ from China.",
+    "truth_keyword": "garlic",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_137",
+    "fact_template": "The French have a pastry called “Nun’s _______.”",
+    "truth_keyword": "Fart",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_138",
+    "fact_template": "Alexander the Great made his men _______ before a battle.",
+    "truth_keyword": "shave",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_141",
+    "fact_template": "A sequel to Beetlejuice titled Beetlejuice Goes _______ was written but never produced.",
+    "truth_keyword": "Hawaiian",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_142",
+    "fact_template": "An eight-foot-tall _______ washed up ashore a Florida beach in 2011.",
+    "truth_keyword": "Lego man",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_143",
+    "fact_template": "Freddie Mercury backed out of a duet with Michael Jackson because Jackson brought a _______ to the recording studio.",
+    "truth_keyword": "llama",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_144",
+    "fact_template": "People in Damariscotta, Maine hold an annual race where they use _______ as boats.",
+    "truth_keyword": "pumpkins",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_145",
+    "fact_template": "An Indiana woman sued a church cemetery because they refused to install her late husband’s tombstone shaped like a _______.",
+    "truth_keyword": "couch",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_146",
+    "fact_template": "Jacobite Cruises purchased unusual insurance to protect it from damage caused by _______.",
+    "truth_keyword": "Nessie",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_147",
+    "fact_template": "Forest Whitaker has three daughters (Sonnet, True and Autumn) and a son named _______.",
+    "truth_keyword": "Ocean",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_148",
+    "fact_template": "There is a Stonehenge replica in Alliance, Nebraska built entirely out of _______.",
+    "truth_keyword": "cars",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_150",
+    "fact_template": "A Florida man choked to death on cockroaches he ate while trying to win a _______.",
+    "truth_keyword": "python",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_151",
+    "fact_template": "At the Sao Joao festival in Portugal, you hit people over the head with a _______.",
+    "truth_keyword": "hammer",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_153",
+    "fact_template": "William Shatner raised $25,000 for Habitat for Humanity by selling his _______.",
+    "truth_keyword": "kidney stone",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_154",
+    "fact_template": "For one day in 1998, Topeka, Kansas renamed itself _______.",
+    "truth_keyword": "ToPikachu",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_155",
+    "fact_template": "There was once a fourth member of Kellogg’s Rice Krispies mascot gang. Originally it was Snap, Crackle, Pop and _______.",
+    "truth_keyword": "Pow",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_156",
+    "fact_template": "In 2006, the wax museum Madame Tussaud’s in New York City introduced its first wax _______.",
+    "truth_keyword": "baby",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_157",
+    "fact_template": "In 2007, a woman with a rare disorder that causes her to be sexually attracted to inanimate objects married _______.",
+    "truth_keyword": "the Eiffel Tower",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_158",
+    "fact_template": "On his own website, magician David Blaine once wrote, “The most courageous act a man can do is _______.”",
+    "truth_keyword": "cry",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_159",
+    "fact_template": "The fans of musician Josh Groban are called _______.",
+    "truth_keyword": "Grobanites",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_160",
+    "fact_template": "The sound of E.T. walking was made by someone squishing _______.",
+    "truth_keyword": "Jell-o",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_162",
+    "fact_template": "Britt, Iowa annually crowns a King and Queen _______.",
+    "truth_keyword": "Hobo",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_163",
+    "fact_template": "The University of Victoria offers a physical education class called The Science of _______.",
+    "truth_keyword": "Batman",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_164",
+    "fact_template": "A 2013 Pakistani game show caused a controversy when their grand prize was a _______.",
+    "truth_keyword": "baby",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_165",
+    "fact_template": "The Lehigh Valley IronPigs, a minor league baseball team, held a contest where the prize was a voucher for a _______.",
+    "truth_keyword": "funeral",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_166",
+    "fact_template": "Every year residents in Ivrea, Italy reenact a historical battle of their region, and instead of replica weapons, they use _______.",
+    "truth_keyword": "oranges",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_167",
+    "fact_template": "The mayor of Rabbit Hash, KY is a _______.",
+    "truth_keyword": "dog",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_168",
+    "fact_template": "Nigeria’s version of Cookie Monster can’t stop eating _______.",
+    "truth_keyword": "yams",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_169",
+    "fact_template": "While president of the United States, John Adams had a dog named Juno and a dog named _______.",
+    "truth_keyword": "Satan",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_170",
+    "fact_template": "Tara Reid once said, “I make Jessica Simpson look like a _______ scientist.”",
+    "truth_keyword": "rock",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_171",
+    "fact_template": "Advanced Comfort Technology makes waterbeds for _______.",
+    "truth_keyword": "cows",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_172",
+    "fact_template": "Mexico’s Isla de las Munecas is an attraction known for having hundreds of _______ hanging  in its trees.",
+    "truth_keyword": "dolls",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_173",
+    "fact_template": "El Colacho is a Spanish festival where people dress up like the devil and jump over _______.",
+    "truth_keyword": "babies",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_174",
+    "fact_template": "In 2013, a U.S. Customs and Border Protection Officer was found guilty of granting citizenship in exchange for 200 _______.",
+    "truth_keyword": "egg rolls",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_175",
+    "fact_template": "A man in L.A. was arrested at a police-sponsored gun buyback when, instead of a gun, he tried to sell the cops a _______.",
+    "truth_keyword": "pipe bomb",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_176",
+    "fact_template": "Utah’s Lehi City Council approved a request to change the name of _______ Road because it sounded sort of dirty.",
+    "truth_keyword": "Morning Glory",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_177",
+    "fact_template": "It’s weird work but Jackie Samuel charges $60 an hour to _______.",
+    "truth_keyword": "snuggle",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_178",
+    "fact_template": "A British woman was arrested for hijacking a British ferry and yelling, “_______!”",
+    "truth_keyword": "I’m Jack Sparrow",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_179",
+    "fact_template": "In 2013, the Rethink ad agency placed red beer fridges throughout Europe that could only be opened by _______.",
+    "truth_keyword": "Canadians",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_180",
+    "fact_template": "The movie G.I. Jane was retitled _______ Female Soldier for Chinese audiences.",
+    "truth_keyword": "Satan",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_181",
+    "fact_template": "According to Forbes, the average income for an “ice cream taster” is $_______ a year.",
+    "truth_keyword": "56000",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_182",
+    "fact_template": "During a famous fire in 1567, a Norwegian man named Hans Steininger died after tripping over a _______.",
+    "truth_keyword": "beard",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_183",
+    "fact_template": "The inventor of the laxative Ex-Lax has the unusual name Max _______.",
+    "truth_keyword": "Kiss",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_184",
+    "fact_template": "To make it extremely difficult for telemarketers to pronounce, Tim Price changed his name in 2012 to Tim _______.",
+    "truth_keyword": "Ppppppppppprice",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_185",
+    "fact_template": "In 1976, boxing legend Muhammad Ali released an educational children’s album titled “Ali and His Gang Vs. Mr. _______.”",
+    "truth_keyword": "Tooth Decay",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_186",
+    "fact_template": "The area in the Pacific Ocean where great white sharks congregate every spring is called the White Shark _______.",
+    "truth_keyword": "Cafe",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_187",
+    "fact_template": "As a way to relieve stress for its students, Dalhousie University in 2012 introduced a _______ Room.",
+    "truth_keyword": "Puppy",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_188",
+    "fact_template": "In 2013, two teens from Sequoyah High School near Atlanta, Georgia won $5,000 scholarships for wearing _______ to prom.",
+    "truth_keyword": "duct tape",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_189",
+    "fact_template": "Loyola University offers a scholarship to any Catholic students with the last name _______.",
+    "truth_keyword": "Zolp",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_190",
+    "fact_template": "Edward Smith from Yelm, Washington garnered media attention for his claim that he’s had sex with over 1,000 _______.",
+    "truth_keyword": "cars",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_191",
+    "fact_template": "Cheap Chic Weddings is an annual contest in which participants make wedding dresses out of _______.",
+    "truth_keyword": "toilet paper",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_192",
+    "fact_template": "At 2:45 a.m. one day in June 2013, a man in Orlando, Florida was arrested for walking up to a police officer and punching his _______.",
+    "truth_keyword": "horse",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_193",
+    "fact_template": "Located near the town of Stanley, there’s a small village in England called No _______.",
+    "truth_keyword": "Place",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_194",
+    "fact_template": "A urologist wrote a self-help book titled The Joy of Un_______!",
+    "truth_keyword": "circumcising",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_196",
+    "fact_template": "For $180, the Shizuka New York skin care salon offers an unusual but traditional Japanese facial that is part rice bran and part _______.",
+    "truth_keyword": "bird poop",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_197",
+    "fact_template": "Edwin E. Holmes, a man with very specific interests, wrote the 254-page book “A History of _______.”",
+    "truth_keyword": "Thimbles",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_198",
+    "fact_template": "Barbara E. Mattick wrote a historical guide about bone _______ from the 19th and early 20th centuries.",
+    "truth_keyword": "Toothbrushes",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_199",
+    "fact_template": "Haribo sells a gummi in Germany that depicts a human butt with _______ growing out of it.",
+    "truth_keyword": "ears",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_200",
+    "fact_template": "Suffering from an extremely rare side effect after getting hip surgery in 2010, a Dutch man has alienated his family because he cannot stop _______.",
+    "truth_keyword": "laughing",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_201",
+    "fact_template": "Leo Granit Kraft is a world champion in an unusual sport that combines boxing and _______.",
+    "truth_keyword": "chess",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_202",
+    "fact_template": "Only about 14 games were ever made for the Gizmondo game system, including the game “_______ Balls.”",
+    "truth_keyword": "Sticky",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_203",
+    "fact_template": "The Nintendo DS had a dictionary program with the unfortunate name “_______ Dic.”",
+    "truth_keyword": "Touch",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_204",
+    "fact_template": "Country singer Blake Shelton once tweeted that he gashed his hand open while running from _______.",
+    "truth_keyword": "an ostrich",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_205",
+    "fact_template": "The Chinese plant “pyschotria elata” is also known as “_______ Lips.”",
+    "truth_keyword": "Hooker’s",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_206",
+    "fact_template": "During the summer of 2007, Pepsi sold a green-tinted cola in Japan called Pepsi Ice _______.",
+    "truth_keyword": "Cucumber",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_207",
+    "fact_template": "Over the course of 35 years, artist Scott Weaver has built a replica of the city of San Francisco using over 100,000 _______.",
+    "truth_keyword": "toothpicks",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_208",
+    "fact_template": "There is a mountain in Washington state officially named _______ Dick Mountain.",
+    "truth_keyword": "Whiskey",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_209",
+    "fact_template": "On October 24th, 2013 a man in Columbus, Georgia ran into his burning home in order to save his _______.",
+    "truth_keyword": "beer",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_210",
+    "fact_template": "A chemistry teacher in Indiana was fired in 2013 after he allegedly took several of his students on an unauthorized field trip to a _______.",
+    "truth_keyword": "strip club",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_211",
+    "fact_template": "Unagi Travel is an unusual Japanese travel agency that sends your _______ on vacations.",
+    "truth_keyword": "stuffed animals",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_212",
+    "fact_template": "Scottsdale Community College’s sports teams are oddly named the Fighting _______.",
+    "truth_keyword": "Artichokes",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_214",
+    "fact_template": "Since 2000, a couple in Queens, New York has been living rent-free in a _______ in exchange for taking care of it.",
+    "truth_keyword": "cemetery",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_215",
+    "fact_template": "A man in Wales, UK, is so obsessed with baked beans that in 1991 he legally changed his name to _______.",
+    "truth_keyword": "Captain Beany",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_216",
+    "fact_template": "In 1979, Clairol introduced and then almost immediately discontinued the oddly named “Touch of _______” shampoo.",
+    "truth_keyword": "Yogurt",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_217",
+    "fact_template": "Because he found Chinese food to be odd, during the 2008 Beijing Olympics, sprinter Usain Bolt said that he ended up eating 1,000 _______.",
+    "truth_keyword": "McNuggets",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_218",
+    "fact_template": "In an effort to push “slow TV,” Norway had a 12-hour block of programming in 2013 dedicated to _______.",
+    "truth_keyword": "knitting",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_219",
+    "fact_template": "With 88 catches, Canadian Aaron Gregg holds the Guinness World Record for _______ juggling.",
+    "truth_keyword": "chainsaw",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_220",
+    "fact_template": "Sponsored by the Calvary Lutheran Church, people in Fort Worth Texas can now attend the unconventional Church-in-a-_______.",
+    "truth_keyword": "Pub",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_222",
+    "fact_template": "Belmont University in Nashville has offered a class called “Oh, Look, a _______.”",
+    "truth_keyword": "Chicken",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_223",
+    "fact_template": "Although very unconventional, farmer William von Schneidau feeds his pigs _______.",
+    "truth_keyword": "marijuana",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_224",
+    "fact_template": "Ben and Jerry only started making ice cream because it was too expensive to make _______.",
+    "truth_keyword": "bagels",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_227",
+    "fact_template": "Owning 55,000 of them, Ted Turner has the world’s largest private collection of _______.",
+    "truth_keyword": "bison",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_230",
+    "fact_template": "Patented in 1890, U.S. Patent US435748 is for a mustache _______.",
+    "truth_keyword": "guard",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_231",
+    "fact_template": "From the fine print for the original iPod Shuffle: “Do not _______ iPod Shuffle.”",
+    "truth_keyword": "eat",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_232",
+    "fact_template": "Actual warning on Vidal Sassoon hair dryer: “Do not use while _______.”",
+    "truth_keyword": "sleeping",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_233",
+    "fact_template": "From warning label on Extenze male enhancement supplement: “Do not use if _______.”",
+    "truth_keyword": "pregnant",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_234",
+    "fact_template": "The Eiffel Tower replica in Paris, Texas is topped with a giant red _______.",
+    "truth_keyword": "cowboy hat",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_235",
+    "fact_template": "Scooby-Doo’s sister, _______-Doo, is Scrappy-Doo’s mother.",
+    "truth_keyword": "Ruby",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_236",
+    "fact_template": "In 2012, a 26-year-old man from London went on a mission to lick every _______ in the United Kingdom.",
+    "truth_keyword": "cathedral",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_237",
+    "fact_template": "Chosen, Shunned and Reckoning are all books in an unusual series about _______ vampires.",
+    "truth_keyword": "Amish",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_238",
+    "fact_template": "In 2013, a wealthy Michigan man bought the house next to his ex-wife and erected a giant bronze statue of a _______.",
+    "truth_keyword": "middle finger",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_239",
+    "fact_template": "There’s a novelty museum in Arlington, Massachusetts that only collects food that has been _______.",
+    "truth_keyword": "burnt",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_240",
+    "fact_template": "As a young student in Buenos Aires, Pope Francis worked as a _______.",
+    "truth_keyword": "bouncer",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_242",
+    "fact_template": "Roselawn, Indiana has a giant sundial built to resemble a _______.",
+    "truth_keyword": "woman’s leg",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_243",
+    "fact_template": "Phil Shaw is the founder of the bizarre sport called Extreme _______.",
+    "truth_keyword": "Ironing",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_244",
+    "fact_template": "On November 25, 2013, a 16-month-old Chinese girl underwent surgery to remove the unusual growth of a _______ in her ear canal.",
+    "truth_keyword": "dandelion",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_245",
+    "fact_template": "CELEBRITY TWEET!    9:43 PM - 1 Oct 13   @MikeTyson tweeted, “I’m a bad _______.”",
+    "truth_keyword": "bowler",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_246",
+    "fact_template": "CELEBRITY TWEET!    2:44 PM - 10 May 11   @THEGaryBusey tweeted, “I wish my ears were _______.”",
+    "truth_keyword": "cameras",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_247",
+    "fact_template": "In 2002, Bruce Willis sent 12,000 boxes of _______ to U.S. soldiers in Afghanistan.",
+    "truth_keyword": "Girl Scout cookies",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_248",
+    "fact_template": "The first text message ever sent was by Neil Papworth in 1992. He texted, “_______.”",
+    "truth_keyword": "Merry Christmas",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_249",
+    "fact_template": "In 2013, a 51-year-old Swedish inmate broke out of prison a day before his scheduled release so he could go see a _______.",
+    "truth_keyword": "dentist",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_252",
+    "fact_template": "According to scientists, tiger urine smells remarkably like _______.",
+    "truth_keyword": "buttered popcorn",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_253",
+    "fact_template": "CELEBRITY TWEET!   1:07 AM - 2 Aug 13   @taylorswift13 Tweeted “Thank you for tonight, Des Moines. I found endless amounts of _______ on my arms from hugging lots of you tonight.”",
+    "truth_keyword": "glitter",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_254",
+    "fact_template": "Because of a metal shortage during the war, the Oscar statuettes given out during World War II were made out of _______.",
+    "truth_keyword": "plaster",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_255",
+    "fact_template": "CELEBRITY TWEET!  2:49 PM - 15 Nov 13   Richard Simmons’ Twitter handle @TheWeightSaint Tweeted: “At the airport _______ everyone.”",
+    "truth_keyword": "hugging",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_256",
+    "fact_template": "In 2000, Australia had its largest ever online petition, which called for an end to rising _______ prices.",
+    "truth_keyword": "beer",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_257",
+    "fact_template": "When Paul Nelson and Andrew Hunter climbed Britain’s highest mountain in 2006, they made an unusual discovery hidden behind a pile of stones. It was a _______.",
+    "truth_keyword": "piano",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_258",
+    "fact_template": "The App of Icelanders is a phone app that warns you if the person you’re romantically interested in is a _______.",
+    "truth_keyword": "relative",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_259",
+    "fact_template": "In school, Sylvester Stallone was voted by his teachers as Most Likely to Go To _______.",
+    "truth_keyword": "The Electric Chair",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_260",
+    "fact_template": "In 1965, Hasbro made a sad-looking, crying doll dressed in tattered rags called Little Miss _______.",
+    "truth_keyword": "No Name",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_261",
+    "fact_template": "The electric chair was invented by a professional _______ named Alfred Southwick.",
+    "truth_keyword": "dentist",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_262",
+    "fact_template": "Although gross, chemist Sir Robert Cheseborough claimed he ate a spoonful of his invention, _______, every day.",
+    "truth_keyword": "Vaseline",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_263",
+    "fact_template": "The first thing eaten in outer space was _______.",
+    "truth_keyword": "applesauce",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_265",
+    "fact_template": "According to the International Code of Disease, the code Y92250 is the code for “when a patient is injured in an _______.”",
+    "truth_keyword": "art gallery",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_266",
+    "fact_template": "Marcella Hazan is the culinary guru who pioneered the unusual technique of cooking duck with a _______.",
+    "truth_keyword": "hair dryer",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_267",
+    "fact_template": "The rare condition known as “argyria” causes people’s skin to _______.",
+    "truth_keyword": "turn blue",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_268",
+    "fact_template": "Prop comic Gallagher, known for smashing watermelons with a sledgehammer, earned a college degree in the field of _______.",
+    "truth_keyword": "Chemical Engineering",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_270",
+    "fact_template": "In India you can buy a cola named Gau Jal that includes the bizarre ingredient _______.",
+    "truth_keyword": "cow urine",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_271",
+    "fact_template": "The sports teams at Freeport High School in Illinois are oddly named after an inanimate object. The teams are called the Freeport _______.",
+    "truth_keyword": "Pretzels",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_272",
+    "fact_template": "In a study done by author Stefan Gates, 44% of adults admitted to eating _______.",
+    "truth_keyword": "boogers",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_273",
+    "fact_template": "According to the National Oceanic and Atmospheric Association, small icebergs are officially called “growlers.” Medium icebergs go by the strange, two-word name “_______.”",
+    "truth_keyword": "bergy bits",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_274",
+    "fact_template": "On January 13, 2014, U.S. Secretary of State John Kerry presented to Russian Foreign Minister Sergei Lavrov the odd gift of two very large _______.",
+    "truth_keyword": "potatoes",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_275",
+    "fact_template": "During the mid to late-nineties, the town of Glastonbury was on a manhunt for the odd house intruder known as “The _______.”",
+    "truth_keyword": "Tickler",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_276",
+    "fact_template": "There is a riot police unit in the Russian town of Rostov-na-Donu that is composed entirely of _______.",
+    "truth_keyword": "twins",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_277",
+    "fact_template": "In 2000, a mafia boss in an Italian prison escaped his cell using only _______.",
+    "truth_keyword": "dental floss",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_279",
+    "fact_template": "Peter Gloystein, a German politician, resigned in 2005 after pouring wine on a _______.",
+    "truth_keyword": "homeless person",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_280",
+    "fact_template": "In 2003, Morocco made the highly unusual offer to send 2,000 _______ to assist the United States’ war effort in Iraq.",
+    "truth_keyword": "monkeys",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_281",
+    "fact_template": "During an airline flight in 1995, Dr. Angus Wallace and Dr. Tom Wong performed a successful chest drain on a passenger using a rubber tube, brandy, and a _______.",
+    "truth_keyword": "coat hanger",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_282",
+    "fact_template": "Oddly enough, Albert Einstein’s eyeballs can be found in a _______ in New York City.",
+    "truth_keyword": "safe deposit box",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_283",
+    "fact_template": "Dasypygal is an adjective meaning “having _______ buttocks.”",
+    "truth_keyword": "hairy",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_284",
+    "fact_template": "In a 2013 poll conducted by Public Policy Polling, 27% of voters thought _______ should be subjected to a special tax for being so annoying.",
+    "truth_keyword": "hipsters",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_285",
+    "fact_template": "In Nepal, two villages hold an annual 10-day _______ Festival.",
+    "truth_keyword": "Cursing",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_286",
+    "fact_template": "Reg Mellor is the reigning champion of a sport that just involves keeping a _______ in your pants.",
+    "truth_keyword": "ferret",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_287",
+    "fact_template": "Before becoming pope, Pope Pius II wrote an erotic novel titled The Tale of the _______.",
+    "truth_keyword": "Two Lovers",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_288",
+    "fact_template": "In the late 17th century, London was victimized by a man named Whipping Tom, who would randomly spank people and scream “_______!”",
+    "truth_keyword": "Spanko",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_289",
+    "fact_template": "Romano Mussolini, son of the fascist dictator Benito Mussolini, did not follow in his father’s footsteps. Instead, he made his living as a _______.",
+    "truth_keyword": "jazz musician",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_290",
+    "fact_template": "The inventor of the chocolate chip cookie traded her recipe to Nestlé in exchange for a lifetime supply of _______.",
+    "truth_keyword": "chocolate",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_291",
+    "fact_template": "The first reporting on the Wright Brothers’ flights appeared not in a newspaper or on radio, but in a small journal dedicated to the topic of _______.",
+    "truth_keyword": "beekeeping",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_292",
+    "fact_template": "Famed film director Alfred Hitchcock - the “Master of Suspense” - claimed, “I’m frightened of _______, worse than frightened, they revolt me.”",
+    "truth_keyword": "eggs",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_293",
+    "fact_template": "A 2013 survey conducted by Playtex revealed that 8% of Canadians have had sex in a _______.",
+    "truth_keyword": "canoe",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_294",
+    "fact_template": "The fishing company E21 makes a very peculiar fishing rod that is composed of 70% _______.",
+    "truth_keyword": "carrots",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_295",
+    "fact_template": "A study found that cows produce 5% more milk when they are given _______.",
+    "truth_keyword": "names",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_296",
+    "fact_template": "A science student in Nepal has created an innovative solar panel that is far cheaper to make than a traditional solar panel, because it’s made with _______.",
+    "truth_keyword": "human hair",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_297",
+    "fact_template": "Since 1912, South Dakota State University’s homecoming week has culminated in a celebration oddly named _______ Day.",
+    "truth_keyword": "Hobo",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_298",
+    "fact_template": "Ruppy the beagle is a very unusual dog because he can _______.",
+    "truth_keyword": "glow in the dark",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_299",
+    "fact_template": "The Snickers candy bar was named after its creator’s _______.",
+    "truth_keyword": "horse",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_300",
+    "fact_template": "After consuming antifreeze, a Maltese terrier in Australia had his life saved when vets then gave him _______ to drink.",
+    "truth_keyword": "vodka",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_301",
+    "fact_template": "A Brazillian environmental group launched a campaign in 2009 to save the rainforest by urging people to pee in _______.",
+    "truth_keyword": "the shower",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_302",
+    "fact_template": "A man in Proctor, Minnesota was arrested for driving a motorized _______ while drunk.",
+    "truth_keyword": "La-Z-Boy chair",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_304",
+    "fact_template": "George Frankel is the CEO of a Georgia-based company that will turn your dead relative’s ashes into _______.",
+    "truth_keyword": "a reef",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_305",
+    "fact_template": "The staff at the Edible Canada restaurant posted a sign in their bathroom that instructed men to _______.",
+    "truth_keyword": "sit when they pee",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_306",
+    "fact_template": "In 2009, a Russian man shocked the medical world when it was discovered he had a 5 centimeter long _______ growing in his lung.",
+    "truth_keyword": "tree branch",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_307",
+    "fact_template": "The Backyard Brains company sells a device that lets you control _______ with your mobile phone.",
+    "truth_keyword": "cockroaches",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_308",
+    "fact_template": "According to a Chinese myth, if a vampire comes across a sack of rice, he must _______.",
+    "truth_keyword": "count each grain",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_309",
+    "fact_template": "On the northwest tower of the Washington National Cathedral, there hangs a gargoyle made to resemble _______.",
+    "truth_keyword": "Darth Vader",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_310",
+    "fact_template": "Lake Superior State University offers a bizarre license. The license entitles you to hunt _______.",
+    "truth_keyword": "unicorns",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_311",
+    "fact_template": "On the Hawaiian island of Molokai, the post office allows visitors to mail _______ without any packaging.",
+    "truth_keyword": "coconuts",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_313",
+    "fact_template": "A study conducted at Tufts University by psychology grad student Nicholas Rule found that people have the ability to point out _______ in a crowd.",
+    "truth_keyword": "Mormons",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_314",
+    "fact_template": "Cambridge University economist Ha-Joon Chang holds an unpopular opinion. He insists that the _______ changed the world more than the Internet.",
+    "truth_keyword": "washing machine",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_315",
+    "fact_template": "When Roald Dahl died, he was buried alongside snooker cues, burgundy, chocolate, pencils, and a _______.",
+    "truth_keyword": "power saw",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_316",
+    "fact_template": "A man in Watertown, New York, claims to have been happily married for over 25 years to a _______.",
+    "truth_keyword": "mannequin",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_317",
+    "fact_template": "Calum Wright, while a student at UC Berkeley, started an organization named “Students Against _______ in Trees.”",
+    "truth_keyword": "Hippies",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_318",
+    "fact_template": "New Mexico state senator Duncan Scott successfully got a bill passed in the New Mexico senate requiring psychiatrists testifying in court to wear a _______.",
+    "truth_keyword": "wizard’s hat",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_319",
+    "fact_template": "UC Irvine brought 6,084 students together in 2012 to break the world record for largest _______ ever.",
+    "truth_keyword": "dodgeball game",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_320",
+    "fact_template": "Highway construction in Iceland was delayed in 2013 after advocates claimed the project would destroy the natural land where _______ live and thrive.",
+    "truth_keyword": "elves",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_321",
+    "fact_template": "A Rhode Island middle school discovered that some students were crushing Smarties candy and then snorting the dust. So they sent an email to parents, warning that a side effect of this activity could be _______ in their kids’ noses.",
+    "truth_keyword": "maggots",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_322",
+    "fact_template": "Near Vancouver, British Columbia, there is a mountain officially called _______ Mountain.",
+    "truth_keyword": "Unnecessary",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_323",
+    "fact_template": "According to a University of Barcelona study, surprisingly, 5% of people have absolutely no emotional response when they _______.",
+    "truth_keyword": "listen to music",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_324",
+    "fact_template": "In 1726, a British woman named Mary Toft convinced doctors that she had given birth to _______.",
+    "truth_keyword": "rabbits",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_325",
+    "fact_template": "Mohammed Khurshid Hussain holds a world record for his ability to _______ very quickly using only his nose.",
+    "truth_keyword": "type",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_326",
+    "fact_template": "Actor George C. Scott rejected his Oscar, calling the Academy Awards a \"two-hour _______ parade\".",
+    "truth_keyword": "meat",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_327",
+    "fact_template": "In Marfa, Texas, there is a full-size art installation shaped like a _______ store, built in the middle of the desert.",
+    "truth_keyword": "Prada",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_328",
+    "fact_template": "Ward Shelley and Alex Schweder’s art piece “In Orbit,” which was on display at a gallery in New York, featured two men living in a giant _______ for 10 days.",
+    "truth_keyword": "hamster wheel",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_331",
+    "fact_template": "The city of Lafayette, Louisiana has a public statue of a shirtless _______.",
+    "truth_keyword": "fireman",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_332",
+    "fact_template": "In 1518, hundreds of people in Strasbourg became afflicted with a bizarre condition that rendered them unable to stop _______.",
+    "truth_keyword": "dancing",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_333",
+    "fact_template": "Johnny Depp was made an honorary member of the Comanche Nation and given a descriptive Comanche name. His Comanche name, Mah-Woo-Meh, means _______.",
+    "truth_keyword": "shape shifter",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_334",
+    "fact_template": "In 2013 a zoo in China attempted to pass off a _______ as an African lion.",
+    "truth_keyword": "large dog",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_335",
+    "fact_template": "A Swedish man who works as a dishwasher receives disability benefits due to his unusual addiction to _______.",
+    "truth_keyword": "heavy metal music",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_336",
+    "fact_template": "Blair Tolman wrote a self-help book called _______ for Under a Dollar: 301 Ideas.",
+    "truth_keyword": "Dating",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_337",
+    "fact_template": "Bill Bennett made news in 2004 when he was able to sell just a single, ordinary _______ on eBay.",
+    "truth_keyword": "corn flake",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_338",
+    "fact_template": "In 2004, the CEO of Blockbuster mailed Reed Hastings, the CEO of Netflix, an odd package. He sent him a _______.",
+    "truth_keyword": "kitchen sink",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_339",
+    "fact_template": "During the 1990s, teachers in North Korea were, oddly enough, required to know how to _______.",
+    "truth_keyword": "play the accordion",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_340",
+    "fact_template": "Instead of having guard dogs, police in rural parts of China’s Xinjiang Province use _______.",
+    "truth_keyword": "geese",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_341",
+    "fact_template": "In 2013, the Romanian government, facing financial hardships, started taxing a group of people they had never taxed before. They started taxing _______.",
+    "truth_keyword": "witches",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_342",
+    "fact_template": "In 2013, researchers at the University of Tokyo developed the incendiary reflection, a mirror that makes it look like you’re _______.",
+    "truth_keyword": "smiling",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_343",
+    "fact_template": "Pamela Anderson wrote a cookbook titled How to Cook Without a _______.",
+    "truth_keyword": "Book",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_344",
+    "fact_template": "In 2004, the Trane Corporation sold pillows in Japan that were designed to combat loneliness. They were shaped like a _______.",
+    "truth_keyword": "woman’s lap",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_345",
+    "fact_template": "Budget hotel chain Travelodge reported that between 2006 and 2007 about 95% of sleepwalkers found in their hotels were _______ men.",
+    "truth_keyword": "naked",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_346",
+    "fact_template": "A man in Milford, Iowa, got fired from his job after he used a _______ to dislodge his Twix bar from the office vending machine.",
+    "truth_keyword": "forklift",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_347",
+    "fact_template": "Actor Eddie Murphy released a dance song in 1982 titled “Boogie in _______.”",
+    "truth_keyword": "Your Butt",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_348",
+    "fact_template": "At an annual festival in Laza, Spain, participants pelt each other with muddy rags filled with _______.",
+    "truth_keyword": "fire ants",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_349",
+    "fact_template": "The $6 million cathedral in Christchurch, New Zealand is made out of _______.",
+    "truth_keyword": "cardboard",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_350",
+    "fact_template": "The mountain logo on a package of Toblerone chocolate contains a hidden image of a _______.",
+    "truth_keyword": "bear",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_351",
+    "fact_template": "Coca-Cola once commissioned an Atari video game called Pepsi _______.",
+    "truth_keyword": "Invaders",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_352",
+    "fact_template": "According to a 2010 study, one child in the U.S. was injured every 46 minutes by a _______.",
+    "truth_keyword": "bounce house",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_353",
+    "fact_template": "Ahlgrim Acres is a nine hole miniature golf course oddly located in an Illinois _______.",
+    "truth_keyword": "funeral home",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_354",
+    "fact_template": "Psycho was the first American film to show a _______ on screen.",
+    "truth_keyword": "toilet flushing",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_355",
+    "fact_template": "One of Kim Jong Il’s many titles was “Invicible and Ever-Triumphant General and Highest Incarnation of the Revolutionary Comradely _______”.",
+    "truth_keyword": "Love",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_356",
+    "fact_template": "Miraculously, a man in Longview, Washington survived a harrowing event in 2014 when he was stuck in a _______ for ten seconds.",
+    "truth_keyword": "wood chipper",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_357",
+    "fact_template": "Country singer Trace Adkins went into rehab after getting into a fight while on a cruise ship. His opponent was a _______ of himself.",
+    "truth_keyword": "impersonator",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_358",
+    "fact_template": "There is an official clinical phobia name for the fear of your mother-in-law. It is called _______.",
+    "truth_keyword": "pentheraphobia",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_359",
+    "fact_template": "The New York Times issued a correction after incorrectly identifying Mario and Luigi as _______ instead of plumbers.",
+    "truth_keyword": "janitors",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_360",
+    "fact_template": "PETA has asked officials in Punxsutawney, Pennsylvania to replace Punxsutawney Phil, the Groundhog Day groundhog, with _______.",
+    "truth_keyword": "an animatronic groundhog",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_361",
+    "fact_template": "The real name of the Internet’s famous Grumpy Cat is _______.",
+    "truth_keyword": "Tardar Sauce",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_362",
+    "fact_template": "In autumn 2013, a company that owns parking lots in England temporarily allowed drivers to pay for parking not with money, but with _______.",
+    "truth_keyword": "chestnuts",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_363",
+    "fact_template": "Gloucestershire, England is home to the Cotswold Olimpicks, the highlight of which is the traditional _______-kicking competition.",
+    "truth_keyword": "shin",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_364",
+    "fact_template": "Moviegoers who use their cell phones at the Prince Charles Cinema in London are escorted out by people dressed as _______.",
+    "truth_keyword": "ninjas",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_365",
+    "fact_template": "Hugh Grant’s full name is Hugh John _______ Grant.",
+    "truth_keyword": "Mungo",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_366",
+    "fact_template": "Used in medical studies, a robot at the UK’s Health and Safety Laboratory goes by the name _______ Larry.",
+    "truth_keyword": "Vomiting",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_367",
+    "fact_template": "In 1988, George H. W. Bush celebrated Halloween by dressing up as _______.",
+    "truth_keyword": "himself",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_368",
+    "fact_template": "The unusual Chick and Sophie Major memorial scholarships are awarded to high school students who are good at _______.",
+    "truth_keyword": "duck calls",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_369",
+    "fact_template": "A man in Florida was arrested for calling 911 to complain that he wasn’t allowed to bring his _______ into a strip club.",
+    "truth_keyword": "cat",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_370",
+    "fact_template": "Chad Orzel wrote a book called How to Teach _______ to Your Dog.",
+    "truth_keyword": "Physics",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_371",
+    "fact_template": "The 1995 Diagram Prize for Oddest Book Title went to a book called Reusing Old _______.",
+    "truth_keyword": "Graves",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_372",
+    "fact_template": "When soccer player Stefan Schwarz signed with Sunderland in 1999, the team made sure that his contract specifically prohibited him from traveling to _______.",
+    "truth_keyword": "outer space",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_373",
+    "fact_template": "Evergreen Cemetery includes an odd statue of Jesus wearing _______.",
+    "truth_keyword": "cowboy boots",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_374",
+    "fact_template": "Benjamin Moore paint color 787 has the strange name Grandma’s _______.",
+    "truth_keyword": "Sweater",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_375",
+    "fact_template": "A Florida woman returned home one day in 2012 to discover that, strangely, her _______ had been stolen while neighbors just watched it happen.",
+    "truth_keyword": "driveway",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_376",
+    "fact_template": "On December 3, 2009, and March 30, 2010, rapper Eminem Tweeted a photo proving he was surprisingly really good at _______.",
+    "truth_keyword": "Donkey Kong",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_377",
+    "fact_template": "In 1990, before “Everybody Loves Raymond,” actor Peter Boyle starred in a failed TV pilot called _______ about a cop who turns into a talking bulldog.",
+    "truth_keyword": "Poochinski",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_378",
+    "fact_template": "The first and only dog to be given rank in the United States Armed Forces was named Sergeant _______.",
+    "truth_keyword": "Stubby",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_379",
+    "fact_template": "The lead singer of the heavy metal band Hatebeak is _______.",
+    "truth_keyword": "a parrot",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_381",
+    "fact_template": "You are experiencing the Mariko Aoki phenomenon when you have the urge to poop while _______.",
+    "truth_keyword": "in a bookstore",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_382",
+    "fact_template": "Metrophilia is sexual arousal caused by _______.",
+    "truth_keyword": "poetry",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_383",
+    "fact_template": "The rock band Queen was originally called _______.",
+    "truth_keyword": "Smile",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_385",
+    "fact_template": "The secret codename for the 1940s project that invented the microwave oven was _______.",
+    "truth_keyword": "Speedy Weenie",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_386",
+    "fact_template": "The man depicted on the Quaker Oats label has the official name _______.",
+    "truth_keyword": "Larry",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_387",
+    "fact_template": "Pepsi was originally sold under the name _______.",
+    "truth_keyword": "Brad’s Drink",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_388",
+    "fact_template": "About 180 miles south of New Zealand lies a remote island called _______.",
+    "truth_keyword": "Disappointment Island",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_389",
+    "fact_template": "In Gene Roddenberry's original Star Trek script, the starship was named the _______.",
+    "truth_keyword": "Yorktown",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_390",
+    "fact_template": "The game of bingo was originally called _______ in the United States.",
+    "truth_keyword": "beano",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_391",
+    "fact_template": "A dentist legally changed his first name to _______ in order to attract more patients.",
+    "truth_keyword": "Painless",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_392",
+    "fact_template": "Under Marine Corps uniform regulations, a male marine may not carry a _______ while in uniform.",
+    "truth_keyword": "umbrella",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_393",
+    "fact_template": "In the 1990s, a tobacco company sold cigarettes under the brand name _______.",
+    "truth_keyword": "Death",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_394",
+    "fact_template": "A company sells patented synthetic testicles for neutered pets under the brand name _______.",
+    "truth_keyword": "Neuticles",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_395",
+    "fact_template": "Dr. Francis Fesmire discovered that the most reliable cure for hiccups is a _______.",
+    "truth_keyword": "rectal massage",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_396",
+    "fact_template": "Wilma Flintstone's maiden name is _______.",
+    "truth_keyword": "Slaghoople",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_397",
+    "fact_template": "The strings of symbols used to represent swearing in comic strips are called a _______.",
+    "truth_keyword": "grawlix",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_398",
+    "fact_template": "Jim Henson originally planned to call Fraggle Rock _______.",
+    "truth_keyword": "Woozle World",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_399",
+    "fact_template": "In 2014, teachers at a school in England were banned from using _______ to mark students' work.",
+    "truth_keyword": "red pens",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_400",
+    "fact_template": "The Michelin Man's official name is _______.",
+    "truth_keyword": "Bibendum",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_401",
+    "fact_template": "In 1990, former first lady Barbara Bush wrote an official apology letter to _______.",
+    "truth_keyword": "Marge Simpson",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_402",
+    "fact_template": "McDonald's once tested a grilled pineapple sandwich called the _______, which lost a sales contest to the Filet-O-Fish.",
+    "truth_keyword": "Hula Burger",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_403",
+    "fact_template": "The Rhode Island School of Design's hockey mascot is a phallic shape named _______.",
+    "truth_keyword": "Scrotie",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_404",
+    "fact_template": "In South Africa, traffic lights are commonly called _______.",
+    "truth_keyword": "robots",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_405",
+    "fact_template": "Harry Houdini once publicly threatened to shoot all _______.",
+    "truth_keyword": "psychics",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_406",
+    "fact_template": "Donald Duck's full middle name is _______.",
+    "truth_keyword": "Fauntleroy",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_407",
+    "fact_template": "Michael J. Fox's actual middle name is _______.",
+    "truth_keyword": "Andrew",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_408",
+    "fact_template": "The world's strongest beer, brewed at 65% alcohol by volume, is called _______.",
+    "truth_keyword": "Armageddon",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_410",
+    "fact_template": "Before becoming a tech giant, Samsung originally started as a company that sold _______.",
+    "truth_keyword": "noodles",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_411",
+    "fact_template": "Dr. Seuss coined the term _______ in his 1950 children's book.",
+    "truth_keyword": "nerd",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_413",
+    "fact_template": "The first chimpanzee sent into space was named _______.",
+    "truth_keyword": "Ham",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_414",
+    "fact_template": "According to U.S. occupational data, the profession with the highest proportion of white workers is _______.",
+    "truth_keyword": "Veterinarian",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_415",
+    "fact_template": "Miley Cyrus's legal first name is _______.",
+    "truth_keyword": "Destiny",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_416",
+    "fact_template": "The fastest-growing baby name for girls in 2012 was _______.",
+    "truth_keyword": "Arya",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_417",
+    "fact_template": "There is a company called _______ that manufactures bullet-resistant groin protectors.",
+    "truth_keyword": "NutShellz",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_418",
+    "fact_template": "Cap'n Crunch's official first name is _______.",
+    "truth_keyword": "Horatio",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_419",
+    "fact_template": "According to the 2000 U.S. Census, the occupation with the highest divorce rate is _______.",
+    "truth_keyword": "Dancer",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_420",
+    "fact_template": "Q-tips were originally sold in 1926 under the name _______.",
+    "truth_keyword": "Q-tips",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_421",
+    "fact_template": "Kool-Aid was originally sold under the brand name _______.",
+    "truth_keyword": "Fruit Smack",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_422",
+    "fact_template": "In 1995, a company released a Kermit the Frog-inspired cologne called _______.",
+    "truth_keyword": "Amphibia",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_424",
+    "fact_template": "The Oxford Dictionaries' word of the year for 2013 was _______.",
+    "truth_keyword": "selfie",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_425",
+    "fact_template": "In the UK, the dance Americans call the Hokey Pokey is known as the _______.",
+    "truth_keyword": "Hokey Cokey",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_426",
+    "fact_template": "The winner of the 2012 World's Ugliest Dog Competition was named _______.",
+    "truth_keyword": "Mugly",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_427",
+    "fact_template": "A company sells an underwear insert that neutralizes flatulence odors, marketed as _______.",
+    "truth_keyword": "Subtle Butt",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_428",
+    "fact_template": "An Indian stuntman who attempted to cross a river on a zip-line attached to his ponytail died of a _______.",
+    "truth_keyword": "heart attack",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_429",
+    "fact_template": "When Milton Bradley acquired the rights to Twister, the game was originally called _______.",
+    "truth_keyword": "Pretzel",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_430",
+    "fact_template": "Teamsters union leader Jimmy Hoffa's unusual middle name was _______.",
+    "truth_keyword": "Riddle",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
+  },
+  {
+    "content_id": "FACT_431",
+    "fact_template": "A toy line featuring criminal characters with names like Dickie the Dealer is sold under the brand name _______.",
+    "truth_keyword": "Thuggies",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "Weird News"
+    }
   }
 ]
