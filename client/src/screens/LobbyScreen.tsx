@@ -28,7 +28,18 @@ export default function LobbyScreen() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex flex-col items-center p-4 pt-8">
       {/* Title */}
-      <h1 className="text-5xl font-black text-yellow-400 mb-2 tracking-tight">BLUFFALO</h1>
+      <h1 className="text-5xl font-black text-yellow-400 mb-2 tracking-tight">
+        BL
+        <span className="relative inline-block">
+          <img
+            src="/icon.png"
+            alt=""
+            className="absolute -top-10 left-1/2 -translate-x-1/2 h-11 drop-shadow-lg pointer-events-none"
+          />
+          U
+        </span>
+        FFALO
+      </h1>
       <p className="text-indigo-300 mb-8 text-sm">Waiting for players to join...</p>
 
       {/* Room Code */}

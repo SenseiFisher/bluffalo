@@ -90,7 +90,16 @@ export default function JoinScreen() {
       {/* Logo */}
       <div className="mb-10 text-center">
         <h1 className="text-7xl font-black text-yellow-400 tracking-tight drop-shadow-lg">
-          BLUFFALO
+          BL
+          <span className="relative inline-block">
+            <img
+              src="/icon.png"
+              alt=""
+              className="absolute -top-10 left-1/2 -translate-x-1/2 h-16 drop-shadow-lg pointer-events-none"
+            />
+            U
+          </span>
+          FFALO
         </h1>
         <p className="text-indigo-300 text-lg mt-2 font-medium">
           The Social Deception Game
