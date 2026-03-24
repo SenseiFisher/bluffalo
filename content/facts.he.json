@@ -1,0 +1,182 @@
+[
+  {
+    "content_id": "FACT_HE_001",
+    "fact_template": "לתמנון יש _______ לבבות.",
+    "truth_keyword": "שלושה",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_002",
+    "fact_template": "כרישים קדמו לעצים — הם התפתחו כ-_______ מיליון שנה לפני שצמחו עצים על פני כדור הארץ.",
+    "truth_keyword": "90",
+    "metadata": { "difficulty": "Hard", "category": "טבע" }
+  },
+  {
+    "content_id": "FACT_HE_003",
+    "fact_template": "ה-DNA של בני האדם זהה ב-_______ אחוזים ל-DNA של בננות.",
+    "truth_keyword": "50",
+    "metadata": { "difficulty": "Hard", "category": "מדע" }
+  },
+  {
+    "content_id": "FACT_HE_004",
+    "fact_template": "נמלים יכולות לשאת משקל כבד פי _______ ממשקלן.",
+    "truth_keyword": "50",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_005",
+    "fact_template": "כדי לייצר קילוגרם אחד של דבש, דבורות צריכות לבקר בכ-_______ מיליון פרחים.",
+    "truth_keyword": "4",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_006",
+    "fact_template": "הפיל הוא היונק היחיד שאינו יכול _______.",
+    "truth_keyword": "לקפץ",
+    "metadata": { "difficulty": "Easy", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_007",
+    "fact_template": "עכברושים יכולים לשרוד יותר זמן ללא מים מאשר _______.",
+    "truth_keyword": "גמלים",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_008",
+    "fact_template": "גוף האדם מכיל מספיק ברזל לייצור כ-_______ מסמרים.",
+    "truth_keyword": "שלושה",
+    "metadata": { "difficulty": "Medium", "category": "גוף האדם" }
+  },
+  {
+    "content_id": "FACT_HE_009",
+    "fact_template": "גוף האדם מייצר כ-_______ ליטרים של רוק ביום.",
+    "truth_keyword": "1.5",
+    "metadata": { "difficulty": "Medium", "category": "גוף האדם" }
+  },
+  {
+    "content_id": "FACT_HE_010",
+    "fact_template": "לחתולים יש _______ עצמות יותר מלבני אדם.",
+    "truth_keyword": "24",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_011",
+    "fact_template": "הברווז הוא בעל החיים היחיד שיש לו _______ מקורות.",
+    "truth_keyword": "שני",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_012",
+    "fact_template": "הגמל יכול לשתות עד _______ ליטרים של מים ב-15 דקות.",
+    "truth_keyword": "150",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_013",
+    "fact_template": "כוכב הים אינו מסוגל _______ — אין לו מוח.",
+    "truth_keyword": "לחשוב",
+    "metadata": { "difficulty": "Easy", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_014",
+    "fact_template": "אריות בר ישנים בממוצע _______ שעות ביום.",
+    "truth_keyword": "20",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_015",
+    "fact_template": "כדור הארץ מתרחק מהשמש בכ-_______ סנטימטרים בכל שנה.",
+    "truth_keyword": "15",
+    "metadata": { "difficulty": "Hard", "category": "חלל" }
+  },
+  {
+    "content_id": "FACT_HE_016",
+    "fact_template": "השמש כה גדולה שכ-_______ כדורי ארץ יכולים להיכנס לתוכה.",
+    "truth_keyword": "מיליון",
+    "metadata": { "difficulty": "Medium", "category": "חלל" }
+  },
+  {
+    "content_id": "FACT_HE_017",
+    "fact_template": "אם תקפל נייר פעמים רבות מספיק, הוא יגיע לעובי של _______ בסיבוב ה-42.",
+    "truth_keyword": "הירח",
+    "metadata": { "difficulty": "Hard", "category": "מדע" }
+  },
+  {
+    "content_id": "FACT_HE_018",
+    "fact_template": "כל הצלפייה — ורודה, כתומה, צהובה — נגזרת מ_______.",
+    "truth_keyword": "לבנה",
+    "metadata": { "difficulty": "Hard", "category": "מזון" }
+  },
+  {
+    "content_id": "FACT_HE_019",
+    "fact_template": "שוקולד רותח בחום גוף האדם — נקודת ההיתוך שלו נמוכה מ-_______ מעלות.",
+    "truth_keyword": "37",
+    "metadata": { "difficulty": "Easy", "category": "מזון" }
+  },
+  {
+    "content_id": "FACT_HE_020",
+    "fact_template": "אוקיינוס השקט כל כך רחב עד שהוא גדול משטח כל _______ שבעולם יחד.",
+    "truth_keyword": "היבשות",
+    "metadata": { "difficulty": "Hard", "category": "גאוגרפיה" }
+  },
+  {
+    "content_id": "FACT_HE_021",
+    "fact_template": "ג'ירפה ישנה בממוצע רק _______ דקות ביום.",
+    "truth_keyword": "30",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_022",
+    "fact_template": "בלשון הלוויתן הכחול יש מספיק מקום כדי שיעמדו עליה כ-_______ בני אדם.",
+    "truth_keyword": "50",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_023",
+    "fact_template": "מיץ מלון כה דומה לנוזל הסרום שבגוף עד שניתן להשתמש בו כנוזל עירוי במצב _______.",
+    "truth_keyword": "חירום",
+    "metadata": { "difficulty": "Hard", "category": "מדע" }
+  },
+  {
+    "content_id": "FACT_HE_024",
+    "fact_template": "הברווז הוא בעל החיים שיכול לישון עם _______ עיניים פקוחות.",
+    "truth_keyword": "עין אחת",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_025",
+    "fact_template": "כדי להזיז אצבע אחת בלבד, המוח שלנו מפעיל _______ שרירים שונים.",
+    "truth_keyword": "12",
+    "metadata": { "difficulty": "Hard", "category": "גוף האדם" }
+  },
+  {
+    "content_id": "FACT_HE_026",
+    "fact_template": "ריחו של מי גשם הטרי נגרם מחיידק בשם _______.",
+    "truth_keyword": "אקטינומיצט",
+    "metadata": { "difficulty": "Hard", "category": "מדע" }
+  },
+  {
+    "content_id": "FACT_HE_027",
+    "fact_template": "לצדפה אין _______ — היא נעה בלי להרגיש כאב.",
+    "truth_keyword": "מוח",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_028",
+    "fact_template": "מגדל אייפל גבוה ב-_______ סנטימטרים בקיץ מאשר בחורף.",
+    "truth_keyword": "15",
+    "metadata": { "difficulty": "Medium", "category": "מדע" }
+  },
+  {
+    "content_id": "FACT_HE_029",
+    "fact_template": "בנמלה אחת יש מספיק כוח לשאת משקל גדול פי _______ ממשקלה.",
+    "truth_keyword": "50",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_030",
+    "fact_template": "צפרדעים שותות מים דרך _______.",
+    "truth_keyword": "עורן",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  }
+]
