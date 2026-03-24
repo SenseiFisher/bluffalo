@@ -19,6 +19,8 @@ The blank (`_______`) should always contain the **most surprising or counterintu
 - Must fit naturally into the sentence so the full sentence reads fluently when filled in
 - Avoid blanking **obvious** or **easy-to-guess** words (colors, well-known countries, famous names)
 - The blank should allow players to write **plausible-sounding lies** — if the truth is too strange to fake around, the game isn't fun
+- **Prefer non-numeric blanks** — a name, animal, object, or action makes for more interesting and varied lies than a number. Use a number only when it is genuinely the most surprising part of the fact and no rephrasing can avoid it
+- **Numbers must always be written as digits** — use `37`, not `thirty-seven`. This applies to the `truth_keyword` and to any number that appears in the `fact_template`
 
 ---
 
@@ -32,7 +34,7 @@ Questions must work in **any language** without losing meaning or humor:
 - Numbers and measurements are fine — just use the unit written out (`centimetres`, not `cm`) so it survives translation
 - Avoid facts whose surprise depends on an English-language coincidence (rhymes, double meanings, etc.)
 
-> ✅ "Octopuses have _______ hearts." — works in any language
+> ✅ "Octopuses have 3 _______." — works in any language
 > ❌ "The word 'nerd' was first used in _______ book." — depends on English-language literary context
 
 ---
