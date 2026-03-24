@@ -66,7 +66,10 @@ export default function PromptScreen() {
         <p className="text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-3">
           Fill in the blank
         </p>
-        <p className="text-white text-xl font-semibold leading-relaxed">
+        <p
+          className="text-white text-xl font-semibold leading-relaxed"
+          dir={gameState.language === 'he' ? 'rtl' : 'ltr'}
+        >
           {parts[0]}
           <span className="inline-block bg-indigo-700 border-b-2 border-yellow-400 px-3 py-0.5 mx-1 rounded min-w-[6rem] text-center">
             &nbsp;

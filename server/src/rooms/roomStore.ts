@@ -2,6 +2,7 @@ import { GameState, GamePhase } from "../../../shared/types";
 import {
   ROOM_CODE_ALPHABET,
   ROOM_CODE_LENGTH,
+  DEFAULT_LANGUAGE,
 } from "../../../shared/constants";
 
 const roomStore = new Map<string, GameState>();
@@ -81,5 +82,6 @@ export function createInitialGameState(
     is_final_round: false,
     used_fact_ids: [],
     room_master_session_id: roomMasterSessionId,
+    language: DEFAULT_LANGUAGE,
   };
 }

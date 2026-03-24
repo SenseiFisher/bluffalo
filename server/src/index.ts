@@ -6,10 +6,12 @@ import { createApp } from "./server";
 
 const PORT = parseInt(process.env.PORT ?? "3000", 10);
 
-// Load and validate facts before starting the server
+// Load and validate facts for all supported languages before starting
 try {
-  const facts = loadFacts();
-  console.log(`[Server] Loaded ${facts.length} facts`);
+  const en = loadFacts("en");
+  console.log(`[Server] Loaded ${en.length} facts (en)`);
+  const he = loadFacts("he");
+  console.log(`[Server] Loaded ${he.length} facts (he)`);
 } catch (err) {
   console.error("[Server] Failed to load facts:", err);
   process.exit(1);

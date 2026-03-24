@@ -7,6 +7,9 @@ import {
   MAX_ROUNDS,
   DEFAULT_TOTAL_ROUNDS,
   ROOM_TTL_MS,
+  SUPPORTED_LANGUAGES,
+  DEFAULT_LANGUAGE,
+  REJOIN_EXPIRY_MS,
 } from "../../../shared/constants";
 import {
   getRoom,
@@ -115,6 +118,17 @@ export function registerHandlers(io: Server, socket: Socket): void {
         return;
       }
 
+      // Reject rejoin if player was disconnected too long during an active game
+      if (
+        state.phase !== GamePhase.LOBBY &&
+        !existingPlayer.is_connected &&
+        existingPlayer.disconnected_at !== null &&
+        Date.now() - existingPlayer.disconnected_at > REJOIN_EXPIRY_MS
+      ) {
+        socket.emit("ERROR", { code: "REJOIN_EXPIRED", message: "Rejoin window has expired" });
+        return;
+      }
+
       // Double-connection prevention: disconnect old socket if still connected
       if (existingPlayer.is_connected && existingPlayer.id !== socket.id) {
         const oldSocket = io.sockets.sockets.get(existingPlayer.id);
@@ -126,6 +140,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
       // Update player with new socket id
       existingPlayer.id = socket.id;
       existingPlayer.is_connected = true;
+      existingPlayer.disconnected_at = null;
       existingPlayer.display_name = displayName;
 
       socket.join(roomCode);
@@ -169,6 +184,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
       score: 0,
       deception_count: 0,
       is_connected: true,
+      disconnected_at: null,
       round: {
         submitted_lie: null,
         voted_for_id: null,
@@ -194,7 +210,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
   // ── START_GAME ─────────────────────────────────────────────────────────────
   socket.on("START_GAME", (payload: unknown) => {
-    const p = payload as { total_rounds?: number; prompt_timer_seconds?: number };
+    const p = payload as { total_rounds?: number; prompt_timer_seconds?: number; language?: string };
 
     // Find room this socket is in
     const roomCode = getRoomCodeForSocket(socket);
@@ -237,6 +253,11 @@ export function registerHandlers(io: Server, socket: Socket): void {
     let promptTimerSeconds = typeof p?.prompt_timer_seconds === "number" ? p.prompt_timer_seconds : 60;
     if (!VALID_TIMER_PRESETS.includes(promptTimerSeconds)) promptTimerSeconds = 60;
     state.prompt_timer_seconds = promptTimerSeconds;
+
+    const lang = typeof p?.language === "string" && (SUPPORTED_LANGUAGES as readonly string[]).includes(p.language)
+      ? p.language
+      : DEFAULT_LANGUAGE;
+    state.language = lang;
 
     const updatedState = startGame(state, totalRounds, broadcast);
     setRoom(roomCode, updatedState);
@@ -395,6 +416,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
     const player = state.players.find((pl) => pl.id === socket.id);
     if (player) {
       player.is_connected = false;
+      player.disconnected_at = Date.now();
       setRoom(roomCode, state);
 
       broadcastGameState(io, roomCode, state);

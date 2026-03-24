@@ -5,7 +5,12 @@ export default function LobbyScreen() {
   const { gameState, mySessionId, emit, lastError, clearError } = useGame()
   const [totalRounds, setTotalRounds] = useState(7)
   const [promptTimerSeconds, setPromptTimerSeconds] = useState(60)
+  const [language, setLanguage] = useState<'en' | 'he'>('en')
   const TIMER_PRESETS = [30, 45, 60, 90, 120, 150]
+  const LANGUAGES = [
+    { code: 'en', label: 'English' },
+    { code: 'he', label: 'עברית' },
+  ] as const
 
   if (!gameState) return null
 
@@ -15,7 +20,7 @@ export default function LobbyScreen() {
 
   const handleStartGame = () => {
     clearError()
-    emit('START_GAME', { total_rounds: totalRounds, prompt_timer_seconds: promptTimerSeconds })
+    emit('START_GAME', { total_rounds: totalRounds, prompt_timer_seconds: promptTimerSeconds, language })
   }
 
   const roomUrl = window.location.origin
@@ -130,6 +135,27 @@ export default function LobbyScreen() {
                   }`}
                 >
                   {s}s
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+            <label className="block text-indigo-300 text-sm font-semibold mb-3 uppercase tracking-wide">
+              Language
+            </label>
+            <div className="grid grid-cols-2 gap-2">
+              {LANGUAGES.map((l) => (
+                <button
+                  key={l.code}
+                  onClick={() => setLanguage(l.code)}
+                  className={`py-2 rounded-lg font-bold text-sm transition-all active:scale-95 ${
+                    language === l.code
+                      ? 'bg-yellow-400 text-indigo-950'
+                      : 'bg-indigo-700 hover:bg-indigo-600 text-white'
+                  }`}
+                >
+                  {l.label}
                 </button>
               ))}
             </div>

@@ -2,10 +2,10 @@ import * as fs from "fs";
 import * as path from "path";
 import { Fact } from "../../../shared/types";
 
-let cachedFacts: Fact[] | null = null;
+const factsCacheByLang = new Map<string, Fact[]>();
 
-export function loadFacts(): Fact[] {
-  if (cachedFacts) return cachedFacts;
+export function loadFacts(lang: string = "en"): Fact[] {
+  if (factsCacheByLang.has(lang)) return factsCacheByLang.get(lang)!;
 
   // Resolve facts path — works for both ts-node-dev (src/) and compiled (dist/) layouts
   // In dist: __dirname = server/dist/server/src/content/ — 5 levels up to project root
@@ -13,15 +13,14 @@ export function loadFacts(): Fact[] {
   const isDist = __dirname.includes(`${path.sep}dist${path.sep}`) || __dirname.includes("/dist/");
   const levelsUp = isDist ? "../../../../../" : "../../../";
 
-  const factsPath = process.env.FACTS_PATH
-    ? path.resolve(process.env.FACTS_PATH)
-    : path.resolve(__dirname, levelsUp, "content/facts.json");
+  const filename = lang === "en" ? "facts.json" : `facts.${lang}.json`;
+  const factsPath = path.resolve(__dirname, levelsUp, "content", filename);
 
   const raw = fs.readFileSync(factsPath, "utf-8");
   const data = JSON.parse(raw) as Fact[];
 
   if (!Array.isArray(data) || data.length === 0) {
-    throw new Error("facts.json must be a non-empty array");
+    throw new Error(`${filename} must be a non-empty array`);
   }
 
   // Validate each fact
@@ -34,19 +33,12 @@ export function loadFacts(): Fact[] {
     }
   }
 
-  cachedFacts = data;
+  factsCacheByLang.set(lang, data);
   return data;
 }
 
-export function getFacts(): Fact[] {
-  if (!cachedFacts) {
-    return loadFacts();
-  }
-  return cachedFacts;
-}
-
-export function getRandomFact(usedIds: string[]): Fact | null {
-  const facts = getFacts();
+export function getRandomFact(usedIds: string[], lang: string = "en"): Fact | null {
+  const facts = loadFacts(lang);
   const available = facts.filter((f) => !usedIds.includes(f.content_id));
   if (available.length === 0) return null;
   const idx = Math.floor(Math.random() * available.length);

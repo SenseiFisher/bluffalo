@@ -26,3 +26,11 @@ export const MAX_LIE_LENGTH = 50;
 // Room code alphabet (no ambiguous chars: 0, O, I, 1)
 export const ROOM_CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 export const ROOM_CODE_LENGTH = 4;
+
+// Rejoin expiry: max time a disconnected player can return to a game in progress
+export const REJOIN_EXPIRY_MS = 30 * 60 * 1000; // 30 minutes
+
+// Language support
+export const SUPPORTED_LANGUAGES = ['en', 'he'] as const;
+export type Language = typeof SUPPORTED_LANGUAGES[number];
+export const DEFAULT_LANGUAGE: Language = 'en';

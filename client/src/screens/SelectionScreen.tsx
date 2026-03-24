@@ -73,7 +73,10 @@ export default function SelectionScreen() {
 
       {/* Fact */}
       <div className="w-full max-w-lg bg-indigo-800/70 border border-indigo-600 rounded-2xl p-4 mb-5 shadow-xl">
-        <p className="text-white text-lg font-semibold leading-relaxed">
+        <p
+          className="text-white text-lg font-semibold leading-relaxed"
+          dir={gameState.language === 'he' ? 'rtl' : 'ltr'}
+        >
           {parts[0]}
           <span className="inline-block bg-indigo-700 border-b-2 border-yellow-400 px-3 py-0.5 mx-1 rounded min-w-[6rem] text-center">
             &nbsp;

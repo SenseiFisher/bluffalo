@@ -21,6 +21,7 @@ export interface Player {
   score: number;
   deception_count: number;
   is_connected: boolean;
+  disconnected_at: number | null;
   round: {
     submitted_lie: string | null;
     voted_for_id: string | null;
@@ -51,6 +52,7 @@ export interface GameState {
   is_final_round: boolean;
   used_fact_ids: string[];
   room_master_session_id: string;
+  language: string;
 }
 
 // Socket event payload types
@@ -62,6 +64,8 @@ export interface JoinRoomPayload {
 
 export interface StartGamePayload {
   total_rounds: number;
+  prompt_timer_seconds?: number;
+  language?: string;
 }
 
 export interface SubmitLiePayload {

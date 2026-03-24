@@ -108,7 +108,7 @@ export function startGame(
 }
 
 function startPromptPhase(state: GameState, broadcast: BroadcastFn): void {
-  const fact = getRandomFact(state.used_fact_ids);
+  const fact = getRandomFact(state.used_fact_ids, state.language);
   if (!fact) {
     console.error(`[StateMachine] No facts available for room ${state.room_code}`);
     return;
