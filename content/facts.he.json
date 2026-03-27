@@ -142,5 +142,77 @@
     "fact_template": "צפרדעים שותות מים דרך _______.",
     "truth_keyword": "עורן",
     "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_031",
+    "fact_template": "מבשלת הבירה של קרלסברג חיברה צינור ישיר מהמבשלה לביתו של חתן פרס נובל לפיזיקה נילס בוהר, שסיפק לו _______ בחינם לכל חייו.",
+    "truth_keyword": "בירה",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_032",
+    "fact_template": "צפרדע העץ הצפון אמריקאית שורדת את החורף על ידי _______ לחלוטין — ללא פעימות לב ונשימה — ומתעוררת באביב.",
+    "truth_keyword": "קפיאה",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_033",
+    "fact_template": "הטרף של טיגריסים רואה את הפרווה הכתומה של הטיגריס כצבע _______, מה שהופך אותה להסוואה מושלמת.",
+    "truth_keyword": "ירוק",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_034",
+    "fact_template": "חרטום רכבות השינקנסן המהירות ביפן עוצב בהשראת מקורו של ציפור ה_______ כדי לצמצם רעש בכניסה ויציאה ממנהרות.",
+    "truth_keyword": "שלדג",
+    "metadata": { "difficulty": "Hard", "category": "טכנולוגיה" }
+  },
+  {
+    "content_id": "FACT_HE_035",
+    "fact_template": "סיס החומות, למעט בעונת הקינון, מבלה עד _______ חודשים רצופים באוויר מבלי לנחות.",
+    "truth_keyword": "10",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_036",
+    "fact_template": "בלוגו של חברת פדקס, בין האות E לאות x, מוסתר סמל של _______.",
+    "truth_keyword": "חץ",
+    "metadata": { "difficulty": "Medium", "category": "תרבות פופ" }
+  },
+  {
+    "content_id": "FACT_HE_037",
+    "fact_template": "בבורסות בסין, מניה שעלתה מסומנת בצבע _______, ולא בירוק כמו ברוב העולם.",
+    "truth_keyword": "אדום",
+    "metadata": { "difficulty": "Medium", "category": "תרבות" }
+  },
+  {
+    "content_id": "FACT_HE_038",
+    "fact_template": "הביטוי האנגלי 'לגנוב את הרעם' נולד כאשר מחזאי גנב מהמחזאי ג'ון דניס טכנולוגיית _______  שהוא המציא.",
+    "truth_keyword": "רעם",
+    "metadata": { "difficulty": "Hard", "category": "שפה" }
+  },
+  {
+    "content_id": "FACT_HE_039",
+    "fact_template": "המדענית רג'ינה גריס אפשרה ליותר מ-1,000 פשפשי מיטה לנשוך את זרועותיה מדי שבוע במשך _______ שנים כדי לחקור את הטפיל.",
+    "truth_keyword": "5",
+    "metadata": { "difficulty": "Hard", "category": "מדע" }
+  },
+  {
+    "content_id": "FACT_HE_040",
+    "fact_template": "״חרק הנשיקה״ קיבל את שמו מנטייתו לנשוך אנשים ישנים סביב ה_______ — שם העור דק ונגיש.",
+    "truth_keyword": "פה",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_041",
+    "fact_template": "מריון סטוקס הקליטה כל שידור חדשותי 24 שעות ביממה, ברציפות, במשך כ-_______ שנה.",
+    "truth_keyword": "35",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_042",
+    "fact_template": "רכבת האוריינט אקספרס חיברה בין פריז ל_______ החל משנת 1883.",
+    "truth_keyword": "איסטנבול",
+    "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
   }
 ]
