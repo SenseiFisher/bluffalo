@@ -214,5 +214,263 @@
     "fact_template": "רכבת האוריינט אקספרס חיברה בין פריז ל_______ החל משנת 1883.",
     "truth_keyword": "איסטנבול",
     "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_043",
+    "fact_template": "מחקרים מצאו כי משחק _______ במשך כשש שעות לאחר אירוע טראומטי מפחית משמעותית את הסיכוי לפתח פלאשבקים.",
+    "truth_keyword": "טטריס",
+    "metadata": { "difficulty": "Hard", "category": "מדע" }
+  },
+  {
+    "content_id": "FACT_HE_044",
+    "fact_template": "האדמירל הוריישו נלסון, אחד מגדולי המפקדים הימיים בהיסטוריה, סבל מ_______ לאורך כל חייו.",
+    "truth_keyword": "מחלת ים",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_045",
+    "fact_template": "כאשר ויקטור הוגו שלח לחברת ההוצאה לאור מכתב ובו סימן אחד בלבד — _______ — הם השיבו לו באותה הצורה בדיוק.",
+    "truth_keyword": "?",
+    "metadata": { "difficulty": "Hard", "category": "תרבות" }
+  },
+  {
+    "content_id": "FACT_HE_046",
+    "fact_template": "הונגריה נשלטה במשך 24 שנים בידי אדמירל — למרות שלמדינה אין כלל _______.",
+    "truth_keyword": "גישה לים",
+    "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_047",
+    "fact_template": "במהלך מלחמת העצמאות האמריקאית, הכריז ג'ורג' וושינגטון על הפסקת אש זמנית כדי להשיב לגנרל הבריטי האויב את _______.",
+    "truth_keyword": "כלבתו",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_048",
+    "fact_template": "לפני הפלישה לסיציליה ב-1943, הבריטים הצליחו להטעות את הגרמנים על ידי שיגור _______ עם מסמכים מזויפים שנסחפה לחופי ספרד.",
+    "truth_keyword": "גופה",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_049",
+    "fact_template": "גוזלי ינשוף ישנים עם פניהם _______ — ראשם כבד מדי לשכב ישר.",
+    "truth_keyword": "כלפי מטה",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_050",
+    "fact_template": "כשנקבת עצלן מוכנה להזדווג, היא פשוט _______ ומחכה שזכר יגיע אליה.",
+    "truth_keyword": "צורחת",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_051",
+    "fact_template": "אמנים אירופים בתקופה הויקטוריאנית נהגו לצבוע עם צבע חום שהופק מטחינת _______ מצריות.",
+    "truth_keyword": "מומיות",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_052",
+    "fact_template": "בטקס הפתיחה של אולימפיאדת סיאול ב-1988, יונים לבנות שוחררו כסמל לשלום — ורבות מהן נשרפו חיות מכיוון שישבו על _______.",
+    "truth_keyword": "הלפיד האולימפי",
+    "metadata": { "difficulty": "Hard", "category": "ספורט" }
+  },
+  {
+    "content_id": "FACT_HE_053",
+    "fact_template": "המלחין דמיטרי שוסטקוביץ' היה שומע מוזיקה בראשו ברציפות בגלל _______ שנותר בגולגולתו לאחר המלחמה.",
+    "truth_keyword": "שבב מתכת",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_054",
+    "fact_template": "נוזל הקירור לרכב הוא חומר רעיל שחיות בר שותות אותו מרצון בגלל שטעמו _______.",
+    "truth_keyword": "מתוק",
+    "metadata": { "difficulty": "Medium", "category": "מדע" }
+  },
+  {
+    "content_id": "FACT_HE_055",
+    "fact_template": "אי הפסיונים, הממוקם על נהר הבידאסואה בין צרפת לספרד, מחליף _______ בין שתי המדינות כל חצי שנה.",
+    "truth_keyword": "ריבונות",
+    "metadata": { "difficulty": "Hard", "category": "גאוגרפיה" }
+  },
+  {
+    "content_id": "FACT_HE_056",
+    "fact_template": "בוויומינג יש נחל שמימיו מתפצלים ומגיעים הן לאוקיינוס האטלנטי והן ל_______.",
+    "truth_keyword": "האוקיינוס השקט",
+    "metadata": { "difficulty": "Hard", "category": "גאוגרפיה" }
+  },
+  {
+    "content_id": "FACT_HE_057",
+    "fact_template": "למרות שכור מספר 4 בצ'רנוביל התפוצץ ב-1986, כור מספר 3 הסמוך המשיך לייצר חשמל עד שנת _______.",
+    "truth_keyword": "2000",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_058",
+    "fact_template": "טקס פרסי נובל נערך מדי שנה ב-10 בדצמבר — יום _______ של אלפרד נובל.",
+    "truth_keyword": "פטירתו",
+    "metadata": { "difficulty": "Medium", "category": "מדע" }
+  },
+  {
+    "content_id": "FACT_HE_059",
+    "fact_template": "בניגוד לבני האדם, סוסים אינם מסוגלים לנשום דרך _______.",
+    "truth_keyword": "הפה",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_060",
+    "fact_template": "בתאילנד, ההחלטה מי יגויס לצבא ומי יקבל פטור נקבעת מדי שנה על ידי _______.",
+    "truth_keyword": "הגרלה",
+    "metadata": { "difficulty": "Hard", "category": "גאוגרפיה" }
+  },
+  {
+    "content_id": "FACT_HE_061",
+    "fact_template": "עוגיות המזל, הנחשבות לקינוח הסיני המסורתי, הומצאו למעשה ב_______.",
+    "truth_keyword": "ארצות הברית",
+    "metadata": { "difficulty": "Medium", "category": "מזון" }
+  },
+  {
+    "content_id": "FACT_HE_062",
+    "fact_template": "בשנת 1964, האתלט האוסטרלי רג' ספיירס שנתקע ללא כסף בלונדון שלח את עצמו לאוסטרליה כ_______ אווירי בתוך ארגז עץ.",
+    "truth_keyword": "משלוח",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_063",
+    "fact_template": "כשהופק הסרט 'מת לחיות', הוא הוצע תחילה ל_______, בשל חוזה שחתם ב-1968 שהעניק לו זכות ראשונה על כל עיבוד של הרומן שעליו מבוסס הסרט.",
+    "truth_keyword": "פרנק סינטרה",
+    "metadata": { "difficulty": "Hard", "category": "קולנוע" }
+  },
+  {
+    "content_id": "FACT_HE_064",
+    "fact_template": "המזון הראשון שנצרך על פני הירח היה _______.",
+    "truth_keyword": "יין",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_065",
+    "fact_template": "שחקן הכדורגל חרארדו בדויה — בעל שיא כרטיסי האדום בכדורגל — קיבל את הכרטיס הראשון שלו כעוזר מאמן לאחר _______ דקות בלבד.",
+    "truth_keyword": "21",
+    "metadata": { "difficulty": "Hard", "category": "ספורט" }
+  },
+  {
+    "content_id": "FACT_HE_066",
+    "fact_template": "האיכר ההודי דשרת' מנג'הי חצב לבדו, עם פטיש ואזמל בלבד, דרך הר שלם — _______ שנה של עבודה.",
+    "truth_keyword": "22",
+    "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_067",
+    "fact_template": "בגרינלנד ובשאר חצי הכדור הצפוני לא ניתן למצוא _______ בטבע.",
+    "truth_keyword": "פינגווינים",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_068",
+    "fact_template": "בשנת 675, הקיסר היפני טנמו הוציא צו שאסר על אכילת בעלי חיים יבשתיים — איסור שהשפיע על יפן במשך יותר מ-_______ שנה.",
+    "truth_keyword": "1000",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_069",
+    "fact_template": "הכינוי \"נאצים\" נולד ככינוי גנאי, מעיוות של המילה הבווארית \"ignaz\" שפירושה _______.",
+    "truth_keyword": "עם הארץ",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_070",
+    "fact_template": "רנאטו ביאלטי, מנכ\"ל חברת ביאלטי, ביקש להיקבר בתוך כד-אפר בצורת _______ המפורסמת של החברה.",
+    "truth_keyword": "מקינטה",
+    "metadata": { "difficulty": "Hard", "category": "תרבות פופ" }
+  },
+  {
+    "content_id": "FACT_HE_071",
+    "fact_template": "סבו של כוכבת הפופ אוליביה ניוטון-ג'ון היה _______ — מדען שזכה בפרס נובל לפיזיקה.",
+    "truth_keyword": "מקס בורן",
+    "metadata": { "difficulty": "Hard", "category": "תרבות פופ" }
+  },
+  {
+    "content_id": "FACT_HE_072",
+    "fact_template": "באולימפיאדת אטלנטה 1996, האתלט לינפורד קריסטי הגיע למסיבת עיתונאים עם עדשות מגע שעליהן הודפס לוגו של _______, בתגובה לאיסור שהטיל הספונסר הרשמי.",
+    "truth_keyword": "פומה",
+    "metadata": { "difficulty": "Hard", "category": "ספורט" }
+  },
+  {
+    "content_id": "FACT_HE_073",
+    "fact_template": "עורך הדין קלמנט ולנדיגהאם נפל מכדור כשהדגים בפני חבר המושבעים כיצד הקורבן _______ בטעות — הנאשם שייצג זוכה.",
+    "truth_keyword": "ירה בעצמו",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_074",
+    "fact_template": "בשנת 2015, שני אחים מספרד מכרו ציור מזויף תמורת 1.5 מיליון יורו, וגילו שכל ה_______ שקיבלו בתמורה היו מזויפים.",
+    "truth_keyword": "שטרות",
+    "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_075",
+    "fact_template": "פועל בנייה מעריץ בוסטון רד סוקס הבריח חולצת שחקן קבוצתו והטמין אותה בתוך ה_______ שנשפך ביסודות האצטדיון החדש של ניו יורק יאנקיז — כדי להביא קללה.",
+    "truth_keyword": "בטון",
+    "metadata": { "difficulty": "Medium", "category": "ספורט" }
+  },
+  {
+    "content_id": "FACT_HE_076",
+    "fact_template": "לטאות הקרניות של צפון אמריקה מגינות על עצמן מטורפים על ידי יריית _______ ישירות מהעיניים.",
+    "truth_keyword": "דם",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_077",
+    "fact_template": "עכביש שהתגלה ביערות האמזונס בנה _______ שלמה של עצמו מעלים ושאריות חרקים, וממקם אותה בקורים שלו כדי להטעות טורפים.",
+    "truth_keyword": "בובה",
+    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+  },
+  {
+    "content_id": "FACT_HE_078",
+    "fact_template": "בשנת 897, האפיפיור סטפן ה-6 ציווה לחפור את קודמו פורמוזוס מקברו ולהעמידו לשיפוט — כשהוא _______.",
+    "truth_keyword": "מת",
+    "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_079",
+    "fact_template": "נגנית הקונטרבס ג'יין ליטל, שהחזיקה בשיא גינס על 71 שנות נגינה באותה תזמורת, נפטרה על הבמה בגיל 87 תוך כדי נגינת השיר _______.",
+    "truth_keyword": "There's No Business Like Show Business",
+    "metadata": { "difficulty": "Hard", "category": "תרבות" }
+  },
+  {
+    "content_id": "FACT_HE_080",
+    "fact_template": "הסיפורים שנתנו השראה לרומן פרנקשטיין ולרומן דרקולה נכתבו שניהם _______ — כחלק מתחרות ספרותית בין חברים.",
+    "truth_keyword": "באותו סוף שבוע",
+    "metadata": { "difficulty": "Hard", "category": "תרבות" }
+  },
+  {
+    "content_id": "FACT_HE_081",
+    "fact_template": "דרום אפריקה היא המדינה היחידה בעולם שיש לה _______ ערי בירה רשמיות.",
+    "truth_keyword": "3",
+    "metadata": { "difficulty": "Medium", "category": "גאוגרפיה" }
+  },
+  {
+    "content_id": "FACT_HE_082",
+    "fact_template": "נכדו האחרון של הנשיא האמריקאי ג'ון טיילר — שכיהן בשנות ה-1840 — נפטר רק בשנת _______.",
+    "truth_keyword": "2020",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_083",
+    "fact_template": "ביקור בקברו של קרל מרקס בלונדון כרוך ב_______ — בניגוד גמור לרוח השקפת עולמו.",
+    "truth_keyword": "תשלום",
+    "metadata": { "difficulty": "Easy", "category": "היסטוריה" }
+  },
+  {
+    "content_id": "FACT_HE_084",
+    "fact_template": "בפיליפינים, ביצוע השיר _______ של פרנק סינטרה בקריוקי הוביל לעשרות מקרי רצח ואלימות, עד שמקומות רבים הסירו אותו מהרפרטואר.",
+    "truth_keyword": "My Way",
+    "metadata": { "difficulty": "Hard", "category": "תרבות" }
+  },
+  {
+    "content_id": "FACT_HE_085",
+    "fact_template": "בשנת 2007 הודיעו גורמי הביון האיראניים כי עצרו 14 _______ שנחשדו בריגול ליד מתקני גרעין.",
+    "truth_keyword": "סנאים",
+    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
   }
 ]
