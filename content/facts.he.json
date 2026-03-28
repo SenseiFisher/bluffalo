@@ -85,8 +85,8 @@
   },
   {
     "content_id": "FACT_HE_016",
-    "fact_template": "השמש כה גדולה שכ-_______ מיליון כדורי ארץ יכולים להיכנס לתוכה.",
-    "truth_keyword": "1",
+    "fact_template": "כ-1.3 מיליון כדורי ארץ יכולים להיכנס לתוך ה_______.",
+    "truth_keyword": "שמש",
     "metadata": { "difficulty": "Medium", "category": "חלל" }
   },
   {
@@ -97,9 +97,9 @@
   },
   {
     "content_id": "FACT_HE_018",
-    "fact_template": "כל הצלפייה — ורודה, כתומה, צהובה — נגזרת מ_______.",
-    "truth_keyword": "לבנה",
-    "metadata": { "difficulty": "Hard", "category": "מזון" }
+    "fact_template": "ללא תזונה מתאימה, הפלמינגו הוורוד היה _______.",
+    "truth_keyword": "לבן",
+    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
   },
   {
     "content_id": "FACT_HE_019",
@@ -187,7 +187,7 @@
   },
   {
     "content_id": "FACT_HE_038",
-    "fact_template": "הביטוי האנגלי 'לגנוב את הרעם' נולד כאשר מחזאי גנב מהמחזאי ג'ון דניס טכנולוגיית _______  שהוא המציא.",
+    "fact_template": "הביטוי האנגלי 'לגנוב את הרעם' נולד כאשר מחזאי גנב מהמחזאי ג'ון דניס טכנולוגיית _______ שהוא המציא.",
     "truth_keyword": "רעם",
     "metadata": { "difficulty": "Hard", "category": "שפה" }
   },
@@ -439,8 +439,8 @@
   },
   {
     "content_id": "FACT_HE_080",
-    "fact_template": "הסיפורים שנתנו השראה לרומן פרנקשטיין ולרומן דרקולה נכתבו שניהם _______ — כחלק מתחרות ספרותית בין חברים.",
-    "truth_keyword": "באותו סוף שבוע",
+    "fact_template": "פרנקשטיין וסיפור הערפד שנתן השראה לדרקולה נכתבו שניהם באותו _______ — כחלק מתחרות ספרותית בין חברים.",
+    "truth_keyword": "סוף שבוע",
     "metadata": { "difficulty": "Hard", "category": "תרבות" }
   },
   {
