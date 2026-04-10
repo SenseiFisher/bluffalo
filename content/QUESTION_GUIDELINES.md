@@ -21,6 +21,10 @@ The blank (`_______`) should always contain the **most surprising or counterintu
 - The blank should allow players to write **plausible-sounding lies** — if the truth is too strange to fake around, the game isn't fun
 - **Prefer non-numeric blanks** — a name, animal, object, or action makes for more interesting and varied lies than a number. Use a number only when it is genuinely the most surprising part of the fact and no rephrasing can avoid it
 - **Numbers must always be written as digits** — use `37`, not `thirty-seven`. This applies to the `truth_keyword` and to any number that appears in the `fact_template`
+- **Blank the cause, not the effect** — when a fact describes an object or action producing a surprising outcome, blank the unexpected cause rather than the described effect. "Opening a _______ in the dark produces blue light" is better than "Opening a band-aid in the dark produces _______ light", because the cause is unknown and generates varied lies
+- **No relative placeholders** — blanks like "the same person", "the same place", or "the same year" are too abstract for players to lie around. The blank must be a concrete noun that invites substitution with other concrete nouns
+- **The blank contains the complete answer unit** — don't split a phrase between the blank and the surrounding sentence. If the answer is "from the left wing", the blank holds the entire phrase, not just "left" with "from the ___ wing" around it. Modifiers and prepositions that are integral to the answer belong inside the blank
+- **Move negation outside the blank** — restructure so the blank contains only the positive term. Write "elected without a _______" rather than "elected _______" where the answer is "without a party"
 
 ---
 

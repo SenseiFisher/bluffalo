@@ -1063,8 +1063,8 @@
   },
   {
     "content_id": "FACT_HE_125",
-    "fact_template": "כאשר פותחים פלסטר בחושך, ניתן לראות _______ כחול הנוצר מחיכוך.",
-    "truth_keyword": "אור",
+    "fact_template": "כאשר פותחים _______ בחושך, ניתן לראות אור כחול הנוצר מחיכוך.",
+    "truth_keyword": "פלסטר",
     "metadata": {
       "difficulty": "Medium",
       "category": "מדע"
@@ -1117,8 +1117,8 @@
   },
   {
     "content_id": "FACT_HE_131",
-    "fact_template": "ההמנונים הלאומיים של אורוגוואי ופרגוואי נכתבו על ידי _______.",
-    "truth_keyword": "אותו אדם",
+    "fact_template": "ה_______ הלאומיים של אורוגוואי ופרגוואי נכתבו על ידי אותו אדם.",
+    "truth_keyword": "המנונים",
     "metadata": {
       "difficulty": "Hard",
       "category": "גאוגרפיה"
@@ -1126,8 +1126,8 @@
   },
   {
     "content_id": "FACT_HE_132",
-    "fact_template": "כל הנוצות בכנפי שאטלקוק של כדורעף נוצות לקוחות רק מהכנף ה_______ של האווז.",
-    "truth_keyword": "שמאלית",
+    "fact_template": "כל הנוצות בכנפי שאטלקוק של כדורעף נוצות לקוחות רק _______ של האווז.",
+    "truth_keyword": "מהכנף השמאלית",
     "metadata": {
       "difficulty": "Hard",
       "category": "ספורט"
@@ -1135,8 +1135,8 @@
   },
   {
     "content_id": "FACT_HE_133",
-    "fact_template": "לונדון מסווגת רשמית כ_______ עירוני, בשל כמות העצים הגדולה שבה.",
-    "truth_keyword": "יער",
+    "fact_template": "לונדון מסווגת רשמית כ_______, בשל כמות העצים הגדולה שבה.",
+    "truth_keyword": "יער עירוני",
     "metadata": {
       "difficulty": "Hard",
       "category": "גאוגרפיה"
@@ -1549,8 +1549,8 @@
   },
   {
     "content_id": "FACT_HE_179",
-    "fact_template": "ג'ורג' וושינגטון היה הנשיא הראשון והיחיד בהיסטוריה האמריקאית שנבחר _______.",
-    "truth_keyword": "ללא מפלגה",
+    "fact_template": "ג'ורג' וושינגטון היה הנשיא הראשון והיחיד בהיסטוריה האמריקאית שנבחר ללא _______.",
+    "truth_keyword": "מפלגה",
     "metadata": {
       "difficulty": "Medium",
       "category": "היסטוריה"
