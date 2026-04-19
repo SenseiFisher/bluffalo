@@ -1,8 +1,8 @@
 [
   {
     "content_id": "FACT_HE_001",
-    "fact_template": "לתמנון יש _______ לבבות.",
-    "truth_keyword": "3",
+    "fact_template": "לתמנון יש שלושה _______ נפרדים.",
+    "truth_keyword": "לבבות",
     "metadata": {
       "difficulty": "Medium",
       "category": "בעלי חיים"
@@ -28,8 +28,8 @@
   },
   {
     "content_id": "FACT_HE_004",
-    "fact_template": "נמלים יכולות לשאת משקל כבד פי _______ ממשקלן.",
-    "truth_keyword": "50",
+    "fact_template": "נמלים יכולות לשאת עצמים הכבדים פי 50 ממשקלן, כמו אדם שנושא _______.",
+    "truth_keyword": "מכונית",
     "metadata": {
       "difficulty": "Medium",
       "category": "בעלי חיים"
@@ -37,8 +37,8 @@
   },
   {
     "content_id": "FACT_HE_005",
-    "fact_template": "כדי לייצר קילוגרם אחד של דבש, דבורות צריכות לבקר בכ-_______ מיליון פרחים.",
-    "truth_keyword": "4",
+    "fact_template": "כדי לייצר קילוגרם אחד של דבש, דבורות צריכות לבקר ב-4 מיליון _______.",
+    "truth_keyword": "פרחים",
     "metadata": {
       "difficulty": "Hard",
       "category": "בעלי חיים"
@@ -73,8 +73,8 @@
   },
   {
     "content_id": "FACT_HE_009",
-    "fact_template": "גוף האדם מייצר כ-_______ ליטרים של רוק ביום.",
-    "truth_keyword": "1.5",
+    "fact_template": "גוף האדם מייצר 1.5 ליטרים של _______ ביום.",
+    "truth_keyword": "רוק",
     "metadata": {
       "difficulty": "Medium",
       "category": "גוף האדם"
@@ -82,8 +82,8 @@
   },
   {
     "content_id": "FACT_HE_010",
-    "fact_template": "לחתולים יש _______ עצמות יותר מלבני אדם.",
-    "truth_keyword": "24",
+    "fact_template": "לחתולים יש 24 _______ יותר מלבני אדם.",
+    "truth_keyword": "עצמות",
     "metadata": {
       "difficulty": "Hard",
       "category": "בעלי חיים"
@@ -91,8 +91,8 @@
   },
   {
     "content_id": "FACT_HE_012",
-    "fact_template": "הגמל יכול לשתות עד _______ ליטרים של מים ב-15 דקות.",
-    "truth_keyword": "150",
+    "fact_template": "ה_______ יכול לשתות 150 ליטרים של מים ב-15 דקות.",
+    "truth_keyword": "גמל",
     "metadata": {
       "difficulty": "Medium",
       "category": "בעלי חיים"
@@ -109,8 +109,8 @@
   },
   {
     "content_id": "FACT_HE_014",
-    "fact_template": "אריות בר ישנים בממוצע _______ שעות ביום.",
-    "truth_keyword": "20",
+    "fact_template": "_______ ישנים בממוצע 20 שעות ביום — יותר מרוב בעלי החיים.",
+    "truth_keyword": "אריות",
     "metadata": {
       "difficulty": "Medium",
       "category": "בעלי חיים"
@@ -118,8 +118,8 @@
   },
   {
     "content_id": "FACT_HE_015",
-    "fact_template": "כדור הארץ מתרחק מהשמש בכ-_______ סנטימטרים בכל שנה.",
-    "truth_keyword": "15",
+    "fact_template": "כדור הארץ מתרחק מה_______ בכ-15 סנטימטרים בכל שנה.",
+    "truth_keyword": "שמש",
     "metadata": {
       "difficulty": "Hard",
       "category": "חלל"
@@ -154,8 +154,8 @@
   },
   {
     "content_id": "FACT_HE_019",
-    "fact_template": "נקודת ההיתוך של שוקולד היא _______ מעלות בלבד.",
-    "truth_keyword": "34",
+    "fact_template": "נקודת ההיתוך של _______ היא 34 מעלות בלבד — טמפרטורת הגוף האנושי.",
+    "truth_keyword": "שוקולד",
     "metadata": {
       "difficulty": "Easy",
       "category": "מזון"
@@ -172,8 +172,8 @@
   },
   {
     "content_id": "FACT_HE_021",
-    "fact_template": "ג'ירפה ישנה בממוצע _______ דקות ביום.",
-    "truth_keyword": "30",
+    "fact_template": "_______ ישנה בממוצע 30 דקות בלבד ביום.",
+    "truth_keyword": "ג'ירפה",
     "metadata": {
       "difficulty": "Hard",
       "category": "בעלי חיים"
@@ -181,8 +181,8 @@
   },
   {
     "content_id": "FACT_HE_022",
-    "fact_template": "בלשון הלוויתן הכחול יש מספיק מקום כדי שיעמדו עליה כ-_______ בני אדם.",
-    "truth_keyword": "50",
+    "fact_template": "בלשון ה_______ הכחול יש מספיק מקום כדי שיעמדו עליה כ-50 בני אדם.",
+    "truth_keyword": "לוויתן",
     "metadata": {
       "difficulty": "Medium",
       "category": "בעלי חיים"
@@ -190,8 +190,8 @@
   },
   {
     "content_id": "FACT_HE_025",
-    "fact_template": "כדי להזיז אצבע אחת בלבד, המוח שלנו מפעיל _______ שרירים שונים.",
-    "truth_keyword": "12",
+    "fact_template": "כדי להזיז אצבע אחת בלבד, המוח שלנו מפעיל 12 _______ שונים.",
+    "truth_keyword": "שרירים",
     "metadata": {
       "difficulty": "Hard",
       "category": "גוף האדם"
@@ -199,8 +199,8 @@
   },
   {
     "content_id": "FACT_HE_028",
-    "fact_template": "מגדל אייפל גבוה ב-_______ סנטימטרים בקיץ מאשר בחורף.",
-    "truth_keyword": "15",
+    "fact_template": "מגדל _______ גבוה ב-15 סנטימטרים בקיץ מאשר בחורף.",
+    "truth_keyword": "אייפל",
     "metadata": {
       "difficulty": "Medium",
       "category": "מדע"
@@ -253,8 +253,8 @@
   },
   {
     "content_id": "FACT_HE_035",
-    "fact_template": "סיס החומות, למעט בעונת הקינון, מבלה עד _______ חודשים רצופים באוויר מבלי לנחות.",
-    "truth_keyword": "10",
+    "fact_template": "סיס החומות מבלה עד 10 חודשים רצופים ב_______ מבלי לנחות.",
+    "truth_keyword": "אוויר",
     "metadata": {
       "difficulty": "Medium",
       "category": "בעלי חיים"
@@ -289,8 +289,8 @@
   },
   {
     "content_id": "FACT_HE_039",
-    "fact_template": "המדענית רג'ינה גריס אפשרה ליותר מ-1,000 פשפשי מיטה לנשוך את זרועותיה מדי שבוע במשך _______ שנים כדי לחקור את הטפיל.",
-    "truth_keyword": "5",
+    "fact_template": "המדענית רג'ינה גריס אפשרה ליותר מ-1,000 _______ לנשוך את זרועותיה מדי שבוע במשך 5 שנים כדי לחקור את הטפיל.",
+    "truth_keyword": "פשפשי מיטה",
     "metadata": {
       "difficulty": "Hard",
       "category": "מדע"
@@ -307,8 +307,8 @@
   },
   {
     "content_id": "FACT_HE_041",
-    "fact_template": "מריון סטוקס הקליטה כל שידור חדשותי 24 שעות ביממה, ברציפות, במשך כ-_______ שנה.",
-    "truth_keyword": "35",
+    "fact_template": "מריון סטוקס הקליטה כל _______ 24 שעות ביממה, ברציפות, במשך כ-35 שנה.",
+    "truth_keyword": "שידור חדשותי",
     "metadata": {
       "difficulty": "Hard",
       "category": "היסטוריה"
@@ -343,8 +343,8 @@
   },
   {
     "content_id": "FACT_HE_045",
-    "fact_template": "כאשר ויקטור הוגו שלח לחברת ההוצאה לאור מכתב ובו סימן אחד בלבד — _______ — הם השיבו לו באותה הצורה בדיוק.",
-    "truth_keyword": "?",
+    "fact_template": "כאשר ויקטור הוגו שאל את חברת ההוצאה לאור על מכירות ספרו, הוא שלח מכתב עם _______ בלבד — והם השיבו באותה הצורה.",
+    "truth_keyword": "סימן שאלה",
     "metadata": {
       "difficulty": "Hard",
       "category": "תרבות"
@@ -451,8 +451,8 @@
   },
   {
     "content_id": "FACT_HE_057",
-    "fact_template": "למרות שכור מספר 4 בצ'רנוביל התפוצץ ב-1986, כור מספר 3 הסמוך המשיך לייצר חשמל עד שנת _______.",
-    "truth_keyword": "2000",
+    "fact_template": "למרות שכור מספר 4 בצ'רנוביל התפוצץ ב-1986, _______ הסמוך המשיך לייצר חשמל עד שנת 2000.",
+    "truth_keyword": "כור מספר 3",
     "metadata": {
       "difficulty": "Hard",
       "category": "היסטוריה"
@@ -523,8 +523,8 @@
   },
   {
     "content_id": "FACT_HE_065",
-    "fact_template": "שחקן הכדורגל חרארדו בדויה — בעל שיא כרטיסי האדום בכדורגל — קיבל את הכרטיס הראשון שלו כעוזר מאמן לאחר _______ דקות.",
-    "truth_keyword": "21",
+    "fact_template": "שחקן הכדורגל חרארדו בדויה קיבל את הכרטיס האדום הראשון שלו כ_______ לאחר 21 דקות בלבד.",
+    "truth_keyword": "עוזר מאמן",
     "metadata": {
       "difficulty": "Hard",
       "category": "ספורט"
@@ -532,8 +532,8 @@
   },
   {
     "content_id": "FACT_HE_066",
-    "fact_template": "האיכר ההודי דשרת' מנג'הי חצב לבדו, עם פטיש ואזמל בלבד, דרך הר שלם — _______ שנה של עבודה.",
-    "truth_keyword": "22",
+    "fact_template": "האיכר ההודי דשרת' מנג'הי חצב לבדו דרך _______ שלם — 22 שנה של עבודה עם פטיש ואזמל בלבד.",
+    "truth_keyword": "הר",
     "metadata": {
       "difficulty": "Medium",
       "category": "היסטוריה"
@@ -550,8 +550,8 @@
   },
   {
     "content_id": "FACT_HE_068",
-    "fact_template": "בשנת 675, הקיסר היפני טנמו הוציא צו שאסר על אכילת בעלי חיים יבשתיים — איסור שהשפיע על יפן במשך יותר מ-_______ שנה.",
-    "truth_keyword": "1000",
+    "fact_template": "בשנת 675, הקיסר היפני טנמו הוציא צו שאסר על אכילת _______ יבשתיים — איסור שהשפיע על יפן במשך יותר מ-1000 שנה.",
+    "truth_keyword": "בעלי חיים",
     "metadata": {
       "difficulty": "Hard",
       "category": "היסטוריה"
@@ -667,8 +667,8 @@
   },
   {
     "content_id": "FACT_HE_081",
-    "fact_template": "דרום אפריקה היא המדינה היחידה בעולם שיש לה _______ ערי בירה רשמיות.",
-    "truth_keyword": "3",
+    "fact_template": "דרום אפריקה היא המדינה היחידה בעולם שיש לה שלוש _______ רשמיות.",
+    "truth_keyword": "ערי בירה",
     "metadata": {
       "difficulty": "Medium",
       "category": "גאוגרפיה"
@@ -676,8 +676,8 @@
   },
   {
     "content_id": "FACT_HE_082",
-    "fact_template": "נכדו האחרון של הנשיא האמריקאי ג'ון טיילר — שכיהן בשנות ה-1840 — נפטר רק בשנת _______.",
-    "truth_keyword": "2020",
+    "fact_template": "נכדו של _______, שכיהן כנשיא אמריקאי בשנות ה-1840, נפטר רק בשנת 2020.",
+    "truth_keyword": "ג'ון טיילר",
     "metadata": {
       "difficulty": "Hard",
       "category": "היסטוריה"
@@ -793,8 +793,8 @@
   },
   {
     "content_id": "FACT_HE_095",
-    "fact_template": "ב-2012 אמר ביל איים לחברו: \"יש לי סיכוי גדול יותר להיפגע ממכת ברק מאשר לזכות בלוטו.\" מאוחר באותו לילה הוא _______.",
-    "truth_keyword": "נפגע ממכת ברק",
+    "fact_template": "ב-2012 אמר ביל איים לחברו: \"יש לי סיכוי גדול יותר להיפגע _______ מאשר לזכות בלוטו.\" מאוחר באותו לילה — בדיוק זה קרה.",
+    "truth_keyword": "ממכת ברק",
     "metadata": {
       "difficulty": "Medium",
       "category": "תרבות"
@@ -892,8 +892,8 @@
   },
   {
     "content_id": "FACT_HE_106",
-    "fact_template": "בובת ה-CPR המפורסמת 'אנני', שעליה מתאמנים מיליונים בעולם, מבוססת על פניה של _______.",
-    "truth_keyword": "נערה שטבעה בנהר הסיין",
+    "fact_template": "בובת ה-CPR המפורסמת 'אנני' מבוססת על פניה של _______ אנונימית שנשלפה מנהר הסיין.",
+    "truth_keyword": "גופה",
     "metadata": {
       "difficulty": "Hard",
       "category": "תרבות"
@@ -937,8 +937,8 @@
   },
   {
     "content_id": "FACT_HE_111",
-    "fact_template": "ב-1939, סטודנט שאיחר לשיעור ראה שתי בעיות על הלוח, חשב שהן שיעורי בית, פתר ושלח — ומסתבר שאלה היו _______.",
-    "truth_keyword": "בעיות בלתי פתורות בסטטיסטיקה",
+    "fact_template": "ב-1939, סטודנט שאיחר לשיעור ראה שתי בעיות על הלוח, חשב שהן שיעורי בית, פתר ושלח — ומסתבר שאלה היו _______ מפורסמות בסטטיסטיקה.",
+    "truth_keyword": "בעיות בלתי פתורות",
     "metadata": {
       "difficulty": "Hard",
       "category": "מדע"
@@ -1504,8 +1504,8 @@
   },
   {
     "content_id": "FACT_HE_174",
-    "fact_template": "אף אחת מהמדינות שגבלו בפולין בשנת 1990 _______.",
-    "truth_keyword": "לא קיימת היום",
+    "fact_template": "כל המדינות שגבלו בפולין ב-1990 _______ מאז.",
+    "truth_keyword": "התפרקו",
     "metadata": {
       "difficulty": "Medium",
       "category": "גאוגרפיה"
@@ -2647,8 +2647,8 @@
   },
   {
     "content_id": "FACT_HE_301",
-    "fact_template": "גז הצחוק ממרפאת השיניים וה'נייטרו' שמאיץ מכוניות הם _______ כימית.",
-    "truth_keyword": "אותה תרכובת",
+    "fact_template": "גז הצחוק ממרפאת השיניים וה'נייטרו' שמאיץ מכוניות הם שתי שמות לאותו חומר: _______.",
+    "truth_keyword": "תחמוצת החנקן",
     "metadata": {
       "difficulty": "Medium",
       "category": "מדע"
