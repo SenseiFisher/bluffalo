@@ -2494,8 +2494,8 @@
   },
   {
     "content_id": "FACT_HE_284",
-    "fact_template": "קולות הוולוצירפטורים בסרט פארק היורה הם הקלטה של _______ שמקיימים יחסי מין.",
-    "truth_keyword": "צבים",
+    "fact_template": "קולות הוולוצירפטורים בסרט פארק היורה הם הקלטה של _______.",
+    "truth_keyword": "צבים שמקיימים יחסי מין",
     "metadata": {
       "difficulty": "Hard",
       "category": "תרבות פופ"
@@ -2688,6 +2688,438 @@
     "metadata": {
       "difficulty": "Medium",
       "category": "תרבות"
+    }
+  },
+  {
+    "content_id": "FACT_HE_306",
+    "fact_template": "בקברו של נפוליאון בונפרטה חסר _______.",
+    "truth_keyword": "איבר מינו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_307",
+    "fact_template": "לסדרת 'סיינפלד' אין _______.",
+    "truth_keyword": "נעימת פתיחה",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "תרבות פופ"
+    }
+  },
+  {
+    "content_id": "FACT_HE_308",
+    "fact_template": "ב-2016 ערק סגן השגריר הצפון-קוריאני בלונדון לדרום קוריאה, ובעקבות כך הוצא השגריר _______.",
+    "truth_keyword": "להורג",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_309",
+    "fact_template": "מדי שנה מתבזבזים בבריטניה מאות אלפי פיינטים של גינס הנספגים ב_______ של השותים.",
+    "truth_keyword": "שפם",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "תרבות"
+    }
+  },
+  {
+    "content_id": "FACT_HE_310",
+    "fact_template": "לרכבי נשיא מדינת ישראל אין _______, אלא רק סמל המדינה.",
+    "truth_keyword": "לוחיות רישוי",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "ישראל"
+    }
+  },
+  {
+    "content_id": "FACT_HE_311",
+    "fact_template": "כרוב ניצנים הוא לא _______ אלא זן נפרד שצומח באשכולות על גבעולים.",
+    "truth_keyword": "כרוב צעיר",
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "מדע"
+    }
+  },
+  {
+    "content_id": "FACT_HE_312",
+    "fact_template": "גרגירי שעועית גולמיים לא מבושלים מכילים _______ חזק שיכול לגרום למוות.",
+    "truth_keyword": "רעל",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מדע"
+    }
+  },
+  {
+    "content_id": "FACT_HE_313",
+    "fact_template": "מאז 2016 מתקיימת בארה\"ב כל שנה תחרות גלישת גלים שבה המתחרים הם _______.",
+    "truth_keyword": "כלבים",
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "ספורט"
+    }
+  },
+  {
+    "content_id": "FACT_HE_314",
+    "fact_template": "הסיפור 'כך ולא כך' מהספר 'דירה להשכיר' לא נכתב על ידי לאה גולדברג, אלא עובד מסיפורו של _______.",
+    "truth_keyword": "קורניי צ'וקובסקי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ספרות"
+    }
+  },
+  {
+    "content_id": "FACT_HE_315",
+    "fact_template": "סמל חטיבת השריון 217 בצה\"ל, שפעלה בין 1962 ל-2004, היה _______.",
+    "truth_keyword": "חד קרן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ישראל"
+    }
+  },
+  {
+    "content_id": "FACT_HE_316",
+    "fact_template": "המלחין ארנולד שנברג סירב לתת מספר 13 לפרקים ביצירותיו בגלל שלקה ב_______.",
+    "truth_keyword": "טריסקאידקפוביה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "מוזיקה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_317",
+    "fact_template": "ה'משיכת אוזניים' הוא ספורט עממי מסורתי של קהילת _______.",
+    "truth_keyword": "האינואיטים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ספורט"
+    }
+  },
+  {
+    "content_id": "FACT_HE_318",
+    "fact_template": "מדינת ישראל אירחה פעם _______, אך לא את האולימפיאדה הרגילה.",
+    "truth_keyword": "המשחקים הפאראלימפיים",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "ישראל"
+    }
+  },
+  {
+    "content_id": "FACT_HE_319",
+    "fact_template": "המילה 'כָּחָל' בביטוי 'ללא כחל ושרק' פירושה _______.",
+    "truth_keyword": "איפור לעיניים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "שפה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_320",
+    "fact_template": "בעיירה קווינסי, פלורידה, נוצרו עשרות מיליונרים בזכות השקעה מוקדמת במניות של _______.",
+    "truth_keyword": "קוקה קולה",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "כלכלה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_321",
+    "fact_template": "ביוון העתיקה, שלטונות אתונה הטילו _______ על בתי הזונות.",
+    "truth_keyword": "פיקוח מחירים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_322",
+    "fact_template": "קרן ההשתלמות נועדה במקור לממן _______ לעובדים שכירים, לא חופשות.",
+    "truth_keyword": "השתלמויות מקצועיות",
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "ישראל"
+    }
+  },
+  {
+    "content_id": "FACT_HE_323",
+    "fact_template": "בשנותיה הראשונות, רוסיה סיפחה מדי שנה שטח בגודל _______.",
+    "truth_keyword": "בלגיה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_324",
+    "fact_template": "בתקופת מלחמת העולם השנייה, נאסר על תושבי ארץ ישראל לאכול _______.",
+    "truth_keyword": "גלידה",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "ישראל"
+    }
+  },
+  {
+    "content_id": "FACT_HE_325",
+    "fact_template": "השם העברי הרשמי של הפסיפלורה הוא '_______'.",
+    "truth_keyword": "שעונית נאכלת",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "שפה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_326",
+    "fact_template": "באולימפיאדות הראשונות התחרו ספורטאים גם בקפיצה לרוחק ולגובה _______, ללא כל כניסה.",
+    "truth_keyword": "ממקום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ספורט"
+    }
+  },
+  {
+    "content_id": "FACT_HE_327",
+    "fact_template": "בין סין (נהיגה בצד ימין) למקאו (נהיגה בצד שמאל) נבנה _______ מיוחד שבו מחליפים צד נסיעה.",
+    "truth_keyword": "גשר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_328",
+    "fact_template": "מספר העצים בכדור הארץ גדול ממספר ה_______ בשביל החלב.",
+    "truth_keyword": "כוכבים",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מדע"
+    }
+  },
+  {
+    "content_id": "FACT_HE_329",
+    "fact_template": "בסיאטל עמדה במשך כ-30 שנה _______ מסתורית שהגישה משקאות נדירים — ואף אחד לא ידע מי ממלא אותה.",
+    "truth_keyword": "מכונת משקאות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות"
+    }
+  },
+  {
+    "content_id": "FACT_HE_330",
+    "fact_template": "סנאי הרטופה ההודי, אחד הסנאים הגדולים בעולם, הוא בגודל של _______.",
+    "truth_keyword": "חתול בוגר",
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "בעלי חיים"
+    }
+  },
+  {
+    "content_id": "FACT_HE_331",
+    "fact_template": "בבלומינגטון, אינדיאנה, קיימת אנדרטה לציון מקום הולדתה העתידי של _______, דמות בדיונית מסטאר טרק.",
+    "truth_keyword": "קפטן ג'יינוויי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות פופ"
+    }
+  },
+  {
+    "content_id": "FACT_HE_332",
+    "fact_template": "יש יותר טיגריסים בשבי ב_______ מאשר בטבע בכל העולם.",
+    "truth_keyword": "ארה\"ב",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "בעלי חיים"
+    }
+  },
+  {
+    "content_id": "FACT_HE_333",
+    "fact_template": "טוקנים שאיבדו את מקורם מקבלים _______ מותאם אישית.",
+    "truth_keyword": "מקור מודפס בתלת-מימד",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "בעלי חיים"
+    }
+  },
+  {
+    "content_id": "FACT_HE_334",
+    "fact_template": "האלבום 'Live Scenes from New York' יצא בדיוק ב-11 בספטמבר 2001, כשעל עטיפתו _______.",
+    "truth_keyword": "מגדלי התאומים עולים באש",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "מוזיקה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_335",
+    "fact_template": "שורת הפתיחה המקורית של תוכנית האנגלית 'Here We Are' הייתה 'Here we are at _______'.",
+    "truth_keyword": "Dizengoff Circle",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ישראל"
+    }
+  },
+  {
+    "content_id": "FACT_HE_336",
+    "fact_template": "אם תפגשו את הקומיקאי סטיב מרטין ברחוב, הוא עשוי לתת לכם _______.",
+    "truth_keyword": "כרטיס הוכחה שפגשתם אותו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות פופ"
+    }
+  },
+  {
+    "content_id": "FACT_HE_337",
+    "fact_template": "כיכר דיזנגוף בתל אביב נקראת על שם _______, לא על שם בעלה מאיר.",
+    "truth_keyword": "צינה דיזנגוף",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "ישראל"
+    }
+  },
+  {
+    "content_id": "FACT_HE_338",
+    "fact_template": "מדוזת 'הבטן המדממת' מסתירה את הטרף שבבטנה מפני טורפים על ידי פליטת _______.",
+    "truth_keyword": "אור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "בעלי חיים"
+    }
+  },
+  {
+    "content_id": "FACT_HE_339",
+    "fact_template": "השחקן ג'וני אק נולד ללא _______.",
+    "truth_keyword": "פלג גוף תחתון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות פופ"
+    }
+  },
+  {
+    "content_id": "FACT_HE_340",
+    "fact_template": "יחידת המשקל 'גריין' המשמשת לתיאור משקל קליעי אקדח נגזרה ממשקל גרגיר _______.",
+    "truth_keyword": "אורז",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_341",
+    "fact_template": "פתיחת השחמט 'בנוני' נגזרת מ'בן-אוני' שהוא השם שנתנה _______ לבנה בנימין ברגע לידתו.",
+    "truth_keyword": "רחל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ספורט"
+    }
+  },
+  {
+    "content_id": "FACT_HE_342",
+    "fact_template": "לכריש הלימוני קראו כך בגלל _______.",
+    "truth_keyword": "צבעו הצהוב",
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "בעלי חיים"
+    }
+  },
+  {
+    "content_id": "FACT_HE_343",
+    "fact_template": "ב-1974, בהלצת אפריל, אלסקאי הטיס 70 _______ לפיית הר הגעש הרדום ולאסוס והצית אותם.",
+    "truth_keyword": "צמיגים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות"
+    }
+  },
+  {
+    "content_id": "FACT_HE_344",
+    "fact_template": "בצילומי 'בלייד: טריניטי', ג'סיקה בייל הרסה בטעות מצלמה יקרה על ידי _______ ישירות לתוך העדשה.",
+    "truth_keyword": "ירי חץ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות פופ"
+    }
+  },
+  {
+    "content_id": "FACT_HE_345",
+    "fact_template": "המונח 'גזלייטינג' לקוח משם סרט מ-1944 בכיכובה של _______.",
+    "truth_keyword": "אינגריד ברגמן",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "שפה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_346",
+    "fact_template": "מאז 1921, גם מדינות _______ רשאיות לרשום ספינות שישוטו תחת דגלן.",
+    "truth_keyword": "ללא גישה לים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_347",
+    "fact_template": "ב-1952, נהג אוטובוס בלונדון קפץ את האוטובוס מעל _______ בזמן שהגשר החל להתרומם.",
+    "truth_keyword": "טאואר ברידג'",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_348",
+    "fact_template": "המנהג להרים את ילד יום ההולדת על _______ הוא מסורת ישראלית ייחודית.",
+    "truth_keyword": "כיסא",
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "ישראל"
+    }
+  },
+  {
+    "content_id": "FACT_HE_349",
+    "fact_template": "נשיא ארה\"ב _______ ישן בזמן כהונתו כ-11 שעות בלילה ועוד שנ\"ץ של 2-4 שעות מדי יום.",
+    "truth_keyword": "קלווין קולידג'",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_350",
+    "fact_template": "ראשי התיבות RSVP מגיעים מצרפתית ופירושם '_______'.",
+    "truth_keyword": "אנא תגובתך",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "שפה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_351",
+    "fact_template": "טום הנקס, מרטין שורט וסטיב מרטין נפגשים מדי שנתיים לאירוע משותף שבמרכזו _______.",
+    "truth_keyword": "קולונוסקופיה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות פופ"
+    }
+  },
+  {
+    "content_id": "FACT_HE_352",
+    "fact_template": "חנות האפל היחידה שאינה נסגרת לעולם נמצאת ב_______.",
+    "truth_keyword": "שדרה החמישית בניו יורק",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "טכנולוגיה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_353",
+    "fact_template": "עברית היא השפה השנייה בעולם, אחרי איטלקית, שבה נכתבו _______.",
+    "truth_keyword": "סונטות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ספרות"
     }
   }
 ]
