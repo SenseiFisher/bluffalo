@@ -6,10 +6,6 @@ import { MAX_DISPLAY_NAME_LENGTH, MAX_LIE_LENGTH } from "../../../shared/constan
 export function sanitizeHtml(input: string): string {
   return input
     .replace(/<[^>]*>/g, "")           // strip HTML tags
-    .replace(/&/g, "&amp;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#x27;")
-    .replace(/\//g, "&#x2F;")
     .trim();
 }
 
