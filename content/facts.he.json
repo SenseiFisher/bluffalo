@@ -3126,474 +3126,972 @@
     "content_id": "FACT_HE_354",
     "fact_template": "בסופות גשם, ג'ירפות לא מסתתרות ולא בורחות — הן פשוט _______.",
     "truth_keyword": "עומדות במקום",
-    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_355",
     "fact_template": "בשיר \"המשפחה\" בביצוע שלמה ניצן, אין אף איזכור מפורש של _______.",
     "truth_keyword": "אמא",
-    "metadata": { "difficulty": "Hard", "category": "מוזיקה ישראלית" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "מוזיקה ישראלית"
+    }
   },
   {
     "content_id": "FACT_HE_356",
     "fact_template": "הישראלי הראשון שניצח בתחרות ב-NBA All-Star היה _______, שניצח בתחרות השלשות של צוותי התקשורת ב-1998.",
     "truth_keyword": "מוני מושונוב",
-    "metadata": { "difficulty": "Hard", "category": "ספורט" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ספורט"
+    }
   },
   {
     "content_id": "FACT_HE_357",
     "fact_template": "בצבא, המילה \"סמל\" היא ראשי תיבות של _______.",
     "truth_keyword": "סגן מחוץ למניין",
-    "metadata": { "difficulty": "Medium", "category": "ישראל" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "ישראל"
+    }
   },
   {
     "content_id": "FACT_HE_358",
     "fact_template": "בגרינלנד, למרות שהיא מכוסה קרח, אין בטבע אף _______.",
     "truth_keyword": "פינגווין",
-    "metadata": { "difficulty": "Easy", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_359",
     "fact_template": "כשם שעבר-הירדן נקרא בלועזית 'טרנס-ג'ורדן', כך הצד הישראלי של הירדן נקרא _______.",
     "truth_keyword": "סיס-ג'ורדן",
-    "metadata": { "difficulty": "Hard", "category": "גאוגרפיה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
   },
   {
     "content_id": "FACT_HE_360",
     "fact_template": "המילה \"סמדר\" בעברית מתייחסת לא לשם פרטי, אלא ל_______.",
     "truth_keyword": "ניצני ענבים",
-    "metadata": { "difficulty": "Medium", "category": "עברית" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "עברית"
+    }
   },
   {
     "content_id": "FACT_HE_361",
     "fact_template": "לקניה ווסט יש בת שנקראת _______.",
     "truth_keyword": "נורת' ווסט",
-    "metadata": { "difficulty": "Easy", "category": "תרבות פופ" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "תרבות פופ"
+    }
   },
   {
     "content_id": "FACT_HE_362",
     "fact_template": "שושבינה אחת הגיעה לחתונה בתחפושת של _______, לאחר שהכלה אמרה לשושבינות להתלבש איך שרוצות.",
     "truth_keyword": "טי-רקס",
-    "metadata": { "difficulty": "Easy", "category": "תרבות" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "תרבות"
+    }
   },
   {
     "content_id": "FACT_HE_363",
     "fact_template": "כשנקבת עצלן מוכנה להזדווג, היא _______ ומחכה שזכר יגיע אליה.",
     "truth_keyword": "צורחת",
-    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_364",
     "fact_template": "ממשפחת גורדון מזיכרון יעקב, אחד הבנים ששמו \"רוח השם\" הוא _______.",
     "truth_keyword": "אלוף העולם באיגרוף תאילנדי",
-    "metadata": { "difficulty": "Hard", "category": "ישראל" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ישראל"
+    }
   },
   {
     "content_id": "FACT_HE_365",
     "fact_template": "מבשלת הבירה קרלסברג העניקה לחתן פרס נובל נילס בוהר _______ לכל החיים, דרך צינור ישיר לביתו.",
     "truth_keyword": "בירה חינם",
-    "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "היסטוריה"
+    }
   },
   {
     "content_id": "FACT_HE_366",
     "fact_template": "הנגנית ג'יין ליטל, מחזיקת שיא גינס כנגנית התזמורת הוותיקה ביותר, נפטרה בגיל 87 _______.",
     "truth_keyword": "תוך כדי נגינה בקונצרט",
-    "metadata": { "difficulty": "Medium", "category": "מוזיקה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מוזיקה"
+    }
   },
   {
     "content_id": "FACT_HE_367",
     "fact_template": "הטרף של הטיגריס רואה את פרוותו הכתומה כצבע _______, מה שהופך אותה לסוואה מושלמת.",
     "truth_keyword": "ירוק",
-    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_368",
     "fact_template": "בספטמבר 2239, השנה העברית תהיה רק _______ — ספרה עברית בודדת.",
     "truth_keyword": "ו'",
-    "metadata": { "difficulty": "Hard", "category": "לוח שנה עברי" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "לוח שנה עברי"
+    }
   },
   {
     "content_id": "FACT_HE_369",
     "fact_template": "שמו של הפסטיגל הוא מילה מורכבת משני מילים: _______ ו\"גל\".",
     "truth_keyword": "פסטיבל",
-    "metadata": { "difficulty": "Easy", "category": "תרבות ישראלית" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "תרבות ישראלית"
+    }
   },
   {
     "content_id": "FACT_HE_370",
     "fact_template": "הכוסברה מוכרת לרוב בשמה הערבי, אך שמה הרשמי בעברית הוא _______.",
     "truth_keyword": "גד השדה",
-    "metadata": { "difficulty": "Medium", "category": "עברית" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "עברית"
+    }
   },
   {
     "content_id": "FACT_HE_371",
     "fact_template": "עוגיית המזל הסינית אינה סינית כלל — ככל הנראה היא הומצאה ב_______.",
     "truth_keyword": "קליפורניה",
-    "metadata": { "difficulty": "Medium", "category": "תרבות פופ" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "תרבות פופ"
+    }
   },
   {
     "content_id": "FACT_HE_372",
     "fact_template": "לציון 30 שנה לאלבום Nevermind, רוכב אופניים אוסטרלי שירטט ב-GPS את דמות _______ מעטיפת האלבום.",
     "truth_keyword": "התינוק השוחה",
-    "metadata": { "difficulty": "Hard", "category": "תרבות פופ" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות פופ"
+    }
   },
   {
     "content_id": "FACT_HE_373",
     "fact_template": "הבניין הצר בעולם נקרא על שמו של הסופר הישראלי _______.",
     "truth_keyword": "אתגר קרת",
-    "metadata": { "difficulty": "Medium", "category": "תרבות" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "תרבות"
+    }
   },
   {
     "content_id": "FACT_HE_374",
     "fact_template": "יהודי אתיופיה חוגגים את ראש השנה בא' בניסן וקוראים לו _______.",
     "truth_keyword": "חג ליסן",
-    "metadata": { "difficulty": "Hard", "category": "יהדות" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "יהדות"
+    }
   },
   {
     "content_id": "FACT_HE_375",
     "fact_template": "הפרי שנראה כמו תות שדה הוא למעשה _______, קרוב משפחה של הפלפל השחור.",
     "truth_keyword": "פלפל ארוך",
-    "metadata": { "difficulty": "Hard", "category": "טבע" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "טבע"
+    }
   },
   {
     "content_id": "FACT_HE_376",
     "fact_template": "ב-1939 ירד בחיפה ממספינת עלייה עולה חדש בשם _______.",
     "truth_keyword": "אדולף הייטלר",
-    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
   },
   {
     "content_id": "FACT_HE_377",
     "fact_template": "רחוב הרכבים בירושלים לא נקרא על שם כלי רכב, אלא על שם _______ הנזכרת בספר ירמיהו.",
     "truth_keyword": "משפחת בני רכב",
-    "metadata": { "difficulty": "Hard", "category": "ישראל" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ישראל"
+    }
   },
   {
     "content_id": "FACT_HE_378",
     "fact_template": "ביסלי גריל משווק בחו\"ל בשם ביסלי ברביקיו, וביסלי _______ משווק בחו\"ל בשם ביסלי מעושן.",
     "truth_keyword": "ברביקיו",
-    "metadata": { "difficulty": "Easy", "category": "תרבות ישראלית" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "תרבות ישראלית"
+    }
   },
   {
     "content_id": "FACT_HE_379",
     "fact_template": "כדי למנוע נפילת גושי קרח ממיתרי גשרים על מכוניות, מורכבות על המיתרים _______.",
     "truth_keyword": "שרשראות",
-    "metadata": { "difficulty": "Medium", "category": "הנדסה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "הנדסה"
+    }
   },
   {
     "content_id": "FACT_HE_380",
     "fact_template": "הצבע מג'נטה קרוי על שם _______ בצפון איטליה.",
     "truth_keyword": "העיר מג'נטה",
-    "metadata": { "difficulty": "Medium", "category": "גאוגרפיה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "גאוגרפיה"
+    }
   },
   {
     "content_id": "FACT_HE_381",
     "fact_template": "השמש היא בעצם בצבע _______, ולא צהובה כפי שהיא נראית לנו.",
     "truth_keyword": "לבן",
-    "metadata": { "difficulty": "Medium", "category": "מדע" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מדע"
+    }
   },
   {
     "content_id": "FACT_HE_382",
     "fact_template": "מכון ויצמן ברחובות נקרא בייסודו על שם _______, לא על שם חיים ויצמן.",
     "truth_keyword": "דניאל זיו",
-    "metadata": { "difficulty": "Hard", "category": "ישראל" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ישראל"
+    }
   },
   {
     "content_id": "FACT_HE_383",
     "fact_template": "כאשר חגבים מסוימים חיים בצפיפות גבוהה, גופם מייצר יותר _______, מה שהופך אותם לארבה נודד.",
     "truth_keyword": "סרוטונין",
-    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_384",
     "fact_template": "הספינה האמפיבית האמריקאית 'USS New York' בנויה מפלדה שנוצקה מ_______.",
     "truth_keyword": "הריסות מגדלי התאומים",
-    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
   },
   {
     "content_id": "FACT_HE_385",
     "fact_template": "באוסטרליה ובניו זילנד, המשחק הידוע בשם \"אבן נייר מספריים\" נקרא בסדר הפוך: _______.",
     "truth_keyword": "מספריים נייר אבן",
-    "metadata": { "difficulty": "Easy", "category": "תרבות" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "תרבות"
+    }
   },
   {
     "content_id": "FACT_HE_386",
     "fact_template": "אישה מאוהיו נעצרה ב-2012 לאחר שפרצה לבית זר, _______ אותו, והשאירה דרישת תשלום.",
     "truth_keyword": "ניקתה",
-    "metadata": { "difficulty": "Medium", "category": "פשע" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "פשע"
+    }
   },
   {
     "content_id": "FACT_HE_387",
     "fact_template": "הפילוסוף עמנואל קאנט כינה את יהודי אירופה \"_______ החיים בקרבנו\" בספרו משנת 1798.",
     "truth_keyword": "הפלסטינים",
-    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
   },
   {
     "content_id": "FACT_HE_388",
     "fact_template": "קבוצת הוקי הנשים הקנדית מאדמונטון שנוסדה ב-1916 נקראה _______.",
     "truth_keyword": "אדמונטון סווסטיקאס",
-    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
   },
   {
     "content_id": "FACT_HE_389",
     "fact_template": "דו\"ח המהירות הראשון בהיסטוריה ניתן ב-1896, לאחר שהשוטר רדף אחרי הנהג כ-8 קילומטרים על _______.",
     "truth_keyword": "אופניים",
-    "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "היסטוריה"
+    }
   },
   {
     "content_id": "FACT_HE_390",
     "fact_template": "בין השנים 1988 ל-2011 הוענק פרס בין-לאומי לזכויות האדם על שם _______.",
     "truth_keyword": "מועמר קדאפי",
-    "metadata": { "difficulty": "Hard", "category": "פוליטיקה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "פוליטיקה"
+    }
   },
   {
     "content_id": "FACT_HE_391",
     "fact_template": "שיר הנושא של ישראל באירוויזיון 1985, \"עולה עולה\", נכתב במקור כשיר ילדים בשם _______.",
     "truth_keyword": "הכלב ויסקי",
-    "metadata": { "difficulty": "Medium", "category": "מוזיקה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מוזיקה"
+    }
   },
   {
     "content_id": "FACT_HE_392",
     "fact_template": "פקודות הדייג בישראל מגדירות _______ כ\"כל חיית מים, בין שהיא דג ובין שאינה דג\".",
     "truth_keyword": "דג",
-    "metadata": { "difficulty": "Medium", "category": "חוק" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "חוק"
+    }
   },
   {
     "content_id": "FACT_HE_393",
     "fact_template": "נחשים לעולם לא _______, מכיוון שאין להם עפעפיים.",
     "truth_keyword": "ממצמצים",
-    "metadata": { "difficulty": "Easy", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_394",
     "fact_template": "ישנו משתיק קול לטנקים — והוא גדול יותר מ_______.",
     "truth_keyword": "הטנק עצמו",
-    "metadata": { "difficulty": "Hard", "category": "צבא" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "צבא"
+    }
   },
   {
     "content_id": "FACT_HE_395",
     "fact_template": "פניה של בובת ההחייאה 'אנני' מבוססות על עותק מת של _______, אישה מסתורית שנמצאה טובעת בסיין.",
     "truth_keyword": "האלמונית מנהר הסן",
-    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
   },
   {
     "content_id": "FACT_HE_396",
     "fact_template": "יש שחקן כדורגל פרואני שקוראים לו _______, על שם מנהיג אל-קאידה לשעבר.",
     "truth_keyword": "אוסמה וינלאדן",
-    "metadata": { "difficulty": "Hard", "category": "ספורט" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ספורט"
+    }
   },
   {
     "content_id": "FACT_HE_397",
     "fact_template": "באוניברסיטה הטכנית במינכן ניתן לרדת מהקומה הרביעית לקומת הקרקע באמצעות _______.",
     "truth_keyword": "מגלשה",
-    "metadata": { "difficulty": "Medium", "category": "אדריכלות" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "אדריכלות"
+    }
   },
   {
     "content_id": "FACT_HE_398",
     "fact_template": "רק לאחר שהרצה הקנייתית פייית' קיפייגון זכתה במדליית זהב באולימפיאדת ריו 2016, כפרה חובר לראשונה ל_______.",
     "truth_keyword": "חשמל",
-    "metadata": { "difficulty": "Hard", "category": "ספורט" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ספורט"
+    }
   },
   {
     "content_id": "FACT_HE_399",
     "fact_template": "בהודו אסור לרופאים לגלות להורים את _______ של העובר לפני הלידה, כדי למנוע רצח עוברות.",
     "truth_keyword": "מין התינוק",
-    "metadata": { "difficulty": "Medium", "category": "חוק" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "חוק"
+    }
   },
   {
     "content_id": "FACT_HE_400",
     "fact_template": "במדינת ג'ורג'יה שבארצות הברית, אסור על פי חוק להציע _______ לאנשים שעומדים בתור לבחירות.",
     "truth_keyword": "מים או מזון",
-    "metadata": { "difficulty": "Medium", "category": "פוליטיקה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "פוליטיקה"
+    }
   },
   {
     "content_id": "FACT_HE_401",
     "fact_template": "בשנת 2020 התירה רשות הטבע והגנים בישראל לירות ב_______ ללא הגבלה, כדי למנוע את התפשטות המין הפולש.",
     "truth_keyword": "מיינה",
-    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_402",
     "fact_template": "לבני אדם יש בלוטות טעם לא רק בפה, אלא גם בבטן, במעיים, בריאות, במוח — ואפילו ב_______.",
     "truth_keyword": "תחת",
-    "metadata": { "difficulty": "Medium", "category": "גוף האדם" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "גוף האדם"
+    }
   },
   {
     "content_id": "FACT_HE_403",
     "fact_template": "מי שמגדל _______ בביתו בישראל עלול להיות מורשע ולקבל עד שנתיים מאסר בפועל.",
     "truth_keyword": "צב יבשה",
-    "metadata": { "difficulty": "Hard", "category": "חוק" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "חוק"
+    }
   },
   {
     "content_id": "FACT_HE_404",
     "fact_template": "שם אתר החדשות הישראלי 'מאקו' הוא ראשי תיבות של _______.",
     "truth_keyword": "מה קורה",
-    "metadata": { "difficulty": "Easy", "category": "תרבות ישראלית" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "תרבות ישראלית"
+    }
   },
   {
     "content_id": "FACT_HE_405",
     "fact_template": "בפינלנד יש אגם מלאכותי בצורת _______.",
     "truth_keyword": "פינלנד",
-    "metadata": { "difficulty": "Hard", "category": "גאוגרפיה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
   },
   {
     "content_id": "FACT_HE_406",
     "fact_template": "בשדה התעופה של העיר סוואנה בג'ורג'יה נמצאים שני _______ ישנים באמצע מסלול ההמראה הפעיל.",
     "truth_keyword": "קברים",
-    "metadata": { "difficulty": "Hard", "category": "גאוגרפיה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
   },
   {
     "content_id": "FACT_HE_407",
     "fact_template": "המילה 'שאטל' (shuttle) מקורה בשם החלק שנע הלוך ושוב בתהליך _______.",
     "truth_keyword": "אריגה",
-    "metadata": { "difficulty": "Medium", "category": "שפה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "שפה"
+    }
   },
   {
     "content_id": "FACT_HE_408",
     "fact_template": "בעיר קלוז' שברומניה אפשר לקבל כרטיס נסיעה חינם בתמורה לביצוע _______ במקום.",
     "truth_keyword": "סקוואטים",
-    "metadata": { "difficulty": "Hard", "category": "תרבות" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות"
+    }
   },
   {
     "content_id": "FACT_HE_409",
     "fact_template": "למרות מראהו, הדוב שייך מבחינה טקסונומית למשפחת _______ — כמו הזאב והדביבון.",
     "truth_keyword": "דמויי הכלבים",
-    "metadata": { "difficulty": "Hard", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_410",
     "fact_template": "הביטוי 'קופת חזיר' לא קשור לחזיר — המקור הוא _______ זול בשם pygg שממנו יצרו קופות חיסכון.",
     "truth_keyword": "חימר",
-    "metadata": { "difficulty": "Medium", "category": "שפה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "שפה"
+    }
   },
   {
     "content_id": "FACT_HE_411",
     "fact_template": "המילים 'תוכי', 'כורכום' ו'קוף' בעברית תנ\"כית שאולות מהשפה ה_______.",
     "truth_keyword": "טמילית",
-    "metadata": { "difficulty": "Hard", "category": "שפה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "שפה"
+    }
   },
   {
     "content_id": "FACT_HE_412",
     "fact_template": "החודשים אפריל, יולי וספטמבר נקראים בטורקית בשמות _______ המוכרים לנו מהלוח העברי.",
     "truth_keyword": "ניסן, תמוז ואיילול",
-    "metadata": { "difficulty": "Medium", "category": "תרבות" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "תרבות"
+    }
   },
   {
     "content_id": "FACT_HE_413",
     "fact_template": "כשירד גשם לראשונה במדבר אטקמה אחרי מאות שנים של בצורת, _______ הרגו 85% מהחיים המיקרוסקופיים שם.",
     "truth_keyword": "המים",
-    "metadata": { "difficulty": "Hard", "category": "מדע" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "מדע"
+    }
   },
   {
     "content_id": "FACT_HE_414",
     "fact_template": "בציפורים החלק הלבן בצואה אינו קקי — הוא למעשה _______.",
     "truth_keyword": "שתן",
-    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_415",
     "fact_template": "טכנולוגיית הבלוטות' קרויה על שם _______, מלך ויקינגי שאיחד שבטים בסקנדינביה לפני אלף שנה.",
     "truth_keyword": "האראלד גורמסון",
-    "metadata": { "difficulty": "Medium", "category": "טכנולוגיה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "טכנולוגיה"
+    }
   },
   {
     "content_id": "FACT_HE_416",
     "fact_template": "יש תופעה שבה זנבות של חולדות מסתבכים יחד ויוצרים יצור אחד מחובר — התופעה נקראת _______.",
     "truth_keyword": "מלך חולדה",
-    "metadata": { "difficulty": "Medium", "category": "בעלי חיים" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "בעלי חיים"
+    }
   },
   {
     "content_id": "FACT_HE_417",
     "fact_template": "בהודו, הדת עם יותר מאמינים מבין הבודהיסטים היא למעשה _______.",
     "truth_keyword": "נצרות",
-    "metadata": { "difficulty": "Hard", "category": "גאוגרפיה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
   },
   {
     "content_id": "FACT_HE_418",
     "fact_template": "התרגום הראשון של 'ההוביט' לעברית בוצע על ידי _______ ששהו בכלא המצרי בשנת 1970.",
     "truth_keyword": "שבויים ישראלים",
-    "metadata": { "difficulty": "Hard", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
   },
   {
     "content_id": "FACT_HE_419",
     "fact_template": "הביטוי 'עצת אחיתופל' משמש לציון עצה גרועה, אך בניגוד לכך עצתו של אחיתופל במקור הייתה _______.",
     "truth_keyword": "טובה",
-    "metadata": { "difficulty": "Hard", "category": "תרבות" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות"
+    }
   },
   {
     "content_id": "FACT_HE_420",
     "fact_template": "כשהוצע לרכוש את המחשב הראשון לישראל, _______ התנגד וטען: 'מה מדינה קטנה כזו צריכה מחשב?'",
     "truth_keyword": "אלברט איינשטיין",
-    "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "היסטוריה"
+    }
   },
   {
     "content_id": "FACT_HE_421",
     "fact_template": "הטבעות של כוכב שבתאי נושרות לאט על פני הכוכב בתופעה המכונה _______.",
     "truth_keyword": "גשם הטבעות",
-    "metadata": { "difficulty": "Hard", "category": "מדע" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "מדע"
+    }
   },
   {
     "content_id": "FACT_HE_422",
     "fact_template": "בשנת 2006 בית משפט בפלורידה הורה לשני עורכי דין לפתור מחלוקת על ידי משחק _______ על מדרגות בית המשפט.",
     "truth_keyword": "אבן נייר מספריים",
-    "metadata": { "difficulty": "Hard", "category": "משפט" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "משפט"
+    }
   },
   {
     "content_id": "FACT_HE_423",
     "fact_template": "המנון יוון והמנון _______ הם אותו המנון בדיוק.",
     "truth_keyword": "קפריסין",
-    "metadata": { "difficulty": "Medium", "category": "גאוגרפיה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "גאוגרפיה"
+    }
   },
   {
     "content_id": "FACT_HE_424",
     "fact_template": "האות J שמופיעה לעיתים בסוף מיילים היא בעצם _______ שמיקרוסופט לא הצליחה לקודד נכון.",
     "truth_keyword": "סמיילי",
-    "metadata": { "difficulty": "Easy", "category": "טכנולוגיה" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "טכנולוגיה"
+    }
   },
   {
     "content_id": "FACT_HE_425",
     "fact_template": "בין 1979 ל-1982 חברת _______ נתנה קוביות עשויות זהב טהור לעובדים ותיקים ולשותפים עסקיים.",
     "truth_keyword": "לגו",
-    "metadata": { "difficulty": "Hard", "category": "תרבות" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות"
+    }
   },
   {
     "content_id": "FACT_HE_426",
     "fact_template": "בסמל הרשמי של העיר ברן, בירת שווייץ, לדוב יש _______.",
     "truth_keyword": "פין אדום",
-    "metadata": { "difficulty": "Hard", "category": "גאוגרפיה" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
   },
   {
     "content_id": "FACT_HE_427",
     "fact_template": "בבית הקברות המרכזי של _______ יש יותר קבורים מאשר אנשים חיים בעיר כולה.",
     "truth_keyword": "וינה",
-    "metadata": { "difficulty": "Medium", "category": "גאוגרפיה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "גאוגרפיה"
+    }
   },
   {
     "content_id": "FACT_HE_428",
     "fact_template": "הביטוי 'מלח הארץ' מקורו בדברי _______ כפי שמופיע בברית החדשה.",
     "truth_keyword": "ישו",
-    "metadata": { "difficulty": "Easy", "category": "שפה" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "שפה"
+    }
   },
   {
     "content_id": "FACT_HE_429",
     "fact_template": "המילה 'טריקו' לקוחה מהצרפתית ומשמעותה _______.",
     "truth_keyword": "סריגה",
-    "metadata": { "difficulty": "Easy", "category": "שפה" }
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "שפה"
+    }
   },
   {
     "content_id": "FACT_HE_430",
     "fact_template": "ראובן ריינוסו מתפרנס בתור _______ מקצועי — הוא עושה זאת על שלושה דגמים שונים בכל יום.",
     "truth_keyword": "קופץ מזרנים",
-    "metadata": { "difficulty": "Hard", "category": "תרבות" }
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות"
+    }
   },
   {
     "content_id": "FACT_HE_431",
     "fact_template": "לאופרה הישראלית יש _______ קבוע עם עמוד אמן רשמי — שמו זכריה והוא קונטרה-טנור.",
     "truth_keyword": "חתול",
-    "metadata": { "difficulty": "Medium", "category": "תרבות" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "תרבות"
+    }
   },
   {
     "content_id": "FACT_HE_432",
     "fact_template": "הקונגרס הציוני הראשון בבזל ב-1897 התקיים בתוך _______.",
     "truth_keyword": "קזינו",
-    "metadata": { "difficulty": "Medium", "category": "היסטוריה" }
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_433",
+    "fact_template": "המילה פיג׳מה הגיעה לאנגלית ולעברית מהשפה ה_______.",
+    "truth_keyword": "פרסית",
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "לשון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_434",
+    "fact_template": "בשנת 675 לספירה הוצא חוק ב_______ שאסר על אכילת בעלי חיים יבשתיים, וחוק זה השפיע על התרבות המקומית במשך יותר מאלף שנה.",
+    "truth_keyword": "יפן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_435",
+    "fact_template": "בקבוק יין בנפח 3 ליטרים נקרא _______ — על שם מלך מקראי.",
+    "truth_keyword": "ירבעם",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות"
+    }
+  },
+  {
+    "content_id": "FACT_HE_436",
+    "fact_template": "השיר ״Let's Get It Started״ של Black Eyed Peas שוחרר במקורו בשנת 2003 תחת השם _______.",
+    "truth_keyword": "Let's Get Retarded",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מוזיקה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_437",
+    "fact_template": "המנה האמריקאית ״Chicken-fried steak״ אינה מכילה _______ בכלל, אלא מדובר בסטייק בקר מטוגן בציפוי.",
+    "truth_keyword": "עוף",
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "מזון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_438",
+    "fact_template": "המילה ventriloquism מגיעה מהלטינית: חיבור של המילים ״דיבור״ ו-_______.",
+    "truth_keyword": "בטן",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "לשון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_439",
+    "fact_template": "בתקופה הויקטוריאנית יוצר צבע חום פופולרי מבשר _______ טחון.",
+    "truth_keyword": "מומיות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_440",
+    "fact_template": "יהודית פולגאר הגיעה למקום 8 בדירוג השחמט הפתוח — דבר שלא הצליחה לעשות _______ אחרת מעולם.",
+    "truth_keyword": "אישה",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "ספורט"
+    }
+  },
+  {
+    "content_id": "FACT_HE_441",
+    "fact_template": "לאחר אסון צ'רנוביל ב-1986, _______ של אותה תחנה המשיך לפעול ולייצר חשמל עד שנת 2000.",
+    "truth_keyword": "כור מספר 3",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "היסטוריה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_442",
+    "fact_template": "המילה היוונית ״χαρά״ — הנשמעת בדומה ל״חרא״ בעברית — פירושה _______.",
+    "truth_keyword": "שמחה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "לשון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_443",
+    "fact_template": "באירית, המילה ״beag״ — הנשמעת כמו ״big״ באנגלית — פירושה דווקא _______.",
+    "truth_keyword": "קטן",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "לשון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_444",
+    "fact_template": "הקו הארוך (—) הנפוץ בכתיבה נקרא em dash כי רוחבו שווה לרוחב האות _______.",
+    "truth_keyword": "M",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "לשון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_445",
+    "fact_template": "אדם שהלך לישון בצרפת וקם בבוקר ב_______, מבלי לחצות גבול, לנסוע או לעבור דירה — אפשרי בזכות אי הפסיונים שריבונותו מתחלפת.",
+    "truth_keyword": "ספרד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_446",
+    "fact_template": "הביטוי האנגלי ״steal your thunder״ נולד כשתיאטרון השתמש ב_______ שהמציא מחזאי מהמאה ה-18 עבור הצגתו שנכשלה.",
+    "truth_keyword": "מכונת רעם",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "לשון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_447",
+    "fact_template": "הפסטה האיטלקית Strozzapreti שמה פירושו ל_______.",
+    "truth_keyword": "חנוק כמרים",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מזון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_448",
+    "fact_template": "שנת 1905 נחשבת _______ במדע — שנה שבה פרסם איינשטיין 4 מאמרים מהפכניים ששינו את הפיזיקה.",
+    "truth_keyword": "שנת הפלאות",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מדע"
+    }
+  },
+  {
+    "content_id": "FACT_HE_449",
+    "fact_template": "מקור המילה ״תיקו״ בספורט הוא בעצם מונח _______ שמשמעותו ״השאלה תעמוד ולא תוכרע״.",
+    "truth_keyword": "תלמודי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "לשון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_450",
+    "fact_template": "מחקרים גילו שמשחק _______ עד שש שעות לאחר אירוע טראומטי מפחית את הסיכוי לפיתוח פוסט-טראומה.",
+    "truth_keyword": "טטריס",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מדע"
+    }
+  },
+  {
+    "content_id": "FACT_HE_451",
+    "fact_template": "הסלוגן ״Just Do It״ של נייקי נולד מהשראת דבריו האחרונים של פושע שהוצא להורג ב_______.",
+    "truth_keyword": "כיסא חשמלי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות פופ"
+    }
+  },
+  {
+    "content_id": "FACT_HE_452",
+    "fact_template": "ב-31 בדצמבר 1994, מדינת קיריבטי באוקיינוס השקט פשוט _______ יום שלם מהלוח השנה שלה כדי ליישר את קו התאריך הבין-לאומי.",
+    "truth_keyword": "מחקה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_453",
+    "fact_template": "שלוש הכוכביות (***) המשמשות להפרדה בין פסקאות בספרים נקראות _______.",
+    "truth_keyword": "Dinkus",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "לשון"
+    }
+  },
+  {
+    "content_id": "FACT_HE_454",
+    "fact_template": "ב-_______ מתחלפים סבבי שחמט וסבבי אגרוף לחלופין — עד שמישהו מקבל מט או נוקאאוט.",
+    "truth_keyword": "Chess Boxing",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "ספורט"
+    }
+  },
+  {
+    "content_id": "FACT_HE_455",
+    "fact_template": "הוומבט הוא בעל החיים היחיד בעולם שמייצר גללים בצורת _______.",
+    "truth_keyword": "קובייה",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "בעלי חיים"
+    }
+  },
+  {
+    "content_id": "FACT_HE_456",
+    "fact_template": "בשנת 1987 חברת עלית השיקה מותג קולה בשם _______, שם שגרם לרעש ציבורי ניכר.",
+    "truth_keyword": "קוקה-אין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "תרבות"
+    }
+  },
+  {
+    "content_id": "FACT_HE_457",
+    "fact_template": "מרי גראמס מקנדה איבדה את טבעת האירוסין שלה בגינה. כעבור 13 שנה נמצאה הטבעת מושחלת סביב _______.",
+    "truth_keyword": "גזר",
+    "metadata": {
+      "difficulty": "Medium",
+      "category": "מוזר"
+    }
+  },
+  {
+    "content_id": "FACT_HE_458",
+    "fact_template": "כשם שנשיא ארה״ב טס באייר פורס 1, שם הקוד של המטוס שעליו טס _______ הוא אייר פורס 2.",
+    "truth_keyword": "סגן הנשיא",
+    "metadata": {
+      "difficulty": "Easy",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "FACT_HE_459",
+    "fact_template": "שמה של המדינה ״פיליפינים״ מגיע משמו של _______, מלך ספרד שבתקופתו גילו הספרדים את האיים במאה ה-16.",
+    "truth_keyword": "פיליפה השני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
+  },
+  {
+    "content_id": "FACT_HE_460",
+    "fact_template": "גבר איטלקי יצא לסיבוב בשכונה לאחר _______ ב-2020 — ובסופו נמצא כ-450 קילומטר מהבית.",
+    "truth_keyword": "ריב עם אשתו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "מוזר"
+    }
+  },
+  {
+    "content_id": "FACT_HE_461",
+    "fact_template": "במדינה שנקראת אוגנדה, יש ממלכה שנקראת _______, שבה מדברים שפה שנקראת לוגנדה.",
+    "truth_keyword": "בוגנדה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "גאוגרפיה"
+    }
   }
 ]
