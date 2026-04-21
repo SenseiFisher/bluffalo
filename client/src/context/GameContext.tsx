@@ -31,6 +31,7 @@ interface GameContextValue {
   isConnected: boolean
   storedSession: StoredSession | null
   clearStoredSession: () => void
+  leaveRoom: () => void
 }
 
 const GameContext = createContext<GameContextValue>({
@@ -44,6 +45,7 @@ const GameContext = createContext<GameContextValue>({
   isConnected: false,
   storedSession: null,
   clearStoredSession: () => {},
+  leaveRoom: () => {},
 })
 
 export function GameProvider({ children }: { children: React.ReactNode }) {
@@ -163,6 +165,15 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     }
   }, [])
 
+  const leaveRoom = useCallback(() => {
+    if (socketRef.current?.connected) {
+      socketRef.current.emit('LEAVE_ROOM')
+    }
+    setGameState(null)
+    setMySessionId(null)
+    clearSession()
+  }, [clearSession])
+
   return (
     <GameContext.Provider
       value={{
@@ -176,6 +187,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         isConnected,
         storedSession,
         clearStoredSession: clearSession,
+        leaveRoom,
       }}
     >
       {children}

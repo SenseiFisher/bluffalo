@@ -405,6 +405,35 @@ export function registerHandlers(io: Server, socket: Socket): void {
     broadcastGameState(io, roomCode, state);
   });
 
+  // ── LEAVE_ROOM ─────────────────────────────────────────────────────────────
+  socket.on("LEAVE_ROOM", () => {
+    const roomCode = getRoomCodeForSocket(socket);
+    if (!roomCode) return;
+
+    const state = getRoom(roomCode);
+    if (!state || state.phase !== GamePhase.LOBBY) return;
+
+    const playerIndex = state.players.findIndex((pl) => pl.id === socket.id);
+    if (playerIndex === -1) return;
+
+    const leavingPlayer = state.players[playerIndex];
+    const wasRoomMaster = leavingPlayer.session_id === state.room_master_session_id;
+
+    state.players.splice(playerIndex, 1);
+    socket.leave(roomCode);
+
+    if (state.players.length === 0) {
+      deleteRoom(roomCode);
+    } else {
+      if (wasRoomMaster) {
+        const nextConnected = state.players.find((p) => p.is_connected) ?? state.players[0];
+        state.room_master_session_id = nextConnected.session_id;
+      }
+      setRoom(roomCode, state);
+      broadcastGameState(io, roomCode, state);
+    }
+  });
+
   // ── DISCONNECT ─────────────────────────────────────────────────────────────
   socket.on("disconnect", () => {
     const roomCode = getRoomCodeForSocket(socket);

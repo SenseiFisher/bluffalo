@@ -1,9 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useGame } from '../context/GameContext'
 
 export default function LobbyScreen() {
-  const { gameState, mySessionId, emit, lastError, clearError } = useGame()
+  const { gameState, mySessionId, emit, lastError, clearError, leaveRoom } = useGame()
   const [totalRounds, setTotalRounds] = useState(7)
+
+  useEffect(() => {
+    history.pushState({ lobby: true }, '')
+    const onPop = () => leaveRoom()
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [leaveRoom])
   const [promptTimerSeconds, setPromptTimerSeconds] = useState(60)
   const [language, setLanguage] = useState<'en' | 'he'>('en')
   const TIMER_PRESETS = [30, 45, 60, 90, 120, 150]
@@ -192,6 +199,7 @@ export default function LobbyScreen() {
           </div>
         </div>
       )}
+
     </div>
   )
 }
