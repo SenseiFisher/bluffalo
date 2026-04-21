@@ -406,6 +406,35 @@ export function registerHandlers(io: Server, socket: Socket): void {
   });
 
   // ── LEAVE_ROOM ─────────────────────────────────────────────────────────────
+  // ── KICK_PLAYER ────────────────────────────────────────────────────────────
+  socket.on("KICK_PLAYER", (payload: unknown) => {
+    const p = payload as { player_id?: string };
+    const targetSocketId = typeof p?.player_id === "string" ? p.player_id : null;
+    if (!targetSocketId) return;
+
+    const roomCode = getRoomCodeForSocket(socket);
+    if (!roomCode) return;
+
+    const state = getRoom(roomCode);
+    if (!state || state.phase !== GamePhase.LOBBY) return;
+
+    const kicker = state.players.find((pl) => pl.id === socket.id);
+    if (!kicker || kicker.session_id !== state.room_master_session_id) return;
+
+    const targetIndex = state.players.findIndex((pl) => pl.id === targetSocketId);
+    if (targetIndex === -1) return;
+
+    state.players.splice(targetIndex, 1);
+
+    io.to(targetSocketId).emit("KICKED", {});
+    const targetSocket = io.sockets.sockets.get(targetSocketId);
+    if (targetSocket) targetSocket.leave(roomCode);
+
+    setRoom(roomCode, state);
+    broadcastGameState(io, roomCode, state);
+  });
+
+  // ── LEAVE_ROOM ─────────────────────────────────────────────────────────────
   socket.on("LEAVE_ROOM", () => {
     const roomCode = getRoomCodeForSocket(socket);
     if (!roomCode) return;

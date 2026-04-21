@@ -80,6 +80,10 @@ export interface PlayAgainPayload {
   // empty
 }
 
+export interface KickPlayerPayload {
+  player_id: string; // socket.id of the player to kick
+}
+
 export interface RoomJoinedPayload {
   game_state: GameState;
   your_session_id: string;

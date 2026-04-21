@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useGame } from '../context/GameContext'
 
 export default function LobbyScreen() {
-  const { gameState, mySessionId, emit, lastError, clearError, leaveRoom } = useGame()
+  const { gameState, mySessionId, socket, emit, lastError, clearError, leaveRoom } = useGame()
   const [totalRounds, setTotalRounds] = useState(7)
 
   useEffect(() => {
@@ -89,9 +89,19 @@ export default function LobbyScreen() {
                   </span>
                 )}
               </div>
-              <span className="text-indigo-400 text-xs">
-                {player.is_connected ? 'Connected' : 'Disconnected'}
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-indigo-400 text-xs">
+                  {player.is_connected ? 'Connected' : 'Disconnected'}
+                </span>
+                {isRoomMaster && player.id !== socket?.id && (
+                  <button
+                    onClick={() => emit('KICK_PLAYER', { player_id: player.id })}
+                    className="text-red-400 hover:text-red-300 text-xs font-bold px-2 py-0.5 rounded-lg bg-red-900/30 hover:bg-red-900/50 transition-colors"
+                  >
+                    Kick
+                  </button>
+                )}
+              </div>
             </div>
           ))}
 

@@ -146,6 +146,12 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       }
     })
 
+    socket.on('KICKED', () => {
+      clearSession()
+      setMySessionId(null)
+      setGameState(null)
+    })
+
     return () => {
       socket.disconnect()
       socketRef.current = null
