@@ -6,6 +6,7 @@ export default function PromptScreen() {
   const { gameState, mySessionId, emit, lastError, clearError } = useGame()
   const [lieText, setLieText] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [submittedText, setSubmittedText] = useState<string | null>(null)
   const timeRemaining = useTimer(gameState?.timer_ends_at ?? null)
 
   if (!gameState || !gameState.current_fact) return null
@@ -25,11 +26,23 @@ export default function PromptScreen() {
   const parts = factTemplate.split('_______')
 
   const handleSubmit = () => {
-    if (!lieText.trim() || submitted) return
+    if (!lieText.trim()) return
     clearError()
-    emit('SUBMIT_LIE', { text: lieText.trim() })
+    if (submittedText !== null) {
+      emit('EDIT_LIE', { text: lieText.trim() })
+    } else {
+      emit('SUBMIT_LIE', { text: lieText.trim() })
+    }
+    setSubmittedText(lieText.trim())
     setSubmitted(true)
   }
+
+  const handleEdit = () => {
+    setLieText(submittedText ?? '')
+    setSubmitted(false)
+  }
+
+  const canEdit = submitted && submittedCount < totalPlayers
 
   const isFinalRound = gameState.is_final_round
 
@@ -110,18 +123,29 @@ export default function PromptScreen() {
             disabled={!lieText.trim()}
             className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 disabled:bg-indigo-700 disabled:text-indigo-400 disabled:cursor-not-allowed text-indigo-950 font-black text-xl rounded-xl transition-all active:scale-95 shadow-lg"
           >
-            Submit Answer
+            {submittedText !== null ? 'Update Answer' : 'Submit Answer'}
           </button>
         </div>
       ) : (
-        <div className="w-full max-w-lg">
+        <div className="w-full max-w-lg space-y-3">
           <div className="bg-green-900/40 border border-green-600 rounded-2xl p-6 text-center">
             <div className="text-5xl mb-3">✓</div>
             <p className="text-green-400 font-bold text-xl mb-1">Answer Submitted!</p>
+            {submittedText && (
+              <p className="text-white font-semibold text-lg mt-2 mb-1">"{submittedText}"</p>
+            )}
             <p className="text-indigo-300 text-sm">
               Waiting for others to submit their answers...
             </p>
           </div>
+          {canEdit && (
+            <button
+              onClick={handleEdit}
+              className="w-full py-3 bg-indigo-700 hover:bg-indigo-600 text-white font-bold text-base rounded-xl transition-all active:scale-95 border border-indigo-500"
+            >
+              Edit Answer
+            </button>
+          )}
         </div>
       )}
 

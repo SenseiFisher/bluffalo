@@ -28,6 +28,7 @@ import {
   checkAllLiesSubmitted,
   checkAllVotesSubmitted,
   clearRoomTimers,
+  allLiesSubmitted,
 } from "../rooms/stateMachine";
 import { validateDisplayName, validateLie, validateRoomCode } from "../utils/validation";
 
@@ -308,6 +309,52 @@ export function registerHandlers(io: Server, socket: Socket): void {
     broadcastGameState(io, roomCode, state);
 
     // Check if all lies submitted
+    checkAllLiesSubmitted(state, broadcast);
+  });
+
+  // ── EDIT_LIE ───────────────────────────────────────────────────────────────
+  socket.on("EDIT_LIE", (payload: unknown) => {
+    const p = payload as { text?: string };
+
+    const roomCode = getRoomCodeForSocket(socket);
+    if (!roomCode) return;
+
+    const state = getRoom(roomCode);
+    if (!state || state.phase !== GamePhase.PROMPT) {
+      socket.emit("ERROR", { code: "WRONG_PHASE", message: "Not in PROMPT phase" });
+      return;
+    }
+
+    const player = state.players.find((pl) => pl.id === socket.id);
+    if (!player) {
+      socket.emit("ERROR", { code: "PLAYER_NOT_FOUND", message: "Player not found" });
+      return;
+    }
+
+    if (player.round.submitted_lie === null) {
+      socket.emit("ERROR", { code: "NOT_SUBMITTED", message: "No answer to edit" });
+      return;
+    }
+
+    if (allLiesSubmitted(state)) {
+      socket.emit("ERROR", { code: "TOO_LATE", message: "All players have already submitted" });
+      return;
+    }
+
+    const lieResult = validateLie(p?.text);
+    if (!lieResult.valid) {
+      socket.emit("ERROR", { code: "INVALID_LIE", message: lieResult.error });
+      return;
+    }
+
+    const lieText = lieResult.value;
+
+    const truthKeyword = state.current_fact!.truth_keyword;
+    player.round.great_minds = lieText.toLowerCase() === truthKeyword.toLowerCase();
+    player.round.submitted_lie = lieText;
+    setRoom(roomCode, state);
+
+    broadcastGameState(io, roomCode, state);
     checkAllLiesSubmitted(state, broadcast);
   });
 

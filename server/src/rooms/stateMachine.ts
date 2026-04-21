@@ -51,7 +51,7 @@ function resetPlayerRounds(state: GameState): void {
 /**
  * Check if all connected players (who haven't gone great-minds) have submitted a lie.
  */
-function allLiesSubmitted(state: GameState): boolean {
+export function allLiesSubmitted(state: GameState): boolean {
   const eligible = state.players.filter(
     (p) => p.is_connected && !p.round.great_minds
   );
