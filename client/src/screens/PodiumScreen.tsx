@@ -48,8 +48,8 @@ export default function PodiumScreen() {
   const rest = sortedPlayers.slice(3)
 
   const podiumOrder = [1, 0, 2] // 2nd, 1st, 3rd visual order for podium effect
-  const podiumHeights = ['h-24', 'h-32', 'h-16']
-  const podiumColors = ['bg-gray-500', 'bg-yellow-400', 'bg-amber-700']
+  const podiumHeights = ['h-32', 'h-24', 'h-16']
+  const podiumColors = ['bg-yellow-400', 'bg-gray-500', 'bg-amber-700']
   const medalEmoji = ['🥇', '🥈', '🥉']
 
   const handlePlayAgain = () => {
