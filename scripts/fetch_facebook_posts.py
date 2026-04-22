@@ -66,7 +66,6 @@ def extract_posts(page) -> List[dict]:
                 // Skip nested articles (comments)
                 if (article.closest('[role="article"] [role="article"]')) return;
 
-                const id = article.getAttribute('aria-label') || '';
                 const textEl = article.querySelector('[data-ad-comet-preview="message"], [dir="auto"]');
                 const text = textEl ? textEl.innerText.trim() : '';
                 const timeEl = article.querySelector('abbr, time');
@@ -74,11 +73,14 @@ def extract_posts(page) -> List[dict]:
                 const linkEl = article.querySelector('a[href*="/permalink/"], a[href*="/posts/"]');
                 const url = linkEl ? linkEl.href : '';
 
-                const key = url || text.slice(0, 50);
+                const idMatch = url.match(/\/posts\/(\d+)/);
+                const id = idMatch ? idMatch[1] : null;
+
+                const key = id || text.slice(0, 50);
                 if (!key || seen.has(key)) return;
                 seen.add(key);
 
-                if (text) posts.push({ text, time, url });
+                if (text) posts.push({ id, text, time, url });
             });
             return posts;
         }
@@ -103,22 +105,35 @@ def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bo
         page.goto(group_url, wait_until="domcontentloaded", timeout=30000)
         page.wait_for_timeout(3000)
 
+        def expand_posts(pg):
+            pg.evaluate("""
+                () => {
+                    document.querySelectorAll('[role="article"]').forEach(article => {
+                        article.querySelectorAll('div[role="button"], span[role="button"]').forEach(btn => {
+                            if (btn.innerText && btn.innerText.trim().startsWith('עוד')) btn.click();
+                        });
+                    });
+                }
+            """)
+            pg.wait_for_timeout(500)
+
         all_posts = {}
         if output.exists():
             try:
                 existing = json.loads(output.read_text(encoding="utf-8"))
                 for post in existing:
-                    key = post.get("url") or post["text"][:60]
+                    key = post.get("id") or post["text"][:60]
                     all_posts[key] = post
                 print(f"Resumed from existing file — {len(all_posts)} posts already collected")
             except (json.JSONDecodeError, KeyError):
                 print("Could not read existing output file, starting fresh")
 
         for i in range(pages):
+            expand_posts(page)
             batch = extract_posts(page)
             new = 0
             for post in batch:
-                key = post.get("url") or post["text"][:60]
+                key = post.get("id") or post["text"][:60]
                 if key not in all_posts:
                     all_posts[key] = post
                     new += 1
