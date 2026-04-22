@@ -20,6 +20,7 @@ export interface Player {
   display_name: string;
   score: number;
   deception_count: number;
+  funny_vote_count: number;
   is_connected: boolean;
   disconnected_at: number | null;
   round: {

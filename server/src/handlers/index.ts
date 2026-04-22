@@ -190,6 +190,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
       display_name: displayName,
       score: 0,
       deception_count: 0,
+      funny_vote_count: 0,
       is_connected: true,
       disconnected_at: null,
       round: {
@@ -476,6 +477,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
       const author = state.players.find((pl) => pl.session_id === authorSessionId);
       if (author) {
         author.score += FUNNY_BONUS;
+        author.funny_vote_count += 1;
       }
     }
 
@@ -512,6 +514,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
     for (const p of state.players) {
       p.score = 0;
       p.deception_count = 0;
+      p.funny_vote_count = 0;
       p.round = {
         submitted_lie: null,
         voted_for_id: null,

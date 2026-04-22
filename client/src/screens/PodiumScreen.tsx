@@ -44,6 +44,11 @@ export default function PodiumScreen() {
     return 0
   })
 
+  const maxFunnyVotes = Math.max(...gameState.players.map((p) => p.funny_vote_count))
+  const funniestPlayer = maxFunnyVotes > 0
+    ? gameState.players.find((p) => p.funny_vote_count === maxFunnyVotes) ?? null
+    : null
+
   const top3 = sortedPlayers.slice(0, 3)
   const rest = sortedPlayers.slice(3)
 
@@ -153,7 +158,10 @@ export default function PodiumScreen() {
                 <div className="text-right">
                   <div className="text-yellow-400 font-black text-lg">{player.score}</div>
                   <div className="text-indigo-400 text-xs">
-                    {player.deception_count} players fooled
+                    {player.deception_count} fooled
+                    {player.funny_vote_count > 0 && (
+                      <span className="ml-2 text-purple-400">· {player.funny_vote_count} 😂</span>
+                    )}
                   </div>
                 </div>
               </div>
@@ -170,6 +178,18 @@ export default function PodiumScreen() {
           </p>
           <p className="text-indigo-300 text-sm mt-1">
             Fooled {sortedPlayers[0].deception_count} player{sortedPlayers[0].deception_count !== 1 ? 's' : ''} throughout the game
+          </p>
+        </div>
+      )}
+
+      {/* Funniest player award */}
+      {funniestPlayer && (
+        <div className="w-full max-w-lg mb-6 bg-purple-400/10 border border-purple-400 rounded-2xl p-4 text-center">
+          <p className="text-purple-300 font-black text-xl">
+            😂 {funniestPlayer.display_name} was the funniest!
+          </p>
+          <p className="text-indigo-300 text-sm mt-1">
+            Received {funniestPlayer.funny_vote_count} funny vote{funniestPlayer.funny_vote_count !== 1 ? 's' : ''} across the game
           </p>
         </div>
       )}
