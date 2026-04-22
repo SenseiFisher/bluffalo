@@ -81,7 +81,9 @@ export default function ResolutionScreen() {
   const truthRevealed = isBatchAuthorVisible()
   const sortedPlayers = [...gameState.players].sort((a, b) => b.score - a.score)
 
-  const isMyOption = (opt: AugmentedOption) => opt.author_session_id === mySessionId
+  const isMyOption = (opt: AugmentedOption) =>
+    opt.author_session_id === mySessionId ||
+    opt.co_author_session_ids.includes(mySessionId ?? '')
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex flex-col items-center p-4 pt-8 pb-16">
@@ -125,6 +127,7 @@ export default function ResolutionScreen() {
             textVisible={isNormalTextVisible(idx)}
             authorVisible={isNormalAuthorVisible(idx)}
             isMyLie={isMyOption(opt)}
+            mySessionId={mySessionId}
           />
         ))}
 
@@ -136,6 +139,7 @@ export default function ResolutionScreen() {
             textVisible={isBatchTextVisible()}
             authorVisible={isBatchAuthorVisible()}
             isMyLie={isMyOption(opt)}
+            mySessionId={mySessionId}
             isBatch={isTruthInTop3 && lies.length >= 2}
           />
         ))}
@@ -180,6 +184,35 @@ export default function ResolutionScreen() {
   )
 }
 
+// ─── Author list (handles single and co-authored answers) ────────────────────
+
+function AuthorList({ option, mySessionId, isMyLie }: {
+  option: AugmentedOption
+  mySessionId: string | null
+  isMyLie: boolean
+}) {
+  const allAuthors = [
+    { sessionId: option.author_session_id, name: option.author_display_name ?? 'someone' },
+    ...option.co_author_session_ids.map((sid, i) => ({
+      sessionId: sid,
+      name: option.co_author_display_names[i] ?? 'someone',
+    })),
+  ]
+
+  const labels = allAuthors.map(({ sessionId, name }) =>
+    sessionId === mySessionId ? 'you' : name
+  )
+
+  return (
+    <>
+      <span className={`font-bold ${isMyLie ? 'text-yellow-400' : 'text-white'}`}>
+        {labels.join(', ')}
+      </span>
+      {isMyLie && ' 😏'}
+    </>
+  )
+}
+
 // ─── Individual reveal card ───────────────────────────────────────────────────
 
 interface RevealCardProps {
@@ -187,10 +220,11 @@ interface RevealCardProps {
   textVisible: boolean
   authorVisible: boolean
   isMyLie: boolean
+  mySessionId: string | null
   isBatch?: boolean
 }
 
-function RevealCard({ option, textVisible, authorVisible, isMyLie, isBatch }: RevealCardProps) {
+function RevealCard({ option, textVisible, authorVisible, isMyLie, mySessionId, isBatch }: RevealCardProps) {
   const isTruth = option.is_truth
   const truthRevealed = isTruth && authorVisible
 
@@ -233,10 +267,7 @@ function RevealCard({ option, textVisible, authorVisible, isMyLie, isBatch }: Re
           {!isTruth && (
             <p className="text-sm">
               <span className="text-indigo-400">Written by </span>
-              <span className={`font-bold ${isMyLie ? 'text-yellow-400' : 'text-white'}`}>
-                {isMyLie ? 'you' : (option.author_display_name ?? 'someone')}
-                {isMyLie && ' 😏'}
-              </span>
+              <AuthorList option={option} mySessionId={mySessionId} isMyLie={isMyLie} />
             </p>
           )}
           {/* Voters */}

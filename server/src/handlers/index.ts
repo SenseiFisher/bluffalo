@@ -58,6 +58,11 @@ function sanitizeStateForClient(state: GameState): GameState {
         author_display_name: revealAuthor && opt.author_session_id
           ? (state.players.find((p) => p.session_id === opt.author_session_id)?.display_name ?? null)
           : null,
+        co_author_display_names: revealAuthor
+          ? opt.co_author_session_ids
+              .map((sid) => state.players.find((p) => p.session_id === sid)?.display_name ?? null)
+              .filter((n): n is string => n !== null)
+          : [],
       };
     }),
     // Strip session_id from all players

@@ -167,6 +167,7 @@ export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void 
         author_session_id: p.session_id,
         author_display_name: null,
         co_author_session_ids: [],
+        co_author_display_names: [],
       });
     }
   }
@@ -180,6 +181,7 @@ export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void 
     author_session_id: null,
     author_display_name: null,
     co_author_session_ids: [],
+    co_author_display_names: [],
   };
 
   state.vote_options = shuffle([...lies, truthOption]);

@@ -38,6 +38,7 @@ export interface VoteOption {
   author_session_id: string | null;
   author_display_name: string | null; // populated by server only during RESOLUTION/PODIUM
   co_author_session_ids: string[]; // additional authors who submitted the same lie
+  co_author_display_names: string[]; // populated by server only during RESOLUTION/PODIUM
 }
 
 export interface GameState {
