@@ -18,6 +18,9 @@ try:
 except ImportError:
     sys.exit("Missing dependency. Run: pip install playwright && python -m playwright install chromium")
 
+"""
+Usage: python scripts/fetch_facebook_posts.py --cookies "C:/Users/Aviv/Downloads/cookies.txt" --pages 10
+"""
 
 GROUP_URL = "https://www.facebook.com/groups/unimportant.facts/"
 OUTPUT_FILE = Path(__file__).parent / "facebook_posts.json"
