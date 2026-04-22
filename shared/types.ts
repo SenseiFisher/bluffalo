@@ -39,6 +39,7 @@ export interface VoteOption {
   author_display_name: string | null; // populated by server only during RESOLUTION/PODIUM
   co_author_session_ids: string[]; // additional authors who submitted the same lie
   co_author_display_names: string[]; // populated by server only during RESOLUTION/PODIUM
+  funny_voter_session_ids: string[];
 }
 
 export interface GameState {
@@ -75,6 +76,10 @@ export interface SubmitLiePayload {
 }
 
 export interface SubmitVotePayload {
+  option_id: string;
+}
+
+export interface SubmitFunnyVotePayload {
   option_id: string;
 }
 

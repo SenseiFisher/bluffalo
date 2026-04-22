@@ -2,6 +2,7 @@
 export const TRUTH_SEEKER_BONUS = 500;
 export const BAMBOOZLE_BONUS = 250;
 export const GREAT_MINDS_BONUS = 1000;
+export const FUNNY_BONUS = 100;
 export const FINAL_ROUND_MULTIPLIER = 2.0;
 
 // Phase timer durations (milliseconds)

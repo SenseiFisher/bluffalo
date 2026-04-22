@@ -1,16 +1,18 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { useGame } from '../context/GameContext'
 import { VoteOption } from '@shared/types'
+import { FUNNY_BONUS } from '@shared/constants'
 
 const STEP_DURATION = 2200 // ms between reveal steps
 
 interface AugmentedOption extends VoteOption {
   voteCount: number
   voterNames: string[]
+  funnyCount: number
 }
 
 export default function ResolutionScreen() {
-  const { gameState, mySessionId } = useGame()
+  const { gameState, mySessionId, emit } = useGame()
   const [step, setStep] = useState(0)
 
   if (!gameState || !gameState.current_fact) return null
@@ -23,7 +25,7 @@ export default function ResolutionScreen() {
       const voterNames = gameState.players
         .filter((p) => p.round.voted_for_id === opt.option_id)
         .map((p) => p.display_name)
-      return { ...opt, voteCount: voterNames.length, voterNames }
+      return { ...opt, voteCount: voterNames.length, voterNames, funnyCount: opt.funny_voter_session_ids.length }
     })
   }, [gameState.vote_options, gameState.players])
 
@@ -128,6 +130,8 @@ export default function ResolutionScreen() {
             authorVisible={isNormalAuthorVisible(idx)}
             isMyLie={isMyOption(opt)}
             mySessionId={mySessionId}
+            onFunnyVote={() => emit('SUBMIT_FUNNY_VOTE', { option_id: opt.option_id })}
+            hasGivenFunnyVote={mySessionId ? opt.funny_voter_session_ids.includes(mySessionId) : false}
           />
         ))}
 
@@ -141,6 +145,8 @@ export default function ResolutionScreen() {
             isMyLie={isMyOption(opt)}
             mySessionId={mySessionId}
             isBatch={isTruthInTop3 && lies.length >= 2}
+            onFunnyVote={() => emit('SUBMIT_FUNNY_VOTE', { option_id: opt.option_id })}
+            hasGivenFunnyVote={mySessionId ? opt.funny_voter_session_ids.includes(mySessionId) : false}
           />
         ))}
       </div>
@@ -222,9 +228,11 @@ interface RevealCardProps {
   isMyLie: boolean
   mySessionId: string | null
   isBatch?: boolean
+  onFunnyVote: () => void
+  hasGivenFunnyVote: boolean
 }
 
-function RevealCard({ option, textVisible, authorVisible, isMyLie, mySessionId, isBatch }: RevealCardProps) {
+function RevealCard({ option, textVisible, authorVisible, isMyLie, mySessionId, isBatch, onFunnyVote, hasGivenFunnyVote }: RevealCardProps) {
   const isTruth = option.is_truth
   const truthRevealed = isTruth && authorVisible
 
@@ -287,6 +295,28 @@ function RevealCard({ option, textVisible, authorVisible, isMyLie, mySessionId, 
             </p>
           ) : (
             !isTruth && <p className="text-indigo-600 text-xs">Nobody was fooled</p>
+          )}
+          {/* Funny vote — only for lies written by someone else */}
+          {!isTruth && !isMyLie && (
+            <div className="flex items-center gap-2 pt-1">
+              <button
+                onClick={onFunnyVote}
+                disabled={hasGivenFunnyVote}
+                className={`flex items-center gap-1.5 text-sm px-3 py-1 rounded-full border transition-all ${
+                  hasGivenFunnyVote
+                    ? 'border-yellow-500 bg-yellow-900/40 text-yellow-300 cursor-default'
+                    : 'border-indigo-600 bg-indigo-800/40 text-indigo-300 hover:border-yellow-500 hover:text-yellow-300 hover:bg-yellow-900/20 active:scale-95'
+                }`}
+              >
+                <span>😂</span>
+                <span>{hasGivenFunnyVote ? 'Funny!' : 'Funny'}</span>
+              </button>
+              {option.funnyCount > 0 && (
+                <span className="text-yellow-400 text-xs font-semibold">
+                  {option.funnyCount} ×{FUNNY_BONUS}pts
+                </span>
+              )}
+            </div>
           )}
         </div>
       )}

@@ -10,6 +10,7 @@ import {
   SUPPORTED_LANGUAGES,
   DEFAULT_LANGUAGE,
   REJOIN_EXPIRY_MS,
+  FUNNY_BONUS,
 } from "../../../shared/constants";
 import {
   getRoom,
@@ -415,6 +416,71 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
     // Check if all eligible votes are in
     checkAllVotesSubmitted(state, broadcast);
+  });
+
+  // ── SUBMIT_FUNNY_VOTE ──────────────────────────────────────────────────────
+  socket.on("SUBMIT_FUNNY_VOTE", (payload: unknown) => {
+    const p = payload as { option_id?: string };
+
+    const roomCode = getRoomCodeForSocket(socket);
+    if (!roomCode) return;
+
+    const state = getRoom(roomCode);
+    if (!state || state.phase !== GamePhase.RESOLUTION) {
+      socket.emit("ERROR", { code: "WRONG_PHASE", message: "Not in RESOLUTION phase" });
+      return;
+    }
+
+    const player = state.players.find((pl) => pl.id === socket.id);
+    if (!player) {
+      socket.emit("ERROR", { code: "PLAYER_NOT_FOUND", message: "Player not found" });
+      return;
+    }
+
+    const optionId = p?.option_id;
+    if (typeof optionId !== "string") {
+      socket.emit("ERROR", { code: "INVALID_VOTE", message: "Invalid option_id" });
+      return;
+    }
+
+    const option = state.vote_options.find((o) => o.option_id === optionId);
+    if (!option) {
+      socket.emit("ERROR", { code: "INVALID_OPTION", message: "Option not found" });
+      return;
+    }
+
+    // Can't funny-vote your own answer
+    const isOwnOption =
+      option.author_session_id === player.session_id ||
+      option.co_author_session_ids.includes(player.session_id);
+    if (isOwnOption) {
+      socket.emit("ERROR", { code: "SELF_VOTE", message: "Cannot funny-vote your own answer" });
+      return;
+    }
+
+    // Can't funny-vote the same option twice
+    if (option.funny_voter_session_ids.includes(player.session_id)) {
+      socket.emit("ERROR", { code: "ALREADY_FUNNY_VOTED", message: "Already gave a funny vote to this answer" });
+      return;
+    }
+
+    option.funny_voter_session_ids.push(player.session_id);
+
+    // Award points immediately to all authors
+    const allAuthors = [
+      option.author_session_id,
+      ...option.co_author_session_ids,
+    ].filter((id): id is string => id !== null);
+
+    for (const authorSessionId of allAuthors) {
+      const author = state.players.find((pl) => pl.session_id === authorSessionId);
+      if (author) {
+        author.score += FUNNY_BONUS;
+      }
+    }
+
+    setRoom(roomCode, state);
+    broadcastGameState(io, roomCode, state);
   });
 
   // ── PLAY_AGAIN ─────────────────────────────────────────────────────────────
