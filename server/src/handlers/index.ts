@@ -394,8 +394,11 @@ export function registerHandlers(io: Server, socket: Socket): void {
       return;
     }
 
-    // Self-vote prevention: player cannot vote for their own lie
-    if (option.author_session_id === player.session_id) {
+    // Self-vote prevention: player cannot vote for their own lie (including merged duplicates)
+    const isOwnOption =
+      option.author_session_id === player.session_id ||
+      option.co_author_session_ids.includes(player.session_id);
+    if (isOwnOption) {
       socket.emit("ERROR", { code: "SELF_VOTE", message: "Cannot vote for your own lie" });
       return;
     }

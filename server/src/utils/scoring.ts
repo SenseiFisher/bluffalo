@@ -60,7 +60,7 @@ export function calculateRoundScores(state: GameState): GameState {
   }
 
   // 3. Bamboozle bonus — count votes each lie received
-  // Build map of session_id → bamboozle count
+  // Build map of session_id → bamboozle count (award all co-authors)
   const bamboozleMap = new Map<string, number>();
 
   for (const p of s.players) {
@@ -70,15 +70,19 @@ export function calculateRoundScores(state: GameState): GameState {
     const votedOption = s.vote_options.find((o) => o.option_id === votedId);
     if (!votedOption || votedOption.is_truth) continue;
 
-    const authorSessionId = votedOption.author_session_id;
-    if (!authorSessionId) continue;
+    const allAuthors = [
+      votedOption.author_session_id,
+      ...votedOption.co_author_session_ids,
+    ].filter((id): id is string => id !== null);
 
-    // Don't count if the voter voted for their own lie (server should prevent this,
-    // but double-check here)
-    if (p.session_id === authorSessionId) continue;
+    for (const authorSessionId of allAuthors) {
+      // Don't count if the voter voted for their own lie (server should prevent this,
+      // but double-check here)
+      if (p.session_id === authorSessionId) continue;
 
-    const current = bamboozleMap.get(authorSessionId) ?? 0;
-    bamboozleMap.set(authorSessionId, current + 1);
+      const current = bamboozleMap.get(authorSessionId) ?? 0;
+      bamboozleMap.set(authorSessionId, current + 1);
+    }
   }
 
   for (const [sessionId, count] of bamboozleMap.entries()) {

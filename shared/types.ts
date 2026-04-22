@@ -37,6 +37,7 @@ export interface VoteOption {
   is_truth: boolean;
   author_session_id: string | null;
   author_display_name: string | null; // populated by server only during RESOLUTION/PODIUM
+  co_author_session_ids: string[]; // additional authors who submitted the same lie
 }
 
 export interface GameState {

@@ -13,10 +13,11 @@ export default function SelectionScreen() {
   const factTemplate = gameState.current_fact.fact_template
   const parts = factTemplate.split('_______')
 
-  // Find my player to get my lie's option_id
-  // Since session_id is stripped, we use mySessionId from context and match author_session_id
+  // Find my player to get my lie's option_id (including merged duplicate options)
   const myOptions = gameState.vote_options.filter(
-    (o) => o.author_session_id === mySessionId
+    (o) =>
+      o.author_session_id === mySessionId ||
+      o.co_author_session_ids.includes(mySessionId ?? '')
   )
   const myOptionIds = new Set(myOptions.map((o) => o.option_id))
 

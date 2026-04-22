@@ -148,21 +148,30 @@ function getCurrentState(roomCode: string): GameState | undefined {
 export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void {
   clearTimer(state.room_code);
 
-  // Build vote options: all submitted lies + truth
-  const lies: VoteOption[] = [];
+  // Build vote options: all submitted lies + truth, deduplicating identical lies
+  const liesByText = new Map<string, VoteOption>();
 
   for (const p of state.players) {
     if (p.round.submitted_lie === null) continue;
     if (p.round.great_minds) continue; // Great Minds lie removed from voting
 
-    lies.push({
-      option_id: uuidv4(),
-      text: p.round.submitted_lie,
-      is_truth: false,
-      author_session_id: p.session_id,
-      author_display_name: null,
-    });
+    const key = p.round.submitted_lie.trim().toLowerCase();
+    const existing = liesByText.get(key);
+    if (existing) {
+      existing.co_author_session_ids.push(p.session_id);
+    } else {
+      liesByText.set(key, {
+        option_id: uuidv4(),
+        text: p.round.submitted_lie,
+        is_truth: false,
+        author_session_id: p.session_id,
+        author_display_name: null,
+        co_author_session_ids: [],
+      });
+    }
   }
+
+  const lies = Array.from(liesByText.values());
 
   const truthOption: VoteOption = {
     option_id: uuidv4(),
@@ -170,6 +179,7 @@ export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void 
     is_truth: true,
     author_session_id: null,
     author_display_name: null,
+    co_author_session_ids: [],
   };
 
   state.vote_options = shuffle([...lies, truthOption]);
