@@ -36,27 +36,29 @@ export default function ResolutionScreen() {
   )
   const truth = useMemo(() => augmented.find((o) => o.is_truth) ?? null, [augmented])
 
-  // Determine if truth is in the top 3 most voted (among all options)
-  const top3ByVotes = useMemo(() => {
-    return [...augmented].sort((a, b) => b.voteCount - a.voteCount).slice(0, 3)
-  }, [augmented])
-  const isTruthInTop3 = useMemo(
-    () => top3ByVotes.some((o) => o.is_truth),
-    [top3ByVotes]
+  // Random position for truth within the final batch — re-randomized each round
+  const truthBatchPosition = useMemo(
+    () => Math.floor(Math.random() * 3),
+    [gameState.round_number]
   )
 
   // Split into normal (one-by-one) and batch (revealed together)
   const normalItems: AugmentedOption[] = useMemo(() => {
     if (!truth) return lies
-    if (isTruthInTop3 && lies.length >= 2) return lies.slice(0, lies.length - 2)
+    if (lies.length >= 2) return lies.slice(0, lies.length - 2)
     return lies
-  }, [lies, truth, isTruthInTop3])
+  }, [lies, truth])
 
   const batchItems: AugmentedOption[] = useMemo(() => {
     if (!truth) return []
-    if (isTruthInTop3 && lies.length >= 2) return [...lies.slice(lies.length - 2), truth]
+    if (lies.length >= 2) {
+      const twoLies = lies.slice(lies.length - 2)
+      const result: AugmentedOption[] = [...twoLies]
+      result.splice(truthBatchPosition, 0, truth)
+      return result
+    }
     return [truth]
-  }, [lies, truth, isTruthInTop3])
+  }, [lies, truth, truthBatchPosition])
 
   // Total steps: 2 per normal item (show text, reveal author) + 2 for final batch
   const totalSteps = (normalItems.length + 1) * 2
@@ -144,7 +146,7 @@ export default function ResolutionScreen() {
             authorVisible={isBatchAuthorVisible()}
             isMyLie={isMyOption(opt)}
             mySessionId={mySessionId}
-            isBatch={isTruthInTop3 && lies.length >= 2}
+            isBatch={lies.length >= 2}
             onFunnyVote={() => emit('SUBMIT_FUNNY_VOTE', { option_id: opt.option_id })}
             hasGivenFunnyVote={mySessionId ? opt.funny_voter_session_ids.includes(mySessionId) : false}
           />
