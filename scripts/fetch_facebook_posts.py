@@ -85,7 +85,7 @@ def extract_posts(page) -> List[dict]:
     """)
 
 
-def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bool) -> List[dict]:
+def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bool, output: Path) -> List[dict]:
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=headless)
         context = browser.new_context(
@@ -104,6 +104,16 @@ def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bo
         page.wait_for_timeout(3000)
 
         all_posts = {}
+        if output.exists():
+            try:
+                existing = json.loads(output.read_text(encoding="utf-8"))
+                for post in existing:
+                    key = post.get("url") or post["text"][:60]
+                    all_posts[key] = post
+                print(f"Resumed from existing file — {len(all_posts)} posts already collected")
+            except (json.JSONDecodeError, KeyError):
+                print("Could not read existing output file, starting fresh")
+
         for i in range(pages):
             batch = extract_posts(page)
             new = 0
@@ -113,6 +123,7 @@ def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bo
                     all_posts[key] = post
                     new += 1
             print(f"Scroll {i+1}/{pages} — {new} new posts (total: {len(all_posts)})")
+            output.write_text(json.dumps(list(all_posts.values()), ensure_ascii=False, indent=2), encoding="utf-8")
             page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             page.wait_for_timeout(2500)
 
@@ -122,10 +133,8 @@ def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bo
 
 def main():
     args = parse_args()
-    posts = scrape(GROUP_URL, args.pages, args.cookies, args.headless)
-
     output = Path(args.output)
-    output.write_text(json.dumps(posts, ensure_ascii=False, indent=2), encoding="utf-8")
+    posts = scrape(GROUP_URL, args.pages, args.cookies, args.headless, output)
     print(f"\nSaved {len(posts)} posts -> {output}")
 
 
