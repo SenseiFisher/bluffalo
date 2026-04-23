@@ -35,6 +35,10 @@ def parse_args():
                    help="Output JSON file path")
     p.add_argument("--headless", action="store_true", default=True,
                    help="Run browser in headless mode (default: True)")
+    p.add_argument("--restart-every", type=int, default=50,
+                   help="Restart browser context every N scroll pages to free memory (default: 50)")
+    p.add_argument("--save-every", type=int, default=10,
+                   help="Write JSON to disk every N scrolls (default: 10)")
     return p.parse_args()
 
 
@@ -90,48 +94,58 @@ def extract_posts(page) -> List[dict]:
     """)
 
 
-def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bool, output: Path) -> List[dict]:
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=headless)
+def save_posts(all_posts: dict, output: Path):
+    output.write_text(json.dumps(list(all_posts.values()), ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bool, output: Path, restart_every: int, save_every: int) -> List[dict]:
+    all_posts = {}
+    if output.exists():
+        try:
+            existing = json.loads(output.read_text(encoding="utf-8"))
+            for post in existing:
+                key = post.get("id") or post["text"][:60]
+                all_posts[key] = post
+            print(f"Resumed from existing file — {len(all_posts)} posts already collected")
+        except (json.JSONDecodeError, KeyError):
+            print("Could not read existing output file, starting fresh")
+
+    def expand_posts(pg):
+        pg.evaluate("""
+            () => {
+                document.querySelectorAll('[role="article"]').forEach(article => {
+                    article.querySelectorAll('div[role="button"], span[role="button"]').forEach(btn => {
+                        if (btn.innerText && btn.innerText.trim().startsWith('עוד')) btn.click();
+                    });
+                });
+            }
+        """)
+        pg.wait_for_timeout(500)
+
+    def run_session(pw, start_scroll, end_scroll):
+        browser = pw.chromium.launch(headless=headless)
         context = browser.new_context(
             locale="he-IL",
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
         )
-
         if cookies_path:
             pw_cookies = load_netscape_cookies(cookies_path)
             context.add_cookies(pw_cookies)
-            print(f"Loaded {len(pw_cookies)} cookies")
+            print(f"[Session] Loaded {len(pw_cookies)} cookies")
 
         page = context.new_page()
-        print(f"Opening {group_url} ...")
+        print(f"[Session] Opening {group_url} (scrolls {start_scroll+1}–{end_scroll}) ...")
         page.goto(group_url, wait_until="domcontentloaded", timeout=30000)
         page.wait_for_timeout(3000)
 
-        def expand_posts(pg):
-            pg.evaluate("""
-                () => {
-                    document.querySelectorAll('[role="article"]').forEach(article => {
-                        article.querySelectorAll('div[role="button"], span[role="button"]').forEach(btn => {
-                            if (btn.innerText && btn.innerText.trim().startsWith('עוד')) btn.click();
-                        });
-                    });
-                }
-            """)
-            pg.wait_for_timeout(500)
+        if start_scroll > 0:
+            print(f"[Session] Fast-scrolling through {start_scroll} previous scrolls to resume position ...")
+            for _ in range(start_scroll):
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(300)
+            print(f"[Session] Resuming at scroll {start_scroll+1}")
 
-        all_posts = {}
-        if output.exists():
-            try:
-                existing = json.loads(output.read_text(encoding="utf-8"))
-                for post in existing:
-                    key = post.get("id") or post["text"][:60]
-                    all_posts[key] = post
-                print(f"Resumed from existing file — {len(all_posts)} posts already collected")
-            except (json.JSONDecodeError, KeyError):
-                print("Could not read existing output file, starting fresh")
-
-        for i in range(pages):
+        for i in range(start_scroll, end_scroll):
             expand_posts(page)
             batch = extract_posts(page)
             new = 0
@@ -141,18 +155,30 @@ def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bo
                     all_posts[key] = post
                     new += 1
             print(f"Scroll {i+1}/{pages} — {new} new posts (total: {len(all_posts)})")
-            output.write_text(json.dumps(list(all_posts.values()), ensure_ascii=False, indent=2), encoding="utf-8")
+            if (i + 1) % save_every == 0:
+                save_posts(all_posts, output)
+
             page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             page.wait_for_timeout(2500)
 
         browser.close()
-        return list(all_posts.values())
+        save_posts(all_posts, output)
+
+    with sync_playwright() as pw:
+        for chunk_start in range(0, pages, restart_every):
+            chunk_end = min(chunk_start + restart_every, pages)
+            print(f"--- Starting browser session for scrolls {chunk_start+1}–{chunk_end} ---")
+            run_session(pw, chunk_start, chunk_end)
+            if chunk_end < pages:
+                print(f"--- Restarting browser to free memory (total so far: {len(all_posts)}) ---")
+
+    return list(all_posts.values())
 
 
 def main():
     args = parse_args()
     output = Path(args.output)
-    posts = scrape(GROUP_URL, args.pages, args.cookies, args.headless, output)
+    posts = scrape(GROUP_URL, args.pages, args.cookies, args.headless, output, args.restart_every, args.save_every)
     print(f"\nSaved {len(posts)} posts -> {output}")
 
 
