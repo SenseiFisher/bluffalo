@@ -119,7 +119,7 @@ class EntryTitleParser(HTMLParser):
                     title = "".join(self._current_text).strip()
                     slug = slug_from_url(self._current_href)
                     if slug and title:
-                        self.results.append({"id": slug, "post": title})
+                        self.results.append({"id": slug, "text": title})
                 self._in_entry_title = False
                 self._current_href = None
                 self._current_text = []

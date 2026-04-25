@@ -14,18 +14,19 @@ CONCURRENCY = 3
 
 GUIDELINES = GUIDELINES_FILE.read_text(encoding="utf-8")
 
-SYSTEM_PROMPT = f"""{GUIDELINES}
+def build_system_prompt(language: str) -> str:
+    return f"""{GUIDELINES}
 
 ---
 
-You are processing Hebrew trivia posts. For each post, identify the single most surprising or unexpected detail and rewrite the key sentence(s) with that detail replaced by [blank].
+You are processing {language} trivia posts. For each post, identify the single most surprising or unexpected detail and rewrite the key sentence(s) with that detail replaced by [blank].
 
 Respond ONLY with valid JSON:
-- If you can extract a blank: {{"fact": "<condensed fact in Hebrew with [blank]>", "blank": "<the extracted detail in Hebrew>"}}
+- If you can extract a blank: {{"fact": "<condensed fact in {language} with [blank]>", "blank": "<the extracted detail in {language}>"}}
 - If the post has no clear surprising extractable detail: {{"skip": true}}
 
 Rules:
-- Keep the fact in Hebrew
+- ALWAYS write the fact and blank in {language}, even if the input is in a different language — translate as needed
 - The "fact" should be a clean, concise version of the post (remove URLs, source citations, conversational openers) focused on the core surprising information with [blank] inserted
 - The "blank" should be a short phrase (not a full sentence unless unavoidable)
 - Do not include URLs or source links in the fact
@@ -70,12 +71,12 @@ def extract_json(text: str) -> dict | None:
     return None
 
 
-async def process_post(post: dict, semaphore: asyncio.Semaphore) -> dict | None:
+async def process_post(post: dict, semaphore: asyncio.Semaphore, system_prompt: str) -> dict | None:
     async with semaphore:
         try:
             proc = await asyncio.create_subprocess_exec(
                 "claude", "-p",
-                "--system-prompt", SYSTEM_PROMPT,
+                "--system-prompt", system_prompt,
                 "--output-format", "json",
                 "--tools", "",
                 "--no-session-persistence",
@@ -115,10 +116,12 @@ async def main():
     parser = argparse.ArgumentParser(description="Extract blank-fill facts from posts using Claude")
     parser.add_argument("--input", type=str, default=str(DEFAULT_INPUT_FILE), help="Input NDJSON file")
     parser.add_argument("--output", type=str, default=str(DEFAULT_OUTPUT_FILE), help="Output NDJSON file")
+    parser.add_argument("--language", type=str, default="Hebrew", help="Language of the posts and output facts (default: Hebrew)")
     args = parser.parse_args()
 
     input_file = Path(args.input)
     output_file = Path(args.output)
+    system_prompt = build_system_prompt(args.language)
 
     posts = []
     with input_file.open(encoding="utf-8") as f:
@@ -143,14 +146,15 @@ async def main():
     semaphore = asyncio.Semaphore(CONCURRENCY)
 
     with output_file.open("a", encoding="utf-8") as out:
-        tasks = [process_post(post, semaphore) for post in remaining]
         done = already_done
-        for coro in asyncio.as_completed(tasks):
-            result = await coro
-            done += 1
-            if result:
-                out.write(json.dumps(result, ensure_ascii=False) + "\n")
-                out.flush()
+        for i in range(0, len(remaining), CONCURRENCY):
+            chunk = remaining[i:i + CONCURRENCY]
+            results = await asyncio.gather(*[process_post(p, semaphore, system_prompt) for p in chunk])
+            for result in results:
+                done += 1
+                if result:
+                    out.write(json.dumps(result, ensure_ascii=False) + "\n")
+                    out.flush()
             if done % 50 == 0 or done == total:
                 print(f"Progress: {done}/{total}")
 

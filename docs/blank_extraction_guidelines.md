@@ -11,8 +11,14 @@ The blank represents the **most unexpected/bizarre detail** in the fact — the 
 Use `[blank]` as the placeholder.
 
 ### Length
-- Prefer a **word or short phrase**
-- A full sentence is acceptable only if the surprise cannot be captured in less
+- **Always aim for a word or short phrase** (1–3 words is ideal)
+- If the surprising detail is a long clause, condense it — trim filler words, keep the core
+- A full sentence is a last resort only when the surprise genuinely cannot be captured in less
+
+### Tone
+- **Lean informal** — casual, conversational, even slangy phrasing makes the blank punchier and harder to predict from a stiff paraphrase
+- Prefer "totally lost it" over "became extremely agitated"; "wrote an actual paper about it" over "published a scientific paper"; "bailed" over "abandoned the premises"
+- Match the energy of the fact: absurd stories deserve loose, punchy answers
 
 ### Position
 The blank can appear **anywhere** in the sentence — beginning, middle, or end — wherever the surprising detail naturally falls.
@@ -28,7 +34,7 @@ Ask yourself: **which detail would make someone stop mid-sentence and say "wait,
 
 ## Rules
 
-1. **The core absurd act, not its consequence** — prefer the shocking act itself over its explanation or aftermath
+1. **The core absurd act, not its consequence** — prefer the shocking act itself over its explanation or aftermath. Exception: if the motivation or reason is clearly more bizarre than the act (e.g. "blaming voices in his head"), blank the motivation instead and leave the act visible
 2. **Rewrite to protect the surprise** — if the surrounding text makes the answer too obvious, rephrase or omit that part. The goal is that the reader cannot guess the blank from context alone
 3. **Avoid bare names or numbers as the blank** — a standalone number (e.g. "28") or proper name (e.g. "Cher") makes a poor blank. The answer should carry enough context to feel satisfying — "three cats" or "published a scientific paper about it" works; "28" or "Cher" alone does not
 
@@ -103,6 +109,17 @@ Ask yourself: **which detail would make someone stop mid-sentence and say "wait,
 **With blank:** The US Parachute Association requires skydivers to complete 200 jumps before being allowed to [blank] — because beginners get distracted and forget to check their altitude.
 
 **Answer:** attach a camera to their helmet
+
+---
+
+### Example 9 — Florida man, voices
+**Original:** A Florida man robbed a convenience store, blaming voices in his head.
+
+**With blank:** A Florida man robbed a convenience store, blaming [blank].
+
+**Answer:** voices in his head
+
+*Note: the act (robbing a store) is less surprising than the reason — so the reason is blanked, not the act.*
 
 ---
 
