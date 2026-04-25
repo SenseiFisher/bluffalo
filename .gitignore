@@ -27,3 +27,7 @@ yarn-error.log*
 .next
 .nuxt
 .cache
+
+# Python
+__pycache__/
+*.pyc
