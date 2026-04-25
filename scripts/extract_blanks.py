@@ -1,3 +1,4 @@
+import argparse
 import asyncio
 import json
 import re
@@ -5,8 +6,8 @@ import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
-INPUT_FILE = SCRIPT_DIR / "facebook_posts.json"
-OUTPUT_FILE = SCRIPT_DIR / "extracted_blanks.ndjson"
+DEFAULT_INPUT_FILE = SCRIPT_DIR / "facebook_posts.ndjson"
+DEFAULT_OUTPUT_FILE = SCRIPT_DIR / "extracted_blanks.ndjson"
 GUIDELINES_FILE = SCRIPT_DIR.parent / "docs" / "blank_extraction_guidelines.md"
 
 CONCURRENCY = 3
@@ -31,11 +32,11 @@ Rules:
 """
 
 
-def load_processed_ids() -> set[str]:
-    if not OUTPUT_FILE.exists():
+def load_processed_ids(output_file: Path) -> set[str]:
+    if not output_file.exists():
         return set()
     ids = set()
-    with OUTPUT_FILE.open(encoding="utf-8") as f:
+    with output_file.open(encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if line:
@@ -111,8 +112,24 @@ async def process_post(post: dict, semaphore: asyncio.Semaphore) -> dict | None:
 
 
 async def main():
-    posts = json.loads(INPUT_FILE.read_text(encoding="utf-8"))
-    processed_ids = load_processed_ids()
+    parser = argparse.ArgumentParser(description="Extract blank-fill facts from posts using Claude")
+    parser.add_argument("--input", type=str, default=str(DEFAULT_INPUT_FILE), help="Input NDJSON file")
+    parser.add_argument("--output", type=str, default=str(DEFAULT_OUTPUT_FILE), help="Output NDJSON file")
+    args = parser.parse_args()
+
+    input_file = Path(args.input)
+    output_file = Path(args.output)
+
+    posts = []
+    with input_file.open(encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                try:
+                    posts.append(json.loads(line))
+                except json.JSONDecodeError:
+                    pass
+    processed_ids = load_processed_ids(output_file)
 
     remaining = [p for p in posts if p["id"] not in processed_ids]
     total = len(posts)
@@ -125,7 +142,7 @@ async def main():
 
     semaphore = asyncio.Semaphore(CONCURRENCY)
 
-    with OUTPUT_FILE.open("a", encoding="utf-8") as out:
+    with output_file.open("a", encoding="utf-8") as out:
         tasks = [process_post(post, semaphore) for post in remaining]
         done = already_done
         for coro in asyncio.as_completed(tasks):
@@ -137,8 +154,8 @@ async def main():
             if done % 50 == 0 or done == total:
                 print(f"Progress: {done}/{total}")
 
-    written = sum(1 for _ in OUTPUT_FILE.open(encoding="utf-8"))
-    print(f"Done. {written} entries written to {OUTPUT_FILE}")
+    written = sum(1 for _ in output_file.open(encoding="utf-8"))
+    print(f"Done. {written} entries written to {output_file}")
 
 
 if __name__ == "__main__":

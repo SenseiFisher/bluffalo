@@ -23,7 +23,7 @@ Usage: python scripts/fetch_facebook_posts.py --cookies "C:/Users/Aviv/Downloads
 """
 
 GROUP_URL = "https://www.facebook.com/groups/unimportant.facts/"
-OUTPUT_FILE = Path(__file__).parent / "facebook_posts.json"
+OUTPUT_FILE = Path(__file__).parent / "facebook_posts.ndjson"
 
 
 def parse_args():
@@ -32,13 +32,11 @@ def parse_args():
     p.add_argument("--cookies", type=str, default=None,
                    help="Path to a Netscape-format cookies.txt file")
     p.add_argument("--output", type=str, default=str(OUTPUT_FILE),
-                   help="Output JSON file path")
+                   help="Output NDJSON file path")
     p.add_argument("--headless", action="store_true", default=True,
                    help="Run browser in headless mode (default: True)")
     p.add_argument("--restart-every", type=int, default=50,
                    help="Restart browser context every N scroll pages to free memory (default: 50)")
-    p.add_argument("--save-every", type=int, default=10,
-                   help="Write JSON to disk every N scrolls (default: 10)")
     return p.parse_args()
 
 
@@ -94,21 +92,27 @@ def extract_posts(page) -> List[dict]:
     """)
 
 
-def save_posts(all_posts: dict, output: Path):
-    output.write_text(json.dumps(list(all_posts.values()), ensure_ascii=False, indent=2), encoding="utf-8")
-
-
-def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bool, output: Path, restart_every: int, save_every: int) -> List[dict]:
+def load_existing(output: Path) -> dict:
     all_posts = {}
-    if output.exists():
-        try:
-            existing = json.loads(output.read_text(encoding="utf-8"))
-            for post in existing:
-                key = post.get("id") or post["text"][:60]
-                all_posts[key] = post
-            print(f"Resumed from existing file — {len(all_posts)} posts already collected")
-        except (json.JSONDecodeError, KeyError):
-            print("Could not read existing output file, starting fresh")
+    if not output.exists():
+        return all_posts
+    with output.open(encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                try:
+                    post = json.loads(line)
+                    key = post.get("id") or post["text"][:60]
+                    all_posts[key] = post
+                except (json.JSONDecodeError, KeyError):
+                    pass
+    return all_posts
+
+
+def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bool, output: Path, restart_every: int) -> List[dict]:
+    all_posts = load_existing(output)
+    if all_posts:
+        print(f"Resumed from existing file — {len(all_posts)} posts already collected")
 
     def expand_posts(pg):
         pg.evaluate("""
@@ -122,7 +126,7 @@ def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bo
         """)
         pg.wait_for_timeout(500)
 
-    def run_session(pw, start_scroll, end_scroll):
+    def run_session(pw, start_scroll, end_scroll, out):
         browser = pw.chromium.launch(headless=headless)
         context = browser.new_context(
             locale="he-IL",
@@ -153,24 +157,24 @@ def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bo
                 key = post.get("id") or post["text"][:60]
                 if key not in all_posts:
                     all_posts[key] = post
+                    out.write(json.dumps(post, ensure_ascii=False) + "\n")
+                    out.flush()
                     new += 1
             print(f"Scroll {i+1}/{pages} — {new} new posts (total: {len(all_posts)})")
-            if (i + 1) % save_every == 0:
-                save_posts(all_posts, output)
 
             page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             page.wait_for_timeout(2500)
 
         browser.close()
-        save_posts(all_posts, output)
 
-    with sync_playwright() as pw:
-        for chunk_start in range(0, pages, restart_every):
-            chunk_end = min(chunk_start + restart_every, pages)
-            print(f"--- Starting browser session for scrolls {chunk_start+1}–{chunk_end} ---")
-            run_session(pw, chunk_start, chunk_end)
-            if chunk_end < pages:
-                print(f"--- Restarting browser to free memory (total so far: {len(all_posts)}) ---")
+    with output.open("a", encoding="utf-8") as out:
+        with sync_playwright() as pw:
+            for chunk_start in range(0, pages, restart_every):
+                chunk_end = min(chunk_start + restart_every, pages)
+                print(f"--- Starting browser session for scrolls {chunk_start+1}–{chunk_end} ---")
+                run_session(pw, chunk_start, chunk_end, out)
+                if chunk_end < pages:
+                    print(f"--- Restarting browser to free memory (total so far: {len(all_posts)}) ---")
 
     return list(all_posts.values())
 
@@ -178,7 +182,7 @@ def scrape(group_url: str, pages: int, cookies_path: Optional[str], headless: bo
 def main():
     args = parse_args()
     output = Path(args.output)
-    posts = scrape(GROUP_URL, args.pages, args.cookies, args.headless, output, args.restart_every, args.save_every)
+    posts = scrape(GROUP_URL, args.pages, args.cookies, args.headless, output, args.restart_every)
     print(f"\nSaved {len(posts)} posts -> {output}")
 
 
