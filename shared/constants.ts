@@ -34,4 +34,4 @@ export const REJOIN_EXPIRY_MS = 30 * 60 * 1000; // 30 minutes
 // Language support
 export const SUPPORTED_LANGUAGES = ['en', 'he'] as const;
 export type Language = typeof SUPPORTED_LANGUAGES[number];
-export const DEFAULT_LANGUAGE: Language = 'en';
+export const DEFAULT_LANGUAGE: Language = 'he';

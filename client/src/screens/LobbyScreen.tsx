@@ -12,7 +12,7 @@ export default function LobbyScreen() {
     return () => window.removeEventListener('popstate', onPop)
   }, [leaveRoom])
   const [promptTimerSeconds, setPromptTimerSeconds] = useState(60)
-  const [language, setLanguage] = useState<'en' | 'he'>('en')
+  const [language, setLanguage] = useState<'en' | 'he'>('he')
   const TIMER_PRESETS = [30, 45, 60, 90, 120, 150]
   const LANGUAGES = [
     { code: 'en', label: 'English' },
