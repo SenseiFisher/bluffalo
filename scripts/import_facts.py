@@ -1,6 +1,18 @@
 import argparse
 import json
+import re
 from pathlib import Path
+
+
+def fix_template(fact_template: str, truth_keyword: str) -> str:
+    if "_______" in fact_template:
+        return fact_template
+    # Model wrote [answer] instead of [blank] — replace it
+    fixed = re.sub(r"\[" + re.escape(truth_keyword) + r"\]", "_______", fact_template)
+    if "_______" not in fixed:
+        # Fallback: replace any remaining [...] bracket
+        fixed = re.sub(r"\[.+?\]", "_______", fact_template)
+    return fixed
 
 
 def main():
@@ -28,9 +40,10 @@ def main():
                 continue
             if d["id"] in existing_ids:
                 continue
+            fact_template = fix_template(d["fact"].replace("[blank]", "_______"), d["blank"])
             new_facts.append({
                 "content_id": d["id"],
-                "fact_template": d["fact"].replace("[blank]", "_______"),
+                "fact_template": fact_template,
                 "truth_keyword": d["blank"],
                 "metadata": {
                     "difficulty": "Hard",
