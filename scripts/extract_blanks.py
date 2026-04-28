@@ -26,13 +26,15 @@ You will receive a JSON array of posts: [{{"id": "<id>", "text": "<post text>"}}
 
 Respond ONLY with a valid JSON array, one entry per input post:
 - If extractable: {{"id": "<id>", "fact": "<condensed fact in {language} with [blank]>", "blank": "<the extracted detail in {language}>"}}
-- If no clear surprising extractable detail: {{"id": "<id>", "skip": true}}
+- Only skip if the post has absolutely no trivia content — e.g. it is pure site boilerplate, a vague listicle title, or a meta page with no facts at all: {{"id": "<id>", "skip": true}}
 
 Rules:
 - ALWAYS write the fact and blank in {language}, even if the input is in a different language — translate as needed
 - The "fact" should be a clean, concise version of the post (remove URLs, source citations, conversational openers) focused on the core surprising information with [blank] inserted
 - The "blank" should be a short phrase (not a full sentence unless unavoidable)
 - Do not include URLs or source links in the fact
+- If the post contains multiple stories or surprising details, pick the single best one — never skip because there are too many options
+- If the post is long and complex, condense it to the one most surprising sentence and blank the key detail
 - Return exactly one array entry per input post
 """
 
