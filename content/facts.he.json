@@ -12844,7 +12844,7 @@
   },
   {
     "content_id": "25518019807843170",
-    "fact_template": "בשנות השמונים, בעלים של 60 סניפים של דומינוס פיצה גילה שהוא יכול לחזות אירועים גלובליים משמעותיים על ידי [ניטור הזמנות פיצה]",
+    "fact_template": "בשנות השמונים, בעלים של 60 סניפים של דומינוס פיצה גילה שהוא יכול לחזות אירועים גלובליים משמעותיים על ידי _______",
     "truth_keyword": "ניטור הזמנות פיצה",
     "metadata": {
       "difficulty": "Hard",
@@ -12853,7 +12853,7 @@
   },
   {
     "content_id": "25514685561509928",
-    "fact_template": "בן גוריון השיב למכתב של ילד בן 11 בקיבוץ סדה בוקר, אך השתמש בתשובה כדי [לנזוף על שגיאות כתיב]",
+    "fact_template": "בן גוריון השיב למכתב של ילד בן 11 בקיבוץ סדה בוקר, אך השתמש בתשובה כדי _______",
     "truth_keyword": "לנזוף על שגיאות כתיב",
     "metadata": {
       "difficulty": "Hard",
@@ -12862,7 +12862,7 @@
   },
   {
     "content_id": "25503531205958697",
-    "fact_template": "בברזיל בשעות הלילה, מותר לנהגים [לעבור בחצצים אדומים] בגלל הסכנה של שוד",
+    "fact_template": "בברזיל בשעות הלילה, מותר לנהגים _______ בגלל הסכנה של שוד",
     "truth_keyword": "לעבור בחצצים אדומים",
     "metadata": {
       "difficulty": "Hard",
@@ -12871,7 +12871,7 @@
   },
   {
     "content_id": "25489220054056479",
-    "fact_template": "פואד השני, המלך האחרון של מצרים, הוא הומלך בן [חצי שנה] על פני קרוב לשנה בתקופת המלוכה",
+    "fact_template": "פואד השני, המלך האחרון של מצרים, הוא הומלך בן _______ על פני קרוב לשנה בתקופת המלוכה",
     "truth_keyword": "חצי שנה",
     "metadata": {
       "difficulty": "Hard",
@@ -12880,7 +12880,7 @@
   },
   {
     "content_id": "25457795270532291",
-    "fact_template": "בעל החיים שנראה כמו דביבון בתמונות הוא בעצם [כלב דביבון] - בעל חיים בר מזרח אסיה שאינו כלב אמיתי",
+    "fact_template": "בעל החיים שנראה כמו דביבון בתמונות הוא בעצם _______ - בעל חיים בר מזרח אסיה שאינו כלב אמיתי",
     "truth_keyword": "כלב דביבון",
     "metadata": {
       "difficulty": "Hard",
@@ -12889,7 +12889,7 @@
   },
   {
     "content_id": "25453763484268803",
-    "fact_template": "שחקן כדורגל פרואני בשם אוסמה בין לאדן יש אח בשם סדאם חוסיין, והאב רצה להקרא לבנו השלישי [ג'ורג' בוש]",
+    "fact_template": "שחקן כדורגל פרואני בשם אוסמה בין לאדן יש אח בשם סדאם חוסיין, והאב רצה להקרא לבנו השלישי _______",
     "truth_keyword": "ג'ורג' בוש",
     "metadata": {
       "difficulty": "Hard",
@@ -12898,7 +12898,7 @@
   },
   {
     "content_id": "25436584182653400",
-    "fact_template": "הרצל בקש מנורדאו, עיתונאי בפריז, לעזור בהרגעת המרד הארמני כדי לשפר את תדמית האימפריה העות'מאנית, וזה [השיב במילה אחת: לא]",
+    "fact_template": "הרצל בקש מנורדאו, עיתונאי בפריז, לעזור בהרגעת המרד הארמני כדי לשפר את תדמית האימפריה העות'מאנית, וזה _______",
     "truth_keyword": "השיב במילה אחת: לא",
     "metadata": {
       "difficulty": "Hard",
@@ -12907,7 +12907,7 @@
   },
   {
     "content_id": "25333944979583988",
-    "fact_template": "סוני גרהם קיבל השתלת לב מטרי קוטל שהתאבד, התחתן עם האלמנה שלו, וכמה שנים לאחר מכן [התאבד באותה דרך בדיוק]",
+    "fact_template": "סוני גרהם קיבל השתלת לב מטרי קוטל שהתאבד, התחתן עם האלמנה שלו, וכמה שנים לאחר מכן _______",
     "truth_keyword": "התאבד באותה דרך בדיוק",
     "metadata": {
       "difficulty": "Hard",
@@ -12916,7 +12916,7 @@
   },
   {
     "content_id": "25211426218502532",
-    "fact_template": "כשרצים עם מוזיקה, בגלל שקצב הלב עולה, השירים [נשמעים לאט יותר] כי הגוף צריך מוזיקה במהירות גבוהה יותר",
+    "fact_template": "כשרצים עם מוזיקה, בגלל שקצב הלב עולה, השירים _______ כי הגוף צריך מוזיקה במהירות גבוהה יותר",
     "truth_keyword": "נשמעים לאט יותר",
     "metadata": {
       "difficulty": "Hard",
@@ -12925,7 +12925,7 @@
   },
   {
     "content_id": "25319615637683589",
-    "fact_template": "קלאודפלייר משתמשת ב[מנורות לבה] כדי ליצור מפתחות הצפנה אקראיים להצפנת כ-20% מתעבורת הרשת שלה",
+    "fact_template": "קלאודפלייר משתמשת ב_______ כדי ליצור מפתחות הצפנה אקראיים להצפנת כ-20% מתעבורת הרשת שלה",
     "truth_keyword": "מנורות לבה",
     "metadata": {
       "difficulty": "Hard",
@@ -12934,7 +12934,7 @@
   },
   {
     "content_id": "25358949013750251",
-    "fact_template": "למרות שלוס אנג'לס ללא אגמים ידועים, קבוצת ה-Lakers שם קיבלה את שמה על שם [אגמים של מינסוטה] מהקבוצה המקורית של Minneapolis",
+    "fact_template": "למרות שלוס אנג'לס ללא אגמים ידועים, קבוצת ה-Lakers שם קיבלה את שמה על שם _______ מהקבוצה המקורית של Minneapolis",
     "truth_keyword": "אגמים של מינסוטה",
     "metadata": {
       "difficulty": "Hard",
@@ -12943,7 +12943,7 @@
   },
   {
     "content_id": "25412209525090866",
-    "fact_template": "כשלברון ג'יימס שיחק את משחקו הראשון ב-NBA בשנת 2003, וקטור וומבנייאמה [עדיין לא נולד]",
+    "fact_template": "כשלברון ג'יימס שיחק את משחקו הראשון ב-NBA בשנת 2003, וקטור וומבנייאמה _______",
     "truth_keyword": "עדיין לא נולד",
     "metadata": {
       "difficulty": "Hard",
@@ -12952,7 +12952,7 @@
   },
   {
     "content_id": "25316383648006788",
-    "fact_template": "שחקן בולינג קבע ניקוד של 299.5 נקודות כאשר [אחד מהפינים נסדק לשניים] בסיבוב האחרון",
+    "fact_template": "שחקן בולינג קבע ניקוד של 299.5 נקודות כאשר _______ בסיבוב האחרון",
     "truth_keyword": "אחד מהפינים נסדק לשניים",
     "metadata": {
       "difficulty": "Hard",
@@ -12961,7 +12961,7 @@
   },
   {
     "content_id": "25412006105111208",
-    "fact_template": "Reverse graffiti היא יצירת ציורים [על ידי הסרת לכלוך] מקירות, לא על ידי הוספת צבע",
+    "fact_template": "Reverse graffiti היא יצירת ציורים _______ מקירות, לא על ידי הוספת צבע",
     "truth_keyword": "על ידי הסרת לכלוך",
     "metadata": {
       "difficulty": "Hard",
@@ -13656,6 +13656,4254 @@
     "content_id": "25061057360206086",
     "fact_template": "בן־נוער שנסה לבנות כור גרעיני בחצרו נתפס כאשר _______",
     "truth_keyword": "סיפר לשוטר על חומרים רדיואקטיביים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-for-pooping-on-opossum-in-public",
+    "fact_template": "גבר מפלורידה נעצר בגין הטלת צואה על _______ בציבור",
+    "truth_keyword": "אופוסום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-calls-911-over-stolen-weed-arrested-for-outstanding-warrants",
+    "fact_template": "אישה מפלורידה התקשרה למוקד 911 כדי לדווח על _______ ונעצרה בגין צו מעצר",
+    "truth_keyword": "מריחואנה גנובה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-engaged-in-fully-nude-romp-on-side-of-highway",
+    "fact_template": "גבר מפלורידה עסק ב_______ בצד הכביש",
+    "truth_keyword": "התגלגלות עירומה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-robs-same-dollar-general-twice-blames-voices-in-head",
+    "fact_template": "גבר מפלורידה שדד את אותו סטור דולר ג'נרל _______, טוען שקולות בראשו הורו לו לעשות זאת",
+    "truth_keyword": "פעמיים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-with-all-gas-no-brakes-neck-tattoo-crashes-while-fleeing-police-video",
+    "fact_template": "גבר מפלורידה עם קעקוע בצוואר שכתוב _______ התנגש בזמן בריחה מהמשטרה",
+    "truth_keyword": "ALL GAS No Brakes",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-dressed-as-fbi-pistol-whips-haunted-house-host-with-bb-gun",
+    "fact_template": "אדם מפלורידה שלבש תחפוושת FBI והכה בעל בית בבית רודפים עם _______",
+    "truth_keyword": "אקדח BB",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "knife-wielding-florida-man-attacks-wrong-person-former-mma-fighter-video",
+    "fact_template": "אדם מפלורידה חמוש בסכין תקף את _______, שהיה לוחם MMA לשעבר",
+    "truth_keyword": "האדם הלא נכון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-takes-18-wheeler-on-police-chase-through-multiple-counties-in-texas",
+    "fact_template": "אדם מפלורידה לקח _______ למרדף משטרה דרך מחוזות רבים בטקסס",
+    "truth_keyword": "משאית 18 גלגלים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-drunk-and-stoned-pulls-down-pants-says-hell-kill-cops-and-rape-their-k9",
+    "fact_template": "אדם מפלורידה שיכור והשתמש בסמים הורید מכנסיים ואמר שהוא יהרוג שוטרים ו_______",
+    "truth_keyword": "יאנס כלב משטרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-slashes-27-tires-claims-was-sabotaged-by-secret-government-exposure",
+    "fact_template": "אדם מפלורידה קרע _______ וטען שהותקף על ידי חשיפה של ממשלה סודית",
+    "truth_keyword": "27 צמיגים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-in-police-chase-on-motorcycle-with-fake-mclovin-license-plate",
+    "fact_template": "איש פלורידה היה ברדיפה משטרתית על אופנוע עם לוחית רישוי מזויפת של _______",
+    "truth_keyword": "MCLOVIN",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-gets-citation-for-booty-patrol-truck",
+    "fact_template": "איש פלורידה קיבל דוח על משאית _______",
+    "truth_keyword": "\"Booty Patrol\"",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-dressed-as-a-banana-arrested-when-he-whipped-out-his-banana",
+    "fact_template": "איש פלורידה הלבוש כבננה הוקרא לדין על הוצאת _______",
+    "truth_keyword": "\"בננה\"",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-excavators-goes-for-joyride-crashes-into-walmart",
+    "fact_template": "איש פלורידה גנב _______ והתנגש בוולמארט",
+    "truth_keyword": "חופר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-stops-paying-for-rental-car-uses-to-give-uber-rides",
+    "fact_template": "איש פלורידה הפסיק להשלם על רכב שכור והשתמש בו כדי לתת _______",
+    "truth_keyword": "הסעות אובר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-found-drunk-naked-and-asleep-outside-punches-cop-that-wakes-him",
+    "fact_template": "איש מפלורידה שנמצא שיכור, עירום וישן בחוץ, _______ כשקצין הקיץ אותו.",
+    "truth_keyword": "הכה את הקצין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-robs-cvs-demands-all-bottles-of-viagra-or-ill-shoot",
+    "fact_template": "איש מפלורידה שדד חנות CVS, דורש _______.",
+    "truth_keyword": "כל בקבוקי ויאגרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-hits-other-florida-man-in-head-with-hatchet-over-spilled-beer",
+    "fact_template": "איש מפלורידה הכה אישך פלורידה אחר בראש עם גרזן בגלל _______.",
+    "truth_keyword": "בירה שנשפכה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-drops-trou-yells-where's-my-weapon-at-police",
+    "fact_template": "איש מפלורידה חשף את עצמו וצעק '_______' לכיוון המשטרה.",
+    "truth_keyword": "איפה הנשק שלי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-bucs-jersey-tries-pulling-over-cars-arrested-impersonating-police",
+    "fact_template": "גבר מפלורידה לבוש ב_______ ניסה להעצים מכוניות בטענה שהוא שוטר",
+    "truth_keyword": "ג'קט בוקניירס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-headbutts-car-window-flops-like-dolphin",
+    "fact_template": "גבר מפלורידה הכה בראשו חלון רכב וזנק החוצה _______",
+    "truth_keyword": "כמו דולפין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-completely-covered-in-paint-claims-to-be-joker-attacks-police",
+    "fact_template": "גבר מפלורידה _______ טען שהוא ג'וקר, תקף את השוטרים",
+    "truth_keyword": "מכוסה לחלוטין בצבע",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-to-trick-police-with-i-dont-live-here-sign",
+    "fact_template": "גבר מפלורידה ניסה להטעות שוטרים בעזרת _______",
+    "truth_keyword": "שלט 'אני לא גר כאן'",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-torches-cousins-car-shes-also-his-girlfiend",
+    "fact_template": "גבר מפלורידה הצית את מכונית בן דודתו, שהיא גם _______",
+    "truth_keyword": "החברה שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-breaks-into-jail-crawling-thru-x-ray-machine",
+    "fact_template": "אדם מפלורידה חדר לתוך כלא על ידי זחילה דרך _______",
+    "truth_keyword": "מכונת רנטגן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-beat-103-year-old-grandma-said-she-came-at-me",
+    "fact_template": "אדם מפלורידה הכה את _______ וטען שהיא תקפה אותו",
+    "truth_keyword": "סבתא בת 103",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-ditches-job-interview-to-steal-car",
+    "fact_template": "אדם מפלורידה זנח ראיון עבודה כדי _______",
+    "truth_keyword": "לגנוב רכב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-drops-trou-yells-wheres-my-weapon-at-police",
+    "fact_template": "איש מפלורידה הוריד מכנסיים וצעק _______ לשוטרים.",
+    "truth_keyword": "על נשקו החסר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-busted-selling-illegal-erectile-dysfunction-pills-in-the-villages",
+    "fact_template": "איש מפלורידה נעצר בעבור מכירת _______ בקהילת 'The Villages'.",
+    "truth_keyword": "כדורים בלתי חוקיים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-employers-street-sweeper-to-use-for-competing-company",
+    "fact_template": "איש מפלורידה גנב את _______ של המעסיק שלו כדי להשתמש בו בחברה מתחרה",
+    "truth_keyword": "מטאטא הרחוב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-while-crossing-atlantic-ocean-in-hamster-wheel",
+    "fact_template": "איש מפלורידה נעצר בזמן שניסה לחצות את האוקיאנוס האטלנטי ב_______",
+    "truth_keyword": "גלגל הקטנות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-breaks-into-joes-crab-shack-steals-alcohol-leaves-poop-as-payment",
+    "fact_template": "איש מפלורידה גנב משקאות מחנות והשאיר _______ כתשלום",
+    "truth_keyword": "צואה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-to-rob-publix-with-a-stapler",
+    "fact_template": "איש מפלורידה ניסה לשדוד את פובליקס בעזרת _______",
+    "truth_keyword": "חובר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-shoots-self-in-leg-with-stolen-gun-while-committing-burglary",
+    "fact_template": "איש מפלורידה _______ בעזרת אקדח גנוב בזמן שביצע פריצה",
+    "truth_keyword": "ירה בעצמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "crashes-golf-cart-blames-trump",
+    "fact_template": "גבר מפלורידה שיכור התרסק בעגלת גולף והאשים את _______",
+    "truth_keyword": "טראמפ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "meth-guns-and-baby-gator-in-truck",
+    "fact_template": "גבר מפלורידה נתפס עם מתמפטמין, אקדחים ו_______ בטנדר שלו",
+    "truth_keyword": "תנין צעיר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "trapped-in-porta-potty-busted-for-drugs",
+    "fact_template": "גבר מפלורידה נתקע ב_______ ונעצר בגלל סמים",
+    "truth_keyword": "שירות נייד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-at-waffle-house-upset-about-bacon",
+    "fact_template": "גבר מפלורידה נעצר בוופל האוס אחרי שהשתגע על _______",
+    "truth_keyword": "בקון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-stop-to-charge-ankle-monitor-while-committing-gta",
+    "fact_template": "גבר מפלורידה עצר כדי לטעון את _______ בזמן שביצע גניבת רכב",
+    "truth_keyword": "צמיד המעקב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "smuggle-drugs-prosthetic-leg",
+    "fact_template": "אדם מפלורידה ניסה להברות סמים לתוך כלא באמצעות _______",
+    "truth_keyword": "רגל תותבת",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "humps-tree-punches-deputy",
+    "fact_template": "אדם חשוף מפלורידה _______ והכה שוטר",
+    "truth_keyword": "חיבק עץ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "steals-ambulance-from-hospital-drives-it-into-mud",
+    "fact_template": "אדם מפלורידה גנב אמבולנס מבית חולים והוביל אותו לתוך _______",
+    "truth_keyword": "בוץ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "botox-treatments-four-loko",
+    "fact_template": "אדם מפלורידה נותן טיפולי בוטוקס ללא רישיון רפואי ושותה _______ במהלך ההתייעוצות",
+    "truth_keyword": "Four Loko",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "scooter-exposes-touches-self-in-front-of-walmart-shoppers",
+    "fact_template": "גבר מפלורידה על _______ חשף את עצמו בפני קונים בוולמארט.",
+    "truth_keyword": "סקוטר ממונע",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "state-tattooed-on-head-calls-911-for-a-ride-home",
+    "fact_template": "גבר מפלורידה עם מדינה משורית על הראש קרא ל-911 כדי _______.",
+    "truth_keyword": "לקבל רכיבה הביתה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "carrying-pelosis-lectern-arrested",
+    "fact_template": "גבר מפלורידה נעצר על נשיאת _______.",
+    "truth_keyword": "הלציון של פלוסי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-drives-airboat-through-neighborhood-streets",
+    "fact_template": "גבר מפלורידה נוהג ב-_______ דרך רחובות שכונתיים.",
+    "truth_keyword": "סירת אוויר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "wearing-only-underwear-steals-mail-attacks-homeowner",
+    "fact_template": "גבר מפלורידה לבוש רק _______ גנב דואר והתקיף בעל בית.",
+    "truth_keyword": "תחתונים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "drives-lawnmower-on-highway",
+    "fact_template": "אדם פלורידי שיכור נהג ב_______ על הכביש.",
+    "truth_keyword": "כסנדר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "clings-to-semitruck-speeding-down-highway-video",
+    "fact_template": "אדם פלורידי אחז ב_______ הנוסעת במהירות על הכביש.",
+    "truth_keyword": "משאית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "4-million-in-covid-relief-to-buy-lamborghini",
+    "fact_template": "אדם פלורידי השתמש ב-4 מיליון דולר מסיוע קורונה כדי לקנות _______.",
+    "truth_keyword": "למבורגיני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-spends-24-hours-vandalizing-school",
+    "fact_template": "אדם פלורידי עירום הרס בית ספר במשך _______.",
+    "truth_keyword": "24 שעות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "calls-911-ice-cream-liquor",
+    "fact_template": "אדם פלורידי התקשר ל-911 וביקש מהשוטרים להביא לו _______.",
+    "truth_keyword": "גלידה ואלכוהול",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-throws-rocks-at-cars",
+    "fact_template": "אדם מפלורידה _______ זרק אבנים על מכוניות",
+    "truth_keyword": "עירום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "hospital-bed-on-fire",
+    "fact_template": "אדם מפלורידה הצית מיטת בית חולים כדי _______",
+    "truth_keyword": "לקבל תשומת לב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "shoplifting-florida-man-flees-store-strips-naked-as-steaks-fall-out-of-his-pants",
+    "fact_template": "אדם מפלורידה ברח מחנות והשתלח עירום כאשר _______ נפלו מכנסיו",
+    "truth_keyword": "סטייקים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-tries-to-pee-on-a-cop-while-being-arrested-on-several-charges",
+    "fact_template": "אישה מפלורידה ניסתה להשתנות על _______",
+    "truth_keyword": "שוטר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-found-passed-out-and-bloody-on-top-of-uber-driver",
+    "fact_template": "אדם מפלורידה נמצא מחופף ודמום על _______",
+    "truth_keyword": "נהג אובר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "breaks-into-home-sucks-on-sleeping-mans-toes",
+    "fact_template": "גבר מפלורידה התפרץ לביתו ומצץ על _______.",
+    "truth_keyword": "אצבעות של אדם ישנון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-bites-k-9-punches-and-spits-on-deputies",
+    "fact_template": "גבר עירום מפלורידה נשך על _______.",
+    "truth_keyword": "כלב משטרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-for-fist-fight-with-gas-pump-then-pick-fight-with-wall",
+    "fact_template": "גבר מפלורידה היה בקטטה עם _______ ואחר כך עם קיר.",
+    "truth_keyword": "משאבת דלק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "nearly-naked-florida-man-breaks-into-school-smears-feces-and-cake-frosting-everywhere",
+    "fact_template": "גבר כמעט עירום התפרץ לבית ספר ומרח _______ בכל מקום.",
+    "truth_keyword": "צואה וקרם עוגה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "wal-mart-evacuated-after-florida-man-found-crawling-through-ceiling",
+    "fact_template": "גבר מפלורידה נתפס בעת _______ בתוך Walmart.",
+    "truth_keyword": "זחיה דרך התקרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "hides-meth-in-belly-button",
+    "fact_template": "גבר מפלורידה הסתיר מטמפטמין בתוך _______",
+    "truth_keyword": "טבור שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "tells-police-bag-of-cocaine-found-in-car-must-have-blown-in-from-the-wind",
+    "fact_template": "גבר מפלורידה אמר למשטרה שהקוקאין בתוך מכוניתו חייב להיות _______",
+    "truth_keyword": "נסחף מהרוח",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "found-sitting-on-families-roof-in-his-underwear-has-no-idea-how-he-got-there",
+    "fact_template": "גבר מפלורידה נמצא על _______ בלבד תחתונים",
+    "truth_keyword": "גג משפחה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "sexually-assaults-stuffed-olaf-doll-at-target",
+    "fact_template": "גבר מפלורידה התקיף מינית _______ בחנות Target",
+    "truth_keyword": "בובת אולף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-drinks-2-bottles-of-wine-gets-dui-on-a-segway",
+    "fact_template": "גבר מפלורידה שתה 2 בקבוקי יין וקיבל DUI על _______",
+    "truth_keyword": "סגוויי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "removes-9-foot-alligator-from-pool",
+    "fact_template": "איש מפלורידה הוציא _______ מהבריכה שלו",
+    "truth_keyword": "תנין בן תשע מטרים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "tries-to-get-alligator-drunk-gets-bitten",
+    "fact_template": "איש מפלורידה ניסה להשקות תנין _______",
+    "truth_keyword": "אלכוהול",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "hits-mechanic-with-golf-club-for-fixing-car-too-slow",
+    "fact_template": "איש מפלורידה הכה מכונאי ב_______ כי תיקן את המכונית שלו לאט מדי",
+    "truth_keyword": "מחת גולף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "smashes-20-car-windows-says-trump-owes-him-1-trillion-dollars",
+    "fact_template": "איש מפלורידה שבר 20 חלונות רכב, וטען כי טראמפ חייב לו _______",
+    "truth_keyword": "טריליון דולר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "breaks-into-home-cooks-breakfast-tells-owner-to-go-back-to-sleep",
+    "fact_template": "איש מפלורידה פרץ לבית ו_______, ואחר כך אמר לבעלים ללכת לישון",
+    "truth_keyword": "בישל ארוחה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-after-giving-aggressive-wet-willy",
+    "fact_template": "אדם מפלורידה נעצר בעבור הנתינת _______",
+    "truth_keyword": "וט וילי אגרסיבי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attacks-jogger-with-sword-over-pile-of-trash",
+    "fact_template": "אדם מפלורידה תקף רץ בחרב על _______",
+    "truth_keyword": "ערמת זבל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-sprays-neighbors-with-bug-spray-hits-himself-in-the-head-with-nunchucks",
+    "fact_template": "אדם מפלורידה סיפרח לשכנים בתרסיס כינים ופגע בעצמו בראש עם _______",
+    "truth_keyword": "נאנצ'וקס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tells-deputy-he-vapes-thc-to-prepare-himself-for-return-of-jesus",
+    "fact_template": "אדם מפלורידה אמר שהוא מעשנן THC כדי להתכונן ל_______",
+    "truth_keyword": "חזרת ישו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-pries-open-gators-mouth-to-get-his-dog-back",
+    "fact_template": "אדם מפלורידה פתח בכוח את פי _______ כדי להחזיר את הכלב שלו",
+    "truth_keyword": "תנין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "breaks-into-home-blames-horse",
+    "fact_template": "אדם מפלורידה התפרץ לבית והאשים _______",
+    "truth_keyword": "סוס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-strips-naked-masturbates-security-guard-shack",
+    "fact_template": "אדם מפלורידה התפשט וטיפח עצמו _______",
+    "truth_keyword": "מול תא שומרים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "wearing-nothing-but-bra-and-hat-burglarizes-cars",
+    "fact_template": "אדם מפלורידה שדד כלים בלבוש של _______",
+    "truth_keyword": "רק חזיה וכובע",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "carjacker-arrested-because-he-cant-drive-stick",
+    "fact_template": "אדם מפלורידה נעצר בגין גניבת רכב כי לא היה יכול _______",
+    "truth_keyword": "לנהוג בהילוך ידני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "masturbates-outside-of-walmart-grabs-deputys-butt",
+    "fact_template": "אדם מפלורידה טיפח עצמו בחוץ מוולמארט ותפס _______",
+    "truth_keyword": "את התחת של סגן שריף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "cuts-off-penis-of-wifes-lover-with-scissors",
+    "fact_template": "גבר מפלורידה קטע את איברו של אוהב אשתו ב_______",
+    "truth_keyword": "מספריים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "75-year-old-florida-man-fights-alligator-saves-dog",
+    "fact_template": "גבר בן 75 מפלורידה נלחם בנגד _______ והצילו כלב",
+    "truth_keyword": "תנין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-makes-threats-with-sword-after-game-console-loses-power",
+    "fact_template": "גבר מפלורידה איים בחרב אחרי ש_______",
+    "truth_keyword": "הקונסול שלו הפסיק לעבוד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-to-steal-26-cars-from-jail-parking-just-after-being-released",
+    "fact_template": "גבר מפלורידה, _______, ניסה לגנוב 26 מכוניות מחניון הכלא",
+    "truth_keyword": "זה עתה שוחרר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "drunken-florida-man-breaks-back-jumping-canal-in-nissan-versa",
+    "fact_template": "גבר שיכור מפלורידה שבר גב בקפיצה על תעלה ב_______",
+    "truth_keyword": "ניסן ורסה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "threatens-to-stab-coworkers-strips-naked-passes-out",
+    "fact_template": "גבר מפלורידה שתוי איים לדקור עמיתים, _______, ואז התעלף",
+    "truth_keyword": "התפשט עירום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "throws-feces-at-judge-during-trial-gets-acquitted",
+    "fact_template": "גבר מפלורידה זרק צואה על השופט במשפט ו_______",
+    "truth_keyword": "הוכרז כזיכוי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "masturbates-in-front-his-motel-window-while-watching-people-walk-by",
+    "fact_template": "גבר מפלורידה עירום _______ בעד חלון מוטל בזמן שצפה בעוברים",
+    "truth_keyword": "עשה אונניזם",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "dressed-as-spider-man-spotted-power-washing-roof",
+    "fact_template": "גבר מפלורידה בתלבושת סנדי מן נתפס _______",
+    "truth_keyword": "שוטף גגות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "eats-chicken-wings-refuses-to-pay-for-them-pulls-out-his-penis",
+    "fact_template": "גבר מפלורידה אכל כנפי עוף, סירב לשלם, ו_______",
+    "truth_keyword": "הוציא את פניסו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-75-pool-floats-so-he-can-have-sex-with-them",
+    "fact_template": "אדם מפלוריד גנב 75 צפות בריכה כדי _______",
+    "truth_keyword": "לקיים איתן יחסים מיניים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "asks-cop-to-help-him-start-scooter-he-was-trying-to-steal",
+    "fact_template": "אדם מפלוריד ביקש _______ בעת ניסיון לגנוב קורקינט",
+    "truth_keyword": "משוטר לעזור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-threatens-man-with-ax-steals-and-crashes-car-found-naked-hiding-in-chicken-coop",
+    "fact_template": "אדם מפלוריד איים בקלטנה, גנב רכב וקרסו, ונמצא _______",
+    "truth_keyword": "עירום בלול התרנגולים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-dances-at-mcdonalds-tries-to-have-sex-with-railing",
+    "fact_template": "אדם עירום רקד במקדונלדס וניסה _______",
+    "truth_keyword": "לקיים יחסים עם המעקה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "cocaine-on-his-nose-tells-cops-its-not-his",
+    "fact_template": "אדם עם קוקאין על האף שלו אמר לשוטרים _______",
+    "truth_keyword": "שזה לא שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "goes-to-restaurant-stands-on-chairs-flips-off-customers-tells-cops-to-go-to-dunkin-donuts",
+    "fact_template": "אישר מפלורידה הסעיר מסעדה, עמד על כסאות, וכאשר הגיעו שוטרים אמר להם ללכת ל_______",
+    "truth_keyword": "דאנקין דונאטס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "arrested-for-assault-with-ketchup",
+    "fact_template": "אישר מפלורידה נעצר על התקפה באמצעות _______",
+    "truth_keyword": "קטשופ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "tries-to-break-into-atm-with-blowtorch-welds-it-shut-instead",
+    "fact_template": "אישר מפלורידה ניסה לפתוח כספומט בעזרת משימן, אך בטעות _______",
+    "truth_keyword": "רתך אותו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "pours-salt-on-floor-of-walmart-to-get-rid-of-evil-spirits-around-him",
+    "fact_template": "אישר מפלורידה שפך מלח על הרצפה בוולמארט כדי להיפטר מ_______",
+    "truth_keyword": "רוחות רעות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "breaks-into-womans-home-wears-her-clothes-asks-for-drink",
+    "fact_template": "אישר מפלורידה פרץ לביתה של אישה, לבש _______, וביקש ממנה משקה",
+    "truth_keyword": "את בגדיה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attacks-mom-with-corn-cob",
+    "fact_template": "גבר מפלורידה תקף את אמו ב_______.",
+    "truth_keyword": "שיבול תירס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "attacked-by-python-hiding-in-toilet",
+    "fact_template": "גבר מפלורידה התקף על ידי _______ שהסתתרה בשירותים.",
+    "truth_keyword": "פיתון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "tells-cops-hell-behead-them",
+    "fact_template": "גבר מפלורידה אמר לשוטרים שיחתוך את ראשם ויאכל את _______ שלהם.",
+    "truth_keyword": "העיניים והלשונות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-has-conversation-with-atm-before-charging-deputy",
+    "fact_template": "גבר מפלורידה דיבר עם _______ לפני שתקף את הדיפיוטי.",
+    "truth_keyword": "בנק אוטומטי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "shirtless-florida-man-steals-fhp-cruiser",
+    "fact_template": "אדם מפלורידה גנב _______ והמריא בכביש במהירות של 150 קמ״ש",
+    "truth_keyword": "ניידת משטרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "exposes-genitals-riding-walmart-scooter",
+    "fact_template": "אדם מפלורידה חשף את איבריו לנשים על _______",
+    "truth_keyword": "סקוטר וולמארט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "hiding-inside-dishwasher",
+    "fact_template": "אדם מפלורידה שנמלט נמצא _______",
+    "truth_keyword": "במדיח כלים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-slaps-florida-woman-with-cheeseburger",
+    "fact_template": "אדם מפלורידה היכה אישה עם _______",
+    "truth_keyword": "המבורגר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "shirtless-florida-man-fights-tree",
+    "fact_template": "אדם מפלורידה נלחם _______",
+    "truth_keyword": "בעץ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "plays-basketball-naked",
+    "fact_template": "גבר מפלורידה משחק כדורסל עירום בפארק ציבורי, וטוען ש_______",
+    "truth_keyword": "זה משפר את הכישוריות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "impersonates-fbi-agent-harasses-homeowner",
+    "fact_template": "גבר מפלורידה התחזה כסוכן FBI, הטריד בעל בית, והשאיר _______ בדרך הכניסה, ואז הברח על אופניים",
+    "truth_keyword": "שרימפיות חיות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "drives-cadillac-from-sunroof",
+    "fact_template": "גבר מפלורידה נהג בקדילק כשהוא יושב ב_______ בכביש המהיר",
+    "truth_keyword": "חלון הגג",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-pleasures-himself",
+    "fact_template": "גבר מפלורידה עירום _______ מול צופים מזועזעים",
+    "truth_keyword": "מתאונן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "arrested-after-refusing-remove-i-eat-ass-sticker",
+    "fact_template": "גבר מפלורידה נעצר לאחר שסירב להסיר את _______ מהטרק שלו",
+    "truth_keyword": "מדבקת 'I Eat Ass'",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "woman-pulls-alligator-pants-traffic-stop",
+    "fact_template": "אישה מפלורידה הוציאה _______ מהמכנסיים שלה במהלך בדיקת משטרה",
+    "truth_keyword": "תנין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "crashes-lawnmower-into-cop-car",
+    "fact_template": "גבר מפלורידה נהג במכונת כיתוח דשא והתנגש ב_______",
+    "truth_keyword": "מכונית משטרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-actively-tugging-genitals",
+    "fact_template": "גבר עירום מפלורידה נעצר בגלל _______ בזמן הליכה בשכונה",
+    "truth_keyword": "משיכה בגניטליים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "wig-wearing-florida-man-arrested-epic-drug-bust",
+    "fact_template": "גבר מפלורידה שלובש _______ נעצר בין 100 אחרים במפקד סמים ענק",
+    "truth_keyword": "פאה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "masturbates-beach-because-women-thongs",
+    "fact_template": "גבר מפלורידה הסתפק בעצמו על החוף כי היו _______",
+    "truth_keyword": "נשים בתחתוני חוף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "speedo-wearing-florida-man-flags-down-deputies-to-show-off-his-pot-plant",
+    "fact_template": "אדם מפלורידה בספידו הנפיח סימן לשוטרים כדי להציג _______",
+    "truth_keyword": "צמח קנאביס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "wearing-bonnet-dress-steals-baby-formula",
+    "fact_template": "אדם מפלורידה לבוש בכובע וב_______ גנב פורמולה לתינוקות",
+    "truth_keyword": "שמלה פרחונית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "resists-arrest-singing-karaoke",
+    "fact_template": "אדם מפלורידה התנגד להעצור על ידי _______",
+    "truth_keyword": "שירת קריוקי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "shoot-employees-pet-store-sick-puppies",
+    "fact_template": "אדם מפלורידה איים _______ בחנות לחיות מחמד בגלל גורים חולים",
+    "truth_keyword": "להירות בכל העובדים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "tells-cops-jason-bourne",
+    "fact_template": "אדם שתוי מפלורידה אמר לשוטרים שהוא _______",
+    "truth_keyword": "ג'ייסון בורן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "breaks-into-office-leaves-sign-17-hour",
+    "fact_template": "אדם מפלורידה פרץ למשרד והשאיר _______ בחלון.",
+    "truth_keyword": "שלט דרוש",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "thinks-shopping-cart-street-legal-car",
+    "fact_template": "אדם מפלורידה בטוח ש_______ שלו חוקית לשימוש בדרך.",
+    "truth_keyword": "עגלת קניות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "threatens-landscaper-grass-clippings",
+    "fact_template": "אדם מפלורידה _______ את הגנן בגלל גיזום שהשאיר על דשאו.",
+    "truth_keyword": "איים להרוג",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "meth-attacks-mattress-looking-for-man-inside",
+    "fact_template": "אדם מפלורידה על מטמפטמין התקיף _______, משוכנע שמישהו מוסתר בתוכו.",
+    "truth_keyword": "מזרן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "too-fat-for-dui-test",
+    "fact_template": "אדם מפלורידה _______ כדי להימנע מבדיקת נהיגה בהשפעה.",
+    "truth_keyword": "טען שהוא שמן מדי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "stabs-nephew-took-too-long-bathroom",
+    "fact_template": "גבר מפלורידה דקר את אחיין שלו בגלל _______.",
+    "truth_keyword": "זמן רב בשירותים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-pretending-to-be-cop-pulls-over-actual-cop",
+    "fact_template": "גבר מפלורידה שהתחזה לשוטר עצר _______.",
+    "truth_keyword": "שוטר אמיתי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-gets-beat-up-by-the-easter-bunny",
+    "fact_template": "גבר מפלורידה הוכה על ידי _______.",
+    "truth_keyword": "ארנב הפסחא",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "homemade-bomb-goes-flying-into-neighbors-backyard",
+    "fact_template": "פצצה ביתית של גבר מפלורידה טסה אל _______.",
+    "truth_keyword": "חצר השכן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "advertises-weapons-class-by-pulling-pants-down-exposing-himself-to-traffic",
+    "fact_template": "גבר מפלורידה פרסם קורס נשקים על ידי _______ בפני התנועה.",
+    "truth_keyword": "חשיפת עצמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-hides-drugs-in-his-butt-crack",
+    "fact_template": "גבר מפלורידה הסתיר סמים ב_______",
+    "truth_keyword": "סדק התחת שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "12-boxes-golf-balls-pants",
+    "fact_template": "גבר מפלורידה יצא מחנות עם _______ בתוך מכנסיו",
+    "truth_keyword": "12 קופסות כדורי גולף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "80-fights-alligator",
+    "fact_template": "גבר מפלורידה _______ נלחם בתנין",
+    "truth_keyword": "בן 80",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-breaks-into-concession-stand-to-steal-hotdogs",
+    "fact_template": "גבר _______ מפלורידה פרץ לדוכן קונצסיון כדי לגנוב נקניקיות",
+    "truth_keyword": "עירום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "burglar-clobbered-by-65-year-old-florida-woman-with-baseball-bat",
+    "fact_template": "פורץ בית מפלורידה הוכה על ידי אישה _______ בעזרת מחבט בייסבול",
+    "truth_keyword": "בת 65",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "shoots-woman-water-gun-filled-urine",
+    "fact_template": "גבר מפלורידה ירה באישה באקדח מים שהיה מלא _______",
+    "truth_keyword": "שתנו שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "exposes-genitals-in-traffic",
+    "fact_template": "גבר מפלורידה _______ בתנועה",
+    "truth_keyword": "חשף איברים ערומים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "strips-naked-poops-in-familys-yard",
+    "fact_template": "גבר מפלורידה התפשט וחרא _______",
+    "truth_keyword": "בחצר משפחה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-on-motorcycle-taunts-deputies-then-crashes-into-tree",
+    "fact_template": "גבר מפלורידה על אופנוע _______, ואז התנגש לעץ",
+    "truth_keyword": "ליעג לשוטרים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "mayor-smokes-crack-eats-meth-practices-medicine-without-license-fires-on-swat-team",
+    "fact_template": "ראש עירייה מפלורידה עישן קוקאין, אכל מתמפטמין, התנהל כרופא ללא רישיון, ו_______",
+    "truth_keyword": "ירה על צוות SWAT",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-shows-up-to-hospital-naked-says-hes-ready-to-go",
+    "fact_template": "גבר מפלורידה הופיע בבית חולים _______, וטען שהוא מוכן ללכת.",
+    "truth_keyword": "עירום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "driving-around-pants-down-working-out",
+    "fact_template": "גבר מפלורידה נסע _______, וטען שהוא רק התאמן.",
+    "truth_keyword": "עם מכנסיים למטה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "threatens-to-destroy-everyone-with-army-of-turtles",
+    "fact_template": "גבר מפלורידה איים להשמיד את הכל בעזרת _______.",
+    "truth_keyword": "צבים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "steals-car-back-from-towing-company-smashes-through-gate",
+    "fact_template": "גבר מפלורידה גנב את הרכב שלו מחברת גרירה על ידי _______.",
+    "truth_keyword": "פריצת שער",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-back-in-jail-for-murder-minutes-after-being-released",
+    "fact_template": "גבר מפלורידה שוחרר מהכלא ו_______ נעצר שוב בגין רצח.",
+    "truth_keyword": "דקות אחרי זה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "attacks-parents-over-pork-chop",
+    "fact_template": "איש מפלורידה תקף את הוריו בגלל _______",
+    "truth_keyword": "קציץ בשר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "breaks-into-village-hall-causes-500000-in-damages",
+    "fact_template": "איש מפלורידה פרץ לאולם כפר, גרם נזקים של 500,000 דולר, ו_______",
+    "truth_keyword": "מרח דם על דגל אמריקני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-from-kmart-days-after-buying-8-million-private-island",
+    "fact_template": "איש מפלורידה גנב מ-Kmart כמה ימים בלבד אחרי שקנה _______",
+    "truth_keyword": "אי פרטי ב-8 מיליון דולר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "drunk-shirtless-florida-man-shovels-spaghetti-in-his-mouth-at-olive-garden",
+    "fact_template": "איש מפלורידה שתוי וללא חולצה _______ בספגטי ב-Olive Garden",
+    "truth_keyword": "כרסם",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-pretending-to-be-cop-for-youtube-views-gets-arrested",
+    "fact_template": "איש מפלורידה התחזה לשוטר בשביל _______ ונעצר",
+    "truth_keyword": "צפיות ביוטיוב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "family-comes-home-to-find-drunken-florida-man-sleeping-on-porch-with-loaded-shotgun",
+    "fact_template": "משפחה חזרה הביתה ומצאה גבר שיכור ישן בכניסה _______",
+    "truth_keyword": "עם רובה טעון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "fires-gun-inside-home-shatters-toilet",
+    "fact_template": "גבר מפלורידה ירה בתוך ביתו והרס את _______",
+    "truth_keyword": "האסלה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-bonds-out-of-jail-then-burglarizes-cars-in-jail-parking-lot",
+    "fact_template": "גבר מפלורידה שוחרר מהכלא ואז מייד שדד מכוניות _______",
+    "truth_keyword": "בחניון הכלא",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "thong-wearing-florida-man-found-in-mans-backyard-building-a-shed-and-throwing-chairs",
+    "fact_template": "גבר מפלורידה נמצא בחצר של גבר אחר _______, בנה סככה וזרק כסאות",
+    "truth_keyword": "בתחתונים בלבד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attacks-with-razor-blade-machete-in-argument-over-squeegee",
+    "fact_template": "איש מפלורידה תקף בחותך גילוח ומחרשת בשל ויכוח על _______",
+    "truth_keyword": "מקרית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "drunken-florida-man-drives-around-on-golf-cart-5-bottles-of-fireball-found-inside",
+    "fact_template": "איש מפלורידה שיכור נסע ב_______ עם 5 בקבוקי Fireball בתוכה",
+    "truth_keyword": "עגלת גולף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-stabs-man-in-argument-over-donuts",
+    "fact_template": "איש מפלורידה דקר אדם בשל ויכוח על _______",
+    "truth_keyword": "סופגניות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-nearly-6k-worth-of-sunglasses",
+    "fact_template": "איש מפלורידה גנב _______ בשווי כמעט 6,000 דולר",
+    "truth_keyword": "משקפי שמש",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "face-eating-florida-man-claims-he-was-half-man-half-dog",
+    "fact_template": "איש מפלורידה שאכל פנים טען שהוא _______",
+    "truth_keyword": "חצי אדם חצי כלב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-says-hes-archangel-michael-tries-to-blow-up-16-gov-vehicles",
+    "fact_template": "גבר מפלורידה ששטען שהוא 'ארכנג'ל מיכאל' _______",
+    "truth_keyword": "ניסה לפוצץ 16 כלים ממשלתיים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-applies-for-job-gets-arrested-for-attempted-murder-20-years-ago",
+    "fact_template": "גבר מפלורידה נעצר בגלל _______ לאחר הגשת בקשה לעבודה",
+    "truth_keyword": "ניסיון רצח מ-20 שנה קודם",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-fakes-robbery-to-get-out-of-work",
+    "fact_template": "גבר מפלורידה זייף שוד כדי _______",
+    "truth_keyword": "להתחמק מהעבודה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attacks-his-mom-because-she-refused-to-dress-his-mannequin",
+    "fact_template": "גבר מפלורידה תקף את אמו כי היא סירבה _______",
+    "truth_keyword": "להלביש את הבובה שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "drunken-florida-man-goes-to-jail-because-he-wanted-egg-rolls",
+    "fact_template": "גבר שתוי מפלורידה נכנס לכלא כי הוא רצה _______",
+    "truth_keyword": "גלילי ביצים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-calls-911-says-he-paid-for-sex-but-got-scammed-out-of-500",
+    "fact_template": "גבר מפלורידה התקשר ל-911 כדי לדווח על _______",
+    "truth_keyword": "הונכלות בעסקה מינית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-shoots-his-cousin-over-sunglasses",
+    "fact_template": "גבר מפלורידה ירה בבן דודו על _______",
+    "truth_keyword": "משקפי שמש",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attacked-by-florida-squirrel",
+    "fact_template": "גבר מפלורידה נתקף על ידי _______",
+    "truth_keyword": "סנאי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "masturbates-social-security-office",
+    "fact_template": "גבר מפלורידה _______ בלשכת הביטוח הלאומי",
+    "truth_keyword": "התמסחר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "throws-pancake-batter",
+    "fact_template": "גבר מפלורידה זרק _______ על אישה",
+    "truth_keyword": "בצק פנקייק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "drunk-wendys",
+    "fact_template": "גבר מפלורידה נמצא _______ מאחורי ההגה בתור של Wendy's",
+    "truth_keyword": "שיכור ומחוסר הכרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "spider-man-mask-robs-store",
+    "fact_template": "גבר מפלורידה לובש _______ בשביל לגנוב משקה וסיגריות",
+    "truth_keyword": "מסכת ספיידרמן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-calls-911-after-finding-iguana-swimming-in-toilet",
+    "fact_template": "גבר מפלורידה התקשר ל-911 אחרי שמצא _______ בשירותים",
+    "truth_keyword": "אגוונה שוחה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "stuffs-pound-marijuana-pants-traffic-stop",
+    "fact_template": "גבר מפלורידה הסתיר קילוגרם של קנאביס בתחתוניו _______",
+    "truth_keyword": "במהלך עצירה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "pressure-washes-neighbor",
+    "fact_template": "אדם מפלורידה השתמש במכונת ניקוי לחץ כדי לנקות את _______",
+    "truth_keyword": "שכנו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "steals-33000-rare-coins-redeems-coinstar",
+    "fact_template": "אדם מפלורידה גנב מטבעות נדירות בשווי 33,000 דולר וגימם ב_______",
+    "truth_keyword": "קיוסק מטבעות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "sheriffs-office-steals-flag-exposes-himself",
+    "fact_template": "אדם מפלורידה הגיע לתחנת משטרה וגנב דגל ו_______",
+    "truth_keyword": "חשף את עצמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "steals-toilet-from-home-depot",
+    "fact_template": "אדם מפלורידה גנב _______ ופריטים אחרים מחנות חומרי בנייה",
+    "truth_keyword": "אסלה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "cross-dressing-florida-man-sentenced-to-6-years-for-burglarizing",
+    "fact_template": "אדם מפלורידה בחליפת בגדי נשים הורשע לשש שנים בגין _______",
+    "truth_keyword": "פריצה וגנבה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "ben-dover",
+    "fact_template": "איש מפלוריידה אמר לשוטר שהשם שלו הוא _______",
+    "truth_keyword": "בן דובר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "cross-dressing-florida-man-sentenced-to-6-years-for-burlgarizing",
+    "fact_template": "איש מ-פלורידה נידון לכ-6 שנים בגין פריצה בזמן של _______.",
+    "truth_keyword": "התחלפות בביגוד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "attacks-woman-bag-tortilla-chips",
+    "fact_template": "איש מ-פלורידה תקף אישה ב-_______.",
+    "truth_keyword": "שקית צ'יפס טורטיה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-robs-store-dressed-as-spiderman",
+    "fact_template": "איש מ-פלורידה שדד חנות מחופש ל-_______.",
+    "truth_keyword": "ספיידרמן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "takes-grenade-launcher-to-airport",
+    "fact_template": "אדם מפלורידה לוקח _______ לשדה התעופה",
+    "truth_keyword": "משגר רימונים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "semi-nude-man-rides-bicycle-backward-again-on-florida-interstate",
+    "fact_template": "אדם ערום מפלורידה רוכב על אופניים _______ בכביש המהיר",
+    "truth_keyword": "לאחור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "attacks-coworker-machete",
+    "fact_template": "אדם מפלורידה תוקף עמית עבודה ב_______",
+    "truth_keyword": "מחרייה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "licking-doorbells",
+    "fact_template": "אדם מפלורידה נתפס במצלמה _______",
+    "truth_keyword": "ללקק פעמוני דלת",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "threatens-cut-buttocks-machete-potato-chips",
+    "fact_template": "אדם מפלורידה מאיים לחתוך גדיים עם מטע בגלל _______",
+    "truth_keyword": "צ'יפס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-crashes-car-steals-truck-of-other-good-samaritan-that-stops-to-help",
+    "fact_template": "אדם מפלורידה מתאונן וגונב משאית של _______ שעמד לעזור",
+    "truth_keyword": "טוב לב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-threatens-to-kill-neighbor-with-kindness-kindness-is-the-name-of-machete",
+    "fact_template": "אדם מפלורידה מאיים להרוג שכן עם מטע בשם _______",
+    "truth_keyword": "טוב לב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-says-multiple-syringes-found-in-rectum-arent-his",
+    "fact_template": "אדם מפלורידה אומר שסירינגים שנמצאו ב_______ אינם שלו",
+    "truth_keyword": "ישביו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-thinks-rapture-is-happening-burns-down-house-stocked-with-flamethrowers-explosive-ammo",
+    "fact_template": "אדם מפלורידה שורף את ביתו, המלא ב_______",
+    "truth_keyword": "זוקי אש ותחמונים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "shoves-footlong-sandwich-down-pants",
+    "fact_template": "איש פלורידה דחף _______ לתוך מכנסיו",
+    "truth_keyword": "סנדוויץ' פוטלונג",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "steals-shoes-after-job-interview",
+    "fact_template": "אחרי ראיון עבודה, איש פלורידה גנב נעליים _______",
+    "truth_keyword": "לאמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-calls-911-tells-cops-take-me-to-jail-motherfucker",
+    "fact_template": "איש פלורידה התקשר ל-911 וביקש _______",
+    "truth_keyword": "להיקלע לכלא",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "wide-necked-florida-man-enters-mugshot-hall-of-fame",
+    "fact_template": "איש פלורידה עם _______ נכנס לחדר הכבוד של תמונות מעצר",
+    "truth_keyword": "צוואר רחב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-breaks-into-restaurant-to-eat-ramen-noodles-play-bongos",
+    "fact_template": "איש פלורידה עירום פרץ למסעדה כדי לאכול נודלס ו_______",
+    "truth_keyword": "לנגן בבונגו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-driving-car-full-of-stolen-mail-crashes-into-trailer-full-of-alpacas",
+    "fact_template": "אדם מפלורידה נהג במכונית מלאה בדואר גנוב והתנגש בטריילר מלא _______.",
+    "truth_keyword": "אלפקות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-drinks-2-liters-of-vodka-burns-down-house-baking-cookies-on-george-foreman-grill",
+    "fact_template": "אדם עירום מפלורידה שורף את ביתו בעת אפיית עוגיות על _______.",
+    "truth_keyword": "גריל ג'ורג' פורמן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-shoves-100-of-iced-coffee-in-his-pants",
+    "fact_template": "אדם מפלורידה הכניס $100 של _______ למכנסיים שלו.",
+    "truth_keyword": "קפה קר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-goes-to-japanese-steakhouse-starts-stripping-in-front-of-customers",
+    "fact_template": "אדם מפלורידה הלך ל_______ והחל להתפשט מפני הלקוחות.",
+    "truth_keyword": "סטייקהאוז יפני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "threatens-blow-up-lesbians-home",
+    "fact_template": "אדם מפלורידה מאיים לפוצץ את ביתה של אישה לסביאנית כי היא _______.",
+    "truth_keyword": "סירבה להתקדמויות המיניות שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-strips-naked-at-mall-makes-whooping-sounds-at-police",
+    "fact_template": "גבר מפלורידה התפשט במרכז קניות וצעק _______ לעבר המשטרה",
+    "truth_keyword": "קולות יללה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-brings-live-gator-into-convenience-store-chases-customers",
+    "fact_template": "גבר מפלורידה הביא _______ לחנות נוחות ורדף לקוחות",
+    "truth_keyword": "תנין חי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "swings-anchor-beach-chicken",
+    "fact_template": "גבר מפלורידה הניף עוגן כלפי בני חוף כי הם _______",
+    "truth_keyword": "הרסו את העוף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "stabs-tourist-scissors-feet",
+    "fact_template": "גבר מפלורידה חסר זרועות דקר תייר עם _______",
+    "truth_keyword": "מספריים שהחזיק ברגליו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-breaks-into-home-gets-naked-cooks-spaghetti",
+    "fact_template": "גבר מפלורידה פרץ לבית, התפשט, ובישל _______",
+    "truth_keyword": "ספגטי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "pulled-over-during-traffic-stop-claims-dog-was-driving",
+    "fact_template": "גבר מפלורידה נעצר בתנועה טוען ש_______",
+    "truth_keyword": "כלבו היה נוהג",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-drives-stolen-car-into-ditch-has-diaper-wearing-monkey-attached-to-him",
+    "fact_template": "גבר מפלורידה נוהג במכונית גנובה לתוך בור, יש לו _______ קשור אליו",
+    "truth_keyword": "קוף בחיתול",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-upset-over-low-quality-meth-calls-cops-to-have-them-test-it",
+    "fact_template": "גבר מפלורידה כעוס על איכות נמוכה של מט קורא למשטרה כדי _______",
+    "truth_keyword": "שיבדקו את זה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-breaks-into-home-steals-alcohol-poops-on-floor-falls-asleep-on-couch",
+    "fact_template": "גבר מפלורידה פורץ לבית, גונב אלכוהול, _______, ישן על הספה",
+    "truth_keyword": "משתיק על הרצפה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "thieving-florida-man-gets-arm-stuck-in-church-donation-box",
+    "fact_template": "הזרוע של גבר מפלורידה נתקעה ב_______",
+    "truth_keyword": "קופת תרומות בכנסיה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-rob-7-eleven-pointing-finger-like-gun-clerk",
+    "fact_template": "גבר מפלורידה שדד חנות על ידי _______",
+    "truth_keyword": "אצבע כאקדח",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-for-dui-mistakes-bank-drive-thru-for-taco-bell",
+    "fact_template": "גבר מפלורידה בנהיגה בהשפעה חשב שדלפק הבנק היה _______",
+    "truth_keyword": "טאקו בל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-calls-911-to-report-his-wife-is-a-black-widow-spider",
+    "fact_template": "גבר מפלורידה קורא ל-911 כדי לדווח שאשתו היא _______",
+    "truth_keyword": "עכביש widow שחור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "punches-mailboxes-gets-tased-four-times-cops",
+    "fact_template": "גבר מפלורידה מכה _______ וקיבל טוזר 4 פעמים מהמשטרה",
+    "truth_keyword": "תיבות דואר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "scooter-came-with-meth-coke-other-drugs-inside-florida-man-says-scooter-he-purchased-came-with-meth-coke-and-other-drugs-inside",
+    "fact_template": "גבר מפלורידה קנה קורקינט והוא הגיע עם _______ בתוכו",
+    "truth_keyword": "מט״ה וסמים אחרים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "10000-safe-return-stolen-monkey",
+    "fact_template": "גבר מפלורידה מציע $10,000 בתמורה להחזרה בטוחה של _______",
+    "truth_keyword": "קוף גנוב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "steals-swan-boat-gets-stranded-lake-eola-fountain",
+    "fact_template": "גבר מפלורידה גונב _______, נתקע באגם אולה",
+    "truth_keyword": "סירת ברבור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "steak-n-shake-urinates-floor-goes-sleep",
+    "fact_template": "גבר מפלורידה הולך ל-Steak N Shake, _______ על הרצפה, ואחר כך הולך לישון",
+    "truth_keyword": "משתין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "steals-beer-exchanging-for-cold-ones-florida-man-steals-beer-says-he-was-just-exchanging-it-for-cold-ones",
+    "fact_template": "גבר מפלורידה תפוס בגניבת בירה, טוען שהוא רק החליף בתמורה ל-_______",
+    "truth_keyword": "אלו הקרות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-swings-dildo-at-cops",
+    "fact_template": "גבר מפלורידה מנופף ב-_______ לעבר שוטרים",
+    "truth_keyword": "דילדו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-to-break-into-vehicle-full-of-cops",
+    "fact_template": "אדם מפלורידה מנסה לפרוץ לרכב מלא ב_______",
+    "truth_keyword": "שוטרים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "steals-atm-strip-club",
+    "fact_template": "אדם מפלורידה גונב _______ מבר-רחוק",
+    "truth_keyword": "כספומט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-stomps-on-roofs-told-cops-he-was-meeting-up-with-dea-despite-shooting-up-meth-earlier-that-day",
+    "fact_template": "אדם מפלורידה מזריק מתאמפטמין, יללה וביעט על גגות, אומר לשוטרים שהוא _______",
+    "truth_keyword": "מחכה ל-DEA",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-does-donuts-on-scooter-chases-woman",
+    "fact_template": "אדם מפלורידה עושה סיבובים על _______, רודף אחר אישה",
+    "truth_keyword": "קורקינט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-gets-in-8-hour-standoff-with-police-says-he-was-just-shooting-rats-in-his-backyard-the-whole-time",
+    "fact_template": "אדם מפלורידה נתפס ב-standoff של 8 שעות עם המשטרה, אומר שהוא _______ בחצר שלו",
+    "truth_keyword": "ירה על עכברים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-runs-into-womans-house-to-try-on-her-clothes",
+    "fact_template": "גבר פלורידי עירום הסתנן לבית של אישה ו_______",
+    "truth_keyword": "נסה את בגדיה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "1000-in-rectum",
+    "fact_template": "גבר פלורידי הסתיר 1000 דולר ב_______",
+    "truth_keyword": "ישתו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "ar-15-mcdonalds",
+    "fact_template": "גבר פלורידי שלף אקדח AR-15 מזוייף בחנות מקדונלד'ס כי סירבו לו _______",
+    "truth_keyword": "גלידה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-says-hookah-smoking-caterpillar-told-him-to-cause-100k-in-damages-to-liquor-store",
+    "fact_template": "גבר פלורידי גרם להנזק של 100,000 דולר לחנות משקאות חזקים, טוען שקיבל הוראה מ_______",
+    "truth_keyword": "הזחל המעשן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "aids-brandishes-needle",
+    "fact_template": "גבר מפלורידה טוען שיש לו _______ ומנופף בחרטום",
+    "truth_keyword": "AIDS",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-to-rob-former-wwe-wrestler-fails-miserably",
+    "fact_template": "גבר מפלורידה מנסה לשדוד _______ ונכשל",
+    "truth_keyword": "מתאבק לשעבר של WWE",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-forklift-because-he-was-tired-of-walking",
+    "fact_template": "גבר מפלורידה גנב מלגד כי היה עייף מ_______",
+    "truth_keyword": "הליכה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-unplugs-bounce-house-with-kids-inside",
+    "fact_template": "גבר מפלורידה ניתק את הכבל של מבית קפיצה כשיש בה _______",
+    "truth_keyword": "ילדים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attempts-to-hide-close-to-100-heroin-pills-in-his-butt",
+    "fact_template": "גבר מפלורידה ניסה להסתיר כמעט 100 כדורי הרואין בתוך _______",
+    "truth_keyword": "התחת שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-wearing-bucket-steals-pigeons",
+    "fact_template": "גבר מפלורידה שלבש _______ על ראשו, התפרץ לחנות חיות מחמד וגנב יונים",
+    "truth_keyword": "דלי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "911-mom-wont-pay-ihop",
+    "fact_template": "גבר מפלורידה קרא ל-911 כי אמו לא רצתה _______",
+    "truth_keyword": "לשלם ל-IHOP",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-tries-to-steal-beer-bites-employee",
+    "fact_template": "גבר מפלורידה ניסה לגנוב בירה, _______",
+    "truth_keyword": "נשך את העובד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-leaving-strip-club-runs-himself-over-with-his-own-truck",
+    "fact_template": "גבר מפלורידה שעזב מועדון סטריפ _______ בטנקו שלו",
+    "truth_keyword": "דרס את עצמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-arrested-near-school-bus-stop",
+    "fact_template": "גבר מפלורידה עירום שנעצר ליד _______",
+    "truth_keyword": "תחנת אוטובוס בית ספר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-named-shaquille-oneal-steals-veterans-wheelchair-crashes-car",
+    "fact_template": "גבר מפלורידה בשם Shaquille O'Neal גוונל גונב _______ של ותיק",
+    "truth_keyword": "כסא גלגלים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "giant-penis-mailbox",
+    "fact_template": "גבר מפלורידה מתקין _______ תיבת דואר",
+    "truth_keyword": "פין ענק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-breaks-into-home-cooks-and-eats-pizza-while-inside",
+    "fact_template": "גבר מפלורידה פרץ לבית ו_______",
+    "truth_keyword": "בישל ואכל פיצה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "breaks-into-home-pet-family-cat",
+    "fact_template": "גבר מפלורידה פרץ לביתה של אישה כדי _______",
+    "truth_keyword": "ללטף חתול",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-man-driving-with-electrical-wires-attached-to-penis",
+    "fact_template": "גבר מפלורידה עירום נוהג עם _______ עטופים סביב איברו המין",
+    "truth_keyword": "חוטי חשמל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-calls-satan-threatens-kill-not-given-car",
+    "fact_template": "איש מפלורידה שקורא לעצמו שטן מאיים להרוג אם לא יקבל _______",
+    "truth_keyword": "מכונית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attacks-man-pickaxe-meth-fueled-rage",
+    "fact_template": "איש מפלורידה תוקף אדם ב_______",
+    "truth_keyword": "קרדום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "gun-toting-florida-man-six-pack-beer-fires-passing-cars",
+    "fact_template": "איש מפלורידה יורה על מכוניות עוברות תוך כשהוא מחזיק _______",
+    "truth_keyword": "חבילת בירה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "deputies-florida-man-stuffs-pizza-cinnamon-sticks-in-mouth-instead-of-paying",
+    "fact_template": "איש מפלורידה הזמין פיצה _______ במקום לשלם",
+    "truth_keyword": "והכניס אותה לפה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-urinates-back-yard-sheriffs-deputy",
+    "fact_template": "איש מפלורידה השתין _______",
+    "truth_keyword": "בחצר של שריף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-stabs-father-for-trying-to-circumcise-him",
+    "fact_template": "גבר מפלורידה דקר את אביו בגלל _______]",
+    "truth_keyword": "ברית מילה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "tutu-wearing-florida-man-breaks-into-farmers-market",
+    "fact_template": "גבר מפלורידה שלבש _______] וחדר בעל כוח לשוק חקלאים",
+    "truth_keyword": "חצאית בלט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "350-pound-florida-man-attempts-steal-2-tvs-wal-mart-trips-pants-fall",
+    "fact_template": "גבר מפלורידה בעל משקל 350 פאונד שניסה לגנוב 2 טלוויזיות מוולמארט נתפס כש_______]",
+    "truth_keyword": "מכנסיו נפלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-mans-attempted-carjacking-thwarted-inability-drive-manual-transmission",
+    "fact_template": "ניסיון הגנבת רכב של גבר מפלורידה נכשל בגלל שהוא לא יכול _______]",
+    "truth_keyword": "לנהוג בחילוף ידני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "infamous-florida-man-half-head-arrested-attempted-murder",
+    "fact_template": "A Florida man with _______ was arrested for attempted murder",
+    "truth_keyword": "half a head",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-stuffs-steak-lobster-pants-gets-arrested",
+    "fact_template": "A Florida man stuffed _______ in his pants",
+    "truth_keyword": "steak and lobster",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-breaks-home-eats-bologna-takes-nap",
+    "fact_template": "A Florida man broke into a home, ate bologna, and _______",
+    "truth_keyword": "took a nap",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-shotgun-demands-store-fixes-phone",
+    "fact_template": "A Florida man with a shotgun demanded _______",
+    "truth_keyword": "fix his phone",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-weed-whacks-neighbor",
+    "fact_template": "אדם מפלורידה תוקף שכן עם _______",
+    "truth_keyword": "מטלית עשבים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-attacking-girlfriend-dildo",
+    "fact_template": "אדם מפלורידה נעצר בגין התקפה על חברתו עם _______",
+    "truth_keyword": "דילדו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-steal-yacht-partially-sinks-instead",
+    "fact_template": "אדם מפלורידה ניסה לגנוב יאכטה, אך _______",
+    "truth_keyword": "טבע אותה חלקית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-becomes-category-jeopardy",
+    "fact_template": "אדם מפלורידה הפך ל_______ בתוכנית ג'אופרדי",
+    "truth_keyword": "קטגוריה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-shoot-puppy-puppy-shoots-instead",
+    "fact_template": "גבר מפלורידה ניסה לירות בגור, אבל הגור _______",
+    "truth_keyword": "ירה בו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-stole-walmart-plans-apply-job-walmart",
+    "fact_template": "אישה שגנבה מוול מארט רוצה לעבוד _______",
+    "truth_keyword": "בוול מארט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "runflorida-man-challenges-cops-catch-can-facebook-post-gets-arrested",
+    "fact_template": "גבר מפלורידה בברחה אתגר קצינים לתפוס אותו _______, ונעצר",
+    "truth_keyword": "על פיסבוק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-robs-arbys-calls-cab-make-getaway",
+    "fact_template": "אישה מפלורידה שודדת את ארביס, ואז קוראת _______ לבריחה",
+    "truth_keyword": "מונית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-robs-subway-cell-phone",
+    "fact_template": "גבר מפלורידה שודד סאבווי בזמן _______",
+    "truth_keyword": "שיחה בטלפון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-rides-manatee-talks-smack-cops",
+    "fact_template": "איש פלורידה רכב על _______ וחוצף לשוטרים",
+    "truth_keyword": "מנטי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-45000-worth-socks",
+    "fact_template": "איש פלורידה גנב יותר מ-45,000 דולר שווה של _______",
+    "truth_keyword": "גרביים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-robbed-convenience-store-wearing-luchador-mask",
+    "fact_template": "איש פלורידה שדד חנות כשהוא לובש _______",
+    "truth_keyword": "מסכת לוצדור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-cooks-meth-laundry-shed",
+    "fact_template": "אישה מפלורידה בישלה מתמפטמין בתוך _______",
+    "truth_keyword": "סככת כביסה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-pays-order-taco-bell-robs",
+    "fact_template": "איש פלורידה שילם על הזמנתו בטאקו בל ואז _______",
+    "truth_keyword": "שדד אותה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-says-slurred-speech-wisdom-teeth-not-booze",
+    "fact_template": "גבר מפלורידה טוען שדיבורו המעולעל קשור ל_______, לא לאלכוהול",
+    "truth_keyword": "שיני חוכמה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-makes-bomb-threat-halt-boyfriends-urine-sample",
+    "fact_template": "אישה מפלורידה מאיימת בפצצה כדי לעצור _______",
+    "truth_keyword": "בדיקת שתן של בן זוגה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-beaches-yacht-many-long-island-iced-teas",
+    "fact_template": "גבר מפלורידה הטיל _______ על החוף לאחר שתיית יותר מדי long island iced teas",
+    "truth_keyword": "יאכט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "shirtless-florida-man-punches-cars-disrupting-bar-show",
+    "fact_template": "גבר מפלורידה _______ הכה במכוניות לאחר הפרעה למופע בבר",
+    "truth_keyword": "חשוף חזה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-patrol-car-asks-felony",
+    "fact_template": "גבר מפלורידה גנב רכב סיור ושאל אם _______",
+    "truth_keyword": "זה פשע",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-gets-jail-second-drunken-rampage-golf-cart-parents-retirement-community",
+    "fact_template": "גבר מפלוריידה נכלא על רמפג שיכור שני ב_______ בקהילת הפרישה של הוריו",
+    "truth_keyword": "עגלת גולף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-uses-wanted-poster-facebook-profile-picture",
+    "fact_template": "גבר מפלוריידה משתמש ב_______ כתמונת פרופיל בפייסבוק",
+    "truth_keyword": "כרזת המבוקשים שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-dinosaur-costume-holding-air-rifle-arrested",
+    "fact_template": "גבר מפלוריידה נעצר בזמן שלבש _______ והחזיק ברובה אוויר",
+    "truth_keyword": "תחפושת דינוזאור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-uses-mountain-dew-fake-urine-drug-test",
+    "fact_template": "גבר מפלוריידה השתמש ב_______ כשתן מזויף בבדיקת סמים",
+    "truth_keyword": "Mountain Dew",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "27th-arrest-for-florida-man-who-wears-bikinis",
+    "fact_template": "זו ההעצרה ה27 לגבר מפלוריידה הידוע בלבישת _______",
+    "truth_keyword": "ביקיני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-videotaped-catching-gator-bare-hands-faces-felony-charges",
+    "fact_template": "גבר מפלורידה תיעד את עצמו תופס תנין ב_______",
+    "truth_keyword": "ידיים חשופות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "100-chickens-found-living-florida-womans-house",
+    "fact_template": "בביתה של אישה מפלורידה נמצאו _______",
+    "truth_keyword": "100 תרנגולות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-named-vladimir-putin-arrested-screaming-publix",
+    "fact_template": "גבר מפלורידה בשם _______ התעצר על צריחה בחנות פובליקס",
+    "truth_keyword": "ולדימיר פוטין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-10k-lotto-tickets-picture-leads-arrest",
+    "fact_template": "גבר מפלורידה גנב _______ בשווי $10,000",
+    "truth_keyword": "כרטיסי הגרלה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-found-sex-said-duty",
+    "fact_template": "Florida man נתפס בקיום יחסים מיניים וטוען ש_______",
+    "truth_keyword": "זה חובה שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-caught-eating-smuggled-meth-soaked-drawings-jail",
+    "fact_template": "Florida man נתפס אוכל _______ שהונגנבו לתוך הכלא",
+    "truth_keyword": "ציורים במטמפטמין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-lines-garage-100k-stolen-amazon-orders",
+    "fact_template": "Florida man צבר _______ של הזמנות Amazon גנובות בגרז שלו",
+    "truth_keyword": "יותר מ-100,000 דולר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-faked-being-a-cop-to-avoid-paying-11",
+    "fact_template": "Florida man התחזה להיות שוטר כדי להימנע מתשלום _______",
+    "truth_keyword": "רק 11 דולר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-threatened-his-brother-with-a-knife-because-he-called-him-fat",
+    "fact_template": "Florida man איים על אחיו בסכין בגלל שהאח _______",
+    "truth_keyword": "כינה אותו שמן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-threatens-feed-children-alligators",
+    "fact_template": "אדם מפלורידה מאיים להאכיל ילדים _______",
+    "truth_keyword": "לתנינים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-fires-gun-in-air-while-driving",
+    "fact_template": "אדם שיכור מפלורידה יורה אקדח _______",
+    "truth_keyword": "בזמן נהיגה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-breaks-in-to-home-steals-sausages",
+    "fact_template": "אדם מפלורידה ניפץ בית וגנב _______",
+    "truth_keyword": "נקניקיות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-masturbates-in-park-bathroom-says-pays-children-not-to-tell",
+    "fact_template": "אדם מפלורידה התעסק בפעילות מינית בשירותי פארק ו_______",
+    "truth_keyword": "שילם ילדים לשתוק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-claiming-to-be-pastor-charged-with-fraud",
+    "fact_template": "אדם מפלורידה התיימר להיות _______ ועומד לדין בחזקת הונאה",
+    "truth_keyword": "כומר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-and-woman-attack-grandmother-who-wouldnt-drive-them-somewhere-to-have-sex",
+    "fact_template": "גבר מפלורידה וחברתו תוקפים סבתא שסירבה לנסוע איתם למקום בשביל _______",
+    "truth_keyword": "סקס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-torches-church-to-get-at-devil-worshippers",
+    "fact_template": "גבר מפלורידה שורף _______ כדי להגיע ל'מעריצי שטן'",
+    "truth_keyword": "כנסייה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "judge-unamused-at-florida-mans-twerking-ability",
+    "fact_template": "שופט לא היה מרוצה מ_______ של גבר מפלורידה",
+    "truth_keyword": "הטוויטקינג",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-banned-from-ordering-pizza-after-harassing-restaurants",
+    "fact_template": "גבר מפלורידה נאסר מהזמנת פיצה לאחר שהטריד _______",
+    "truth_keyword": "מסעדות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-mans-robbery-foiled-by-angry-birds-backpack",
+    "fact_template": "גניבה של גבר מפלורידה נחסמה על ידי _______",
+    "truth_keyword": "תיק אנגרי בירדס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-accused-of-allowing-sons-to-shoot-bbs-at-homeless-man",
+    "fact_template": "אישה בפלוריידה הואשמה בכך שאפשרה לבניה לירות כדורי BB על _______",
+    "truth_keyword": "אדם חסר בית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tripped-on-acid-attacked-cops-at-theme-park",
+    "fact_template": "אדם בפלוריידה לקח חומרים הלוציניוגנים ותקף שוטרים ב_______",
+    "truth_keyword": "פארק שעשועים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-punched-george-zimmerman-after-he-bragged-hes-that-guy-who-killed-trayvon-martin",
+    "fact_template": "אדם בפלוריידה אגרף את ג'ורג' זימרמן אחרי שהוא _______",
+    "truth_keyword": "התפאר שהרג את טראיוון מרטין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-doesnt-pay-tabs-takes-swing-at-officer",
+    "fact_template": "אישה בפלוריידה ניסתה להכות שוטר בגלל _______",
+    "truth_keyword": "שלא שילמה חשבון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-sues-airline-after-dropping-luggage-on-herself",
+    "fact_template": "אישה בפלוריידה תובעת את חברת התעופה אחרי שהפילה _______",
+    "truth_keyword": "זמיגה על עצמה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attacks-person-over-parking-space",
+    "fact_template": "אדם מפלורידה תוקף אדם על _______",
+    "truth_keyword": "מקום חניה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-places-bucket-bomb-in-landlords-home",
+    "fact_template": "אדם מפלורידה הנח _______ בבית בעלים",
+    "truth_keyword": "פצצת דלי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-sick-of-his-1000000-island-wants-to-trade-for-a-porsche-918",
+    "fact_template": "אדם מפלורידה רוצה להחליף את אי המיליון דולר שלו ב_______",
+    "truth_keyword": "פורשה 918",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-punches-elderly-woman-trying-to-stop-robbery",
+    "fact_template": "אדם מפלורידה מכה _______ שניסתה להפסיק שוד",
+    "truth_keyword": "אישה קשישה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attacks-flamingo-at-busch-gardens-police-say",
+    "fact_template": "אדם מפלורידה תוקף _______ בבוש גארדנס",
+    "truth_keyword": "פלמינגו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tears-up-yard-after-woman-posts-bad-review-of-his-wifes-business",
+    "fact_template": "גבר מפלורידה קרע את _______ לאחר שאישה פרסמה ביקורת שלילית לעסק של אשתו",
+    "truth_keyword": "החצר שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "man-jumps-off-boat-hides-in-water-to-evade-authorities",
+    "fact_template": "גבר מפלורידה קפץ מסירה והסתתר ב_______ כדי לברוח מהרשויות",
+    "truth_keyword": "מים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-shoots-self-while-using-snapchat-deputies-say",
+    "fact_template": "אישה מפלורידה ירתה את עצמה בעודה _______",
+    "truth_keyword": "משתמשת בסנאפצ'ט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-smacks-tourist-with-shovel",
+    "fact_template": "גבר מפלורידה הכה תייר ב_______",
+    "truth_keyword": "אתר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-charged-with-picking-magic-mushrooms-while-carrying-an-alligator",
+    "fact_template": "גבר מפלורידה הואשם בקטיף פטריות קסם בעודו נושא _______",
+    "truth_keyword": "תנין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-sends-truck-flying-brings-down-interstate-sign",
+    "fact_template": "גבר מפלורידה שלח משאית לעוף והוריד _______",
+    "truth_keyword": "שלט בין-מדינתי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-mans-boat-burns-after-using-the-bathroom",
+    "fact_template": "סירתו של גבר מפלורידה עלתה בלהבות אחרי _______",
+    "truth_keyword": "שימוש בשירותים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-bit-off-babysitters-lip-during-fight-over-crying-child",
+    "fact_template": "אישה מפלורידה נשכה את _______ במהלך קטטה",
+    "truth_keyword": "שפת בייביסיטרית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "deputies-florida-man-used-dirty-pool-to-baptize-boy",
+    "fact_template": "גבר מפלורידה השתמש ב_______ כדי להטביל ילד",
+    "truth_keyword": "בריכה מלוכלכת",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-on-molly-chased-ghosts-with-machete-endangered-kids",
+    "fact_template": "גבר מפלורידה תחת השפעת Molly רדף _______",
+    "truth_keyword": "רוחות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-says-cops-mistook-krispy-kreme-doughnut-glaze-for-meth-and-arrested-him",
+    "fact_template": "גבר מפלורידה נעצר לאחר שהשוטרים בטעו וחשבו ש-_______ הוא מתמפטמין",
+    "truth_keyword": "ציפוי סופגנייה קריספי קרים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-arrested-for-assault-gives-alias-dickface-johnson",
+    "fact_template": "גבר מפלורידה שנעצר בגלל התקפה נתן את הכינוי _______",
+    "truth_keyword": "דיקפייס ג'ונסון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-throws-salsa-jar-at-car-in-road-rage",
+    "fact_template": "גבר מפלורידה זורק _______ על מכונית בהתקפת כעס בדרך",
+    "truth_keyword": "צנצנת סלסה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-bites-neighbors-ear-off-over-a-cigarette",
+    "fact_template": "גבר מפלורידה נישך את אוזן השכן שלו _______",
+    "truth_keyword": "בגלל סיגריה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-woman-threatened-deputies-with-lighter-propane-tank",
+    "fact_template": "אישה עירומה מפלורידה איימה על סגנים עם _______",
+    "truth_keyword": "מצית וטנק פרופאן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-shoots-at-pokemon-go-players-outside-house",
+    "fact_template": "אדם מפלורידה יורה על _______ מחוץ לביתו",
+    "truth_keyword": "שחקני Pokemon Go",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-robs-pizza-delivery-man-soils-himself",
+    "fact_template": "אדם מפלורידה שודד עובד דליווה פיצה ו_______",
+    "truth_keyword": "מזהם את עצמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-accused-of-threatening-to-kill-family-with-samurai-sword-deputies-say",
+    "fact_template": "אדם מפלורידה מאיים להרוג משפחתו בעזרת _______",
+    "truth_keyword": "חרב סמוראי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-uses-electric-guitar-in-failed-robbery-a-florida-man-was-arrested",
+    "fact_template": "אדם מפלורידה משתמש ב_______ בגניבה כושלת",
+    "truth_keyword": "גיטרה חשמלית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-robs-bank-covers-himself-in-feces-to-try-to-escape-custody",
+    "fact_template": "אדם מפלורידה שודד בנק ומכסה את עצמו ב_______ כדי להתחמק מהשמירה",
+    "truth_keyword": "צואה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "cops-man-broke-into-exs-home-found-with-backpack-of-sex-toys",
+    "fact_template": "גבר מפלורידה פרץ לביתה של חברתו לשעבר, ונמצא עם תיק של _______",
+    "truth_keyword": "צעצועים מיניים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-fights-to-keep-pizza-loving-pet-alligator-gwendolyn",
+    "fact_template": "גבר מפלורידה נלחם כדי לשמור על תנין חיית חמד בשם גוונדולין, שאוהב _______",
+    "truth_keyword": "פיצה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-leaves-package-labeled-bomb-at-gas-station",
+    "fact_template": "גבר מפלורידה השאיר חבילה שכתוב עליה _______ בתחנת דלק",
+    "truth_keyword": "פצצה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-for-stabbing-another-man-over-2-debt",
+    "fact_template": "גבר מפלורידה דקר גבר אחר בגלל חוב של _______",
+    "truth_keyword": "שני דולר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-forgets-to-untie-boat-while-stealing-it",
+    "fact_template": "גבר מפלורידה גנב סירה אבל שכח _______",
+    "truth_keyword": "להתיר אותה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-after-drunken-attempt-to-learn-how-to-use-a-shotgun",
+    "fact_template": "גבר מפלורידה נעצר אחרי ניסיון שיכור _______",
+    "truth_keyword": "ללמוד להשתמש בנשק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "cops-erratic-florida-man-on-molly-carries-baby-near-busy-road",
+    "fact_template": "גבר מפלורידה ערטילאי בהשפעת סמים נושא _______ ליד כביש עמוס",
+    "truth_keyword": "תינוק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-with-no-pants-is-arrested-after-a-pursuit",
+    "fact_template": "גבר מפלורידה _______ נעצר אחרי רדיפה",
+    "truth_keyword": "ללא מכנסיים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-goes-to-car-dealership-pretends-to-be-manager-fires-employees",
+    "fact_template": "אישה מפלורידה נכנסה לסלון מכוניות, התחזתה ל_______, והדיחה עובדים",
+    "truth_keyword": "מנהלת",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-accused-of-groping-6-people-at-disney-water-park-blames-broken-glasses",
+    "fact_template": "אדם מפלורידה הואשם בתקפול מינית על 6 אנשים בפארק מים של דיסני, מאשים _______",
+    "truth_keyword": "משקפיים שבורים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "man-steals-ambulance-with-emt-inside",
+    "fact_template": "אדם מפלורידה גונב אמבולנס עם _______",
+    "truth_keyword": "פרמדיק בתוכו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-appears-to-have-sex-with-a-tree-in-view-of-passing-drivers",
+    "fact_template": "אדם מפלורידה כביכול בעל קשר מיני עם _______ בנוכחות נהגים חולפים",
+    "truth_keyword": "עץ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-unaware-hes-not-allowed-to-shoot-firearm-at-strip-club-from-vehicle",
+    "fact_template": "אדם מפלורידה ירה ב_______ מתוך הרכב שלו",
+    "truth_keyword": "בר דנסות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-blows-his-hand-off-with-a-firework",
+    "fact_template": "אדם מפלורידה איבד את ידו עם _______",
+    "truth_keyword": "זיקוק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-accused-of-using-makeshift-flamethrower-to-threaten-woman",
+    "fact_template": "גבר מפלורידה מואשם בשימוש ב_______ להאיים על אישה",
+    "truth_keyword": "כלי הצתה מאולתר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-decapitates-875-year-old-statue-threatens-to-shoot-up-church",
+    "fact_template": "גבר מפלורידה כרת את הראש של _______ והתאיים לפוצץ בית כנסת",
+    "truth_keyword": "פסל בן 875 שנה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-pulls-ak-47-during-family-dispute-at-grocery-store",
+    "fact_template": "גבר מפלורידה שלף _______ במהלך סכסוך משפחתי בחנות מכולת",
+    "truth_keyword": "רובה AK-47",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-claims-he-invented-iphone-in-1992-sues-apple-for-10-billion",
+    "fact_template": "גבר מפלורידה טוען שהמציא את _______ ותובע את אפל על 10 מיליארד דולר",
+    "truth_keyword": "האייפון בשנת 1992",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-evicted-from-trailer-park-pours-poop-in-pool",
+    "fact_template": "גבר מפלורידה שהוצא מחניון קרוואנים שופך _______ לבריכה",
+    "truth_keyword": "צואה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-van-so-he-can-drive-to-waffle-house",
+    "fact_template": "אדם מפלורידה גנב ואן כדי לנסוע אל _______",
+    "truth_keyword": "וופל האוס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-does-magic-trick-pulls-womans-bathing-suit-off",
+    "fact_template": "אדם מפלורידה ביצע 'טריק קסום' שכלל _______",
+    "truth_keyword": "הסרת בגד ים של אישה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-called-911-because-checkers-got-order-wrong",
+    "fact_template": "אדם מפלורידה התקשר ל-911 בגלל _______",
+    "truth_keyword": "טעות בהזמנה של Checkers",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-gets-10-days-in-jail-for-punching-swan",
+    "fact_template": "אדם מפלורידה קיבל 10 ימים בכלא לתקיפת _______",
+    "truth_keyword": "ברבור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-had-84-bags-of-thc-laced-gummy-candy-in-car",
+    "fact_template": "בברכב של אדם מפלורידה היו 84 שקיות של _______",
+    "truth_keyword": "סוכריות גומי עם THC",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-brags-about-robbery-on-facebook-gets-arrested",
+    "fact_template": "איש מפלורידה גנב חנות ו_______ על כך בפייסבוק, ונתפס",
+    "truth_keyword": "כיווץ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-gets-house-arrest-for-possession-of-horsemeat",
+    "fact_template": "איש מפלורידה קיבל עזר בית בגין החזקת _______",
+    "truth_keyword": "בשר סוס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-dump-truck-shoots-at-helicopter-in-pursuit",
+    "fact_template": "איש מפלורידה גנב משאית זבל ו_______ במהלך הרדיפה",
+    "truth_keyword": "ירה בהליקופטר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-deceased-vets-wallet-to-buy-pizza",
+    "fact_template": "איש מפלורידה גנב ארנק מדוקטר וטרינר שנפטר כדי לקנות _______",
+    "truth_keyword": "פיצה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "69-year-old-florida-man-riddles-womans-home-with-bullets-after-she-refuses-to-have-sex-with-him",
+    "fact_template": "איש בן 69 מפלורידה ירה בבית כי אישה סירבה לו _______",
+    "truth_keyword": "ליחסי מין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "deputies-florida-man-busts-church-windows-says-he-was-angry-with-god",
+    "fact_template": "גבר מפלורידה שבר _______, ואמר שהוא כועס על אלוהים",
+    "truth_keyword": "חלונות כנסייה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-woman-blames-swerving-on-sunglasses-dog",
+    "fact_template": "אישה מפלורידה האשימה את סלידתה ב_______",
+    "truth_keyword": "משקפיים וכלב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-poop-covered-florida-man-shot-after-breaking-into-home",
+    "fact_template": "גבר מפלורידה, עירום ו_______, הפרץ לבית ונורה",
+    "truth_keyword": "מכוסה בצואה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "shirtless-florida-man-smashes-car-window-with-baseball-bat-in-fit-of-road-rage",
+    "fact_template": "גבר מפלורידה ללא חולצה הרס חלון של רכב בעזרת _______ בהתקף זעם בדרכים",
+    "truth_keyword": "מחבט בייסבול",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-pistol-whips-shoots-at-man-over-yams",
+    "fact_template": "גבר מפלורידה מכה בנשק ויורה לאיש על _______",
+    "truth_keyword": "בטטה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-busts-through-hay-bales-catches-airtime-in-high-speed-chase",
+    "fact_template": "גבר מפלורידה פרץ דרך _______ ועלה לאוויר במהלך מרדף במהירות גבוהה",
+    "truth_keyword": "חבילות קש",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-lotto-tickets-returns-to-cash-them",
+    "fact_template": "גבר מפלורידה גנב כרטיסי לוטו, _______ כדי לקבל את הפרס",
+    "truth_keyword": "חזר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-found-with-mobile-meth-lab-in-walmart-parking-lot",
+    "fact_template": "גבר מפלורידה נתפס עם _______ בחניון וולמארט",
+    "truth_keyword": "מעבדת מתמפטמין ניידה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "cops-florida-men-steal-16-in-chicken-face-1000-bonds",
+    "fact_template": "אנשי פלורידה גנבו $16 של _______, התמודדו עם קנסות של $1000",
+    "truth_keyword": "עוף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-who-woke-up-naked-in-strangers-home-unlikely-to-be-charged",
+    "fact_template": "אדם מפלורידה התעורר עירום _______",
+    "truth_keyword": "בבית זר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "officials-florida-man-lets-kids-pet-his-alligator-on-leash",
+    "fact_template": "אדם מפלורידה מאפשר לילדים ללטף את _______",
+    "truth_keyword": "תנינו על רצועה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-plays-naked-game-of-ding-dong-ditch",
+    "fact_template": "אדם מפלורידה משחק ding dong ditch _______",
+    "truth_keyword": "עירום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-calls-911-over-100-times-blames-artistic-robotic-technician",
+    "fact_template": "אדם מפלורידה התקשר ל-911 למעל 100 פעמים ואשם _______",
+    "truth_keyword": "טכנאי רובוט אמנותי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-manmasseur-claims-sexual-assault-was-just-his-oil-bottle-not-his-penis",
+    "fact_template": "מעסיק מפלורידה שהואשם בטרדה מינית טוען שהיא היתה _______",
+    "truth_keyword": "בקבוק השמן שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-called-after-florida-man-dances-naked-in-the-rain",
+    "fact_template": "שוטרים הופעלו לאחר שגבר מפלורידה _______ בגשם",
+    "truth_keyword": "רקד עירום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-accused-of-masturbating-exposing-self-to-woman-its-a-nice-view",
+    "fact_template": "גבר מפלורידה הואשם בהחשפה מינית בפני אישה, טוען כי זה _______",
+    "truth_keyword": "נוף יפה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-calls-911-girlfriend-refuses-buy-vodka",
+    "fact_template": "גבר מפלורידה התקשר ל-911 לאחר שחברתו סירבה לקנות לו _______",
+    "truth_keyword": "וודקה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-flashes-100-bills-pees-refusing-pay-drinks-ordered",
+    "fact_template": "גבר מפלורידה הסתובב עם שטרות של 100 דולר ו_______ לאחר שסירב לשלם על המשקאות שהוא הזמין",
+    "truth_keyword": "השתין על עצמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "cops-health-conscious-thief-collared-alleged-kale-heist-florida-walmart",
+    "fact_template": "גבר מפלורידה נעצר בגין גניבה כביכול של _______ מ-Walmart",
+    "truth_keyword": "קייל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-woman-plays-mermaid-entered-homes-without-permission",
+    "fact_template": "אישה מפלורידה נכנסה לבתים ללא הרשאה כשהיא משחקת _______",
+    "truth_keyword": "בת ים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "burying-troubles-florida-way-florida-man-buries-boss",
+    "fact_template": "בן מפלורידה קבר את _______",
+    "truth_keyword": "בוסו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-threw-alligator-wendys-drive-thru-window-sentenced",
+    "fact_template": "בן מפלורידה זרק _______ לחלון דרייב-דרו של וונדיס",
+    "truth_keyword": "תנין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "machete-wielding-florida-man-arrested-drug-weapons-charges",
+    "fact_template": "בן מפלורידה עם _______ נעצר בחשד לסמים והנשק",
+    "truth_keyword": "מטוש",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-jumps-overpass-attempt-elude-cops",
+    "fact_template": "בן מפלורידה קפץ מ_______ כדי להימלט מהשוטרים",
+    "truth_keyword": "גשר עילי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florid-man-tased-arrested-jumping-hood-car-palmetto-expressway-knife",
+    "fact_template": "Florida Man נעצר לאחר שקפץ על גג מכונית ב-Palmetto Expressway עם _______",
+    "truth_keyword": "סכין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-credit-card-fraud-investigator-arrested-credit-card-fraud",
+    "fact_template": "חוקר הונאה בכרטיסי אשראי נעצר בשל _______",
+    "truth_keyword": "הונאה בכרטיסי אשראי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-searching-for-woman-that-allegedly-stole-deliverymans-car",
+    "fact_template": "Florida Woman גנבה את מכונית של _______ והתנגשה בבית",
+    "truth_keyword": "שליח הפיצה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "floirida-woman-shoplifter-identified-left-behind-car-tags",
+    "fact_template": "Florida Woman גנבת חנויות זוהתה לאחר שהשאירה _______",
+    "truth_keyword": "תגי רישום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-bursts-exs-delivery-room-fights-boyfriend-police-say",
+    "fact_template": "Florida Man פרץ לתוך _______ של קודמת שלו והילחם עם בן הזוג שלה",
+    "truth_keyword": "חדר הלידה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-runs-endangered-sandhill-crane-golf-cart",
+    "fact_template": "גבר מפלורידה דרס עגור סנדהיל בעזרת _______",
+    "truth_keyword": "עגלת גולף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "report-drunken-florida-man-messes-pool-desk-throws-ball-way-guitar",
+    "fact_template": "גבר שיכור מפלורידה הרס שולחן ביליארד והטיל כדור אל _______",
+    "truth_keyword": "גיטרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "key-west-looking-owner-illegally-parked-flintstones-car",
+    "fact_template": "בקי ווסט מחפשת בעלים של _______",
+    "truth_keyword": "רכב פלינטסטון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-fined-48k-using-phone-jammer-road",
+    "fact_template": "גבר מפלורידה קיבל קנס של 48,000 דולר בשל שימוש ב_______ בכביש",
+    "truth_keyword": "מעכב סלולרי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-top-secret-mission-breaks-store-steal-energy-drink-honey-bun",
+    "fact_template": "גבר מפלורידה פרץ לחנות בטענה של 'משימה סודית' כדי לגנוב _______",
+    "truth_keyword": "משקה אנרגיה ובר דבש",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-climbs-drive-thru-window-steal-burger-king-cash-register",
+    "fact_template": "אדם מפלורידה טוען דרך _______ כדי לגנוב קופה רושמת",
+    "truth_keyword": "חלון ה-drive-thru",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "sore-loser-florida-man-takes-sledgehammer-game-st-petersburg-convenience-store",
+    "fact_template": "אדם מפלורידה לוקח _______ על משחק בחנות נוחות",
+    "truth_keyword": "פטיש",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-locked-hotel-room-shoots-lock",
+    "fact_template": "אדם מפלורידה שננעל בחוץ מחדר מלון _______",
+    "truth_keyword": "יורה בנעילה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "burglary-suspect-tries-to-make-getaway-in-a-golf-cart-and-lands-in-a-pond",
+    "fact_template": "נוכל ניסה להימלט בעזרת _______ ונחת בתוך בריכה",
+    "truth_keyword": "עגלת גולף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-points-loaded-shotgun-irs-worker-knocked-door",
+    "fact_template": "אדם מפלורידה הצביע את _______ על עובד מס שהקה בדלתו",
+    "truth_keyword": "רובה ציד טעון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-sends-five-dogs-kill-muslim-terrorist",
+    "fact_template": "איש מפלורידה חופוי ערום שלח את _______ כדי להרוג מישהו",
+    "truth_keyword": "חמשת כלביו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "naked-florida-man-jumps-airport-fence-go-back-cuba",
+    "fact_template": "איש מפלורידה חופוי ערום קפץ על גדר של שדה תעופה כדי _______",
+    "truth_keyword": "לחזור לקובה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-calls-911",
+    "fact_template": "איש מפלורידה דיווח ל-911 על _______",
+    "truth_keyword": "עצמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-cop-gonna-fat-boy",
+    "fact_template": "איש מפלורידה שאל שוטר, 'מה אתה הולך לעשות, _______?'",
+    "truth_keyword": "בחור שמן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "alligator-bites-off-arm-florida-man-trying-flee-cops",
+    "fact_template": "איש מפלורידה שניסה לברוח מהמשטרה איבד את זרועו כאשר _______ נשכה אותה",
+    "truth_keyword": "תנין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-accused-lighting-shirt-fire-front-dmv",
+    "fact_template": "איש פלורידה הואשם בהצתת _______ לאש בחזית DMV",
+    "truth_keyword": "חולצתו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-charged-stealing-1-robbery",
+    "fact_template": "איש פלורידה הואשם בגניבת _______",
+    "truth_keyword": "דולר אחד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-shoots-self-doesnt-notice-3-days",
+    "fact_template": "איש פלורידה ירה בעצמו ולא הבחין בכך במשך _______",
+    "truth_keyword": "3 ימים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "deputiesflorida-man-known-murder-charged-fatal-home-invasion",
+    "fact_template": "איש פלורידה בכינוי _______ הואשם בהרצח",
+    "truth_keyword": "רוצח",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-pulled-alligator-foot-dashboard",
+    "fact_template": "איש פלורידה נעצר עם _______ בדשבורד של המכונית",
+    "truth_keyword": "כף תנין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-accidentally-shoots-job-interview-elementary-school",
+    "fact_template": "גבר מפלורידה ירה בעצמו בתאונה במהלך ראיון עבודה _______",
+    "truth_keyword": "בבית ספר יסודי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-kills-brother-cheeseburger",
+    "fact_template": "גבר מפלורידה הרג את אחיו בגלל _______",
+    "truth_keyword": "בורגר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-tells-woman-loves-masturbates-outside-window",
+    "fact_template": "גבר מפלורידה אומר לאישה שהוא אוהב אותה בזמן שהוא _______ מחוץ לחלונה",
+    "truth_keyword": "משחק עם עצמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-steals-shirts-shoes-job-interview",
+    "fact_template": "גבר מפלורידה גנב חולצות ונעליים _______",
+    "truth_keyword": "לראיון עבודה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-stuffs-python-pants-pet-store",
+    "fact_template": "גבר מפלורידה משתלל _______ בתוך המכנסיים שלו בחנות חיות מחמד",
+    "truth_keyword": "אפעה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tells-police-that-his-name-is-expletive-you",
+    "fact_template": "איש מפלורידה אומר לשוטרים שהשם שלו הוא _______",
+    "truth_keyword": "מילת קללה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-belly-dances-bikini-drivers",
+    "fact_template": "איש מפלורידה ריקד בטן _______ לנהגים",
+    "truth_keyword": "בביקיני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-brings-sword-gun-fight",
+    "fact_template": "איש מפלורידה הביא _______ לעימות בנשקים",
+    "truth_keyword": "חרב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-swim-away-police-exposing",
+    "fact_template": "איש מפלורידה חשף את עצמו בפני שוטרים וניסה _______",
+    "truth_keyword": "לשחות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-clings-car-road-rage-incident",
+    "fact_template": "איש מפלורידה התחבק _______ בתקרית כעס בדרך",
+    "truth_keyword": "לרכב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-after-cocaine-fueled-100mph-chase",
+    "fact_template": "אנשן פלורידה נעצר לאחר רדיפה _______ במהירות 100 קמ״ש",
+    "truth_keyword": "קוקאין-מונעת",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-jacks-off-pickup-truck-outside-walgreens",
+    "fact_template": "אנשן פלורידה התעסק בעצמו ב_______",
+    "truth_keyword": "משאית מחוץ לוולגרינס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-eats-crack-cocaine-tells-police-jolly-rancher-candy",
+    "fact_template": "גבר מפלורידה אכל קוקאין וסיפר לשוטרים שזה _______",
+    "truth_keyword": "ממתק Jolly Rancher",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "police-florida-man-confronts-officers-viking-style-ax",
+    "fact_template": "אדם מפלורידה עמד מול שוטרים עם _______",
+    "truth_keyword": "גרזן ויקינגי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-sex-community-pool-attacks-onlookers",
+    "fact_template": "אדם מפלורידה עשה סקס _______ ותוקף צופים",
+    "truth_keyword": "בבריכה ציבורית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-defended-small-chihuahua-large-machete",
+    "fact_template": "אדם מפלורידה הגן על צ'יוואווה קטנה עם _______",
+    "truth_keyword": "סכין מחטא גדולה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "half-bearded-florida-man-spends-420-jail-selling-marijuana-night",
+    "fact_template": "אדם מפלורידה _______ בילה את 4/20 בכלא בגלל מכירת קנאביס בלילה הקודם",
+    "truth_keyword": "חצי זקן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-accused-snatching-hat-calling-stepson-goat-abusing-terrorist",
+    "fact_template": "אדם מפלורידה הואשם בגזל כובע וקריאה לחורגו _______",
+    "truth_keyword": "טרוריסט המתעמת בעזים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-impersonated-cop-used-sirens-rush-traffic-say-deputies",
+    "fact_template": "גבר מפלורידה _______ והשתמש בסירנות כדי לעבור בתנועה",
+    "truth_keyword": "התחזה לשוטר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-sues-right-marry-laptop",
+    "fact_template": "גבר מפלורידה תבע לקבל זכות להתחתן ל_______",
+    "truth_keyword": "המחשב הנייד שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-humps-stop-sign-stalking-ex",
+    "fact_template": "גבר מפלורידה זיין _______ בזמן שעקב אחרי קודמתו",
+    "truth_keyword": "שלט עצירה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-eats-meth-avoid-arrest-doesnt-work",
+    "fact_template": "גבר מפלורידה אכל _______ כדי להימנע מעצירה — וזה לא עבד",
+    "truth_keyword": "מתאמפטמין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "moment-a-florida-man-is-busted-with-heroin-meth-and-100k-worth-of-stolen-goods-after-his",
+    "fact_template": "גבר מפלורידה תפס עם סמים שהוא הסתיר _______",
+    "truth_keyword": "בתוך הטבעת שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-says-much-music-masturbation-caused-vandalize-home",
+    "fact_template": "אדם מפלורידה השחית את ביתו בגלל _______",
+    "truth_keyword": "מוזיקה והאוננות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-kiss-cottonmouth-snake",
+    "fact_template": "אדם מפלורידה ניסה להנשק את _______",
+    "truth_keyword": "נחש קוטון מאוות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-arrested-serial-gropings-youtube-dont-touch-ass-youre-crazy",
+    "fact_template": "אדם מפלורידה נעצר בגלל שביצע גריפות מיניות סדרתיות _______",
+    "truth_keyword": "ברשתות חברתיות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-asks-cop-jump-start-stolen-truck",
+    "fact_template": "אדם מפלורידה ביקש מכוח משטרה לעזור לו להנעיע _______",
+    "truth_keyword": "משאית גנובה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-escape-cops-hoverboard-fails",
+    "fact_template": "אדם מפלורידה ניסה להימלט מהמשטרה על _______ וכישל",
+    "truth_keyword": "לוח ריחוף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-tries-buy-60000-bmw-suv-food-stamps",
+    "fact_template": "גבר מפלורידה מנסה לקנות BMW בשווי 60,000 דולר עם _______",
+    "truth_keyword": "סימני מזון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-handcuff-key-butt-high-speed-chase",
+    "fact_template": "גבר מפלורידה הסתיר מפתח אזיקים ב_______ במהלך רדיפה בתור גבוה",
+    "truth_keyword": "התחת שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-takes-fire-extinguisher-off-hotel-wall-sprays-people",
+    "fact_template": "גבר מפלורידה הוציא מטף כיבוי אש מקיר בית מלון ו_______",
+    "truth_keyword": "ממטר אנשים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-hides-15-sticks-stolen-deodorant-pants",
+    "fact_template": "גבר מפלורידה הסתיר _______ בתוך מכנסיו",
+    "truth_keyword": "15 דיאודורנטים גנובים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-orders-pit-bull-attack-cops-attacks-florida-man-instead",
+    "fact_template": "גבר מפלורידה הורה לכלבו לתקוף שוטרים, אך הכלב _______",
+    "truth_keyword": "תקף אותו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "9-5-foot-long-gator-captured-outside-florida-mans-door",
+    "fact_template": "_______ נתפסה מחוץ לדלת ביתו של גבר מפלורידה",
+    "truth_keyword": "תנין של 9.5 רגל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-shoots-neighbours-feeding-stray-cats",
+    "fact_template": "גבר מפלורידה יירה לעבר שכניו על רקע _______",
+    "truth_keyword": "הנקת חתולים נודדים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-brings-machete-fist-fight",
+    "fact_template": "גבר מפלורידה הביא _______ לקטטת אגרופים",
+    "truth_keyword": "סכין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-holding-death-america-sign-beat-americans",
+    "fact_template": "גבר מפלורידה החזיק בשלט שכתוב עליו _______ והותקף על ידי אמריקאים",
+    "truth_keyword": "'מוות לאמריקה'",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "customer-calls-911-bacon-pizza-hamburger-instead",
+    "fact_template": "אישה מפלורידה קראת ל911 כי קיבלה _______",
+    "truth_keyword": "פיצה עם המבורגר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-urinates-table-exposes-self-church",
+    "fact_template": "גבר מפלורידה השתין על שולחן והחשיף את עצמו ב_______",
+    "truth_keyword": "כנסייה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "stolen-phone-rings-pocket-suspected-florida-man",
+    "fact_template": "גבר מפלורידה נתפס כי הטלפון הגנוב _______",
+    "truth_keyword": "צילצל בכיסו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-drives-six-miles-wife-atop-car",
+    "fact_template": "גבר מפלורידה נסע שישה קילומטרים עם אשתו _______",
+    "truth_keyword": "על גג המכונית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "william-shatner-sued-for-170-million-by-man-claiming-to-be-his-son",
+    "fact_template": "גבר מפלורידה טוען שהוא _______ ותובע 170 מיליון דולר",
+    "truth_keyword": "בנו של וויליאם שטנר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-attacks-his-moms-door-with-a-pitchfork",
+    "fact_template": "אדם מפלורידה תוקף את דלת אמו ב_______",
+    "truth_keyword": "מזלג",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-jailed-reporting-jury-duty-drunk-supreme-court-reverses",
+    "fact_template": "אדם מפלורידה נכלא לאחר הופעתו לשירות מושבעים _______, אך בית המשפט העליון בטל זאת",
+    "truth_keyword": "בשכרות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-grabs-police-taser-after-being-tased-five-times",
+    "fact_template": "אדם מפלורידה תפס את טייזר המשטרה אחרי שהזכה בו _______",
+    "truth_keyword": "חמש פעמים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "man-accused-of-stealing-wallets-leaves-his-own-at-the-scene",
+    "fact_template": "אדם מפלורידה, החשוד בגניבת ארנקים, השאיר את _______ בזירה",
+    "truth_keyword": "ארנקו שלו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "man-points-spear-gun-at-boaters-in-keys-cops-say",
+    "fact_template": "אדם מפלורידה כיוון _______ לעבר סירות במפרץ",
+    "truth_keyword": "רובה חצים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "man-arrested-for-the-perfect-florida-crime",
+    "fact_template": "גבר מפלורידה זרק _______ למסעדה",
+    "truth_keyword": "תנין",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "reports-dead-body-skull-hand-puppet",
+    "fact_template": "גבר מפלורידה דיווח על גופה על ידי הבאת גולגולת לפובליקס והשימוש בה כ_______",
+    "truth_keyword": "בובת יד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-whips-out-boobs-at-cafe-tugs-on-nipple-rings",
+    "fact_template": "אישה מפלורידה חשפה את עצמה בקפה ומשכה את _______",
+    "truth_keyword": "טבעות הפטמה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-dealing-drugs-while-wearing-i-have-drugs-t-shirt",
+    "fact_template": "גבר מפלורידה סחר בסמים בזמן שלבש חולצה שכתוב עליה _______",
+    "truth_keyword": "'יש לי סמים'",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-and-girlfriend-trapped-in-unlocked-closet-for-2-days",
+    "fact_template": "גבר מפלורידה וחברתו היו תקועים למשך יומיים בארון שהיה _______",
+    "truth_keyword": "לא נעול",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-gropes-reaches-into-taco-bell-drive-thru-to-grope-worker",
+    "fact_template": "גבר מפלורידה הכניס יד לתא הנסיעה של _______ כדי להטריד עובד",
+    "truth_keyword": "טאקו בל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-accused-of-attacking-girlfriend-with-a-banana",
+    "fact_template": "גבר מפלורידה תקף את חברתו בעזרת _______",
+    "truth_keyword": "בננה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-woman-bites-daughters-nipple-during-argument",
+    "fact_template": "אישה מפלורידה נשכה את _______ של בתה במהלך ריב",
+    "truth_keyword": "פטם",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "florida-man-bites-off-girlfriends-thumb-on-way-to-taco-bell",
+    "fact_template": "גבר מפלורידה נשך את _______ של חברתו בדרכו לטאקו בל",
+    "truth_keyword": "אצבע",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
