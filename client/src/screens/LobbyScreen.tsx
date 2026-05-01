@@ -4,6 +4,7 @@ import { useGame } from '../context/GameContext'
 export default function LobbyScreen() {
   const { gameState, mySessionId, socket, emit, lastError, clearError, leaveRoom } = useGame()
   const [totalRounds, setTotalRounds] = useState(7)
+  const [debuffsEnabled, setDebuffsEnabled] = useState(false)
 
   useEffect(() => {
     history.pushState({ lobby: true }, '')
@@ -27,7 +28,7 @@ export default function LobbyScreen() {
 
   const handleStartGame = () => {
     clearError()
-    emit('START_GAME', { total_rounds: totalRounds, prompt_timer_seconds: promptTimerSeconds, language })
+    emit('START_GAME', { total_rounds: totalRounds, prompt_timer_seconds: promptTimerSeconds, language, debuffs_enabled: debuffsEnabled })
   }
 
   const roomUrl = window.location.origin
@@ -187,6 +188,24 @@ export default function LobbyScreen() {
                 </button>
               ))}
             </div>
+          </div>
+
+          <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+            <label className="flex items-center justify-between cursor-pointer" onClick={() => setDebuffsEnabled(!debuffsEnabled)}>
+              <div>
+                <span className="block text-indigo-300 text-sm font-semibold uppercase tracking-wide">
+                  {language === 'he' ? 'דבאפים' : 'Debuffs'}
+                </span>
+                <span className="block text-indigo-400 text-xs mt-1">
+                  {language === 'he'
+                    ? 'הכי טוב בהטעיה? מקבל כוח להעניש!'
+                    : 'Best deceiver earns a power to punish!'}
+                </span>
+              </div>
+              <div className={`w-12 h-6 rounded-full transition-colors duration-200 flex-shrink-0 ml-4 relative ${debuffsEnabled ? 'bg-yellow-400' : 'bg-indigo-700'}`}>
+                <div className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${debuffsEnabled ? 'translate-x-6' : 'translate-x-0.5'}`} />
+              </div>
+            </label>
           </div>
 
           <button

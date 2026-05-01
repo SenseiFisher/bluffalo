@@ -102,3 +102,40 @@ export function calculateRoundScores(state: GameState): GameState {
 
   return s;
 }
+
+/**
+ * Determine which player earns debuff power this round.
+ * Returns the session_id of the most bamboozling player, or null if:
+ *  - debuffs are disabled
+ *  - the truth got a plurality of votes
+ *  - there's a tie in bamboozle count
+ */
+export function calculateDebuffAward(state: GameState): string | null {
+  if (!state.debuffs_enabled) return null;
+
+  const truthOption = state.vote_options.find((o) => o.is_truth);
+  if (!truthOption) return null;
+
+  const totalVoters = state.players.filter(
+    (p) => p.round.voted_for_id !== null
+  ).length;
+  if (totalVoters === 0) return null;
+
+  const truthVotes = state.players.filter(
+    (p) => p.round.voted_for_id === truthOption.option_id
+  ).length;
+
+  if (truthVotes >= totalVoters / 2) return null;
+
+  let maxCount = 0;
+  let winner: string | null = null;
+  for (const p of state.players) {
+    if (p.round.bamboozle_count > maxCount) {
+      maxCount = p.round.bamboozle_count;
+      winner = p.session_id;
+    } else if (p.round.bamboozle_count === maxCount && maxCount > 0) {
+      winner = null; // tie
+    }
+  }
+  return winner;
+}

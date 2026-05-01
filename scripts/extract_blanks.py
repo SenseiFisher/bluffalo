@@ -15,21 +15,21 @@ BATCH_SIZE = 5
 
 GUIDELINES = GUIDELINES_FILE.read_text(encoding="utf-8")
 
-def build_system_prompt(language: str) -> str:
+def build_system_prompt() -> str:
     return f"""{GUIDELINES}
 
 ---
 
-You are processing {language} trivia posts in batches. For each post, identify the single most surprising or unexpected detail and rewrite the key sentence(s) with that detail replaced by [blank].
+You are processing trivia posts in batches. For each post, identify the single most surprising or unexpected detail and rewrite the key sentence(s) with that detail replaced by [blank].
 
 You will receive a JSON array of posts: [{{"id": "<id>", "text": "<post text>"}}]
 
 Respond ONLY with a valid JSON array, one entry per input post:
-- If extractable: {{"id": "<id>", "fact": "<condensed fact in {language} with [blank]>", "blank": "<the extracted detail in {language}>"}}
+- If extractable: {{"id": "<id>", "fact": "<condensed fact with [blank]>", "blank": "<the extracted detail>"}}
 - Only skip if the post has absolutely no trivia content — e.g. it is pure site boilerplate, a vague listicle title, or a meta page with no facts at all: {{"id": "<id>", "skip": true}}
 
 Rules:
-- ALWAYS write the fact and blank in {language}, even if the input is in a different language — translate as needed
+- Write the fact and blank in the same language as the input
 - The "fact" should be a clean, concise version of the post (remove URLs, source citations, conversational openers) focused on the core surprising information with [blank] inserted
 - The "blank" should be a short phrase (not a full sentence unless unavoidable)
 - Do not include URLs or source links in the fact
@@ -133,13 +133,12 @@ async def main():
     parser = argparse.ArgumentParser(description="Extract blank-fill facts from posts using Claude")
     parser.add_argument("--input", type=str, default=str(DEFAULT_INPUT_FILE), help="Input NDJSON file")
     parser.add_argument("--output", type=str, default=str(DEFAULT_OUTPUT_FILE), help="Output NDJSON file")
-    parser.add_argument("--language", type=str, default="Hebrew", help="Language of the posts and output facts (default: Hebrew)")
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Number of posts per Claude call (default: {BATCH_SIZE})")
     args = parser.parse_args()
 
     input_file = Path(args.input)
     output_file = Path(args.output)
-    system_prompt = build_system_prompt(args.language)
+    system_prompt = build_system_prompt()
 
     posts = []
     with input_file.open(encoding="utf-8") as f:

@@ -1,3 +1,27 @@
+export enum DebuffType {
+  TIME_CUTOFF = "TIME_CUTOFF",
+  FOG = "FOG",
+  SCRAMBLE = "SCRAMBLE",
+  CHARACTER_EXCLUDE = "CHARACTER_EXCLUDE",
+}
+
+export interface Debuff {
+  type: DebuffType;
+  excluded_character?: string;
+}
+
+export interface DebuffAward {
+  winner_session_id: string;
+  winner_display_name: string;
+  eligible_targets: Array<{ session_id: string; display_name: string }>;
+  pending_debuff: {
+    type: DebuffType;
+    target_session_id: string;
+    target_display_name: string;
+    excluded_character?: string;
+  } | null;
+}
+
 export enum GamePhase {
   LOBBY      = "LOBBY",
   PROMPT     = "PROMPT",
@@ -23,6 +47,7 @@ export interface Player {
   funny_vote_count: number;
   is_connected: boolean;
   disconnected_at: number | null;
+  active_debuff: Debuff | null;
   round: {
     submitted_lie: string | null;
     voted_for_id: string | null;
@@ -57,6 +82,9 @@ export interface GameState {
   used_fact_ids: string[];
   room_master_session_id: string;
   language: string;
+  debuffs_enabled: boolean;
+  debuff_award: DebuffAward | null;
+  active_debuff_session_id: string | null; // NOT stripped — client uses to check if they are debuffed
 }
 
 // Socket event payload types
@@ -70,6 +98,13 @@ export interface StartGamePayload {
   total_rounds: number;
   prompt_timer_seconds?: number;
   language?: string;
+  debuffs_enabled?: boolean;
+}
+
+export interface SubmitDebuffPayload {
+  debuff_type: DebuffType;
+  target_session_id: string;
+  excluded_character?: string;
 }
 
 export interface SubmitLiePayload {

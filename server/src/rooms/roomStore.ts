@@ -83,5 +83,8 @@ export function createInitialGameState(
     used_fact_ids: [],
     room_master_session_id: roomMasterSessionId,
     language: DEFAULT_LANGUAGE,
+    debuffs_enabled: false,
+    debuff_award: null,
+    active_debuff_session_id: null,
   };
 }

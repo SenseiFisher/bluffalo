@@ -7,7 +7,7 @@ import {
   RESOLUTION_TIMER_MS,
 } from "../../../shared/constants";
 import { shuffle } from "../utils/shuffle";
-import { calculateRoundScores } from "../utils/scoring";
+import { calculateRoundScores, calculateDebuffAward } from "../utils/scoring";
 import { getRandomFact } from "../content/loader";
 
 // Phase timers: roomCode → timeout handle
@@ -37,7 +37,9 @@ type BroadcastFn = (roomCode: string, state: GameState) => void;
  * Reset per-round fields on all players.
  */
 function resetPlayerRounds(state: GameState): void {
+  state.active_debuff_session_id = null;
   for (const p of state.players) {
+    p.active_debuff = null;
     p.round = {
       submitted_lie: null,
       voted_for_id: null,
@@ -45,6 +47,20 @@ function resetPlayerRounds(state: GameState): void {
       bamboozle_count: 0,
       truth_found: false,
     };
+  }
+}
+
+function applyPendingDebuff(state: GameState): void {
+  const pending = state.debuff_award?.pending_debuff;
+  state.debuff_award = null;
+  if (!pending) return;
+  const target = state.players.find((p) => p.session_id === pending.target_session_id);
+  if (target) {
+    target.active_debuff = {
+      type: pending.type,
+      ...(pending.excluded_character ? { excluded_character: pending.excluded_character } : {}),
+    };
+    state.active_debuff_session_id = target.session_id;
   }
 }
 
@@ -95,6 +111,8 @@ export function startGame(
   state.is_final_round = totalRounds === 1;
   state.used_fact_ids = [];
   state.vote_options = [];
+  state.debuff_award = null;
+  state.active_debuff_session_id = null;
 
   // Reset all scores
   for (const p of state.players) {
@@ -230,6 +248,23 @@ export function advanceToResolution(state: GameState, broadcast: BroadcastFn): v
   // Copy scored fields back to state
   Object.assign(state, scored);
 
+  // Determine debuff winner for this round
+  const debuffWinner = calculateDebuffAward(state);
+  if (debuffWinner) {
+    const winnerPlayer = state.players.find((p) => p.session_id === debuffWinner);
+    const eligibleTargets = state.players
+      .filter((p) => p.is_connected && p.session_id !== debuffWinner)
+      .map((p) => ({ session_id: p.session_id, display_name: p.display_name }));
+    state.debuff_award = {
+      winner_session_id: debuffWinner,
+      winner_display_name: winnerPlayer?.display_name ?? "",
+      eligible_targets: eligibleTargets,
+      pending_debuff: null,
+    };
+  } else {
+    state.debuff_award = null;
+  }
+
   // Dynamic timer: 4s per option (2 steps × 2s each) + 6s buffer, minimum 12s
   const resolutionMs = Math.max(12_000, state.vote_options.length * 4_000 + 6_000);
   state.phase = GamePhase.RESOLUTION;
@@ -261,6 +296,7 @@ export function advanceToNextRound(state: GameState, broadcast: BroadcastFn): vo
   state.round_number += 1;
   state.is_final_round = state.round_number === state.total_rounds;
   resetPlayerRounds(state);
+  applyPendingDebuff(state);
   startPromptPhase(state, broadcast);
 }
 

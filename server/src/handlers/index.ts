@@ -1,6 +1,6 @@
 import { Server, Socket } from "socket.io";
 import { v4 as uuidv4 } from "uuid";
-import { GamePhase, GameState, Player, VoteOption } from "../../../shared/types";
+import { DebuffType, GamePhase, GameState, Player, VoteOption } from "../../../shared/types";
 import {
   MIN_PLAYERS_TO_START,
   MIN_ROUNDS,
@@ -11,6 +11,7 @@ import {
   DEFAULT_LANGUAGE,
   REJOIN_EXPIRY_MS,
   FUNNY_BONUS,
+  CHARACTER_EXCLUDE_OPTIONS,
 } from "../../../shared/constants";
 import {
   getRoom,
@@ -193,6 +194,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
       funny_vote_count: 0,
       is_connected: true,
       disconnected_at: null,
+      active_debuff: null,
       round: {
         submitted_lie: null,
         voted_for_id: null,
@@ -218,7 +220,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
   // ── START_GAME ─────────────────────────────────────────────────────────────
   socket.on("START_GAME", (payload: unknown) => {
-    const p = payload as { total_rounds?: number; prompt_timer_seconds?: number; language?: string };
+    const p = payload as { total_rounds?: number; prompt_timer_seconds?: number; language?: string; debuffs_enabled?: boolean };
 
     // Find room this socket is in
     const roomCode = getRoomCodeForSocket(socket);
@@ -266,6 +268,8 @@ export function registerHandlers(io: Server, socket: Socket): void {
       ? p.language
       : DEFAULT_LANGUAGE;
     state.language = lang;
+
+    state.debuffs_enabled = p?.debuffs_enabled === true;
 
     const updatedState = startGame(state, totalRounds, broadcast);
     setRoom(roomCode, updatedState);
@@ -485,6 +489,76 @@ export function registerHandlers(io: Server, socket: Socket): void {
     broadcastGameState(io, roomCode, state);
   });
 
+  // ── SUBMIT_DEBUFF ──────────────────────────────────────────────────────────
+  socket.on("SUBMIT_DEBUFF", (payload: unknown) => {
+    const p = payload as { debuff_type?: string; target_session_id?: string; excluded_character?: string };
+
+    const roomCode = getRoomCodeForSocket(socket);
+    if (!roomCode) return;
+
+    const state = getRoom(roomCode);
+    if (!state || state.phase !== GamePhase.RESOLUTION) {
+      socket.emit("ERROR", { code: "WRONG_PHASE", message: "Not in RESOLUTION phase" });
+      return;
+    }
+
+    if (!state.debuffs_enabled || !state.debuff_award) {
+      socket.emit("ERROR", { code: "NO_DEBUFF_AWARD", message: "No debuff award this round" });
+      return;
+    }
+
+    const player = state.players.find((pl) => pl.id === socket.id);
+    if (!player || player.session_id !== state.debuff_award.winner_session_id) {
+      socket.emit("ERROR", { code: "NOT_DEBUFF_WINNER", message: "You did not earn the debuff this round" });
+      return;
+    }
+
+    if (state.debuff_award.pending_debuff !== null) {
+      socket.emit("ERROR", { code: "DEBUFF_ALREADY_CHOSEN", message: "Debuff already selected" });
+      return;
+    }
+
+    const debuffType = p?.debuff_type as DebuffType | undefined;
+    if (!debuffType || !Object.values(DebuffType).includes(debuffType)) {
+      socket.emit("ERROR", { code: "INVALID_DEBUFF_TYPE", message: "Invalid debuff type" });
+      return;
+    }
+
+    const targetId = p?.target_session_id;
+    if (typeof targetId !== "string") {
+      socket.emit("ERROR", { code: "INVALID_TARGET", message: "Invalid target" });
+      return;
+    }
+
+    const target = state.players.find(
+      (pl) => pl.session_id === targetId && pl.is_connected && pl.session_id !== player.session_id
+    );
+    if (!target) {
+      socket.emit("ERROR", { code: "INVALID_TARGET", message: "Target player not found or invalid" });
+      return;
+    }
+
+    let excludedChar: string | undefined;
+    if (debuffType === DebuffType.CHARACTER_EXCLUDE) {
+      const charOptions = CHARACTER_EXCLUDE_OPTIONS[state.language] ?? CHARACTER_EXCLUDE_OPTIONS["en"];
+      excludedChar = typeof p?.excluded_character === "string" ? p.excluded_character : undefined;
+      if (!excludedChar || !charOptions.includes(excludedChar)) {
+        socket.emit("ERROR", { code: "INVALID_CHARACTER", message: "Invalid excluded character" });
+        return;
+      }
+    }
+
+    state.debuff_award.pending_debuff = {
+      type: debuffType,
+      target_session_id: targetId,
+      target_display_name: target.display_name,
+      ...(excludedChar ? { excluded_character: excludedChar } : {}),
+    };
+
+    setRoom(roomCode, state);
+    broadcastGameState(io, roomCode, state);
+  });
+
   // ── PLAY_AGAIN ─────────────────────────────────────────────────────────────
   socket.on("PLAY_AGAIN", (_payload: unknown) => {
     const roomCode = getRoomCodeForSocket(socket);
@@ -510,11 +584,14 @@ export function registerHandlers(io: Server, socket: Socket): void {
     state.vote_options = [];
     state.timer_ends_at = null;
     state.used_fact_ids = [];
+    state.debuff_award = null;
+    state.active_debuff_session_id = null;
 
     for (const p of state.players) {
       p.score = 0;
       p.deception_count = 0;
       p.funny_vote_count = 0;
+      p.active_debuff = null;
       p.round = {
         submitted_lie: null,
         voted_for_id: null,

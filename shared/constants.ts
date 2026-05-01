@@ -35,3 +35,39 @@ export const REJOIN_EXPIRY_MS = 30 * 60 * 1000; // 30 minutes
 export const SUPPORTED_LANGUAGES = ['en', 'he'] as const;
 export type Language = typeof SUPPORTED_LANGUAGES[number];
 export const DEFAULT_LANGUAGE: Language = 'he';
+
+// Debuff system
+export const DEBUFF_NAMES: Record<string, Record<string, string>> = {
+  en: {
+    TIME_CUTOFF: "Flash",
+    FOG: "Arthur",
+    SCRAMBLE: "Yoda",
+    CHARACTER_EXCLUDE: "Thanos",
+  },
+  he: {
+    TIME_CUTOFF: "פלאש",
+    FOG: "ארתור",
+    SCRAMBLE: "יודה",
+    CHARACTER_EXCLUDE: "ת'נוס",
+  },
+};
+
+export const DEBUFF_DESCRIPTIONS: Record<string, Record<string, string>> = {
+  en: {
+    TIME_CUTOFF: "Timer cut in half — move it!",
+    FOG: "Where are your glasses?!",
+    SCRAMBLE: "Scrambled, your words are!",
+    CHARACTER_EXCLUDE: "One letter has been snapped away!",
+  },
+  he: {
+    TIME_CUTOFF: "הזמן נחצה – מהר!",
+    FOG: "איפה המשקפיים שלך?!",
+    SCRAMBLE: "מבולבלות, המילים שלך הן!",
+    CHARACTER_EXCLUDE: "אות אחת נמחקה!",
+  },
+};
+
+export const CHARACTER_EXCLUDE_OPTIONS: Record<string, string[]> = {
+  en: ["e", "t", "a", "o", "i", "n"],
+  he: ["ו", "י", "ל", "מ", "נ", "ר"],
+};
