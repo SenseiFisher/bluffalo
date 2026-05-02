@@ -231,8 +231,6 @@ interface DebuffSectionProps {
 
 function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debuffChar, setDebuffChar, debuffTarget, setDebuffTarget, onSubmit }: DebuffSectionProps) {
   const lang = gameState.language ?? 'en'
-  const names = DEBUFF_NAMES[lang] ?? DEBUFF_NAMES['en']
-  const descs = DEBUFF_DESCRIPTIONS[lang] ?? DEBUFF_DESCRIPTIONS['en']
   const charOptions = CHARACTER_EXCLUDE_OPTIONS[lang] ?? CHARACTER_EXCLUDE_OPTIONS['en']
   const award = gameState.debuff_award!
 
@@ -251,12 +249,12 @@ function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debu
       <div className="w-full max-w-lg mt-6 bg-red-900/40 border-2 border-red-500 rounded-2xl p-5 text-center">
         <p className="text-red-300 text-2xl font-black mb-1">💀 Debuff Incoming!</p>
         <p className="text-white text-lg font-semibold">
-          {pending.target_display_name} faces <span className="text-yellow-400">{names[pending.type]}</span> next round
+          {pending.target_display_name} faces <span className="text-yellow-400">{DEBUFF_NAMES[pending.type]}</span> next round
           {pending.excluded_character && (
             <span className="ml-1 text-red-300">— forbidden: <span className="font-black">{pending.excluded_character}</span></span>
           )}
         </p>
-        <p className="text-red-400 text-sm mt-1">{descs[pending.type]}</p>
+        <p className="text-red-400 text-sm mt-1">{DEBUFF_DESCRIPTIONS[pending.type]}</p>
       </div>
     )
   }
@@ -268,9 +266,7 @@ function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debu
         <p className="text-yellow-400 font-bold text-lg animate-pulse">
           ⚡ {award.winner_display_name} is choosing a debuff...
         </p>
-        <p className="text-indigo-400 text-sm mt-1">
-          {lang === 'he' ? 'הם מתכננים נקמה לסיבוב הבא' : 'Planning their revenge for next round'}
-        </p>
+        <p className="text-indigo-400 text-sm mt-1">Planning their revenge for next round</p>
       </div>
     )
   }
@@ -279,13 +275,13 @@ function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debu
   return (
     <div className="w-full max-w-lg mt-6 bg-indigo-900/80 border-2 border-yellow-500 rounded-2xl p-5 space-y-4">
       <p className="text-yellow-400 font-black text-xl text-center">
-        ⚡ {lang === 'he' ? 'בחר דבאף!' : 'Choose a Debuff!'}
+        ⚡ Choose a Debuff!
       </p>
 
       {/* Debuff type picker */}
       <div>
         <p className="text-indigo-300 text-xs font-semibold uppercase tracking-wide mb-2">
-          {lang === 'he' ? 'סוג הדבאף' : 'Debuff Type'}
+          Debuff Type
         </p>
         <div className="grid grid-cols-2 gap-2">
           {allDebuffs.map((type) => (
@@ -298,8 +294,8 @@ function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debu
                   : 'border-indigo-600 bg-indigo-800/60 hover:border-indigo-500'
               }`}
             >
-              <span className="block text-white font-black">{names[type]}</span>
-              <span className="block text-indigo-400 text-xs mt-0.5">{descs[type]}</span>
+              <span className="block text-white font-black">{DEBUFF_NAMES[type]}</span>
+              <span className="block text-indigo-400 text-xs mt-0.5">{DEBUFF_DESCRIPTIONS[type]}</span>
             </button>
           ))}
         </div>
@@ -309,7 +305,7 @@ function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debu
       {debuffType === DebuffType.CHARACTER_EXCLUDE && (
         <div>
           <p className="text-indigo-300 text-xs font-semibold uppercase tracking-wide mb-2">
-            {lang === 'he' ? 'בחר אות אסורה' : 'Choose the Forbidden Letter'}
+            Choose the Forbidden Letter
           </p>
           <div className="flex flex-wrap gap-2">
             {charOptions.map((ch) => (
@@ -332,7 +328,7 @@ function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debu
       {/* Target picker */}
       <div>
         <p className="text-indigo-300 text-xs font-semibold uppercase tracking-wide mb-2">
-          {lang === 'he' ? 'בחר קורבן' : 'Choose Your Victim'}
+          Choose Your Victim
         </p>
         <div className="space-y-2">
           {eligibleTargets.map((target) => (
@@ -358,7 +354,7 @@ function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debu
         disabled={!canSubmit}
         className="w-full py-3 bg-red-500 hover:bg-red-400 disabled:bg-indigo-700 disabled:text-indigo-500 disabled:cursor-not-allowed text-white font-black text-lg rounded-xl transition-all active:scale-95"
       >
-        {lang === 'he' ? '💀 הפעל דבאף!' : '💀 Unleash the Debuff!'}
+        💀 Unleash the Debuff!
       </button>
     </div>
   )

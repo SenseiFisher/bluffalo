@@ -46,8 +46,6 @@ export default function PromptScreen() {
   if (!gameState || !gameState.current_fact) return null
 
   const lang = gameState.language ?? 'en'
-  const debuffNames = DEBUFF_NAMES[lang] ?? DEBUFF_NAMES['en']
-  const debuffDescs = DEBUFF_DESCRIPTIONS[lang] ?? DEBUFF_DESCRIPTIONS['en']
 
   const submittedCount = gameState.players.filter(
     (p) => p.round.submitted_lie !== null
@@ -111,9 +109,9 @@ export default function PromptScreen() {
       {imDebuffed && myDebuff && (
         <div className="w-full max-w-lg mb-4 bg-red-900/60 border-2 border-red-500 rounded-xl px-4 py-3 text-center">
           <p className="text-red-300 font-black text-lg">
-            💀 {debuffNames[myDebuff.type]}
+            💀 {DEBUFF_NAMES[myDebuff.type]}
           </p>
-          <p className="text-red-400 text-sm mt-0.5">{debuffDescs[myDebuff.type]}</p>
+          <p className="text-red-400 text-sm mt-0.5">{DEBUFF_DESCRIPTIONS[myDebuff.type]}</p>
         </div>
       )}
 
@@ -262,7 +260,7 @@ export default function PromptScreen() {
                   )}
                   {player.active_debuff && (
                     <span className="text-red-400 text-xs bg-red-900/40 px-1.5 py-0.5 rounded-full font-semibold">
-                      💀 {debuffNames[player.active_debuff.type]}
+                      💀 {DEBUFF_NAMES[player.active_debuff.type]}
                     </span>
                   )}
                 </span>
