@@ -205,17 +205,8 @@ export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void 
   };
 
   state.vote_options = shuffle([...lies, truthOption]);
-  state.phase = GamePhase.REVEAL;
-  state.timer_ends_at = Date.now() + REVEAL_TIMER_MS;
 
-  broadcast(state.room_code, state);
-
-  setTimer(state.room_code, REVEAL_TIMER_MS, () => {
-    const currentState = getCurrentState(state.room_code);
-    if (currentState && currentState.phase === GamePhase.REVEAL) {
-      advanceToSelection(currentState, broadcast);
-    }
-  });
+  advanceToSelection(state, broadcast);
 }
 
 /**
