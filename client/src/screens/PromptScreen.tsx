@@ -5,16 +5,8 @@ import { DebuffType } from '@shared/types'
 import { DEBUFF_NAMES, DEBUFF_DESCRIPTIONS } from '@shared/constants'
 import DebuffIcon from '../components/DebuffIcon'
 
-function scrambleText(text: string): string {
-  return text.split(' ').map((word) => {
-    if (word.length <= 2) return word
-    const inner = word.slice(1, -1).split('')
-    for (let i = inner.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [inner[i], inner[j]] = [inner[j], inner[i]]
-    }
-    return word[0] + inner.join('') + word[word.length - 1]
-  }).join(' ')
+function reverseWords(text: string): string {
+  return text.trim().split(/\s+/).reverse().join(' ')
 }
 
 export default function PromptScreen() {
@@ -53,15 +45,7 @@ export default function PromptScreen() {
   ).length
   const totalPlayers = gameState.players.filter((p) => p.is_connected).length
 
-  const rawFactTemplate = gameState.current_fact.fact_template
-  const scrambledTemplate = useMemo(
-    () => rawFactTemplate.split('_______').map(scrambleText).join('_______'),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [gameState.round_number]
-  )
-  const factTemplate = (imDebuffed && myDebuff?.type === DebuffType.SCRAMBLE)
-    ? scrambledTemplate
-    : rawFactTemplate
+  const factTemplate = gameState.current_fact.fact_template
   const parts = factTemplate.split('_______')
   const isFog = imDebuffed && myDebuff?.type === DebuffType.FOG
   const renderFoggedText = (text: string) =>
@@ -78,12 +62,14 @@ export default function PromptScreen() {
   const handleSubmit = () => {
     if (!lieText.trim() || timeLocked) return
     clearError()
+    const isYoda = imDebuffed && myDebuff?.type === DebuffType.SCRAMBLE
+    const finalText = isYoda ? reverseWords(lieText.trim()) : lieText.trim()
     if (submittedText !== null) {
-      emit('EDIT_LIE', { text: lieText.trim() })
+      emit('EDIT_LIE', { text: finalText })
     } else {
-      emit('SUBMIT_LIE', { text: lieText.trim() })
+      emit('SUBMIT_LIE', { text: finalText })
     }
-    setSubmittedText(lieText.trim())
+    setSubmittedText(finalText)
     setSubmitted(true)
   }
 
