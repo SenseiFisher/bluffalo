@@ -63,6 +63,13 @@ export default function PromptScreen() {
     ? scrambledTemplate
     : rawFactTemplate
   const parts = factTemplate.split('_______')
+  const isFog = imDebuffed && myDebuff?.type === DebuffType.FOG
+  const renderFoggedText = (text: string) =>
+    text.split(' ').map((word, i) => (
+      <span key={i} className={(i + word.length) % 2 === 0 ? 'blur-sm' : ''}>
+        {word}{' '}
+      </span>
+    ))
 
   const forbiddenChar = (imDebuffed && myDebuff?.type === DebuffType.CHARACTER_EXCLUDE)
     ? (myDebuff.excluded_character ?? null)
@@ -148,14 +155,14 @@ export default function PromptScreen() {
           Fill in the blank
         </p>
         <p
-          className={`text-white text-xl font-semibold leading-relaxed select-none ${imDebuffed && myDebuff?.type === DebuffType.FOG ? 'blur-md' : ''}`}
+          className="text-white text-xl font-semibold leading-relaxed select-none"
           dir={gameState.language === 'he' ? 'rtl' : 'ltr'}
         >
-          {parts[0]}
+          {isFog ? renderFoggedText(parts[0]) : parts[0]}
           <span className="inline-block bg-indigo-700 border-b-2 border-yellow-400 px-3 py-0.5 mx-1 rounded min-w-[6rem] text-center">
             &nbsp;
           </span>
-          {parts[1] || ''}
+          {isFog ? renderFoggedText(parts[1] || '') : (parts[1] || '')}
         </p>
       </div>
 
