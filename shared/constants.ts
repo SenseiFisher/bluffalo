@@ -44,6 +44,13 @@ export const DEBUFF_NAMES: Record<string, string> = {
   CHARACTER_EXCLUDE: "Thanos",
 };
 
+export const DEBUFF_ICONS: Record<string, string> = {
+  TIME_CUTOFF: "🦥",
+  FOG: "👓",
+  SCRAMBLE: "👽",
+  CHARACTER_EXCLUDE: "✊",
+};
+
 export const DEBUFF_DESCRIPTIONS: Record<string, string> = {
   TIME_CUTOFF: "Timer cut in half — move it!",
   FOG: "Where are your glasses?!",

@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react'
 import { useGame } from '../context/GameContext'
 import { useTimer } from '../hooks/useTimer'
 import { DebuffType } from '@shared/types'
-import { DEBUFF_NAMES, DEBUFF_DESCRIPTIONS } from '@shared/constants'
+import { DEBUFF_NAMES, DEBUFF_DESCRIPTIONS, DEBUFF_ICONS } from '@shared/constants'
 
 function scrambleText(text: string): string {
   return text.split(' ').map((word) => {
@@ -109,7 +109,7 @@ export default function PromptScreen() {
       {imDebuffed && myDebuff && (
         <div className="w-full max-w-lg mb-4 bg-red-900/60 border-2 border-red-500 rounded-xl px-4 py-3 text-center">
           <p className="text-red-300 font-black text-lg">
-            💀 {DEBUFF_NAMES[myDebuff.type]}
+            {DEBUFF_ICONS[myDebuff.type]} {DEBUFF_NAMES[myDebuff.type]}
           </p>
           <p className="text-red-400 text-sm mt-0.5">{DEBUFF_DESCRIPTIONS[myDebuff.type]}</p>
         </div>
@@ -260,7 +260,7 @@ export default function PromptScreen() {
                   )}
                   {player.active_debuff && (
                     <span className="text-red-400 text-xs bg-red-900/40 px-1.5 py-0.5 rounded-full font-semibold">
-                      💀 {DEBUFF_NAMES[player.active_debuff.type]}
+                      {DEBUFF_ICONS[player.active_debuff.type]} {DEBUFF_NAMES[player.active_debuff.type]}
                     </span>
                   )}
                 </span>

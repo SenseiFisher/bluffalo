@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { useGame } from '../context/GameContext'
 import { DebuffType, GameState, VoteOption } from '@shared/types'
-import { FUNNY_BONUS, DEBUFF_NAMES, DEBUFF_DESCRIPTIONS, CHARACTER_EXCLUDE_OPTIONS } from '@shared/constants'
+import { FUNNY_BONUS, DEBUFF_NAMES, DEBUFF_DESCRIPTIONS, DEBUFF_ICONS, CHARACTER_EXCLUDE_OPTIONS } from '@shared/constants'
 
 const STEP_DURATION = 2200 // ms between reveal steps
 
@@ -249,7 +249,7 @@ function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debu
       <div className="w-full max-w-lg mt-6 bg-red-900/40 border-2 border-red-500 rounded-2xl p-5 text-center">
         <p className="text-red-300 text-2xl font-black mb-1">💀 Debuff Incoming!</p>
         <p className="text-white text-lg font-semibold">
-          {pending.target_display_name} faces <span className="text-yellow-400">{DEBUFF_NAMES[pending.type]}</span> next round
+          {pending.target_display_name} faces <span className="text-yellow-400">{DEBUFF_ICONS[pending.type]} {DEBUFF_NAMES[pending.type]}</span> next round
           {pending.excluded_character && (
             <span className="ml-1 text-red-300">— forbidden: <span className="font-black">{pending.excluded_character}</span></span>
           )}
@@ -294,7 +294,7 @@ function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debu
                   : 'border-indigo-600 bg-indigo-800/60 hover:border-indigo-500'
               }`}
             >
-              <span className="block text-white font-black">{DEBUFF_NAMES[type]}</span>
+              <span className="block text-white font-black">{DEBUFF_ICONS[type]} {DEBUFF_NAMES[type]}</span>
               <span className="block text-indigo-400 text-xs mt-0.5">{DEBUFF_DESCRIPTIONS[type]}</span>
             </button>
           ))}
