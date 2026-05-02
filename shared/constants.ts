@@ -46,9 +46,9 @@ export const DEBUFF_NAMES: Record<string, string> = {
 
 export const DEBUFF_ICONS: Record<string, string> = {
   TIME_CUTOFF: "🦥",
-  FOG: "👓",
-  SCRAMBLE: "👽",
-  CHARACTER_EXCLUDE: "✊",
+  FOG: "/debuffs/arthur.png",
+  SCRAMBLE: "/debuffs/yoda.png",
+  CHARACTER_EXCLUDE: "/debuffs/thanos.gif",
 };
 
 export const DEBUFF_DESCRIPTIONS: Record<string, string> = {
