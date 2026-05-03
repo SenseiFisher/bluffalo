@@ -239,8 +239,8 @@ export function advanceToResolution(state: GameState, broadcast: BroadcastFn): v
   // Copy scored fields back to state
   Object.assign(state, scored);
 
-  // Determine debuff winner for this round
-  const debuffWinner = calculateDebuffAward(state);
+  // Determine debuff winner for this round (skip on final round — no next round to apply it)
+  const debuffWinner = !state.is_final_round && calculateDebuffAward(state);
   if (debuffWinner) {
     const winnerPlayer = state.players.find((p) => p.session_id === debuffWinner);
     const eligibleTargets = state.players
