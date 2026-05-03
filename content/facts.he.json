@@ -25612,5 +25612,149 @@
       "difficulty": "Hard",
       "category": "ידע כללי"
     }
+  },
+  {
+    "content_id": "1679301432141675",
+    "fact_template": "Kenneth James Parks נהג 23 קילומטר לבית חמיו ודקר אותם בסכין, אבל הוא עשה זאת כשהוא _______.",
+    "truth_keyword": "בהליכה בשינה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "9838201192918284",
+    "fact_template": "אנשים טוענים שאתה יכול לזהות את המין של פלפל על ידי ספירת הבליטות, אבל פרחי הפלפל הם למעשה _______.",
+    "truth_keyword": "הרמאפרודיטים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "9454768594594881",
+    "fact_template": "The Israeli National Insurance Institute has _______, just like airlines",
+    "truth_keyword": "first-class service",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8549088058496277",
+    "fact_template": "Wikipedia has an article documenting _______ made using water's chemical name",
+    "truth_keyword": "pranks and puns",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8394448750626876",
+    "fact_template": "'Chimdan,' the Hebrew word for suitcase, comes from _______",
+    "truth_keyword": "Russian or Persian",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8357280511010367",
+    "fact_template": "Some Jews in Japan observe Shabbat on _______ due to International Date Line disputes",
+    "truth_keyword": "Sunday",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8389630731108678",
+    "fact_template": "Despite its name deriving from the Greek word for bear, Antarctica has no _______",
+    "truth_keyword": "polar bears",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8383467338391684",
+    "fact_template": "בשנת 1937 יפן ביצעה _______ - כמעט שנתיים לפני הפלישה הנאצית",
+    "truth_keyword": "טבח ננקינג",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8381959008542517",
+    "fact_template": "בניגוד לכלבים שחוזקו על ידי בני אדם לאלפי שנים, החתולים _______ בעצמם",
+    "truth_keyword": "התחזקו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8382952055109879",
+    "fact_template": "זאבי ערבות וגיריות _______ - הטרף הם מחלקים ביניהם",
+    "truth_keyword": "צדים ביחד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8367617699976648",
+    "fact_template": "בעיר בשם 'השישה באוקטובר' במצרים, השם מנציח את _______ שפרצה ב-6 באוקטובר 1973",
+    "truth_keyword": "מלחמת יום הכיפורים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8290887854316300",
+    "fact_template": "הפרעת האישיות ההיסטריונית, למרות שמה, _______ להיסטריה",
+    "truth_keyword": "לא קשורה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8322351444503274",
+    "fact_template": "במדינה סיקים בהודו יש רק 0.31% סיקים - _______ בין שם המדינה לדת",
+    "truth_keyword": "אין קשר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8054046668000421",
+    "fact_template": "כנראה שאתם כבר אכלתם _______ בלי לדעת",
+    "truth_keyword": "אבקת שעועית ארבה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7962734110465011",
+    "fact_template": "הסתמכות יתר של בירלנד על _______ הובילה להרעב הגדול",
+    "truth_keyword": "תפוחי אדמה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7690114547726970",
+    "fact_template": "מעריכים שכ-700,000 ציפורים נהרגות בארה״ב מדי שנה על ידי _______",
+    "truth_keyword": "טורבינות רוח",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
   }
 ]
