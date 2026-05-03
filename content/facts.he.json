@@ -23659,5 +23659,1958 @@
       "difficulty": "Hard",
       "category": "ידע כללי"
     }
+  },
+  {
+    "content_id": "28989758107335972",
+    "fact_template": "למרות שהמריטוקרטיה מתוכננת כהוגנת, מבקריה טוענים שהיא יכולה בעצם _______.",
+    "truth_keyword": "לחזק אי-שוויון חברתי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "9811272045611199",
+    "fact_template": "המונח 'shuttle' התייחס בעצם לחלק הנע הלוך ושוב ב_______, לפני שהושאל למובן של הסעה ותחבורה.",
+    "truth_keyword": "אריגה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "9764867146918356",
+    "fact_template": "בישראל צבעים ידועים בשם _______ על שם החברה שמכרה אותם בארץ לראשונה",
+    "truth_keyword": "צבעי פנדה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "9723745121030559",
+    "fact_template": "אולי הסיבה שהאמריקאים לא משתמשים בשיטה המטרית היא _______",
+    "truth_keyword": "פיראטים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "9616299321775140",
+    "fact_template": "דובים הם ממשפחת _______, כמו הזאב",
+    "truth_keyword": "דמויי הכלבים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "9421912967880444",
+    "fact_template": "הטרמביטה כלי נשיפה מסורתי בעל אורך שיכול להגיע ל_______",
+    "truth_keyword": "כ-4 מטרים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8968232003248545",
+    "fact_template": "המילה 'שוקולד' מקורה ב_______, שהיו הראשונים לגדל קקאו",
+    "truth_keyword": "האצטקים ובני המאיה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8955402427864836",
+    "fact_template": "היהודים במרוקו קראו לברנדי שלהם בשם _______, משמעות זהה לצרפתית 'eau de vie'",
+    "truth_keyword": "מא חיא",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8588788097859606",
+    "fact_template": "לאחר מלחמת ששת הימים, ישראל גנבה ספינות מהנמל הצרפתי על ידי קביעת תאריך העזיבה ל_______, כשהצרפתים חגגו.",
+    "truth_keyword": "ערב חג המולד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8602516913153391",
+    "fact_template": "אוסטריה הפשיסטית בין 1934-1938 כיוונה תחילה ללכת לכיוון _______, עד שהנאצים השתלטו עליה ב-1938.",
+    "truth_keyword": "מוסליני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8597352017003214",
+    "fact_template": "הצדעה הנאצית המפורסמת בעולם היא בעצם _______.",
+    "truth_keyword": "צדעה רומית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8586183094786773",
+    "fact_template": "הרכבת הומצאה לפני _______.",
+    "truth_keyword": "האופניים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8529356623802754",
+    "fact_template": "בשידורי רדיו חיים, יש השהיית של _______ בין מה שנאמר לבין מה שמשודר בפועל.",
+    "truth_keyword": "7 שניות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8501734143231669",
+    "fact_template": "CS Lebowski הוא מועדון כדורגל איטלקי המנוהל במלואו על ידי _______ – בתשובה לכדורגל המסחורי.",
+    "truth_keyword": "האוהדים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8592628674142215",
+    "fact_template": "בגני ילדים סובייטיים, היה נהוג שהילדים ישנו בחוץ הצהרים _______.",
+    "truth_keyword": "גם בחורף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8462154857189598",
+    "fact_template": "קוונטין טרנטינו כתב את התסריט ל'רוצחים מלידה', אך הוא _______ – וטוען לעד היום שסטון 'שחט את סיפורו'.",
+    "truth_keyword": "מעולם לא צפה בסרט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8443029009102183",
+    "fact_template": "הזוג המחובק בסרט 'טיטאניק' מבוסס על זוג אמיתי, _______, שטבע עם הספינה ב-1912.",
+    "truth_keyword": "איזידור ואידה שטראוס",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8572987022773047",
+    "fact_template": "הביטוי הערבי מבוטא לעיתים קרובות בצורה שגויה; רוב אומרים _______ במקום 'ילען אבוק'.",
+    "truth_keyword": "'ינעל אבוק'",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8564726373599112",
+    "fact_template": "בפיזיקה מודרנית, האלקטרון הוא _______, ללא כל נפח.",
+    "truth_keyword": "נקודה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8558181484253601",
+    "fact_template": "בממוצע, פנדות עושות קקי _______].",
+    "truth_keyword": "40 פעמים ביום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8553822241356192",
+    "fact_template": "רק פעם אחת ביקורת מסעדה בעיתון הגיעה לבית משפט ללא התישוב בפשרה, כשהשופטת פסקה _______.",
+    "truth_keyword": "לטובת העיתון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8555422581196158",
+    "fact_template": "בשבדיה, יש ממתק פופולרי הנקרא _______].",
+    "truth_keyword": "שואב אבק (Dammsugare)",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8530694460335637",
+    "fact_template": "הציור ה'אבסטרקטי' של ואן גוך לפני התאבדותו הוא למעשה _______.",
+    "truth_keyword": "ציור של שורשי עץ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8551117751626641",
+    "fact_template": "יש מקצוע בשם [_______]",
+    "truth_keyword": "מכרבל פנדות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8550740331664383",
+    "fact_template": "יש דג קטן שמקיא [_______]",
+    "truth_keyword": "פלנקטון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8510500575688359",
+    "fact_template": "רק ארבע מדינות אירופיות יסדו וצטרפו ראשונות לנאט״ו, איחוד אירופי וגם ל-OECD: [_______]",
+    "truth_keyword": "בלגיה, הולנד, לוקסמבורג וצרפת",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8456952231043194",
+    "fact_template": "אנשים רבים חשבו שנ.ב מקור ל[_______]",
+    "truth_keyword": "נכתב בצידו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8460475600690857",
+    "fact_template": "הקיצור OBGYN הוא קיצור של [_______]",
+    "truth_keyword": "obstetrics & gynaecology (מיילדות וגינקולוגיה)",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8296587540412998",
+    "fact_template": "שם הולנד 'The Netherlands' (הארצות ה'תחתונות') מתייחס ל[_______] - לא למיקום על המפה",
+    "truth_keyword": "גובה טופולוגי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8387089144696170",
+    "fact_template": "היפופוטמים לא יכולים לצוף ולכן הם [_______]",
+    "truth_keyword": "הולכים ורצים על הקרקעית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8389053357833082",
+    "fact_template": "Bugs Bunny השתמש בשם 'נמרוד' בלעג לאלמר פאד, מכיוון שנמרוד היה בתנ\"ך [_______]",
+    "truth_keyword": "צייד אדיר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8391774394227645",
+    "fact_template": "מרבית הדבורים אינן מסוגלות [_______]",
+    "truth_keyword": "לעוף בחושך",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8397277867010631",
+    "fact_template": "מאגר פסולת בהונגריה קרס וזרם [_______] על יישובים סמוכים",
+    "truth_keyword": "בוץ רעיל בגוון אדום-חום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8115857498486004",
+    "fact_template": "משפחות אינדונזיות בפסטיבל 'מאנא' חופרות את קברי יקיריהן כדי [_______]",
+    "truth_keyword": "לבלות זמן עם המתים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8115638671841220",
+    "fact_template": "עד שנת 2027, תיווצר [_______] חדשה בשם איי בוגנוויל",
+    "truth_keyword": "מדינה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8386979581373793",
+    "fact_template": "שישה דגלי ארה\"ב על הירח דהו והפכו [_______]",
+    "truth_keyword": "לבנים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8773114989426915",
+    "fact_template": "המילה המבוקשת ביותר במנוע החיפוש Bing של מייקרוסופט היא [_______]",
+    "truth_keyword": "Google",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8626462444092171",
+    "fact_template": "רומא, שנמנתה כמיליון איש בימי העיתיקות, הצטמקה ל[_______] תושבים בעת הביניים",
+    "truth_keyword": "30,000",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8578467978891618",
+    "fact_template": "שם נעמי מבוטא כ[_______] בעברית נכונה לפי האקדמיה ללשון עברית",
+    "truth_keyword": "NO'OMI",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8206516079420145",
+    "fact_template": "John Rabe, a _______, played a crucial role in establishing a protected zone in Nanking that saved approximately 300,000 Chinese civilians during the 1937 massacre.",
+    "truth_keyword": "Nazi party member",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8374520649286353",
+    "fact_template": "Cardboard became so valuable after COVID that bakeries began _______ recycling plants for supplies.",
+    "truth_keyword": "robbing",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8372769586128126",
+    "fact_template": "Two Israeli streets with different names were both named after the SS Erinpura disaster, but _______.",
+    "truth_keyword": "both names are wrong",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8290982430973509",
+    "fact_template": "Brenda Ann Spencer's answer when asked why she shot up her school: _______",
+    "truth_keyword": "I don't like Mondays",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8329380490467036",
+    "fact_template": "In Singapore, buying chewing gum requires _______.",
+    "truth_keyword": "a doctor's prescription",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8352091578195927",
+    "fact_template": "Historically, a Yom Kippur custom involved the synagogue cantor being _______ 39 times.",
+    "truth_keyword": "whipped",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8348673698537715",
+    "fact_template": "Mongolia is not the country with the most Mongols — _______ has twice as many.",
+    "truth_keyword": "China",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8129654730439614",
+    "fact_template": "Xinjiang officially operates on _______, which is 2 hours ahead of China's national timezone.",
+    "truth_keyword": "Ürümqi time",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8098547310217023",
+    "fact_template": "Research showed that cancer cells grew faster when exposed to blood from _______.",
+    "truth_keyword": "mice that lost partners",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8341811695890582",
+    "fact_template": "Sunrises and sunsets on Mars are _______, the opposite of Earth's red skies.",
+    "truth_keyword": "blue",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8328109180594167",
+    "fact_template": "A forest in Brandenburg, Germany was planted in 1938 in the shape of _______.",
+    "truth_keyword": "a Nazi swastika",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8308742839197468",
+    "fact_template": "In Sweden, a McDonald's at a ski resort operates a _______.",
+    "truth_keyword": "ski thru",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8322628767808875",
+    "fact_template": "During WWII, the Nazis tried to rename the Austrian city Judenburg to _______, but the change never took.",
+    "truth_keyword": "Adolfsburg",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8323097154428703",
+    "fact_template": "Medieval construction techniques being revived to build a 13th-century castle replica will later help rebuild _______.",
+    "truth_keyword": "Notre-Dame",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8315459821859103",
+    "fact_template": "Koalas are so unintelligent they won't recognize eucalyptus as food unless _______.",
+    "truth_keyword": "it's on the tree",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8310989982306087",
+    "fact_template": "בשנת 1986, התפרצות לימנית בקאמרון הרגה 1746 בני אדם, וחוקרים שהגיעו לאזור סיפרו על _______",
+    "truth_keyword": "שקט מוחלט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8307168396021579",
+    "fact_template": "90% מאוכלוסיית קנדה גרה ברצועה צרה _______, מה שהופך את הקנדאי הממוצע להיות דרומי יותר מתושבי איסלנד או נורווגיה",
+    "truth_keyword": "בדרום ליד הגבול עם ארה״ב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8299995020072250",
+    "fact_template": "רכב צרפתי מהשנות ה-50 בשם Reyonnah היה יכול להצטמצם ברוחב על ידי _______, מ-1320 מ״מ ל-750 מ״מ בלבד",
+    "truth_keyword": "התקפלות הגלגלים הקדמיים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8299346713470414",
+    "fact_template": "בתעמולת בעלות הברית ב-WWII, גויסו גרמלינים דמיוניים _______ — כולל ספר מאת רואלד דאל בשנת 1943 וסרט כרטוני של וורנר בראס בשנת 1944",
+    "truth_keyword": "להילחם נגד הנאצים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8287389711332781",
+    "fact_template": "בסדרת 'בית קטן בערבה' משנות ה-70, במקום לפרק את התפאורה בעלות גבוהה, אנשי ההפקה _______] אותה כדי לחסוך כסף",
+    "truth_keyword": "פוצצו בדינמיטים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8288390124566073",
+    "fact_template": "ספינת SS Warimoo הצליחה להיות ממוקמת בחצות בדיוק ב-_______, עם החלק האחורי בשנת 1899 וחלק קדמי בשנת 1900",
+    "truth_keyword": "מפגש קו המשווה וקו התאריך הבין-לאומי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8288855631186189",
+    "fact_template": "כלכלת מדגסקר קרסה בשנת 1985 כשקוקה קולה _______, והתאוששה רק כשהטעם הנכשל",
+    "truth_keyword": "הוציאה ממכירה טעם חדש ללא ווניל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8266122806792805",
+    "fact_template": "בשנת 1841, _______ בשם אדמונד אלביוס הגה שיטה להאבקה מלאכותית של ווניל שהפכה אותו לנגיש ולאחד מתבלינים הפופולריים בעולם",
+    "truth_keyword": "עבד בן 12",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8275575255847560",
+    "fact_template": "התאריכים 4.4, 6.6, 8.8, 10.10 ו-12.12 _______ בכל שנה, ותופעה זו משמשת לחישוב יום בשבוע כלשהוא",
+    "truth_keyword": "נופלים על אותו יום בשבוע",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8270213749717044",
+    "fact_template": "קנזס-סיטי, העיר הגדולה, _______] לא בקנזס, בעוד שיש עיר קטנה בשם זהה בקנזס",
+    "truth_keyword": "נמצאת במדינת מיזורי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8239136182824801",
+    "fact_template": "קיליאן אמבפה ביקש כילד מהספר לגלח _______ על ראשו כיוון שחשב שזינדין זידאן עושה כך",
+    "truth_keyword": "עיגול קירח",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8244163252322094",
+    "fact_template": "צ'אק בלייזר, מזכ״ל לשעבר של CONCACAF, השתמש בכספי הקונפדרציה לממן דירה בעלות $6000 לחודש _______]",
+    "truth_keyword": "לחתוליו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8146158172122603",
+    "fact_template": "בשנת 2009, קנה אורי גלר אי בסקוטלנד בשטח של 50 על 100 מטר והכריז עליו ככ-_______]",
+    "truth_keyword": "מיקרומדינה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8253299961408423",
+    "fact_template": "תוכנית דיסני אוניברסיטה מאפשרת לעובדים _______ תוך כיסוי מלא של שכר הלימוד, ספרים וכל ההוצאות",
+    "truth_keyword": "לסיים דרגות תואר בעוד שהם עובדים במשרה מלאה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8247549878650098",
+    "fact_template": "בעברית, המנהג של לומר 'עשרה ל-דקה' הוא שריד מהימים שבהם _______], לפני שהמילה 'דקה' הפכה לנפוצה",
+    "truth_keyword": "השתמשו ב'רגע' או 'דק'",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8195256257212794",
+    "fact_template": "האריסון פורד קיבל את תפקיד ההתפרצות שלו כהן סולו כאשר _______]",
+    "truth_keyword": "ג'ורג' לוקאס שכרו כנגר להשפץ את ביתו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8240670012671418",
+    "fact_template": "כשמדפיסים משהו, המדפסת מוסיפה _______] על הנייר שניתן להשתמש בהם לזיהוי המדפסת המדויקת",
+    "truth_keyword": "סימנים חבויים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8236018443136575",
+    "fact_template": "הדלאי לאמה ה-14 משמש כמנהיג העם הטיבטי _______], מה שהופך אותו למנהיג וותיק יותר ממלכה אליזבת הייתה",
+    "truth_keyword": "מאז 1950",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8237345043003915",
+    "fact_template": "מלכה אליזבת השתמשה ב-_______] כדי להסמן לעובדיה מתי היא מוכנה לסיים שיחה או אירוע",
+    "truth_keyword": "תיק היד שלה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8226860984052321",
+    "fact_template": "סטטיסטית, _______] מאשר לחברים שלכם בממוצע — תופעה זו נקראת 'פרדוקס החברות'",
+    "truth_keyword": "יש לכם פחות חברים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8188222854582801",
+    "fact_template": "In 2014, President Obama held a press conference on military action against ISIS while wearing [_______], which sparked a major political controversy.",
+    "truth_keyword": "a tan suit",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8220670384671381",
+    "fact_template": "McDonald's 'Hamburger University' trains 5,000 students annually and operates 8 learning centers worldwide, including one in Shanghai with an acceptance rate of [_______].",
+    "truth_keyword": "1% — lower than Harvard",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8221403951264691",
+    "fact_template": "The Hebrew idiom 'joking with his doctors' originated during the medical hospitalizations of [_______] between 1977-1983.",
+    "truth_keyword": "Menachem Begin",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8223397017732051",
+    "fact_template": "Italian sculptor Salvatore Garau sold [_______] in 2021 for €15,000, complete with a certificate of authenticity and placement instructions.",
+    "truth_keyword": "an invisible sculpture",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8212552808816472",
+    "fact_template": "When the official Japanese surrender document was signed at the end of WWII, the Canadian representative [_______], forcing the entire document to be rewritten.",
+    "truth_keyword": "signed in France's place by mistake",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8211196812285405",
+    "fact_template": "In Porters Lake, Canada, three streets are quite literally named [_______].",
+    "truth_keyword": "This, That, and The Other",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8210579232347163",
+    "fact_template": "Sweat itself is actually odorless; the smell comes from [_______] on the body breaking it down for protein consumption.",
+    "truth_keyword": "bacteria",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8179918388746581",
+    "fact_template": "The first touchscreen operated by finger was invented in [_______], nearly 60 years before the iPhone.",
+    "truth_keyword": "1965",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8197842746954145",
+    "fact_template": "When Magellan's crew completed the first westward circumnavigation of Earth (1519-1522), they [_______] without anyone initially understanding why.",
+    "truth_keyword": "lost an entire day",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8187129461358807",
+    "fact_template": "Between the 1940s and 1970s, Ivy League and Seven Sisters universities [_______] of all first-year students, ostensibly for health screening.",
+    "truth_keyword": "took nude photographs from all angles",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8186454924759594",
+    "fact_template": "Mount Mitat was named because the gematria value of the word 'mitat' [_______] its height in meters (840).",
+    "truth_keyword": "exactly matches",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8169846426420444",
+    "fact_template": "The method of deciding football matches through penalty kicks was introduced by [_______].",
+    "truth_keyword": "Israelis",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8176881385716948",
+    "fact_template": "Shakira's 'Waka Waka' uses the same chorus as [_______], a 1986 Cameroonian song released 24 years earlier.",
+    "truth_keyword": "'Zamina Mina Zangalewa'",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8170029306402156",
+    "fact_template": "The French village name 'La Mort aux Juifs' ('Death to the Jews') actually derives from [_______], which was corrupted over centuries through linguistic drift.",
+    "truth_keyword": "'La Mare au Juin' (meaning 'marsh in June')",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8169112896493797",
+    "fact_template": "The 1928 Mickey Mouse short 'Steamboat Willie' features Mickey [_______] multiple animals in ways that would be considered unthinkable today.",
+    "truth_keyword": "abusing and torturing",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8167664083305345",
+    "fact_template": "Pilots at the US Navy Top Gun fighter school face [_______] for quoting the movie of the same name during training.",
+    "truth_keyword": "a $5 fine",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8159480214123732",
+    "fact_template": "William Shakespeare's life between 1585-1592 (ages 21-27) [_______], remaining one of history's great literary mysteries.",
+    "truth_keyword": "is almost completely undocumented",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8125081617563592",
+    "fact_template": "The luxury watch brand Rolex is actually [_______], with its founder transferring ownership to a foundation in 1960.",
+    "truth_keyword": "a non-profit organization",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8136167649788322",
+    "fact_template": "Janet Jackson's 'Rhythm Nation' can cause [_______] to malfunction because the song contains a frequency that matches the resonant frequency of 5,400 RPM hard drives.",
+    "truth_keyword": "laptop hard drives to crash",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8145697075502046",
+    "fact_template": "The 1987 Goiânia nuclear accident in Brazil occurred when [_______] was stolen from an abandoned hospital and shared among residents as a glowing novelty for over two weeks.",
+    "truth_keyword": "radioactive cesium chloride",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8125968017474952",
+    "fact_template": "גבינת פילדלפיה למעשה הומצאה ב_______ ולא בפילדלפיה.",
+    "truth_keyword": "ניו יורק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8152928511445569",
+    "fact_template": "המונח 'שוגר דדי' מקורו בשנת 1908, כשאדולף ספרקלס נישא לאישה בשם אלמה צעירה ממנו ב-24 שנים, ואלמה קראתה לבעלה _______.",
+    "truth_keyword": "שוגר דדי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8139812309423856",
+    "fact_template": "השיר 'אל נבקש' מתוך האלבום האחרון של זוהר ארגוב נכתב על ידי _______.",
+    "truth_keyword": "ילדה בת 12",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8152732881465132",
+    "fact_template": "המשורר חיים נחמן ביאליק נתבע על אמירתו לצעיר שילך לעזאזל, אך בהגנתו טען שזה _______.",
+    "truth_keyword": "שם הר במדבר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8151003534971400",
+    "fact_template": "זחלי כחלילים ישראליים מטילים ביציהם ליד קני נמלים, ובעזרת התחקות על פרומונים הנמלים מאמינות שהם זחליהן ומטפלות בהם במשך _______.",
+    "truth_keyword": "9 חודשים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8151489011589519",
+    "fact_template": "ג'יימס קלי, טייקון בסן פרנסיסקו של המאה ה-19, ערך מסיבה על ספינת קיטור וגרם לברמנים להגיש לאורחיו וויסקי מעורבב ב_______ כדי לסמם ולחטיף אותם לעבדות.",
+    "truth_keyword": "אופיום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8138373356234418",
+    "fact_template": "במהלך התפתחות העובר, בני אדם קודם כל מפתחים _______, ורק אחר כך את הפה.",
+    "truth_keyword": "חור התחת",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8127745693963851",
+    "fact_template": "התיעוד הידוע העתיק ביותר של תלונה (מ-1750 לפסה״נ) הוא כתב יתדות אכדי על קונה בשם נני התלונן על _______.",
+    "truth_keyword": "נחושת באיכות לא טובה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8120568451348242",
+    "fact_template": "בקליפורניה, תושבים מורשים להחזיק נשק חצי אוטומטי, אך הממשל אוסר על _______ — החוק קיים בעקבות סרטי ברוס לי.",
+    "truth_keyword": "נונצ'קו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8118609874877433",
+    "fact_template": "ביוון העתיקה שתו יין מהול במים, בעוד ששתיית _______ נחשבה מנהג ברברי ומסוכן לבריאות.",
+    "truth_keyword": "יין טהור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8115138998557854",
+    "fact_template": "למדינת ישראל קיים מטבע חוקי על סך _______ המציין 3000 שנה לירושלים, וזה עדיין מאושר לשימוש כמו מטבעות רגילים.",
+    "truth_keyword": "30 שקלים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8116227965115624",
+    "fact_template": "הממשלה הקומוניסטית של רומניה פנתה את כפר ג'ימאנה ב-1978 כדי להקים _______.",
+    "truth_keyword": "אגם מלאכותי רעיל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8116993021705785",
+    "fact_template": "כאשר גידו ואן רוסום חל ליצור את שפת התכנות Python, הוא קרא את התסריטים מ_______, לכן קרא לשפה בשמה.",
+    "truth_keyword": "Monty Python's Flying Circus",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8115248871880200",
+    "fact_template": "ב-2010 מייקרוסופט ערכו _______ לאייפון כדי לחגוג את הוצאת Windows Phone 7.",
+    "truth_keyword": "לוויה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8114272041977883",
+    "fact_template": "קומיקאי סופי סיילס עשה בדיחה בשידור לילדים בה ביקש מהם _______ מארנקי הוריהם, ומעטפות רבות הגיעו עם כסף אמתי.",
+    "truth_keyword": "להוציא כסף",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8087440851327669",
+    "fact_template": "במדינות בהן תרומת איברים היא ברירת מחדל כ-86-100% תורמים, בעוד במדינות בהן _______ רק כ-4-12% תורמים.",
+    "truth_keyword": "הברירת מחדל היא לא תרום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8101981186540302",
+    "fact_template": "ביום המבחן לאוניברסיטה בדרום קוריאה, ההמראות בשדה התעופה _______ וכבישים מתפנים לתלמידים המאחרים.",
+    "truth_keyword": "מושעות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8096134820458272",
+    "fact_template": "כאשר נשיא ארה״ב ריצ'ארד ניקסון ביקר בסוריה ב-1974, הסורים שלחו _______] לקראתו כמחווה של ליווי כבוד, וטייס אייר פורס וואן חשב שזו התקפה.",
+    "truth_keyword": "ארבעה מטוסי מיג",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8094764197262001",
+    "fact_template": "בעוד קלאופטרה מתוארת בכל תרבותנו כאישה יפה בתבל, פורטרטים ריאליסטיים מראים שהיא היתה _______, בהתאם למקובל במצריים.",
+    "truth_keyword": "קרחת",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8082236291848125",
+    "fact_template": "בתקופת רנסאנס, כאשר נשים הסירו שיער ערווה למניעת מחלות זיהומיות, הן לבשו _______] למטרות אסתטיות.",
+    "truth_keyword": "פאה לערווה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8061487457256342",
+    "fact_template": "סבון Palmolive הפך כל כך פופולרי שחברת ג'ונסון [_______] את שמה",
+    "truth_keyword": "שינתה את שמה לPalmolive",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8063690513702703",
+    "fact_template": "כלבי ים משתייכים לתת-סדרה שאליה משתייכים גם [_______]",
+    "truth_keyword": "דובים ובואשים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8056671564404598",
+    "fact_template": "הזאב האפור מגיע לגובה של [_______]",
+    "truth_keyword": "80-85 ס״מ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8051708174900937",
+    "fact_template": "אלברט איינשטיין התנגד לקנייה המחשב הראשון בישראל, [_______]",
+    "truth_keyword": "וטען שמדינה קטנה לא צריכה מחשב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8045579045513850",
+    "fact_template": "מסור השרשרת הומצא במקור לשני שימושים: כריתת עצמות מזוהמות ו[_______]",
+    "truth_keyword": "עזרה בזירוז לידה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8047051148699973",
+    "fact_template": "מאז 1975 ירד מפלס ים המלח בכמעט [_______]",
+    "truth_keyword": "40 מטר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8038496519555436",
+    "fact_template": "בית שלה נהרס בעקבות 4 הוריקנים שונים, ואחרי שתוכנית טלוויזיה תיקנה אותו, הוא נהרס שוב בעקבות [_______]",
+    "truth_keyword": "הוריקן אייזיק",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8039218112816610",
+    "fact_template": "מפלגה רוסית פשיסטית שהוקמה בסין בשנת 1931 כללה אפילו [_______]",
+    "truth_keyword": "ארגון פשיסטי לילדים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8039718242766597",
+    "fact_template": "עמר בהראטי הוא האיש שידו הימנית מורמת למעלה כמעט [_______] בהמשך",
+    "truth_keyword": "50 שנה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8043933875678367",
+    "fact_template": "האבות האבולוציוניים של החרקים היו [_______]",
+    "truth_keyword": "סרטנים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8039037992834622",
+    "fact_template": "הביטוי 'המפוזר מכפר אז״ר' הוא [_______]",
+    "truth_keyword": "תרגום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8035914083147013",
+    "fact_template": "אריות ונמרים אוהבים [_______] בדיוק כמו חתולים רגילים",
+    "truth_keyword": "קופסאות קרטון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8026967400708348",
+    "fact_template": "עשרות אלפי אנשים מצפון קוריאה עובדים בסיביר בתור חוטבי עצים בתנאי עבדות, [_______]",
+    "truth_keyword": "כחלק מתשלום חוב לרוסיה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8024136424324779",
+    "fact_template": "אמן מרקו אבאריסטי הציב דגי זהב בתוך בלנדרים מחוברים לחשמל, ו[_______]",
+    "truth_keyword": "מבקרים יכלו להפעיל אותם",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8028035870601501",
+    "fact_template": "רצי מים אינם מבצעים טקס חיזור אלא [_______]",
+    "truth_keyword": "קופצים על הנקבה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8025532147518540",
+    "fact_template": "בצ׳כיה זרקו בכירים מהחלון כל כך הרבה שהיה צריך [_______]",
+    "truth_keyword": "להמציא מילה לתופעה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8023862701018818",
+    "fact_template": "צורת היחיד של 'ספגטי' היא [_______]",
+    "truth_keyword": "ספגטו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8019539221451166",
+    "fact_template": "צליל הנקישה לא מגיע מפגיעת האצבע באגודל אלא מ_______",
+    "truth_keyword": "פגיעת האמה בכף היד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8020195311385557",
+    "fact_template": "בטבע קיימות מערבולות שנקראות _______ — של חול, אפר, קיטור ושלג",
+    "truth_keyword": "שדים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8020697198002035",
+    "fact_template": "בעיירה סן ג'ימיניאנו בעבר, גובה המגדל שבנתה משפחה סימל את _______",
+    "truth_keyword": "עושרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8017264918345263",
+    "fact_template": "לשווייץ אין מנהל יחיד, אלא _______",
+    "truth_keyword": "שבעה שרים שווים בכוח",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8013606402044448",
+    "fact_template": "אותן ברכות המוזרות בכניסה לקיבוץ משמשות בעצם _______",
+    "truth_keyword": "לחיטוי רכבים מפני מחלות בעלי חיים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8014957328576022",
+    "fact_template": "שמה של השקשוקה בא מן _______",
+    "truth_keyword": "השפה הברברית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8008952042509884",
+    "fact_template": "בחלום אנחנו יכולים לראות ולשמוע, ובאחוז קטן מאוד אנחנו יכולים _______",
+    "truth_keyword": "להריח",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8011578388913916",
+    "fact_template": "התמונות המרשימות של אגם קקורה בחורף נוצרות בגלל _______",
+    "truth_keyword": "ערבוב מי ים עם שמן עצי תה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8002388026499619",
+    "fact_template": "אלו לא חתיכות פירות קפואים אלא _______",
+    "truth_keyword": "מינרל בשם אטרינגיט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7996097360462019",
+    "fact_template": "בפארק היורה השתמשו ב'יתוש' שבעצם _______",
+    "truth_keyword": "אינו יתוש אלא חרק אחר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7983749628363459",
+    "fact_template": "הורים בשוודיה שקיבלו קנס על אי-הגשת שם בנם, כמחאה ניסו לתת לו שם שהוא _______",
+    "truth_keyword": "רק סדרה של תווים אקראיים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7998172310254524",
+    "fact_template": "סכסוך של עשרות שנים בין דנמרק וקנדה על אי קטן נפתר _______",
+    "truth_keyword": "בהחלפת דגלים וקנקני ליקר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7997568526981569",
+    "fact_template": "כדי להוכיח שחיידק H. Pylori גורם לאולקוס קיבה, בארי מרשל _______",
+    "truth_keyword": "שתה חיידקים והדביק את עצמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7998026040269151",
+    "fact_template": "בטיבט קיים מנהג בו אישה אחת נשואה ל_______ כדי למנוע חלוקת רכוש",
+    "truth_keyword": "מספר אחים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7948288771909545",
+    "fact_template": "כחלק מהחלפת שיניים, השיניים הקבועות מבצעות _______] על שיני החלב",
+    "truth_keyword": "קניבליזם — אוכלות את השורשים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7981476518590770",
+    "fact_template": "גירוש היהודים מספרד בוטל רשמית רק ב_______",
+    "truth_keyword": "1968 — אחרי כ-476 שנים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7992605384144550",
+    "fact_template": "באזור המזרחי של אנגליה יש איזור שנקרא _______]",
+    "truth_keyword": "East Anglia",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7993218824083206",
+    "fact_template": "ב-1985, לפני החלפת המטבע, השכר הממוצע בישראל היה _______]",
+    "truth_keyword": "338,500 שקלים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7988098561261899",
+    "fact_template": "הסיפור על אלדין ומנורת הקסמים בעצם _______ בטקסט הערבי המקורי של אלף לילה ולילה",
+    "truth_keyword": "לא מופיע",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7983195001752255",
+    "fact_template": "בישראל ישנם עקרבים צהובים רבים שהם _______ לאדם",
+    "truth_keyword": "לא מסוכנים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7978537558884666",
+    "fact_template": "The name 'Luna Park' used worldwide originated from _______ at Coney Island.",
+    "truth_keyword": "a moon-themed ride",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7978896145515474",
+    "fact_template": "Heavy rains damaged the _______ to a life-size Noah's Ark replica in Kentucky, prompting a lawsuit — though the ark itself remained intact.",
+    "truth_keyword": "access roads",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7978634785541610",
+    "fact_template": "Sergei Korolev, the chief Soviet engineer who built the first satellite and sent the first human to space, was imprisoned on _______.",
+    "truth_keyword": "false charges of Trotskyism",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7974951672576588",
+    "fact_template": "An elite concierge organization called 'Les Clefs d'Or' uses the same crossed-keys symbol as _______ in religious iconography.",
+    "truth_keyword": "the Catholic Church",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7963880637017025",
+    "fact_template": "A technician's failure to reinstall a _______ caused an aircraft to crash, killing three crew members.",
+    "truth_keyword": "cotter pin",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7972807486124340",
+    "fact_template": "Ming, the world's oldest known animal at 507 years old, was killed when researchers _______ to determine its age.",
+    "truth_keyword": "opened its shell",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7966334943438261",
+    "fact_template": "Saturn's beautiful rings are slowly disappearing through a process called _______ and will completely disperse within 100 million years.",
+    "truth_keyword": "ring rain",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7965222023549553",
+    "fact_template": "Budapest is actually a union of three cities: Buda, Pest, and _______.",
+    "truth_keyword": "Óbuda",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7954692224602533",
+    "fact_template": "ORT, a major Israeli school network, is actually an acronym for _______.",
+    "truth_keyword": "Russian words",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7950509685020787",
+    "fact_template": "The U.S. Army's hummus recipe includes standardized _______ for every ingredient and piece of equipment.",
+    "truth_keyword": "quality specifications",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7948477421890680",
+    "fact_template": "After being shot during a campaign speech, Theodore Roosevelt _______ before seeking medical care.",
+    "truth_keyword": "spoke for 84 minutes more",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7873714886033601",
+    "fact_template": "In Ireland, there's an amusement park dedicated to a _______.",
+    "truth_keyword": "crisp brand",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7823655281039562",
+    "fact_template": "In English, the letter W is called 'double-u' despite being composed of _______.",
+    "truth_keyword": "two V's",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7918805548191201",
+    "fact_template": "The meter was originally defined based on _______.",
+    "truth_keyword": "Earth's circumference",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8337166393021779",
+    "fact_template": "A Dutch bicycle company reduced shipping damage by over 80% by designing boxes that look like _______.",
+    "truth_keyword": "TV boxes",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8025149204223501",
+    "fact_template": "After fighting in multiple wars, a T-55 tank was installed as _______ in Venice.",
+    "truth_keyword": "part of an art sculpture",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "8011319128939842",
+    "fact_template": "A real shark with _______ called the tasselled wobbegong lives in Australian coral reefs.",
+    "truth_keyword": "long tassels and an elongated snout",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7933894850015604",
+    "fact_template": "Jack Daniel's whiskey is produced in a _______ where alcohol sales are illegal.",
+    "truth_keyword": "dry county",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7902887929782963",
+    "fact_template": "גם עם הפריה חוץ-גופית מודרנית, אדם וחיה לא יכולים להעמיד צאצא בגלל [_______]",
+    "truth_keyword": "שוני בכמות הכרומוזומים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7916060305132392",
+    "fact_template": "זברות מאפריקה שחוררו בקליפורניה לא רק ששרדו אלא [_______]",
+    "truth_keyword": "גם שגשגו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7933154970089592",
+    "fact_template": "אוסטרליה הדרומית אינה המדינה [_______] ביבשת אוסטרליה",
+    "truth_keyword": "הדרומית ביותר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7928144950590594",
+    "fact_template": "שחקן מקולי קאלקין שינה את שמו האמצעי באופן רשמי ל[_______] לאחר הצבעה בטוויטר",
+    "truth_keyword": "מקולי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7928086740596415",
+    "fact_template": "כוכב ים עם מוטציה נדירה במיוחד גדל עם [_______] בצורת ריבוע",
+    "truth_keyword": "4 זרועות",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7923758757695880",
+    "fact_template": "אשתו של יוזף גבלס הייתה בקשר רומנטי בצעירותה עם [_______]",
+    "truth_keyword": "מנהיג ציוני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7761901073881650",
+    "fact_template": "מתוך 30 הריצות המהירות של 100 מטר בהיסטוריה, רק [_______] הן ללא סמים משפרי ביצועים",
+    "truth_keyword": "9 של יוסיין בולט",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7851317948273295",
+    "fact_template": "דובאי מייבאת חול למרות שהיא באמצע המדבר, כי חול המדבר [_______]",
+    "truth_keyword": "חלק מדי לבנייה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7905704706167952",
+    "fact_template": "בחלל, בעת גיהוק, אתה בעצם [_______] במקום להוציא גז בלבד",
+    "truth_keyword": "מוציא נוזל רטוב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7914849125253510",
+    "fact_template": "לפי אפקט האקדוחן, בקרב אקדחים, [_______] הוא זה שיוצא בחיים",
+    "truth_keyword": "מי שנמשך שני",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7914681011936988",
+    "fact_template": "אחד ממייסדי אפל מכר את חלקו בחברה עבור [_______]",
+    "truth_keyword": "800 דולר בלבד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7906719102733179",
+    "fact_template": "הימנון של אלג'יריה נכתב על ידי אסיר פוליטי בעזרת [_______] על קירות בית הכלא",
+    "truth_keyword": "דמו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7906227342782355",
+    "fact_template": "למרות השם האיטלקי, בורטינו הוא [_______] שנכתב על ידי כותב רוסי",
+    "truth_keyword": "דמות ספרותית רוסית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7756804514391306",
+    "fact_template": "קוד QR מכיל מנגנון לתיקון שגיאות המאפשר לקרוא אותו גם אם [_______]",
+    "truth_keyword": "עד שליש פגום",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7881391121932644",
+    "fact_template": "המפלגה הימנית של דנמרק קוראים ״[_______]״, שמשמעותו ״שמאל״",
+    "truth_keyword": "ונסטרה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7886482391423517",
+    "fact_template": "גרם שמים בקוויפר בלט בשם ארוקות הוא בצורת [_______]",
+    "truth_keyword": "תפוח אדמה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7887082311363525",
+    "fact_template": "גזע שרפיי שייך למעשה ל[_______], בעל כל המאפיינים האופייניים של סוג זה",
+    "truth_keyword": "כלבי שפיץ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7902571146481308",
+    "fact_template": "בתוכנית בטלוויזיה סובייטית מינואר 1991 הציגו טענה שלנין הוא פטריה, ו_______",
+    "truth_keyword": "אזרחים רבים נבלבלו בזה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7889235167814906",
+    "fact_template": "בקרקוב הוקמה אנדרטה לכלב שישב במקום מות בעליו _______",
+    "truth_keyword": "למשך שנה שלמה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7899421030129653",
+    "fact_template": "האדם הראשון שהוצא להורג בישראל לא היה אייכמן, אלא _______",
+    "truth_keyword": "קצין בצה״ל חף מפשע",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7756517744419983",
+    "fact_template": "רולאן המפליצן קיבל אחוזה של 12 קמ״ר בתמורה לביצוע מופע שסיים ב_______",
+    "truth_keyword": "קפיצה, שריקה ונפיחה בו זמנית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7933764170028672",
+    "fact_template": "בבית דין בפלורידה ב-2006, שופט קבע שמחלוקת משפטית תיפתר ב_______",
+    "truth_keyword": "משחק אבן נייר ומספריים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7760822900656134",
+    "fact_template": "לא ניתן להיוולד רשמית בליכטנשטיין כי מחלקת היולדות היחידה _______",
+    "truth_keyword": "נסגרה כשכל הרופאים התפטרו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7852110818194008",
+    "fact_template": "בירת פלאו, נגרולמוד, שמה בשפה המקומית אומר _______",
+    "truth_keyword": "דגי קיסר מותססים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7891967580874998",
+    "fact_template": "הליים הירוק שאתם חושבים שהוא סוג שונה הוא בעצם _______",
+    "truth_keyword": "פרי שלא בשל",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7883272415077848",
+    "fact_template": "כפתורי מדים של חיל האוויר המלכותי בשנת מלחמת העולם השנייה היו _______",
+    "truth_keyword": "מצפנים קטנים חבויים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7867916476613442",
+    "fact_template": "כוכב הלכת הננסי קרס בחגורת האסטרואידים עשוי להכיל _______",
+    "truth_keyword": "אוקיינוס מים תת קרקעי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7861161347288955",
+    "fact_template": "לי ביומונט מבריטניה קנה מספר טלפון פרימיום וחברות שיווק _______",
+    "truth_keyword": "סכימו בשמחה לשלם לו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7820472098024547",
+    "fact_template": "גובהו של ההר הכי גבוה בדנמרק הוא _______",
+    "truth_keyword": "170 מטר בלבד",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7833107623427661",
+    "fact_template": "בא מחלוקת על מיקום תצהיר בבית דין בפלורידה, באפולו 11 באז אולדרין נצטרך לוודא שדלת תא הנחיתה לא תנעול, כי לא הותקן בה _______",
+    "truth_keyword": "אף מנגנון לפתיחה מבחוץ",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7836592756412481",
+    "fact_template": "המנון יוון והמנון קפריסין הם _______",
+    "truth_keyword": "אותו המנון",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7832395236832233",
+    "fact_template": "משפט הצבעים הארבעה הוא המשפט הראשון בהיסטוריה שהוכח _______",
+    "truth_keyword": "בעזרת מחשב",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7743548049050286",
+    "fact_template": "צרכנים שהרכיבו מוצר בעצמם _______",
+    "truth_keyword": "מפריזים בערכו",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7829672863771137",
+    "fact_template": "חפרפרות מותאמות כל כך לחפירה עד שהן לא ממש מסוגלות ל_______",
+    "truth_keyword": "הליכה רגילה בשטחים פתוחים",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7585523848186041",
+    "fact_template": "כדי להגיע לישוב אופירה הישראלי בסיני, היה צורך לנסוע דרך _______",
+    "truth_keyword": "אדמת מצרית קרוב לקהיר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7724515660953525",
+    "fact_template": "מכון ויצמן פנה למעבדה של מפעל הנשק לפתח מתקן ירי DNA, והם יצרו מתקן ייחודי שבו _______",
+    "truth_keyword": "מנגנון הירי עשוי מאקדח",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7821783891226701",
+    "fact_template": "באתר הארכיאולוגי באיה בעיירה באקולי באיטליה צומח עץ תאנים _______",
+    "truth_keyword": "במהופך",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7810286099043147",
+    "fact_template": "שני גולשי סנובורד שלא חזרו בלילה הצליחו לשרוד בזכות שריפת _______",
+    "truth_keyword": "שיעורי הבית",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7791760754229015",
+    "fact_template": "ה-J בסיום מיילים הוא למעשה _______ שמיקרוסופט לא קלטה",
+    "truth_keyword": "סמיילי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7787176904687400",
+    "fact_template": "בן קרפנטר נתקע בגריל משאית וזז כמעט 7 ק\"מ במהירות 80 קמ\"ש, יצא מהתאונה _______",
+    "truth_keyword": "ללא שריטה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7781381471933610",
+    "fact_template": "סרטנים התפתחו _______ לפחות 5 פעמים",
+    "truth_keyword": "באופן בלתי תלוי",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7752201738184917",
+    "fact_template": "צבי הנינג'ה נקראו Teenage Mutant Ninja Turtles בעולם, אך באנגליה נקראו Teenage Mutant _______ Turtles",
+    "truth_keyword": "Hero",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7765790646826026",
+    "fact_template": "השיר 'טוליק' נכתב על הילד תובל גבירצמן שנהרג _______ לפרסום השיר",
+    "truth_keyword": "לאחר",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7776794219059002",
+    "fact_template": "בין 1974 ל-1978 שתי קהילות של שימפנזות בטנזניה נלחמו מלחמה שהסתיימה _______",
+    "truth_keyword": "בהשמדה כללית של אחת מהן",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7755936747811416",
+    "fact_template": "לגו נתנה במתנה לעובדיה המסורים קוביות לגו _______",
+    "truth_keyword": "מזהב טהור",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7755470054524752",
+    "fact_template": "קנדריק לאמאר היה _______ שזכה בפוליצר למוזיקה",
+    "truth_keyword": "אומן הראשון מחוץ לקלאסיקה",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7886717381400018",
+    "fact_template": "בשנת 1920 אדם בפיג'מה טען שהוא נשיא צרפת - מסתבר שהוא _______",
+    "truth_keyword": "היה באמת נשיא צרפת",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
+  },
+  {
+    "content_id": "7849491728455917",
+    "fact_template": "אדם אוסטרלי הגיע מלונדון לסידני ויצא לרחוב כדי _______",
+    "truth_keyword": "להציע חיבוקים בחינם",
+    "metadata": {
+      "difficulty": "Hard",
+      "category": "ידע כללי"
+    }
   }
 ]
