@@ -10,7 +10,12 @@ const FREQ_TOLERANCE = ULTRASONIC_FREQ_STEP * 0.45
 const MIN_AMPLITUDE = 55
 const SAMPLE_INTERVAL_MS = 40
 const STABLE_SAMPLES = 2
-const WINDOW_SIZE = 12
+
+// Time-based slot sampling constants (ms from START commit)
+// Commit happens ~60ms into START tone; Cn midpoint is at t0+420+n*320
+// → delay from commit = 360 + n*320
+const SLOT_SAMPLE_BASE_MS = 360
+const SLOT_MS = 320
 
 export type DetectorStatus = 'idle' | 'requesting' | 'listening' | 'error'
 export type DetectorDebug = { freq: number; amplitude: number } | null
@@ -45,7 +50,7 @@ function freqToChar(freq: number): string | null {
 }
 
 // Listens via microphone and decodes the ultrasonic room code beacon.
-// Calls onDetected(code) once when a valid 4-char code is found.
+// Calls onDetected(code) once when a valid 4-char code is confirmed twice in a row.
 export function useUltrasonicDetector(
   active: boolean,
   onDetected: (code: string) => void,
@@ -98,16 +103,44 @@ export function useUltrasonicDetector(
         source.connect(analyser)
         setStatus('listening')
 
-        const recentCommitted: number[] = []
         let lastFreq: number | null = null
         let stableCount = 0
         let pendingCode: string | null = null
-        let lastCommittedFreq: number | null = null
-        let lastCommittedAt = 0
-        // Minimum ms before the same frequency can be committed again — must be
-        // long enough to span a full tone + gap so identical consecutive tones
-        // aren't collapsed into one detection.
-        const MIN_RETRIGGER_MS = 280
+        let isCapturing = false
+        let capturedChars: (string | null)[] = [null, null, null, null]
+        let captureTimeouts: ReturnType<typeof setTimeout>[] = []
+
+        function triggerCapture() {
+          isCapturing = true
+          capturedChars = [null, null, null, null]
+          captureTimeouts = []
+
+          for (let n = 0; n < 4; n++) {
+            const delay = SLOT_SAMPLE_BASE_MS + n * SLOT_MS
+            captureTimeouts.push(setTimeout(() => {
+              if (stopped) { isCapturing = false; return }
+
+              const peak = getPeakInRange(analyser, ctx.sampleRate)
+              const ch = (peak && peak.amplitude >= MIN_AMPLITUDE) ? freqToChar(peak.freq) : null
+              capturedChars[n] = ch
+
+              if (n === 3) {
+                isCapturing = false
+                captureTimeouts = []
+
+                if (capturedChars.every(c => c !== null)) {
+                  const code = (capturedChars as string[]).join('')
+                  if (code === pendingCode) {
+                    pendingCode = null
+                    onDetectedRef.current(code)
+                  } else {
+                    pendingCode = code
+                  }
+                }
+              }
+            }, delay))
+          }
+        }
 
         const interval = setInterval(() => {
           if (stopped) return
@@ -118,7 +151,6 @@ export function useUltrasonicDetector(
           if (!peak || peak.amplitude < MIN_AMPLITUDE) {
             lastFreq = null
             stableCount = 0
-            lastCommittedFreq = null  // silence resets — next same-freq is a new tone
             return
           }
 
@@ -126,36 +158,8 @@ export function useUltrasonicDetector(
           const isSame = lastFreq !== null && Math.abs(freq - lastFreq) < FREQ_TOLERANCE
           if (isSame) {
             stableCount++
-            if (stableCount === STABLE_SAMPLES) {
-              const now = Date.now()
-              const isSameAsLast = lastCommittedFreq !== null && Math.abs(freq - lastCommittedFreq) < FREQ_TOLERANCE
-              if (isSameAsLast && now - lastCommittedAt < MIN_RETRIGGER_MS) return
-              lastCommittedFreq = freq
-              lastCommittedAt = now
-              recentCommitted.push(freq)
-              if (recentCommitted.length > WINDOW_SIZE) recentCommitted.shift()
-
-              // Scan window for [START, C0, C1, C2, C3] pattern
-              for (let i = 0; i <= recentCommitted.length - 5; i++) {
-                if (!isStartFreq(recentCommitted[i])) continue
-                const chars: string[] = []
-                let valid = true
-                for (let j = 1; j <= 4; j++) {
-                  const ch = freqToChar(recentCommitted[i + j])
-                  if (!ch) { valid = false; break }
-                  chars.push(ch)
-                }
-                if (valid) {
-                  recentCommitted.length = 0
-                  const code = chars.join('')
-                  if (code === pendingCode) {
-                    pendingCode = null
-                    onDetectedRef.current(code)
-                  } else {
-                    pendingCode = code
-                  }
-                }
-              }
+            if (stableCount === STABLE_SAMPLES && isStartFreq(freq) && !isCapturing) {
+              triggerCapture()
             }
           } else {
             lastFreq = freq
@@ -165,6 +169,7 @@ export function useUltrasonicDetector(
 
         cleanupRef.current = () => {
           clearInterval(interval)
+          captureTimeouts.forEach(clearTimeout)
           stream.getTracks().forEach(t => t.stop())
           ctx.close()
         }
