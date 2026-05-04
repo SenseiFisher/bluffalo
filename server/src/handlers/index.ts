@@ -683,7 +683,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
   });
 
   // ── DISCONNECT ─────────────────────────────────────────────────────────────
-  socket.on("disconnect", () => {
+  socket.on("disconnecting", () => {
     const roomCode = getRoomCodeForSocket(socket);
     if (!roomCode) return;
 
