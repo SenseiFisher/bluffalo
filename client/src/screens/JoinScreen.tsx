@@ -68,6 +68,7 @@ export default function JoinScreen() {
       emit('JOIN_ROOM', {
         room_code: data.code,
         display_name: displayName.trim(),
+        create: true,
         ...(pendingLocation ? { location: pendingLocation } : {}),
       })
     } catch {

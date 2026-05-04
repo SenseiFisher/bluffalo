@@ -98,6 +98,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
       display_name?: string;
       session_id?: string;
       location?: { lat: unknown; lng: unknown };
+      create?: boolean;
     };
 
     const rawCode = typeof p?.room_code === "string" ? p.room_code.toUpperCase().trim() : "";
@@ -198,6 +199,10 @@ export function registerHandlers(io: Server, socket: Socket): void {
       }
       state = existing;
     } else {
+      if (!p.create) {
+        socket.emit("ERROR", { code: "ROOM_NOT_FOUND", message: "Room not found" });
+        return;
+      }
       // Create new room — this player becomes room master
       state = createInitialGameState(roomCode, sessionId, location);
       setRoom(roomCode, state);
