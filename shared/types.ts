@@ -28,6 +28,7 @@ export enum GamePhase {
   REVEAL     = "REVEAL",
   SELECTION  = "SELECTION",
   RESOLUTION = "RESOLUTION",
+  DEBUFF     = "DEBUFF",
   PODIUM     = "PODIUM",
 }
 

@@ -10,6 +10,7 @@ export const PROMPT_TIMER_MS = 60_000;
 export const REVEAL_TIMER_MS = 5_000;
 export const SELECTION_TIMER_MS = 30_000;
 export const RESOLUTION_TIMER_MS = 6_000;
+export const DEBUFF_TIMER_MS = 10_000;
 
 // Room settings
 export const ROOM_TTL_MS = parseInt(process.env?.ROOM_TTL_MS ?? "300000", 10);

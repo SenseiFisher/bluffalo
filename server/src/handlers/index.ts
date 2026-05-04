@@ -27,6 +27,7 @@ import {
   advanceToReveal,
   advanceToSelection,
   advanceToResolution,
+  advanceToNextRound,
   checkAllLiesSubmitted,
   checkAllVotesSubmitted,
   clearRoomTimers,
@@ -497,8 +498,8 @@ export function registerHandlers(io: Server, socket: Socket): void {
     if (!roomCode) return;
 
     const state = getRoom(roomCode);
-    if (!state || state.phase !== GamePhase.RESOLUTION) {
-      socket.emit("ERROR", { code: "WRONG_PHASE", message: "Not in RESOLUTION phase" });
+    if (!state || state.phase !== GamePhase.DEBUFF) {
+      socket.emit("ERROR", { code: "WRONG_PHASE", message: "Not in DEBUFF phase" });
       return;
     }
 
@@ -556,7 +557,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
     };
 
     setRoom(roomCode, state);
-    broadcastGameState(io, roomCode, state);
+    advanceToNextRound(state, (code, s) => broadcastGameState(io, code, s));
   });
 
   // ── PLAY_AGAIN ─────────────────────────────────────────────────────────────

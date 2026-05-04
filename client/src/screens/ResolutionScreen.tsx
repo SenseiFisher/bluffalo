@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { useGame } from '../context/GameContext'
-import { DebuffType, GameState, VoteOption } from '@shared/types'
-import { FUNNY_BONUS, DEBUFF_NAMES, DEBUFF_DESCRIPTIONS, CHARACTER_EXCLUDE_OPTIONS } from '@shared/constants'
-import DebuffIcon from '../components/DebuffIcon'
+import { VoteOption } from '@shared/types'
+import { FUNNY_BONUS } from '@shared/constants'
 
 const STEP_DURATION = 2200 // ms between reveal steps
 
@@ -15,9 +14,6 @@ interface AugmentedOption extends VoteOption {
 export default function ResolutionScreen() {
   const { gameState, mySessionId, emit } = useGame()
   const [step, setStep] = useState(0)
-  const [debuffType, setDebuffType] = useState<DebuffType | null>(null)
-  const [debuffChar, setDebuffChar] = useState<string | null>(null)
-  const [debuffTarget, setDebuffTarget] = useState<string | null>(null)
 
   if (!gameState || !gameState.current_fact) return null
 
@@ -193,170 +189,6 @@ export default function ResolutionScreen() {
         </div>
       )}
 
-      {/* Debuff section — only when debuffs are enabled and there's an award this round */}
-      {truthRevealed && gameState.debuffs_enabled && gameState.debuff_award && (
-        <DebuffSection
-          gameState={gameState}
-          mySessionId={mySessionId}
-          debuffType={debuffType}
-          setDebuffType={(t) => { setDebuffType(t); setDebuffChar(null); }}
-          debuffChar={debuffChar}
-          setDebuffChar={setDebuffChar}
-          debuffTarget={debuffTarget}
-          setDebuffTarget={setDebuffTarget}
-          onSubmit={() => {
-            if (!debuffType || !debuffTarget) return
-            const payload: Record<string, string> = { debuff_type: debuffType, target_session_id: debuffTarget }
-            if (debuffChar) payload.excluded_character = debuffChar
-            emit('SUBMIT_DEBUFF', payload)
-          }}
-        />
-      )}
-    </div>
-  )
-}
-
-// ─── Debuff section ───────────────────────────────────────────────────────────
-
-interface DebuffSectionProps {
-  gameState: GameState
-  mySessionId: string | null
-  debuffType: DebuffType | null
-  setDebuffType: (t: DebuffType) => void
-  debuffChar: string | null
-  setDebuffChar: (c: string) => void
-  debuffTarget: string | null
-  setDebuffTarget: (id: string) => void
-  onSubmit: () => void
-}
-
-function DebuffSection({ gameState, mySessionId, debuffType, setDebuffType, debuffChar, setDebuffChar, debuffTarget, setDebuffTarget, onSubmit }: DebuffSectionProps) {
-  const lang = gameState.language ?? 'en'
-  const charOptions = CHARACTER_EXCLUDE_OPTIONS[lang] ?? CHARACTER_EXCLUDE_OPTIONS['en']
-  const award = gameState.debuff_award!
-
-  const amWinner = mySessionId === award.winner_session_id
-  const pending = award.pending_debuff
-
-  const allDebuffs: DebuffType[] = [DebuffType.TIME_CUTOFF, DebuffType.FOG, DebuffType.SCRAMBLE, DebuffType.CHARACTER_EXCLUDE]
-  const eligibleTargets = award.eligible_targets
-
-  const canSubmit = debuffType !== null && debuffTarget !== null &&
-    (debuffType !== DebuffType.CHARACTER_EXCLUDE || debuffChar !== null)
-
-  if (pending) {
-    // Debuff already chosen — show result to everyone
-    return (
-      <div className="w-full max-w-lg mt-6 bg-red-900/40 border-2 border-red-500 rounded-2xl p-5 text-center">
-        <p className="text-red-300 text-2xl font-black mb-1">💀 Debuff Incoming!</p>
-        <p className="text-white text-lg font-semibold">
-          {pending.target_display_name} faces <span className="text-yellow-400"><DebuffIcon type={pending.type} className="w-5 h-5 mr-0.5 align-middle" /> {DEBUFF_NAMES[pending.type]}</span> next round
-          {pending.excluded_character && (
-            <span className="ml-1 text-red-300">— forbidden: <span className="font-black">{pending.excluded_character}</span></span>
-          )}
-        </p>
-        <p className="text-red-400 text-sm mt-1">{DEBUFF_DESCRIPTIONS[pending.type]}</p>
-      </div>
-    )
-  }
-
-  if (!amWinner) {
-    // Waiting banner for non-winners
-    return (
-      <div className="w-full max-w-lg mt-6 bg-indigo-800/60 border border-indigo-500 rounded-2xl p-4 text-center">
-        <p className="text-yellow-400 font-bold text-lg animate-pulse">
-          ⚡ {award.winner_display_name} is choosing a debuff...
-        </p>
-        <p className="text-indigo-400 text-sm mt-1">Planning their revenge for next round</p>
-      </div>
-    )
-  }
-
-  // Winner's debuff picker
-  return (
-    <div className="w-full max-w-lg mt-6 bg-indigo-900/80 border-2 border-yellow-500 rounded-2xl p-5 space-y-4">
-      <p className="text-yellow-400 font-black text-xl text-center">
-        ⚡ Choose a Debuff!
-      </p>
-
-      {/* Debuff type picker */}
-      <div>
-        <p className="text-indigo-300 text-xs font-semibold uppercase tracking-wide mb-2">
-          Debuff Type
-        </p>
-        <div className="grid grid-cols-2 gap-2">
-          {allDebuffs.map((type) => (
-            <button
-              key={type}
-              onClick={() => setDebuffType(type)}
-              className={`p-3 rounded-xl border-2 text-left transition-all active:scale-95 ${
-                debuffType === type
-                  ? 'border-yellow-400 bg-yellow-900/40'
-                  : 'border-indigo-600 bg-indigo-800/60 hover:border-indigo-500'
-              }`}
-            >
-              <span className="block text-white font-black flex items-center gap-1.5"><DebuffIcon type={type} className="w-6 h-6" /> {DEBUFF_NAMES[type]}</span>
-              <span className="block text-indigo-400 text-xs mt-0.5">{DEBUFF_DESCRIPTIONS[type]}</span>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Character picker — only for Thanos */}
-      {debuffType === DebuffType.CHARACTER_EXCLUDE && (
-        <div>
-          <p className="text-indigo-300 text-xs font-semibold uppercase tracking-wide mb-2">
-            Choose the Forbidden Letter
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {charOptions.map((ch) => (
-              <button
-                key={ch}
-                onClick={() => setDebuffChar(ch)}
-                className={`w-10 h-10 rounded-lg border-2 font-black text-lg transition-all active:scale-95 ${
-                  debuffChar === ch
-                    ? 'border-yellow-400 bg-yellow-900/40 text-yellow-400'
-                    : 'border-indigo-600 bg-indigo-800/60 text-white hover:border-indigo-500'
-                }`}
-              >
-                {ch}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Target picker */}
-      <div>
-        <p className="text-indigo-300 text-xs font-semibold uppercase tracking-wide mb-2">
-          Choose Your Victim
-        </p>
-        <div className="space-y-2">
-          {eligibleTargets.map((target) => (
-            <button
-              key={target.session_id}
-              onClick={() => setDebuffTarget(target.session_id)}
-              className={`w-full flex items-center justify-between px-4 py-2.5 rounded-xl border-2 transition-all active:scale-95 ${
-                debuffTarget === target.session_id
-                  ? 'border-red-400 bg-red-900/30'
-                  : 'border-indigo-600 bg-indigo-800/60 hover:border-indigo-500'
-              }`}
-            >
-              <span className="text-white font-semibold">{target.display_name}</span>
-              {debuffTarget === target.session_id && <span className="text-red-400 font-bold">✓</span>}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Submit */}
-      <button
-        onClick={onSubmit}
-        disabled={!canSubmit}
-        className="w-full py-3 bg-red-500 hover:bg-red-400 disabled:bg-indigo-700 disabled:text-indigo-500 disabled:cursor-not-allowed text-white font-black text-lg rounded-xl transition-all active:scale-95"
-      >
-        💀 Unleash the Debuff!
-      </button>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import PromptScreen from './screens/PromptScreen'
 import RevealScreen from './screens/RevealScreen'
 import SelectionScreen from './screens/SelectionScreen'
 import ResolutionScreen from './screens/ResolutionScreen'
+import DebuffScreen from './screens/DebuffScreen'
 import PodiumScreen from './screens/PodiumScreen'
 
 function GameRouter() {
@@ -38,6 +39,8 @@ function GameRouter() {
       return <SelectionScreen />
     case GamePhase.RESOLUTION:
       return <ResolutionScreen />
+    case GamePhase.DEBUFF:
+      return <DebuffScreen />
     case GamePhase.PODIUM:
       return <PodiumScreen />
     default:

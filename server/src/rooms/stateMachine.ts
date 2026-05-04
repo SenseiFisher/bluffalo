@@ -5,6 +5,7 @@ import {
   REVEAL_TIMER_MS,
   SELECTION_TIMER_MS,
   RESOLUTION_TIMER_MS,
+  DEBUFF_TIMER_MS,
 } from "../../../shared/constants";
 import { shuffle } from "../utils/shuffle";
 import { calculateRoundScores, calculateDebuffAward } from "../utils/scoring";
@@ -266,6 +267,30 @@ export function advanceToResolution(state: GameState, broadcast: BroadcastFn): v
   setTimer(state.room_code, resolutionMs, () => {
     const currentState = getCurrentState(state.room_code);
     if (currentState && currentState.phase === GamePhase.RESOLUTION) {
+      if (currentState.debuff_award) {
+        advanceToDebuff(currentState, broadcast);
+      } else {
+        advanceToNextRound(currentState, broadcast);
+      }
+    }
+  });
+}
+
+/**
+ * RESOLUTION → DEBUFF
+ * Only entered when there is a debuff_award to assign.
+ */
+export function advanceToDebuff(state: GameState, broadcast: BroadcastFn): void {
+  clearTimer(state.room_code);
+
+  state.phase = GamePhase.DEBUFF;
+  state.timer_ends_at = Date.now() + DEBUFF_TIMER_MS;
+
+  broadcast(state.room_code, state);
+
+  setTimer(state.room_code, DEBUFF_TIMER_MS, () => {
+    const currentState = getCurrentState(state.room_code);
+    if (currentState && currentState.phase === GamePhase.DEBUFF) {
       advanceToNextRound(currentState, broadcast);
     }
   });
