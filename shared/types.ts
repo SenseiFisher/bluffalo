@@ -10,6 +10,11 @@ export interface Debuff {
   excluded_character?: string;
 }
 
+export interface GeoLocation {
+  lat: number;
+  lng: number;
+}
+
 export interface DebuffAward {
   winner_session_id: string;
   winner_display_name: string;
@@ -86,6 +91,7 @@ export interface GameState {
   debuffs_enabled: boolean;
   debuff_award: DebuffAward | null;
   active_debuff_session_id: string | null; // NOT stripped — client uses to check if they are debuffed
+  location?: GeoLocation;
 }
 
 // Socket event payload types
@@ -93,6 +99,7 @@ export interface JoinRoomPayload {
   room_code: string;
   display_name: string;
   session_id?: string;
+  location?: GeoLocation;
 }
 
 export interface StartGamePayload {

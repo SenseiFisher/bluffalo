@@ -1,4 +1,4 @@
-import { GameState, GamePhase } from "../../../shared/types";
+import { GameState, GamePhase, GeoLocation } from "../../../shared/types";
 import {
   ROOM_CODE_ALPHABET,
   ROOM_CODE_LENGTH,
@@ -67,7 +67,8 @@ export function cancelCleanup(code: string): void {
 
 export function createInitialGameState(
   roomCode: string,
-  roomMasterSessionId: string
+  roomMasterSessionId: string,
+  location?: GeoLocation
 ): GameState {
   return {
     room_code: roomCode,
@@ -86,5 +87,31 @@ export function createInitialGameState(
     debuffs_enabled: false,
     debuff_award: null,
     active_debuff_session_id: null,
+    ...(location ? { location } : {}),
   };
+}
+
+function haversineKm(lat1: number, lng1: number, lat2: number, lng2: number): number {
+  const R = 6371;
+  const toRad = (d: number) => (d * Math.PI) / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLng = toRad(lng2 - lng1);
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+export function findNearbyRoom(lat: number, lng: number, radiusKm: number): string | null {
+  let bestCode: string | null = null;
+  let bestDist = Infinity;
+  for (const [code, state] of roomStore) {
+    if (state.phase !== GamePhase.LOBBY || !state.location) continue;
+    const dist = haversineKm(lat, lng, state.location.lat, state.location.lng);
+    if (dist <= radiusKm && dist < bestDist) {
+      bestDist = dist;
+      bestCode = code;
+    }
+  }
+  return bestCode;
 }

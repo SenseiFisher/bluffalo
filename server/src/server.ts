@@ -3,7 +3,7 @@ import { createServer } from "http";
 import { Server } from "socket.io";
 import * as path from "path";
 import { registerHandlers } from "./handlers/index";
-import { generateRoomCode } from "./rooms/roomStore";
+import { generateRoomCode, findNearbyRoom } from "./rooms/roomStore";
 import { registerGetRoom } from "./rooms/stateMachine";
 import { getRoom } from "./rooms/roomStore";
 
@@ -47,6 +47,17 @@ export function createApp(): { app: express.Application; httpServer: ReturnType<
     } catch (err) {
       res.status(500).json({ error: "Could not generate room code" });
     }
+  });
+
+  // API: Find nearest open LOBBY-phase room
+  app.get("/api/rooms/nearby", (req, res) => {
+    const lat = parseFloat(req.query.lat as string);
+    const lng = parseFloat(req.query.lng as string);
+    if (isNaN(lat) || isNaN(lng) || lat < -90 || lat > 90 || lng < -180 || lng > 180) {
+      res.status(400).json({ error: "Invalid coordinates" });
+      return;
+    }
+    res.json({ code: findNearbyRoom(lat, lng, 50) });
   });
 
   // Fallback: serve React app for all other routes in production

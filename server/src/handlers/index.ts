@@ -93,9 +93,26 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
   // ── JOIN_ROOM ──────────────────────────────────────────────────────────────
   socket.on("JOIN_ROOM", (payload: unknown) => {
-    const p = payload as { room_code?: string; display_name?: string; session_id?: string };
+    const p = payload as {
+      room_code?: string;
+      display_name?: string;
+      session_id?: string;
+      location?: { lat: unknown; lng: unknown };
+    };
 
     const rawCode = typeof p?.room_code === "string" ? p.room_code.toUpperCase().trim() : "";
+
+    let location: { lat: number; lng: number } | undefined;
+    const rawLoc = p?.location;
+    if (
+      rawLoc &&
+      typeof rawLoc.lat === "number" && typeof rawLoc.lng === "number" &&
+      isFinite(rawLoc.lat) && isFinite(rawLoc.lng) &&
+      rawLoc.lat >= -90 && rawLoc.lat <= 90 &&
+      rawLoc.lng >= -180 && rawLoc.lng <= 180
+    ) {
+      location = { lat: rawLoc.lat, lng: rawLoc.lng };
+    }
 
     // Generate a code if none provided
     const roomCode = rawCode || generateRoomCode();
@@ -182,7 +199,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
       state = existing;
     } else {
       // Create new room — this player becomes room master
-      state = createInitialGameState(roomCode, sessionId);
+      state = createInitialGameState(roomCode, sessionId, location);
       setRoom(roomCode, state);
     }
 
