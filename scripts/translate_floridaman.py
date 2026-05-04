@@ -1,3 +1,4 @@
+import argparse
 import json
 import sys
 import time
@@ -6,10 +7,17 @@ from pathlib import Path
 from deep_translator import GoogleTranslator
 
 SCRIPT_DIR = Path(__file__).parent
-INPUT_FILE = SCRIPT_DIR / "floridaman_posts.ndjson"
-OUTPUT_FILE = SCRIPT_DIR / "floridaman_posts_he.ndjson"
 
 translator = GoogleTranslator(source="en", target="iw")
+
+
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="Translate English posts to Hebrew")
+    p.add_argument("--input", type=str, default=str(SCRIPT_DIR / "floridaman_posts.ndjson"),
+                   help="Input NDJSON file")
+    p.add_argument("--output", type=str, default=str(SCRIPT_DIR / "floridaman_posts_he.ndjson"),
+                   help="Output NDJSON file")
+    return p.parse_args()
 
 
 def load_translated_ids(output_file: Path) -> set[str]:
@@ -28,6 +36,10 @@ def load_translated_ids(output_file: Path) -> set[str]:
 
 
 def main():
+    args = parse_args()
+    INPUT_FILE = Path(args.input)
+    OUTPUT_FILE = Path(args.output)
+
     posts = []
     with INPUT_FILE.open(encoding="utf-8") as f:
         for line in f:
