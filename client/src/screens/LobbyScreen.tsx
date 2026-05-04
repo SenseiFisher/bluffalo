@@ -22,7 +22,8 @@ export default function LobbyScreen() {
   ] as const
 
   const isRoomMaster = mySessionId === (gameState?.room_master_session_id ?? '')
-  useUltrasonicEmitter(gameState?.room_code ?? '', isRoomMaster)
+  const [broadcasting, setBroadcasting] = useState(false)
+  useUltrasonicEmitter(gameState?.room_code ?? '', broadcasting)
 
   if (!gameState) return null
   const connectedPlayers = gameState.players.filter((p) => p.is_connected)
@@ -62,10 +63,17 @@ export default function LobbyScreen() {
           Share this code with friends at <span className="text-indigo-300 font-mono">{roomUrl}</span>
         </p>
         {isRoomMaster && (
-          <p className="text-indigo-500 text-xs mt-2 flex items-center justify-center gap-1.5">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-            Broadcasting ultrasonic beacon
-          </p>
+          <button
+            onClick={() => setBroadcasting(b => !b)}
+            className={`mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold transition-all active:scale-95 ${
+              broadcasting
+                ? 'bg-indigo-500/30 text-indigo-300 border border-indigo-500'
+                : 'bg-indigo-800 text-indigo-500 border border-indigo-700 hover:border-indigo-500 hover:text-indigo-300'
+            }`}
+          >
+            <span className={`w-1.5 h-1.5 rounded-full ${broadcasting ? 'bg-indigo-400 animate-pulse' : 'bg-indigo-600'}`} />
+            {broadcasting ? 'Broadcasting' : 'Broadcast'}
+          </button>
         )}
       </div>
 
