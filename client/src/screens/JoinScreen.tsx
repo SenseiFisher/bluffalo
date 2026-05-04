@@ -12,6 +12,7 @@ export default function JoinScreen() {
   const [isFindingNearby, setIsFindingNearby] = useState(false)
   const [nearbyStatus, setNearbyStatus] = useState<string | null>(null)
   const [localError, setLocalError] = useState<string | null>(null)
+  const [pendingLocation, setPendingLocation] = useState<{ lat: number; lng: number } | null>(null)
 
   const handleRejoin = () => {
     if (!storedSession) return
@@ -46,34 +47,13 @@ export default function JoinScreen() {
     setLocalError(null)
     clearError()
 
-    const getGeoLocation = (): Promise<GeolocationPosition> =>
-      new Promise((resolve, reject) => {
-        if (!navigator.geolocation) { reject(new Error('unsupported')); return }
-        navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 5000, maximumAge: 60000 })
-      })
-
     try {
-      const [codeResult, geoResult] = await Promise.allSettled([
-        fetch('/api/room/code').then((r) => r.json() as Promise<{ code: string }>),
-        getGeoLocation(),
-      ])
-
-      if (codeResult.status === 'rejected') {
-        setLocalError('Failed to create room. Please try again.')
-        setIsLoading(false)
-        return
-      }
-
-      const { code } = codeResult.value
-      const location =
-        geoResult.status === 'fulfilled'
-          ? { lat: geoResult.value.coords.latitude, lng: geoResult.value.coords.longitude }
-          : undefined
-
+      const res = await fetch('/api/room/code')
+      const data = await res.json() as { code: string }
       emit('JOIN_ROOM', {
-        room_code: code,
+        room_code: data.code,
         display_name: displayName.trim(),
-        ...(location ? { location } : {}),
+        ...(pendingLocation ? { location: pendingLocation } : {}),
       })
     } catch {
       setLocalError('Failed to create room. Please try again.')
@@ -209,7 +189,19 @@ export default function JoinScreen() {
         {mode === 'home' && (
           <div className="flex flex-col gap-4">
             <button
-              onClick={() => { setMode('create'); clearError(); setLocalError(null) }}
+              onClick={() => {
+                setMode('create')
+                clearError()
+                setLocalError(null)
+                setPendingLocation(null)
+                if (navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(
+                    (pos) => setPendingLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
+                    () => {},
+                    { timeout: 15000, maximumAge: 60000 }
+                  )
+                }
+              }}
               className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 text-indigo-950 font-black text-xl rounded-xl transition-all duration-150 active:scale-95 shadow-lg"
             >
               Create Game
