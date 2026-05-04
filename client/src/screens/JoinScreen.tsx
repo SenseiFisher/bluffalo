@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useGame } from '../context/GameContext'
+import { useUltrasonicDetector } from '../hooks/useUltrasonicDetector'
 
 type Mode = 'home' | 'create' | 'join'
 
@@ -13,6 +14,13 @@ export default function JoinScreen() {
   const [nearbyStatus, setNearbyStatus] = useState<string | null>(null)
   const [localError, setLocalError] = useState<string | null>(null)
   const [pendingLocation, setPendingLocation] = useState<{ lat: number; lng: number } | null>(null)
+  const [isListening, setIsListening] = useState(false)
+
+  const { status: listenStatus, errorMessage: listenError, debug: listenDebug, stop: stopListening } =
+    useUltrasonicDetector(isListening, (code) => {
+      setRoomCode(code)
+      setIsListening(false)
+    })
 
   const handleRejoin = () => {
     if (!storedSession) return
@@ -32,6 +40,13 @@ export default function JoinScreen() {
       setIsLoading(false)
     }
   }, [lastError])
+
+  useEffect(() => {
+    if (listenError) {
+      setLocalError(listenError)
+      setIsListening(false)
+    }
+  }, [listenError])
 
   const handleCreateGame = async () => {
     if (!displayName.trim()) {
@@ -133,6 +148,8 @@ export default function JoinScreen() {
     setMode('home')
     setLocalError(null)
     setIsLoading(false)
+    setIsListening(false)
+    stopListening()
     clearError()
   }
 
@@ -278,7 +295,7 @@ export default function JoinScreen() {
               <button
                 type="button"
                 onClick={handleFindNearby}
-                disabled={isLoading || isFindingNearby}
+                disabled={isLoading || isFindingNearby || isListening}
                 className="mt-2 w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-indigo-700 hover:bg-indigo-600 disabled:bg-indigo-800 disabled:text-indigo-500 text-indigo-200 text-sm font-semibold transition-all active:scale-95"
               >
                 {isFindingNearby ? (
@@ -295,6 +312,44 @@ export default function JoinScreen() {
                   </>
                 )}
               </button>
+              <button
+                type="button"
+                onClick={() => {
+                  if (isListening) {
+                    setIsListening(false)
+                    stopListening()
+                  } else {
+                    setLocalError(null)
+                    clearError()
+                    setIsListening(true)
+                  }
+                }}
+                disabled={isLoading || isFindingNearby}
+                className="mt-1 w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-indigo-700 hover:bg-indigo-600 disabled:bg-indigo-800 disabled:text-indigo-500 text-indigo-200 text-sm font-semibold transition-all active:scale-95"
+              >
+                {isListening ? (
+                  <>
+                    <span className="inline-block w-3.5 h-3.5 border-2 border-indigo-400 border-t-indigo-200 rounded-full animate-spin" />
+                    {listenStatus === 'requesting' ? 'Requesting mic...' : 'Listening for host...'}
+                    <span className="ml-auto text-indigo-400 text-xs">Tap to cancel</span>
+                  </>
+                ) : (
+                  <>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                      <path d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z" />
+                      <path d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z" />
+                    </svg>
+                    Listen for room
+                  </>
+                )}
+              </button>
+              {isListening && (
+                <p className="mt-1 text-center text-indigo-500 text-xs font-mono">
+                  {listenDebug
+                    ? `${listenDebug.freq} Hz · strength ${listenDebug.amplitude}`
+                    : 'No signal detected'}
+                </p>
+              )}
             </div>
 
             <div>

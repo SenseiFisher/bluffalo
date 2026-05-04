@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useGame } from '../context/GameContext'
+import { useUltrasonicEmitter } from '../hooks/useUltrasonicEmitter'
 
 export default function LobbyScreen() {
   const { gameState, mySessionId, socket, emit, lastError, clearError, leaveRoom } = useGame()
@@ -20,9 +21,10 @@ export default function LobbyScreen() {
     { code: 'he', label: 'עברית' },
   ] as const
 
-  if (!gameState) return null
+  const isRoomMaster = mySessionId === (gameState?.room_master_session_id ?? '')
+  useUltrasonicEmitter(gameState?.room_code ?? '', isRoomMaster)
 
-  const isRoomMaster = mySessionId === gameState.room_master_session_id
+  if (!gameState) return null
   const connectedPlayers = gameState.players.filter((p) => p.is_connected)
   const canStart = connectedPlayers.length >= 2
 
@@ -59,6 +61,12 @@ export default function LobbyScreen() {
         <p className="text-indigo-400 text-xs mt-3">
           Share this code with friends at <span className="text-indigo-300 font-mono">{roomUrl}</span>
         </p>
+        {isRoomMaster && (
+          <p className="text-indigo-500 text-xs mt-2 flex items-center justify-center gap-1.5">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
+            Broadcasting ultrasonic beacon
+          </p>
+        )}
       </div>
 
       {/* Players */}
