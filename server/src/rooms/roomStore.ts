@@ -87,6 +87,7 @@ export function createInitialGameState(
     debuffs_enabled: false,
     debuff_award: null,
     active_debuff_session_id: null,
+    created_at: Date.now(),
     ...(location ? { location } : {}),
   };
 }
@@ -104,12 +105,12 @@ function haversineKm(lat1: number, lng1: number, lat2: number, lng2: number): nu
 
 export function findNearbyRoom(lat: number, lng: number, radiusKm: number): string | null {
   let bestCode: string | null = null;
-  let bestDist = Infinity;
+  let bestCreatedAt = -Infinity;
   for (const [code, state] of roomStore) {
     if (state.phase !== GamePhase.LOBBY || !state.location) continue;
     const dist = haversineKm(lat, lng, state.location.lat, state.location.lng);
-    if (dist <= radiusKm && dist < bestDist) {
-      bestDist = dist;
+    if (dist <= radiusKm && state.created_at > bestCreatedAt) {
+      bestCreatedAt = state.created_at;
       bestCode = code;
     }
   }

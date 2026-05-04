@@ -92,6 +92,7 @@ export interface GameState {
   debuff_award: DebuffAward | null;
   active_debuff_session_id: string | null; // NOT stripped — client uses to check if they are debuffed
   location?: GeoLocation;
+  created_at: number;
 }
 
 // Socket event payload types
