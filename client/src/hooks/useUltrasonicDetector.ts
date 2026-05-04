@@ -102,6 +102,12 @@ export function useUltrasonicDetector(
         let lastFreq: number | null = null
         let stableCount = 0
         let pendingCode: string | null = null
+        let lastCommittedFreq: number | null = null
+        let lastCommittedAt = 0
+        // Minimum ms before the same frequency can be committed again — must be
+        // long enough to span a full tone + gap so identical consecutive tones
+        // aren't collapsed into one detection.
+        const MIN_RETRIGGER_MS = 280
 
         const interval = setInterval(() => {
           if (stopped) return
@@ -112,6 +118,7 @@ export function useUltrasonicDetector(
           if (!peak || peak.amplitude < MIN_AMPLITUDE) {
             lastFreq = null
             stableCount = 0
+            lastCommittedFreq = null  // silence resets — next same-freq is a new tone
             return
           }
 
@@ -120,6 +127,11 @@ export function useUltrasonicDetector(
           if (isSame) {
             stableCount++
             if (stableCount === STABLE_SAMPLES) {
+              const now = Date.now()
+              const isSameAsLast = lastCommittedFreq !== null && Math.abs(freq - lastCommittedFreq) < FREQ_TOLERANCE
+              if (isSameAsLast && now - lastCommittedAt < MIN_RETRIGGER_MS) return
+              lastCommittedFreq = freq
+              lastCommittedAt = now
               recentCommitted.push(freq)
               if (recentCommitted.length > WINDOW_SIZE) recentCommitted.shift()
 

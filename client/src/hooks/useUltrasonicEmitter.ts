@@ -6,7 +6,7 @@ export const ULTRASONIC_BASE_FREQ = 19_200
 export const ULTRASONIC_FREQ_STEP = 25   // 32 chars × 25 Hz = 775 Hz span → max 19,975 Hz
 
 const TONE_MS = 200
-const GAP_MS = 80
+const GAP_MS = 120
 const REPEAT_GAP_MS = 500
 
 function charFreq(char: string): number {
