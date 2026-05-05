@@ -411,11 +411,6 @@ export function registerHandlers(io: Server, socket: Socket): void {
       return;
     }
 
-    if (player.round.voted_for_id !== null) {
-      socket.emit("ERROR", { code: "ALREADY_VOTED", message: "Already voted" });
-      return;
-    }
-
     const optionId = p?.option_id;
     if (typeof optionId !== "string") {
       socket.emit("ERROR", { code: "INVALID_VOTE", message: "Invalid option_id" });

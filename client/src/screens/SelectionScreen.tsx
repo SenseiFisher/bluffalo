@@ -34,7 +34,7 @@ export default function SelectionScreen() {
   ).length
 
   const handleVote = (optionId: string) => {
-    if (voted || myOptionIds.has(optionId)) return
+    if (myOptionIds.has(optionId)) return
     clearError()
     setSelectedId(optionId)
     setVoted(true)
@@ -99,60 +99,43 @@ export default function SelectionScreen() {
       </div>
 
       {/* Vote Options */}
-      {!voted ? (
-        <div className="w-full max-w-lg space-y-3">
-          {visibleOptions.length === 0 ? (
-            <div className="text-center text-indigo-400 py-8">
-              <p className="text-lg font-semibold">Your answer matched the truth!</p>
-              <p className="text-sm mt-2">Great Minds bonus: +1000 pts</p>
-            </div>
-          ) : (
-            visibleOptions.map((option, idx) => (
+      <div className="w-full max-w-lg space-y-3">
+        {visibleOptions.length === 0 ? (
+          <div className="text-center text-indigo-400 py-8">
+            <p className="text-lg font-semibold">Your answer matched the truth!</p>
+            <p className="text-sm mt-2">Great Minds bonus: +1000 pts</p>
+          </div>
+        ) : (
+          <>
+            {visibleOptions.map((option, idx) => (
               <button
                 key={option.option_id}
                 onClick={() => handleVote(option.option_id)}
-                className={`w-full text-left bg-indigo-800/60 border-2 border-indigo-600 hover:border-yellow-400 hover:bg-indigo-700/60 rounded-xl px-5 py-4 flex items-center gap-4 transition-all duration-150 active:scale-95 ${
+                className={`w-full text-left rounded-xl px-5 py-4 flex items-center gap-4 transition-all duration-150 active:scale-95 ${
                   selectedId === option.option_id
-                    ? 'border-yellow-400 bg-indigo-700/60'
-                    : ''
+                    ? 'bg-yellow-400/20 border-2 border-yellow-400'
+                    : 'bg-indigo-800/60 border-2 border-indigo-600 hover:border-yellow-400 hover:bg-indigo-700/60'
                 }`}
               >
                 <span className="text-indigo-400 font-bold text-lg w-8 shrink-0">
                   {String.fromCharCode(65 + idx)}
                 </span>
                 <span className="text-white font-semibold text-xl">{option.text}</span>
+                {selectedId === option.option_id && (
+                  <span className="ml-auto text-yellow-400 font-bold">YOUR VOTE ✓</span>
+                )}
               </button>
-            ))
-          )}
-        </div>
-      ) : (
-        <div className="w-full max-w-lg space-y-3">
-          {/* Show all options with selected highlighted */}
-          {visibleOptions.map((option, idx) => (
-            <div
-              key={option.option_id}
-              className={`w-full text-left rounded-xl px-5 py-4 flex items-center gap-4 transition-all duration-150 ${
-                selectedId === option.option_id
-                  ? 'bg-yellow-400/20 border-2 border-yellow-400'
-                  : 'bg-indigo-800/40 border-2 border-indigo-700 opacity-60'
-              }`}
-            >
-              <span className="text-indigo-400 font-bold text-lg w-8 shrink-0">
-                {String.fromCharCode(65 + idx)}
-              </span>
-              <span className="text-white font-semibold text-xl">{option.text}</span>
-              {selectedId === option.option_id && (
-                <span className="ml-auto text-yellow-400 font-bold">YOUR VOTE ✓</span>
-              )}
-            </div>
-          ))}
+            ))}
 
-          <div className="bg-green-900/40 border border-green-600 rounded-xl p-4 text-center mt-4">
-            <p className="text-green-400 font-semibold">Vote locked in!</p>
-            <p className="text-indigo-300 text-sm mt-1">Waiting for others to vote...</p>
-          </div>
-        </div>
-      )}
+            {voted && (
+              <div className="bg-green-900/40 border border-green-600 rounded-xl p-4 text-center mt-4">
+                <p className="text-green-400 font-semibold">Vote submitted!</p>
+                <p className="text-indigo-300 text-sm mt-1">Tap another answer to change your vote</p>
+              </div>
+            )}
+          </>
+        )}
+      </div>
 
       {/* Voting progress */}
       <div className="w-full max-w-lg mt-5">
