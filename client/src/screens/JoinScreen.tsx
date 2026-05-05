@@ -10,10 +10,7 @@ export default function JoinScreen() {
   const [displayName, setDisplayName] = useState('')
   const [roomCode, setRoomCode] = useState('')
   const [isLoading, setIsLoading] = useState(false)
-  const [isFindingNearby, setIsFindingNearby] = useState(false)
-  const [nearbyStatus, setNearbyStatus] = useState<string | null>(null)
   const [localError, setLocalError] = useState<string | null>(null)
-  const [pendingLocation, setPendingLocation] = useState<{ lat: number; lng: number } | null>(null)
   const [isListening, setIsListening] = useState(false)
 
   const { status: listenStatus, errorMessage: listenError, debug: listenDebug, stop: stopListening } =
@@ -69,56 +66,11 @@ export default function JoinScreen() {
         room_code: data.code,
         display_name: displayName.trim(),
         create: true,
-        ...(pendingLocation ? { location: pendingLocation } : {}),
       })
     } catch {
       setLocalError('Failed to create room. Please try again.')
       setIsLoading(false)
     }
-  }
-
-  const handleFindNearby = () => {
-    if (!navigator.geolocation) {
-      setLocalError('Your browser does not support geolocation.')
-      return
-    }
-    setIsFindingNearby(true)
-    setNearbyStatus('Getting your location...')
-    setLocalError(null)
-    clearError()
-
-    navigator.geolocation.getCurrentPosition(
-      async (position) => {
-        setNearbyStatus('Searching for nearby rooms...')
-        try {
-          const { latitude: lat, longitude: lng } = position.coords
-          const res = await fetch(`/api/rooms/nearby?lat=${lat}&lng=${lng}`)
-          const data = await res.json() as { code: string | null }
-          if (data.code) {
-            setRoomCode(data.code)
-            setNearbyStatus(null)
-          } else {
-            setNearbyStatus(null)
-            setLocalError('No nearby rooms found. Ask a friend to create one!')
-          }
-        } catch {
-          setNearbyStatus(null)
-          setLocalError('Could not search for nearby rooms. Please try again.')
-        } finally {
-          setIsFindingNearby(false)
-        }
-      },
-      (err) => {
-        setIsFindingNearby(false)
-        setNearbyStatus(null)
-        if (err.code === err.PERMISSION_DENIED) {
-          setLocalError('Location access was denied. Enter a room code manually.')
-        } else {
-          setLocalError('Could not get your location. Enter a room code manually.')
-        }
-      },
-      { timeout: 8000, maximumAge: 60000 }
-    )
   }
 
   const handleJoinGame = () => {
@@ -211,14 +163,6 @@ export default function JoinScreen() {
                 setMode('create')
                 clearError()
                 setLocalError(null)
-                setPendingLocation(null)
-                if (navigator.geolocation) {
-                  navigator.geolocation.getCurrentPosition(
-                    (pos) => setPendingLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
-                    () => {},
-                    { timeout: 15000, maximumAge: 60000 }
-                  )
-                }
               }}
               className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 text-indigo-950 font-black text-xl rounded-xl transition-all duration-150 active:scale-95 shadow-lg"
             >
@@ -295,26 +239,6 @@ export default function JoinScreen() {
               />
               <button
                 type="button"
-                onClick={handleFindNearby}
-                disabled={isLoading || isFindingNearby || isListening}
-                className="mt-2 w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-indigo-700 hover:bg-indigo-600 disabled:bg-indigo-800 disabled:text-indigo-500 text-indigo-200 text-sm font-semibold transition-all active:scale-95"
-              >
-                {isFindingNearby ? (
-                  <>
-                    <span className="inline-block w-3.5 h-3.5 border-2 border-indigo-400 border-t-indigo-200 rounded-full animate-spin" />
-                    {nearbyStatus ?? 'Searching...'}
-                  </>
-                ) : (
-                  <>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                      <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.003 3.5-4.697 3.5-8.327a8 8 0 10-16 0c0 3.63 1.556 6.324 3.5 8.327a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clipRule="evenodd" />
-                    </svg>
-                    Find nearby room
-                  </>
-                )}
-              </button>
-              <button
-                type="button"
                 onClick={() => {
                   if (isListening) {
                     setIsListening(false)
@@ -325,8 +249,8 @@ export default function JoinScreen() {
                     setIsListening(true)
                   }
                 }}
-                disabled={isLoading || isFindingNearby}
-                className="mt-1 w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-indigo-700 hover:bg-indigo-600 disabled:bg-indigo-800 disabled:text-indigo-500 text-indigo-200 text-sm font-semibold transition-all active:scale-95"
+                disabled={isLoading}
+                className="mt-2 w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-indigo-700 hover:bg-indigo-600 disabled:bg-indigo-800 disabled:text-indigo-500 text-indigo-200 text-sm font-semibold transition-all active:scale-95"
               >
                 {isListening ? (
                   <>

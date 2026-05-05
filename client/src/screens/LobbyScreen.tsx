@@ -22,7 +22,7 @@ export default function LobbyScreen() {
   ] as const
 
   const isRoomMaster = mySessionId === (gameState?.room_master_session_id ?? '')
-  const [broadcasting, setBroadcasting] = useState(false)
+  const [broadcasting, setBroadcasting] = useState(true)
   useUltrasonicEmitter(gameState?.room_code ?? '', broadcasting)
 
   if (!gameState) return null
