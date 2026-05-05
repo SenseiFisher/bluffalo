@@ -257,8 +257,8 @@ export function advanceToResolution(state: GameState, broadcast: BroadcastFn): v
     state.debuff_award = null;
   }
 
-  // Dynamic timer: 4s per option (2 steps × 2s each) + 6s buffer, minimum 12s
-  const resolutionMs = Math.max(12_000, state.vote_options.length * 4_000 + 6_000);
+  // Dynamic timer: 4s per option (2 steps × 2s each) + 4s buffer, minimum 12s
+  const resolutionMs = Math.max(12_000, state.vote_options.length * 4_000 + 4_000);
   state.phase = GamePhase.RESOLUTION;
   state.timer_ends_at = Date.now() + resolutionMs;
 
