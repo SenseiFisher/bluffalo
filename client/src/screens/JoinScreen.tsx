@@ -235,7 +235,7 @@ export default function JoinScreen() {
                 maxLength={4}
                 placeholder="XXXX"
                 className="w-full px-4 py-3 bg-indigo-800 border border-indigo-600 rounded-xl text-white placeholder-indigo-400 text-center text-3xl font-black tracking-widest focus:outline-none focus:border-yellow-400 transition-colors uppercase"
-                disabled={isLoading || isFindingNearby}
+                disabled={isLoading}
               />
               <button
                 type="button"
