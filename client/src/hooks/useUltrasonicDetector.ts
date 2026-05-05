@@ -25,8 +25,8 @@ function getPeakInRange(analyser: AnalyserNode, sampleRate: number): { freq: num
   analyser.getByteFrequencyData(data)
   const binHz = sampleRate / analyser.fftSize
 
-  const minBin = Math.floor(18_700 / binHz)
-  const maxBin = Math.ceil(20_200 / binHz)
+  const minBin = Math.floor(19_200 / binHz)
+  const maxBin = Math.ceil(20_600 / binHz)
 
   let peak = 0
   let peakBin = -1

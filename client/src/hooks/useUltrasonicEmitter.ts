@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react'
 import { ROOM_CODE_ALPHABET } from '@shared/constants'
 
-export const ULTRASONIC_START_FREQ = 19_000
-export const ULTRASONIC_BASE_FREQ = 19_200
-export const ULTRASONIC_FREQ_STEP = 25   // 32 chars × 25 Hz = 775 Hz span → max 19,975 Hz
+export const ULTRASONIC_START_FREQ = 19_500
+export const ULTRASONIC_BASE_FREQ = 19_700
+export const ULTRASONIC_FREQ_STEP = 20   // 32 chars × 20 Hz = 620 Hz span → max 20,320 Hz
 
 const TONE_MS = 200
 const GAP_MS = 120
