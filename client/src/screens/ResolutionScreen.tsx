@@ -61,8 +61,24 @@ export default function ResolutionScreen() {
     return [truth]
   }, [lies, truth, truthBatchPosition])
 
-  // Total steps: 2 per normal item (show text, reveal author) + 2 for final batch
-  const totalSteps = (normalItems.length + 1) * 2
+  // Group size: 1 for ≤6 players, scales up with player count
+  const playerCount = gameState.players.length
+  const revealSize = playerCount > 6 ? Math.ceil(playerCount / 6) : 1
+
+  // Chunk normalItems into groups; last group absorbs any remainder
+  const normalGroups: AugmentedOption[][] = useMemo(() => {
+    if (normalItems.length === 0) return []
+    const numGroups = Math.max(1, Math.floor(normalItems.length / revealSize))
+    const groups: AugmentedOption[][] = []
+    for (let i = 0; i < numGroups - 1; i++) {
+      groups.push(normalItems.slice(i * revealSize, (i + 1) * revealSize))
+    }
+    groups.push(normalItems.slice((numGroups - 1) * revealSize))
+    return groups
+  }, [normalItems, revealSize])
+
+  // Total steps: 2 per group (show text, reveal author) + 2 for final batch
+  const totalSteps = (normalGroups.length + 1) * 2
 
   useEffect(() => {
     setStep(0)
@@ -74,14 +90,10 @@ export default function ResolutionScreen() {
     return () => clearTimeout(t)
   }, [step, totalSteps])
 
-  // Helper: is a normal item's text visible?
-  const isNormalTextVisible = (idx: number) => step >= idx * 2 + 1
-  // Helper: is a normal item's author visible?
-  const isNormalAuthorVisible = (idx: number) => step >= idx * 2 + 2
-  // Helper: is the batch text visible?
-  const isBatchTextVisible = () => step >= normalItems.length * 2 + 1
-  // Helper: is the batch author visible?
-  const isBatchAuthorVisible = () => step >= normalItems.length * 2 + 2
+  const isGroupTextVisible   = (gi: number) => step >= gi * 2 + 1
+  const isGroupAuthorVisible = (gi: number) => step >= gi * 2 + 2
+  const isBatchTextVisible   = () => step >= normalGroups.length * 2 + 1
+  const isBatchAuthorVisible = () => step >= normalGroups.length * 2 + 2
 
   const truthRevealed = isBatchAuthorVisible()
   const sortedPlayers = [...gameState.players].sort((a, b) => b.score - a.score)
@@ -132,18 +144,22 @@ export default function ResolutionScreen() {
       {/* Reveal cards */}
       <div className="w-full max-w-lg space-y-3 mb-8">
 
-        {/* Normal items — one at a time */}
-        {normalItems.map((opt, idx) => (
-          <RevealCard
-            key={opt.option_id}
-            option={opt}
-            textVisible={isNormalTextVisible(idx)}
-            authorVisible={isNormalAuthorVisible(idx)}
-            isMyLie={isMyOption(opt)}
-            mySessionId={mySessionId}
-            onFunnyVote={() => emit('SUBMIT_FUNNY_VOTE', { option_id: opt.option_id })}
-            hasGivenFunnyVote={mySessionId ? opt.funny_voter_session_ids.includes(mySessionId) : false}
-          />
+        {/* Normal items — revealed in groups */}
+        {normalGroups.map((group, gi) => (
+          <React.Fragment key={gi}>
+            {group.map((opt) => (
+              <RevealCard
+                key={opt.option_id}
+                option={opt}
+                textVisible={isGroupTextVisible(gi)}
+                authorVisible={isGroupAuthorVisible(gi)}
+                isMyLie={isMyOption(opt)}
+                mySessionId={mySessionId}
+                onFunnyVote={() => emit('SUBMIT_FUNNY_VOTE', { option_id: opt.option_id })}
+                hasGivenFunnyVote={mySessionId ? opt.funny_voter_session_ids.includes(mySessionId) : false}
+              />
+            ))}
+          </React.Fragment>
         ))}
 
         {/* Batch items — all together */}

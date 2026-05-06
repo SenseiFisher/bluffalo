@@ -257,8 +257,13 @@ export function advanceToResolution(state: GameState, broadcast: BroadcastFn): v
     state.debuff_award = null;
   }
 
-  // Dynamic timer: 4s per option (2 steps × 2s each) + 4s buffer, minimum 12s
-  const resolutionMs = Math.max(12_000, state.vote_options.length * 4_000 + 4_000);
+  // Dynamic timer: 4s per reveal group + 4s buffer, minimum 12s
+  const playerCount = state.players.length;
+  const revealSize = playerCount > 6 ? Math.ceil(playerCount / 6) : 1;
+  const normalCount = Math.max(0, state.vote_options.length - 3);
+  const numNormalGroups = normalCount > 0 ? Math.max(1, Math.floor(normalCount / revealSize)) : 0;
+  const totalRevealGroups = numNormalGroups + 1; // +1 for final batch
+  const resolutionMs = Math.max(12_000, totalRevealGroups * 4_000 + 4_000);
   state.phase = GamePhase.RESOLUTION;
   state.timer_ends_at = Date.now() + resolutionMs;
 
