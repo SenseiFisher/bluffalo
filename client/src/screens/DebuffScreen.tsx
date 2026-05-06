@@ -28,6 +28,14 @@ export default function DebuffScreen() {
     return () => clearInterval(interval)
   }, [gameState?.timer_ends_at])
 
+  useEffect(() => {
+    if (debuffType === null || debuffTarget === null) return
+    if (debuffType === DebuffType.CHARACTER_EXCLUDE && debuffChar === null) return
+    const payload: Record<string, string> = { debuff_type: debuffType, target_session_id: debuffTarget }
+    if (debuffChar) payload.excluded_character = debuffChar
+    emit('SUBMIT_DEBUFF', payload)
+  }, [debuffType, debuffTarget, debuffChar])
+
   if (!gameState?.debuff_award) return null
 
   const award = gameState.debuff_award
@@ -35,15 +43,6 @@ export default function DebuffScreen() {
   const lang = gameState.language ?? 'en'
   const charOptions = CHARACTER_EXCLUDE_OPTIONS[lang] ?? CHARACTER_EXCLUDE_OPTIONS['en']
   const allDebuffs: DebuffType[] = [DebuffType.TIME_CUTOFF, DebuffType.FOG, DebuffType.SCRAMBLE, DebuffType.CHARACTER_EXCLUDE]
-  const canSubmit = debuffType !== null && debuffTarget !== null &&
-    (debuffType !== DebuffType.CHARACTER_EXCLUDE || debuffChar !== null)
-
-  const handleSubmit = () => {
-    if (!debuffType || !debuffTarget) return
-    const payload: Record<string, string> = { debuff_type: debuffType, target_session_id: debuffTarget }
-    if (debuffChar) payload.excluded_character = debuffChar
-    emit('SUBMIT_DEBUFF', payload)
-  }
 
   const timerPct = (timeLeft / (DEBUFF_TIMER_MS / 1000)) * 100
   const timerColor = timeLeft <= 3 ? 'text-red-400' : timeLeft <= 6 ? 'text-yellow-400' : 'text-indigo-300'
@@ -135,13 +134,6 @@ export default function DebuffScreen() {
               </div>
             </div>
 
-            <button
-              onClick={handleSubmit}
-              disabled={!canSubmit}
-              className="w-full py-3 bg-red-500 hover:bg-red-400 disabled:bg-indigo-700 disabled:text-indigo-500 disabled:cursor-not-allowed text-white font-black text-lg rounded-xl transition-all active:scale-95"
-            >
-              💀 Unleash the Debuff!
-            </button>
           </div>
         ) : (
           /* ── Waiting screen for non-winners ── */
