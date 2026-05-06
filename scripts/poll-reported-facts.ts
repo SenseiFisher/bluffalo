@@ -7,8 +7,8 @@ const INTERVAL_MS = (isNaN(INTERVAL_MINUTES) ? 5 : INTERVAL_MINUTES) * 60_000
 const OUTPUT_FILE = path.join(__dirname, 'reported_facts.txt')
 
 function buildUrl(): string {
-  const password = process.env.REDIS_PASSWORD
-  if (!password) throw new Error('REDIS_PASSWORD env var is not set')
+  const password = process.argv[3] ?? process.env.REDIS_PASSWORD
+  if (!password) throw new Error('Provide password as second argument or set REDIS_PASSWORD')
   return `redis://default:${password}@redis-17645.c77.eu-west-1-1.ec2.cloud.redislabs.com:17645`
 }
 
