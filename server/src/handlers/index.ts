@@ -34,6 +34,7 @@ import {
   allLiesSubmitted,
 } from "../rooms/stateMachine";
 import { validateDisplayName, validateLie, validateRoomCode } from "../utils/validation";
+import { redisClient } from "../redis";
 
 // ─── Broadcasting helpers ────────────────────────────────────────────────────
 
@@ -505,6 +506,14 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
     setRoom(roomCode, state);
     broadcastGameState(io, roomCode, state);
+  });
+
+  // ── REPORT_FACT ────────────────────────────────────────────────────────────
+  socket.on("REPORT_FACT", (payload: unknown) => {
+    const p = payload as { fact_id?: unknown };
+    const factId = typeof p?.fact_id === "string" ? p.fact_id.trim() : null;
+    if (!factId) return;
+    redisClient?.set(`report:${factId}`, "1", "EX", 86400, "NX").catch(() => {});
   });
 
   // ── SUBMIT_DEBUFF ──────────────────────────────────────────────────────────

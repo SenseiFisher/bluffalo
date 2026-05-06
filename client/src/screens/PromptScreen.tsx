@@ -4,6 +4,7 @@ import { useTimer } from '../hooks/useTimer'
 import { DebuffType } from '@shared/types'
 import { DEBUFF_NAMES, DEBUFF_DESCRIPTIONS } from '@shared/constants'
 import DebuffIcon from '../components/DebuffIcon'
+import ReportButton from '../components/ReportButton'
 
 function reverseWords(text: string): string {
   return text.trim().split(/\s+/).reverse().join(' ')
@@ -150,6 +151,14 @@ export default function PromptScreen() {
           </span>
           {isFog ? renderFoggedText(parts[1] || '') : (parts[1] || '')}
         </p>
+      </div>
+
+      {/* Report fact */}
+      <div className="w-full max-w-lg flex justify-end -mt-3 mb-3">
+        <ReportButton
+          factId={gameState.current_fact.content_id}
+          roundNumber={gameState.round_number}
+        />
       </div>
 
       {/* Submission area */}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useGame } from '../context/GameContext'
 import { useTimer } from '../hooks/useTimer'
+import ReportButton from '../components/ReportButton'
 
 export default function SelectionScreen() {
   const { gameState, mySessionId, emit, lastError, clearError } = useGame()
@@ -84,6 +85,14 @@ export default function SelectionScreen() {
           </span>
           {parts[1] || ''}
         </p>
+      </div>
+
+      {/* Report fact */}
+      <div className="w-full max-w-lg flex justify-end -mt-2 mb-2">
+        <ReportButton
+          factId={gameState.current_fact.content_id}
+          roundNumber={gameState.round_number}
+        />
       </div>
 
       {/* Scoring hint */}
