@@ -707,6 +707,9 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
       broadcastGameState(io, roomCode, state);
 
+      checkAllLiesSubmitted(state, broadcast);
+      checkAllVotesSubmitted(state, broadcast);
+
       // Schedule room cleanup if all players disconnected
       const anyConnected = state.players.some((p) => p.is_connected);
       if (!anyConnected) {
