@@ -162,8 +162,32 @@ Ask yourself: **which detail would make someone stop mid-sentence and say "wait,
 
 ---
 
+## Rewriting for Clarity
+
+Before extracting the blank, lightly rewrite the fact if needed so it reads naturally and clearly.
+
+### When to rewrite
+- The sentence is grammatically awkward or unnatural
+- The fact is too long — trim filler without losing meaning
+- The fact is fragmented or unclear — merge or restructure
+
+### Rules for rewriting
+- **Preserve all facts** — never change names, numbers, locations, or the core events
+- **Keep the language** — if the source is Hebrew, rewrite in Hebrew; if English, rewrite in English
+- **Minimal intervention** — fix what's broken, don't polish what isn't. One natural-sounding sentence is the goal
+- **Don't sanitize the absurdity** — the weird/funny/shocking parts are the whole point; keep them intact
+
+### Examples
+
+**Bad (machine-translated):** "גבר פלורידה מאשים קולות בראשו בגלל שדד חנות נוחות."
+**Good:** "גבר מפלורידה שדד חנות נוחות, וטען שקולות בראשו אמרו לו לעשות זאת."
+
+**Bad (awkward English):** "Florida man who had been doing drugs was found by police in a tree saying he was a bird and could fly."
+**Good:** "A Florida man on drugs climbed a tree and told police he was a bird and could fly."
+
 ## Quick Checklist
 
+- [ ] Is the fact rewritten to read naturally if the original was awkward?
 - [ ] Is the blank the most unexpected detail in the fact?
 - [ ] Would a reader fail to predict the answer from context alone?
 - [ ] Is the blank a word or short phrase (not a full sentence unless necessary)?
