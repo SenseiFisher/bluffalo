@@ -44,6 +44,14 @@ export interface Fact {
   metadata: { difficulty: "Easy" | "Medium" | "Hard"; category: string; };
 }
 
+export type SpecialRoundType = 'personal_question';
+
+export interface PersonalQuestionTemplate {
+  content_id: string;
+  fact_template: string; // contains "[Name]" and "_______"
+  metadata: { category: string; };
+}
+
 export interface Player {
   id: string;              // socket.id — ephemeral
   session_id: string;      // persistent
@@ -91,6 +99,8 @@ export interface GameState {
   debuffs_enabled: boolean;
   debuff_award: DebuffAward | null;
   active_debuff_session_id: string | null; // NOT stripped — client uses to check if they are debuffed
+  is_special_round: boolean;
+  personal_question_subject_session_id: string | null; // NOT stripped — client uses to check if they are the subject
   location?: GeoLocation;
   created_at: number;
 }

@@ -198,6 +198,13 @@ export function registerHandlers(io: Server, socket: Socket): void {
         socket.emit("ERROR", { code: "GAME_IN_PROGRESS", message: "Game already in progress" });
         return;
       }
+      const nameTaken = existing.players.some(
+        (p) => p.display_name.toLowerCase() === displayName.toLowerCase() && p.is_connected
+      );
+      if (nameTaken) {
+        socket.emit("ERROR", { code: "NAME_TAKEN", message: "That name is already taken in this room" });
+        return;
+      }
       state = existing;
     } else {
       if (!p.create) {
