@@ -25,6 +25,7 @@ The blank (`_______`) should always contain the **most surprising or counterintu
 - **No relative placeholders** — blanks like "the same person", "the same place", or "the same year" are too abstract for players to lie around. The blank must be a concrete noun that invites substitution with other concrete nouns
 - **The blank contains the complete answer unit** — don't split a phrase between the blank and the surrounding sentence. If the answer is "from the left wing", the blank holds the entire phrase, not just "left" with "from the ___ wing" around it. Modifiers and prepositions that are integral to the answer belong inside the blank
 - **Move negation outside the blank** — restructure so the blank contains only the positive term. Write "elected without a _______" rather than "elected _______" where the answer is "without a party"
+- **Question phrasing is allowed** — if a fact reads more naturally as a question, rephrase it that way and place the blank at the end as the answer
 
 ---
 
