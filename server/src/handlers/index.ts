@@ -338,10 +338,12 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
     const lieText = lieResult.value;
 
-    // Check for Great Minds: lie matches truth keyword (case-insensitive)
-    const truthKeyword = state.current_fact!.truth_keyword;
-    if (lieText.toLowerCase() === truthKeyword.toLowerCase()) {
-      player.round.great_minds = true;
+    // Check for Great Minds: lie matches truth keyword (disabled in personal rounds)
+    if (!state.is_special_round) {
+      const truthKeyword = state.current_fact!.truth_keyword;
+      if (lieText.toLowerCase() === truthKeyword.toLowerCase()) {
+        player.round.great_minds = true;
+      }
     }
 
     player.round.submitted_lie = lieText;
@@ -391,8 +393,9 @@ export function registerHandlers(io: Server, socket: Socket): void {
 
     const lieText = lieResult.value;
 
-    const truthKeyword = state.current_fact!.truth_keyword;
-    player.round.great_minds = lieText.toLowerCase() === truthKeyword.toLowerCase();
+    player.round.great_minds =
+      !state.is_special_round &&
+      lieText.toLowerCase() === state.current_fact!.truth_keyword.toLowerCase();
     player.round.submitted_lie = lieText;
     setRoom(roomCode, state);
 
@@ -425,6 +428,12 @@ export function registerHandlers(io: Server, socket: Socket): void {
       return;
     }
 
+    // Subject cannot vote in a personal question round
+    if (state.is_special_round && player.session_id === state.personal_question_subject_session_id) {
+      socket.emit("ERROR", { code: "SUBJECT_CANNOT_VOTE", message: "You are the subject — no voting this round" });
+      return;
+    }
+
     const option = state.vote_options.find((o) => o.option_id === optionId);
     if (!option) {
       socket.emit("ERROR", { code: "INVALID_OPTION", message: "Option not found" });
@@ -432,9 +441,11 @@ export function registerHandlers(io: Server, socket: Socket): void {
     }
 
     // Self-vote prevention: player cannot vote for their own lie (including merged duplicates)
+    // The truth option is never a self-vote even if it carries author_session_id (personal rounds)
     const isOwnOption =
-      option.author_session_id === player.session_id ||
-      option.co_author_session_ids.includes(player.session_id);
+      !option.is_truth &&
+      (option.author_session_id === player.session_id ||
+        option.co_author_session_ids.includes(player.session_id));
     if (isOwnOption) {
       socket.emit("ERROR", { code: "SELF_VOTE", message: "Cannot vote for your own lie" });
       return;
@@ -620,6 +631,8 @@ export function registerHandlers(io: Server, socket: Socket): void {
     state.used_fact_ids = [];
     state.debuff_award = null;
     state.active_debuff_session_id = null;
+    state.is_special_round = false;
+    state.personal_question_subject_session_id = null;
 
     for (const p of state.players) {
       p.score = 0;

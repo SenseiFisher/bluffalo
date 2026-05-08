@@ -9,10 +9,17 @@ import {
 } from "../../../shared/constants";
 import { shuffle } from "../utils/shuffle";
 import { calculateRoundScores, calculateDebuffAward } from "../utils/scoring";
-import { getRandomFact } from "../content/loader";
+import { getRandomFact, getRandomPersonalQuestion, buildPersonalQuestionFact } from "../content/loader";
+import {
+  SPECIAL_ROUND_PROBABILITY,
+  SPECIAL_ROUND_COOLDOWN,
+} from "../../../shared/constants";
 
 // Phase timers: roomCode → timeout handle
 const phaseTimers = new Map<string, NodeJS.Timeout>();
+
+// Cooldown tracking: roomCode → round number of last special round
+const lastSpecialRoundByRoom = new Map<string, number>();
 
 function clearTimer(roomCode: string): void {
   const t = phaseTimers.get(roomCode);
@@ -80,17 +87,15 @@ export function allLiesSubmitted(state: GameState): boolean {
 
 /**
  * Check if all eligible voters have voted.
- * Eligible = connected + did not go great_minds (their lie is removed from options).
+ * Eligible = connected + did not go great_minds + not the personal question subject.
  */
 function allVotesSubmitted(state: GameState): boolean {
-  // Players who need to vote: connected players who are not great_minds
-  // AND whose own lie is in the list (i.e., they have a lie option to skip)
-  // Actually: everyone connected can vote unless they went great_minds
-  // AND they can't vote for their own lie
-  // So eligible voters = connected players who are NOT great_minds
-  const eligible = state.players.filter(
-    (p) => p.is_connected && !p.round.great_minds
-  );
+  const eligible = state.players.filter((p) => {
+    if (!p.is_connected) return false;
+    if (p.round.great_minds) return false;
+    if (state.is_special_round && p.session_id === state.personal_question_subject_session_id) return false;
+    return true;
+  });
   return (
     eligible.length > 0 &&
     eligible.every((p) => p.round.voted_for_id !== null)
@@ -114,6 +119,9 @@ export function startGame(
   state.vote_options = [];
   state.debuff_award = null;
   state.active_debuff_session_id = null;
+  state.is_special_round = false;
+  state.personal_question_subject_session_id = null;
+  lastSpecialRoundByRoom.delete(state.room_code);
 
   // Reset all scores
   for (const p of state.players) {
@@ -126,15 +134,64 @@ export function startGame(
   return state;
 }
 
+function shouldRunSpecialRound(state: GameState): boolean {
+  if (state.is_final_round) return false;
+  if (state.round_number <= 2) return false;
+  const last = lastSpecialRoundByRoom.get(state.room_code) ?? -Infinity;
+  if (state.round_number - last < SPECIAL_ROUND_COOLDOWN) return false;
+  return Math.random() < SPECIAL_ROUND_PROBABILITY;
+}
+
 function startPromptPhase(state: GameState, broadcast: BroadcastFn): void {
+  if (shouldRunSpecialRound(state)) {
+    startPersonalQuestionPhase(state, broadcast);
+  } else {
+    startRegularPromptPhase(state, broadcast);
+  }
+}
+
+function startRegularPromptPhase(state: GameState, broadcast: BroadcastFn): void {
   const fact = getRandomFact(state.used_fact_ids, state.language);
   if (!fact) {
     console.error(`[StateMachine] No facts available for room ${state.room_code}`);
     return;
   }
 
+  state.is_special_round = false;
+  state.personal_question_subject_session_id = null;
   state.current_fact = fact;
   state.used_fact_ids.push(fact.content_id);
+  state.phase = GamePhase.PROMPT;
+  state.vote_options = [];
+  const promptTimerMs = state.prompt_timer_seconds * 1000;
+  state.timer_ends_at = Date.now() + promptTimerMs;
+
+  broadcast(state.room_code, state);
+
+  setTimer(state.room_code, promptTimerMs, () => {
+    const currentState = getCurrentState(state.room_code);
+    if (currentState && currentState.phase === GamePhase.PROMPT) {
+      advanceToReveal(currentState, broadcast);
+    }
+  });
+}
+
+function startPersonalQuestionPhase(state: GameState, broadcast: BroadcastFn): void {
+  const template = getRandomPersonalQuestion(state.used_fact_ids, state.language);
+  const connected = state.players.filter((p) => p.is_connected);
+
+  if (!template || connected.length === 0) {
+    startRegularPromptPhase(state, broadcast);
+    return;
+  }
+
+  const subject = connected[Math.floor(Math.random() * connected.length)];
+
+  lastSpecialRoundByRoom.set(state.room_code, state.round_number);
+  state.is_special_round = true;
+  state.personal_question_subject_session_id = subject.session_id;
+  state.current_fact = buildPersonalQuestionFact(template, subject.display_name);
+  state.used_fact_ids.push(template.content_id);
   state.phase = GamePhase.PROMPT;
   state.vote_options = [];
   const promptTimerMs = state.prompt_timer_seconds * 1000;
@@ -167,12 +224,22 @@ function getCurrentState(roomCode: string): GameState | undefined {
 export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void {
   clearTimer(state.room_code);
 
+  const subjectId = state.is_special_round ? state.personal_question_subject_session_id : null;
+
+  // For personal rounds: promote subject's submission to truth_keyword
+  if (state.is_special_round && state.current_fact) {
+    const subject = state.players.find((p) => p.session_id === subjectId);
+    const truthText = subject?.round.submitted_lie ?? "???";
+    state.current_fact = { ...state.current_fact, truth_keyword: truthText };
+  }
+
   // Build vote options: all submitted lies + truth, deduplicating identical lies
   const liesByText = new Map<string, VoteOption>();
 
   for (const p of state.players) {
     if (p.round.submitted_lie === null) continue;
     if (p.round.great_minds) continue; // Great Minds lie removed from voting
+    if (state.is_special_round && p.session_id === subjectId) continue; // subject's answer is the truth
 
     const key = p.round.submitted_lie.trim().toLowerCase();
     const existing = liesByText.get(key);
@@ -198,7 +265,7 @@ export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void 
     option_id: uuidv4(),
     text: state.current_fact!.truth_keyword,
     is_truth: true,
-    author_session_id: null,
+    author_session_id: subjectId, // null for regular rounds; subject session_id for personal rounds
     author_display_name: null,
     co_author_session_ids: [],
     co_author_display_names: [],
@@ -310,6 +377,7 @@ export function advanceToNextRound(state: GameState, broadcast: BroadcastFn): vo
   if (state.is_final_round) {
     state.phase = GamePhase.PODIUM;
     state.timer_ends_at = null;
+    lastSpecialRoundByRoom.delete(state.room_code);
     broadcast(state.room_code, state);
     return;
   }

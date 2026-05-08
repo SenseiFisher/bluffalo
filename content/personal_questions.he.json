@@ -1,0 +1,14 @@
+[
+  { "content_id": "PQ_HE_001", "fact_template": "ההנאה הסודית האשמה של [Name] היא _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_002", "fact_template": "אם [Name] יכול לאכול רק מאכל אחד לכל החיים, זה יהיה _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_003", "fact_template": "הרגע הכי מביך של [Name] קרה ב_______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_004", "fact_template": "הדבר שממנו [Name] הכי פוחד בצורה לא רציונלית הוא _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_005", "fact_template": "אם [Name] היה זוכה בלוטו, הדבר הראשון שהיה קונה הוא _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_006", "fact_template": "הכישרון הסודי של [Name] שאף אחד לא יודע עליו הוא _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_007", "fact_template": "הסדרה שכבר [Name] הכי הרבה פעמים היא _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_008", "fact_template": "אם [Name] יכול לגור בכל מקום בעולם, היה בוחר _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_009", "fact_template": "השיר שתמיד [Name] שר בקריוקי הוא _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_010", "fact_template": "הדבר הכי מוזר ש[Name] אי פעם אכל הוא _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_011", "fact_template": "חלום הילדות של [Name] היה להיות _______.", "metadata": { "category": "אישי" } },
+  { "content_id": "PQ_HE_012", "fact_template": "האפליקציה שמהה [Name] לא יכול היה להפסיק היתה _______.", "metadata": { "category": "אישי" } }
+]

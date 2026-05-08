@@ -87,6 +87,8 @@ export function createInitialGameState(
     debuffs_enabled: false,
     debuff_award: null,
     active_debuff_session_id: null,
+    is_special_round: false,
+    personal_question_subject_session_id: null,
     created_at: Date.now(),
     ...(location ? { location } : {}),
   };

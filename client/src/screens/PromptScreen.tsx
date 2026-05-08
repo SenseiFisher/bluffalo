@@ -97,6 +97,9 @@ export default function PromptScreen() {
   const canEdit = submitted && submittedCount < totalPlayers
 
   const isFinalRound = gameState.is_final_round
+  const isPersonalRound = gameState.is_special_round === true
+  const isSubject = isPersonalRound && mySessionId !== null &&
+    gameState.personal_question_subject_session_id === mySessionId
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex flex-col items-center p-4 pt-8">
@@ -107,6 +110,18 @@ export default function PromptScreen() {
             <DebuffIcon type={myDebuff.type} className="w-6 h-6 mr-1 align-middle" /> {DEBUFF_NAMES[myDebuff.type]}
           </p>
           <p className="text-red-400 text-sm mt-0.5">{DEBUFF_DESCRIPTIONS[myDebuff.type]}</p>
+        </div>
+      )}
+
+      {/* Personal round banner */}
+      {isPersonalRound && (
+        <div className="w-full max-w-lg mb-4 bg-purple-900/60 border-2 border-purple-400 rounded-xl px-4 py-3 text-center">
+          <p className="text-purple-300 font-black text-lg">Personal Question Round!</p>
+          <p className="text-purple-400 text-sm mt-0.5">
+            {isSubject
+              ? 'This question is about you — write your real answer!'
+              : 'Write a convincing fake answer to fool everyone!'}
+          </p>
         </div>
       )}
 
@@ -153,20 +168,22 @@ export default function PromptScreen() {
         </p>
       </div>
 
-      {/* Report fact */}
-      <div className="w-full max-w-lg flex justify-end -mt-3 mb-3">
-        <ReportButton
-          factId={gameState.current_fact.content_id}
-          roundNumber={gameState.round_number}
-        />
-      </div>
+      {/* Report fact — not shown for personal question rounds */}
+      {!isPersonalRound && (
+        <div className="w-full max-w-lg flex justify-end -mt-3 mb-3">
+          <ReportButton
+            factId={gameState.current_fact.content_id}
+            roundNumber={gameState.round_number}
+          />
+        </div>
+      )}
 
       {/* Submission area */}
       {!submitted ? (
         <div className="w-full max-w-lg space-y-4">
           <div className="bg-indigo-800/60 border border-indigo-600 rounded-2xl p-4">
             <label className="block text-indigo-300 text-sm font-semibold mb-2 uppercase tracking-wide">
-              Your Lie (or the truth if you dare!)
+              {isSubject ? 'Your Real Answer' : 'Your Lie (or the truth if you dare!)'}
             </label>
             <input
               type="text"
@@ -175,7 +192,7 @@ export default function PromptScreen() {
               onKeyDown={handleKeyDown}
               maxLength={50}
               disabled={timeLocked}
-              placeholder="Type a convincing answer..."
+              placeholder={isSubject ? 'Type your real answer...' : 'Type a convincing answer...'}
               className={`w-full px-4 py-3 bg-indigo-700 border rounded-xl text-white placeholder-indigo-400 focus:outline-none transition-colors text-lg ${timeLocked ? 'border-red-500 opacity-50 cursor-not-allowed' : 'border-indigo-500 focus:border-yellow-400'}`}
               autoFocus
             />
@@ -202,7 +219,7 @@ export default function PromptScreen() {
             disabled={!lieText.trim() || timeLocked}
             className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 disabled:bg-indigo-700 disabled:text-indigo-400 disabled:cursor-not-allowed text-indigo-950 font-black text-xl rounded-xl transition-all active:scale-95 shadow-lg"
           >
-            {submittedText !== null ? 'Update Answer' : 'Submit Answer'}
+            {submittedText !== null ? 'Update Answer' : isSubject ? 'Submit Real Answer' : 'Submit Answer'}
           </button>
         </div>
       ) : (

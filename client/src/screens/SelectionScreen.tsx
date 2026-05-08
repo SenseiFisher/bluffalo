@@ -11,6 +11,10 @@ export default function SelectionScreen() {
 
   if (!gameState || !gameState.current_fact) return null
 
+  const isPersonalRound = gameState.is_special_round === true
+  const isSubject = isPersonalRound && mySessionId !== null &&
+    gameState.personal_question_subject_session_id === mySessionId
+
   const factTemplate = gameState.current_fact.fact_template
   const parts = factTemplate.split('_______')
 
@@ -30,9 +34,11 @@ export default function SelectionScreen() {
   const votedCount = gameState.players.filter(
     (p) => p.round.voted_for_id !== null
   ).length
-  const eligibleCount = gameState.players.filter(
+  const rawEligible = gameState.players.filter(
     (p) => p.is_connected && !p.round.great_minds
   ).length
+  // In personal rounds, subtract 1 for the subject who doesn't vote
+  const eligibleCount = isPersonalRound ? Math.max(0, rawEligible - 1) : rawEligible
 
   const handleVote = (optionId: string) => {
     if (myOptionIds.has(optionId)) return
@@ -41,12 +47,6 @@ export default function SelectionScreen() {
     setVoted(true)
     emit('SUBMIT_VOTE', { option_id: optionId })
   }
-
-  // Check if I've already voted (from game state, e.g. after rejoin)
-  const myPlayer = gameState.players.find((p) => {
-    // Can't match by session_id since it's stripped; rely on local state
-    return false
-  })
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex flex-col items-center p-4 pt-8">
@@ -87,64 +87,79 @@ export default function SelectionScreen() {
         </p>
       </div>
 
-      {/* Report fact */}
-      <div className="w-full max-w-lg flex justify-end -mt-2 mb-2">
-        <ReportButton
-          factId={gameState.current_fact.content_id}
-          roundNumber={gameState.round_number}
-        />
-      </div>
-
-      {/* Scoring hint */}
-      <div className="w-full max-w-lg mb-4 grid grid-cols-2 gap-2 text-xs">
-        <div className="bg-indigo-800/40 border border-indigo-700 rounded-lg p-2 text-center">
-          <span className="text-yellow-400 font-bold">+500</span>
-          <span className="text-indigo-300 ml-1">Truth Seeker</span>
+      {/* Report fact — not shown for personal question rounds */}
+      {!isPersonalRound && (
+        <div className="w-full max-w-lg flex justify-end -mt-2 mb-2">
+          <ReportButton
+            factId={gameState.current_fact.content_id}
+            roundNumber={gameState.round_number}
+          />
         </div>
-        <div className="bg-indigo-800/40 border border-indigo-700 rounded-lg p-2 text-center">
-          <span className="text-yellow-400 font-bold">+250</span>
-          <span className="text-indigo-300 ml-1">per Bamboozle</span>
-        </div>
-      </div>
+      )}
 
-      {/* Vote Options */}
-      <div className="w-full max-w-lg space-y-3">
-        {visibleOptions.length === 0 ? (
-          <div className="text-center text-indigo-400 py-8">
-            <p className="text-lg font-semibold">Your answer matched the truth!</p>
-            <p className="text-sm mt-2">Great Minds bonus: +1000 pts</p>
+      {/* Subject waiting view */}
+      {isSubject ? (
+        <div className="w-full max-w-lg bg-purple-900/40 border-2 border-purple-500 rounded-2xl p-8 text-center mt-4">
+          <div className="text-5xl mb-4">👀</div>
+          <p className="text-purple-300 font-black text-xl mb-2">You're the Subject!</p>
+          <p className="text-indigo-300 text-sm">
+            Everyone is guessing your real answer right now.<br />Sit back and watch who gets fooled!
+          </p>
+        </div>
+      ) : (
+        <>
+          {/* Scoring hint */}
+          <div className="w-full max-w-lg mb-4 grid grid-cols-2 gap-2 text-xs">
+            <div className="bg-indigo-800/40 border border-indigo-700 rounded-lg p-2 text-center">
+              <span className="text-yellow-400 font-bold">+500</span>
+              <span className="text-indigo-300 ml-1">Truth Seeker</span>
+            </div>
+            <div className="bg-indigo-800/40 border border-indigo-700 rounded-lg p-2 text-center">
+              <span className="text-yellow-400 font-bold">+250</span>
+              <span className="text-indigo-300 ml-1">per Bamboozle</span>
+            </div>
           </div>
-        ) : (
-          <>
-            {visibleOptions.map((option, idx) => (
-              <button
-                key={option.option_id}
-                onClick={() => handleVote(option.option_id)}
-                className={`w-full text-left rounded-xl px-5 py-4 flex items-center gap-4 transition-all duration-150 active:scale-95 ${
-                  selectedId === option.option_id
-                    ? 'bg-yellow-400/20 border-2 border-yellow-400'
-                    : 'bg-indigo-800/60 border-2 border-indigo-600 hover:border-yellow-400 hover:bg-indigo-700/60'
-                }`}
-              >
-                <span className="text-indigo-400 font-bold text-lg w-8 shrink-0">
-                  {String.fromCharCode(65 + idx)}
-                </span>
-                <span className="text-white font-semibold text-xl">{option.text}</span>
-                {selectedId === option.option_id && (
-                  <span className="ml-auto text-yellow-400 font-bold">YOUR VOTE ✓</span>
-                )}
-              </button>
-            ))}
 
-            {voted && (
-              <div className="bg-green-900/40 border border-green-600 rounded-xl p-4 text-center mt-4">
-                <p className="text-green-400 font-semibold">Vote submitted!</p>
-                <p className="text-indigo-300 text-sm mt-1">Tap another answer to change your vote</p>
+          {/* Vote Options */}
+          <div className="w-full max-w-lg space-y-3">
+            {visibleOptions.length === 0 ? (
+              <div className="text-center text-indigo-400 py-8">
+                <p className="text-lg font-semibold">Your answer matched the truth!</p>
+                <p className="text-sm mt-2">Great Minds bonus: +1000 pts</p>
               </div>
+            ) : (
+              <>
+                {visibleOptions.map((option, idx) => (
+                  <button
+                    key={option.option_id}
+                    onClick={() => handleVote(option.option_id)}
+                    className={`w-full text-left rounded-xl px-5 py-4 flex items-center gap-4 transition-all duration-150 active:scale-95 ${
+                      selectedId === option.option_id
+                        ? 'bg-yellow-400/20 border-2 border-yellow-400'
+                        : 'bg-indigo-800/60 border-2 border-indigo-600 hover:border-yellow-400 hover:bg-indigo-700/60'
+                    }`}
+                  >
+                    <span className="text-indigo-400 font-bold text-lg w-8 shrink-0">
+                      {String.fromCharCode(65 + idx)}
+                    </span>
+                    <span className="text-white font-semibold text-xl">{option.text}</span>
+                    {selectedId === option.option_id && (
+                      <span className="ml-auto text-yellow-400 font-bold">YOUR VOTE ✓</span>
+                    )}
+                  </button>
+                ))}
+
+                {voted && (
+                  <div className="bg-green-900/40 border border-green-600 rounded-xl p-4 text-center mt-4">
+                    <p className="text-green-400 font-semibold">Vote submitted!</p>
+                    <p className="text-indigo-300 text-sm mt-1">Tap another answer to change your vote</p>
+                  </div>
+                )}
+              </>
             )}
-          </>
-        )}
-      </div>
+          </div>
+        </>
+      )}
 
       {/* Voting progress */}
       <div className="w-full max-w-lg mt-5">

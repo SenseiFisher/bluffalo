@@ -63,3 +63,7 @@ export const CHARACTER_EXCLUDE_OPTIONS: Record<string, string[]> = {
   en: ["e", "t", "a", "o", "i", "n"],
   he: ["ו", "י", "ל", "מ", "נ", "ר"],
 };
+
+// Special rounds
+export const SPECIAL_ROUND_PROBABILITY = 0.70;
+export const SPECIAL_ROUND_COOLDOWN = 4;

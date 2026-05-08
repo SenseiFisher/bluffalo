@@ -1,0 +1,14 @@
+[
+  { "content_id": "PQ_EN_001", "fact_template": "[Name]'s secret guilty pleasure is _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_002", "fact_template": "If [Name] could only eat one food forever, it would be _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_003", "fact_template": "[Name]'s most embarrassing moment happened at _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_004", "fact_template": "The thing [Name] is most irrationally afraid of is _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_005", "fact_template": "If [Name] won the lottery, the first thing they'd buy is _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_006", "fact_template": "[Name]'s secret talent that nobody knows about is _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_007", "fact_template": "The show [Name] has rewatched the most times is _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_008", "fact_template": "If [Name] could live anywhere in the world, they'd choose _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_009", "fact_template": "[Name]'s go-to karaoke song is _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_010", "fact_template": "The strangest thing [Name] has ever eaten is _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_011", "fact_template": "[Name]'s dream job as a child was to be a _______.", "metadata": { "category": "Personal" } },
+  { "content_id": "PQ_EN_012", "fact_template": "The last app [Name] couldn't stop using was _______.", "metadata": { "category": "Personal" } }
+]
