@@ -8,34 +8,23 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 DEFAULT_INPUT_FILE = SCRIPT_DIR / "facebook_posts.ndjson"
 DEFAULT_OUTPUT_FILE = SCRIPT_DIR / "extracted_blanks.ndjson"
-GUIDELINES_FILE = SCRIPT_DIR.parent / "docs" / "blank_extraction_guidelines.md"
+DEFAULT_GUIDELINES_FILE = SCRIPT_DIR.parent / "docs" / "blank_extraction_guidelines.md"
 
-CONCURRENCY = 3
+CONCURRENCY = 1
 BATCH_SIZE = 5
 
-GUIDELINES = GUIDELINES_FILE.read_text(encoding="utf-8")
-
-def build_system_prompt() -> str:
-    return f"""{GUIDELINES}
+def build_system_prompt(guidelines: str) -> str:
+    return f"""{guidelines}
 
 ---
-
-You are processing trivia posts in batches. For each post, identify the single most surprising or unexpected detail and rewrite the key sentence(s) with that detail replaced by [blank].
 
 You will receive a JSON array of posts: [{{"id": "<id>", "text": "<post text>"}}]
 
 Respond ONLY with a valid JSON array, one entry per input post:
-- If extractable: {{"id": "<id>", "fact": "<condensed fact with [blank]>", "blank": "<the extracted detail>"}}
-- Only skip if the post has absolutely no trivia content — e.g. it is pure site boilerplate, a vague listicle title, or a meta page with no facts at all: {{"id": "<id>", "skip": true}}
+- If extractable: {{"id": "<id>", "fact": "<rewritten fact with [blank]>", "blank": "<the extracted detail>"}}
+- If the post has no extractable content: {{"id": "<id>", "skip": true}}
 
-Rules:
-- Write the fact and blank in the same language as the input
-- The "fact" should be a clean, concise version of the post (remove URLs, source citations, conversational openers) focused on the core surprising information with [blank] inserted
-- The "blank" should be a short phrase (not a full sentence unless unavoidable)
-- Do not include URLs or source links in the fact
-- If the post contains multiple stories or surprising details, pick the single best one — never skip because there are too many options
-- If the post is long and complex, condense it to the one most surprising sentence and blank the key detail
-- Return exactly one array entry per input post
+Return exactly one array entry per input post. Do not include URLs or source links in the fact.
 """
 
 
@@ -77,7 +66,7 @@ def extract_json(text: str) -> dict | list | None:
     return None
 
 
-async def process_batch(posts: list[dict], semaphore: asyncio.Semaphore, system_prompt: str) -> list[dict]:
+async def process_batch(posts: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str = "haiku") -> list[dict]:
     async with semaphore:
         ids = [p["id"] for p in posts]
         try:
@@ -91,7 +80,7 @@ async def process_batch(posts: list[dict], semaphore: asyncio.Semaphore, system_
                 "--output-format", "json",
                 "--tools", "",
                 "--no-session-persistence",
-                "--model", "haiku",
+                "--model", model,
                 stdin=asyncio.subprocess.PIPE,
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE,
@@ -133,12 +122,16 @@ async def main():
     parser = argparse.ArgumentParser(description="Extract blank-fill facts from posts using Claude")
     parser.add_argument("--input", type=str, default=str(DEFAULT_INPUT_FILE), help="Input NDJSON file")
     parser.add_argument("--output", type=str, default=str(DEFAULT_OUTPUT_FILE), help="Output NDJSON file")
+    parser.add_argument("--guidelines", type=str, default=str(DEFAULT_GUIDELINES_FILE), help="Guidelines markdown file")
+    parser.add_argument("--model", type=str, default="haiku", help="Claude model to use (default: haiku)")
+    parser.add_argument("--limit", type=int, default=None, help="Stop after processing this many posts")
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Number of posts per Claude call (default: {BATCH_SIZE})")
     args = parser.parse_args()
 
     input_file = Path(args.input)
     output_file = Path(args.output)
-    system_prompt = build_system_prompt()
+    guidelines = Path(args.guidelines).read_text(encoding="utf-8")
+    system_prompt = build_system_prompt(guidelines)
 
     posts = []
     with input_file.open(encoding="utf-8") as f:
@@ -152,6 +145,8 @@ async def main():
     processed_ids = load_processed_ids(output_file)
 
     remaining = [p for p in posts if p["id"] not in processed_ids]
+    if args.limit is not None:
+        remaining = remaining[:args.limit]
     total = len(posts)
     already_done = len(processed_ids)
     print(f"Total posts: {total} | Already processed: {already_done} | Remaining: {len(remaining)}")
@@ -167,7 +162,7 @@ async def main():
         done = already_done
         for i in range(0, len(batches), CONCURRENCY):
             chunk = batches[i:i + CONCURRENCY]
-            all_results = await asyncio.gather(*[process_batch(b, semaphore, system_prompt) for b in chunk])
+            all_results = await asyncio.gather(*[process_batch(b, semaphore, system_prompt, args.model) for b in chunk])
             for batch_idx, results in enumerate(all_results):
                 done += len(chunk[batch_idx])
                 for result in results:
