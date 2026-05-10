@@ -2,6 +2,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import "./games/bluffalo/index"; // registers the Bluffalo plugin (side-effect)
+import "./games/pandamonium/index"; // registers the Pandamonium plugin (side-effect)
 import { listGames, getGame } from "./games/registry";
 import { createApp } from "./server";
 

@@ -35,6 +35,12 @@ export enum GamePhase {
   RESOLUTION = "RESOLUTION",
   DEBUFF     = "DEBUFF",
   PODIUM     = "PODIUM",
+  // Pandamonium phases
+  PM_WRITING        = "PM_WRITING",
+  PM_MATCHUP        = "PM_MATCHUP",
+  PM_MATCHUP_RESULT = "PM_MATCHUP_RESULT",
+  PM_FINAL_WRITING  = "PM_FINAL_WRITING",
+  PM_FINAL_REVEAL   = "PM_FINAL_REVEAL",
 }
 
 export interface Fact {
@@ -71,6 +77,26 @@ export interface Player {
   };
 }
 
+export interface PandamoniumMatchup {
+  matchup_id: string;
+  prompt_content_id: string;
+  prompt_text: string;
+  player_a_session_id: string;
+  player_a_display_name: string | null;
+  player_a_answer: string | null;
+  player_a_submitted: boolean;
+  player_b_session_id: string;
+  player_b_display_name: string | null;
+  player_b_answer: string | null;
+  player_b_submitted: boolean;
+  votes: Record<string, 'a' | 'b'>;
+  player_a_vote_count: number;
+  player_b_vote_count: number;
+  winner: 'a' | 'b' | 'tie' | null;
+  a_hidden: boolean;
+  b_hidden: boolean;
+}
+
 export interface VoteOption {
   option_id: string;
   text: string;
@@ -104,6 +130,12 @@ export interface GameState {
   personal_question_subject_session_id: string | null; // NOT stripped — client uses to check if they are the subject
   location?: GeoLocation;
   created_at: number;
+  // Pandamonium-specific fields
+  pm_matchups?: PandamoniumMatchup[];
+  pm_matchup_index?: number;
+  pm_final_answers?: Record<string, string>;
+  pm_final_answer_cards?: Array<{ session_id: string; display_name: string; answer: string }>;
+  pm_medals?: Record<string, string[]>;
 }
 
 export interface GameListItem {

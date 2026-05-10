@@ -5,6 +5,7 @@ import JoinScreen from './screens/JoinScreen'
 import LobbyScreen from './screens/LobbyScreen'
 import { getClientGame } from './games/registry'
 import './games/bluffalo/index' // registers Bluffalo plugin (side-effect)
+import './games/pandamonium/index' // registers Pandamonium plugin (side-effect)
 
 function GameRouter() {
   const { gameState, isConnected } = useGame()

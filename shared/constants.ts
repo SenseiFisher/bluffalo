@@ -67,3 +67,25 @@ export const CHARACTER_EXCLUDE_OPTIONS: Record<string, string[]> = {
 // Special rounds
 export const SPECIAL_ROUND_PROBABILITY = 0.70;
 export const SPECIAL_ROUND_COOLDOWN = 4;
+
+// Pandamonium phase timers (milliseconds)
+export const PM_WRITING_TIMER_MS = 60_000;
+export const PM_MATCHUP_TIMER_MS = 30_000;
+export const PM_MATCHUP_RESULT_TIMER_MS = 4_000;
+export const PM_FINAL_WRITING_TIMER_MS = 60_000;
+export const PM_FINAL_REVEAL_TIMER_MS = 30_000;
+
+// Pandamonium scoring
+export const PM_FULL_BAMBOO_BONUS = 500;
+export const PM_MEDAL_POINTS = 500;
+export const PM_MEDALS_PER_PLAYER = 3;
+export const PM_COMEBACK_MULTIPLIER = 2;
+
+// Pandamonium lobby
+export const PM_MIN_PLAYERS = 3;
+export const PM_DEFAULT_TOTAL_ROUNDS = 5;
+export const PM_MIN_ROUNDS = 3;
+export const PM_MAX_ROUNDS = 10;
+export const PM_ANSWER_TIMER_PRESETS = [30, 45, 60, 90] as const;
+
+export const PM_ALLOWED_REACTIONS = ['🎋', '🐾', '😂'] as const;

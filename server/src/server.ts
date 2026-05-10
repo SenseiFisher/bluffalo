@@ -6,14 +6,16 @@ import { registerHandlers } from "./handlers/index";
 import { registerGameEventForwarder } from "./handlers/gameRouter";
 import { generateRoomCode, findNearbyRoom, getRoom } from "./rooms/roomStore";
 import { registerGetRoom } from "./games/bluffalo/stateMachine";
+import { registerGetRoomPM } from "./games/pandamonium/stateMachine";
 import { listGames } from "./games/registry";
 
 export function initServer(httpServer: ReturnType<typeof createServer>): void {
   const app = (httpServer as unknown as { _events: { request: express.Application } })
     ._events?.request as express.Application | undefined;
 
-  // Register the getRoom function with stateMachine (avoids circular dep)
+  // Register the getRoom function with stateMachines (avoids circular dep)
   registerGetRoom(getRoom);
+  registerGetRoomPM(getRoom);
 
   const io = new Server(httpServer, {
     cors: {
@@ -75,8 +77,9 @@ export function createApp(): { app: express.Application; httpServer: ReturnType<
     });
   }
 
-  // Register getRoom with stateMachine
+  // Register getRoom with stateMachines
   registerGetRoom(getRoom);
+  registerGetRoomPM(getRoom);
 
   const io = new Server(httpServer, {
     cors: {

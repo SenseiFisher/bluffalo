@@ -3,7 +3,7 @@ import { GameState, GamePhase } from "../../../shared/types";
 import { setRoom } from "../rooms/roomStore";
 
 export function sanitizeStateForClient(state: GameState): GameState {
-  return {
+  const base: GameState = {
     ...state,
     current_fact:
       state.current_fact &&
@@ -30,6 +30,31 @@ export function sanitizeStateForClient(state: GameState): GameState {
     }),
     players: state.players.map((p) => ({ ...p, session_id: "" })),
   };
+
+  if (state.game_type === "pandamonium" && state.pm_matchups) {
+    const hideAnswers =
+      state.phase === GamePhase.PM_WRITING || state.phase === GamePhase.PM_FINAL_WRITING;
+    const currentIdx = state.pm_matchup_index ?? 0;
+
+    base.pm_matchups = state.pm_matchups.map((m, i) => {
+      const isCurrentMatchup = i === currentIdx;
+      const hideNames = state.phase === GamePhase.PM_MATCHUP && isCurrentMatchup;
+      return {
+        ...m,
+        player_a_answer: hideAnswers ? null : m.player_a_answer,
+        player_b_answer: hideAnswers ? null : m.player_b_answer,
+        player_a_display_name: hideNames ? null : m.player_a_display_name,
+        player_b_display_name: hideNames ? null : m.player_b_display_name,
+        votes: {},
+      };
+    });
+
+    if (state.phase === GamePhase.PM_FINAL_WRITING) {
+      base.pm_final_answers = {};
+    }
+  }
+
+  return base;
 }
 
 export function broadcastGameState(io: Server, roomCode: string, state: GameState): void {
