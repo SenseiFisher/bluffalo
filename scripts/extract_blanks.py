@@ -24,7 +24,7 @@ Respond ONLY with a valid JSON array, one entry per input post:
 - If extractable: {{"id": "<id>", "fact": "<rewritten fact with [blank]>", "blank": "<the extracted detail>"}}
 - If the post has no extractable content: {{"id": "<id>", "skip": true}}
 
-Return exactly one array entry per input post. Do not include URLs or source links in the fact.
+Return exactly one array entry per input post. Do not include URLs or source links in the fact. The placeholder in the fact must be exactly `[blank]` — the literal word "blank" in single square brackets, never the actual answer text.
 """
 
 
