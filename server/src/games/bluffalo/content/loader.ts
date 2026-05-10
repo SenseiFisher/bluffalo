@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { Fact, PersonalQuestionTemplate } from "../../../shared/types";
+import { Fact, PersonalQuestionTemplate } from "../../../../../shared/types";
 
 const factsCacheByLang = new Map<string, Fact[]>();
 
@@ -8,10 +8,10 @@ export function loadFacts(lang: string = "en"): Fact[] {
   if (factsCacheByLang.has(lang)) return factsCacheByLang.get(lang)!;
 
   // Resolve facts path — works for both ts-node-dev (src/) and compiled (dist/) layouts
-  // In dist: __dirname = server/dist/server/src/content/ — 5 levels up to project root
-  // In src:  __dirname = server/src/content/             — 3 levels up to project root
+  // In dist: __dirname = server/dist/server/src/games/bluffalo/content/ — 7 levels up to project root
+  // In src:  __dirname = server/src/games/bluffalo/content/             — 5 levels up to project root
   const isDist = __dirname.includes(`${path.sep}dist${path.sep}`) || __dirname.includes("/dist/");
-  const levelsUp = isDist ? "../../../../../" : "../../../";
+  const levelsUp = isDist ? "../../../../../../../" : "../../../../../";
 
   const filename = lang === "en" ? "facts.json" : `facts.${lang}.json`;
   const factsPath = path.resolve(__dirname, levelsUp, "content", filename);
@@ -51,7 +51,7 @@ export function loadPersonalQuestions(lang: string = "en"): PersonalQuestionTemp
   if (pqCacheByLang.has(lang)) return pqCacheByLang.get(lang)!;
 
   const isDist = __dirname.includes(`${path.sep}dist${path.sep}`) || __dirname.includes("/dist/");
-  const levelsUp = isDist ? "../../../../../" : "../../../";
+  const levelsUp = isDist ? "../../../../../../../" : "../../../../../";
 
   const filename = lang === "en"
     ? "personal_questions.en.json"

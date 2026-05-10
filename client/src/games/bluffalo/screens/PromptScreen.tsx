@@ -1,10 +1,10 @@
 import React, { useState, useMemo } from 'react'
-import { useGame } from '../context/GameContext'
-import { useTimer } from '../hooks/useTimer'
+import { useGame } from '../../../context/GameContext'
+import { useTimer } from '../../../hooks/useTimer'
 import { DebuffType } from '@shared/types'
 import { DEBUFF_NAMES, DEBUFF_DESCRIPTIONS } from '@shared/constants'
 import DebuffIcon from '../components/DebuffIcon'
-import ReportButton from '../components/ReportButton'
+import ReportButton from '../../../components/ReportButton'
 
 function reverseWords(text: string): string {
   return text.trim().split(/\s+/).reverse().join(' ')

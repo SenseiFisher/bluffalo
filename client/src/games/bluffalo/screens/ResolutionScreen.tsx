@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import { useGame } from '../context/GameContext'
+import { useGame } from '../../../context/GameContext'
 import { VoteOption } from '@shared/types'
 import { FUNNY_BONUS } from '@shared/constants'
-import ReportButton from '../components/ReportButton'
+import ReportButton from '../../../components/ReportButton'
 
 const STEP_DURATION = 2200 // ms between reveal steps
 

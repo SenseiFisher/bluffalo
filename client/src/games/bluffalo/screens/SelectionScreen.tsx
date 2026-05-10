@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { useGame } from '../context/GameContext'
-import { useTimer } from '../hooks/useTimer'
-import ReportButton from '../components/ReportButton'
+import { useGame } from '../../../context/GameContext'
+import { useTimer } from '../../../hooks/useTimer'
+import ReportButton from '../../../components/ReportButton'
 
 export default function SelectionScreen() {
   const { gameState, mySessionId, emit, lastError, clearError } = useGame()

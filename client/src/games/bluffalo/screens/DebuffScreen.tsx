@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useGame } from '../context/GameContext'
+import { useGame } from '../../../context/GameContext'
 import { DebuffType } from '@shared/types'
 import { DEBUFF_NAMES, DEBUFF_DESCRIPTIONS, CHARACTER_EXCLUDE_OPTIONS, DEBUFF_TIMER_MS } from '@shared/constants'
 import DebuffIcon from '../components/DebuffIcon'

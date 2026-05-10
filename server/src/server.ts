@@ -3,9 +3,10 @@ import { createServer } from "http";
 import { Server } from "socket.io";
 import * as path from "path";
 import { registerHandlers } from "./handlers/index";
-import { generateRoomCode, findNearbyRoom } from "./rooms/roomStore";
-import { registerGetRoom } from "./rooms/stateMachine";
-import { getRoom } from "./rooms/roomStore";
+import { registerGameEventForwarder } from "./handlers/gameRouter";
+import { generateRoomCode, findNearbyRoom, getRoom } from "./rooms/roomStore";
+import { registerGetRoom } from "./games/bluffalo/stateMachine";
+import { listGames } from "./games/registry";
 
 export function initServer(httpServer: ReturnType<typeof createServer>): void {
   const app = (httpServer as unknown as { _events: { request: express.Application } })
@@ -24,6 +25,7 @@ export function initServer(httpServer: ReturnType<typeof createServer>): void {
   io.on("connection", (socket) => {
     console.log(`[Socket] Client connected: ${socket.id}`);
     registerHandlers(io, socket);
+    registerGameEventForwarder(io, socket);
   });
 }
 
@@ -47,6 +49,11 @@ export function createApp(): { app: express.Application; httpServer: ReturnType<
     } catch (err) {
       res.status(500).json({ error: "Could not generate room code" });
     }
+  });
+
+  // API: List available games
+  app.get("/api/games", (_req, res) => {
+    res.json(listGames());
   });
 
   // API: Find nearest open LOBBY-phase room
@@ -81,6 +88,7 @@ export function createApp(): { app: express.Application; httpServer: ReturnType<
   io.on("connection", (socket) => {
     console.log(`[Socket] Client connected: ${socket.id}`);
     registerHandlers(io, socket);
+    registerGameEventForwarder(io, socket);
   });
 
   return { app, httpServer };

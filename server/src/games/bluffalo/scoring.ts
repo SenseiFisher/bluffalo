@@ -1,10 +1,10 @@
-import { GameState, VoteOption } from "../../../shared/types";
+import { GameState, VoteOption } from "../../../../shared/types";
 import {
   TRUTH_SEEKER_BONUS,
   BAMBOOZLE_BONUS,
   GREAT_MINDS_BONUS,
   FINAL_ROUND_MULTIPLIER,
-} from "../../../shared/constants";
+} from "../../../../shared/constants";
 
 /**
  * Calculate and apply scores for the current round.

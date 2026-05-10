@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { useGame } from '../context/GameContext'
+import { useGame } from '../../../context/GameContext'
 
 interface ConfettiPiece {
   id: number

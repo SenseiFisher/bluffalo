@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useGame } from '../context/GameContext'
 import { useUltrasonicDetector } from '../hooks/useUltrasonicDetector'
+import type { GameListItem } from '@shared/types'
 
-type Mode = 'home' | 'create' | 'join'
+type Mode = 'home' | 'create' | 'create-pick-game' | 'join'
 
 export default function JoinScreen() {
   const { emit, lastError, clearError, storedSession, clearStoredSession } = useGame()
@@ -12,6 +13,7 @@ export default function JoinScreen() {
   const [isLoading, setIsLoading] = useState(false)
   const [localError, setLocalError] = useState<string | null>(null)
   const [isListening, setIsListening] = useState(false)
+  const [games, setGames] = useState<GameListItem[]>([])
 
   const { status: listenStatus, errorMessage: listenError, debug: listenDebug, stop: stopListening } =
     useUltrasonicDetector(isListening, (code) => {
@@ -45,7 +47,7 @@ export default function JoinScreen() {
     }
   }, [listenError])
 
-  const handleCreateGame = async () => {
+  const handleProceedToGamePicker = () => {
     if (!displayName.trim()) {
       setLocalError('Please enter your display name')
       return
@@ -54,17 +56,28 @@ export default function JoinScreen() {
       setLocalError('Display name must be 20 characters or fewer')
       return
     }
+    setLocalError(null)
+    clearError()
+    setMode('create-pick-game')
+    if (games.length === 0) {
+      fetch('/api/games')
+        .then((r) => r.json())
+        .then((data) => setGames(data as GameListItem[]))
+        .catch(() => setLocalError('Failed to load games. Please try again.'))
+    }
+  }
 
+  const handleCreateGame = async (gameType: string) => {
     setIsLoading(true)
     setLocalError(null)
     clearError()
-
     try {
       const res = await fetch('/api/room/code')
       const data = await res.json() as { code: string }
       emit('JOIN_ROOM', {
         room_code: data.code,
         display_name: displayName.trim(),
+        game_type: gameType,
         create: true,
       })
     } catch {
@@ -159,11 +172,7 @@ export default function JoinScreen() {
         {mode === 'home' && (
           <div className="flex flex-col gap-4">
             <button
-              onClick={() => {
-                setMode('create')
-                clearError()
-                setLocalError(null)
-              }}
+              onClick={() => { setMode('create'); clearError(); setLocalError(null) }}
               className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 text-indigo-950 font-black text-xl rounded-xl transition-all duration-150 active:scale-95 shadow-lg"
             >
               Create Game
@@ -192,7 +201,7 @@ export default function JoinScreen() {
                 maxLength={20}
                 placeholder="Enter your display name"
                 className="w-full px-4 py-3 bg-indigo-800 border border-indigo-600 rounded-xl text-white placeholder-indigo-400 focus:outline-none focus:border-yellow-400 transition-colors"
-                onKeyDown={(e) => e.key === 'Enter' && handleCreateGame()}
+                onKeyDown={(e) => e.key === 'Enter' && handleProceedToGamePicker()}
                 disabled={isLoading}
               />
               <div className="text-right text-indigo-400 text-xs mt-1">
@@ -207,14 +216,55 @@ export default function JoinScreen() {
             )}
 
             <button
-              onClick={handleCreateGame}
+              onClick={handleProceedToGamePicker}
               disabled={isLoading}
               className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 disabled:bg-indigo-700 disabled:text-indigo-400 text-indigo-950 font-black text-xl rounded-xl transition-all duration-150 active:scale-95"
             >
-              {isLoading ? 'Creating...' : 'Create Room'}
+              Next: Choose Game
             </button>
 
             <button onClick={resetMode} className="text-indigo-400 hover:text-white text-sm text-center transition-colors">
+              Back
+            </button>
+          </div>
+        )}
+
+        {mode === 'create-pick-game' && (
+          <div className="flex flex-col gap-5">
+            <h2 className="text-2xl font-bold text-white text-center">Choose a Game</h2>
+            <p className="text-indigo-400 text-sm text-center -mt-3">
+              Playing as <span className="text-white font-semibold">{displayName}</span>
+            </p>
+
+            {localError && (
+              <div className="bg-red-900/50 border border-red-500 text-red-300 rounded-xl px-4 py-3 text-sm">
+                {localError}
+              </div>
+            )}
+
+            {games.length === 0 && !localError && (
+              <div className="flex justify-center py-6">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-400" />
+              </div>
+            )}
+
+            <div className="flex flex-col gap-3">
+              {games.map((game) => (
+                <button
+                  key={game.game_type}
+                  onClick={() => handleCreateGame(game.game_type)}
+                  disabled={isLoading}
+                  className="w-full py-4 px-6 bg-indigo-700 hover:bg-indigo-600 disabled:opacity-50 border border-indigo-500 hover:border-yellow-400 text-white font-black text-xl rounded-xl transition-all duration-150 active:scale-95 text-left"
+                >
+                  {isLoading ? 'Creating...' : game.display_name}
+                </button>
+              ))}
+            </div>
+
+            <button
+              onClick={() => { setMode('create'); setLocalError(null) }}
+              className="text-indigo-400 hover:text-white text-sm text-center transition-colors"
+            >
               Back
             </button>
           </div>

@@ -84,6 +84,7 @@ export interface VoteOption {
 
 export interface GameState {
   room_code: string;
+  game_type: string;
   phase: GamePhase;
   players: Player[];
   current_fact: Fact | null;
@@ -105,11 +106,17 @@ export interface GameState {
   created_at: number;
 }
 
+export interface GameListItem {
+  game_type: string;
+  display_name: string;
+}
+
 // Socket event payload types
 export interface JoinRoomPayload {
   room_code: string;
   display_name: string;
   session_id?: string;
+  game_type?: string;
   location?: GeoLocation;
 }
 

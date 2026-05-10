@@ -1,19 +1,19 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 
-import { loadFacts } from "./content/loader";
+import "./games/bluffalo/index"; // registers the Bluffalo plugin (side-effect)
+import { listGames, getGame } from "./games/registry";
 import { createApp } from "./server";
 
 const PORT = parseInt(process.env.PORT ?? "3000", 10);
 
-// Load and validate facts for all supported languages before starting
+// Validate content for all registered games before starting
 try {
-  const en = loadFacts("en");
-  console.log(`[Server] Loaded ${en.length} facts (en)`);
-  const he = loadFacts("he");
-  console.log(`[Server] Loaded ${he.length} facts (he)`);
+  for (const { game_type } of listGames()) {
+    getGame(game_type)!.validateContent();
+  }
 } catch (err) {
-  console.error("[Server] Failed to load facts:", err);
+  console.error("[Server] Failed to validate game content:", err);
   process.exit(1);
 }
 

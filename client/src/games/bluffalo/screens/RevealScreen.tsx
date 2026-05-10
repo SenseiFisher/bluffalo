@@ -1,6 +1,6 @@
 import React from 'react'
-import { useGame } from '../context/GameContext'
-import { useTimer } from '../hooks/useTimer'
+import { useGame } from '../../../context/GameContext'
+import { useTimer } from '../../../hooks/useTimer'
 
 export default function RevealScreen() {
   const { gameState } = useGame()

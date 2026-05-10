@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useGame } from '../context/GameContext'
 import { useUltrasonicEmitter } from '../hooks/useUltrasonicEmitter'
+import { getClientGame } from '../games/registry'
+import { useState } from 'react'
 
 export default function LobbyScreen() {
   const { gameState, mySessionId, socket, emit, lastError, clearError, leaveRoom } = useGame()
-  const [totalRounds, setTotalRounds] = useState(7)
-  const [debuffsEnabled, setDebuffsEnabled] = useState(true)
+  const [broadcasting, setBroadcasting] = useState(true)
 
   useEffect(() => {
     history.pushState({ lobby: true }, '')
@@ -13,27 +14,15 @@ export default function LobbyScreen() {
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
   }, [leaveRoom])
-  const [promptTimerSeconds, setPromptTimerSeconds] = useState(60)
-  const [language, setLanguage] = useState<'en' | 'he'>('he')
-  const TIMER_PRESETS = [30, 45, 60, 90, 120, 150]
-  const LANGUAGES = [
-    { code: 'en', label: 'English' },
-    { code: 'he', label: 'עברית' },
-  ] as const
 
-  const isRoomMaster = mySessionId === (gameState?.room_master_session_id ?? '')
-  const [broadcasting, setBroadcasting] = useState(true)
   useUltrasonicEmitter(gameState?.room_code ?? '', broadcasting)
 
   if (!gameState) return null
+
   const connectedPlayers = gameState.players.filter((p) => p.is_connected)
   const canStart = connectedPlayers.length >= 2
-
-  const handleStartGame = () => {
-    clearError()
-    emit('START_GAME', { total_rounds: totalRounds, prompt_timer_seconds: promptTimerSeconds, language, debuffs_enabled: debuffsEnabled })
-  }
-
+  const isRoomMaster = mySessionId === (gameState.room_master_session_id ?? '')
+  const plugin = getClientGame(gameState.game_type)
   const roomUrl = window.location.origin
 
   return (
@@ -96,10 +85,7 @@ export default function LobbyScreen() {
                     player.is_connected ? 'bg-green-400' : 'bg-gray-500'
                   }`}
                 />
-                <span className="text-white font-semibold">
-                  {player.display_name}
-                  {player.id === '' && mySessionId === gameState.room_master_session_id && gameState.players[0] === player ? '' : ''}
-                </span>
+                <span className="text-white font-semibold">{player.display_name}</span>
                 {gameState.room_master_session_id && idx === 0 && isRoomMaster && (
                   <span className="text-yellow-400 text-xs font-bold bg-yellow-400/10 px-2 py-0.5 rounded-full">
                     HOST
@@ -137,99 +123,18 @@ export default function LobbyScreen() {
         </div>
       )}
 
-      {/* Room Master controls */}
+      {/* Game settings (host) or waiting message (guest) */}
       {isRoomMaster ? (
-        <div className="w-full max-w-md space-y-4">
-          <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
-            <label className="block text-indigo-300 text-sm font-semibold mb-3 uppercase tracking-wide">
-              Number of Rounds
-            </label>
-            <div className="flex items-center gap-4">
-              <button
-                onClick={() => setTotalRounds(Math.max(3, totalRounds - 1))}
-                className="w-10 h-10 bg-indigo-700 hover:bg-indigo-600 rounded-lg text-white font-bold text-xl transition-colors active:scale-95"
-              >
-                −
-              </button>
-              <span className="text-yellow-400 font-black text-3xl flex-1 text-center">
-                {totalRounds}
-              </span>
-              <button
-                onClick={() => setTotalRounds(Math.min(20, totalRounds + 1))}
-                className="w-10 h-10 bg-indigo-700 hover:bg-indigo-600 rounded-lg text-white font-bold text-xl transition-colors active:scale-95"
-              >
-                +
-              </button>
-            </div>
-            <p className="text-indigo-400 text-xs text-center mt-2">Min 3 · Max 20</p>
+        plugin ? (
+          <plugin.LobbySettings
+            canStart={canStart}
+            connectedPlayerCount={connectedPlayers.length}
+          />
+        ) : (
+          <div className="w-full max-w-md text-indigo-400 text-center py-4">
+            Unknown game type: {gameState.game_type}
           </div>
-
-          <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
-            <label className="block text-indigo-300 text-sm font-semibold mb-3 uppercase tracking-wide">
-              Answer Time
-            </label>
-            <div className="grid grid-cols-3 gap-2">
-              {TIMER_PRESETS.map((s) => (
-                <button
-                  key={s}
-                  onClick={() => setPromptTimerSeconds(s)}
-                  className={`py-2 rounded-lg font-bold text-sm transition-all active:scale-95 ${
-                    promptTimerSeconds === s
-                      ? 'bg-yellow-400 text-indigo-950'
-                      : 'bg-indigo-700 hover:bg-indigo-600 text-white'
-                  }`}
-                >
-                  {s}s
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
-            <label className="block text-indigo-300 text-sm font-semibold mb-3 uppercase tracking-wide">
-              Language
-            </label>
-            <div className="grid grid-cols-2 gap-2">
-              {LANGUAGES.map((l) => (
-                <button
-                  key={l.code}
-                  onClick={() => setLanguage(l.code)}
-                  className={`py-2 rounded-lg font-bold text-sm transition-all active:scale-95 ${
-                    language === l.code
-                      ? 'bg-yellow-400 text-indigo-950'
-                      : 'bg-indigo-700 hover:bg-indigo-600 text-white'
-                  }`}
-                >
-                  {l.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
-            <label className="flex items-center justify-between cursor-pointer" onClick={() => setDebuffsEnabled(!debuffsEnabled)}>
-              <div>
-                <span className="block text-indigo-300 text-sm font-semibold uppercase tracking-wide">
-                  Debuffs
-                </span>
-                <span className="block text-indigo-400 text-xs mt-1">
-                  Best deceiver earns a power to punish!
-                </span>
-              </div>
-              <div className={`w-12 h-6 rounded-full transition-colors duration-200 flex-shrink-0 ml-4 relative ${debuffsEnabled ? 'bg-yellow-400' : 'bg-indigo-700'}`}>
-                <div className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${debuffsEnabled ? 'translate-x-6' : 'translate-x-0.5'}`} />
-              </div>
-            </label>
-          </div>
-
-          <button
-            onClick={handleStartGame}
-            disabled={!canStart}
-            className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 disabled:bg-indigo-700 disabled:text-indigo-400 disabled:cursor-not-allowed text-indigo-950 font-black text-xl rounded-xl transition-all duration-150 active:scale-95 shadow-lg"
-          >
-            {canStart ? `Start Game (${totalRounds} rounds)` : `Need ${2 - connectedPlayers.length} more player(s)`}
-          </button>
-        </div>
+        )
       ) : (
         <div className="w-full max-w-md">
           <div className="bg-indigo-800/40 border border-indigo-700 rounded-xl p-5 text-center">
@@ -242,7 +147,6 @@ export default function LobbyScreen() {
           </div>
         </div>
       )}
-
     </div>
   )
 }

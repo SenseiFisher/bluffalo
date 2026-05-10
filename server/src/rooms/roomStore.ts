@@ -68,10 +68,12 @@ export function cancelCleanup(code: string): void {
 export function createInitialGameState(
   roomCode: string,
   roomMasterSessionId: string,
+  game_type: string,
   location?: GeoLocation
 ): GameState {
   return {
     room_code: roomCode,
+    game_type,
     phase: GamePhase.LOBBY,
     players: [],
     current_fact: null,
