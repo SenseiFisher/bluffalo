@@ -33,7 +33,7 @@ export default function IntroScreen() {
           </div>
           <div className="text-indigo-400 text-sm">
             {isHe ? 'המשחק יתחיל בעוד' : 'Game starts in'}{' '}
-            <span className="text-yellow-300 font-bold">{timer}s</span>
+            <span className="text-yellow-300 font-bold whitespace-nowrap">{timer}s</span>
           </div>
         </div>
 
