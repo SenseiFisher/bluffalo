@@ -5346,15 +5346,6 @@
     }
   },
   {
-    "content_id": "24210686631909834",
-    "fact_template": "<condensed fact in Hebrew with _______>",
-    "truth_keyword": "<the extracted detail in Hebrew>",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "ידע כללי"
-    }
-  },
-  {
     "content_id": "9712013988870339",
     "fact_template": "סנוסיליקפוביה הוא פחד מ_______",
     "truth_keyword": "כוס בירה ריקה",
@@ -16012,8 +16003,8 @@
   },
   {
     "content_id": "infamous-florida-man-half-head-arrested-attempted-murder",
-    "fact_template": "A Florida man with _______ was arrested for attempted murder",
-    "truth_keyword": "half a head",
+    "fact_template": "גבר מפלורידה עם _______ נעצר בגין ניסיון רצח",
+    "truth_keyword": "חצי ראש",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -16021,8 +16012,8 @@
   },
   {
     "content_id": "florida-man-stuffs-steak-lobster-pants-gets-arrested",
-    "fact_template": "A Florida man stuffed _______ in his pants",
-    "truth_keyword": "steak and lobster",
+    "fact_template": "גבר מפלורידה תחב את _______ במכנסיו",
+    "truth_keyword": "סטייק ולובסטר",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -16030,8 +16021,8 @@
   },
   {
     "content_id": "florida-man-breaks-home-eats-bologna-takes-nap",
-    "fact_template": "A Florida man broke into a home, ate bologna, and _______",
-    "truth_keyword": "took a nap",
+    "fact_template": "גבר מפלורידה פרץ לבית, אכל בולוניה ו-_______",
+    "truth_keyword": "לקח תנומה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -16039,8 +16030,8 @@
   },
   {
     "content_id": "florida-man-shotgun-demands-store-fixes-phone",
-    "fact_template": "A Florida man with a shotgun demanded _______",
-    "truth_keyword": "fix his phone",
+    "fact_template": "איש פלורידה עם רובה ציד דרש _______",
+    "truth_keyword": "לתקן את הטלפון שלו",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18703,8 +18694,8 @@
   },
   {
     "content_id": "24749538451357980",
-    "fact_template": "A viral story about Salzburg airport having a special waiting room for tourists who mix up Austria and Australia was actually _______.",
-    "truth_keyword": "just an advertisement",
+    "fact_template": "סיפור ויראלי על שדה התעופה של זלצבורג שיש לו חדר המתנה מיוחד לתיירים שמערבבים בין אוסטריה ואוסטרליה היה למעשה _______.",
+    "truth_keyword": "רק פרסומת",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18712,8 +18703,8 @@
   },
   {
     "content_id": "24748773148101177",
-    "fact_template": "Poet Nathan Alterman, exempt from military service at age 38, _______ during Israel's War of Independence.",
-    "truth_keyword": "enlisted and fought in combat",
+    "fact_template": "המשורר נתן אלתרמן, פטור משירות צבאי בגיל 38, _______ במלחמת העצמאות.",
+    "truth_keyword": "התגייס ונלחם בלחימה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18721,8 +18712,8 @@
   },
   {
     "content_id": "24741780495467109",
-    "fact_template": "Einstein predicted that planetary orbits _______, unlike Kepler's simple ellipses.",
-    "truth_keyword": "precess",
+    "fact_template": "איינשטיין חזה שהמסלולים הפלנטריים _______, בניגוד לאליפסות הפשוטות של קפלר.",
+    "truth_keyword": "הקדמה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18730,8 +18721,8 @@
   },
   {
     "content_id": "24738450472466778",
-    "fact_template": "A complete rotation of the sun takes approximately _______, compared to one Earth day.",
-    "truth_keyword": "27 days",
+    "fact_template": "סיבוב שלם של השמש לוקח בערך _______, בהשוואה ליום כדור הארץ אחד.",
+    "truth_keyword": "27 ימים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18739,8 +18730,8 @@
   },
   {
     "content_id": "24731396173172208",
-    "fact_template": "Unlike most horned animals, rhinoceros horns are made entirely of _______.",
-    "truth_keyword": "keratin",
+    "fact_template": "בניגוד לרוב בעלי החיים בעלי הקרניים, קרני הקרנף עשויות כולה מ-_______.",
+    "truth_keyword": "קרטין",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18748,8 +18739,8 @@
   },
   {
     "content_id": "24720154174296408",
-    "fact_template": "When a 2-year-old wrote 'Send me pizza' on her hospital window, _______ arrived and overwhelmed the hospital.",
-    "truth_keyword": "hundreds of pizzas",
+    "fact_template": "כשילדה בת שנתיים כתבה 'שלח לי פיצה' על חלון בית החולים שלה, _______ הגיעה והכריעה את בית החולים.",
+    "truth_keyword": "מאות פיצות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18757,8 +18748,8 @@
   },
   {
     "content_id": "24713793224932503",
-    "fact_template": "Ancient Roman roads were marked with _______ that reflected moonlight, acting as street lights for nighttime travel.",
-    "truth_keyword": "white stones",
+    "fact_template": "כבישים רומיים עתיקים סומנו ב-_______ שהחזירו את אור הירח, ופועלים כאורות רחוב לנסיעות לילה.",
+    "truth_keyword": "אבנים לבנות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18766,8 +18757,8 @@
   },
   {
     "content_id": "24700712582907234",
-    "fact_template": "Blue-footed boobies get their name from a Spanish slang term 'bobo' meaning _______.",
-    "truth_keyword": "clown",
+    "fact_template": "ציצים כחולי רגליים מקבלים את שמם ממונח סלנג ספרדי 'בובו' שפירושו _______.",
+    "truth_keyword": "לֵיצָן",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18775,8 +18766,8 @@
   },
   {
     "content_id": "24699535189691640",
-    "fact_template": "There's an actual English word for government run by the worst, least qualified citizens: _______.",
-    "truth_keyword": "kakistocracy",
+    "fact_template": "יש מילה באנגלית לממשלה המנוהלת על ידי האזרחים הגרועים והפחות מוכשרים: _______.",
+    "truth_keyword": "קקיסטוקרטיה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18784,8 +18775,8 @@
   },
   {
     "content_id": "24694991423479350",
-    "fact_template": "The dollar sign ($) doesn't actually appear on _______.",
-    "truth_keyword": "US dollar bills",
+    "fact_template": "סימן הדולר ($) לא מופיע בפועל ב-_______.",
+    "truth_keyword": "שטרות דולר אמריקאי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18793,8 +18784,8 @@
   },
   {
     "content_id": "24691192943859198",
-    "fact_template": "In 2025, Saturn's rings will appear to disappear because they'll be viewed _______.",
-    "truth_keyword": "edge-on",
+    "fact_template": "בשנת 2025, הטבעות של שבתאי ייעלמו כי הן יוצגו _______.",
+    "truth_keyword": "קצה על",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18802,8 +18793,8 @@
   },
   {
     "content_id": "24689820823996410",
-    "fact_template": "The darkest time of night is actually _______, not before sunrise, because dawn is a distinct phase.",
-    "truth_keyword": "before dawn",
+    "fact_template": "הזמן החשוך ביותר של הלילה הוא למעשה _______, לא לפני הזריחה, כי השחר הוא שלב מובחן.",
+    "truth_keyword": "לִפְנוֹת בּוֹקֶר",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18811,8 +18802,8 @@
   },
   {
     "content_id": "24679150141730145",
-    "fact_template": "Millionaire zoologist Lionel Walter Rothschild drove around London in a carriage pulled by _______ to prove they could be tamed.",
-    "truth_keyword": "zebras",
+    "fact_template": "הזואולוג המיליונר ליונל וולטר רוטשילד נסע ברחבי לונדון בכרכרה שנמשכה על ידי _______ כדי להוכיח שניתן לאלף אותם.",
+    "truth_keyword": "זברות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18820,8 +18811,8 @@
   },
   {
     "content_id": "24619290681049425",
-    "fact_template": "Wax isn't flammable in solid form, but _______ is, which is why you can reignite a candle from its smoke.",
-    "truth_keyword": "wax vapor",
+    "fact_template": "שעווה אינה דליקה בצורה מוצקה, אבל _______ כן, וזו הסיבה שאתה יכול להדליק מחדש נר מהעשן שלו.",
+    "truth_keyword": "אדי שעווה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18829,8 +18820,8 @@
   },
   {
     "content_id": "24615625528082607",
-    "fact_template": "South Park producers asked Jerry Seinfeld to _______ in an episode, which he refused.",
-    "truth_keyword": "make turkey sounds",
+    "fact_template": "המפיקים של סאות' פארק ביקשו מג'רי סיינפלד ל-_______ בפרק, שהוא סירב.",
+    "truth_keyword": "להשמיע קולות של הודו",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18838,8 +18829,8 @@
   },
   {
     "content_id": "24610200765291750",
-    "fact_template": "iTunes' terms of service explicitly forbid using the software to _______.",
-    "truth_keyword": "develop nuclear weapons",
+    "fact_template": "תנאי השירות של iTunes אוסרים במפורש להשתמש בתוכנה ל-_______.",
+    "truth_keyword": "לפתח נשק גרעיני",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -18847,8 +18838,8 @@
   },
   {
     "content_id": "24605942522384241",
-    "fact_template": "Internet speeds are advertised in _______, not megabytes, which explains why 100 Mbps only gives 12 MB/s download speed.",
-    "truth_keyword": "megabits",
+    "fact_template": "מהירויות אינטרנט מתפרסמות ב-_______, לא במגה-בייט, מה שמסביר מדוע 100 Mbps נותן רק 12 MB/s מהירות הורדה.",
+    "truth_keyword": "מגה-ביט",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19270,8 +19261,8 @@
   },
   {
     "content_id": "24149249794720185",
-    "fact_template": "Tom Hanks' brother Jim has dubbed Woody (from Toy Story) in merchandise and video games for decades instead of _______",
-    "truth_keyword": "Tom",
+    "fact_template": "אחיו של טום הנקס, ג'ים, דיבב את וודי (מצעצוע של סיפור) בסחורה ובמשחקי וידאו במשך עשרות שנים במקום _______",
+    "truth_keyword": "טום",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19279,8 +19270,8 @@
   },
   {
     "content_id": "24138717909106707",
-    "fact_template": "'I Dream of Naomi' became famous in Japan in 1970, before it became famous in _______",
-    "truth_keyword": "Israel",
+    "fact_template": "'אני חולם על נעמי' התפרסם ביפן ב-1970, לפני שהתפרסם ב-_______",
+    "truth_keyword": "יִשְׂרָאֵל",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19288,8 +19279,8 @@
   },
   {
     "content_id": "24146195605025604",
-    "fact_template": "Feminist pioneer Alice Levy was in 1958 among the winners of _______",
-    "truth_keyword": "'Housewife of Israel'",
+    "fact_template": "החלוצה הפמיניסטית אליס לוי הייתה ב-1958 בין הזוכות של _______",
+    "truth_keyword": "'עקרת בית ישראל'",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19297,8 +19288,8 @@
   },
   {
     "content_id": "24139307899047708",
-    "fact_template": "In a 1-to-billion scale model of the solar system, Earth would need to be _______ from the sun",
-    "truth_keyword": "150 meters",
+    "fact_template": "במודל בקנה מידה של 1 עד מיליארד של מערכת השמש, כדור הארץ יצטרך להיות _______ מהשמש",
+    "truth_keyword": "150 מטר",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19306,8 +19297,8 @@
   },
   {
     "content_id": "24138355645809600",
-    "fact_template": "Any rock can, under the right conditions, transform into _______",
-    "truth_keyword": "any other type of rock",
+    "fact_template": "כל סלע יכול, בתנאים הנכונים, להפוך ל-_______",
+    "truth_keyword": "כל סוג אחר של סלע",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19315,8 +19306,8 @@
   },
   {
     "content_id": "24138388779139620",
-    "fact_template": "Cosquer Cave's paintings are now underwater to reach, but when they were created 20,000 years ago _______",
-    "truth_keyword": "the cave entrance was on dry land",
+    "fact_template": "הציורים של מערת Cosquer נמצאים כעת מתחת למים כדי להגיע אליהם, אבל כאשר הם נוצרו לפני 20,000 שנה _______",
+    "truth_keyword": "הכניסה למערה הייתה על יבשה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19324,8 +19315,8 @@
   },
   {
     "content_id": "24060030510308781",
-    "fact_template": "Parmentier, who dedicated his life to promoting potatoes in France, was buried with _______ surrounding his grave",
-    "truth_keyword": "potato plants",
+    "fact_template": "פרמנטייה, שהקדיש את חייו לקידום תפוחי אדמה בצרפת, נקבר עם _______ סביב קברו",
+    "truth_keyword": "צמחי תפוחי אדמה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19333,8 +19324,8 @@
   },
   {
     "content_id": "24136526725992492",
-    "fact_template": "The Bermuda Triangle 'mystery' had a solution known from the start — _______",
-    "truth_keyword": "it's just a busy shipping route with normal disappearance rates",
+    "fact_template": "ל\"תעלומה\" של משולש ברמודה היה פתרון ידוע מההתחלה - _______",
+    "truth_keyword": "זה רק נתיב שילוח עמוס עם שיעורי היעלמות רגילים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19342,8 +19333,8 @@
   },
   {
     "content_id": "24134635062848325",
-    "fact_template": "The unsuccessful Israeli film 'Shoshana Haluz Merkazi' has a Wikipedia article in _______",
-    "truth_keyword": "Welsh",
+    "fact_template": "לסרט הישראלי הלא מוצלח 'שושנה חלוז מרכזי' יש מאמר בויקיפדיה ב-_______",
+    "truth_keyword": "וולשית",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19351,8 +19342,8 @@
   },
   {
     "content_id": "24128223600156138",
-    "fact_template": "Parasitic flies for Sukkot are called ospizbu'ovim, a name based on _______",
-    "truth_keyword": "their behavior as dishonest guests stealing food",
+    "fact_template": "זבובים טפילים לסוכות נקראים אוספיזבובים, שם המבוסס על _______",
+    "truth_keyword": "התנהגותם כאורחים לא ישרים שגונבים אוכל",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19360,8 +19351,8 @@
   },
   {
     "content_id": "24119195151058983",
-    "fact_template": "The character Yaron Zahavi from Yigal Mossinson's books is based on _______",
-    "truth_keyword": "Yaron London",
+    "fact_template": "הדמות ירון זהבי מספריו של יגאל מוסינזון מבוססת על _______",
+    "truth_keyword": "ירון לונדון",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19369,8 +19360,8 @@
   },
   {
     "content_id": "24121787737466391",
-    "fact_template": "Sesame Street's Count von Count, who compulsively counts, comes from the vampire myth that they _______",
-    "truth_keyword": "have arithmomania",
+    "fact_template": "הרוזן פון הרוזן ברחוב סומסום, שסופר בעל כורחו, מגיע ממיתוס הערפדים שהם _______",
+    "truth_keyword": "יש אריתמומניה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19378,8 +19369,8 @@
   },
   {
     "content_id": "24108060622172436",
-    "fact_template": "Akkadian mathematicians understood and proved the Pythagorean theorem _______",
-    "truth_keyword": "1500 years before Pythagoras was born",
+    "fact_template": "מתמטיקאים אכדים הבינו והוכיחו את משפט פיתגורס _______",
+    "truth_keyword": "1500 שנה לפני שפיתגורס נולד",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19387,8 +19378,8 @@
   },
   {
     "content_id": "24126404490338049",
-    "fact_template": "Mea Shearim, known as Jerusalem's historic neighborhood, was actually founded in _______",
-    "truth_keyword": "1920s Tel Aviv",
+    "fact_template": "מאה שערים, הידועה כשכונה ההיסטורית של ירושלים, נוסדה למעשה ב-_______",
+    "truth_keyword": "תל אביב שנות ה-20",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19396,8 +19387,8 @@
   },
   {
     "content_id": "24115718404739991",
-    "fact_template": "Jewish anarchists and socialists have for 130 years organized Yom Kippur balls — _______ celebrations held on the Day of Atonement",
-    "truth_keyword": "massive anti-religious political parties",
+    "fact_template": "אנרכיסטים וסוציאליסטים יהודים ארגנו במשך 130 שנה נשפי יום כיפור - חגיגות _______ שנערכו ביום הכיפורים",
+    "truth_keyword": "מפלגות פוליטיות אנטי-דתיות מסיביות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19405,8 +19396,8 @@
   },
   {
     "content_id": "24116356448009520",
-    "fact_template": "Greece still has a 'King of Greece,' but he lives in _______",
-    "truth_keyword": "London and represents Denmark",
+    "fact_template": "ליוון עדיין יש 'מלך יוון', אבל הוא גר ב-_______",
+    "truth_keyword": "לונדון ומייצגת את דנמרק",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19414,8 +19405,8 @@
   },
   {
     "content_id": "24114552598189905",
-    "fact_template": "In 1924, Tel Aviv's mayor Meir Dizengoff discovered his wife with _______",
-    "truth_keyword": "Tzvi Ginzberg",
+    "fact_template": "בשנת 1924 גילה ראש עיריית תל אביב מאיר דיזנגוף את אשתו עם _______",
+    "truth_keyword": "צבי גינזברג",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19423,8 +19414,8 @@
   },
   {
     "content_id": "24109174832061015",
-    "fact_template": "Hungary, completely landlocked with no sea access, was ruled from 1920-1944 by _______",
-    "truth_keyword": "Admiral Miklós Horthy",
+    "fact_template": "הונגריה, ללא גישה לים לחלוטין, נשלטה בין השנים 1920-1944 על ידי _______",
+    "truth_keyword": "אדמירל מיקלוש הורטי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19432,8 +19423,8 @@
   },
   {
     "content_id": "24106374475674384",
-    "fact_template": "The Holy Roman Empire was not _______",
-    "truth_keyword": "an empire",
+    "fact_template": "האימפריה הרומית הקדושה לא הייתה _______",
+    "truth_keyword": "אימפריה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -19441,8 +19432,8 @@
   },
   {
     "content_id": "24104329532545545",
-    "fact_template": "Dr. Seuss was never _______",
-    "truth_keyword": "a doctor or a horse",
+    "fact_template": "ד\"ר סוס מעולם לא היה _______",
+    "truth_keyword": "רופא או סוס",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -20701,8 +20692,8 @@
   },
   {
     "content_id": "10014688421936226",
-    "fact_template": "'Project Pigeon' was an American researcher's WWII project aimed at developing guided missiles using _______ as 'pilots'.",
-    "truth_keyword": "pigeons",
+    "fact_template": "'פרויקט יונה' היה פרויקט של חוקר אמריקאי ממלחמת העולם השנייה שמטרתו לפתח טילים מונחים באמצעות _______ בתור 'טייסים'.",
+    "truth_keyword": "יונים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -20710,8 +20701,8 @@
   },
   {
     "content_id": "9997406843664384",
-    "fact_template": "At the Hungary-Austria-Czech Republic tripoint border, a _______ was set up to allow separated families to eat together without crossing national borders.",
-    "truth_keyword": "three-sided table",
+    "fact_template": "בגבול המשולש של הונגריה-אוסטריה-צ'כיה, הוקם _______ כדי לאפשר למשפחות מופרדות לאכול יחד מבלי לחצות את הגבולות הלאומיים.",
+    "truth_keyword": "שולחן תלת צדדי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21034,8 +21025,8 @@
   },
   {
     "content_id": "9859843117420758",
-    "fact_template": "During season 4 of Bulgarian Survivor, a contestant died from a heart attack during filming, but the production _______.",
-    "truth_keyword": "continued filming as scheduled",
+    "fact_template": "במהלך עונה 4 של הישרדות בולגרית, מתמודד מת מהתקף לב במהלך הצילומים, אבל ההפקה _______.",
+    "truth_keyword": "המשיך בצילומים כמתוכנן",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21043,8 +21034,8 @@
   },
   {
     "content_id": "9851842628220807",
-    "fact_template": "After losing their dog in Hurricane Sandy, the James family went to a shelter 18 months later to adopt a new dog, and the first one shown to them was _______.",
-    "truth_keyword": "their lost dog",
+    "fact_template": "לאחר שאיבדה את כלבם בהוריקן סנדי, משפחת ג'יימס הלכה למקלט 18 חודשים מאוחר יותר כדי לאמץ כלב חדש, והראשון שהוצג להם היה _______.",
+    "truth_keyword": "הכלב האבוד שלהם",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21052,8 +21043,8 @@
   },
   {
     "content_id": "9816402191764851",
-    "fact_template": "A Rafael self-portrait has been missing since 1945 after being stolen by Nazis. Poland has offered _______ to anyone who finds it.",
-    "truth_keyword": "a $100 million reward",
+    "fact_template": "דיוקן עצמי של רפאל נעדר מאז 1945 לאחר שנגנב על ידי נאצים. פולין הציעה _______ לכל מי שימצא אותו.",
+    "truth_keyword": "פרס של 100 מיליון דולר",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21070,8 +21061,8 @@
   },
   {
     "content_id": "9806244512780619",
-    "fact_template": "When Apollo 11 astronauts returned to Earth in 1969, they had to go through US customs and declare _______.",
-    "truth_keyword": "moon rocks and moon dust",
+    "fact_template": "כאשר האסטרונאוטים של אפולו 11 חזרו לכדור הארץ בשנת 1969, הם היו צריכים לעבור את המכס האמריקאי ולהכריז על _______.",
+    "truth_keyword": "סלעי ירח ואבק ירח",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21079,8 +21070,8 @@
   },
   {
     "content_id": "9809135169158220",
-    "fact_template": "For 35 years, Garfield toy phones washed ashore on French beaches from a shipping container in _______.",
-    "truth_keyword": "an underwater cave",
+    "fact_template": "במשך 35 שנים, טלפונים צעצועים של Garfield נסחפו אל החוף בחופי צרפת ממכולת משלוח ב-_______.",
+    "truth_keyword": "מערה מתחת למים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21088,8 +21079,8 @@
   },
   {
     "content_id": "9804226546315749",
-    "fact_template": "Mozart's 'The Magic Flute' contained a line where a character compared _______, which is now omitted from most productions.",
-    "truth_keyword": "Black people to black birds",
+    "fact_template": "'חליל הקסם' של מוצרט הכיל שורה שבה דמות השוותה את _______, שכעת הושמט ברוב ההפקות.",
+    "truth_keyword": "אנשים שחורים לציפורים שחורות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21097,8 +21088,8 @@
   },
   {
     "content_id": "9779261342145603",
-    "fact_template": "A Barcelona plaza was named after George Orwell, but the troubled area became the location of _______.",
-    "truth_keyword": "the city's first surveillance camera",
+    "fact_template": "כיכר ברצלונה נקראה על שמו של ג'ורג' אורוול, אבל האזור הבעייתי הפך למיקום של _______.",
+    "truth_keyword": "מצלמת המעקב הראשונה של העיר",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21106,8 +21097,8 @@
   },
   {
     "content_id": "9788723417866062",
-    "fact_template": "In a 2003 Lemelson-MIT index, Americans ranked _______ as the invention they most couldn't live without — ahead of cars, computers, and phones.",
-    "truth_keyword": "the toothbrush",
+    "fact_template": "במדד Lemelson-MIT לשנת 2003, אמריקאים דירגו את _______ כהמצאה שהם הכי לא יכלו לחיות בלעדיה - לפני מכוניות, מחשבים וטלפונים.",
+    "truth_keyword": "את מברשת השיניים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21115,8 +21106,8 @@
   },
   {
     "content_id": "9793227197415684",
-    "fact_template": "To test whether Earth is flat, Mike Hughes built _______ and launched himself into space.",
-    "truth_keyword": "a homemade rocket",
+    "fact_template": "כדי לבדוק אם כדור הארץ שטוח, מייק יוז בנה את _______ ושגר את עצמו לחלל.",
+    "truth_keyword": "רוקט תוצרת בית",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21124,8 +21115,8 @@
   },
   {
     "content_id": "9781783468560057",
-    "fact_template": "The cookies eaten by Cookie Monster on Sesame Street are actually _______ because real cookies would damage the puppet.",
-    "truth_keyword": "rice crackers",
+    "fact_template": "העוגיות שאוכלות עוגיות ברחוב סומסום הן למעשה _______ כי עוגיות אמיתיות יפגעו בבובה.",
+    "truth_keyword": "פריכיות אורז",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21133,8 +21124,8 @@
   },
   {
     "content_id": "9912456475492755",
-    "fact_template": "A koala doesn't drink water and gets all its hydration from _______.",
-    "truth_keyword": "eucalyptus leaves",
+    "fact_template": "קואלה לא שותה מים ומקבלת את כל הלחות שלה מ-_______.",
+    "truth_keyword": "עלי אקליפטוס",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21142,8 +21133,8 @@
   },
   {
     "content_id": "9771982852873452",
-    "fact_template": "The first episode of Black Mirror (2011) features a British Prime Minister forced to choose between _______ or having a kidnapped princess executed.",
-    "truth_keyword": "having sex with a pig on live TV",
+    "fact_template": "הפרק הראשון של Black Mirror (2011) מציג ראש ממשלת בריטניה שנאלץ לבחור בין _______ או הוצאה להורג של נסיכה חטופה.",
+    "truth_keyword": "לקיים יחסי מין עם חזיר בטלוויזיה בשידור חי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21151,8 +21142,8 @@
   },
   {
     "content_id": "9780026242069113",
-    "fact_template": "Singer Avihoo Medina didn't begin his music career until age 39, after working as _______.",
-    "truth_keyword": "a welder and diamond polisher",
+    "fact_template": "הזמר אביהו מדינה לא התחיל את הקריירה המוזיקלית שלו עד גיל 39, לאחר שעבד בתור _______.",
+    "truth_keyword": "רתך ומלטש יהלומים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21799,8 +21790,8 @@
   },
   {
     "content_id": "9461112140627193",
-    "fact_template": "Japanese artist Yasuhiro Suzuki created the artwork 'River Opening' after observing a ship in Tokyo Bay from an airplane window moving in a way that created the illusion of _______.",
-    "truth_keyword": "a winter coat being unzipped",
+    "fact_template": "האמן היפני יאסוהירו סוזוקי יצר את יצירת האמנות 'פתיחת הנהר' לאחר שצפה בספינה במפרץ טוקיו מחלון מטוס הנעה באופן שיצר את האשליה של _______.",
+    "truth_keyword": "מעיל חורף נפתח",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21808,8 +21799,8 @@
   },
   {
     "content_id": "9450418121696595",
-    "fact_template": "When Iceland's Eurovision 2021 representative Ólafur Arnalds was asked to cast the country's vote, he insisted the hosts sing 'Yaya Ding Dong' instead. After his request was denied multiple times, he agreed to give Iceland's vote to _______ instead.",
-    "truth_keyword": "Switzerland",
+    "fact_template": "כאשר נציג אירוויזיון 2021 של איסלנד, אולף ארנלדס, התבקש להצביע במדינה, הוא התעקש שהמארחים ישירו במקום זאת את 'יאיא דינג דונג'. לאחר שבקשתו נדחתה מספר פעמים, הוא הסכים לתת את ההצבעה של איסלנד ל-_______ במקום זאת.",
+    "truth_keyword": "שוויץ",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21817,8 +21808,8 @@
   },
   {
     "content_id": "9448564218548652",
-    "fact_template": "Two-time Oscar-winning composer Hans Zimmer played _______ on the music video for The Buggles' 'Video Killed the Radio Star.'",
-    "truth_keyword": "keyboards",
+    "fact_template": "המלחין שזכה פעמיים באוסקר, הנס צימר, שיחק את _______ בקליפ של \"הווידאו הרג את כוכב הרדיו\" של The Buggles.",
+    "truth_keyword": "מקלדות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21826,8 +21817,8 @@
   },
   {
     "content_id": "9448050621933345",
-    "fact_template": "Urumqi, China is the world's largest settlement farthest from any ocean, with residents living _______ from the nearest coast.",
-    "truth_keyword": "2,300 kilometers away",
+    "fact_template": "Urumqi, סין היא היישוב הגדול בעולם הרחוק מכל אוקיינוס, עם תושבים המתגוררים _______ מהחוף הקרוב ביותר.",
+    "truth_keyword": "2,300 קילומטרים משם",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21835,8 +21826,8 @@
   },
   {
     "content_id": "9437687789636295",
-    "fact_template": "In 2019, a US state's licensing department made a Tesla owner change their license plate XYECLA because the letter combination sounded like _______.",
-    "truth_keyword": "a Russian curse",
+    "fact_template": "בשנת 2019, מחלקת הרישוי של מדינת ארה\"ב גרמה לבעלים של טסלה לשנות את לוחית הרישוי שלו XYECLA מכיוון ששילוב האותיות נשמע כמו _______.",
+    "truth_keyword": "קללה רוסית",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21844,8 +21835,8 @@
   },
   {
     "content_id": "9435814956490245",
-    "fact_template": "The 'Disaster Girl' meme was sold as an NFT for _______, money which the girl used to fund her education and donate to charity.",
-    "truth_keyword": "180 ethereum (≈$500,000)",
+    "fact_template": "המם 'נערת אסון' נמכר כ-NFT עבור _______, כסף שהילדה השתמשה בו כדי לממן את השכלתה ולתרום לצדקה.",
+    "truth_keyword": "180 אתרים (≈$500,000)",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21853,8 +21844,8 @@
   },
   {
     "content_id": "9427882800616794",
-    "fact_template": "After 27 hours of failed rescue attempts involving over 100 rescuers, medical student John Edward Jones died while trapped in Utah's Nutty Putty Cave. Rather than recover his body, authorities _______.",
-    "truth_keyword": "sealed the cave with his body inside",
+    "fact_template": "לאחר 27 שעות של ניסיונות חילוץ כושלים שכללו למעלה מ-100 מחלצים, הסטודנט לרפואה ג'ון אדוארד ג'ונס מת כשהוא לכוד במערת האגוזים של יוטה. במקום לשחזר את גופתו, הרשויות _______.",
+    "truth_keyword": "אטם את המערה כשגופו בפנים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21862,8 +21853,8 @@
   },
   {
     "content_id": "9413797868691954",
-    "fact_template": "As a condition of accepting the position, Israel's third Chief of Staff Mordechai Makleff agreed with Ben-Gurion that he would serve _______ before becoming director of the electric company.",
-    "truth_keyword": "only one year",
+    "fact_template": "כתנאי לקבלת התפקיד, הרמטכ\"ל השלישי של ישראל, מרדכי מקלף, סיכם עם בן-גוריון כי ישרת את _______ בטרם יהפוך למנהל חברת החשמל.",
+    "truth_keyword": "שנה אחת בלבד",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21871,8 +21862,8 @@
   },
   {
     "content_id": "9434006390004435",
-    "fact_template": "When your device charges via USB but your computer won't recognize it, the cable is likely _______, designed to charge only without transferring data.",
-    "truth_keyword": "missing the data wires",
+    "fact_template": "כאשר המכשיר שלך נטען באמצעות USB אך המחשב שלך לא מזהה אותו, סביר להניח שהכבל הוא _______, שנועד לטעון רק מבלי להעביר נתונים.",
+    "truth_keyword": "חסרים חוטי הנתונים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21880,8 +21871,8 @@
   },
   {
     "content_id": "9440546926017048",
-    "fact_template": "Sodium got its name from the Arabic word for _______, since sodium carbonate was historically used in ancient medicine to treat them.",
-    "truth_keyword": "headache",
+    "fact_template": "נתרן קיבל את שמו מהמילה הערבית _______, שכן נתרן פחמתי שימש באופן היסטורי ברפואה העתיקה לטיפול בהם.",
+    "truth_keyword": "כְּאֵב רֹאשׁ",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21889,8 +21880,8 @@
   },
   {
     "content_id": "9440739289331145",
-    "fact_template": "Eight healthy people admitted to psychiatric hospitals after faking symptoms stopped the pretense and acted completely normally, yet were still _______ for an average of 19 days.",
-    "truth_keyword": "institutionalized with psychiatric diagnoses",
+    "fact_template": "שמונה אנשים בריאים שאושפזו בבתי חולים פסיכיאטריים לאחר שזיוף סימפטומים הפסיקו את העמדת הפנים והתנהגו כרגיל לחלוטין, אך עדיין היו _______ במשך 19 ימים בממוצע.",
+    "truth_keyword": "ממוסד עם אבחנות פסיכיאטריות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21898,8 +21889,8 @@
   },
   {
     "content_id": "9441018449303229",
-    "fact_template": "'Gangsta's Paradise,' the iconic 1990s hit, is actually a cover of _______ by Stevie Wonder from 1976.",
-    "truth_keyword": "'Pastime Paradise'",
+    "fact_template": "'Gangsta's Paradise', הלהיט האייקוני משנות התשעים, הוא למעשה קאבר ל-_______ של סטיבי וונדר מ-1976.",
+    "truth_keyword": "'גן עדן בילוי'",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21907,8 +21898,8 @@
   },
   {
     "content_id": "9381851971886544",
-    "fact_template": "The last widow of an American Civil War veteran died _______, approximately 155 years after the 1865 war ended.",
-    "truth_keyword": "in 2020",
+    "fact_template": "האלמנה האחרונה של יוצא מלחמת האזרחים האמריקאית מתה _______, כ-155 שנים לאחר סיום מלחמת 1865.",
+    "truth_keyword": "בשנת 2020",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21916,8 +21907,8 @@
   },
   {
     "content_id": "9438662416205499",
-    "fact_template": "The President of the Sanhedrin held an honorific title — _______ — which resulted from the Hebrew word 'Nasi' sounding like the Latin word for 'nose.'",
-    "truth_keyword": "Master of the Nose",
+    "fact_template": "נשיא הסנהדרין החזיק בתואר כבוד - _______ - שנבע מכך שהמילה העברית 'נאסי' נשמעה כמו המילה הלטינית ל'אף'.",
+    "truth_keyword": "אמן האף",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21925,8 +21916,8 @@
   },
   {
     "content_id": "9435316479873426",
-    "fact_template": "Atomic nuclei formed in the first second after the Big Bang, but atoms themselves didn't form until _______ later.",
-    "truth_keyword": "380,000 years",
+    "fact_template": "גרעיני אטום נוצרו בשנייה הראשונה לאחר המפץ הגדול, אבל האטומים עצמם לא נוצרו עד _______ מאוחר יותר.",
+    "truth_keyword": "380,000 שנים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -21934,8 +21925,8 @@
   },
   {
     "content_id": "9435092353229172",
-    "fact_template": "King Abdullah II of Jordan, a devoted Star Trek fan, made a cameo appearance in _______ as a Starfleet officer.",
-    "truth_keyword": "Star Trek: Voyager",
+    "fact_template": "המלך עבדאללה השני מירדן, מעריץ מושבע של מסע בין כוכבים, הופיע ב-_______ כקצין צי הכוכבים.",
+    "truth_keyword": "מסע בין כוכבים: וויאג'ר",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22285,8 +22276,8 @@
   },
   {
     "content_id": "9330339527037789",
-    "fact_template": "In Apple's calendar, October 1582 is missing _______.",
-    "truth_keyword": "10 days",
+    "fact_template": "בלוח השנה של אפל, אוקטובר 1582 חסר _______.",
+    "truth_keyword": "10 ימים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22294,8 +22285,8 @@
   },
   {
     "content_id": "9328774733860935",
-    "fact_template": "When a pack of 11 coyotes attacked Casper, a Great Pyrenees, the dog fought back and _______.",
-    "truth_keyword": "killed 8 of them",
+    "fact_template": "כאשר להקה של 11 זאבי ערבות תקפה את קספר, הפירנאים הגדולים, הכלב נלחם בחזרה ו-_______.",
+    "truth_keyword": "הרג 8 מהם",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22303,8 +22294,8 @@
   },
   {
     "content_id": "9303690763035999",
-    "fact_template": "Hitler took control of the German army by exploiting _______ of two senior generals.",
-    "truth_keyword": "sex scandals",
+    "fact_template": "היטלר השתלט על הצבא הגרמני על ידי ניצול _______ של שני גנרלים בכירים.",
+    "truth_keyword": "שערוריות מין",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22312,8 +22303,8 @@
   },
   {
     "content_id": "9275556159182793",
-    "fact_template": "The Bluetooth technology is named after _______ who ruled over 1,000 years ago.",
-    "truth_keyword": "a Viking king",
+    "fact_template": "טכנולוגיית ה-Bluetooth נקראת על שם _______ ששלט לפני למעלה מ-1,000 שנה.",
+    "truth_keyword": "מלך ויקינגי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22321,8 +22312,8 @@
   },
   {
     "content_id": "9296198600451882",
-    "fact_template": "Leonard Cohen performed for Israeli troops _______.",
-    "truth_keyword": "during the Yom Kippur War",
+    "fact_template": "לאונרד כהן הופיע עבור החיילים הישראלים _______.",
+    "truth_keyword": "במהלך מלחמת יום הכיפורים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22330,8 +22321,8 @@
   },
   {
     "content_id": "9287684697969939",
-    "fact_template": "During the Battle of Cable Street, anti-fascist protesters threw _______ from building windows at fascist marchers.",
-    "truth_keyword": "chamber pots",
+    "fact_template": "במהלך הקרב על רחוב הכבלים, מפגינים אנטי-פשיסטים השליכו את _______ מחלונות הבניין לעבר צועדים פשיסטים.",
+    "truth_keyword": "סירים קאמריים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22339,8 +22330,8 @@
   },
   {
     "content_id": "9278223275582748",
-    "fact_template": "In the 1930s, inventor Brooks Walker patented _______ to help vehicles park.",
-    "truth_keyword": "a fifth wheel",
+    "fact_template": "בשנות ה-30, הממציא ברוקס ווקר רשם פטנט על _______ כדי לעזור לכלי רכב לחנות.",
+    "truth_keyword": "גלגל חמישי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22348,8 +22339,8 @@
   },
   {
     "content_id": "9223534677718275",
-    "fact_template": "In the 1830s, tomato ketchup was sold as _______ for conditions like diarrhea and jaundice.",
-    "truth_keyword": "medicine",
+    "fact_template": "בשנות ה-30, קטשופ עגבניות נמכר כ-_______ עבור מצבים כמו שלשול וצהבת.",
+    "truth_keyword": "תרופה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22357,8 +22348,8 @@
   },
   {
     "content_id": "9279864825418593",
-    "fact_template": "Male kangaroos have their testicles positioned _______.",
-    "truth_keyword": "above their penis",
+    "fact_template": "לזכר קנגורו האשכים שלהם ממוקמים _______.",
+    "truth_keyword": "מעל הפין שלהם",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22366,8 +22357,8 @@
   },
   {
     "content_id": "9216623898409353",
-    "fact_template": "In Wuppertal, Germany, the train travels _______.",
-    "truth_keyword": "suspended upside-down",
+    "fact_template": "בוופרטל, גרמניה, הרכבת נוסעת _______.",
+    "truth_keyword": "מושעה הפוך",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22375,8 +22366,8 @@
   },
   {
     "content_id": "9270684043003338",
-    "fact_template": "Nero married a castrated boy named Sporus and _______ in their marriage.",
-    "truth_keyword": "took the female role",
+    "fact_template": "נירון התחתן עם ילד מסורס בשם Sporus ו-_______ בנישואיהם.",
+    "truth_keyword": "לקחה את התפקיד הנשי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22384,8 +22375,8 @@
   },
   {
     "content_id": "9246816358723440",
-    "fact_template": "Lululemon's founder deliberately packed the name with three L's because _______.",
-    "truth_keyword": "Japanese people struggle to pronounce L",
+    "fact_template": "המייסד של Lululemon ארז את השם בכוונה עם שלוש L's בגלל _______.",
+    "truth_keyword": "יפנים נאבקים לבטא את L",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22393,8 +22384,8 @@
   },
   {
     "content_id": "9216088791796197",
-    "fact_template": "In 1963, _______ was sent to space aboard a French rocket.",
-    "truth_keyword": "a cat named Felicette",
+    "fact_template": "בשנת 1963, _______ נשלח לחלל על סיפון רקטה צרפתית.",
+    "truth_keyword": "חתול בשם פליזט",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22402,8 +22393,8 @@
   },
   {
     "content_id": "9260929607312115",
-    "fact_template": "In 2006, roughly 700 _______ fought for Hezbollah against Israeli forces.",
-    "truth_keyword": "Somali fighters",
+    "fact_template": "בשנת 2006, כ-700 _______ לחמו עבור חיזבאללה נגד כוחות ישראליים.",
+    "truth_keyword": "לוחמים סומליים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22411,8 +22402,8 @@
   },
   {
     "content_id": "9252082574863485",
-    "fact_template": "A meta-analysis of 63 studies found _______ between intelligence and religiosity.",
-    "truth_keyword": "a clear negative correlation",
+    "fact_template": "מטה-אנליזה של 63 מחקרים מצאה _______ בין אינטליגנציה לדתיות.",
+    "truth_keyword": "מתאם שלילי ברור",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22420,8 +22411,8 @@
   },
   {
     "content_id": "9182634788474931",
-    "fact_template": "The first recording of 'Wild Horses' was by _______, not the Rolling Stones.",
-    "truth_keyword": "The Flying Burrito Brothers",
+    "fact_template": "ההקלטה הראשונה של 'Wild Horses' הייתה של _______, לא הרולינג סטונס.",
+    "truth_keyword": "האחים בוריטו המעופפים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22429,8 +22420,8 @@
   },
   {
     "content_id": "9247610381977371",
-    "fact_template": "When United donated $3,000 to a charity as amends for the broken guitar, the gesture fell apart because _______.",
-    "truth_keyword": "the board was run by United executives",
+    "fact_template": "כאשר יונייטד תרמה 3,000 דולר לארגון צדקה כתיקון הגיטרה השבורה, המחווה התפרקה בגלל _______.",
+    "truth_keyword": "הדירקטוריון נוהל על ידי בכירי יונייטד",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22438,8 +22429,8 @@
   },
   {
     "content_id": "9195142010557542",
-    "fact_template": "To help the blind identify currency, Western countries put _______ on bills.",
-    "truth_keyword": "Braille bumps on the edges",
+    "fact_template": "כדי לעזור לעיוורים לזהות מטבע, מדינות המערב שמו _______ על שטרות.",
+    "truth_keyword": "בליטות ברייל בקצוות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22447,8 +22438,8 @@
   },
   {
     "content_id": "9182643825140694",
-    "fact_template": "When rat tails get tangled and stuck together, it's called _______.",
-    "truth_keyword": "a rat king",
+    "fact_template": "כאשר זנבות חולדה מסתבכים ונתקעים זה לזה, זה נקרא _______.",
+    "truth_keyword": "מלך חולדות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -22456,8 +22447,8 @@
   },
   {
     "content_id": "9251200578285018",
-    "fact_template": "In chess, 'en passant' is a move that allows a pawn to _______ an opponent's two-square advance.",
-    "truth_keyword": "capture as if it moved one square",
+    "fact_template": "בשחמט, 'en passant' הוא מהלך המאפשר לפיון ל-_______ התקדמות של יריב בשני ריבועים.",
+    "truth_keyword": "לכיד כאילו הוא זז ריבוע אחד",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24013,8 +24004,8 @@
   },
   {
     "content_id": "8206516079420145",
-    "fact_template": "John Rabe, a _______, played a crucial role in establishing a protected zone in Nanking that saved approximately 300,000 Chinese civilians during the 1937 massacre.",
-    "truth_keyword": "Nazi party member",
+    "fact_template": "ג'ון ראב, _______, מילא תפקיד מכריע בהקמת אזור מוגן בננקינג שהציל כ-300,000 אזרחים סינים במהלך הטבח ב-1937.",
+    "truth_keyword": "חבר במפלגה הנאצית",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24022,8 +24013,8 @@
   },
   {
     "content_id": "8374520649286353",
-    "fact_template": "Cardboard became so valuable after COVID that bakeries began _______ recycling plants for supplies.",
-    "truth_keyword": "robbing",
+    "fact_template": "הקרטון הפך לבעל ערך כה רב לאחר נגיף הקורונה, עד שמאפיות החלו במפעלי מיחזור של _______ לאספקה.",
+    "truth_keyword": "שוד",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24031,8 +24022,8 @@
   },
   {
     "content_id": "8372769586128126",
-    "fact_template": "Two Israeli streets with different names were both named after the SS Erinpura disaster, but _______.",
-    "truth_keyword": "both names are wrong",
+    "fact_template": "שני רחובות ישראלים עם שמות שונים נקראו שניהם על שם אסון ה-SS Erinpura, אבל _______.",
+    "truth_keyword": "שני השמות שגויים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24040,8 +24031,8 @@
   },
   {
     "content_id": "8290982430973509",
-    "fact_template": "Brenda Ann Spencer's answer when asked why she shot up her school: _______",
-    "truth_keyword": "I don't like Mondays",
+    "fact_template": "תשובתה של ברנדה אן ספנסר כשנשאלה מדוע היא הקימה את בית הספר שלה: _______",
+    "truth_keyword": "אני לא אוהב ימי שני",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24049,8 +24040,8 @@
   },
   {
     "content_id": "8329380490467036",
-    "fact_template": "In Singapore, buying chewing gum requires _______.",
-    "truth_keyword": "a doctor's prescription",
+    "fact_template": "בסינגפור, קניית מסטיק דורשת _______.",
+    "truth_keyword": "מרשם רופא",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24058,8 +24049,8 @@
   },
   {
     "content_id": "8352091578195927",
-    "fact_template": "Historically, a Yom Kippur custom involved the synagogue cantor being _______ 39 times.",
-    "truth_keyword": "whipped",
+    "fact_template": "מבחינה היסטורית, מנהג יום כיפור כלל שחזן בית הכנסת היה _______ 39 פעמים.",
+    "truth_keyword": "מוּקצָף",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24067,8 +24058,8 @@
   },
   {
     "content_id": "8348673698537715",
-    "fact_template": "Mongolia is not the country with the most Mongols — _______ has twice as many.",
-    "truth_keyword": "China",
+    "fact_template": "מונגוליה היא לא המדינה עם הכי הרבה מונגולים - ל-_______ יש פי שניים יותר.",
+    "truth_keyword": "סִין",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24076,8 +24067,8 @@
   },
   {
     "content_id": "8129654730439614",
-    "fact_template": "Xinjiang officially operates on _______, which is 2 hours ahead of China's national timezone.",
-    "truth_keyword": "Ürümqi time",
+    "fact_template": "שינג'יאנג פועלת באופן רשמי ב-_______, שהוא שעתיים לפני אזור הזמן הלאומי של סין.",
+    "truth_keyword": "זמן Ürümqi",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24085,8 +24076,8 @@
   },
   {
     "content_id": "8098547310217023",
-    "fact_template": "Research showed that cancer cells grew faster when exposed to blood from _______.",
-    "truth_keyword": "mice that lost partners",
+    "fact_template": "מחקרים הראו שתאי סרטן גדלו מהר יותר כאשר נחשפו לדם מ-_______.",
+    "truth_keyword": "עכברים שאיבדו שותפים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24094,8 +24085,8 @@
   },
   {
     "content_id": "8341811695890582",
-    "fact_template": "Sunrises and sunsets on Mars are _______, the opposite of Earth's red skies.",
-    "truth_keyword": "blue",
+    "fact_template": "זריחות ושקיעות על מאדים הן _______, ההיפך מהשמיים האדומים של כדור הארץ.",
+    "truth_keyword": "כְּחוֹל",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24103,8 +24094,8 @@
   },
   {
     "content_id": "8328109180594167",
-    "fact_template": "A forest in Brandenburg, Germany was planted in 1938 in the shape of _______.",
-    "truth_keyword": "a Nazi swastika",
+    "fact_template": "יער בברנדנבורג, גרמניה ניטע בשנת 1938 בצורת _______.",
+    "truth_keyword": "צלב קרס נאצי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24112,8 +24103,8 @@
   },
   {
     "content_id": "8308742839197468",
-    "fact_template": "In Sweden, a McDonald's at a ski resort operates a _______.",
-    "truth_keyword": "ski thru",
+    "fact_template": "בשוודיה, מקדונלד'ס באתר סקי מפעיל _______.",
+    "truth_keyword": "סקי דרך",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24121,8 +24112,8 @@
   },
   {
     "content_id": "8322628767808875",
-    "fact_template": "During WWII, the Nazis tried to rename the Austrian city Judenburg to _______, but the change never took.",
-    "truth_keyword": "Adolfsburg",
+    "fact_template": "במהלך מלחמת העולם השנייה, הנאצים ניסו לשנות את שמה של העיר האוסטרית יודנבורג ל-_______, אך השינוי מעולם לא התרחש.",
+    "truth_keyword": "אדולפסבורג",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24130,8 +24121,8 @@
   },
   {
     "content_id": "8323097154428703",
-    "fact_template": "Medieval construction techniques being revived to build a 13th-century castle replica will later help rebuild _______.",
-    "truth_keyword": "Notre-Dame",
+    "fact_template": "טכניקות בנייה מימי הביניים המתחדשות לבניית העתק של טירה מהמאה ה-13 יסייעו מאוחר יותר בבנייה מחדש של _______.",
+    "truth_keyword": "נוטרדאם",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24139,8 +24130,8 @@
   },
   {
     "content_id": "8315459821859103",
-    "fact_template": "Koalas are so unintelligent they won't recognize eucalyptus as food unless _______.",
-    "truth_keyword": "it's on the tree",
+    "fact_template": "קואלה כל כך לא אינטליגנטית שהם לא יזהו אקליפטוס כמזון אלא אם כן _______.",
+    "truth_keyword": "זה על העץ",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24328,8 +24319,8 @@
   },
   {
     "content_id": "8188222854582801",
-    "fact_template": "In 2014, President Obama held a press conference on military action against ISIS while wearing _______, which sparked a major political controversy.",
-    "truth_keyword": "a tan suit",
+    "fact_template": "בשנת 2014, הנשיא אובמה קיים מסיבת עיתונאים על פעולה צבאית נגד דאעש כשהוא לובש _______, מה שעורר מחלוקת פוליטית גדולה.",
+    "truth_keyword": "חליפה שזופה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24337,8 +24328,8 @@
   },
   {
     "content_id": "8220670384671381",
-    "fact_template": "McDonald's 'Hamburger University' trains 5,000 students annually and operates 8 learning centers worldwide, including one in Shanghai with an acceptance rate of _______.",
-    "truth_keyword": "1% — lower than Harvard",
+    "fact_template": "אוניברסיטת 'המבורגר' של מקדונלדס מכשירה 5,000 סטודנטים מדי שנה ומפעילה 8 מרכזי למידה ברחבי העולם, כולל אחד בשנחאי עם שיעור קבלה של _______.",
+    "truth_keyword": "1% - נמוך מהארוורד",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24346,8 +24337,8 @@
   },
   {
     "content_id": "8221403951264691",
-    "fact_template": "The Hebrew idiom 'joking with his doctors' originated during the medical hospitalizations of _______ between 1977-1983.",
-    "truth_keyword": "Menachem Begin",
+    "fact_template": "הביטוי העברי 'בדיחות עם רופאיו' מקורו במהלך האשפוזים הרפואיים של _______ בין השנים 1977-1983.",
+    "truth_keyword": "מנחם בגין",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24355,8 +24346,8 @@
   },
   {
     "content_id": "8223397017732051",
-    "fact_template": "Italian sculptor Salvatore Garau sold _______ in 2021 for €15,000, complete with a certificate of authenticity and placement instructions.",
-    "truth_keyword": "an invisible sculpture",
+    "fact_template": "הפסל האיטלקי סלבטורה גאראו מכר את _______ בשנת 2021 תמורת 15,000 אירו, עם תעודת מקוריות והוראות מיקום.",
+    "truth_keyword": "פסל בלתי נראה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24364,8 +24355,8 @@
   },
   {
     "content_id": "8212552808816472",
-    "fact_template": "When the official Japanese surrender document was signed at the end of WWII, the Canadian representative _______, forcing the entire document to be rewritten.",
-    "truth_keyword": "signed in France's place by mistake",
+    "fact_template": "כאשר נחתם מסמך הכניעה היפני הרשמי בסוף מלחמת העולם השנייה, הנציג הקנדי _______, ואילץ את המסמך כולו להיכתב מחדש.",
+    "truth_keyword": "נחתם במקומה של צרפת בטעות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24373,8 +24364,8 @@
   },
   {
     "content_id": "8211196812285405",
-    "fact_template": "In Porters Lake, Canada, three streets are quite literally named _______.",
-    "truth_keyword": "This, That, and The Other",
+    "fact_template": "באגם פורטרס, קנדה, שלושה רחובות נקראים די מילולית בשם _______.",
+    "truth_keyword": "זה, זה והאחר",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24382,8 +24373,8 @@
   },
   {
     "content_id": "8210579232347163",
-    "fact_template": "Sweat itself is actually odorless; the smell comes from _______ on the body breaking it down for protein consumption.",
-    "truth_keyword": "bacteria",
+    "fact_template": "הזיעה עצמה היא למעשה חסרת ריח; הריח מגיע מ-_______ על הגוף מפרק אותו לצריכת חלבון.",
+    "truth_keyword": "בַּקטֶרִיָה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24391,7 +24382,7 @@
   },
   {
     "content_id": "8179918388746581",
-    "fact_template": "The first touchscreen operated by finger was invented in _______, nearly 60 years before the iPhone.",
+    "fact_template": "מסך המגע הראשון המופעל באמצעות אצבע הומצא ב-_______, כמעט 60 שנה לפני האייפון.",
     "truth_keyword": "1965",
     "metadata": {
       "difficulty": "Hard",
@@ -24400,8 +24391,8 @@
   },
   {
     "content_id": "8197842746954145",
-    "fact_template": "When Magellan's crew completed the first westward circumnavigation of Earth (1519-1522), they _______ without anyone initially understanding why.",
-    "truth_keyword": "lost an entire day",
+    "fact_template": "כאשר הצוות של מגלן השלים את ההקיף הראשון מערבה של כדור הארץ (1519-1522), הם _______ מבלי שאף אחד הבין מלכתחילה למה.",
+    "truth_keyword": "הפסיד יום שלם",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24409,8 +24400,8 @@
   },
   {
     "content_id": "8187129461358807",
-    "fact_template": "Between the 1940s and 1970s, Ivy League and Seven Sisters universities _______ of all first-year students, ostensibly for health screening.",
-    "truth_keyword": "took nude photographs from all angles",
+    "fact_template": "בין שנות ה-40 ל-1970, האוניברסיטאות Ivy League ושבע האחיות _______ מכל תלמידי השנה הראשונה, לכאורה לצורך בדיקת בריאות.",
+    "truth_keyword": "צילם תמונות עירום מכל הזוויות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24418,8 +24409,8 @@
   },
   {
     "content_id": "8186454924759594",
-    "fact_template": "Mount Mitat was named because the gematria value of the word 'mitat' _______ its height in meters (840).",
-    "truth_keyword": "exactly matches",
+    "fact_template": "הר מיתת נקרא בגלל הגימטריה של המילה 'מיתת' _______ גובהו במטרים (840).",
+    "truth_keyword": "תואם בדיוק",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24427,8 +24418,8 @@
   },
   {
     "content_id": "8169846426420444",
-    "fact_template": "The method of deciding football matches through penalty kicks was introduced by _______.",
-    "truth_keyword": "Israelis",
+    "fact_template": "שיטת ההכרעה במשחקי כדורגל באמצעות בעיטות עונשין הוצגה על ידי _______.",
+    "truth_keyword": "ישראלים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24436,8 +24427,8 @@
   },
   {
     "content_id": "8176881385716948",
-    "fact_template": "Shakira's 'Waka Waka' uses the same chorus as _______, a 1986 Cameroonian song released 24 years earlier.",
-    "truth_keyword": "'Zamina Mina Zangalewa'",
+    "fact_template": "'Waka Waka' של שאקירה משתמש באותו פזמון כמו _______, שיר קמרוני משנת 1986 שיצא 24 שנים קודם לכן.",
+    "truth_keyword": "'זמינה מינה זנגלווה'",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24445,8 +24436,8 @@
   },
   {
     "content_id": "8170029306402156",
-    "fact_template": "The French village name 'La Mort aux Juifs' ('Death to the Jews') actually derives from _______, which was corrupted over centuries through linguistic drift.",
-    "truth_keyword": "'La Mare au Juin' (meaning 'marsh in June')",
+    "fact_template": "שם הכפר הצרפתי 'La Mort aux Juifs' ('מוות ליהודים') נובע למעשה מ-_______, שהושחת במשך מאות שנים באמצעות סחף לשוני.",
+    "truth_keyword": "'La Mare au Juin' (כלומר 'ביצה ביוני')",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24454,8 +24445,8 @@
   },
   {
     "content_id": "8169112896493797",
-    "fact_template": "The 1928 Mickey Mouse short 'Steamboat Willie' features Mickey _______ multiple animals in ways that would be considered unthinkable today.",
-    "truth_keyword": "abusing and torturing",
+    "fact_template": "הקצר 'Steamboat Willie' של מיקי מאוס משנת 1928 כולל חיות מרובות של מיקי _______ בדרכים שנחשבות בלתי מתקבלות על הדעת כיום.",
+    "truth_keyword": "התעללות ועינויים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24463,8 +24454,8 @@
   },
   {
     "content_id": "8167664083305345",
-    "fact_template": "Pilots at the US Navy Top Gun fighter school face _______ for quoting the movie of the same name during training.",
-    "truth_keyword": "a $5 fine",
+    "fact_template": "טייסים בבית הספר לקרב טופ גאן של הצי האמריקאי מתמודדים עם _______ על ציטוט הסרט באותו שם במהלך האימונים.",
+    "truth_keyword": "קנס של 5 דולר",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24472,8 +24463,8 @@
   },
   {
     "content_id": "8159480214123732",
-    "fact_template": "William Shakespeare's life between 1585-1592 (ages 21-27) _______, remaining one of history's great literary mysteries.",
-    "truth_keyword": "is almost completely undocumented",
+    "fact_template": "חייו של ויליאם שייקספיר בין השנים 1585-1592 (גילאי 21-27) _______, שנותרו באחת התעלומות הספרותיות הגדולות של ההיסטוריה.",
+    "truth_keyword": "כמעט לחלוטין לא מתועד",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24481,8 +24472,8 @@
   },
   {
     "content_id": "8125081617563592",
-    "fact_template": "The luxury watch brand Rolex is actually _______, with its founder transferring ownership to a foundation in 1960.",
-    "truth_keyword": "a non-profit organization",
+    "fact_template": "מותג שעוני היוקרה רולקס הוא למעשה _______, כאשר מייסדו העביר בעלות לקרן ב-1960.",
+    "truth_keyword": "ארגון ללא מטרות רווח",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24490,8 +24481,8 @@
   },
   {
     "content_id": "8136167649788322",
-    "fact_template": "Janet Jackson's 'Rhythm Nation' can cause _______ to malfunction because the song contains a frequency that matches the resonant frequency of 5,400 RPM hard drives.",
-    "truth_keyword": "laptop hard drives to crash",
+    "fact_template": "ה-'Rhythm Nation' של ג'נט ג'קסון יכול לגרום ל-_______ לתקלות מכיוון שהשיר מכיל תדר התואם לתדר התהודה של כוננים קשיחים של 5,400 RPM.",
+    "truth_keyword": "כוננים קשיחים של מחשב נייד לקרוס",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -24499,8 +24490,8 @@
   },
   {
     "content_id": "8145697075502046",
-    "fact_template": "The 1987 Goiânia nuclear accident in Brazil occurred when _______ was stolen from an abandoned hospital and shared among residents as a glowing novelty for over two weeks.",
-    "truth_keyword": "radioactive cesium chloride",
+    "fact_template": "התאונה הגרעינית של Goiânia ב-1987 בברזיל התרחשה כאשר _______ נגנב מבית חולים נטוש ושותפה בין התושבים כחידוש זוהר במשך למעלה משבועיים.",
+    "truth_keyword": "צסיום כלוריד רדיואקטיבי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25021,8 +25012,8 @@
   },
   {
     "content_id": "7978537558884666",
-    "fact_template": "The name 'Luna Park' used worldwide originated from _______ at Coney Island.",
-    "truth_keyword": "a moon-themed ride",
+    "fact_template": "השם \"לונה פארק\" בשימוש ברחבי העולם מקורו ב-_______ בקוני איילנד.",
+    "truth_keyword": "רכיבה בנושא ירח",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25030,8 +25021,8 @@
   },
   {
     "content_id": "7978896145515474",
-    "fact_template": "Heavy rains damaged the _______ to a life-size Noah's Ark replica in Kentucky, prompting a lawsuit — though the ark itself remained intact.",
-    "truth_keyword": "access roads",
+    "fact_template": "גשמים עזים פגעו ב-_______ להעתק של תיבת נוח בגודל טבעי בקנטקי, מה שגרם להגשת תביעה - אם כי התיבה עצמה נותרה ללא פגע.",
+    "truth_keyword": "דרכי גישה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25039,8 +25030,8 @@
   },
   {
     "content_id": "7978634785541610",
-    "fact_template": "Sergei Korolev, the chief Soviet engineer who built the first satellite and sent the first human to space, was imprisoned on _______.",
-    "truth_keyword": "false charges of Trotskyism",
+    "fact_template": "סרגיי קורולב, המהנדס הסובייטי הראשי שבנה את הלוויין הראשון ושלח את האדם הראשון לחלל, נכלא ב-_______.",
+    "truth_keyword": "האשמות שווא של טרוצקיזם",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25048,8 +25039,8 @@
   },
   {
     "content_id": "7974951672576588",
-    "fact_template": "An elite concierge organization called 'Les Clefs d'Or' uses the same crossed-keys symbol as _______ in religious iconography.",
-    "truth_keyword": "the Catholic Church",
+    "fact_template": "ארגון קונסיירז' מובחר בשם 'Les Clefs d'Or' משתמש באותו סמל של מפתחות מוצלבים כמו _______ באיקונוגרפיה דתית.",
+    "truth_keyword": "הכנסייה הקתולית",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25057,8 +25048,8 @@
   },
   {
     "content_id": "7963880637017025",
-    "fact_template": "A technician's failure to reinstall a _______ caused an aircraft to crash, killing three crew members.",
-    "truth_keyword": "cotter pin",
+    "fact_template": "כישלון של טכנאי בהתקנה מחדש של _______ גרם למטוס להתרסקות, והרג שלושה אנשי צוות.",
+    "truth_keyword": "סיכת חוצה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25066,8 +25057,8 @@
   },
   {
     "content_id": "7972807486124340",
-    "fact_template": "Ming, the world's oldest known animal at 507 years old, was killed when researchers _______ to determine its age.",
-    "truth_keyword": "opened its shell",
+    "fact_template": "מינג, החיה העתיקה ביותר הידועה בעולם בגיל 507, נהרגה כאשר החוקרים _______ כדי לקבוע את גילה.",
+    "truth_keyword": "פתח את המעטפת שלו",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25075,8 +25066,8 @@
   },
   {
     "content_id": "7966334943438261",
-    "fact_template": "Saturn's beautiful rings are slowly disappearing through a process called _______ and will completely disperse within 100 million years.",
-    "truth_keyword": "ring rain",
+    "fact_template": "הטבעות היפות של שבתאי נעלמות אט אט בתהליך שנקרא _______ ויתפזרו לחלוטין תוך 100 מיליון שנה.",
+    "truth_keyword": "גשם זלעפות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25084,8 +25075,8 @@
   },
   {
     "content_id": "7965222023549553",
-    "fact_template": "Budapest is actually a union of three cities: Buda, Pest, and _______.",
-    "truth_keyword": "Óbuda",
+    "fact_template": "בודפשט היא למעשה איחוד של שלוש ערים: בודה, פשט ו-_______.",
+    "truth_keyword": "אובודה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25093,8 +25084,8 @@
   },
   {
     "content_id": "7954692224602533",
-    "fact_template": "ORT, a major Israeli school network, is actually an acronym for _______.",
-    "truth_keyword": "Russian words",
+    "fact_template": "אורט, רשת בתי ספר ישראלית מרכזית, היא למעשה ראשי תיבות של _______.",
+    "truth_keyword": "מילים ברוסית",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25102,8 +25093,8 @@
   },
   {
     "content_id": "7950509685020787",
-    "fact_template": "The U.S. Army's hummus recipe includes standardized _______ for every ingredient and piece of equipment.",
-    "truth_keyword": "quality specifications",
+    "fact_template": "מתכון החומוס של צבא ארה\"ב כולל _______ סטנדרטי עבור כל מרכיב וציוד.",
+    "truth_keyword": "מפרט איכות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25111,8 +25102,8 @@
   },
   {
     "content_id": "7948477421890680",
-    "fact_template": "After being shot during a campaign speech, Theodore Roosevelt _______ before seeking medical care.",
-    "truth_keyword": "spoke for 84 minutes more",
+    "fact_template": "לאחר שנורה במהלך נאום בקמפיין, תיאודור רוזוולט _______ לפני שפנה לטיפול רפואי.",
+    "truth_keyword": "דיבר עוד 84 דקות",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25120,8 +25111,8 @@
   },
   {
     "content_id": "7873714886033601",
-    "fact_template": "In Ireland, there's an amusement park dedicated to a _______.",
-    "truth_keyword": "crisp brand",
+    "fact_template": "באירלנד, יש פארק שעשועים המוקדש ל-_______.",
+    "truth_keyword": "מותג פריך",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25129,8 +25120,8 @@
   },
   {
     "content_id": "7823655281039562",
-    "fact_template": "In English, the letter W is called 'double-u' despite being composed of _______.",
-    "truth_keyword": "two V's",
+    "fact_template": "באנגלית, האות W נקראת 'double-u' למרות שהיא מורכבת מ-_______.",
+    "truth_keyword": "שני V",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25138,8 +25129,8 @@
   },
   {
     "content_id": "7918805548191201",
-    "fact_template": "The meter was originally defined based on _______.",
-    "truth_keyword": "Earth's circumference",
+    "fact_template": "המונה הוגדר במקור על סמך _______.",
+    "truth_keyword": "היקף כדור הארץ",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25147,8 +25138,8 @@
   },
   {
     "content_id": "8337166393021779",
-    "fact_template": "A Dutch bicycle company reduced shipping damage by over 80% by designing boxes that look like _______.",
-    "truth_keyword": "TV boxes",
+    "fact_template": "חברת אופניים הולנדית צמצמה את נזקי המשלוח בלמעלה מ-80% על ידי עיצוב קופסאות שנראות כמו _______.",
+    "truth_keyword": "קופסאות טלוויזיה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25156,8 +25147,8 @@
   },
   {
     "content_id": "8025149204223501",
-    "fact_template": "After fighting in multiple wars, a T-55 tank was installed as _______ in Venice.",
-    "truth_keyword": "part of an art sculpture",
+    "fact_template": "לאחר לחימה במספר מלחמות, הותקן טנק T-55 בשם _______ בוונציה.",
+    "truth_keyword": "חלק מפסל אמנותי",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25165,8 +25156,8 @@
   },
   {
     "content_id": "8011319128939842",
-    "fact_template": "A real shark with _______ called the tasselled wobbegong lives in Australian coral reefs.",
-    "truth_keyword": "long tassels and an elongated snout",
+    "fact_template": "כריש אמיתי עם _______ בשם Wobbegong עם ציצית חי בשוניות אלמוגים אוסטרליות.",
+    "truth_keyword": "גדילים ארוכים וחוטם מוארך",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25174,8 +25165,8 @@
   },
   {
     "content_id": "7933894850015604",
-    "fact_template": "Jack Daniel's whiskey is produced in a _______ where alcohol sales are illegal.",
-    "truth_keyword": "dry county",
+    "fact_template": "הוויסקי של ג'ק דניאל מיוצר ב-_______ שבו מכירת אלכוהול אינה חוקית.",
+    "truth_keyword": "מחוז יבש",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25633,8 +25624,8 @@
   },
   {
     "content_id": "9454768594594881",
-    "fact_template": "The Israeli National Insurance Institute has _______, just like airlines",
-    "truth_keyword": "first-class service",
+    "fact_template": "למוסד לביטוח לאומי יש _______, ממש כמו חברות תעופה",
+    "truth_keyword": "שירות מהשורה הראשונה",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25642,8 +25633,8 @@
   },
   {
     "content_id": "8549088058496277",
-    "fact_template": "Wikipedia has an article documenting _______ made using water's chemical name",
-    "truth_keyword": "pranks and puns",
+    "fact_template": "בוויקיפדיה יש מאמר המתעד את _______ שנעשה באמצעות השם הכימי של המים",
+    "truth_keyword": "מתיחות ומשחקי מילים",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25651,8 +25642,8 @@
   },
   {
     "content_id": "8394448750626876",
-    "fact_template": "'Chimdan,' the Hebrew word for suitcase, comes from _______",
-    "truth_keyword": "Russian or Persian",
+    "fact_template": "'חימדאן', המילה העברית למזוודה, באה מ-_______",
+    "truth_keyword": "רוסית או פרסית",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25660,8 +25651,8 @@
   },
   {
     "content_id": "8357280511010367",
-    "fact_template": "Some Jews in Japan observe Shabbat on _______ due to International Date Line disputes",
-    "truth_keyword": "Sunday",
+    "fact_template": "חלק מהיהודים ביפן שומרים שבת ב-_______ עקב מחלוקות על קו התאריך הבינלאומי",
+    "truth_keyword": "יוֹם רִאשׁוֹן",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -25669,8 +25660,8 @@
   },
   {
     "content_id": "8389630731108678",
-    "fact_template": "Despite its name deriving from the Greek word for bear, Antarctica has no _______",
-    "truth_keyword": "polar bears",
+    "fact_template": "למרות שמו הנובע מהמילה היוונית לדוב, לאנטרקטיקה אין _______",
+    "truth_keyword": "דובי קוטב",
     "metadata": {
       "difficulty": "Hard",
       "category": "ידע כללי"
@@ -26614,8 +26605,8 @@
   },
   {
     "content_id": "cogu0v",
-    "fact_template": "Florida Man reports gun stolen during _______ at his house",
-    "truth_keyword": "orgy",
+    "fact_template": "איש פלורידה מדווח על אקדח שנגנב במהלך _______ בביתו",
+    "truth_keyword": "אוֹרְגִיָה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -26623,8 +26614,8 @@
   },
   {
     "content_id": "5c6c8s",
-    "fact_template": "Twenty-year-old _______ arrested three times for attempting to board plane with loaded gun, shot five times, caught with cocaine and counterfeit money in army vehicle",
-    "truth_keyword": "cop",
+    "fact_template": "_______ בת העשרים נעצרה שלוש פעמים בגין ניסיון לעלות למטוס עם אקדח טעון, ירה חמש פעמים, נתפסה עם קוקאין וכסף מזויף ברכב צבאי",
+    "truth_keyword": "שׁוֹטֵר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -26632,7 +26623,7 @@
   },
   {
     "content_id": "e7xo2c",
-    "fact_template": "Florida Man eats _______ banana taped to wall at art exhibition",
+    "fact_template": "איש פלורידה אוכל בננה _______ מודבקת על הקיר בתערוכת אמנות",
     "truth_keyword": "$120,000",
     "metadata": {
       "difficulty": "Hard",
@@ -26641,8 +26632,8 @@
   },
   {
     "content_id": "dp5k09",
-    "fact_template": "Florida Man vomits on Trump supporter in bar, claiming to show support for _______",
-    "truth_keyword": "law enforcement",
+    "fact_template": "איש פלורידה מקיא על תומך טראמפ בבר, בטענה שהוא מראה תמיכה ב-_______",
+    "truth_keyword": "אכיפת החוק",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -26650,8 +26641,8 @@
   },
   {
     "content_id": "fn6r32",
-    "fact_template": "County commissioner Florida Man suggests blowing _______ up nose as coronavirus cure",
-    "truth_keyword": "hair dryer",
+    "fact_template": "נציב המחוז פלורידה מן מציע לפוצץ את _______ באף כתרופה לקורונה",
+    "truth_keyword": "מייבש שיער",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27244,8 +27235,8 @@
   },
   {
     "content_id": "ey01fn",
-    "fact_template": "A Florida man escapes from police so quickly that his clothes fall off. Police identify him using DNA from _______.",
-    "truth_keyword": "his sock",
+    "fact_template": "גבר מפלורידה נמלט מהמשטרה כל כך מהר שבגדיו נופלים. המשטרה מזהה אותו באמצעות DNA מ-_______.",
+    "truth_keyword": "הגרב שלו",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27253,8 +27244,8 @@
   },
   {
     "content_id": "fyfka6",
-    "fact_template": "A Florida woman distributes 400 flyers and _______ in strangers' mailboxes.",
-    "truth_keyword": "porn-filled Easter eggs",
+    "fact_template": "אישה מפלורידה מפיצה 400 פליירים ו-_______ בתיבות דואר של זרים.",
+    "truth_keyword": "ביצי פסחא מלאות בפורנו",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27262,8 +27253,8 @@
   },
   {
     "content_id": "eqdkuw",
-    "fact_template": "A US representative from Florida is accused of creating _______ with staff members.",
-    "truth_keyword": "sex games with points",
+    "fact_template": "נציג אמריקאי מפלורידה מואשם ביצירת _______ עם אנשי צוות.",
+    "truth_keyword": "משחקי מין עם נקודות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27271,8 +27262,8 @@
   },
   {
     "content_id": "9ba2y0",
-    "fact_template": "A Republican gubernatorial candidate asserts that voters \"_______\" when considering Black Democratic candidates.",
-    "truth_keyword": "don't need to ape this",
+    "fact_template": "מועמד רפובליקני למושל טוען כי הבוחרים \"_______\" כאשר בוחנים מועמדים דמוקרטים שחורים.",
+    "truth_keyword": "לא צריך לקוף את זה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27280,8 +27271,8 @@
   },
   {
     "content_id": "gz04mp",
-    "fact_template": "A Florida man strips naked at a flea market, steals a car, breaks into a house, rips out a mailbox, _______, and is arrested.",
-    "truth_keyword": "kisses an old woman",
+    "fact_template": "איש פלורידה מתפשט בשוק פשפשים, גונב מכונית, פורץ לבית, תולש תיבת דואר, _______, ונעצר.",
+    "truth_keyword": "מנשק אישה זקנה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27289,8 +27280,8 @@
   },
   {
     "content_id": "auejmh",
-    "fact_template": "A police officer from Florida was suspended after _______ during an interrogation in his patrol car.",
-    "truth_keyword": "playing Barry White",
+    "fact_template": "שוטר מפלורידה הושעה לאחר _______ במהלך חקירה בניידת הסיור שלו.",
+    "truth_keyword": "משחק בארי ווייט",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27298,8 +27289,8 @@
   },
   {
     "content_id": "c21jc9",
-    "fact_template": "A Florida man sues his city over people repeatedly _______ on the beach near his property.",
-    "truth_keyword": "get high and fuck",
+    "fact_template": "אדם מפלורידה תובע את עירו על אנשים _______ שוב ושוב על החוף ליד הנכס שלו.",
+    "truth_keyword": "להתנשא ולזיין",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27307,8 +27298,8 @@
   },
   {
     "content_id": "hxi3k5",
-    "fact_template": "A televangelist from Florida urges Trump to use _______ against protesters in Portland to stop a purported 'Communist revolution'.",
-    "truth_keyword": "hollow point bullets",
+    "fact_template": "עיתונאי מפלורידה קורא לטראמפ להשתמש ב-_______ נגד מפגינים בפורטלנד כדי לעצור \"מהפכה קומוניסטית\" לכאורה.",
+    "truth_keyword": "כדורי נקודה חלולה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27316,8 +27307,8 @@
   },
   {
     "content_id": "azdn1f",
-    "fact_template": "A Florida man loses his job after posting _______ on Instagram during patient surgeries.",
-    "truth_keyword": "pictures of patients' genitals",
+    "fact_template": "גבר מפלורידה מאבד את עבודתו לאחר שפרסם את _______ באינסטגרם במהלך ניתוחי מטופל.",
+    "truth_keyword": "תמונות של איברי המין של החולים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27451,8 +27442,8 @@
   },
   {
     "content_id": "5265dm",
-    "fact_template": "A Florida man rescues a drowning _______ black bear",
-    "truth_keyword": "400-kilogram",
+    "fact_template": "גבר מפלורידה מציל דוב שחור טובע _______",
+    "truth_keyword": "400 קילוגרם",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27460,8 +27451,8 @@
   },
   {
     "content_id": "8padxi",
-    "fact_template": "A Florida man gets food poisoning from spoiled oysters, becomes paralyzed, and wins _______ in a lawsuit",
-    "truth_keyword": "6.7 million dollars",
+    "fact_template": "גבר מפלורידה מקבל הרעלת מזון מצדפות מקוללות, הופך למשותק וזוכה ב-_______ בתביעה",
+    "truth_keyword": "6.7 מיליון דולר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27469,8 +27460,8 @@
   },
   {
     "content_id": "l1wm0h",
-    "fact_template": "A Florida man arrested for breaking into the US Capitol says he was only there to _______",
-    "truth_keyword": "use the restroom",
+    "fact_template": "גבר בפלורידה שנעצר בגלל פרוץ לקפיטול האמריקאי אומר שהוא היה שם רק ל-_______",
+    "truth_keyword": "להשתמש בשירותים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27478,8 +27469,8 @@
   },
   {
     "content_id": "alql54",
-    "fact_template": "A Florida man builds _______",
-    "truth_keyword": "a machine gun",
+    "fact_template": "איש פלורידה בונה את _______",
+    "truth_keyword": "מקלע",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27487,8 +27478,8 @@
   },
   {
     "content_id": "d91e16",
-    "fact_template": "A Florida man arrested after bringing a knife to a _______",
-    "truth_keyword": "shovel fight",
+    "fact_template": "גבר מפלורידה נעצר לאחר שהביא סכין ל-_______",
+    "truth_keyword": "קרב חפירות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27496,8 +27487,8 @@
   },
   {
     "content_id": "82689b",
-    "fact_template": "A Florida state senator claims only _______ will stop mass shootings",
-    "truth_keyword": "thoughts and prayers",
+    "fact_template": "סנטור ממדינת פלורידה טוען שרק _______ יעצור ירי המוני",
+    "truth_keyword": "מחשבות ותפילות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27505,8 +27496,8 @@
   },
   {
     "content_id": "j65tnj",
-    "fact_template": "A Florida man who claimed _______ may be rehired as school principal",
-    "truth_keyword": "Holocaust denial",
+    "fact_template": "אדם מפלורידה שטען כי _______ עשוי להיות מועסק מחדש כמנהל בית ספר",
+    "truth_keyword": "הכחשת שואה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27514,8 +27505,8 @@
   },
   {
     "content_id": "elfp9x",
-    "fact_template": "A woman in Florida was arrested for threatening to get _______ 'by any means necessary'",
-    "truth_keyword": "McDonald's sauce",
+    "fact_template": "אישה בפלורידה נעצרה על איומים לקבל את _______ \"בכל אמצעי הכרחי\"",
+    "truth_keyword": "רוטב מקדונלדס",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27784,8 +27775,8 @@
   },
   {
     "content_id": "fr7s6w",
-    "fact_template": "A Florida man escorts a _______ and 12 babies back safely to a lake.",
-    "truth_keyword": "duck",
+    "fact_template": "גבר מפלורידה מלווה _______ ו-12 תינוקות בחזרה בשלום לאגם.",
+    "truth_keyword": "לְהִתְכּוֹפֵף",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27793,8 +27784,8 @@
   },
   {
     "content_id": "cnffjd",
-    "fact_template": "A Florida man pulls a _______ on a delivery crew after furniture arrives late.",
-    "truth_keyword": "gun",
+    "fact_template": "גבר מפלורידה מושך _______ על צוות משלוחים לאחר שהרהיטים הגיעו באיחור.",
+    "truth_keyword": "אֶקְדָח",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27802,8 +27793,8 @@
   },
   {
     "content_id": "c0jqvh",
-    "fact_template": "A Florida woman robs a mail truck with _______, flees on a tricycle, and claims to be God.",
-    "truth_keyword": "a fake gun",
+    "fact_template": "אישה מפלורידה שודדת משאית דואר עם _______, בורחת על תלת אופן וטוענת שהיא אלוהים.",
+    "truth_keyword": "אקדח מזויף",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27811,8 +27802,8 @@
   },
   {
     "content_id": "jmom2g",
-    "fact_template": "A Florida man with PTSD anonymously hangs signs throughout the city that say _______.",
-    "truth_keyword": "Happiness",
+    "fact_template": "איש פלורידה עם PTSD תולה בעילום שם שלטים ברחבי העיר שאומרים _______.",
+    "truth_keyword": "שִׂמְחָה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27820,7 +27811,7 @@
   },
   {
     "content_id": "b2ikci",
-    "fact_template": "A Florida woman tracks down _______ half-siblings from sperm donation, hoping the US will establish regulations.",
+    "fact_template": "אישה מפלורידה מתחקה אחר אחים למחצה של _______ מתרומת זרע, בתקווה שארה\"ב תקבע תקנות.",
     "truth_keyword": "52",
     "metadata": {
       "difficulty": "Hard",
@@ -27829,8 +27820,8 @@
   },
   {
     "content_id": "a8k5ne",
-    "fact_template": "A Florida man finds the largest _______.",
-    "truth_keyword": "prime number",
+    "fact_template": "איש פלורידה מוצא את ה-_______ הגדול ביותר.",
+    "truth_keyword": "מספר ראשוני",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27838,8 +27829,8 @@
   },
   {
     "content_id": "c57a9r",
-    "fact_template": "A Florida woman sets up a security camera to deal with a _______ that harasses her nightly.",
-    "truth_keyword": "coyote",
+    "fact_template": "אישה מפלורידה מקימה מצלמת אבטחה כדי להתמודד עם _______ שמציק לה מדי לילה.",
+    "truth_keyword": "זְאֵב עֲרָבוֹת",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27847,8 +27838,8 @@
   },
   {
     "content_id": "hkm0nr",
-    "fact_template": "A Florida lawyer known for dressing as _______ brings his message to Jacksonville Beach.",
-    "truth_keyword": "Grim Reaper",
+    "fact_template": "עורך דין מפלורידה הידוע בהתלבשות כ-_______ מביא את המסר שלו לג'קסונוויל ביץ'.",
+    "truth_keyword": "גרים ריפר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27856,8 +27847,8 @@
   },
   {
     "content_id": "1muldpp",
-    "fact_template": "A Florida man fatally stabs a friend in an argument about Trump and _______.",
-    "truth_keyword": "standing back",
+    "fact_template": "גבר מפלורידה דוקר אנושות חבר בוויכוח על טראמפ ו-_______.",
+    "truth_keyword": "עומד מאחור",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27865,8 +27856,8 @@
   },
   {
     "content_id": "h7mopy",
-    "fact_template": "A 69-year-old Florida woman yells at passing vehicles, pulls down her pants, and _______ on a bench.",
-    "truth_keyword": "pees",
+    "fact_template": "אישה בת 69 מפלורידה צועקת על כלי רכב חולפים, מורידה את מכנסיה ו-_______ על ספסל.",
+    "truth_keyword": "משתין",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27964,8 +27955,8 @@
   },
   {
     "content_id": "cnpwxi",
-    "fact_template": "Florida Man asks Walmart clerk for _______",
-    "truth_keyword": "a deadly weapon",
+    "fact_template": "Florida Man מבקש מפקיד Walmart _______",
+    "truth_keyword": "נשק קטלני",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27973,8 +27964,8 @@
   },
   {
     "content_id": "jxryf9",
-    "fact_template": "_______ Rick Scott tested positive for COVID-19",
-    "truth_keyword": "Florida Man",
+    "fact_template": "_______ ריק סקוט נבדק חיובי ל-COVID-19",
+    "truth_keyword": "איש פלורידה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27982,8 +27973,8 @@
   },
   {
     "content_id": "ae6bld",
-    "fact_template": "Florida Man fought to save _______",
-    "truth_keyword": "Kelly's daughter",
+    "fact_template": "איש פלורידה נלחם כדי להציל את _______",
+    "truth_keyword": "הבת של קלי",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27991,8 +27982,8 @@
   },
   {
     "content_id": "dmgran",
-    "fact_template": "Florida Man arrested for sexual relations with a stuffed toy, threw money at Target customers, then performed _______ with an exploded unicorn",
-    "truth_keyword": "sex",
+    "fact_template": "איש פלורידה נעצר בגין יחסי מין עם צעצוע מפוחלץ, זרק כסף על לקוחות טארגט, ואז ביצע _______ עם חד קרן מפוצץ",
+    "truth_keyword": "מִין",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28000,8 +27991,8 @@
   },
   {
     "content_id": "drz31h",
-    "fact_template": "Florida woman's crime record contains many _______, but police claim they are all illegal",
-    "truth_keyword": "mysteries",
+    "fact_template": "רישום הפשע של אישה בפלורידה מכיל _______ רבות, אך המשטרה טוענת שכולם לא חוקיים",
+    "truth_keyword": "תעלומות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28009,8 +28000,8 @@
   },
   {
     "content_id": "bro5tv",
-    "fact_template": "Florida Man doesn't stop for police because he's receiving _______ from a woman in the passenger seat",
-    "truth_keyword": "sex",
+    "fact_template": "איש פלורידה לא עוצר למשטרה כי הוא מקבל _______ מאישה במושב הנוסע",
+    "truth_keyword": "מִין",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28900,8 +28891,8 @@
   },
   {
     "content_id": "hc1a2f",
-    "fact_template": "A Florida man arrested for threatening another person with a _______ over not flushing the toilet",
-    "truth_keyword": "machete",
+    "fact_template": "גבר מפלורידה נעצר על איומים על אדם אחר עם _______ על אי שטיפת האסלה",
+    "truth_keyword": "מצ'טה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28909,8 +28900,8 @@
   },
   {
     "content_id": "io63dx",
-    "fact_template": "A Florida man arrested for domestic battery jumps into the bay with _______, dies",
-    "truth_keyword": "chains",
+    "fact_template": "אדם מפלורידה שנעצר בגין סוללה ביתית קופץ למפרץ עם _______, מת",
+    "truth_keyword": "שרשראות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28918,8 +28909,8 @@
   },
   {
     "content_id": "ijc61z",
-    "fact_template": "A Florida man charged with _______ after drawing a gun on Black Lives Matter protesters",
-    "truth_keyword": "Trump violence",
+    "fact_template": "אדם בפלורידה הואשם ב-_______ לאחר שלף אקדח על מפגינים של Black Lives Matter",
+    "truth_keyword": "אלימות של טראמפ",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28927,8 +28918,8 @@
   },
   {
     "content_id": "eey6ak",
-    "fact_template": "A Florida man anonymously donates _______ valued at $3,000 to the Salvation Army - sixth consecutive year",
-    "truth_keyword": "gold coins",
+    "fact_template": "איש פלורידה תורם בעילום שם _______ בשווי של 3,000 דולר לצבא הישע - שנה שישית ברציפות",
+    "truth_keyword": "מטבעות זהב",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28936,8 +28927,8 @@
   },
   {
     "content_id": "bj2sv1",
-    "fact_template": "A Florida man caught with _______ in his pants",
-    "truth_keyword": "a rack of ribs",
+    "fact_template": "גבר מפלורידה נתפס עם _______ במכנסיים",
+    "truth_keyword": "מתלה של צלעות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28945,8 +28936,8 @@
   },
   {
     "content_id": "fbtd92",
-    "fact_template": "A Florida man arrested for sucking _______",
-    "truth_keyword": "a patient's fingers",
+    "fact_template": "גבר מפלורידה נעצר על מציצת _______",
+    "truth_keyword": "אצבעותיו של מטופל",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28954,8 +28945,8 @@
   },
   {
     "content_id": "gcn9to",
-    "fact_template": "A Florida man walks along the shore as a _______ to protest reopening amid pandemic",
-    "truth_keyword": "Grim Reaper",
+    "fact_template": "גבר מפלורידה הולך לאורך החוף בתור _______ כדי למחות על הפתיחה מחדש על רקע מגיפה",
+    "truth_keyword": "גרים ריפר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28963,8 +28954,8 @@
   },
   {
     "content_id": "a253h0",
-    "fact_template": "A Florida man buys a boat, parks it by the highway, can't afford to move it due to nine children, so he _______",
-    "truth_keyword": "buys another boat",
+    "fact_template": "איש פלורידה קונה סירה, מחנה אותה ליד הכביש המהיר, לא יכול להרשות לעצמו להעביר אותה בגלל תשעה ילדים, אז הוא _______",
+    "truth_keyword": "קונה סירה אחרת",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
