@@ -3,6 +3,7 @@ import { GameProvider, useGame } from './context/GameContext'
 import { GamePhase } from '@shared/types'
 import JoinScreen from './screens/JoinScreen'
 import LobbyScreen from './screens/LobbyScreen'
+import IntroScreen from './screens/IntroScreen'
 import { getClientGame } from './games/registry'
 import './games/bluffalo/index' // registers Bluffalo plugin (side-effect)
 import './games/pandamonium/index' // registers Pandamonium plugin (side-effect)
@@ -27,6 +28,10 @@ function GameRouter() {
 
   if (gameState.phase === GamePhase.LOBBY) {
     return <LobbyScreen />
+  }
+
+  if (gameState.phase === GamePhase.INTRO) {
+    return <IntroScreen />
   }
 
   const plugin = getClientGame(gameState.game_type)

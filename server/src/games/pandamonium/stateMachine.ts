@@ -91,12 +91,11 @@ function buildMatchups(state: GameState): PandamoniumMatchup[] {
   return matchups;
 }
 
-export function startPMGame(
+export function initPMGame(
   state: GameState,
   totalRounds: number,
-  promptTimerSeconds: number,
-  broadcast: BroadcastFn
-): GameState {
+  promptTimerSeconds: number
+): void {
   clearTimer(state.room_code);
 
   state.total_rounds = totalRounds;
@@ -116,14 +115,14 @@ export function startPMGame(
   }
 
   resetPlayerRoundsPM(state);
+}
 
+export function startFirstPMPhase(state: GameState, broadcast: BroadcastFn): void {
   if (state.is_final_round) {
     startPMFinalWritingPhase(state, broadcast);
   } else {
     startPMWritingPhase(state, broadcast);
   }
-
-  return state;
 }
 
 function startPMWritingPhase(state: GameState, broadcast: BroadcastFn): void {

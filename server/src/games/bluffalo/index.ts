@@ -9,22 +9,34 @@ import {
   CHARACTER_EXCLUDE_OPTIONS,
 } from "../../../../shared/constants";
 import {
-  startGame,
+  initGame,
+  startPromptPhase,
   advanceToNextRound,
   checkAllLiesSubmitted,
   checkAllVotesSubmitted,
   clearRoomTimers,
   allLiesSubmitted,
 } from "./stateMachine";
+import {
+  startIntroPhase,
+  handleIntroSkip,
+  checkIntroSkipAfterDisconnect,
+} from "../introPhase";
 import { validateLie } from "../../utils/validation";
 import { loadFacts, loadPersonalQuestions } from "./content/loader";
 import { setRoom } from "../../rooms/roomStore";
 import { broadcastGameState } from "../../handlers/broadcast";
 import { registerGame, GamePlugin, BroadcastFn, GameEventContext } from "../registry";
 
+const INTRO_TEXT = {
+  en: "In Bluffalo, a fact appears with a blank. Everyone secretly fills in a fake answer. Then all answers — including the real one — are revealed. Vote for what you think is the truth! Fool others to earn points, or spot the real answer to score big.",
+  he: "בבלופלו מופיע משפט עם חסר. כולם כותבים תשובה מומצאת בסתר. לאחר מכן כל התשובות — כולל האמיתית — מוצגות. הצביעו על מה שנראה לכם אמת! הטעו אחרים כדי לצבור נקודות, או גלו את האמת לציון גבוה.",
+};
+
 const BluffaloPlugin: GamePlugin = {
   game_type: "bluffalo",
   display_name: "Bluffalo",
+  intro_text: INTRO_TEXT,
 
   validateContent() {
     const en = loadFacts("en");
@@ -41,6 +53,7 @@ const BluffaloPlugin: GamePlugin = {
       prompt_timer_seconds?: number;
       language?: string;
       debuffs_enabled?: boolean;
+      intro_enabled?: boolean;
     };
 
     let totalRounds = typeof p?.total_rounds === "number" ? p.total_rounds : DEFAULT_TOTAL_ROUNDS;
@@ -58,14 +71,31 @@ const BluffaloPlugin: GamePlugin = {
         : DEFAULT_LANGUAGE;
     state.language = lang;
     state.debuffs_enabled = p?.debuffs_enabled === true;
+    state.intro_enabled = p?.intro_enabled !== false;
+    state.intro_text = INTRO_TEXT;
 
-    return startGame(state, totalRounds, broadcast);
+    initGame(state, totalRounds);
+
+    if (state.intro_enabled) {
+      startIntroPhase(state, broadcast, () => startPromptPhase(state, broadcast));
+    } else {
+      startPromptPhase(state, broadcast);
+    }
+
+    return state;
   },
 
   handleEvent(event: string, payload: unknown, ctx: GameEventContext): boolean {
     const { io, socket, state, roomCode, broadcast } = ctx;
 
     switch (event) {
+      case "SKIP_INTRO": {
+        const player = state.players.find((pl) => pl.id === socket.id);
+        if (!player) return true;
+        handleIntroSkip(state, player.session_id, broadcast, () => startPromptPhase(state, broadcast));
+        return true;
+      }
+
       case "SUBMIT_LIE": {
         const p = payload as { text?: string };
         if (state.phase !== GamePhase.PROMPT) {
@@ -333,6 +363,7 @@ const BluffaloPlugin: GamePlugin = {
   },
 
   onPlayerDisconnect(state: GameState, broadcast: BroadcastFn): void {
+    checkIntroSkipAfterDisconnect(state, () => startPromptPhase(state, broadcast));
     checkAllLiesSubmitted(state, broadcast);
     checkAllVotesSubmitted(state, broadcast);
   },

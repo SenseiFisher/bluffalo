@@ -100,14 +100,7 @@ function allVotesSubmitted(state: GameState): boolean {
   );
 }
 
-/**
- * LOBBY → PROMPT
- */
-export function startGame(
-  state: GameState,
-  totalRounds: number,
-  broadcast: BroadcastFn
-): GameState {
+export function initGame(state: GameState, totalRounds: number): void {
   clearTimer(state.room_code);
 
   state.total_rounds = totalRounds;
@@ -121,15 +114,12 @@ export function startGame(
   state.personal_question_subject_session_id = null;
   lastSpecialRoundByRoom.delete(state.room_code);
 
-  // Reset all scores
   for (const p of state.players) {
     p.score = 0;
     p.deception_count = 0;
   }
 
   resetPlayerRounds(state);
-  startPromptPhase(state, broadcast);
-  return state;
 }
 
 function shouldRunSpecialRound(state: GameState): boolean {
@@ -140,7 +130,7 @@ function shouldRunSpecialRound(state: GameState): boolean {
   return Math.random() < SPECIAL_ROUND_PROBABILITY;
 }
 
-function startPromptPhase(state: GameState, broadcast: BroadcastFn): void {
+export function startPromptPhase(state: GameState, broadcast: BroadcastFn): void {
   if (shouldRunSpecialRound(state)) {
     startPersonalQuestionPhase(state, broadcast);
   } else {

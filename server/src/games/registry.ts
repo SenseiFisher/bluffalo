@@ -14,6 +14,7 @@ export interface GameEventContext {
 export interface GamePlugin {
   game_type: string;
   display_name: string;
+  intro_text?: { en: string; he: string };
   startGame(state: GameState, payload: unknown, broadcast: BroadcastFn): GameState;
   handleEvent(event: string, payload: unknown, ctx: GameEventContext): boolean;
   resetToLobby(state: GameState): GameState;

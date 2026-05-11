@@ -29,6 +29,7 @@ export interface DebuffAward {
 
 export enum GamePhase {
   LOBBY      = "LOBBY",
+  INTRO      = "INTRO",
   PROMPT     = "PROMPT",
   REVEAL     = "REVEAL",
   SELECTION  = "SELECTION",
@@ -124,6 +125,9 @@ export interface GameState {
   room_master_session_id: string;
   language: string;
   debuffs_enabled: boolean;
+  intro_enabled: boolean;
+  intro_skipped_by: string[];
+  intro_text: { en: string; he: string } | null;
   debuff_award: DebuffAward | null;
   active_debuff_session_id: string | null; // NOT stripped — client uses to check if they are debuffed
   is_special_round: boolean;
@@ -157,6 +161,7 @@ export interface StartGamePayload {
   prompt_timer_seconds?: number;
   language?: string;
   debuffs_enabled?: boolean;
+  intro_enabled?: boolean;
 }
 
 export interface SubmitDebuffPayload {

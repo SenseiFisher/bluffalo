@@ -10,7 +10,8 @@ import {
   DEFAULT_LANGUAGE,
 } from "../../../../shared/constants";
 import {
-  startPMGame,
+  initPMGame,
+  startFirstPMPhase,
   advancePMWritingToMatchup,
   advancePMMatchupToResult,
   advancePMFinalWritingToReveal,
@@ -19,15 +20,26 @@ import {
   checkAllPMFinalAnswersSubmitted,
   clearRoomTimersPM,
 } from "./stateMachine";
+import {
+  startIntroPhase,
+  handleIntroSkip,
+  checkIntroSkipAfterDisconnect,
+} from "../introPhase";
 import { validateLie } from "../../utils/validation";
 import { loadFacts } from "../bluffalo/content/loader";
 import { registerGame, GamePlugin, BroadcastFn, GameEventContext } from "../registry";
 
 const VALID_TIMER_PRESETS = [30, 45, 60, 90];
 
+const INTRO_TEXT = {
+  en: "In Pandamonium, players face off in 1-on-1 matchups. Each pair gets a prompt — both players answer it, and everyone else votes for the best response. Win votes to score points. The game ends with a final free-for-all round where players award medals!",
+  he: "בפנדמוניום שחקנים מתמודדים אחד מול אחד. לכל זוג יש שאלה — שני השחקנים עונים עליה, וכולם מצביעים על התשובה הטובה יותר. זכייה בקולות מזכה בנקודות. המשחק מסתיים בסיבוב פתוח שבו מחלקים מדליות!",
+};
+
 const PandamoniumPlugin: GamePlugin = {
   game_type: "pandamonium",
   display_name: "Pandamonium",
+  intro_text: INTRO_TEXT,
 
   validateContent() {
     const en = loadFacts("en");
@@ -41,11 +53,11 @@ const PandamoniumPlugin: GamePlugin = {
       total_rounds?: number;
       prompt_timer_seconds?: number;
       language?: string;
+      intro_enabled?: boolean;
     };
 
     const connected = state.players.filter((pl) => pl.is_connected);
     if (connected.length < PM_MIN_PLAYERS) {
-      // Not enough players — return state unchanged; lobby UI prevents this
       return state;
     }
 
@@ -62,14 +74,31 @@ const PandamoniumPlugin: GamePlugin = {
         : DEFAULT_LANGUAGE;
     state.language = lang;
     state.debuffs_enabled = false;
+    state.intro_enabled = p?.intro_enabled !== false;
+    state.intro_text = INTRO_TEXT;
 
-    return startPMGame(state, totalRounds, promptTimerSeconds, broadcast);
+    initPMGame(state, totalRounds, promptTimerSeconds);
+
+    if (state.intro_enabled) {
+      startIntroPhase(state, broadcast, () => startFirstPMPhase(state, broadcast));
+    } else {
+      startFirstPMPhase(state, broadcast);
+    }
+
+    return state;
   },
 
   handleEvent(event: string, payload: unknown, ctx: GameEventContext): boolean {
     const { io, socket, state, roomCode, broadcast } = ctx;
 
     switch (event) {
+      case "SKIP_INTRO": {
+        const player = state.players.find((pl) => pl.id === socket.id);
+        if (!player) return true;
+        handleIntroSkip(state, player.session_id, broadcast, () => startFirstPMPhase(state, broadcast));
+        return true;
+      }
+
       case "PM_SUBMIT_ANSWER": {
         const p = payload as { matchup_id?: string; answer?: string };
 
@@ -313,6 +342,7 @@ const PandamoniumPlugin: GamePlugin = {
   },
 
   onPlayerDisconnect(state: GameState, broadcast: BroadcastFn): void {
+    checkIntroSkipAfterDisconnect(state, () => startFirstPMPhase(state, broadcast));
     checkAllPMAnswersSubmitted(state, broadcast);
     checkAllPMMatchupVotesSubmitted(state, broadcast);
     checkAllPMFinalAnswersSubmitted(state, broadcast);

@@ -14,6 +14,7 @@ export default function BluffaloLobbySettings({ canStart, connectedPlayerCount }
   const [promptTimerSeconds, setPromptTimerSeconds] = useState(60)
   const [language, setLanguage] = useState<'en' | 'he'>('he')
   const [debuffsEnabled, setDebuffsEnabled] = useState(true)
+  const [introEnabled, setIntroEnabled] = useState(true)
 
   const handleStartGame = () => {
     clearError()
@@ -22,6 +23,7 @@ export default function BluffaloLobbySettings({ canStart, connectedPlayerCount }
       prompt_timer_seconds: promptTimerSeconds,
       language,
       debuffs_enabled: debuffsEnabled,
+      intro_enabled: introEnabled,
     })
   }
 
@@ -114,6 +116,35 @@ export default function BluffaloLobbySettings({ canStart, connectedPlayerCount }
             <div
               className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${
                 debuffsEnabled ? 'translate-x-6' : 'translate-x-0.5'
+              }`}
+            />
+          </div>
+        </label>
+      </div>
+
+      <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+        <label
+          className="flex items-center justify-between cursor-pointer"
+          onClick={() => setIntroEnabled(!introEnabled)}
+        >
+          <div>
+            <span className="block text-indigo-300 text-sm font-semibold uppercase tracking-wide">
+              {language === 'he' ? 'הסבר משחק' : 'Game Intro'}
+            </span>
+            <span className="block text-indigo-400 text-xs mt-1">
+              {language === 'he'
+                ? 'סקירה קצרה של הכללים לפני תחילת המשחק'
+                : 'A 1-minute rules overview when the game starts'}
+            </span>
+          </div>
+          <div
+            className={`w-12 h-6 rounded-full transition-colors duration-200 flex-shrink-0 ml-4 relative ${
+              introEnabled ? 'bg-yellow-400' : 'bg-indigo-700'
+            }`}
+          >
+            <div
+              className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${
+                introEnabled ? 'translate-x-6' : 'translate-x-0.5'
               }`}
             />
           </div>

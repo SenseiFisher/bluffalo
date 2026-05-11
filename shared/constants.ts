@@ -6,6 +6,7 @@ export const FUNNY_BONUS = 100;
 export const FINAL_ROUND_MULTIPLIER = 2.0;
 
 // Phase timer durations (milliseconds)
+export const INTRO_TIMER_MS = 60_000;
 export const PROMPT_TIMER_MS = 60_000;
 export const REVEAL_TIMER_MS = 5_000;
 export const SELECTION_TIMER_MS = 30_000;
