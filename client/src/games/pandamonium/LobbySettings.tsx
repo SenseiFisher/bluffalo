@@ -14,7 +14,6 @@ export default function PandamoniumLobbySettings({ canStart: frameworkCanStart, 
   const [totalRounds, setTotalRounds] = useState(5)
   const [timerSeconds, setTimerSeconds] = useState(60)
   const [language, setLanguage] = useState<'en' | 'he'>('he')
-  const [cubsMode, setCubsMode] = useState(false)
 
   const canStart = frameworkCanStart && connectedPlayerCount >= PM_MIN_PLAYERS
   const playersNeeded = Math.max(0, PM_MIN_PLAYERS - connectedPlayerCount)
@@ -25,7 +24,6 @@ export default function PandamoniumLobbySettings({ canStart: frameworkCanStart, 
       total_rounds: totalRounds,
       prompt_timer_seconds: timerSeconds,
       language,
-      cubs_mode: cubsMode,
     })
   }
 
@@ -98,23 +96,6 @@ export default function PandamoniumLobbySettings({ canStart: frameworkCanStart, 
             </button>
           ))}
         </div>
-      </div>
-
-      {/* Cubs mode toggle */}
-      <div className="bg-green-800/60 border border-green-600 rounded-xl p-4">
-        <label className="flex items-center justify-between cursor-pointer" onClick={() => setCubsMode(!cubsMode)}>
-          <div>
-            <span className="block text-green-300 text-sm font-semibold uppercase tracking-wide">
-              Cubs Mode 🐼
-            </span>
-            <span className="block text-green-400 text-xs mt-1">
-              Family-friendly prompts only
-            </span>
-          </div>
-          <div className={`w-12 h-6 rounded-full transition-colors duration-200 flex-shrink-0 ml-4 relative ${cubsMode ? 'bg-yellow-400' : 'bg-green-700'}`}>
-            <div className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${cubsMode ? 'translate-x-6' : 'translate-x-0.5'}`} />
-          </div>
-        </label>
       </div>
 
       <button
