@@ -60,7 +60,7 @@ export default function RevealScreen() {
               <span className="text-indigo-400 font-bold text-sm w-6">
                 {String.fromCharCode(65 + idx)}
               </span>
-              <span className="text-white font-semibold text-lg">{option.text}</span>
+              <span className="text-white font-semibold text-lg" dir="auto">{option.text}</span>
             </div>
           ))}
         </div>

@@ -192,6 +192,7 @@ export default function PromptScreen() {
               onKeyDown={handleKeyDown}
               maxLength={50}
               disabled={timeLocked}
+              dir="auto"
               placeholder={isSubject ? 'Type your real answer...' : 'Type a convincing answer...'}
               className={`w-full px-4 py-3 bg-indigo-700 border rounded-xl text-white placeholder-indigo-400 focus:outline-none transition-colors text-lg ${timeLocked ? 'border-red-500 opacity-50 cursor-not-allowed' : 'border-indigo-500 focus:border-yellow-400'}`}
               autoFocus
@@ -228,7 +229,7 @@ export default function PromptScreen() {
             <div className="text-5xl mb-3">✓</div>
             <p className="text-green-400 font-bold text-xl mb-1">Answer Submitted!</p>
             {submittedText && (
-              <p className="text-white font-semibold text-lg mt-2 mb-1">"{submittedText}"</p>
+              <p className="text-white font-semibold text-lg mt-2 mb-1" dir="auto">"{submittedText}"</p>
             )}
             <p className="text-indigo-300 text-sm">
               Waiting for others to submit their answers...

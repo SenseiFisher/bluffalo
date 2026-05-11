@@ -142,7 +142,7 @@ export default function SelectionScreen() {
                     <span className="text-indigo-400 font-bold text-lg w-8 shrink-0">
                       {String.fromCharCode(65 + idx)}
                     </span>
-                    <span className="text-white font-semibold text-xl">{option.text}</span>
+                    <span className="text-white font-semibold text-xl" dir="auto">{option.text}</span>
                     {selectedId === option.option_id && (
                       <span className="ml-auto text-yellow-400 font-bold">YOUR VOTE ✓</span>
                     )}

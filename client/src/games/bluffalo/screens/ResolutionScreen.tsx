@@ -285,7 +285,7 @@ function RevealCard({ option, textVisible, authorVisible, isMyLie, mySessionId, 
     >
       {/* Answer text row */}
       <div className="px-5 py-3 flex items-center justify-between gap-3">
-        <span className={`text-xl font-black ${truthRevealed ? 'text-green-300' : 'text-white'}`}>
+        <span className={`text-xl font-black ${truthRevealed ? 'text-green-300' : 'text-white'}`} dir="auto">
           {option.text}
           {truthRevealed && <span className="ml-2 text-green-400 text-sm font-bold">✓ THE TRUTH</span>}
         </span>
