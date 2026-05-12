@@ -1,6 +1,7 @@
 import argparse
 import asyncio
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -9,6 +10,9 @@ SCRIPT_DIR = Path(__file__).parent
 DEFAULT_INPUT_FILE = SCRIPT_DIR / "facebook_posts.ndjson"
 DEFAULT_OUTPUT_FILE = SCRIPT_DIR / "extracted_blanks.ndjson"
 DEFAULT_GUIDELINES_FILE = SCRIPT_DIR.parent / "docs" / "blank_extraction_guidelines.md"
+DEFAULT_GEMINI_KEY_FILE = Path.home() / "dev" / "gemini-api.key"
+DEFAULT_OPENROUTER_KEY_FILE = Path.home() / "dev" / "openrouter-api.key"
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 CONCURRENCY = 1
 BATCH_SIZE = 5
@@ -66,7 +70,21 @@ def extract_json(text: str) -> dict | list | None:
     return None
 
 
-async def process_batch(posts: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str = "haiku") -> list[dict]:
+def _parse_batch_results(parsed, ids: list) -> list[dict]:
+    if isinstance(parsed, dict):
+        parsed = [parsed]
+    results = []
+    for item in parsed:
+        if item.get("skip"):
+            continue
+        if "id" not in item or "fact" not in item or "blank" not in item:
+            print(f"[WARN] Missing fields in batch result: {item}", file=sys.stderr)
+            continue
+        results.append({"id": item["id"], "fact": item["fact"], "blank": item["blank"]})
+    return results
+
+
+async def process_batch_claude(posts: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str) -> list[dict]:
     async with semaphore:
         ids = [p["id"] for p in posts]
         try:
@@ -101,32 +119,103 @@ async def process_batch(posts: list[dict], semaphore: asyncio.Semaphore, system_
                 print(f"[WARN] Could not parse JSON for batch {ids}: {outer.get('result', '')[:100]}", file=sys.stderr)
                 return []
 
-            if isinstance(parsed, dict):
-                parsed = [parsed]
+            return _parse_batch_results(parsed, ids)
+        except Exception as e:
+            print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
+            return []
 
-            results = []
-            for item in parsed:
-                if item.get("skip"):
-                    continue
-                if "id" not in item or "fact" not in item or "blank" not in item:
-                    print(f"[WARN] Missing fields in batch result: {item}", file=sys.stderr)
-                    continue
-                results.append({"id": item["id"], "fact": item["fact"], "blank": item["blank"]})
-            return results
+
+async def process_batch_openrouter(posts: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str, api_key: str) -> list[dict]:
+    from openai import AsyncOpenAI
+
+    async with semaphore:
+        ids = [p["id"] for p in posts]
+        try:
+            batch_input = json.dumps(
+                [{"id": p["id"], "text": p["text"]} for p in posts],
+                ensure_ascii=False,
+            )
+            client = AsyncOpenAI(api_key=api_key, base_url=OPENROUTER_BASE_URL)
+            response = await client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": batch_input},
+                ],
+            )
+            text = response.choices[0].message.content or ""
+            parsed = extract_json(text)
+            if parsed is None:
+                print(f"[WARN] Could not parse JSON for batch {ids}: {text[:100]}", file=sys.stderr)
+                return []
+
+            return _parse_batch_results(parsed, ids)
+        except Exception as e:
+            print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
+            return []
+
+
+async def process_batch_gemini(posts: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str, api_key: str) -> list[dict]:
+    import google.genai as genai
+    import google.genai.types as genai_types
+
+    async with semaphore:
+        ids = [p["id"] for p in posts]
+        try:
+            batch_input = json.dumps(
+                [{"id": p["id"], "text": p["text"]} for p in posts],
+                ensure_ascii=False,
+            )
+            client = genai.Client(api_key=api_key)
+            response = await client.aio.models.generate_content(
+                model=model,
+                contents=batch_input,
+                config=genai_types.GenerateContentConfig(
+                    system_instruction=system_prompt,
+                ),
+            )
+            text = response.text
+            parsed = extract_json(text)
+            if parsed is None:
+                print(f"[WARN] Could not parse JSON for batch {ids}: {text[:100]}", file=sys.stderr)
+                return []
+
+            return _parse_batch_results(parsed, ids)
         except Exception as e:
             print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
             return []
 
 
 async def main():
-    parser = argparse.ArgumentParser(description="Extract blank-fill facts from posts using Claude")
+    parser = argparse.ArgumentParser(description="Extract blank-fill facts from posts using Claude or Gemini")
     parser.add_argument("--input", type=str, default=str(DEFAULT_INPUT_FILE), help="Input NDJSON file")
     parser.add_argument("--output", type=str, default=str(DEFAULT_OUTPUT_FILE), help="Output NDJSON file")
     parser.add_argument("--guidelines", type=str, default=str(DEFAULT_GUIDELINES_FILE), help="Guidelines markdown file")
-    parser.add_argument("--model", type=str, default="haiku", help="Claude model to use (default: haiku)")
+    parser.add_argument("--provider", choices=["claude", "gemini", "openrouter"], default="claude", help="LLM provider (default: claude)")
+    parser.add_argument("--model", type=str, default=None, help="Model name (default: haiku for claude, gemini-2.0-flash for gemini, google/gemini-2.0-flash-001 for openrouter)")
     parser.add_argument("--limit", type=int, default=None, help="Stop after processing this many posts")
-    parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Number of posts per Claude call (default: {BATCH_SIZE})")
+    parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Number of posts per batch (default: {BATCH_SIZE})")
     args = parser.parse_args()
+
+    provider = args.provider
+    default_models = {"claude": "haiku", "gemini": "gemini-2.0-flash", "openrouter": "google/gemini-2.0-flash-001"}
+    model = args.model or default_models[provider]
+
+    gemini_api_key = None
+    if provider == "gemini":
+        gemini_api_key = os.environ.get("GEMINI_API_KEY")
+        if not gemini_api_key and DEFAULT_GEMINI_KEY_FILE.exists():
+            gemini_api_key = DEFAULT_GEMINI_KEY_FILE.read_text(encoding="utf-8").strip()
+        if not gemini_api_key:
+            sys.exit("Error: set GEMINI_API_KEY env var or create ~/dev/gemini-api.key")
+
+    openrouter_api_key = None
+    if provider == "openrouter":
+        openrouter_api_key = os.environ.get("OPENROUTER_API_KEY")
+        if not openrouter_api_key and DEFAULT_OPENROUTER_KEY_FILE.exists():
+            openrouter_api_key = DEFAULT_OPENROUTER_KEY_FILE.read_text(encoding="utf-8").strip()
+        if not openrouter_api_key:
+            sys.exit("Error: set OPENROUTER_API_KEY env var or create ~/dev/openrouter-api.key")
 
     input_file = Path(args.input)
     output_file = Path(args.output)
@@ -162,7 +251,13 @@ async def main():
         done = already_done
         for i in range(0, len(batches), CONCURRENCY):
             chunk = batches[i:i + CONCURRENCY]
-            all_results = await asyncio.gather(*[process_batch(b, semaphore, system_prompt, args.model) for b in chunk])
+            if provider == "gemini":
+                tasks = [process_batch_gemini(b, semaphore, system_prompt, model, gemini_api_key) for b in chunk]
+            elif provider == "openrouter":
+                tasks = [process_batch_openrouter(b, semaphore, system_prompt, model, openrouter_api_key) for b in chunk]
+            else:
+                tasks = [process_batch_claude(b, semaphore, system_prompt, model) for b in chunk]
+            all_results = await asyncio.gather(*tasks)
             for batch_idx, results in enumerate(all_results):
                 done += len(chunk[batch_idx])
                 for result in results:
