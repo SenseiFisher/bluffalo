@@ -22,6 +22,7 @@ export function initServer(httpServer: ReturnType<typeof createServer>): void {
       origin: "*",
       methods: ["GET", "POST"],
     },
+    pingTimeout: 60000,
   });
 
   io.on("connection", (socket) => {
@@ -86,6 +87,7 @@ export function createApp(): { app: express.Application; httpServer: ReturnType<
       origin: "*",
       methods: ["GET", "POST"],
     },
+    pingTimeout: 60000,
   });
 
   io.on("connection", (socket) => {
