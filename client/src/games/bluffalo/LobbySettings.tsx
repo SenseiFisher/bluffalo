@@ -129,7 +129,7 @@ export default function BluffaloLobbySettings({ canStart, connectedPlayerCount }
         >
           <div>
             <span className="block text-indigo-300 text-sm font-semibold uppercase tracking-wide">
-              {language === 'he' ? 'הסבר משחק' : 'Game Intro'}
+              Game Intro
             </span>
             <span className="block text-indigo-400 text-xs mt-1">
               {language === 'he'

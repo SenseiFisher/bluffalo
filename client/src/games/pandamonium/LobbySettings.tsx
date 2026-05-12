@@ -108,7 +108,7 @@ export default function PandamoniumLobbySettings({ canStart: frameworkCanStart, 
         >
           <div>
             <span className="block text-green-300 text-sm font-semibold uppercase tracking-wide">
-              {language === 'he' ? 'הסבר משחק' : 'Game Intro'}
+              Game Intro
             </span>
             <span className="block text-green-400 text-xs mt-1">
               {language === 'he'
