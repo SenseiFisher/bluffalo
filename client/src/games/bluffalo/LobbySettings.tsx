@@ -9,12 +9,12 @@ const LANGUAGES = [
 ] as const
 
 export default function BluffaloLobbySettings({ canStart, connectedPlayerCount }: LobbySettingsProps) {
-  const { emit, clearError } = useGame()
-  const [totalRounds, setTotalRounds] = useState(7)
-  const [promptTimerSeconds, setPromptTimerSeconds] = useState(60)
-  const [language, setLanguage] = useState<'en' | 'he'>('he')
-  const [debuffsEnabled, setDebuffsEnabled] = useState(true)
-  const [introEnabled, setIntroEnabled] = useState(true)
+  const { emit, clearError, gameState } = useGame()
+  const [totalRounds, setTotalRounds] = useState(gameState?.total_rounds ?? 7)
+  const [promptTimerSeconds, setPromptTimerSeconds] = useState(gameState?.prompt_timer_seconds ?? 60)
+  const [language, setLanguage] = useState<'en' | 'he'>((gameState?.language as 'en' | 'he') ?? 'he')
+  const [debuffsEnabled, setDebuffsEnabled] = useState(gameState?.debuffs_enabled ?? true)
+  const [introEnabled, setIntroEnabled] = useState(gameState?.intro_enabled ?? true)
 
   const handleStartGame = () => {
     clearError()

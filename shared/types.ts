@@ -153,7 +153,15 @@ export interface JoinRoomPayload {
   display_name: string;
   session_id?: string;
   game_type?: string;
+  create?: boolean;
   location?: GeoLocation;
+  initial_settings?: {
+    total_rounds?: number;
+    prompt_timer_seconds?: number;
+    language?: string;
+    debuffs_enabled?: boolean;
+    intro_enabled?: boolean;
+  };
 }
 
 export interface StartGamePayload {

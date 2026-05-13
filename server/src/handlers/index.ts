@@ -34,6 +34,13 @@ export function registerHandlers(io: Server, socket: Socket): void {
       game_type?: string;
       location?: { lat: unknown; lng: unknown };
       create?: boolean;
+      initial_settings?: {
+        total_rounds?: number;
+        prompt_timer_seconds?: number;
+        language?: string;
+        debuffs_enabled?: boolean;
+        intro_enabled?: boolean;
+      };
     };
 
     const rawCode = typeof p?.room_code === "string" ? p.room_code.toUpperCase().trim() : "";
@@ -142,7 +149,7 @@ export function registerHandlers(io: Server, socket: Socket): void {
         socket.emit("ERROR", { code: "INVALID_GAME_TYPE", message: "Unknown game type" });
         return;
       }
-      state = createInitialGameState(roomCode, sessionId, requestedGame, location);
+      state = createInitialGameState(roomCode, sessionId, requestedGame, location, p.initial_settings);
       setRoom(roomCode, state);
     }
 

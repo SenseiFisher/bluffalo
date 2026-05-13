@@ -2,8 +2,43 @@ import React, { useState, useEffect } from 'react'
 import { useGame } from '../context/GameContext'
 import { useUltrasonicDetector } from '../hooks/useUltrasonicDetector'
 import type { GameListItem } from '@shared/types'
+import {
+  MIN_ROUNDS, MAX_ROUNDS, PROMPT_TIMER_PRESETS, DEFAULT_TOTAL_ROUNDS,
+  PM_MIN_ROUNDS, PM_MAX_ROUNDS, PM_ANSWER_TIMER_PRESETS, PM_DEFAULT_TOTAL_ROUNDS,
+} from '@shared/constants'
 
-type Mode = 'home' | 'create' | 'create-pick-game' | 'join'
+type Mode = 'home' | 'create-settings' | 'join'
+
+const LANGUAGES = [
+  { code: 'en', label: 'English' },
+  { code: 'he', label: 'עברית' },
+] as const
+
+const GAME_CONFIGS: Record<string, {
+  minRounds: number
+  maxRounds: number
+  defaultRounds: number
+  timerPresets: readonly number[]
+  hasDebuffs: boolean
+  roundsNote: string
+}> = {
+  bluffalo: {
+    minRounds: MIN_ROUNDS,
+    maxRounds: MAX_ROUNDS,
+    defaultRounds: DEFAULT_TOTAL_ROUNDS,
+    timerPresets: PROMPT_TIMER_PRESETS,
+    hasDebuffs: true,
+    roundsNote: `Min ${MIN_ROUNDS} · Max ${MAX_ROUNDS}`,
+  },
+  pandamonium: {
+    minRounds: PM_MIN_ROUNDS,
+    maxRounds: PM_MAX_ROUNDS,
+    defaultRounds: PM_DEFAULT_TOTAL_ROUNDS,
+    timerPresets: PM_ANSWER_TIMER_PRESETS,
+    hasDebuffs: false,
+    roundsNote: `Min ${PM_MIN_ROUNDS} · Max ${PM_MAX_ROUNDS} · Last round is Total Pandamonium`,
+  },
+}
 
 export default function JoinScreen() {
   const { emit, lastError, clearError, storedSession, clearStoredSession } = useGame()
@@ -14,6 +49,16 @@ export default function JoinScreen() {
   const [localError, setLocalError] = useState<string | null>(null)
   const [isListening, setIsListening] = useState(false)
   const [games, setGames] = useState<GameListItem[]>([])
+
+  // Create game settings state
+  const [selectedGame, setSelectedGame] = useState('bluffalo')
+  const [totalRounds, setTotalRounds] = useState(DEFAULT_TOTAL_ROUNDS)
+  const [promptTimerSeconds, setPromptTimerSeconds] = useState(60)
+  const [language, setLanguage] = useState<'en' | 'he'>('he')
+  const [debuffsEnabled, setDebuffsEnabled] = useState(true)
+  const [introEnabled, setIntroEnabled] = useState(true)
+
+  const gameConfig = GAME_CONFIGS[selectedGame] ?? GAME_CONFIGS.bluffalo
 
   const { status: listenStatus, errorMessage: listenError, debug: listenDebug, stop: stopListening } =
     useUltrasonicDetector(isListening, (code) => {
@@ -47,18 +92,19 @@ export default function JoinScreen() {
     }
   }, [listenError])
 
-  const handleProceedToGamePicker = () => {
-    if (!displayName.trim()) {
-      setLocalError('Please enter your display name')
-      return
+  const handleSelectGame = (gameType: string) => {
+    const config = GAME_CONFIGS[gameType] ?? GAME_CONFIGS.bluffalo
+    setSelectedGame(gameType)
+    setTotalRounds(config.defaultRounds)
+    if (!(config.timerPresets as readonly number[]).includes(promptTimerSeconds)) {
+      setPromptTimerSeconds(60)
     }
-    if (displayName.trim().length > 20) {
-      setLocalError('Display name must be 20 characters or fewer')
-      return
-    }
+  }
+
+  const handleProceedToCreate = () => {
     setLocalError(null)
     clearError()
-    setMode('create-pick-game')
+    setMode('create-settings')
     if (games.length === 0) {
       fetch('/api/games')
         .then((r) => r.json())
@@ -67,7 +113,15 @@ export default function JoinScreen() {
     }
   }
 
-  const handleCreateGame = async (gameType: string) => {
+  const handleCreateGame = async () => {
+    if (!displayName.trim()) {
+      setLocalError('Please enter your display name')
+      return
+    }
+    if (displayName.trim().length > 20) {
+      setLocalError('Display name must be 20 characters or fewer')
+      return
+    }
     setIsLoading(true)
     setLocalError(null)
     clearError()
@@ -77,8 +131,15 @@ export default function JoinScreen() {
       emit('JOIN_ROOM', {
         room_code: data.code,
         display_name: displayName.trim(),
-        game_type: gameType,
+        game_type: selectedGame,
         create: true,
+        initial_settings: {
+          total_rounds: totalRounds,
+          prompt_timer_seconds: promptTimerSeconds,
+          language,
+          debuffs_enabled: debuffsEnabled,
+          intro_enabled: introEnabled,
+        },
       })
     } catch {
       setLocalError('Failed to create room. Please try again.')
@@ -172,7 +233,7 @@ export default function JoinScreen() {
         {mode === 'home' && (
           <div className="flex flex-col gap-4">
             <button
-              onClick={() => { setMode('create'); clearError(); setLocalError(null) }}
+              onClick={() => { handleProceedToCreate(); setLocalError(null) }}
               className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 text-indigo-950 font-black text-xl rounded-xl transition-all duration-150 active:scale-95 shadow-lg"
             >
               Create Game
@@ -186,10 +247,11 @@ export default function JoinScreen() {
           </div>
         )}
 
-        {mode === 'create' && (
+        {mode === 'create-settings' && (
           <div className="flex flex-col gap-5">
             <h2 className="text-2xl font-bold text-white text-center">Create a Room</h2>
 
+            {/* Name input */}
             <div>
               <label className="block text-indigo-300 text-sm font-semibold mb-2 uppercase tracking-wide">
                 Your Name
@@ -201,7 +263,6 @@ export default function JoinScreen() {
                 maxLength={20}
                 placeholder="Enter your display name"
                 className="w-full px-4 py-3 bg-indigo-800 border border-indigo-600 rounded-xl text-white placeholder-indigo-400 focus:outline-none focus:border-yellow-400 transition-colors"
-                onKeyDown={(e) => e.key === 'Enter' && handleProceedToGamePicker()}
                 disabled={isLoading}
               />
               <div className="text-right text-indigo-400 text-xs mt-1">
@@ -209,6 +270,168 @@ export default function JoinScreen() {
               </div>
             </div>
 
+            {/* Game selector */}
+            <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+              <label className="block text-indigo-300 text-sm font-semibold mb-3 uppercase tracking-wide">
+                Game
+              </label>
+              {games.length === 0 ? (
+                <div className="flex justify-center py-2">
+                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-yellow-400" />
+                </div>
+              ) : (
+                <div className={`grid gap-2`} style={{ gridTemplateColumns: `repeat(${games.length}, 1fr)` }}>
+                  {games.map((g) => (
+                    <button
+                      key={g.game_type}
+                      onClick={() => handleSelectGame(g.game_type)}
+                      disabled={isLoading}
+                      className={`py-2 rounded-lg font-bold text-sm transition-all active:scale-95 ${
+                        selectedGame === g.game_type
+                          ? 'bg-yellow-400 text-indigo-950'
+                          : 'bg-indigo-700 hover:bg-indigo-600 text-white'
+                      }`}
+                    >
+                      {g.display_name}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Rounds */}
+            <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+              <label className="block text-indigo-300 text-sm font-semibold mb-3 uppercase tracking-wide">
+                Number of Rounds
+              </label>
+              <div className="flex items-center gap-4">
+                <button
+                  onClick={() => setTotalRounds(Math.max(gameConfig.minRounds, totalRounds - 1))}
+                  disabled={isLoading}
+                  className="w-10 h-10 bg-indigo-700 hover:bg-indigo-600 rounded-lg text-white font-bold text-xl transition-colors active:scale-95"
+                >
+                  −
+                </button>
+                <span className="text-yellow-400 font-black text-3xl flex-1 text-center">
+                  {totalRounds}
+                </span>
+                <button
+                  onClick={() => setTotalRounds(Math.min(gameConfig.maxRounds, totalRounds + 1))}
+                  disabled={isLoading}
+                  className="w-10 h-10 bg-indigo-700 hover:bg-indigo-600 rounded-lg text-white font-bold text-xl transition-colors active:scale-95"
+                >
+                  +
+                </button>
+              </div>
+              <p className="text-indigo-400 text-xs text-center mt-2">{gameConfig.roundsNote}</p>
+            </div>
+
+            {/* Timer */}
+            <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+              <label className="block text-indigo-300 text-sm font-semibold mb-3 uppercase tracking-wide">
+                Answer Time
+              </label>
+              <div className={`grid gap-2`} style={{ gridTemplateColumns: `repeat(${gameConfig.timerPresets.length}, 1fr)` }}>
+                {gameConfig.timerPresets.map((s) => (
+                  <button
+                    key={s}
+                    onClick={() => setPromptTimerSeconds(s)}
+                    disabled={isLoading}
+                    className={`py-2 rounded-lg font-bold text-sm transition-all active:scale-95 ${
+                      promptTimerSeconds === s
+                        ? 'bg-yellow-400 text-indigo-950'
+                        : 'bg-indigo-700 hover:bg-indigo-600 text-white'
+                    }`}
+                  >
+                    {s}s
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Language */}
+            <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+              <label className="block text-indigo-300 text-sm font-semibold mb-3 uppercase tracking-wide">
+                Language
+              </label>
+              <div className="grid grid-cols-2 gap-2">
+                {LANGUAGES.map((l) => (
+                  <button
+                    key={l.code}
+                    onClick={() => setLanguage(l.code)}
+                    disabled={isLoading}
+                    className={`py-2 rounded-lg font-bold text-sm transition-all active:scale-95 ${
+                      language === l.code
+                        ? 'bg-yellow-400 text-indigo-950'
+                        : 'bg-indigo-700 hover:bg-indigo-600 text-white'
+                    }`}
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Debuffs — Bluffalo only */}
+            {gameConfig.hasDebuffs && (
+              <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+                <label
+                  className="flex items-center justify-between cursor-pointer"
+                  onClick={() => !isLoading && setDebuffsEnabled(!debuffsEnabled)}
+                >
+                  <div>
+                    <span className="block text-indigo-300 text-sm font-semibold uppercase tracking-wide">
+                      Debuffs
+                    </span>
+                    <span className="block text-indigo-400 text-xs mt-1">
+                      Best deceiver earns a power to punish!
+                    </span>
+                  </div>
+                  <div
+                    className={`w-12 h-6 rounded-full transition-colors duration-200 flex-shrink-0 ml-4 relative ${
+                      debuffsEnabled ? 'bg-yellow-400' : 'bg-indigo-700'
+                    }`}
+                  >
+                    <div
+                      className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${
+                        debuffsEnabled ? 'translate-x-6' : 'translate-x-0.5'
+                      }`}
+                    />
+                  </div>
+                </label>
+              </div>
+            )}
+
+            {/* Game Intro */}
+            <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+              <label
+                className="flex items-center justify-between cursor-pointer"
+                onClick={() => !isLoading && setIntroEnabled(!introEnabled)}
+              >
+                <div>
+                  <span className="block text-indigo-300 text-sm font-semibold uppercase tracking-wide">
+                    Game Intro
+                  </span>
+                  <span className="block text-indigo-400 text-xs mt-1">
+                    {language === 'he'
+                      ? 'סקירה קצרה של הכללים לפני תחילת המשחק'
+                      : 'A 1-minute rules overview when the game starts'}
+                  </span>
+                </div>
+                <div
+                  className={`w-12 h-6 rounded-full transition-colors duration-200 flex-shrink-0 ml-4 relative ${
+                    introEnabled ? 'bg-yellow-400' : 'bg-indigo-700'
+                  }`}
+                >
+                  <div
+                    className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-200 ${
+                      introEnabled ? 'translate-x-6' : 'translate-x-0.5'
+                    }`}
+                  />
+                </div>
+              </label>
+            </div>
+
             {localError && (
               <div className="bg-red-900/50 border border-red-500 text-red-300 rounded-xl px-4 py-3 text-sm">
                 {localError}
@@ -216,55 +439,14 @@ export default function JoinScreen() {
             )}
 
             <button
-              onClick={handleProceedToGamePicker}
+              onClick={handleCreateGame}
               disabled={isLoading}
-              className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 disabled:bg-indigo-700 disabled:text-indigo-400 text-indigo-950 font-black text-xl rounded-xl transition-all duration-150 active:scale-95"
+              className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 disabled:bg-indigo-700 disabled:text-indigo-400 disabled:cursor-not-allowed text-indigo-950 font-black text-xl rounded-xl transition-all duration-150 active:scale-95"
             >
-              Next: Choose Game
+              {isLoading ? 'Creating...' : 'Create Room'}
             </button>
 
             <button onClick={resetMode} className="text-indigo-400 hover:text-white text-sm text-center transition-colors">
-              Back
-            </button>
-          </div>
-        )}
-
-        {mode === 'create-pick-game' && (
-          <div className="flex flex-col gap-5">
-            <h2 className="text-2xl font-bold text-white text-center">Choose a Game</h2>
-            <p className="text-indigo-400 text-sm text-center -mt-3">
-              Playing as <span className="text-white font-semibold">{displayName}</span>
-            </p>
-
-            {localError && (
-              <div className="bg-red-900/50 border border-red-500 text-red-300 rounded-xl px-4 py-3 text-sm">
-                {localError}
-              </div>
-            )}
-
-            {games.length === 0 && !localError && (
-              <div className="flex justify-center py-6">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-400" />
-              </div>
-            )}
-
-            <div className="flex flex-col gap-3">
-              {games.map((game) => (
-                <button
-                  key={game.game_type}
-                  onClick={() => handleCreateGame(game.game_type)}
-                  disabled={isLoading}
-                  className="w-full py-4 px-6 bg-indigo-700 hover:bg-indigo-600 disabled:opacity-50 border border-indigo-500 hover:border-yellow-400 text-white font-black text-xl rounded-xl transition-all duration-150 active:scale-95 text-left"
-                >
-                  {isLoading ? 'Creating...' : game.display_name}
-                </button>
-              ))}
-            </div>
-
-            <button
-              onClick={() => { setMode('create'); setLocalError(null) }}
-              className="text-indigo-400 hover:text-white text-sm text-center transition-colors"
-            >
               Back
             </button>
           </div>

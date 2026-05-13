@@ -10,11 +10,11 @@ const LANGUAGES = [
 ] as const
 
 export default function PandamoniumLobbySettings({ canStart: frameworkCanStart, connectedPlayerCount }: LobbySettingsProps) {
-  const { emit, clearError } = useGame()
-  const [totalRounds, setTotalRounds] = useState(5)
-  const [timerSeconds, setTimerSeconds] = useState(60)
-  const [language, setLanguage] = useState<'en' | 'he'>('he')
-  const [introEnabled, setIntroEnabled] = useState(true)
+  const { emit, clearError, gameState } = useGame()
+  const [totalRounds, setTotalRounds] = useState(gameState?.total_rounds ?? 5)
+  const [timerSeconds, setTimerSeconds] = useState(gameState?.prompt_timer_seconds ?? 60)
+  const [language, setLanguage] = useState<'en' | 'he'>((gameState?.language as 'en' | 'he') ?? 'he')
+  const [introEnabled, setIntroEnabled] = useState(gameState?.intro_enabled ?? true)
 
   const canStart = frameworkCanStart && connectedPlayerCount >= PM_MIN_PLAYERS
   const playersNeeded = Math.max(0, PM_MIN_PLAYERS - connectedPlayerCount)

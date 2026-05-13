@@ -69,7 +69,14 @@ export function createInitialGameState(
   roomCode: string,
   roomMasterSessionId: string,
   game_type: string,
-  location?: GeoLocation
+  location?: GeoLocation,
+  initialSettings?: {
+    total_rounds?: number;
+    prompt_timer_seconds?: number;
+    language?: string;
+    debuffs_enabled?: boolean;
+    intro_enabled?: boolean;
+  }
 ): GameState {
   return {
     room_code: roomCode,
@@ -80,14 +87,14 @@ export function createInitialGameState(
     vote_options: [],
     timer_ends_at: null,
     round_number: 0,
-    total_rounds: 7,
-    prompt_timer_seconds: 60,
+    total_rounds: initialSettings?.total_rounds ?? 7,
+    prompt_timer_seconds: initialSettings?.prompt_timer_seconds ?? 60,
     is_final_round: false,
     used_fact_ids: [],
     room_master_session_id: roomMasterSessionId,
-    language: DEFAULT_LANGUAGE,
-    debuffs_enabled: false,
-    intro_enabled: true,
+    language: initialSettings?.language ?? DEFAULT_LANGUAGE,
+    debuffs_enabled: initialSettings?.debuffs_enabled ?? false,
+    intro_enabled: initialSettings?.intro_enabled ?? true,
     intro_skipped_by: [],
     intro_text: null,
     debuff_award: null,
