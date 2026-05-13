@@ -23,6 +23,7 @@ import {
   checkIntroSkipAfterDisconnect,
 } from "../introPhase";
 import { validateLie } from "../../utils/validation";
+import { stringSimilarity } from "../../utils/stringUtils";
 import { loadFacts, loadPersonalQuestions } from "./content/loader";
 import { setRoom } from "../../rooms/roomStore";
 import { broadcastGameState } from "../../handlers/broadcast";
@@ -118,7 +119,8 @@ const BluffaloPlugin: GamePlugin = {
         }
         const lieText = lieResult.value;
         if (!state.is_special_round) {
-          if (lieText.toLowerCase() === state.current_fact!.truth_keyword.toLowerCase()) {
+          const sim = stringSimilarity(lieText, state.current_fact!.truth_keyword);
+          if (sim >= 0.85) {
             player.round.great_minds = true;
           }
         }
@@ -155,7 +157,7 @@ const BluffaloPlugin: GamePlugin = {
         const lieText = lieResult.value;
         player.round.great_minds =
           !state.is_special_round &&
-          lieText.toLowerCase() === state.current_fact!.truth_keyword.toLowerCase();
+          stringSimilarity(lieText, state.current_fact!.truth_keyword) >= 0.85;
         player.round.submitted_lie = lieText;
         broadcast(roomCode, state);
         checkAllLiesSubmitted(state, broadcast);
