@@ -71,33 +71,35 @@ function applyPendingDebuff(state: GameState): void {
 }
 
 /**
- * Check if all connected players (who haven't gone great-minds) have submitted a lie.
+ * Check if all connected players have submitted a lie (including great-minds players).
+ * Advancing on great-minds is correct: if everyone submitted the truth there's nothing
+ * left to wait for, and the timer shouldn't keep running.
  */
 export function allLiesSubmitted(state: GameState): boolean {
-  const eligible = state.players.filter(
-    (p) => p.is_connected && !p.round.great_minds
-  );
+  const connected = state.players.filter((p) => p.is_connected);
   return (
-    eligible.length > 0 &&
-    eligible.every((p) => p.round.submitted_lie !== null)
+    connected.length > 0 &&
+    connected.every((p) => p.round.submitted_lie !== null)
   );
 }
 
 /**
  * Check if all eligible voters have voted.
  * Eligible = connected + did not go great_minds + not the personal question subject.
+ * Returns true immediately when there are no eligible voters (e.g. all great-minds)
+ * so the game skips the selection phase rather than waiting for the full timer.
  */
 function allVotesSubmitted(state: GameState): boolean {
-  const eligible = state.players.filter((p) => {
-    if (!p.is_connected) return false;
+  const connected = state.players.filter((p) => p.is_connected);
+  if (connected.length === 0) return false;
+  const eligible = connected.filter((p) => {
     if (p.round.great_minds) return false;
     if (state.is_special_round && p.session_id === state.personal_question_subject_session_id) return false;
     return true;
   });
-  return (
-    eligible.length > 0 &&
-    eligible.every((p) => p.round.voted_for_id !== null)
-  );
+  // No eligible voters — nothing to vote on, advance immediately
+  if (eligible.length === 0) return true;
+  return eligible.every((p) => p.round.voted_for_id !== null);
 }
 
 export function initGame(state: GameState, totalRounds: number): void {
