@@ -184,6 +184,22 @@ export function registerHandlers(io: Server, socket: Socket): void {
     socket.to(roomCode).emit("GAME_STATE_UPDATE", { game_state: sanitized });
   });
 
+  // ── SET_GAME_TYPE ──────────────────────────────────────────────────────────
+  socket.on("SET_GAME_TYPE", (payload: unknown) => {
+    const p = payload as { game_type?: unknown };
+    const roomCode = getRoomCodeForSocket(socket);
+    if (!roomCode) return;
+    const state = getRoom(roomCode);
+    if (!state || state.phase !== GamePhase.LOBBY) return;
+    const player = state.players.find((pl) => pl.id === socket.id);
+    if (!player || player.session_id !== state.room_master_session_id) return;
+    const gameType = typeof p?.game_type === "string" ? p.game_type : null;
+    if (!gameType || !getGame(gameType)) return;
+    state.game_type = gameType;
+    setRoom(roomCode, state);
+    io.to(roomCode).emit("GAME_STATE_UPDATE", { game_state: sanitizeStateForClient(state) });
+  });
+
   // ── START_GAME ─────────────────────────────────────────────────────────────
   socket.on("START_GAME", (payload: unknown) => {
     const roomCode = getRoomCodeForSocket(socket);

@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useGame } from '../context/GameContext'
 import { useUltrasonicEmitter } from '../hooks/useUltrasonicEmitter'
-import { getClientGame } from '../games/registry'
-import { useState } from 'react'
+import { getClientGame, listClientGames } from '../games/registry'
 
 export default function LobbyScreen() {
   const { gameState, mySessionId, socket, emit, lastError, clearError, leaveRoom } = useGame()
@@ -126,10 +125,36 @@ export default function LobbyScreen() {
       {/* Game settings (host) or waiting message (guest) */}
       {isRoomMaster ? (
         plugin ? (
-          <plugin.LobbySettings
-            canStart={canStart}
-            connectedPlayerCount={connectedPlayers.length}
-          />
+          <>
+            {listClientGames().length > 1 && (
+              <div className="w-full max-w-md mb-4">
+                <div className="bg-indigo-800/60 border border-indigo-600 rounded-xl p-4">
+                  <label className="block text-indigo-300 text-sm font-semibold mb-3 uppercase tracking-wide">
+                    Game
+                  </label>
+                  <div className="grid gap-2" style={{ gridTemplateColumns: `repeat(${listClientGames().length}, 1fr)` }}>
+                    {listClientGames().map((g) => (
+                      <button
+                        key={g.game_type}
+                        onClick={() => emit('SET_GAME_TYPE', { game_type: g.game_type })}
+                        className={`py-2 rounded-lg font-bold text-sm transition-all active:scale-95 ${
+                          gameState.game_type === g.game_type
+                            ? 'bg-yellow-400 text-indigo-950'
+                            : 'bg-indigo-700 hover:bg-indigo-600 text-white'
+                        }`}
+                      >
+                        {g.display_name}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+            <plugin.LobbySettings
+              canStart={canStart}
+              connectedPlayerCount={connectedPlayers.length}
+            />
+          </>
         ) : (
           <div className="w-full max-w-md text-indigo-400 text-center py-4">
             Unknown game type: {gameState.game_type}
