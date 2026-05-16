@@ -6,7 +6,10 @@
       "Bash(node:*)",
       "Bash(python3 -c \":*)",
       "Bash(python3:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }

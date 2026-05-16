@@ -9,7 +9,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 DEFAULT_INPUT_FILE = SCRIPT_DIR / "facebook_posts.ndjson"
 DEFAULT_OUTPUT_FILE = SCRIPT_DIR / "extracted_blanks.ndjson"
-DEFAULT_GUIDELINES_FILE = SCRIPT_DIR.parent / "docs" / "blank_extraction_guidelines.md"
+DEFAULT_GUIDELINES_FILE = SCRIPT_DIR.parent / "docs" / "blank_extraction_guidelines_he.md"
 DEFAULT_GEMINI_KEY_FILE = Path.home() / "dev" / "gemini-api.key"
 DEFAULT_OPENROUTER_KEY_FILE = Path.home() / "dev" / "openrouter-api.key"
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
@@ -84,47 +84,6 @@ def _parse_batch_results(parsed, ids: list) -> list[dict]:
     return results
 
 
-async def process_batch_claude(posts: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str) -> list[dict]:
-    async with semaphore:
-        ids = [p["id"] for p in posts]
-        try:
-            batch_input = json.dumps(
-                [{"id": p["id"], "text": p["text"]} for p in posts],
-                ensure_ascii=False,
-            )
-            proc = await asyncio.create_subprocess_exec(
-                "claude", "-p",
-                "--system-prompt", system_prompt,
-                "--output-format", "json",
-                "--tools", "",
-                "--no-session-persistence",
-                "--model", model,
-                stdin=asyncio.subprocess.PIPE,
-                stdout=asyncio.subprocess.PIPE,
-                stderr=asyncio.subprocess.PIPE,
-            )
-            stdout, stderr = await proc.communicate(input=batch_input.encode("utf-8"))
-
-            if proc.returncode != 0:
-                print(f"[ERROR] Batch {ids}: {stderr.decode()[:200]}", file=sys.stderr)
-                return []
-
-            outer = json.loads(stdout.decode("utf-8"))
-            if outer.get("is_error") or outer.get("subtype") != "success":
-                print(f"[ERROR] Batch {ids}: {outer.get('result', '')[:200]}", file=sys.stderr)
-                return []
-
-            parsed = extract_json(outer.get("result", ""))
-            if parsed is None:
-                print(f"[WARN] Could not parse JSON for batch {ids}: {outer.get('result', '')[:100]}", file=sys.stderr)
-                return []
-
-            return _parse_batch_results(parsed, ids)
-        except Exception as e:
-            print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
-            return []
-
-
 async def process_batch_openrouter(posts: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str, api_key: str) -> list[dict]:
     from openai import AsyncOpenAI
 
@@ -191,14 +150,14 @@ async def main():
     parser.add_argument("--input", type=str, default=str(DEFAULT_INPUT_FILE), help="Input NDJSON file")
     parser.add_argument("--output", type=str, default=str(DEFAULT_OUTPUT_FILE), help="Output NDJSON file")
     parser.add_argument("--guidelines", type=str, default=str(DEFAULT_GUIDELINES_FILE), help="Guidelines markdown file")
-    parser.add_argument("--provider", choices=["claude", "gemini", "openrouter"], default="claude", help="LLM provider (default: claude)")
+    parser.add_argument("--provider", choices=["gemini", "openrouter"], default="gemini", help="LLM provider (default: gemini)")
     parser.add_argument("--model", type=str, default=None, help="Model name (default: haiku for claude, gemini-2.0-flash for gemini, google/gemini-2.0-flash-001 for openrouter)")
     parser.add_argument("--limit", type=int, default=None, help="Stop after processing this many posts")
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Number of posts per batch (default: {BATCH_SIZE})")
     args = parser.parse_args()
 
     provider = args.provider
-    default_models = {"claude": "haiku", "gemini": "gemini-2.0-flash", "openrouter": "google/gemini-2.0-flash-001"}
+    default_models = {"gemini": "gemini-2.0-flash", "openrouter": "google/gemini-2.0-flash-001"}
     model = args.model or default_models[provider]
 
     gemini_api_key = None
@@ -253,10 +212,8 @@ async def main():
             chunk = batches[i:i + CONCURRENCY]
             if provider == "gemini":
                 tasks = [process_batch_gemini(b, semaphore, system_prompt, model, gemini_api_key) for b in chunk]
-            elif provider == "openrouter":
-                tasks = [process_batch_openrouter(b, semaphore, system_prompt, model, openrouter_api_key) for b in chunk]
             else:
-                tasks = [process_batch_claude(b, semaphore, system_prompt, model) for b in chunk]
+                tasks = [process_batch_openrouter(b, semaphore, system_prompt, model, openrouter_api_key) for b in chunk]
             all_results = await asyncio.gather(*tasks)
             for batch_idx, results in enumerate(all_results):
                 done += len(chunk[batch_idx])
@@ -265,6 +222,8 @@ async def main():
                     out.flush()
             if done % 50 == 0 or done >= total:
                 print(f"Progress: {done}/{total}")
+            if provider == "openrouter" and i + CONCURRENCY < len(batches):
+                await asyncio.sleep(4)
 
     written = sum(1 for _ in output_file.open(encoding="utf-8"))
     print(f"Done. {written} entries written to {output_file}")
