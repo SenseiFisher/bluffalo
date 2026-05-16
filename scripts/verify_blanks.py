@@ -84,6 +84,7 @@ For each entry check:
 3. Is the blank the most surprising/specific detail — not too vague, not too long?
 4. Does the blank correctly answer the [blank] in the fact?
 {"5. Is the Hebrew grammatically correct and naturally phrased? Is the blank grammatically consistent with its context in the sentence?" if lang == "he" else ""}
+{"6." if lang == "he" else "5."} Is the fact self-contained and understandable on its own? If context is missing (e.g. the sentence refers to something unstated, or the subject is unclear), add the minimum information needed to make it standalone — but keep it concise.
 
 Respond ONLY with a valid JSON array, one entry per input:
 - If correct: {{"id": "<id>", "status": "ok"}}
