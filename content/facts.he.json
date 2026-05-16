@@ -26605,8 +26605,8 @@
   },
   {
     "content_id": "cogu0v",
-    "fact_template": "איש פלורידה מדווח על אקדח שנגנב במהלך _______ בביתו",
-    "truth_keyword": "אוֹרְגִיָה",
+    "fact_template": "איש פלורידה מדווח על אקדח שנגנב במהלך _______ בביתו.",
+    "truth_keyword": "אורגיה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -26614,8 +26614,8 @@
   },
   {
     "content_id": "5c6c8s",
-    "fact_template": "_______ בת העשרים נעצרה שלוש פעמים בגין ניסיון לעלות למטוס עם אקדח טעון, ירה חמש פעמים, נתפסה עם קוקאין וכסף מזויף ברכב צבאי",
-    "truth_keyword": "שׁוֹטֵר",
+    "fact_template": "איש פלורידה נעצר שלוש פעמים, ירה חמש פעמים, ונמצא עם _______ במכונית הצבא שלו.",
+    "truth_keyword": "קוקאין",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -26623,8 +26623,8 @@
   },
   {
     "content_id": "e7xo2c",
-    "fact_template": "איש פלורידה אוכל בננה _______ מודבקת על הקיר בתערוכת אמנות",
-    "truth_keyword": "$120,000",
+    "fact_template": "איש פלורידה אוכל _______ בתערוכת אמנות.",
+    "truth_keyword": "בננה של 120,000 דולר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -26632,8 +26632,8 @@
   },
   {
     "content_id": "dp5k09",
-    "fact_template": "איש פלורידה מקיא על תומך טראמפ בבר, בטענה שהוא מראה תמיכה ב-_______",
-    "truth_keyword": "אכיפת החוק",
+    "fact_template": "איש פלורידה יורק על תומך טראמפ עם _______ בבר כדי להראות תמיכה באכיפת החוק.",
+    "truth_keyword": "כובע MAGA",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -26641,7 +26641,7 @@
   },
   {
     "content_id": "fn6r32",
-    "fact_template": "נציב המחוז פלורידה מן מציע לפוצץ את _______ באף כתרופה לקורונה",
+    "fact_template": "איש פלורידה, נציב מחוז, ממליץ לנשוף _______ במעלה האף כדי \"להרוג\" את וירוס הקורונה.",
     "truth_keyword": "מייבש שיער",
     "metadata": {
       "difficulty": "Hard",
@@ -27235,8 +27235,8 @@
   },
   {
     "content_id": "ey01fn",
-    "fact_template": "גבר מפלורידה נמלט מהמשטרה כל כך מהר שבגדיו נופלים. המשטרה מזהה אותו באמצעות DNA מ-_______.",
-    "truth_keyword": "הגרב שלו",
+    "fact_template": "המשטרה מזהה אותו עם _______ מהגרב שלו.",
+    "truth_keyword": "DNA",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27244,8 +27244,8 @@
   },
   {
     "content_id": "fyfka6",
-    "fact_template": "אישה מפלורידה מפיצה 400 פליירים ו-_______ בתיבות דואר של זרים.",
-    "truth_keyword": "ביצי פסחא מלאות בפורנו",
+    "fact_template": "אשת פלורידה מניחה 400 עלונים, _______ בתיבות הדואר של זרים.",
+    "truth_keyword": "ביצי פורנו",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27253,8 +27253,8 @@
   },
   {
     "content_id": "eqdkuw",
-    "fact_template": "נציג אמריקאי מפלורידה מואשם ביצירת _______ עם אנשי צוות.",
-    "truth_keyword": "משחקי מין עם נקודות",
+    "fact_template": "איש פלורידה נציג ארה\"ב מואשם ב_______ על שכב עם הצוות.",
+    "truth_keyword": "משחקי מין",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27271,8 +27271,8 @@
   },
   {
     "content_id": "gz04mp",
-    "fact_template": "איש פלורידה מתפשט בשוק פשפשים, גונב מכונית, פורץ לבית, תולש תיבת דואר, _______, ונעצר.",
-    "truth_keyword": "מנשק אישה זקנה",
+    "fact_template": "#FloridaMan מתפשט _______ בשוק הפשפשים, גונב מכונית, פורץ לבית, תולש תיבת דואר, מנשק את הזקנה, נעצר.",
+    "truth_keyword": "עירום",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27280,8 +27280,8 @@
   },
   {
     "content_id": "auejmh",
-    "fact_template": "שוטר מפלורידה הושעה לאחר _______ במהלך חקירה בניידת הסיור שלו.",
-    "truth_keyword": "משחק בארי ווייט",
+    "fact_template": "השוטר פלורידהמן הושעה לאחר שהרכיב את _______.",
+    "truth_keyword": "בארי ווייט",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27289,8 +27289,8 @@
   },
   {
     "content_id": "c21jc9",
-    "fact_template": "אדם מפלורידה תובע את עירו על אנשים _______ שוב ושוב על החוף ליד הנכס שלו.",
-    "truth_keyword": "להתנשא ולזיין",
+    "fact_template": "איש פלורידה מגיש תביעה נגד העיר שלו בגלל שאנשים ממשיכים לעשות _______ על החוף מול האחוזה שלו.",
+    "truth_keyword": "קקי",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27298,8 +27298,8 @@
   },
   {
     "content_id": "hxi3k5",
-    "fact_template": "עיתונאי מפלורידה קורא לטראמפ להשתמש ב-_______ נגד מפגינים בפורטלנד כדי לעצור \"מהפכה קומוניסטית\" לכאורה.",
-    "truth_keyword": "כדורי נקודה חלולה",
+    "fact_template": "כומר הטלוויזיה של איש פלורידה מבקש מטראמפ להשתמש ב_______ על המפגינים כדי לחסל \"מהפכה קומוניסטית\" בפורטלנד.",
+    "truth_keyword": "כדורי נקודה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27307,8 +27307,8 @@
   },
   {
     "content_id": "azdn1f",
-    "fact_template": "גבר מפלורידה מאבד את עבודתו לאחר שפרסם את _______ באינסטגרם במהלך ניתוחי מטופל.",
-    "truth_keyword": "תמונות של איברי המין של החולים",
+    "fact_template": "איש פלורידה פרסם באינסטגרם תמונות באמצע הניתוח של _______",
+    "truth_keyword": "איבר המין של מטופליו",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27442,8 +27442,8 @@
   },
   {
     "content_id": "5265dm",
-    "fact_template": "גבר מפלורידה מציל דוב שחור טובע _______",
-    "truth_keyword": "400 קילוגרם",
+    "fact_template": "איש פלורידה הציל טובע במשקל _______",
+    "truth_keyword": "400 ק\"ג",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27451,7 +27451,7 @@
   },
   {
     "content_id": "8padxi",
-    "fact_template": "גבר מפלורידה מקבל הרעלת מזון מצדפות מקוללות, הופך למשותק וזוכה ב-_______ בתביעה",
+    "fact_template": "איש פלורידה אכל צדפות רעות, סבל משיתוק, למד ללכת שוב וזכה ב-_______",
     "truth_keyword": "6.7 מיליון דולר",
     "metadata": {
       "difficulty": "Hard",
@@ -27775,8 +27775,8 @@
   },
   {
     "content_id": "fr7s6w",
-    "fact_template": "גבר מפלורידה מלווה _______ ו-12 תינוקות בחזרה בשלום לאגם.",
-    "truth_keyword": "לְהִתְכּוֹפֵף",
+    "fact_template": "איש פלורידה מלווה את _______, 12 ברווזונים בחזרה בבטחה לאגם",
+    "truth_keyword": "אמא ברווזה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27784,8 +27784,8 @@
   },
   {
     "content_id": "cnffjd",
-    "fact_template": "גבר מפלורידה מושך _______ על צוות משלוחים לאחר שהרהיטים הגיעו באיחור.",
-    "truth_keyword": "אֶקְדָח",
+    "fact_template": "איש פלורידה מושך _______ על צוות המסירה לאחר שהרהיטים הגיעו באיחור, אומר להם \"יריתי באנשים בפחות\"",
+    "truth_keyword": "אקדח",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27793,7 +27793,7 @@
   },
   {
     "content_id": "c0jqvh",
-    "fact_template": "אישה מפלורידה שודדת משאית דואר עם _______, בורחת על תלת אופן וטוענת שהיא אלוהים.",
+    "fact_template": "אשת פלורידה שודדת משאית דואר עם _______, ברחה על תלת אופן, טענה שהיא אלוהים",
     "truth_keyword": "אקדח מזויף",
     "metadata": {
       "difficulty": "Hard",
@@ -27802,8 +27802,8 @@
   },
   {
     "content_id": "jmom2g",
-    "fact_template": "איש פלורידה עם PTSD תולה בעילום שם שלטים ברחבי העיר שאומרים _______.",
-    "truth_keyword": "שִׂמְחָה",
+    "fact_template": "איש פלורידה עם PTSD תולה באופן אנונימי _______ בכל רחבי העיר",
+    "truth_keyword": "שלטי \"אושר\"",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27811,8 +27811,8 @@
   },
   {
     "content_id": "b2ikci",
-    "fact_template": "אישה מפלורידה מתחקה אחר אחים למחצה של _______ מתרומת זרע, בתקווה שארה\"ב תקבע תקנות.",
-    "truth_keyword": "52",
+    "fact_template": "אישה בפלורידה מתחקה אחר _______, מקווה שארצות הברית תקבע תקנות לגבי לידות לתורם זרע",
+    "truth_keyword": "52 אחים תורמים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27829,8 +27829,8 @@
   },
   {
     "content_id": "c57a9r",
-    "fact_template": "אישה מפלורידה מקימה מצלמת אבטחה כדי להתמודד עם _______ שמציק לה מדי לילה.",
-    "truth_keyword": "זְאֵב עֲרָבוֹת",
+    "fact_template": "אישה בפלורידה שמרגישה לכודה בביתה כל לילה על ידי _______ מטריד מציבה מצלמת אבטחה, זאב ערבות משתין עליה",
+    "truth_keyword": "זאב ערבות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27838,8 +27838,8 @@
   },
   {
     "content_id": "hkm0nr",
-    "fact_template": "עורך דין מפלורידה הידוע בהתלבשות כ-_______ מביא את המסר שלו לג'קסונוויל ביץ'.",
-    "truth_keyword": "גרים ריפר",
+    "fact_template": "עורך דין איש פלורידה הידוע בהתלבשות כ-_______ מביא את המסר שלו לג'קסונוויל ביץ'",
+    "truth_keyword": "Grim Reaper",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27847,8 +27847,8 @@
   },
   {
     "content_id": "1muldpp",
-    "fact_template": "גבר מפלורידה דוקר אנושות חבר בוויכוח על טראמפ ו-_______.",
-    "truth_keyword": "עומד מאחור",
+    "fact_template": "איש פלורידה דוקר למוות חבר בוויכוח על טראמפ _______",
+    "truth_keyword": "פושט רגל",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27856,8 +27856,8 @@
   },
   {
     "content_id": "h7mopy",
-    "fact_template": "אישה בת 69 מפלורידה צועקת על כלי רכב חולפים, מורידה את מכנסיה ו-_______ על ספסל.",
-    "truth_keyword": "משתין",
+    "fact_template": "אישה בת 69 בפלורידה צועקת על כלי רכב חולפים לפני שהיא קמה, מושכת את מכנסיה ומטילה _______ על ספסל",
+    "truth_keyword": "שתן",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27955,8 +27955,8 @@
   },
   {
     "content_id": "cnpwxi",
-    "fact_template": "Florida Man מבקש מפקיד Walmart _______",
-    "truth_keyword": "נשק קטלני",
+    "fact_template": "איש פלורידה מבקש ממוכר וולמארט _______ ש\"ייהרוג 200 אנשים\".",
+    "truth_keyword": "מוצר וולמארט",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27964,8 +27964,8 @@
   },
   {
     "content_id": "jxryf9",
-    "fact_template": "_______ ריק סקוט נבדק חיובי ל-COVID-19",
-    "truth_keyword": "איש פלורידה",
+    "fact_template": "איש פלורידה מוביל וסנאטור נגד מסחטות ריק סקוט נבדק חיובי ל_______.",
+    "truth_keyword": "קוביד 19",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27974,7 +27974,7 @@
   {
     "content_id": "ae6bld",
     "fact_template": "איש פלורידה נלחם כדי להציל את _______",
-    "truth_keyword": "הבת של קלי",
+    "truth_keyword": "הבת מר' קלי",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27982,8 +27982,8 @@
   },
   {
     "content_id": "dmgran",
-    "fact_template": "איש פלורידה נעצר בגין יחסי מין עם צעצוע מפוחלץ, זרק כסף על לקוחות טארגט, ואז ביצע _______ עם חד קרן מפוצץ",
-    "truth_keyword": "מִין",
+    "fact_template": "איש פלורידה נעצר על שקיים יחסי מין עם _______",
+    "truth_keyword": "צעצוע ממולא של אולף",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -27991,8 +27991,8 @@
   },
   {
     "content_id": "drz31h",
-    "fact_template": "רישום הפשע של אישה בפלורידה מכיל _______ רבות, אך המשטרה טוענת שכולם לא חוקיים",
-    "truth_keyword": "תעלומות",
+    "fact_template": "מפשעתה של אישה בפלורידה מכילה תעלומות רבות, אך המשטרה טוענת שכולן _______",
+    "truth_keyword": "אינן חוקיות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28909,8 +28909,8 @@
   },
   {
     "content_id": "ijc61z",
-    "fact_template": "אדם בפלורידה הואשם ב-_______ לאחר שלף אקדח על מפגינים של Black Lives Matter",
-    "truth_keyword": "אלימות של טראמפ",
+    "fact_template": "איש פלורידה שהשם הוזכר הוא נחשדו באלימות על מפגינים של Black Lives Matter, ועלה ב_______ בנוכחות פומבית.",
+    "truth_keyword": "אקדח",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -28936,8 +28936,8 @@
   },
   {
     "content_id": "fbtd92",
-    "fact_template": "גבר מפלורידה נעצר על מציצת _______",
-    "truth_keyword": "אצבעותיו של מטופל",
+    "fact_template": "איש פלורידה נעצר בגין מציצת אצבעות מטופל בבית החולים עם _______.",
+    "truth_keyword": "הצמדה חפיפה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -30763,8 +30763,8 @@
   },
   {
     "content_id": "1sis021",
-    "fact_template": "איש פלורידה מנסה ליישב את המחלוקת עם השכן על ידי אחיזת חרב _______, הרמתה מעל כתפו, ואז ניגש לשכן עם החרב תוך כדי אמירות מאיימות",
-    "truth_keyword": "בעלת שלוש רגליים",
+    "fact_template": "איש פלורידה ניגש לשכנו עם חרב בעל _______ תוך כדי אמירות מאיימות",
+    "truth_keyword": "להב מתכת של שלוש רגל",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -30772,8 +30772,8 @@
   },
   {
     "content_id": "1simawk",
-    "fact_template": "מרדף משטרתי מסתיים ב-4 מעצרים של איש פלורידה, שחזור מקש החץ של _______, צ'קים גנובים",
-    "truth_keyword": "שירות הדואר האמריקאי",
+    "fact_template": "מרדף משטרתי הסתיים ב-4 מעצרים של איש פלורידה שגנב _______",
+    "truth_keyword": "קש החץ של שירות הדואר האמריקאי",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -30781,8 +30781,8 @@
   },
   {
     "content_id": "1sikdw1",
-    "fact_template": "מצלמת טבעת נסתרת שנמצאה בחדר השינה _______ למעצרו של איש פלורידה",
-    "truth_keyword": "מובילה",
+    "fact_template": "איש פלורידה נעצר בזכות _______ שנמצאה בחדר השינה",
+    "truth_keyword": "מצלמת טבעת נסתרת",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -30790,8 +30790,8 @@
   },
   {
     "content_id": "1sijc60",
-    "fact_template": "אישה בפלורידה ניסתה לגנוב את הרועה הגרמני במשקל _______ של המשפחה לאחר שזחלה מבעד לחלון",
-    "truth_keyword": "90 קילו",
+    "fact_template": "אישה בפלורידה זחלה מבעד לחלון כדי לגנוב _______",
+    "truth_keyword": "רועה גרמני במשקל 90 קילו",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -30808,8 +30808,8 @@
   },
   {
     "content_id": "1shn10c",
-    "fact_template": "איש פלורידה נוסע לתוך תעלת מחוז ברווארד עם _______ במכונית",
-    "truth_keyword": "אקסו שלו",
+    "fact_template": "איש פלורידה נוסע לתוך _______ עם אקס במכונית",
+    "truth_keyword": "תעלת מחוז ברווארד",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -30818,7 +30818,7 @@
   {
     "content_id": "1shmz7u",
     "fact_template": "כנופיית אנשי פלורידה שנתפסה משחקת _______",
-    "truth_keyword": "פרוגר מהחיים האמיתיים",
+    "truth_keyword": "\"פרוגר מהחיים האמיתיים\"",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -30826,8 +30826,8 @@
   },
   {
     "content_id": "1shl8em",
-    "fact_template": "איש פלורידה שהואשם בפריצה למסעדת מיאמי ספרינגס כדי לצפות בטלוויזיה: _______",
-    "truth_keyword": "עשה את עצמו בבית",
+    "fact_template": "איש פלורידה פרץ למסעדת מיאמי ספרינגס _______",
+    "truth_keyword": "כדי לצפות בטלוויזיה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -30835,7 +30835,7 @@
   },
   {
     "content_id": "1sh19iv",
-    "fact_template": "שוטר גבר בפלורידה נענש ב\"אימונים/ייעוץ\" על _______",
+    "fact_template": "שוטר גבר בפלורידה נענש באימונים/ייעוץ על _______",
     "truth_keyword": "הפליץ בפניו של עמית",
     "metadata": {
       "difficulty": "Hard",
@@ -31023,87 +31023,6 @@
     }
   },
   {
-    "content_id": "1sis021",
-    "fact_template": "איש פלורידה ניגש לשכנו עם חרב בעל _______ תוך כדי אמירות מאיימות",
-    "truth_keyword": "להב מתכת של שלוש רגל",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1simawk",
-    "fact_template": "מרדף משטרתי הסתיים ב-4 מעצרים של איש פלורידה שגנב _______",
-    "truth_keyword": "קש החץ של שירות הדואר האמריקאי",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1sikdw1",
-    "fact_template": "איש פלורידה נעצר בזכות _______ שנמצאה בחדר השינה",
-    "truth_keyword": "מצלמת טבעת נסתרת",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1sijc60",
-    "fact_template": "אישה בפלורידה זחלה מבעד לחלון כדי לגנוב _______",
-    "truth_keyword": "רועה גרמני במשקל 90 קילו",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1sij9or",
-    "fact_template": "אישה בפלורידה חשבה ש-123 קמ\"ש זה בסדר כי היא _______",
-    "truth_keyword": "נהגה בסופרה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1shn10c",
-    "fact_template": "איש פלורידה נוסע לתוך _______ עם אקס במכונית",
-    "truth_keyword": "תעלת מחוז ברווארד",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1shmz7u",
-    "fact_template": "כנופיית אנשי פלורידה שנתפסה משחקת _______",
-    "truth_keyword": "\"פרוגר מהחיים האמיתיים\"",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1shl8em",
-    "fact_template": "איש פלורידה פרץ למסעדת מיאמי ספרינגס _______",
-    "truth_keyword": "כדי לצפות בטלוויזיה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1sh19iv",
-    "fact_template": "שוטר גבר בפלורידה נענש באימונים/ייעוץ על _______",
-    "truth_keyword": "הפליץ בפניו של עמית",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1sde9sx",
     "fact_template": "איש פלורידה דקר קורבן ואסף דם על _______ כמו 'דקסטר'",
     "truth_keyword": "שקופיות מיקרוסקופ",
@@ -31285,7 +31204,7 @@
   },
   {
     "content_id": "1s88oi5",
-    "fact_template": "איש פלורידה סוחר סמים נפגע מ-_______ שניות לפני שהשוטרים נכנסים פנימה",
+    "fact_template": "איש פלורידה/סוחר סמים 'נפגע _______' שניות לפני שהשוטרים נכנסים פנימה",
     "truth_keyword": "שקית קוקאין מעופפת",
     "metadata": {
       "difficulty": "Hard",
@@ -31294,8 +31213,8 @@
   },
   {
     "content_id": "1s7zdn1",
-    "fact_template": "משרד השריף של איש פלורידה בישלו _______ במשך שלוש שנים כדי שיוכלו לעצור את הלקוחות היקרים שלהם.",
-    "truth_keyword": "קראק קוקאין",
+    "fact_template": "משרד השריף של איש פלורידה _______ במשך שלוש שנים כדי שיוכלו לעצור את הלקוחות היקרים שלהם",
+    "truth_keyword": "בישלו קראק קוקאין",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -31303,8 +31222,8 @@
   },
   {
     "content_id": "1s7u636",
-    "fact_template": "BSO מאיר את צוות הגברים בפלורידה מאחורי גניבות מרובות של _______ באזור טרי-קאונטי",
-    "truth_keyword": "חנויות איים",
+    "fact_template": "BSO מאיר את צוות הגברים בפלורידה מאחורי _______",
+    "truth_keyword": "גניבות איים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -31321,7 +31240,7 @@
   },
   {
     "content_id": "1s7pgs7",
-    "fact_template": "איש פלורידה נעצר לאחר שאיים על עובדים ב-_______ בשטיפת מכוניות אוקלה",
+    "fact_template": "איש פלורידה נעצר לאחר שאיים על עובדים _______",
     "truth_keyword": "גרזן גדול",
     "metadata": {
       "difficulty": "Hard",
@@ -31339,8 +31258,8 @@
   },
   {
     "content_id": "1s6miiq",
-    "fact_template": "באולם בית המשפט שלו, איש פלורידה שואל נאשם שחור אם הוא \"_______ בעבר?\"",
-    "truth_keyword": "קצץ אי פעם כותנה",
+    "fact_template": "באולם בית המשפט שלו, איש פלורידה שואל נאשם שחור אם הוא _______",
+    "truth_keyword": "קצץ כותנה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -31348,8 +31267,8 @@
   },
   {
     "content_id": "1s6ekn1",
-    "fact_template": "איש פלורידה 'שיכור' חרש לכאורה מכונית דרך שער נמל התעופה, _______ לפני שניסה לעלות על מספר מטוסים",
-    "truth_keyword": "אל המסלול",
+    "fact_template": "איש פלורידה שכיר לכאורה מכונית דרך שער נמל התעופה, אל המסלול לפני שניסה _______",
+    "truth_keyword": "לעלות על מטוסים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -31357,7 +31276,7 @@
   },
   {
     "content_id": "1s6chkg",
-    "fact_template": "איש הפלורידה 'Rocket Man' עצר אחרי קריאות של _______",
+    "fact_template": "איש הפלורידה Rocket Man עצר אחרי _______",
     "truth_keyword": "משאית עמוסת טילים",
     "metadata": {
       "difficulty": "Hard",
@@ -31536,90 +31455,9 @@
     }
   },
   {
-    "content_id": "1s88oi5",
-    "fact_template": "איש פלורידה/סוחר סמים 'נפגע _______' שניות לפני שהשוטרים נכנסים פנימה",
-    "truth_keyword": "שקית קוקאין מעופפת",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1s7zdn1",
-    "fact_template": "משרד השריף של איש פלורידה _______ במשך שלוש שנים כדי שיוכלו לעצור את הלקוחות היקרים שלהם",
-    "truth_keyword": "בישלו קראק קוקאין",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1s7u636",
-    "fact_template": "BSO מאיר את צוות הגברים בפלורידה מאחורי _______",
-    "truth_keyword": "גניבות איים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1s7q950",
-    "fact_template": "אישה בפלורידה שנעצרה בגין DUI נמצאה _______ במושב הנהג",
-    "truth_keyword": "חשופת חזה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1s7pgs7",
-    "fact_template": "איש פלורידה נעצר לאחר שאיים על עובדים _______",
-    "truth_keyword": "גרזן גדול",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1s7pf59",
-    "fact_template": "איש פלורידה נתפס _______ בחדר ההמתנה של בית החולים אוקלה",
-    "truth_keyword": "מאונן",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1s6miiq",
-    "fact_template": "באולם בית המשפט שלו, איש פלורידה שואל נאשם שחור אם הוא _______",
-    "truth_keyword": "קצץ כותנה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1s6k6o7",
     "fact_template": "איש פלורידה שנתפס במצלמה _______ בכביש המהיר של פלורידה",
     "truth_keyword": "מציל שני פעוטות",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1s6ekn1",
-    "fact_template": "איש פלורידה שכיר לכאורה מכונית דרך שער נמל התעופה, אל המסלול לפני שניסה _______",
-    "truth_keyword": "לעלות על מטוסים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1s6chkg",
-    "fact_template": "איש הפלורידה Rocket Man עצר אחרי _______",
-    "truth_keyword": "משאית עמוסת טילים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -31807,7 +31645,7 @@
   },
   {
     "content_id": "1rz9avf",
-    "fact_template": "אשת פלורידה השתינה על _______ תוך כדי יצירת סרטון למבוגרים ב-2 נכסי Airbnb; היא נעצרה ונאסרה מ-Airbnb וגרמה נזק בשווי 3000 דולר",
+    "fact_template": "אישה פלורידית שכרה 2 נכסי AirBnB והשתינה על _______ תוך כדי יצירת סרטונים לאתר תוכן למבוגרים, וגרמה נזק בשווי 3000 דולר.",
     "truth_keyword": "רהיטים ומכשירים",
     "metadata": {
       "difficulty": "Hard",
@@ -31816,8 +31654,8 @@
   },
   {
     "content_id": "1ryuuwv",
-    "fact_template": "גבר בפלורידה נעצר בעבר בגין _______ ונאשם ב-DUI",
-    "truth_keyword": "חשיפת איבר מין",
+    "fact_template": "גבר בפלורידה שנעצר בעבר בגין _______ נעצר באשמת DUI.",
+    "truth_keyword": "חשיפת איבר מינו",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -31825,8 +31663,8 @@
   },
   {
     "content_id": "1ry9e4p",
-    "fact_template": "בועט באוניברסיטת פלורידה סטייט נעצר בגין פגיעה לכאורה בקצין אכיפת החוק, _______",
-    "truth_keyword": "מתנגד באלימות",
+    "fact_template": "בועט באוניברסיטת פלורידה סטייט פלורידה נעצר בגין פגיעה לכאורה ב_______, מתנגד באלימות.",
+    "truth_keyword": "קצין אכיפת החוק",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -31834,8 +31672,8 @@
   },
   {
     "content_id": "1rxwafu",
-    "fact_template": "איש פלורידה מתעמת עם פיתון עצום _______ בקו כביש פלורידה",
-    "truth_keyword": "מכווץ צב",
+    "fact_template": "איש פלורידה מתעמת עם פיתון עצום ש_______ צבי בצד כביש פלורידה.",
+    "truth_keyword": "מכווץ צבי",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -31843,8 +31681,8 @@
   },
   {
     "content_id": "1rxqoei",
-    "fact_template": "איש פלורידה, גברים, חושבים שאתם צריכים להיות מסוגלים להתחתן עם _______",
-    "truth_keyword": "בן דוד ראשון",
+    "fact_template": "איש פלורידה, גברים, חושבים שאתם צריכים להיות מסוגלים _______.",
+    "truth_keyword": "בן דוד הראשון",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -31852,7 +31690,7 @@
   },
   {
     "content_id": "1rxi6io",
-    "fact_template": "איש פלורידה עם יותר מ-10 הרשעות בגין נהיגה עם רישיון על תנאי נעצר בגין _______ בכבישים הראשיים",
+    "fact_template": "איש פלורידה עם יותר מ-10 הרשעות בגין נהיגה עם רישיון על תנאי _______ בגין נהיגה לאחור בכבישים הראשיים.",
     "truth_keyword": "נהיגה לאחור",
     "metadata": {
       "difficulty": "Hard",
@@ -31861,8 +31699,8 @@
   },
   {
     "content_id": "1rxe987",
-    "fact_template": "גבר בפלורידה מבוקש באשמת מין ילדים נעצר _______ בניסיון לברוח מארה\"ב",
-    "truth_keyword": "במימי קובה",
+    "fact_template": "גבר בפלורידה מבוקש באשמת _______ נעצר במימי קובה בניסיון לברוח מארה\"ב.",
+    "truth_keyword": "מין ילדים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32085,33 +31923,6 @@
     }
   },
   {
-    "content_id": "1rz9avf",
-    "fact_template": "אישה פלורידית שכרה 2 נכסי AirBnB והשתינה על _______ תוך כדי יצירת סרטונים לאתר תוכן למבוגרים, וגרמה נזק בשווי 3000 דולר.",
-    "truth_keyword": "רהיטים ומכשירים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1ryuuwv",
-    "fact_template": "גבר בפלורידה שנעצר בעבר בגין _______ נעצר באשמת DUI.",
-    "truth_keyword": "חשיפת איבר מינו",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1ry9e4p",
-    "fact_template": "בועט באוניברסיטת פלורידה סטייט פלורידה נעצר בגין פגיעה לכאורה ב_______, מתנגד באלימות.",
-    "truth_keyword": "קצין אכיפת החוק",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1ry6qyn",
     "fact_template": "אישה בפלורידה _______ חמישה חודשים לאחר השחרור מבית החולים.",
     "truth_keyword": "נשארה בחדר",
@@ -32121,45 +31932,9 @@
     }
   },
   {
-    "content_id": "1rxwafu",
-    "fact_template": "איש פלורידה מתעמת עם פיתון עצום ש_______ צבי בצד כביש פלורידה.",
-    "truth_keyword": "מכווץ צבי",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1rxqoei",
-    "fact_template": "איש פלורידה, גברים, חושבים שאתם צריכים להיות מסוגלים _______.",
-    "truth_keyword": "בן דוד הראשון",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1rxpgls",
     "fact_template": "Florida Man משפיל חבר על ידי גניבת הנשים שהם פגשו, ואז _______ חבר בגלל ויכוח.",
     "truth_keyword": "דוקר את חברו",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1rxi6io",
-    "fact_template": "איש פלורידה עם יותר מ-10 הרשעות בגין נהיגה עם רישיון על תנאי _______ בגין נהיגה לאחור בכבישים הראשיים.",
-    "truth_keyword": "נהיגה לאחור",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1rxe987",
-    "fact_template": "גבר בפלורידה מבוקש באשמת _______ נעצר במימי קובה בניסיון לברוח מארה\"ב.",
-    "truth_keyword": "מין ילדים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32230,8 +32005,8 @@
   },
   {
     "content_id": "1r91jmf",
-    "fact_template": "איש פלורידה מרסק רכב שטח אקראי _______ בחניון Publix",
-    "truth_keyword": "עם פטיש",
+    "fact_template": "איש פלורידה מרסק רכב שטח אקראי עם _______ בחניון Publix",
+    "truth_keyword": "פטיש",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32239,8 +32014,8 @@
   },
   {
     "content_id": "1r7jgkg",
-    "fact_template": "אישה בפלורידה השאירה ילדים _______ במשך שעות",
-    "truth_keyword": "במכונית עם נהג אובר",
+    "fact_template": "אישה בפלורידה השאירה ילדים במכונית עם _______ למשך שעות",
+    "truth_keyword": "נהג אובר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32257,8 +32032,8 @@
   },
   {
     "content_id": "1r77gve",
-    "fact_template": "גבר נער בפלורידה עומד לדין לאחר ש_______",
-    "truth_keyword": "חשף את עצמו לנשים",
+    "fact_template": "גבר נער בפלורידה שעומד לדין לאחר שחשף את עצמו לנשים, טוען שהוא _______",
+    "truth_keyword": "חשב שזה מצחיק",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32266,8 +32041,8 @@
   },
   {
     "content_id": "1r75zq0",
-    "fact_template": "איש פלורידה נעצר לאחר שננעל _______ בזמן שניסה לגנוב ממנו",
-    "truth_keyword": "בטנדר",
+    "fact_template": "איש פלורידה נעצר לאחר _______ בזמן שניסה לגנוב ממנו",
+    "truth_keyword": "ננעל בטנדר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32275,8 +32050,8 @@
   },
   {
     "content_id": "1r75zgo",
-    "fact_template": "סרטון מראה איש פלורידה נתקע _______ לאחר שניסה לגנוב ממנו",
-    "truth_keyword": "בטנדר",
+    "fact_template": "סרטון מראה איש פלורידה _______ אחרי שניסה לגנוב ממנו",
+    "truth_keyword": "נתקע בטנדר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32302,8 +32077,8 @@
   },
   {
     "content_id": "1r5mo8l",
-    "fact_template": "איש פלורידה נעצר לאחר _______ תאונות פגע וברח בכביש I-95",
-    "truth_keyword": "13",
+    "fact_template": "איש פלורידה נעצר לאחר _______ וירח בכביש I-95",
+    "truth_keyword": "13 תאונות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32311,8 +32086,8 @@
   },
   {
     "content_id": "1r4xdeg",
-    "fact_template": "איש פלורידה ששוטרים פנו אליו טוען שהוא _______",
-    "truth_keyword": "'ג'ורג' קוסטנזה'",
+    "fact_template": "איש פלורידה טוען שהוא _______",
+    "truth_keyword": "ג׳ורג׳ קוסטנזה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32320,7 +32095,7 @@
   },
   {
     "content_id": "1r4uwqt",
-    "fact_template": "איש פלורידה רכוב על סוס מסתכסך עם _______ בשכונת פורט אורנג'",
+    "fact_template": "איש פלורידה מרכב על סוס ומסתכסך עם _______ בשכונת פורט אורנג׳",
     "truth_keyword": "פרה משוחררת",
     "metadata": {
       "difficulty": "Hard",
@@ -32329,7 +32104,7 @@
   },
   {
     "content_id": "1r4pbxm",
-    "fact_template": "איש פלורידה נעצר על כך שהשליך תנין לחלון הנסיעה של וונדי, _______",
+    "fact_template": "איש פלורידה נעצר לאחר שהשליך _______ לחלון הנסיעה של וונדי",
     "truth_keyword": "תנין",
     "metadata": {
       "difficulty": "Hard",
@@ -32338,7 +32113,7 @@
   },
   {
     "content_id": "1r4mahe",
-    "fact_template": "קטטה של ​​איש פלורידה, הכוללת עד 20 אנשים, גורמת להנעה לפנים ולהאשמות פליליות, _______",
+    "fact_template": "קטטה של איש פלורידה שכוללת עד _______ גורמת להנעה לפנים והאשמות פליליות",
     "truth_keyword": "20 אנשים",
     "metadata": {
       "difficulty": "Hard",
@@ -32347,8 +32122,8 @@
   },
   {
     "content_id": "1r4m19u",
-    "fact_template": "איש פלורידה מנסה להבריח תרמוס לכלא בתוך פי הטבעת שלו, _______",
-    "truth_keyword": "תרמוס לכלא",
+    "fact_template": "איש פלורידה מנסה להבריח _______ לכלא בתוך פי הטבעת שלו",
+    "truth_keyword": "תרמוס",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32356,7 +32131,7 @@
   },
   {
     "content_id": "1r4kvhz",
-    "fact_template": "אישה בפלורידה הואשמה לאחר שנמצאה אישה עירומה בפלורידה ליד חדר, _______",
+    "fact_template": "אישה בפלורידה הואשמה לאחר שנמצאה _______ ליד חדר",
     "truth_keyword": "אישה עירומה",
     "metadata": {
       "difficulty": "Hard",
@@ -32392,8 +32167,8 @@
   },
   {
     "content_id": "1r0a68z",
-    "fact_template": "אישה בפלורידה נתפסה במתן שתן _______",
-    "truth_keyword": "בחדר ההפסקה של מסעדה מקסיקנית",
+    "fact_template": "אישה בפלורידה נתפסה בעת _______ בחדר ההפסקה של מסעדה מקסיקנית",
+    "truth_keyword": "מתן שתן",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32401,7 +32176,7 @@
   },
   {
     "content_id": "1r058ae",
-    "fact_template": "גבר בפלורידה הואשם בירח, _______ על קבוצת בני נוער בתוך מקדונלד'ס",
+    "fact_template": "גבר בפלורידה הואשם ב_______ על קבוצת בני נוער בתוך מקדונלד'ס",
     "truth_keyword": "זריקת סודה",
     "metadata": {
       "difficulty": "Hard",
@@ -32410,8 +32185,8 @@
   },
   {
     "content_id": "1qzwy8z",
-    "fact_template": "גבר בפלורידה נעצר לאחר שהשליך סודה, _______ בני נוער מחוץ למקדונלדס",
-    "truth_keyword": "בירח",
+    "fact_template": "גבר בפלורידה נעצר לאחר שהשליך _______ על בני נוער מחוץ למקדונלדס",
+    "truth_keyword": "סודה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32419,8 +32194,8 @@
   },
   {
     "content_id": "1qzmwdw",
-    "fact_template": "גבר שועט בפלורידה שהואשם בניהול חנות גזעים לעגלות גולף, נפתח עם אלפי סחורות גנובות + _______",
-    "truth_keyword": "פשע",
+    "fact_template": "גבר בפלורידה הואשם בניהול _______ לעגלות גולף, ונעצר עם אלפי סחורות גנובות",
+    "truth_keyword": "חנות גזעים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32428,8 +32203,8 @@
   },
   {
     "content_id": "1qzmu78",
-    "fact_template": "אישה בפלורידה נעצרה בגלל _______ על ים",
-    "truth_keyword": "רכיבה",
+    "fact_template": "אישה בפלורידה נעצרה בגלל _______",
+    "truth_keyword": "רכיבה על ים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32437,8 +32212,8 @@
   },
   {
     "content_id": "1qydomg",
-    "fact_template": "איש פלורידה עירום נתקל בתנועה, נחתך על ידי מכונית + _______",
-    "truth_keyword": "קירור",
+    "fact_template": "איש פלורידה _______ נתקל בתנועה ונפגע ממכונית",
+    "truth_keyword": "עירום",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32446,8 +32221,8 @@
   },
   {
     "content_id": "1qycvdw",
-    "fact_template": "גבר בפלורידה הואשם שכמעט נחריד את אצבעה של אישה במהלך תקיפה אלימה במשפחה + _______",
-    "truth_keyword": "לוחצת",
+    "fact_template": "גבר בפלורידה הואשם ש_______ במהלך תקיפה משפחתית",
+    "truth_keyword": "כמעט נשך את אצבעה של אישה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32455,8 +32230,8 @@
   },
   {
     "content_id": "1qxsnsp",
-    "fact_template": "מורה מחליף איש פלורידה מגיע לעבודה שיכור, משכנע את שאר הצוות + _______",
-    "truth_keyword": "לשחק טלניק",
+    "fact_template": "מורה מחליף בפלורידה הגיע לעבודה _______",
+    "truth_keyword": "שיכור",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32473,8 +32248,8 @@
   },
   {
     "content_id": "1qw26pq",
-    "fact_template": "איש פלורידה ונוסע אובר הואשמו בגישושים בנהג במהלך הנסיעה, מה שהוביל להתרסקות בהוואנה הקטנה + _______",
-    "truth_keyword": "צעקות",
+    "fact_template": "איש פלורידה ונוסע אובר הואשמו ב_______ בנהג במהלך הנסיעה, מה שהוביל להתרסקות",
+    "truth_keyword": "גישושים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32563,7 +32338,7 @@
   },
   {
     "content_id": "1qn2td2",
-    "fact_template": "איש פלורידה נעצר ב-DUI אחרי שנסע במכונית _______",
+    "fact_template": "איש פלורידה נעצר ב-DUI לאחר שנסע במכונית _______",
     "truth_keyword": "על האש",
     "metadata": {
       "difficulty": "Hard",
@@ -32581,8 +32356,8 @@
   },
   {
     "content_id": "1qmhrqm",
-    "fact_template": "המשטרה אמרה שהוא זרק חבילת קטשופ _______ לעבר אדם בתחנת אוטובוס",
-    "truth_keyword": "פתוחה",
+    "fact_template": "גבר מפלורידה עומד בפני אישום חמור לאחר שזרק _______ לעבר אדם בתחנת אוטובוס",
+    "truth_keyword": "חבילת קטשופ פתוחה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32590,8 +32365,8 @@
   },
   {
     "content_id": "1qm7jxc",
-    "fact_template": "איש פלורידה אכל _______ ממפגש מיני עם אחיו",
-    "truth_keyword": "מת מפציעות",
+    "fact_template": "איש פלורידה מת מפציעות ממפגש מיני _______",
+    "truth_keyword": "עם אחיו באקווריום",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32599,7 +32374,7 @@
   },
   {
     "content_id": "1qlpvvu",
-    "fact_template": "אישה מפלורידה אוחזת בפעוט ומתקפת עובד Enterprise עם _______",
+    "fact_template": "אישה מפלורידה תוקפת עובד Enterprise עם _______",
     "truth_keyword": "מקל סלפי",
     "metadata": {
       "difficulty": "Hard",
@@ -32617,8 +32392,8 @@
   },
   {
     "content_id": "1qlnh8t",
-    "fact_template": "איש פלורידה מקבל 4 שנים אחרי שניסה לשדוד את _______ ב-",
-    "truth_keyword": "טאקו בל",
+    "fact_template": "איש פלורידה מקבל 4 שנים לאחר שניסה לשדוד את טאקו בל עם _______",
+    "truth_keyword": "אבן",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32626,8 +32401,8 @@
   },
   {
     "content_id": "1qln7ls",
-    "fact_template": "איש פלורידה עם פנטניל נעצר לאחר שאונן מחוץ לבית, _______",
-    "truth_keyword": "הטלת שתן וקפיצה לתעלה",
+    "fact_template": "איש פלורידה עם פנטניל נעצר לאחר שאונן מחוץ לבית, _______ וקפיצה לתעלה",
+    "truth_keyword": "הטלת שתן",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32635,8 +32410,8 @@
   },
   {
     "content_id": "1qlbl49",
-    "fact_template": "קפטן סירת השכר של פלורידה מצא _______, נתפס בניסיון למכור אחד לשריף",
-    "truth_keyword": "24 קילו קוקאין בים",
+    "fact_template": "קפטן סירת השכר של פלורידה מאן מצא 24 קילו קוקאין בים, נתפס בניסיון למכור _______ לשריף",
+    "truth_keyword": "אחד",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32671,8 +32446,8 @@
   },
   {
     "content_id": "1qk0sy8",
-    "fact_template": "אישה בפלורידה נעצרה בגין גניבת גביע סטנלי כדי לאחסן את חלב האם שלה _______",
-    "truth_keyword": "החלב",
+    "fact_template": "אישה בפלורידה נעצרה בגין גניבת גביע סטנלי _______",
+    "truth_keyword": "כדי לאחסן את חלב האם שלה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32680,8 +32455,8 @@
   },
   {
     "content_id": "1qje8p6",
-    "fact_template": "אישה בפלורידה תובעת את המרפאה במרכז פלורידה לאחר שילדה את התינוק הלא נכון _______",
-    "truth_keyword": "תינוק הלא נכון",
+    "fact_template": "אישה בפלורידה תובעת את המרפאה לאחר שילדה _______",
+    "truth_keyword": "את התינוק הלא נכון",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32689,8 +32464,8 @@
   },
   {
     "content_id": "1qjc6h1",
-    "fact_template": "איש פלורידה הועמד לדין בבית המשפט לאחר שהואשם בצילומים מתחת לשמלה של ילדה בכנסיית פמברוק פינס _______",
-    "truth_keyword": "תחת שמלה של ילדה",
+    "fact_template": "איש פלורידה הועמד לדין בגין _______ בכנסיית פמברוק פינס",
+    "truth_keyword": "צילומים מתחת לשמלה של ילדה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32698,8 +32473,8 @@
   },
   {
     "content_id": "1qjbutq",
-    "fact_template": "איפה הבשר? למטה במכנסיים של איש פלורידה הזה _______",
-    "truth_keyword": "מאחורי האחסון",
+    "fact_template": "איש פלורידה החביא _______ במכנסיים שלו",
+    "truth_keyword": "בשר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32716,8 +32491,8 @@
   },
   {
     "content_id": "1qjb0ch",
-    "fact_template": "אישה בת 81 מפלורידה נעצרה לאחר עוקץ רצח סמוי בשכר _______",
-    "truth_keyword": "בשכר",
+    "fact_template": "אישה בת 81 מפלורידה נעצרה לאחר _______",
+    "truth_keyword": "עוקץ רצח סמוי בשכר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32725,8 +32500,8 @@
   },
   {
     "content_id": "1qj718a",
-    "fact_template": "חשפנית בפלורידה שנעצרה בגין DUI מנסה לאכול חולצה _______",
-    "truth_keyword": "חולצה",
+    "fact_template": "חשפנית בפלורידה שנעצרה בגין DUI מנסה _______",
+    "truth_keyword": "לאכול חולצה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32770,7 +32545,7 @@
   },
   {
     "content_id": "1q0ea9i",
-    "fact_template": "אישה בפלורידה נושכת את _______ כדי לברוח",
+    "fact_template": "זוג הותקף ביציאה ממועדון הלילה של מיאמי ביץ'; אישה בפלורידה נושכת את _______ כדי לברוח",
     "truth_keyword": "איבר מינו של גבר פלורידה",
     "metadata": {
       "difficulty": "Hard",
@@ -32779,8 +32554,8 @@
   },
   {
     "content_id": "1q0d5n2",
-    "fact_template": "איש פלורידה חזר עם _______ כדי לרסק ולגנוב כסף ממכונות המשחק",
-    "truth_keyword": "פטיש",
+    "fact_template": "איש פלורידה מוטרד מכך שהפסיד 3,800 דולר על מכונות משחק — לאחר שחזר מאוחר יותר עם _______",
+    "truth_keyword": "פטיש לרסק ולגנוב כסף מהמכונות",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32788,7 +32563,7 @@
   },
   {
     "content_id": "1pzougn",
-    "fact_template": "איש פלורידה פרץ לדירה, נגע בקורבן בצורה בלתי הולמת ו_______",
+    "fact_template": "איש פלורידה פרץ לדירה ונגע בקורבן בצורה בלתי הולמת, _______",
     "truth_keyword": "הטיל עליו שתן",
     "metadata": {
       "difficulty": "Hard",
@@ -32797,8 +32572,8 @@
   },
   {
     "content_id": "1pzhjsu",
-    "fact_template": "אדם בפלורידה הואשם בשוד את שוק הבשר כשהוא עירום למעט _______",
-    "truth_keyword": "מסכה",
+    "fact_template": "אדם בפלורידה הואשם בשוד את שוק הבשר _______",
+    "truth_keyword": "עירום למעט מסכה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32806,8 +32581,8 @@
   },
   {
     "content_id": "1pz98sc",
-    "fact_template": "אשת פלורידה ו-REP. CHERFILUS-MCCORMICK הואשמו בניצול שגוי של _______ מכספי סיוע לקוביד למען רווח אישי",
-    "truth_keyword": "5 מיליון דולר",
+    "fact_template": "אשת פלורידה ו-REP. CHERFILUS-MCCORMICK הואשמה בניצול שגוי של 5 מיליון דולר מכספי סיוע לקוביד _______",
+    "truth_keyword": "למען רווח אישי",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32824,8 +32599,8 @@
   },
   {
     "content_id": "1pytnf4",
-    "fact_template": "אישה בפלורידה גובה קנסות של _______ על חנייה בחניה משלה",
-    "truth_keyword": "165 אלף דולר",
+    "fact_template": "אישה בפלורידה גובה קנסות של _______",
+    "truth_keyword": "165 אלף דולר על חנייה בחניה משלה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32842,8 +32617,8 @@
   },
   {
     "content_id": "1pxzy69",
-    "fact_template": "המשטרה: איש פלורידה ועובד דאנקין _______ עובד לשעבר שהואשם בניסיון לתפוס מזומן",
-    "truth_keyword": "הורידו",
+    "fact_template": "המשטרה: איש פלורידה ועובד דאנקין _______",
+    "truth_keyword": "הורידו עובד לשעבר שהואשם בניסיון לתפוס מזומן",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32851,8 +32626,8 @@
   },
   {
     "content_id": "1pxa4f9",
-    "fact_template": "עובד לשעבר של בנק אוף אמריקה ואיש פלורידה גנבו _______ מלקוח נכה במיאמי-דייד הדרומית",
-    "truth_keyword": "500 אלף דולר",
+    "fact_template": "עובד לשעבר של בנק אוף אמריקה ואיש פלורידה _______",
+    "truth_keyword": "גנבו 500 אלף דולר מלקוח נכה במיאמי-דייד הדרומית",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32860,8 +32635,8 @@
   },
   {
     "content_id": "1px7toh",
-    "fact_template": "איש פלורידה, גנב עגלות גולף מורשע, מבלה את _______ בכלא לאחר שהפר מאסר על תנאי",
-    "truth_keyword": "חג המולד",
+    "fact_template": "איש פלורידה מורשע מבלה את חג המולד בכלא לאחר שהפר מאסר על תנאי — העבירה הקודמת שלו הייתה _______",
+    "truth_keyword": "גנב עגלות גולף",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32869,8 +32644,8 @@
   },
   {
     "content_id": "1px7rqd",
-    "fact_template": "אישה בפלורידה שנפצעה בהתרסקות עגלת גולף נעצרה על _______ בבית החולים",
-    "truth_keyword": "DUI",
+    "fact_template": "אישה בפלורידה נפצעה בהתרסקות עגלת גולף ו_______",
+    "truth_keyword": "נעצרה על DUI בבית החולים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32878,8 +32653,8 @@
   },
   {
     "content_id": "1pwz5d5",
-    "fact_template": "פורץ פלורידה עירום פרץ לבתים של 12 מיליון דולר, 37 מיליון דולר ב_______, שתה בפנים",
-    "truth_keyword": "חג המולד",
+    "fact_template": "פורץ פלורידה _______ פרץ לבתים של 12 מיליון דולר, 37 מיליון דולר בחג המולד, שתה בפנים",
+    "truth_keyword": "עירום",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32887,8 +32662,8 @@
   },
   {
     "content_id": "1pwz4e8",
-    "fact_template": "איש פלורידה תובע את אאוטבק סטייקהאוס, אומר ש_______ התנפצו מתחתיו",
-    "truth_keyword": "השירותים",
+    "fact_template": "איש פלורידה תובע את אאוטבק סטייקהאוס, אומר ש_______",
+    "truth_keyword": "השירותים התנפצו מתחתיו",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32896,8 +32671,8 @@
   },
   {
     "content_id": "1pwq1jw",
-    "fact_template": "איש פלורידה נתפס עם כובע גנוב של _______ לאחר פריצה לתחנת כיבוי האש בווינטר הייבן",
-    "truth_keyword": "גריידי ג'אד",
+    "fact_template": "איש פלורידה נתפס עם _______ לאחר פריצה לתחנת כיבוי האש בווינטר הייבן",
+    "truth_keyword": "כובע גנוב של גריידי ג'אד",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32905,8 +32680,8 @@
   },
   {
     "content_id": "1pwj9ko",
-    "fact_template": "צלצול הפעמון של צבא ההצלה של פלורידה מנסה ל_______ את מנהל פלורידה פאבליקס בחצובת תרומה, אומרים סגנים",
-    "truth_keyword": "שפד",
+    "fact_template": "צלצול הפעמון של צבא ההצלה של פלורידה מנסה לשפד את מנהל פלורידה פאבליקס באמצעות _______, אומרים סגנים",
+    "truth_keyword": "חצובת תרומה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32914,8 +32689,8 @@
   },
   {
     "content_id": "1pwfbf3",
-    "fact_template": "אישה בפלורידה הואשמה בקניית טבעת עם _______, תמונה של Photoshops",
-    "truth_keyword": "כספי FEMA",
+    "fact_template": "אישה בפלורידה הואשמה בקניית טבעת באמצעות כספי FEMA — הטבעת הייתה _______",
+    "truth_keyword": "תמונה של Photoshops",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32923,8 +32698,8 @@
   },
   {
     "content_id": "1pw58ie",
-    "fact_template": "גבר בפלורידה המתין על כתף הכביש המהיר ל_______ לפני שהוציא אותה מהכביש, אומרים שוטרים",
-    "truth_keyword": "האקס",
+    "fact_template": "גבר בפלורידה המתין על כתף הכביש המהיר לאקס שלו, ואז _______, אומרים שוטרים",
+    "truth_keyword": "הוציא אותה מהכביש",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32950,8 +32725,8 @@
   },
   {
     "content_id": "1pj3gri",
-    "fact_template": "אשת פלורידה שיכורה נעצרה לאחר שצעדה בפומבי עם משקאות חריפים ביד ותחתונים עד לברכיה, חושפת את _______",
-    "truth_keyword": "הנרתיק והישבן",
+    "fact_template": "אשת פלורידה שיכורה נעצרה לאחר שצעדה בפומבי עם משקאות חריפים ביד ו_______",
+    "truth_keyword": "תחתונים עד לברכיה, חושפת את הנרתיק והישבן",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32959,8 +32734,8 @@
   },
   {
     "content_id": "1pj0uqm",
-    "fact_template": "איש פלורידה טען שהוא 'טלפורט' לתוך BMW גנוב לפני התרסקות של 130 קמ\"ש — \"_______\", אמר לסגן",
-    "truth_keyword": "הצלת אותי מהחייזרים",
+    "fact_template": "איש פלורידה טען שהוא 'טלפורט' לתוך BMW גנוב לפני התרסקות של 130 קמ\"ש, אמר לסגן שזה _______",
+    "truth_keyword": "הציל אותו מהחייזרים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -32986,8 +32761,8 @@
   },
   {
     "content_id": "1pi4ojk",
-    "fact_template": "כבאי בפלורידה עומד בפני מספר אישומים על פשע לאחר שתקף באלימות _______",
-    "truth_keyword": "קבוצת בני נוער שעשו מתיחה בביתו",
+    "fact_template": "כבאי בפלורידה עומד בפני מספר אישומים לאחר שהמשטרה האשימה אותו במתקפה אלימה על קבוצת בני נוער שעשו _______ בביתו",
+    "truth_keyword": "מתיחה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33013,8 +32788,8 @@
   },
   {
     "content_id": "1pgiwdn",
-    "fact_template": "_______ נעצר לאחר שסרטון מראה אותו מכה בני נוער עם מחבט בלייטהאוס פוינט לאחר מתיחה של תעלת דינג-דונג",
-    "truth_keyword": "איש פלורידה וכבאי",
+    "fact_template": "איש פלורידה וכבאי נעצר לאחר שסרטון מראה אותו מכה בני נוער עם _______ בלייטהאוס פוינט לאחר מתיחה של תעלת דינג-דונג",
+    "truth_keyword": "מחבט",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33103,7 +32878,7 @@
   },
   {
     "content_id": "1p3g23q",
-    "fact_template": "איש פלורידה שהואשם בטענה שיש לו _______ בתיק ב‑FLL עומד בפני שופט לאחר מעצר",
+    "fact_template": "איש פלורידה נעצר ב-FLL לאחר שהואשם בהחזקת _______ בתיקו",
     "truth_keyword": "פצצה",
     "metadata": {
       "difficulty": "Hard",
@@ -33112,7 +32887,7 @@
   },
   {
     "content_id": "1p2xr0r",
-    "fact_template": "איש פלורידה נעצר לאחר שתקף לכאורה אישה עם _______ בעקבות מקלחת",
+    "fact_template": "איש פלורידה נעצר לאחר שתקף לכאורה אישה עם _______",
     "truth_keyword": "קופסת חיתולים",
     "metadata": {
       "difficulty": "Hard",
@@ -33121,7 +32896,7 @@
   },
   {
     "content_id": "1p2fwfn",
-    "fact_template": "איש פלורída שהולך _______ במזג אוויר של 36 מעלות טוען שהוא עשה אתגר TikTok",
+    "fact_template": "איש פלורידה הולך _______ במזג אוויר של 36 מעלות וטוען שהוא עשה אתגר TikTok",
     "truth_keyword": "עירום",
     "metadata": {
       "difficulty": "Hard",
@@ -33130,8 +32905,8 @@
   },
   {
     "content_id": "1p2demb",
-    "fact_template": "איש פלורידה שאומר שהוא מספר 1 בתור תורם זרע עצמאי משאיר את הדגימות שלו ב‑_______ כדי שהלקוחות יוכלו לאסוף אותם",
-    "truth_keyword": "תיבת הדואר",
+    "fact_template": "איש פלורידה שמגדיר את עצמו כמספר 1 כתורם זרע עצמאי משאיר את הדגימות שלו _______",
+    "truth_keyword": "בתיבת הדואר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33139,7 +32914,7 @@
   },
   {
     "content_id": "1p25ac6",
-    "fact_template": "איש פלורידה ומפעיל יאכטות במיאמי ביץ' הואשמו ב‑_______ כאשר מאשימים נוספים עולים",
+    "fact_template": "איש פלורידה ומפעיל יאכטות במיאמי ביץ' הואשמו ב_______",
     "truth_keyword": "סחר בנער",
     "metadata": {
       "difficulty": "Hard",
@@ -33148,8 +32923,8 @@
   },
   {
     "content_id": "1p1ouf5",
-    "fact_template": "נציגת אשת פלורידה, שילה שרפילוס‑מקורמיק, הואשמה בגניבת 5 מיליון דולר ב‑_______ של FEMA",
-    "truth_keyword": "כספי FEMA",
+    "fact_template": "נציגת פלורידה שילה שרפילוס-מקורמיק הואשמה בגניבת _______ מכספי FEMA",
+    "truth_keyword": "5 מיליון דולר",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33157,8 +32932,8 @@
   },
   {
     "content_id": "1p0w6f2",
-    "fact_template": "אישה מבריטניה נסעה לפלורידה כדי _______ על ידי איש פלורידה, לפי מסמכי בית המשפט",
-    "truth_keyword": "להירצח",
+    "fact_template": "אישה מבריטניה נסעה לפלורידה כדי _______, לפי מסמכי בית המשפט",
+    "truth_keyword": "להירצח על ידי איש פלורידה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33166,8 +32941,8 @@
   },
   {
     "content_id": "1p0lo7f",
-    "fact_template": "איש פלורידה גונב _______, ואז נוסע מייל אחד כדי לגנוב כספומט, ואז לוקח אותם לשכונה לפני שהוא נוטש אותם כדי לברוח מהמשטרה",
-    "truth_keyword": "מלגזה",
+    "fact_template": "איש פלורידה גנב מלגזה, נסע 1 מייל כדי לגנוב כספומט, ואז לקח את המלגזה והכספומט הגנובים ל_______ לפני שנטש אותם כדי לברוח מהמשטרה",
+    "truth_keyword": "שכונה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33175,7 +32950,7 @@
   },
   {
     "content_id": "1p03vp5",
-    "fact_template": "ערבוב משלוחים של פדקס מוביל לגניבת _______ בסך 22,500 דולר ומעצרו של איש פלורידה בבוקה רטון",
+    "fact_template": "ערבוב משלוחים של פדקס הוביל לגניבת _______ בסך 22,500 דולר ומעצרו של איש פלורידה בבוקה רטון",
     "truth_keyword": "רולקס",
     "metadata": {
       "difficulty": "Hard",
@@ -33184,7 +32959,7 @@
   },
   {
     "content_id": "1ozhs80",
-    "fact_template": "אישה בפלורידה נעצרה במהירות של _______ כדי לקבל פיצה לפני הסגירה",
+    "fact_template": "אישה בפלורידה נעצרה לאחר שנסעה במהירות _______ כדי לקבל פיצה לפני הסגירה",
     "truth_keyword": "107 קמ\"ש",
     "metadata": {
       "difficulty": "Hard",
@@ -33256,8 +33031,8 @@
   },
   {
     "content_id": "1npalpl",
-    "fact_template": "איש פלורידה נעצר בגין DUI לאחר שחיקה ברמזור אדום מול שוטרים _______",
-    "truth_keyword": "כדי להרשים בנות",
+    "fact_template": "איש פלורידה נעצר בגין DUI לאחר שחיק _______ מול שוטרים 'כדי להרשים בנות'",
+    "truth_keyword": "רמזור אדום",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33265,8 +33040,8 @@
   },
   {
     "content_id": "1noui1f",
-    "fact_template": "אישה בפלורידה נעצרה לאחר מתקפת מיתרים מטופשת בבר קלירווטר _______",
-    "truth_keyword": "מיתרת מטופשת",
+    "fact_template": "אישה בפלורידה נעצרה לאחר _______ בבר קלירווטר",
+    "truth_keyword": "מתקפת מיתרים מטופשת",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33274,8 +33049,8 @@
   },
   {
     "content_id": "1nof5qt",
-    "fact_template": "אשת פלורידה, שנקראת טרגדי, ננעלה בגלל סוללת \"Silly String\" _______",
-    "truth_keyword": "Silly String",
+    "fact_template": "אשת פלורידה, שנקראת טרגדי, ננעלה בגלל _______.",
+    "truth_keyword": "סוללת 'Silly String'",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33283,8 +33058,8 @@
   },
   {
     "content_id": "1nkxpow",
-    "fact_template": "איש פלורידה לבוש כצ'אק אי צ'יז נעצר _______",
-    "truth_keyword": "צ'אק אי צ'יז",
+    "fact_template": "איש פלורידה נלכד לבוש כ_______",
+    "truth_keyword": "צ'אק היי צ'יז",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33292,8 +33067,8 @@
   },
   {
     "content_id": "1nkt0dt",
-    "fact_template": "איש פלורידה: 32 תלמידים וסגל אושפזו בתקרית _______ בבית הספר התיכון פ…",
-    "truth_keyword": "גז פלפל",
+    "fact_template": "איש פלורידה גרם ל_______ בבית הספר התיכון בפלורידה",
+    "truth_keyword": "32 תלמידים וסגל אושפזו",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33301,8 +33076,8 @@
   },
   {
     "content_id": "1nk4zw3",
-    "fact_template": "אשת פלורידה נעה בדרך הלא נכונה ב-I-4, מצאתה את ה-_______ עד שנעצרה",
-    "truth_keyword": "PIT",
+    "fact_template": "אשת פלורידה הותירה את המשטרה עד שנעצרה על ידי _______",
+    "truth_keyword": "תמרון PIT",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33310,8 +33085,8 @@
   },
   {
     "content_id": "1njg43e",
-    "fact_template": "איש פלורידה מתרסק במכונית, _______ מעל גדר",
-    "truth_keyword": "משליך ילדים מעל גדר",
+    "fact_template": "איש פלורידה מתרסק במכונית ומוציא _______ מעל גדר",
+    "truth_keyword": "ילדים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33319,8 +33094,8 @@
   },
   {
     "content_id": "1nhx23o",
-    "fact_template": "איש פלורידה שודד את דיסני ספרינגס בחליפת צלילה בורח דרך מים… _______",
-    "truth_keyword": "חליפת צלילה",
+    "fact_template": "איש פלורידה שודד את דיסני ספרינגס בחליפת _______",
+    "truth_keyword": "צלילה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33328,8 +33103,8 @@
   },
   {
     "content_id": "1nftjqy",
-    "fact_template": "אשת פלורידה שיכורה מנסה להזמין Baconator ב-Popeye's ונעצרת, 'לא ה\"בייקון\" שהיא רצה' | _______",
-    "truth_keyword": "\"הבייקון שהיא רצה\"",
+    "fact_template": "אשת פלורידה מנסה להזמין Baconator ב-Popeye's ונעצרת, _______",
+    "truth_keyword": "'לא הבייקון שהיא רצתה'",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33417,24 +33192,6 @@
     }
   },
   {
-    "content_id": "1r91jmf",
-    "fact_template": "איש פלורידה מרסק רכב שטח אקראי עם _______ בחניון Publix",
-    "truth_keyword": "פטיש",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r7jgkg",
-    "fact_template": "אישה בפלורידה השאירה ילדים במכונית עם _______ למשך שעות",
-    "truth_keyword": "נהג אובר",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1r7ev95",
     "fact_template": "בעל המסעדה בפלורידה מתמודד עם תגובה נגדית אחרי שמכר פיצה עם _______ כתוספת",
     "truth_keyword": "בשר איגואנה",
@@ -33444,99 +33201,9 @@
     }
   },
   {
-    "content_id": "1r77gve",
-    "fact_template": "גבר נער בפלורידה שעומד לדין לאחר שחשף את עצמו לנשים, טוען שהוא _______",
-    "truth_keyword": "חשב שזה מצחיק",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r75zq0",
-    "fact_template": "איש פלורידה נעצר לאחר _______ בזמן שניסה לגנוב ממנו",
-    "truth_keyword": "ננעל בטנדר",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r75zgo",
-    "fact_template": "סרטון מראה איש פלורידה _______ אחרי שניסה לגנוב ממנו",
-    "truth_keyword": "נתקע בטנדר",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1r74w48",
     "fact_template": "איש פלורידה חוזר למחרת בגלל _______ ונעצר",
     "truth_keyword": "מטען טלפון",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r5mo8l",
-    "fact_template": "איש פלורידה נעצר לאחר _______ וירח בכביש I-95",
-    "truth_keyword": "13 תאונות",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r4xdeg",
-    "fact_template": "איש פלורידה טוען שהוא _______",
-    "truth_keyword": "ג׳ורג׳ קוסטנזה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r4uwqt",
-    "fact_template": "איש פלורידה מרכב על סוס ומסתכסך עם _______ בשכונת פורט אורנג׳",
-    "truth_keyword": "פרה משוחררת",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r4pbxm",
-    "fact_template": "איש פלורידה נעצר לאחר שהשליך _______ לחלון הנסיעה של וונדי",
-    "truth_keyword": "תנין",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r4mahe",
-    "fact_template": "קטטה של איש פלורידה שכוללת עד _______ גורמת להנעה לפנים והאשמות פליליות",
-    "truth_keyword": "20 אנשים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r4m19u",
-    "fact_template": "איש פלורידה מנסה להבריח _______ לכלא בתוך פי הטבעת שלו",
-    "truth_keyword": "תרמוס",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r4kvhz",
-    "fact_template": "אישה בפלורידה הואשמה לאחר שנמצאה _______ ליד חדר",
-    "truth_keyword": "אישה עירומה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33742,8 +33409,8 @@
   },
   {
     "content_id": "1mwe5kn",
-    "fact_template": "כריש נשטף על ידי גבר מפלורידה בזמן שהוא מצלם את עצמו עם _______",
-    "truth_keyword": "הדייג",
+    "fact_template": "כריש איש פלורידה נושך _______ מצטלם איתו",
+    "truth_keyword": "דייג",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33751,8 +33418,8 @@
   },
   {
     "content_id": "1mvvyas",
-    "fact_template": "איש פלורידה נעצר לאחר ש_______ נושא סמים התרסק לתוך הבית",
-    "truth_keyword": "מטוס ללא טייס",
+    "fact_template": "איש פלורידה נעצר לאחר שמזל\"ט נושא _______ התרסק לתוך הבית",
+    "truth_keyword": "סמים",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -33813,87 +33480,6 @@
     }
   },
   {
-    "content_id": "1r0a68z",
-    "fact_template": "אישה בפלורידה נתפסה בעת _______ בחדר ההפסקה של מסעדה מקסיקנית",
-    "truth_keyword": "מתן שתן",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1r058ae",
-    "fact_template": "גבר בפלורידה הואשם ב_______ על קבוצת בני נוער בתוך מקדונלד'ס",
-    "truth_keyword": "זריקת סודה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qzwy8z",
-    "fact_template": "גבר בפלורידה נעצר לאחר שהשליך _______ על בני נוער מחוץ למקדונלדס",
-    "truth_keyword": "סודה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qzmwdw",
-    "fact_template": "גבר בפלורידה הואשם בניהול _______ לעגלות גולף, ונעצר עם אלפי סחורות גנובות",
-    "truth_keyword": "חנות גזעים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qzmu78",
-    "fact_template": "אישה בפלורידה נעצרה בגלל _______",
-    "truth_keyword": "רכיבה על ים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qydomg",
-    "fact_template": "איש פלורידה _______ נתקל בתנועה ונפגע ממכונית",
-    "truth_keyword": "עירום",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qycvdw",
-    "fact_template": "גבר בפלורידה הואשם ש_______ במהלך תקיפה משפחתית",
-    "truth_keyword": "כמעט נשך את אצבעה של אישה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qxsnsp",
-    "fact_template": "מורה מחליף בפלורידה הגיע לעבודה _______",
-    "truth_keyword": "שיכור",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qw26pq",
-    "fact_template": "איש פלורידה ונוסע אובר הואשמו ב_______ בנהג במהלך הנסיעה, מה שהוביל להתרסקות",
-    "truth_keyword": "גישושים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1mvc03j",
     "fact_template": "איש פלורידה נעצר לאחר שהשתמש בממטרות כדי לרסס _______",
     "truth_keyword": "ילדים נכים",
@@ -33922,7 +33508,7 @@
   },
   {
     "content_id": "1mu3x43",
-    "fact_template": "אישה בפלורידה הואשמה לאחר שארזה _______ בתרמיל בית הספר של ילד",
+    "fact_template": "אישה בפלורידה הואשמה אחרי שארזה _______ בתרמיל בית הספר של ילד כדי \"להחזיר\" אותו לאביהם",
     "truth_keyword": "אקדח",
     "metadata": {
       "difficulty": "Hard",
@@ -33967,8 +33553,8 @@
   },
   {
     "content_id": "1mr6rvw",
-    "fact_template": "איש פלורידה מחליף את פרארי F40 שלו עבור Ineos Grenadier ו-_______",
-    "truth_keyword": "2.4 מיליון דולר",
+    "fact_template": "איש פלורידה מחליף את פרארי F40 עבור _______ ו‑2.4 מיליון דולר",
+    "truth_keyword": "Ineos Grenadier",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -34650,87 +34236,6 @@
     }
   },
   {
-    "content_id": "1qn2td2",
-    "fact_template": "איש פלורידה נעצר ב-DUI לאחר שנסע במכונית _______",
-    "truth_keyword": "על האש",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qml6k5",
-    "fact_template": "אישה בפלורידה שותה וויסקי קינמון _______",
-    "truth_keyword": "בלי מכנסיים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qmhrqm",
-    "fact_template": "גבר מפלורידה עומד בפני אישום חמור לאחר שזרק _______ לעבר אדם בתחנת אוטובוס",
-    "truth_keyword": "חבילת קטשופ פתוחה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qm7jxc",
-    "fact_template": "איש פלורידה מת מפציעות ממפגש מיני _______",
-    "truth_keyword": "עם אחיו באקווריום",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qlpvvu",
-    "fact_template": "אישה מפלורידה תוקפת עובד Enterprise עם _______",
-    "truth_keyword": "מקל סלפי",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qlnh8t",
-    "fact_template": "איש פלורידה מקבל 4 שנים לאחר שניסה לשדוד את טאקו בל עם _______",
-    "truth_keyword": "אבן",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qln7ls",
-    "fact_template": "איש פלורידה עם פנטניל נעצר לאחר שאונן מחוץ לבית, _______ וקפיצה לתעלה",
-    "truth_keyword": "הטלת שתן",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qlbl49",
-    "fact_template": "קפטן סירת השכר של פלורידה מאן מצא 24 קילו קוקאין בים, נתפס בניסיון למכור _______ לשריף",
-    "truth_keyword": "אחד",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qkoo36",
-    "fact_template": "איש פלורידה נתפס עם _______ באלבמה",
-    "truth_keyword": "61 ליטרים של ירח",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1l8j13m",
     "fact_template": "איש פלורידה בונה גיטרה מ_______ כדי לכבד את מורשת המתכת שלו",
     "truth_keyword": "שלד של דודו",
@@ -34806,60 +34311,6 @@
     "content_id": "1l46c4w",
     "fact_template": "אשת פלורידה, מועמדת לבית ברוורד אומרת שבידן הוא _______",
     "truth_keyword": "רובוט חובש מסכות",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qk0sy8",
-    "fact_template": "אישה בפלורידה נעצרה בגין גניבת גביע סטנלי _______",
-    "truth_keyword": "כדי לאחסן את חלב האם שלה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qje8p6",
-    "fact_template": "אישה בפלורידה תובעת את המרפאה לאחר שילדה _______",
-    "truth_keyword": "את התינוק הלא נכון",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qjc6h1",
-    "fact_template": "איש פלורידה הועמד לדין בגין _______ בכנסיית פמברוק פינס",
-    "truth_keyword": "צילומים מתחת לשמלה של ילדה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qjbutq",
-    "fact_template": "איש פלורידה החביא _______ במכנסיים שלו",
-    "truth_keyword": "בשר",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qjb0ch",
-    "fact_template": "אישה בת 81 מפלורידה נעצרה לאחר _______",
-    "truth_keyword": "עוקץ רצח סמוי בשכר",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1qj718a",
-    "fact_template": "חשפנית בפלורידה שנעצרה בגין DUI מנסה _______",
-    "truth_keyword": "לאכול חולצה",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -35181,81 +34632,9 @@
     }
   },
   {
-    "content_id": "1q0ea9i",
-    "fact_template": "זוג הותקף ביציאה ממועדון הלילה של מיאמי ביץ'; אישה בפלורידה נושכת את _______ כדי לברוח",
-    "truth_keyword": "איבר מינו של גבר פלורידה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1q0d5n2",
-    "fact_template": "איש פלורידה מוטרד מכך שהפסיד 3,800 דולר על מכונות משחק — לאחר שחזר מאוחר יותר עם _______",
-    "truth_keyword": "פטיש לרסק ולגנוב כסף מהמכונות",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pzougn",
-    "fact_template": "איש פלורידה פרץ לדירה ונגע בקורבן בצורה בלתי הולמת, _______",
-    "truth_keyword": "הטיל עליו שתן",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pzhjsu",
-    "fact_template": "אדם בפלורידה הואשם בשוד את שוק הבשר _______",
-    "truth_keyword": "עירום למעט מסכה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pz98sc",
-    "fact_template": "אשת פלורידה ו-REP. CHERFILUS-MCCORMICK הואשמה בניצול שגוי של 5 מיליון דולר מכספי סיוע לקוביד _______",
-    "truth_keyword": "למען רווח אישי",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "pz50t7",
     "fact_template": "'יש לי את האקדח שלך עכשיו': מתקפת אבנים בלייק פארק מובילה למרדף משטרתי, חודש איש פלורידה מאחורי _______",
     "truth_keyword": "סורג ובריח",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pytnf4",
-    "fact_template": "אישה בפלורידה גובה קנסות של _______",
-    "truth_keyword": "165 אלף דולר על חנייה בחניה משלה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pxzy69",
-    "fact_template": "המשטרה: איש פלורידה ועובד דאנקין _______",
-    "truth_keyword": "הורידו עובד לשעבר שהואשם בניסיון לתפוס מזומן",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pxa4f9",
-    "fact_template": "עובד לשעבר של בנק אוף אמריקה ואיש פלורידה _______",
-    "truth_keyword": "גנבו 500 אלף דולר מלקוח נכה במיאמי-דייד הדרומית",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -35334,81 +34713,9 @@
     }
   },
   {
-    "content_id": "1px7toh",
-    "fact_template": "איש פלורידה מורשע מבלה את חג המולד בכלא לאחר שהפר מאסר על תנאי — העבירה הקודמת שלו הייתה _______",
-    "truth_keyword": "גנב עגלות גולף",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1px7rqd",
-    "fact_template": "אישה בפלורידה נפצעה בהתרסקות עגלת גולף ו_______",
-    "truth_keyword": "נעצרה על DUI בבית החולים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pwz5d5",
-    "fact_template": "פורץ פלורידה _______ פרץ לבתים של 12 מיליון דולר, 37 מיליון דולר בחג המולד, שתה בפנים",
-    "truth_keyword": "עירום",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pwz4e8",
-    "fact_template": "איש פלורידה תובע את אאוטבק סטייקהאוס, אומר ש_______",
-    "truth_keyword": "השירותים התנפצו מתחתיו",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pwq1jw",
-    "fact_template": "איש פלורידה נתפס עם _______ לאחר פריצה לתחנת כיבוי האש בווינטר הייבן",
-    "truth_keyword": "כובע גנוב של גריידי ג'אד",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1pwllqx",
     "fact_template": "איש פלורידה ושוכר גונבים _______ בשווי 400 אלף דולר מעסקי השכרת רכבי יוקרה במיאמי",
     "truth_keyword": "למבורגיני",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pwj9ko",
-    "fact_template": "צלצול הפעמון של צבא ההצלה של פלורידה מנסה לשפד את מנהל פלורידה פאבליקס באמצעות _______, אומרים סגנים",
-    "truth_keyword": "חצובת תרומה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pwfbf3",
-    "fact_template": "אישה בפלורידה הואשמה בקניית טבעת באמצעות כספי FEMA — הטבעת הייתה _______",
-    "truth_keyword": "תמונה של Photoshops",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pw58ie",
-    "fact_template": "גבר בפלורידה המתין על כתף הכביש המהיר לאקס שלו, ואז _______, אומרים שוטרים",
-    "truth_keyword": "הוציא אותה מהכביש",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -35757,96 +35064,6 @@
     }
   },
   {
-    "content_id": "1pjy2am",
-    "fact_template": "נידון למוות בפלורידה מגיש תביעה נגד שימוש ב_______ בארבע ההוצאות להורג האחרונות",
-    "truth_keyword": "סמים שפג תוקפם",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pj9wq7",
-    "fact_template": "איש פלורידה הואשם בניסיון רצח לאחר שהיכה את אמא ב_______",
-    "truth_keyword": "מחבת",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pj3gri",
-    "fact_template": "אשת פלורידה שיכורה נעצרה לאחר שצעדה בפומבי עם משקאות חריפים ביד ו_______",
-    "truth_keyword": "תחתונים עד לברכיה, חושפת את הנרתיק והישבן",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pj0uqm",
-    "fact_template": "איש פלורידה טען שהוא 'טלפורט' לתוך BMW גנוב לפני התרסקות של 130 קמ\"ש, אמר לסגן שזה _______",
-    "truth_keyword": "הציל אותו מהחייזרים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pibg22",
-    "fact_template": "אישה בפלורידה מסתירה תרופות נגד חרדה ב_______",
-    "truth_keyword": "איברי המין שלה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pi7h9c",
-    "fact_template": "אישה בפלורידה מתמודדת עם אישום פלילי לאחר שהשליכה _______ על פניה של אישה אחרת במהלך קרב",
-    "truth_keyword": "תרנגולת",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pi4ojk",
-    "fact_template": "כבאי בפלורידה עומד בפני מספר אישומים לאחר שהמשטרה האשימה אותו במתקפה אלימה על קבוצת בני נוער שעשו _______ בביתו",
-    "truth_keyword": "מתיחה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1phhyu7",
-    "fact_template": "איש פלורידה נמצא עם מספר כלי נשק ו_______, נעצר במחוז פולק",
-    "truth_keyword": "מיכל עם תווית אזהרה רדיואקטיבית",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1ph50tb",
-    "fact_template": "איש פלורידה מזמין 1,500 כדורים של תחמושת לחדר המעונות שלו בקולג', שם _______ מחכה מתחת למיטתו",
-    "truth_keyword": "AR15",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1pgiwdn",
-    "fact_template": "איש פלורידה וכבאי נעצר לאחר שסרטון מראה אותו מכה בני נוער עם _______ בלייטהאוס פוינט לאחר מתיחה של תעלת דינג-דונג",
-    "truth_keyword": "מחבט",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1pgilsy",
     "fact_template": "איש פלורידה עומד בפני אישומים מרובים לאחר תקרית מוזרה שכללה רכב גנוב, ניסוי פגע וברח, ונסיגה לשירותים ניידים, שם דווח כי הוא _______.",
     "truth_keyword": "שיל את מכנסיו",
@@ -35994,96 +35211,6 @@
     "content_id": "1kdd1c8",
     "fact_template": "איש פלורידה נעצר בשל _______",
     "truth_keyword": "שלוש נשים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1p3g23q",
-    "fact_template": "איש פלורידה נעצר ב-FLL לאחר שהואשם בהחזקת _______ בתיקו",
-    "truth_keyword": "פצצה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1p2xr0r",
-    "fact_template": "איש פלורידה נעצר לאחר שתקף לכאורה אישה עם _______",
-    "truth_keyword": "קופסת חיתולים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1p2fwfn",
-    "fact_template": "איש פלורידה הולך _______ במזג אוויר של 36 מעלות וטוען שהוא עשה אתגר TikTok",
-    "truth_keyword": "עירום",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1p2demb",
-    "fact_template": "איש פלורידה שמגדיר את עצמו כמספר 1 כתורם זרע עצמאי משאיר את הדגימות שלו _______",
-    "truth_keyword": "בתיבת הדואר",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1p25ac6",
-    "fact_template": "איש פלורידה ומפעיל יאכטות במיאמי ביץ' הואשמו ב_______",
-    "truth_keyword": "סחר בנער",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1p1ouf5",
-    "fact_template": "נציגת פלורידה שילה שרפילוס-מקורמיק הואשמה בגניבת _______ מכספי FEMA",
-    "truth_keyword": "5 מיליון דולר",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1p0w6f2",
-    "fact_template": "אישה מבריטניה נסעה לפלורידה כדי _______, לפי מסמכי בית המשפט",
-    "truth_keyword": "להירצח על ידי איש פלורידה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1p0lo7f",
-    "fact_template": "איש פלורידה גנב מלגזה, נסע 1 מייל כדי לגנוב כספומט, ואז לקח את המלגזה והכספומט הגנובים ל_______ לפני שנטש אותם כדי לברוח מהמשטרה",
-    "truth_keyword": "שכונה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1p03vp5",
-    "fact_template": "ערבוב משלוחים של פדקס הוביל לגניבת _______ בסך 22,500 דולר ומעצרו של איש פלורידה בבוקה רטון",
-    "truth_keyword": "רולקס",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1ozhs80",
-    "fact_template": "אישה בפלורידה נעצרה לאחר שנסעה במהירות _______ כדי לקבל פיצה לפני הסגירה",
-    "truth_keyword": "107 קמ\"ש",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -36387,90 +35514,9 @@
     }
   },
   {
-    "content_id": "1npalpl",
-    "fact_template": "איש פלורידה נעצר בגין DUI לאחר שחיק _______ מול שוטרים 'כדי להרשים בנות'",
-    "truth_keyword": "רמזור אדום",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1noui1f",
-    "fact_template": "אישה בפלורידה נעצרה לאחר _______ בבר קלירווטר",
-    "truth_keyword": "מתקפת מיתרים מטופשת",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1nof5qt",
-    "fact_template": "אשת פלורידה, שנקראת טרגדי, ננעלה בגלל _______.",
-    "truth_keyword": "סוללת 'Silly String'",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1nkxpow",
-    "fact_template": "איש פלורידה נלכד לבוש כ_______",
-    "truth_keyword": "צ'אק היי צ'יז",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1nkt0dt",
-    "fact_template": "איש פלורידה גרם ל_______ בבית הספר התיכון בפלורידה",
-    "truth_keyword": "32 תלמידים וסגל אושפזו",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1nk4zw3",
-    "fact_template": "אשת פלורידה הותירה את המשטרה עד שנעצרה על ידי _______",
-    "truth_keyword": "תמרון PIT",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1njg43e",
-    "fact_template": "איש פלורידה מתרסק במכונית ומוציא _______ מעל גדר",
-    "truth_keyword": "ילדים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1nhxv4h",
     "fact_template": "אישה בפלורידה מעניקה את גטור לאחר ש_______",
     "truth_keyword": "גרר את הגור שלה בן 4 חודשים לתוך הנחל",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1nhx23o",
-    "fact_template": "איש פלורידה שודד את דיסני ספרינגס בחליפת _______",
-    "truth_keyword": "צלילה",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1nftjqy",
-    "fact_template": "אשת פלורידה מנסה להזמין Baconator ב-Popeye's ונעצרת, _______",
-    "truth_keyword": "'לא הבייקון שהיא רצתה'",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"
@@ -36639,63 +35685,9 @@
     }
   },
   {
-    "content_id": "1n022eg",
-    "fact_template": "אישה ממרכז פלורידה נעצרה בגין ביצוע עבודת שיניים ללא רישיון ולכאורה השתמשה ב_______ במהלך הליכים",
-    "truth_keyword": "דבק קראזי",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
     "content_id": "1mxq8ya",
     "fact_template": "Florida Man וסוחר נשק פלנטיישן שלחו חלקי נשק שכנראה _______",
     "truth_keyword": "שדה הקרב הרוסי",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1mx61k2",
-    "fact_template": "איש פלורידה הקשיש ותושב ביסקיין פארק נעצר על הרעלת _______ של שכנו",
-    "truth_keyword": "החתולים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1mwe5kn",
-    "fact_template": "כריש איש פלורידה נושך _______ מצטלם איתו",
-    "truth_keyword": "דייג",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1mvvyas",
-    "fact_template": "איש פלורידה נעצר לאחר שמזל\"ט נושא _______ התרסק לתוך הבית",
-    "truth_keyword": "סמים",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1mu3x43",
-    "fact_template": "אישה בפלורידה הואשמה אחרי שארזה _______ בתרמיל בית הספר של ילד כדי \"להחזיר\" אותו לאביהם",
-    "truth_keyword": "אקדח",
-    "metadata": {
-      "difficulty": "Hard",
-      "category": "פלורידה מן"
-    }
-  },
-  {
-    "content_id": "1mr6rvw",
-    "fact_template": "איש פלורידה מחליף את פרארי F40 עבור _______ ו‑2.4 מיליון דולר",
-    "truth_keyword": "Ineos Grenadier",
     "metadata": {
       "difficulty": "Hard",
       "category": "פלורידה מן"

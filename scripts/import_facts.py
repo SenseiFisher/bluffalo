@@ -26,9 +26,9 @@ def main():
     output_file = Path(args.output)
 
     facts = json.loads(output_file.read_text(encoding="utf-8")) if output_file.exists() else []
-    existing_ids = {f["content_id"] for f in facts}
+    facts_by_id = {f["content_id"]: f for f in facts}
 
-    new_facts = []
+    added = updated = 0
     with input_file.open(encoding="utf-8") as f:
         for line in f:
             line = line.strip()
@@ -38,10 +38,10 @@ def main():
                 d = json.loads(line)
             except json.JSONDecodeError:
                 continue
-            if d["id"] in existing_ids:
-                continue
             fact_template = fix_template(d["fact"].replace("[blank]", "_______"), d["blank"])
-            new_facts.append({
+            if "_______" not in fact_template:
+                continue
+            new_entry = {
                 "content_id": d["id"],
                 "fact_template": fact_template,
                 "truth_keyword": d["blank"],
@@ -49,16 +49,22 @@ def main():
                     "difficulty": "Hard",
                     "category": args.category,
                 },
-            })
+            }
+            if d["id"] not in facts_by_id:
+                facts_by_id[d["id"]] = new_entry
+                added += 1
+            elif facts_by_id[d["id"]]["fact_template"] != fact_template or facts_by_id[d["id"]]["truth_keyword"] != d["blank"]:
+                facts_by_id[d["id"]].update(new_entry)
+                updated += 1
 
-    print(f"Existing facts: {len(facts)} | New to import: {len(new_facts)}")
-    if not new_facts:
+    print(f"Existing facts: {len(facts)} | Added: {added} | Updated: {updated}")
+    if not added and not updated:
         print("Nothing to do.")
         return
 
-    facts.extend(new_facts)
-    output_file.write_text(json.dumps(facts, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Done. {len(new_facts)} facts added → {output_file} ({len(facts)} total)")
+    result = list(facts_by_id.values())
+    output_file.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Done. {len(result)} total facts → {output_file}")
 
 
 if __name__ == "__main__":
