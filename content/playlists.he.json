@@ -225,22 +225,6 @@
   },
   {
     "content_id": "PLAYLIST_015",
-    "name": "פלייליסט מזרחית",
-    "tracks": [
-      "ראיתי עולם - Omer Adam",
-      "מערב ראשון - Itay Levi",
-      "אין אותי - Osher Cohen",
-      "אחרי כל השנים - Omer Adam",
-      "סיפור ישן - Omer Adam",
-      "רק שלך - Omer Adam",
-      "באתי אלייך - Eyal Golan",
-      "ערק - פאר טסי",
-      "צליל מיתר - Eyal Golan",
-      "זורק תעניבה - Omer Adam"
-    ]
-  },
-  {
-    "content_id": "PLAYLIST_016",
     "name": "פלייליסט קיץ עברית",
     "tracks": [
       "ארטיק מסטיק - Agam Buhbut",
@@ -256,7 +240,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_017",
+    "content_id": "PLAYLIST_016",
     "name": "פלייליסט בוקר רגוע",
     "tracks": [
       "קרן שמש - בניה ברבי",
@@ -272,7 +256,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_018",
+    "content_id": "PLAYLIST_017",
     "name": "פלייליסט בוקר כיפי",
     "tracks": [
       "Don't Go Breaking My Heart - Elton John",
@@ -288,7 +272,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_019",
+    "content_id": "PLAYLIST_018",
     "name": "פלייליסט לידה מושלם",
     "tracks": [
       "קחי לך - Rita",
@@ -304,7 +288,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_020",
+    "content_id": "PLAYLIST_019",
     "name": "פלייליסט מעודכן פילאטיס",
     "tracks": [
       "She's On My Mind - Guitar Acoustic - JP Cooper",
@@ -320,23 +304,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_021",
-    "name": "פלייליסט ים",
-    "tracks": [
-      "Don't Copy My Flow - фрози",
-      "מיליון נשיקות - Omer Adam",
-      "אגרוף - Eden Ben Zaken",
-      "שדות של תירוצים - Omer Adam",
-      "הטוב הרע ועודיה - אודיה",
-      "מאורסת - Eden Ben Zaken",
-      "תגיד לי Je T'aime - Eden Ben Zaken",
-      "עובד בכפר - אודיה",
-      "שווארמה ודמעה - Omer Adam",
-      "שתי טיפות - Omer Adam"
-    ]
-  },
-  {
-    "content_id": "PLAYLIST_022",
+    "content_id": "PLAYLIST_020",
     "name": "פלייליסט שבת ישראלית",
     "tracks": [
       "תתארו לכם - Shlomo Artzi",
@@ -352,7 +320,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_023",
+    "content_id": "PLAYLIST_021",
     "name": "פלייליסט ללידה מושלמת",
     "tracks": [
       "שלמים - Idan Rafael Haviv",
@@ -368,7 +336,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_024",
+    "content_id": "PLAYLIST_022",
     "name": "פלייליסט עיסויים",
     "tracks": [
       "Relaxation - Yolta",
@@ -383,7 +351,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_025",
+    "content_id": "PLAYLIST_023",
     "name": "פלייליסטינו",
     "tracks": [
       "You Can't Always Get What You Want - The Rolling Stones",
@@ -399,7 +367,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_026",
+    "content_id": "PLAYLIST_024",
     "name": "פלייליסט עצוב עברית",
     "tracks": [
       "בסוף הכל חולף - Omer Adam",
@@ -415,23 +383,7 @@
     ]
   },
   {
-    "content_id": "PLAYLIST_027",
-    "name": "הפלייליסט שלי מס' 1",
-    "tracks": [
-      "ברגעים שאת הולכת - Osher Cohen",
-      "רוקד עם הכאב - פאר טסי",
-      "מנגן ושר - Osher Cohen",
-      "פרחים במדבר - Eyal Golan",
-      "ערק - פאר טסי",
-      "משקה יקר - פאר טסי",
-      "שישי בצהריים - Eyal Golan",
-      "דרך השלום - פאר טסי",
-      "תגידי לי שטוב לך - Omer Adam",
-      "היי מאמא - פאר טסי"
-    ]
-  },
-  {
-    "content_id": "PLAYLIST_028",
+    "content_id": "PLAYLIST_025",
     "name": "פלייליסט של שישי בבוקר",
     "tracks": [
       "עברתי רק כדי לראות - Tomer Yosef",
@@ -444,6 +396,1105 @@
       "And Then You Will Arrive - Harel Moyal",
       "שלושה ימים - Yehuda Poliker",
       "בוקר טוב עולם - Avtipus"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_026",
+    "name": "פלייליסט מקפיץ ניקיון יום שישי",
+    "tracks": [
+      "כאלו מילים - Tomer Yosef",
+      "לאהוב אותך כל יום - Doli & Penn",
+      "מגבת באוויר - NOROZ",
+      "(It Goes Like) Nanana - Edit - Peggy Gou",
+      "חלליות - Berry Sakharof",
+      "ברולטה - עידו בן דב",
+      "עונות - Aviv Geffen",
+      "Killing Me Softly With His Song - Fugees",
+      "השיר שלנו - Aviv Geffen",
+      "רגעים - Marina Maximilian"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_027",
+    "name": "חדר כושר  דופק גבוה",
+    "tracks": [
+      "Bang Bang - Jessie J",
+      "Bonita de Más - Erreway",
+      "Échame La Culpa - Luis Fonsi",
+      "Want to Want Me - Jason Derulo",
+      "Kiss the Sky - Jason Derulo",
+      "Get Ugly - Jason Derulo",
+      "Talk Dirty (feat. 2 Chainz) - Jason Derulo",
+      "POWER - Kanye West",
+      "Numb / Encore - JAŸ-Z",
+      "Church (feat. Teddy Verseti) - T-Pain"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_028",
+    "name": "פלייליסט למסיבת רווקות",
+    "tracks": [
+      "מצילה אותי - Avihu Pinhasov Rhythm Club",
+      "בנות, בנות - Sarit Hadad",
+      "בחוף של טראפטוני - Shlomi Shabat",
+      "לקנות לך יהלום - Eyal Golan",
+      "רונה - Samir Shukri",
+      "נערי שובה אלי - Margalit Tzan'ani",
+      "חביב אלבי - Static & Ben El",
+      "סופרסטאר - Roni Duani",
+      "קצת משוגעת - Sarit Hadad",
+      "חייב למות עליי - חמסה"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_029",
+    "name": "פלייליסט שישי בישולים",
+    "tracks": [
+      "מקום לשנינו – A place for both of us - Idan Amedi",
+      "את שומעת - Mosh Ben Ari",
+      "נשמה שלי - Idan Rafael Haviv",
+      "זוגות כאלה - Osher Cohen",
+      "רסיסים - Eyal Golan",
+      "עוקר הרים - Shuli Rand",
+      "מי לא יבוא - Avraham Tal",
+      "סיבת הסיבות - Ishay Ribo",
+      "אח של סאלים - Shotei Hanevuah",
+      "תחזרי מהר - Osher Cohen"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_030",
+    "name": "שירים להרגעת בכי תינוקות",
+    "tracks": [
+      "זהב - Static & Ben El",
+      "Coeur De La Nuit - Wankelmut Remix - Ferdinand Dreyssig",
+      "Trauma - Worakls Remix - NTO",
+      "Sing It Back (feat. Naila) - Ash",
+      "Teardrop - Massive Attack",
+      "Give a Little (feat. Naila) - Ash",
+      "Wood & Wine - Wankelmut",
+      "Mars - Marek Hemmann",
+      "Égoïste feat. Name One - Sascha Braemer",
+      "Tearin' up My Heart - Radio Edit - *NSYNC"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_031",
+    "name": "143 קמש ספיר אביסרור",
+    "tracks": [
+      "Relax My Eyes - ANOTR",
+      "Deep in the Bottom - of Africa - Monique Bingham",
+      "More Love - Rampa &ME Remix - Moderat",
+      "Si Ai - Marshmello & UKAY Remix - Tayna",
+      "Move (feat. Camila Cabello & Malachiii) - Stryv",
+      "Her Eyes - Charlie Jeer",
+      "Ah Ya Albi - Ajna (BE), Samm (BE) Edit - Hakim",
+      "I Adore You (feat. Daecolm) - HUGEL",
+      "(It Goes Like) Nanana - Peggy Gou",
+      "Yamore - MoBlack"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_032",
+    "name": "אימון אנרגיה שיא צרחות",
+    "tracks": [
+      "Boss Bitch - Doja Cat",
+      "Remember the Name (feat. Styles of Beyond) - Fort Minor",
+      "Great Spirit - Armin van Buuren",
+      "Savage Remix (feat. Beyoncé) - Megan Thee Stallion",
+      "Hey Mama (feat. Nicki Minaj, Bebe Rexha & Afrojack) - David Guetta",
+      "Baby Got Back - Sir Mix-A-Lot",
+      "Further up (Na, Na, Na, Na, Na) - Static & Ben El",
+      "Eye of the Tiger - Survivor",
+      "Astronaut In The Ocean - Arem Ozguc",
+      "לא יוצא למסיבות - רמיקס - Mergui"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_033",
+    "name": "ישראלי של שישי בצהריים",
+    "tracks": [
+      "אם תבוא - Ninet Tayeb",
+      "לשוב הביתה - Ishay Ribo",
+      "עד מחר - Eviatar Banai",
+      "מכה אפורה - Monica Sex",
+      "סיגפו - Beit Habubot",
+      "חלק מהזמן - Idan Amedi",
+      "מחכה - Idan Rafael Haviv",
+      "As a Stone - Full Trunk",
+      "רוב השעות - Idan Raichel",
+      "שיר בעפרון - Beit Habubot"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_034",
+    "name": "פלייליסט רך  ללידה",
+    "tracks": [
+      "Cuatro Vientos - Danit",
+      "Little Star - Amitiel",
+      "Strength of Your Spirit - Alexa Sunshine Rose",
+      "My Friend the Forest - Nils Frahm",
+      "שיר לילדי - Orka",
+      "Ma Avakesh - LAOR",
+      "הר גבוה - עדי אלבחר",
+      "עמוק בטל - Marina Maximilian",
+      "אם ננעלו - Flora",
+      "לקפוץ אל המים - Yarden Cohen"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_035",
+    "name": "שירים שעושים נעים בלב",
+    "tracks": [
+      "רואים רחוק רואים שקוף - Shmulik Kraus",
+      "ימים של שקט - Lola",
+      "ארץ חדשה - Shlomo Artzi",
+      "בגלל הרוח - Shlomi Shabat",
+      "יש בי אהבה - Arik Einstein",
+      "אהבתיה - Shlomo Artzi",
+      "צליל מכוון - Tuned Tone",
+      "לילה כיום יאיר - Eviatar Banai",
+      "אצלך בעולם - אקוסטי - Meir Banai",
+      "לפני שייגמר - Idan Raichel"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_036",
+    "name": "פלייליסט הפרשת חלה",
+    "tracks": [
+      "לשוב הביתה - Ishay Ribo",
+      "אחת ולתמיד - Ishay Ribo",
+      "הלב שלי - Ishay Ribo",
+      "הנה ימים באים - Ishay Ribo",
+      "תוכו רצוף אהבה - Ishay Ribo",
+      "מציל אותי כל יום - Ishay Ribo",
+      "ואם תבואי אליי - Idan Raichel",
+      "חלק מהזמן - Idan Amedi",
+      "בזמן האחרון - Idan Amedi",
+      "ממך עד אליי - חנן בן ארי"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_037",
+    "name": "שירים דוסים",
+    "tracks": [
+      "תתן אחרית - הראל טל",
+      "מחרוזת ישיבות - להקת נשמחה",
+      "ניגון ברדיצ'ב/ התבודדות - Akiva",
+      "קדם - ביני לנדאו",
+      "אהבת עולם - להקת מזמור שיר",
+      "אנה אלך - הראל טל",
+      "אחת שאלתי - Yonatan Razel",
+      "ארמונו של מלך - ביני לנדאו",
+      "פשוטים - Akiva",
+      "משכן - ביני לנדאו"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_038",
+    "name": "הפלייליסט שלע",
+    "tracks": [
+      "HUMBLE. - Kendrick Lamar",
+      "Answer - Tyler, The Creator",
+      "Chum - Earl Sweatshirt",
+      "Molasses (feat. RZA) - Earl Sweatshirt",
+      "Knight (feat. Domo Genesis) - Earl Sweatshirt",
+      "SMUCKERS (feat. Lil Wayne & Kanye West) - Tyler, The Creator",
+      "Money Trees - Kendrick Lamar",
+      "IFHY (feat. Pharrell) - Tyler, The Creator",
+      "Whoa (feat. Tyler, The Creator) - Earl Sweatshirt",
+      "Wool (feat. Vince Staples) - Earl Sweatshirt"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_039",
+    "name": "פלייליסט לאימון ספינינג",
+    "tracks": [
+      "Pump Up The Jam - Edit - Technotronic",
+      "I Like To Move It (feat. The Mad Stuntman) - Erick \"More\" Album Mix - Reel 2 Real",
+      "Everybody Dance Now - DJ Twilight",
+      "טרילילי טרללה - Noa Kirel",
+      "Alors On Danse (feat. Stromae) - Dubdogz",
+      "Shut Up and Dance - WALK THE MOON",
+      "Jump - 2015 Remaster - Van Halen",
+      "Eye of the Tiger - Survivor",
+      "Gonna Fly Now - Theme From \"Rocky\" - Bill Conti",
+      "Blue (Da Ba Dee) - Gabry Ponte Ice Pop Radio - Eiffel 65"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_040",
+    "name": "פלייליסט רכב דתי 2025",
+    "tracks": [
+      "שומר עליי - Roee Sendler",
+      "תשמח - Omer Adam",
+      "כנגד רצונו - ליאב מורחי",
+      "אני כלום בלעדיך - יאיר אלייצור",
+      "שומר עליך - Subliminal",
+      "Don’t Leave Me On My Own - Zusha",
+      "שלום עליכם - Moti Weiss",
+      "להיות יהודי - שילה אליה",
+      "אבא נשמה - יאיר אלייצור",
+      "חובות הלב - שי בטש"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_041",
+    "name": "סשן של ניגר פראוד ודוקסינג",
+    "tracks": [
+      "זוכרת - בית המזרחית",
+      "Adelante - Sash!",
+      "Blue Bands - Weiland",
+      "Bitcoin - Weiland",
+      "How Do You Do - Nightcore - Jaegershu",
+      "ABSOLUTE FAILURE - syxxsec",
+      "seXXXkapkan - dj trippie flameboy",
+      "ENGINE HARDTEKK - FORGOTTENAGE",
+      "Hot N Cold - Hardtekk - Asentrix",
+      "loud room - super slowed - lumisoun"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_042",
+    "name": "פלייליסט ספורט קצבי אנגלית",
+    "tracks": [
+      "Mama - Jonas Blue",
+      "Treat You Better - Shawn Mendes",
+      "Symphony - Remix - Shaun Reynolds",
+      "The Middle - Zedd",
+      "I Don't Wanna Know - Streex",
+      "Rise - Jonas Blue",
+      "Without Me - Halsey",
+      "Girls Like You (feat. Cardi B) - Cardi B Version - Maroon 5",
+      "Yummy - Justin Bieber",
+      "Sorry - Justin Bieber"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_043",
+    "name": "פלייליסט חשמל",
+    "tracks": [
+      "אני שונא אותך - Osher Cohen",
+      "זמרת גדולה - פאר טסי",
+      "שתישרף האהבה - Itay Levi",
+      "חורף בלעדיי - Eden Ben Zaken",
+      "כל הזמן אומרת - Osher Cohen",
+      "ברוך מוריד הגשם - פאר טסי",
+      "אל תשאלי (מארח את בניה ברבי) - Gil Vain",
+      "מונה ליזה - פאר טסי",
+      "שדה קוצים - פאר טסי",
+      "עיר תחתית - Osher Cohen"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_044",
+    "name": "חדר אחורי",
+    "tracks": [
+      "Run Your Mouth - The Marías",
+      "Somewhere in Between - Blood Orange",
+      "Is It a Crime - Mariah the Scientist",
+      "Sugar On My Tongue - Tyler, The Creator",
+      "said who? - kid apollo",
+      "eYeSiGht - Min Taka",
+      "Make Me Feel - oskar med k",
+      "Mind Loaded (feat. Caroline Polachek, Lorde & Mustafa) - Blood Orange",
+      "Girlie-Pop! - Amaarae",
+      "This is the Killer Speaking - The Last Dinner Party"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_045",
+    "name": "פלייליסט מניקוריסטיות",
+    "tracks": [
+      "exes - Tate McRae",
+      "greedy - Tate McRae",
+      "you broke me first - Tate McRae",
+      "It's ok I'm ok - Tate McRae",
+      "2 hands - Tate McRae",
+      "make you mine - Madison Beer",
+      "we can't be friends (wait for your love) - Ariana Grande",
+      "Espresso - Sabrina Carpenter",
+      "Please Please Please - Sabrina Carpenter",
+      "Taste - Sabrina Carpenter"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_046",
+    "name": "אסקימו לימון פלייליסט",
+    "tracks": [
+      "The End of the World - Skeeter Davis",
+      "Greenfields - The Brothers Four",
+      "Rita Pavone & Paul Anka - Oh Carol - Rita Pavone",
+      "A Teardrop and a Lollipop - The Shirelles",
+      "Rock Around The Clock - Bill Haley & His Comets",
+      "My Special Angel - Bobby Vinton",
+      "All I Have to Do Is Dream - The Everly Brothers",
+      "You Mean Everything to Me - Neil Sedaka",
+      "He's Got The Whole World In His Hands - Single Version; Alternate Take; 2017 - Remaster - Nina Simone",
+      "Hey Paula - Paul & Paula"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_047",
+    "name": "פלייליסט חתונה דוסית",
+    "tracks": [
+      "מחרוזת חתונה - להקת נשמחה",
+      "מחרוזת אשר ברא - להקת מזמור שיר",
+      "מחרוזת ועל ידי זה - להקת מזמור שיר",
+      "ישיש עליך - Yishai",
+      "צמאה לך נפשי - Yishai",
+      "רבינו זעק - Isaac Miracles",
+      "מזמור לתודה - להקת נשמחה",
+      "מחשבות טובות - Yishai",
+      "והריקותי לכם ברכה - Yishai Riboh",
+      "כיצד מרקדין - להקת מנגינות"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_048",
+    "name": "מאיה ורטהיימר עושה לי עוד פלייליסט",
+    "tracks": [
+      "Come On Eileen - Dexys Midnight Runners",
+      "You Can Call Me Al - Paul Simon",
+      "אחלה בחלה - HaDorbanim",
+      "Together Again - Janet Jackson",
+      "Sweet Baby (feat. Erykah Badu) - Macy Gray",
+      "Come on over Baby (All I Want Is You) - Radio Version - Christina Aguilera",
+      "(Your Love Keeps Lifting Me) Higher & Higher - Jackie Wilson",
+      "One Way or Another (Teenage Kicks) - One Direction",
+      "Keep On Movin' - Five",
+      "התחלה חדשה - Shlomi Shabat"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_049",
+    "name": "528 הרץ תדר אהבה וניסים",
+    "tracks": [
+      "528 Hz Roots - Profundum",
+      "Journey to Infinity 528Hz - myndstream",
+      "Through the Sky (528Hz) - Sounds of Nore",
+      "along the current (528 hz) - Stillness Paradox",
+      "Moonlit Path (528Hz) - Eartharmonics",
+      "Waves of Stillness 528hz - myndstream",
+      "Voyage to the Unknown 528Hz - myndstream",
+      "528 Hz Temple of Vibrations - Synchroni city",
+      "unwinding mind 528 Hz - nite sky",
+      "Pulsdrift (528 Hz) - Thermal Mirage"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_050",
+    "name": "פלייליסט לאוטו הנדיר שלי",
+    "tracks": [
+      "Say What - Rampa",
+      "זזה עם הגוף - LifeSwisa",
+      "I Adore You (feat. Daecolm) - HUGEL",
+      "התקדמתי ממך - Itay Levi",
+      "גיטרה ולנשום - Osher Cohen",
+      "You & Me - Rivo Remix - Disclosure",
+      "שאנל אזולאי - אודיה",
+      "Si Ai - Tayna",
+      "Feel It - Cupidon",
+      "Chihiro - Gravagerz"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_051",
+    "name": "יין בחצר פלייליסט ערב",
+    "tracks": [
+      "Love Yourself - Justin Bieber",
+      "I'm Yours - Jason Mraz",
+      "Where Is The Love? - Black Eyed Peas",
+      "Calm Down - Rema",
+      "Crazy Tings - Tems",
+      "Marry You - Bruno Mars",
+      "Somebody That I Used To Know - Gotye",
+      "August - Intelligency",
+      "Because You Move Me - Tinlicker",
+      "Let Me Down - Oliver Tree"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_052",
+    "name": "פלייליסט קיבוצי מתנשא",
+    "tracks": [
+      "היא כל כך יפה - Kaveret",
+      "י'א 2 - Tuna",
+      "מכה אפורה - Monica Sex",
+      "איך אפשר - Jane Bordeaux",
+      "כל הזמן הזה - Ravid Plotnik",
+      "עד מחר - Eviatar Banai",
+      "רוב השעות - Idan Raichel",
+      "סיגפו - Beit Habubot",
+      "גם זה יעבור - Tuna",
+      "סן פרנציסקו על המים - Live - Arik Einstein"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_053",
+    "name": "פלייליסט שולה מוקדם",
+    "tracks": [
+      "Paris City Jazz - Bellaire",
+      "אשליות - נסים סרוסי",
+      "Back On 74 - Jungle",
+      "Family Affair - Mary J. Blige",
+      "Crazy - Gnarls Barkley",
+      "מעונה לעונה - Eviatar Banai",
+      "פרפרים - Uri Banai",
+      "The Door - Teddy Swims",
+      "Messy - Lola Young",
+      "Smooth Operator - Single Version - Sade"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_054",
+    "name": "פלייליסט אפוקליפסה",
+    "tracks": [
+      "מודעות עצמית - Apocalipsa",
+      "הכל ורוד - Apocalipsa",
+      "פלאשבקים - Apocalipsa",
+      "שפעת - Apocalipsa",
+      "9 ממ כל מה ששורט - Apocalipsa",
+      "נכות רגשית - Apocalipsa",
+      "אוהב לשנוא - Apocalipsa",
+      "אלוהים יקר - Apocalipsa",
+      "חיוך של גוקר - Apocalipsa",
+      "9 ממ אין עוד מלבדו - Apocalipsa"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_055",
+    "name": "פלייליסט ניקיון",
+    "tracks": [
+      "קטן זה הכי כיף בעולם - Hi Five",
+      "מכה אפורה - Monica Sex",
+      "Take You Dancing - Jason Derulo",
+      "Good as Hell - Lizzo",
+      "אוהב להיות בבית - Arik Einstein",
+      "Seven Nation Army - The White Stripes",
+      "Lovely Day - Bill Withers",
+      "שיר אהבה פשוט - Aya Korem",
+      "שמש - Hadag Nahash",
+      "מה אני נראה לך - Peled"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_056",
+    "name": "פלייליסט חרדי מתעדכן",
+    "tracks": [
+      "Piamenta Set - Yaakov Shwekey",
+      "Dinner Set - Yaakov Shwekey",
+      "Chassidish Set - Yaakov Shwekey",
+      "Yossi's Kumzitz Set - Yaakov Shwekey",
+      "Mizrachi Set - Yaakov Shwekey",
+      "Israeli Rock Set - Yaakov Shwekey",
+      "Disco Set - Yaakov Shwekey",
+      "Chuppah Set - Yaakov Shwekey",
+      "Netzach Yisrael - Yaakov Shwekey",
+      "Tefilat Hashla - Yaakov Shwekey"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_057",
+    "name": "פלייליסט קיץ מטורףףף",
+    "tracks": [
+      "Let Me Love You - DJ Snake",
+      "We Found Love - Rihanna",
+      "Don't Stop The Music - Rihanna",
+      "Summer - Calvin Harris",
+      "Riptide - Vance Joy",
+      "Beauty And A Beat - Justin Bieber",
+      "Show Me Love (with Tyla) - WizTheMc",
+      "Part Of Me - Katy Perry",
+      "More Love - Rampa &ME Remix - Moderat",
+      "Raindance (feat. Tems) - Dave"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_058",
+    "name": "פלייליסט מאפייה קטנה מול הנמל",
+    "tracks": [
+      "Sunsetz - Cigarettes After Sex",
+      "Lush Life - Zara Larsson",
+      "Riptide - Vance Joy",
+      "Please Please Please - Sabrina Carpenter",
+      "Espresso - Sabrina Carpenter",
+      "That’s So True - Gracie Abrams",
+      "Flowers - Miley Cyrus",
+      "The Less I Know The Better - Tame Impala",
+      "As It Was - Harry Styles",
+      "Forever Young - Toby Rose"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_059",
+    "name": "פלייליסט לידה של השמחות",
+    "tracks": [
+      "Come On Eileen - Dexys Midnight Runners",
+      "You Can Call Me Al - Paul Simon",
+      "Together Again - Janet Jackson",
+      "Sweet Baby (feat. Erykah Badu) - Macy Gray",
+      "Come on over Baby (All I Want Is You) - Radio Version - Christina Aguilera",
+      "(Your Love Keeps Lifting Me) Higher & Higher - Jackie Wilson",
+      "One Way or Another (Teenage Kicks) - One Direction",
+      "Keep On Movin' - Five",
+      "התחלה חדשה - Shlomi Shabat",
+      "עוד יהיה לי - Margalit Tzan'ani"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_060",
+    "name": "פלייליסט טונה",
+    "tracks": [
+      "אין בינינו חלל - Tuna",
+      "אוח - Tuna",
+      "לא מהם - Tuna",
+      "כנפיים - Tuna",
+      "אורות גבוהים - Tuna",
+      "עד הבוקר - Tuna",
+      "מליון דולר - Tuna",
+      "עוד יום במשרד - Tuna",
+      "עב\"מ - Tuna",
+      "מטאור בסלואו מושן - Tuna"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_061",
+    "name": "פלייליסט מלך הקסטות",
+    "tracks": [
+      "בטיילת & בת שלוש וחצי - Live - Rinat Bar",
+      "את אותי שופטת - Live - Subliminal",
+      "מחרוזת כמו פרפר, נשיקה, תפוס, חלום מתוק - מתוך מופע ליאור נרקיס קיסריה 2025 - ליאור נרקיס",
+      "מחרוזת: לעולם לא נפרד - Avi Sinvani",
+      "רק אותך אהבתי - Yossi Eden",
+      "Hikiti Leha - Rinat Bar",
+      "ריקדי - ישי לוי",
+      "רונה - Samir Shukri",
+      "הסוד - Sarit Hadad",
+      "מאוהב בגשם - Ofer Levi"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_062",
+    "name": "פלייליסט מטאל לחדכ",
+    "tracks": [
+      "Enter Sandman - Remastered 2021 - Metallica",
+      "One - Metallica",
+      "Wherever I May Roam - Remastered 2021 - Metallica",
+      "Walk - Pantera",
+      "Duality - Slipknot",
+      "B.Y.O.B. - System Of A Down",
+      "Seek & Destroy - Remastered - Metallica",
+      "Battery - Metallica",
+      "Creeping Death - Creeping Death EP Version / Remastered - Metallica",
+      "Holy Wars...The Punishment Due - 2004 Remix - Megadeth"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_063",
+    "name": "פלייליסט פילאטיס טל",
+    "tracks": [
+      "All I Want - Kodaline",
+      "Bloom (Online Bonus Track) - The Paper Kites",
+      "Jungle - Tash Sultana",
+      "Colors - Black Pumas",
+      "Intro - The xx",
+      "I Follow Rivers - Roni Alter",
+      "Mosaïque - Ash",
+      "Lose Control - Teddy Swims",
+      "Bad Dreams - Teddy Swims",
+      "Die With A Smile - Lady Gaga"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_064",
+    "name": "פלייליסט דתי מקפיץ",
+    "tracks": [
+      "תן לי אור - רמיקס - Avi Ilson",
+      "Ayeh! - DJ Roi Cohen Remix - Reuven Garber ראובן גרבר",
+      "בסוף יהיה טוב-רמיקס - Assaf Harush",
+      "בוא נדליק את האש-רמיקס - Itzik Orlev",
+      "אתה מרים אותי תמיד - רמיקס - Ruli Dikman",
+      "חתן וגם כלה - הרמיקס הרשמי - Avi Ilson",
+      "שבט אחים - Amiran Dvir",
+      "רק רוצים לרקוד - אבישי אשל",
+      "הרבי - Youval Taieb",
+      "Hashem Melech #2.0 - Gad Elbaz"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_065",
+    "name": "פלייליסט  למיכאל 2026",
+    "tracks": [
+      "Glue - BICEP",
+      "I Feel Love - 12\" Version - Donna Summer",
+      "After Midnight - J.J. Cale",
+      "Glory of Nelly - Caravan Palace",
+      "The Basis - Lack Of Afro",
+      "Cola - CamelPhat",
+      "Memphis Jam - Purple Disco Machine",
+      "On My Mind - Purple Disco Machine Remix - Diplo",
+      "Emotion - Purple Disco Machine",
+      "Can You Feel It - Instrumental - Larry Heard"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_066",
+    "name": "פלייליסט של דפוקים",
+    "tracks": [
+      "Dream 11 / Moth-Like Stars - Pt. 2 - Max Richter",
+      "Hoist the Colours - Hans Zimmer",
+      "There Are Worse Games To Play/Deep In The Meadow/The Hunger Games Suite - From \"The Hunger Games: Mockingjay, Part 2\" Soundtrack - James Newton Howard",
+      "The Hanging Tree - From \"The Hunger Games: Mockingjay\" Soundtrack - James Newton Howard",
+      "Yellow Moon - Luca D'Alberto",
+      "The Blue Whale - Steven Price",
+      "Three Worlds: Music from Woolf Works / Mrs Dalloway: War Anthem - Max Richter",
+      "Not Alone - Ólafur Arnalds",
+      "Berlin Song - Ludovico Einaudi",
+      "Experience - Ludovico Einaudi"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_067",
+    "name": "יסאלם איזה פלייליסט",
+    "tracks": [
+      "מתי את חוזרת - Eyal Golan",
+      "כל החלומות - Eyal Golan",
+      "האור שבעיניים - Eyal Golan",
+      "היא לא את - Eyal Golan",
+      "שישי בצהריים - Eyal Golan",
+      "חיים שלמים - Eyal Golan",
+      "בזמן האחרון - Eyal Golan",
+      "ואולי ביום יפה - Eyal Golan",
+      "את - Eyal Golan",
+      "פזמון אחר - Eyal Golan"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_068",
+    "name": "פלייליסט לאוטו לאמא",
+    "tracks": [
+      "TAXI - Eden Golan",
+      "High On Life (feat. Bonn) - Martin Garrix",
+      "Wait For You - Myles Smith",
+      "Came Here for Love - Sigala",
+      "Cut To The Feeling - Carly Rae Jepsen",
+      "Good Time - Owl City",
+      "Believe It - Danny J. Grace",
+      "Ruin My Life - Zara Larsson",
+      "Happier - Ed Sheeran"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_069",
+    "name": "כי לכל פרידה צריך פלייליסט",
+    "tracks": [
+      "גם זה יעבור - Tuna",
+      "עולם משוגע - Tuna",
+      "קצת אהבה לא תזיק - Alon Eder",
+      "סחרחורת - Tuna",
+      "כל הזמן הזה - Ravid Plotnik",
+      "קפה וסיגריה - Ravid Plotnik",
+      "בסיבוב - Tuna",
+      "בסוף מתרגלים להכל - Dudu Tassa",
+      "הלילה לא - עלית לי בזיכרון - Dudu Tassa",
+      "את ואני - Mercedes Band"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_070",
+    "name": "קולדפליי פלייליסט 2022 לונדון",
+    "tracks": [
+      "Higher Power - Coldplay",
+      "Adventure of a Lifetime - Coldplay",
+      "Paradise - Coldplay",
+      "Charlie Brown - Coldplay",
+      "The Scientist - Coldplay",
+      "Viva La Vida - Coldplay",
+      "Hymn for the Weekend - Coldplay",
+      "Let Somebody Go - Coldplay",
+      "Politik - Coldplay",
+      "In My Place - Coldplay"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_071",
+    "name": "פלייליסט יום צילום 2026",
+    "tracks": [
+      "The Fate of Ophelia - Taylor Swift",
+      "Messy - Lola Young",
+      "בלילות - ליעם חכמון",
+      "This Love - Maroon 5",
+      "בית ביפו - Dudu Tassa",
+      "No Scrubs - TLC",
+      "Wild Thoughts (feat. Rihanna & Bryson Tiller) - DJ Khaled",
+      "כולם גנבים - Osher Cohen",
+      "Woman - Doja Cat",
+      "Umbrella - Rihanna"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_072",
+    "name": "פלייליסט נסיעה לאילת",
+    "tracks": [
+      "Lush Life - Zara Larsson",
+      "שיר לממ\"ד - אודיה",
+      "או לה פופה - Noa Kirel",
+      "Michelle - Noam Bettan",
+      "היילי - Anna Zak",
+      "חברים שלי - ליעד מאיר",
+      "רולקס וקסקט - Eden Ben Zaken",
+      "תגיד לי Je T'aime - Eden Ben Zaken",
+      "אמן - Eden Golan",
+      "טקילה - Omer Adam"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_073",
+    "name": "פלייליסט חישגוזים",
+    "tracks": [
+      "Is This It - The Strokes",
+      "עירומים - Shahar Even Tzur",
+      "Girls Just Want to Have Fun - Cyndi Lauper",
+      "Girl Singing in the Wreckage - Black Box Recorder",
+      "מחבואים - Tattoo",
+      "אוטו זבל (קח אותי איתך) - Habiluim",
+      "Trouble - Cage The Elephant",
+      "השיר שלי - Mofa Haarnavot Shel Dr. Kasper",
+      "Using You - Mars Argo",
+      "Femme Fatale - The Velvet Underground"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_074",
+    "name": "פלייליסט ישראלי לחדר לידה",
+    "tracks": [
+      "באת לי פתאום - Keren Peles",
+      "חזקה מהרוח - Gali Atari",
+      "מחכה - Rita",
+      "קחי לך - Rita",
+      "לתת ולקחת - Shlomo Artzi",
+      "יש לך אותך - Miri Mesika",
+      "שיר לשירה - Miri Mesika",
+      "מודה אני - Omer Adam",
+      "אבן על אבן (רגע של אושר) - Even Al Even (Rega Shel Osher) - Idan Raichel",
+      "לפני שייגמר - Idan Raichel"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_075",
+    "name": "פלייליסט סנוניות",
+    "tracks": [
+      "מנגינה - Anan Al Makel Quartet",
+      "הפנים שלי - ערוץ בייבי",
+      "ידיים למעלה - גולי והגיטרה",
+      "נגלגל את הידיים - גולי והגיטרה",
+      "שעון בן חיל - Hop! Channel",
+      "אן אן אן - מירב האוסמן",
+      "גלגלי האוטובוס - ערוץ בייבי",
+      "רוץ בן סוסי - ערוץ בייבי",
+      "סוסים - מוסיקה אורגנית",
+      "מי שטוב לו ושמח - גולי והגיטרה"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_076",
+    "name": "פלייליסט לדימיון",
+    "tracks": [
+      "Dress - Charlotte Sands",
+      "pity - Charlotte Sands",
+      "Bad Day - Charlotte Sands",
+      "Want You Like That - Charlotte Sands",
+      "Keep Me Up All Night - Charlotte Sands",
+      "Every Guy Ever - Charlotte Sands",
+      "Good Now - Charlotte Sands",
+      "Alright - Charlotte Sands",
+      "Out of My Head - Charlotte Sands",
+      "Special - Charlotte Sands"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_077",
+    "name": "פלייליסט צ׳יל ולחיטוט באף",
+    "tracks": [
+      "i - Kendrick Lamar",
+      "Savior - Kendrick Lamar",
+      "Wesley's Theory - Kendrick Lamar",
+      "ASTROTHUNDER - Travis Scott",
+      "5% TINT - Travis Scott",
+      "Superhero (Heroes & Villains) [with Future & Chris Brown] - Metro Boomin",
+      "family ties (with Kendrick Lamar) - Baby Keem",
+      "Die Hard - Kendrick Lamar",
+      "Major Distribution - Drake",
+      "ball w/o you - 21 Savage"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_078",
+    "name": "פלייליסט להורדה על השעון",
+    "tracks": [
+      "Gold Digger - Kanye West",
+      "Ni**as In Paris - JAŸ-Z",
+      "Big Poppa - 2005 Remaster - The Notorious B.I.G.",
+      "Young, Wild & Free (feat. Bruno Mars) - Snoop Dogg",
+      "Keep Ya Head Up - 2Pac",
+      "Passionfruit - Drake",
+      "Hypnotize - 2014 Remaster - The Notorious B.I.G.",
+      "You Know How We Do It - Ice Cube",
+      "The One That Got Away - Katy Perry",
+      "Love The Way You Lie - Eminem"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_079",
+    "name": "פלייליסט שוקשאפל אנד פליי",
+    "tracks": [
+      "Paint The Town Red - Doja Cat",
+      "בואי לא - Vibe Ish",
+      "סקסית - Eden Golan",
+      "Happiness - Karolina",
+      "פאפי - אודיה",
+      "הילד עם הבוגי - Udi Schneider",
+      "The Fate of Ophelia - Taylor Swift",
+      "Billie Jean - Michael Jackson",
+      "מדמואזל - Lihi Toledano",
+      "מלכת הדור - Omer Adam"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_080",
+    "name": "פלייליסט כייף ללידה",
+    "tracks": [
+      "סגול בהיר - Live from Coke Studio - Mergui",
+      "רגעים - Marina Maximilian",
+      "אמא - Shiri Maimon",
+      "Part of Your World - Alan Menken",
+      "For the First Time in Forever - From \"Frozen\"/Soundtrack Version - Kristen Bell",
+      "לעוף - Harel Skaat",
+      "Rise Up - הכוכב הבא",
+      "נגד הרוח (מתוך Sing פסטיגל) - Yehuda Levi",
+      "נשימה - Shiri Maimon",
+      "ויטני - Shiri Maimon"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_081",
+    "name": "מקלחת ולישון  ליובי",
+    "tracks": [
+      "אני נקי - גולי והגיטרה",
+      "במקלחת - יום יפה",
+      "הסבון בכה מאוד - צביקה פיק",
+      "מי שלא מביט - Orly Vardy",
+      "אצלנו בחצר - Naomi Shemer",
+      "כבר אחרי חצות - Hanny Nahmias",
+      "לילה טוב - Hop! Channel",
+      "פזמון ליקינטון - Yehoram Gaon",
+      "פזמון ליקינטון - Zehu Ze",
+      "לילה - יום יפה"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_082",
+    "name": "פלייליסט לקופיף",
+    "tracks": [
+      "משפחה וכבוד - Omer Adam",
+      "פלאזה אתנה - Omer Adam",
+      "אלבי - Omer Adam",
+      "אורות כחולים - Omer Adam",
+      "יש יותר מדי שירים היום - Omer Adam",
+      "לילות יפים - Omer Adam",
+      "שירתו של החורף - Omer Adam",
+      "פינה של שקט - Omer Adam",
+      "ריו דה ז'נרו - Omer Adam",
+      "בן 32 - Omer Adam"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_083",
+    "name": "מיקס פורים 2026תתכוננו לעוף",
+    "tracks": [
+      "מיקס פורים - Chaim Shlomo Mayesz",
+      "מחרוזת פורים שמח - ישראל סוסנה ותזמורתו",
+      "וגם וגם -רמיקס - ישראל סוסנה ותזמורתו",
+      "Lama? (למה) - Beri Weber",
+      "בסוף יהיה טוב-רמיקס - Assaf Harush",
+      "אבטיח רמיקס - יהודה מור",
+      "תן לי אור - רמיקס - Avi Ilson",
+      "Achshav - Matt Dubb",
+      "אבאל'ה - רימיקס - Gad Elbaz",
+      "עבדו את השם - Roi Harush"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_084",
+    "name": "פלייליסט של אח יקר",
+    "tracks": [
+      "Colors - Jason Derulo",
+      "Je M'appelle - Benzz",
+      "Magic in the Air (feat. Ahmed Chawki) - Magic System",
+      "Drip Too Hard (Lil Baby & Gunna) - Lil Baby",
+      "Baila Baila Baila - Ozuna",
+      "Honey, I'm Good. - Andy Grammer",
+      "Genius (feat. Lil Tjay & Swae Lee) - Pop Smoke",
+      "The Box - Roddy Ricch",
+      "Wake Me Up - Avicii",
+      "אולי נדבר - Nadav Guedj"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_085",
+    "name": "פלייליסט ארץ ישראלי של פלחים",
+    "tracks": [
+      "משירי ארץ אהבתי - Chava Alberstein",
+      "קום והתהלך בארץ - Lehakat Pikud Tzafon",
+      "שיר אהבה סטנדרטי - Arik Einstein",
+      "נתתי לה חיי - Kaveret",
+      "שיר של יום חולין - Maor Cohen",
+      "שירי ילדות - Uzi Hitman",
+      "בארץ אהבתי השקד פורח - Ruchama Raz",
+      "נושף מהחלל - Red Axes",
+      "יושב על הגדר - Arik Einstein",
+      "הורה ממטרה - HaGevatron"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_086",
+    "name": "פלייליסט בוקר עדן",
+    "tracks": [
+      "Eye In The Sky - The Alan Parsons Project",
+      "Texas Sun - Khruangbin",
+      "I'd Rather Go Blind - Etta James",
+      "Lay, Lady, Lay - Bob Dylan",
+      "Walkin’ Back to Georgia - Jim Croce",
+      "People - Libianca",
+      "Time Of The Season - The Zombies",
+      "(What A) Wonderful World - Mono - Sam Cooke",
+      "Rich Folks Hoax - Rodríguez",
+      "Bloom (Online Bonus Track) - The Paper Kites"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_087",
+    "name": "ווייב ייחודי",
+    "tracks": [
+      "38 וחוץ מכדורגל - חנן בן ארי",
+      "ואם תבואי אליי - Idan Raichel",
+      "נגינותי ננגן - עמיחי פלסר",
+      "38 - פאר טסי",
+      "שבורי לב - חנן בן ארי",
+      "בלי לומר שלום - פאר טסי",
+      "עד העולם הבא - פאר טסי",
+      "בן ובת - פאר טסי",
+      "ברוך מוריד הגשם - פאר טסי",
+      "שתיתי - פאר טסי"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_088",
+    "name": "פלייליסט עבודה פצצה",
+    "tracks": [
+      "Hikiti Leha - Rinat Bar",
+      "נמס ממך - Omer Adam",
+      "אז הלכתי - Omer Adam",
+      "צליל מיתר - Eyal Golan",
+      "זורק תעניבה - Omer Adam",
+      "איזה יום - Dudu Tassa",
+      "נזכר בעיניה - Osher Cohen",
+      "נערי שובה אלי - Margalit Tzan'ani",
+      "בחוף של טראפטוני - Shlomi Shabat",
+      "הפרח בגני - Zohar Argov"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_089",
+    "name": "פלייליסט להרגעת בכי תינוקות בנסיעה",
+    "tracks": [
+      "Zahav - Static & Ben El",
+      "Trauma - Worakls Remix - NTO",
+      "City Of Stars - From \"La La Land\" Soundtrack - Ryan Gosling",
+      "Daydream - Ash",
+      "Skyline - FKJ",
+      "Die with a Smile - FKJ"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_090",
+    "name": "פלייליסט סקסי במיוחד",
+    "tracks": [
+      "Cakewalk - Ezéchiel Pailhès",
+      "Close to My Fire - Slackwax",
+      "Dark Cloud - Dominic Marsh",
+      "Work - Charlotte Day Wilson",
+      "Hysteria - Shyli Madhala",
+      "When I Get My Hands On You - The New Basement Tapes",
+      "Poetry: How Does It Feel? - Akua Naru",
+      "Fill Your Brains - Harrison Brome",
+      "Wonderful Life - Jono McCleery",
+      "Rhythm Of Ashes - Skywatchers"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_091",
+    "name": "פלייליסט עוגיה",
+    "tracks": [
+      "To All The Girls - Beastie Boys",
+      "Namaste - Remastered 2009 - Beastie Boys",
+      "Gagging Order - Radiohead",
+      "Landslide - Remastered - The Smashing Pumpkins",
+      "Nara - alt-J",
+      "The Gospel of John Hurt - alt-J",
+      "Intro - alt-J",
+      "Fitzpleasure - alt-J",
+      "העיר לאט - Assaf Amdursky",
+      "Open Passageways - All Them Witches"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_092",
+    "name": "פלייליסט ניצן",
+    "tracks": [
+      "אני מקווה - Eyal Golan",
+      "על חבל דק - Eyal Golan",
+      "טוב לי בלעדייך - פאר טסי",
+      "בואי ניפגש - פאר טסי",
+      "לבד לבד - פאר טסי",
+      "בזמן אחר - פאר טסי",
+      "כוחה של אהבה - פאר טסי",
+      "השמחה שהייתה - פאר טסי",
+      "בחור פשוט - פאר טסי",
+      "הגולה - Dudu Tassa"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_093",
+    "name": "פלייליסט סאחי",
+    "tracks": [
+      "עכשיו קרוב - Idan Raichel",
+      "שקופים - Keren Peles",
+      "שלמים - Idan Rafael Haviv",
+      "רודף אהבה בימים - Idan Rafael Haviv",
+      "אור גדול - Amir Dadon",
+      "מחכה - Idan Rafael Haviv",
+      "מה יהיה מחר - פאר טסי",
+      "יחפים - Jasmin Moallem",
+      "מלכת הדור - Omer Adam",
+      "השיר שאת אהבת - Omer Adam"
+    ]
+  },
+  {
+    "content_id": "PLAYLIST_094",
+    "name": "פלייליסט לגנדה",
+    "tracks": [
+      "Creep - Radiohead",
+      "No Surprises - Radiohead",
+      "Karma Police - Radiohead",
+      "High and Dry - Radiohead",
+      "There Is a Light That Never Goes Out - 2011 Remaster - The Smiths",
+      "Starman - 2012 Remaster - David Bowie",
+      "Jigsaw Falling Into Place - Radiohead",
+      "She Said - 1973 Quadrophonic SQ Stereo Mix, 2022 Remaster - Barclay James Harvest",
+      "Mocking Bird - 1973 Quadrophonic SQ Stereo Mix, 2022 Remaster - Barclay James Harvest",
+      "Cosmic Girl - Remastered 2013 - Jamiroquai"
     ]
   }
 ]
