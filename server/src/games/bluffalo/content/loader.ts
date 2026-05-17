@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { Fact, PersonalQuestionTemplate } from "../../../../../shared/types";
+import { Fact, PersonalQuestionTemplate, PlaylistEntry } from "../../../../../shared/types";
 
 const factsCacheByLang = new Map<string, Fact[]>();
 
@@ -93,5 +93,40 @@ export function buildPersonalQuestionFact(template: PersonalQuestionTemplate, su
     fact_template: template.fact_template.replace("[Name]", subjectName),
     truth_keyword: "", // filled in by advanceToReveal from subject's submitted_lie
     metadata: { difficulty: "Easy", category: template.metadata.category },
+  };
+}
+
+let playlistCache: PlaylistEntry[] | null = null;
+
+export function loadPlaylists(): PlaylistEntry[] {
+  if (playlistCache !== null) return playlistCache;
+  const isDist = __dirname.includes(`${path.sep}dist${path.sep}`) || __dirname.includes("/dist/");
+  const levelsUp = isDist ? "../../../../../../../" : "../../../../../";
+  const filePath = path.resolve(__dirname, levelsUp, "content", "playlists.he.json");
+  const data = JSON.parse(fs.readFileSync(filePath, "utf-8")) as PlaylistEntry[];
+  if (!Array.isArray(data) || data.length === 0) throw new Error("playlists.he.json must be a non-empty array");
+  for (const entry of data) {
+    if (!entry.content_id || !entry.name || !Array.isArray(entry.tracks) || entry.tracks.length === 0)
+      throw new Error(`Invalid playlist entry: ${JSON.stringify(entry)}`);
+  }
+  playlistCache = data;
+  return data;
+}
+
+export function getRandomPlaylist(usedIds: string[]): PlaylistEntry | null {
+  let playlists: PlaylistEntry[];
+  try { playlists = loadPlaylists(); } catch { return null; }
+  const available = playlists.filter((p) => !usedIds.includes(p.content_id));
+  if (available.length === 0) return null;
+  return available[Math.floor(Math.random() * available.length)];
+}
+
+export function buildPlaylistFact(entry: PlaylistEntry): Fact {
+  return {
+    content_id: entry.content_id,
+    fact_template: "מהו שם הפלייליסט?",
+    truth_keyword: entry.name,
+    metadata: { difficulty: "Medium", category: "Music" },
+    playlist_tracks: entry.tracks,
   };
 }

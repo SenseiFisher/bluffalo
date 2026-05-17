@@ -11,7 +11,7 @@ import {
 } from "../../../../shared/constants";
 import { shuffle } from "../../utils/shuffle";
 import { calculateRoundScores, calculateDebuffAward } from "./scoring";
-import { getRandomFact, getRandomPersonalQuestion, buildPersonalQuestionFact } from "./content/loader";
+import { getRandomFact, getRandomPersonalQuestion, buildPersonalQuestionFact, getRandomPlaylist, buildPlaylistFact } from "./content/loader";
 
 // Phase timers: roomCode → timeout handle
 const phaseTimers = new Map<string, NodeJS.Timeout>();
@@ -113,6 +113,7 @@ export function initGame(state: GameState, totalRounds: number): void {
   state.debuff_award = null;
   state.active_debuff_session_id = null;
   state.is_special_round = false;
+  state.special_round_type = undefined;
   state.personal_question_subject_session_id = null;
   lastSpecialRoundByRoom.delete(state.room_code);
 
@@ -134,7 +135,22 @@ function shouldRunSpecialRound(state: GameState): boolean {
 
 export function startPromptPhase(state: GameState, broadcast: BroadcastFn): void {
   if (shouldRunSpecialRound(state)) {
-    startPersonalQuestionPhase(state, broadcast);
+    const canPersonal = getRandomPersonalQuestion(state.used_fact_ids, state.language) !== null;
+    const canPlaylist = getRandomPlaylist(state.used_fact_ids) !== null;
+
+    if (!canPersonal && !canPlaylist) {
+      startRegularPromptPhase(state, broadcast);
+      return;
+    }
+
+    const preferPlaylist = Math.random() < 0.5;
+    if (preferPlaylist && canPlaylist) {
+      startPlaylistRound(state, broadcast);
+    } else if (canPersonal) {
+      startPersonalQuestionPhase(state, broadcast);
+    } else {
+      startPlaylistRound(state, broadcast);
+    }
   } else {
     startRegularPromptPhase(state, broadcast);
   }
@@ -148,6 +164,7 @@ function startRegularPromptPhase(state: GameState, broadcast: BroadcastFn): void
   }
 
   state.is_special_round = false;
+  state.special_round_type = undefined;
   state.personal_question_subject_session_id = null;
   state.current_fact = fact;
   state.used_fact_ids.push(fact.content_id);
@@ -179,6 +196,7 @@ function startPersonalQuestionPhase(state: GameState, broadcast: BroadcastFn): v
 
   lastSpecialRoundByRoom.set(state.room_code, state.round_number);
   state.is_special_round = true;
+  state.special_round_type = 'personal_question';
   state.personal_question_subject_session_id = subject.session_id;
   state.current_fact = buildPersonalQuestionFact(template, subject.display_name);
   state.used_fact_ids.push(template.content_id);
@@ -189,6 +207,31 @@ function startPersonalQuestionPhase(state: GameState, broadcast: BroadcastFn): v
 
   broadcast(state.room_code, state);
 
+  setTimer(state.room_code, promptTimerMs, () => {
+    const currentState = getCurrentState(state.room_code);
+    if (currentState && currentState.phase === GamePhase.PROMPT) {
+      advanceToReveal(currentState, broadcast);
+    }
+  });
+}
+
+function startPlaylistRound(state: GameState, broadcast: BroadcastFn): void {
+  const playlist = getRandomPlaylist(state.used_fact_ids);
+  if (!playlist) {
+    startRegularPromptPhase(state, broadcast);
+    return;
+  }
+  lastSpecialRoundByRoom.set(state.room_code, state.round_number);
+  state.is_special_round = true;
+  state.special_round_type = 'playlist_name';
+  state.personal_question_subject_session_id = null;
+  state.current_fact = buildPlaylistFact(playlist);
+  state.used_fact_ids.push(playlist.content_id);
+  state.phase = GamePhase.PROMPT;
+  state.vote_options = [];
+  const promptTimerMs = state.prompt_timer_seconds * 1000;
+  state.timer_ends_at = Date.now() + promptTimerMs;
+  broadcast(state.room_code, state);
   setTimer(state.room_code, promptTimerMs, () => {
     const currentState = getCurrentState(state.room_code);
     if (currentState && currentState.phase === GamePhase.PROMPT) {
@@ -216,8 +259,8 @@ export function advanceToReveal(state: GameState, broadcast: BroadcastFn): void 
 
   const subjectId = state.is_special_round ? state.personal_question_subject_session_id : null;
 
-  // For personal rounds: promote subject's submission to truth_keyword
-  if (state.is_special_round && state.current_fact) {
+  // For personal question rounds only: promote subject's submission to truth_keyword
+  if (state.is_special_round && subjectId !== null && state.current_fact) {
     const subject = state.players.find((p) => p.session_id === subjectId);
     const truthText = subject?.round.submitted_lie ?? "???";
     state.current_fact = { ...state.current_fact, truth_keyword: truthText };

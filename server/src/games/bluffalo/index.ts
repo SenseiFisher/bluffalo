@@ -24,7 +24,7 @@ import {
 } from "../introPhase";
 import { validateLie } from "../../utils/validation";
 import { stringSimilarity } from "../../utils/stringUtils";
-import { loadFacts, loadPersonalQuestions } from "./content/loader";
+import { loadFacts, loadPersonalQuestions, loadPlaylists } from "./content/loader";
 import { setRoom } from "../../rooms/roomStore";
 import { broadcastGameState } from "../../handlers/broadcast";
 import { registerGame, GamePlugin, BroadcastFn, GameEventContext } from "../registry";
@@ -46,6 +46,8 @@ const BluffaloPlugin: GamePlugin = {
     console.log(`[Bluffalo] Loaded ${he.length} facts (he)`);
     loadPersonalQuestions("en");
     loadPersonalQuestions("he");
+    const playlists = loadPlaylists();
+    console.log(`[Bluffalo] Loaded ${playlists.length} playlists (he)`);
   },
 
   startGame(state: GameState, payload: unknown, broadcast: BroadcastFn): GameState {

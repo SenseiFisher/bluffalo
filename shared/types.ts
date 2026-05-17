@@ -49,14 +49,21 @@ export interface Fact {
   fact_template: string;
   truth_keyword: string;
   metadata: { difficulty: "Easy" | "Medium" | "Hard"; category: string; };
+  playlist_tracks?: string[];
 }
 
-export type SpecialRoundType = 'personal_question';
+export type SpecialRoundType = 'personal_question' | 'playlist_name';
 
 export interface PersonalQuestionTemplate {
   content_id: string;
   fact_template: string; // contains "[Name]" and "_______"
   metadata: { category: string; };
+}
+
+export interface PlaylistEntry {
+  content_id: string;
+  name: string;
+  tracks: string[];
 }
 
 export interface Player {
@@ -131,6 +138,7 @@ export interface GameState {
   debuff_award: DebuffAward | null;
   active_debuff_session_id: string | null; // NOT stripped — client uses to check if they are debuffed
   is_special_round: boolean;
+  special_round_type?: SpecialRoundType;
   personal_question_subject_session_id: string | null; // NOT stripped — client uses to check if they are the subject
   location?: GeoLocation;
   created_at: number;

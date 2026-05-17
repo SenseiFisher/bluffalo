@@ -100,6 +100,8 @@ export default function PromptScreen() {
   const isPersonalRound = gameState.is_special_round === true
   const isSubject = isPersonalRound && mySessionId !== null &&
     gameState.personal_question_subject_session_id === mySessionId
+  const isPlaylistRound = gameState.special_round_type === 'playlist_name'
+  const playlistTracks = gameState.current_fact.playlist_tracks ?? []
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 flex flex-col items-center p-4 pt-8">
@@ -114,13 +116,23 @@ export default function PromptScreen() {
       )}
 
       {/* Personal round banner */}
-      {isPersonalRound && (
+      {isPersonalRound && !isPlaylistRound && (
         <div className="w-full max-w-lg mb-4 bg-purple-900/60 border-2 border-purple-400 rounded-xl px-4 py-3 text-center">
           <p className="text-purple-300 font-black text-lg">Personal Question Round!</p>
           <p className="text-purple-400 text-sm mt-0.5">
             {isSubject
               ? 'This question is about you — write your real answer!'
               : 'Write a convincing fake answer to fool everyone!'}
+          </p>
+        </div>
+      )}
+
+      {/* Playlist round banner */}
+      {isPlaylistRound && (
+        <div className="w-full max-w-lg mb-4 bg-emerald-900/60 border-2 border-emerald-400 rounded-xl px-4 py-3 text-center">
+          <p className="text-emerald-300 font-black text-lg">Name That Playlist!</p>
+          <p className="text-emerald-400 text-sm mt-0.5">
+            מה שם הפלייליסט? כתבו שם מומצא — או את האמת אם אתם יודעים!
           </p>
         </div>
       )}
@@ -151,25 +163,41 @@ export default function PromptScreen() {
         </div>
       )}
 
-      {/* Fact Card — FOG applies blur here */}
-      <div className="w-full max-w-lg bg-indigo-800/70 border border-indigo-600 rounded-2xl p-6 mb-6 shadow-xl">
-        <p className="text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-3">
-          Fill in the blank
-        </p>
-        <p
-          className="text-white text-xl font-semibold leading-relaxed select-none"
-          dir={gameState.language === 'he' ? 'rtl' : 'ltr'}
-        >
-          {isFog ? renderFoggedText(parts[0]) : parts[0]}
-          <span className="inline-block bg-indigo-700 border-b-2 border-yellow-400 px-3 py-0.5 mx-1 rounded min-w-[6rem] text-center">
-            &nbsp;
-          </span>
-          {isFog ? renderFoggedText(parts[1] || '') : (parts[1] || '')}
-        </p>
-      </div>
+      {/* Fact Card — playlist track list or fill-in-the-blank */}
+      {isPlaylistRound ? (
+        <div className="w-full max-w-lg bg-indigo-800/70 border border-indigo-600 rounded-2xl p-6 mb-6 shadow-xl">
+          <p className="text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-3">
+            שירים מהפלייליסט
+          </p>
+          <ol className="space-y-1.5" dir="rtl">
+            {playlistTracks.map((track, idx) => (
+              <li key={idx} className="flex items-start gap-2">
+                <span className="text-indigo-500 text-sm font-bold shrink-0 mt-0.5 min-w-[1.2rem] text-left">{idx + 1}.</span>
+                <span className="text-white text-base leading-snug">{track}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      ) : (
+        <div className="w-full max-w-lg bg-indigo-800/70 border border-indigo-600 rounded-2xl p-6 mb-6 shadow-xl">
+          <p className="text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-3">
+            Fill in the blank
+          </p>
+          <p
+            className="text-white text-xl font-semibold leading-relaxed select-none"
+            dir={gameState.language === 'he' ? 'rtl' : 'ltr'}
+          >
+            {isFog ? renderFoggedText(parts[0]) : parts[0]}
+            <span className="inline-block bg-indigo-700 border-b-2 border-yellow-400 px-3 py-0.5 mx-1 rounded min-w-[6rem] text-center">
+              &nbsp;
+            </span>
+            {isFog ? renderFoggedText(parts[1] || '') : (parts[1] || '')}
+          </p>
+        </div>
+      )}
 
-      {/* Report fact — not shown for personal question rounds */}
-      {!isPersonalRound && (
+      {/* Report fact — not shown for personal question or playlist rounds */}
+      {!isPersonalRound && !isPlaylistRound && (
         <div className="w-full max-w-lg flex justify-end -mt-3 mb-3">
           <ReportButton
             factId={gameState.current_fact.content_id}
@@ -183,7 +211,7 @@ export default function PromptScreen() {
         <div className="w-full max-w-lg space-y-4">
           <div className="bg-indigo-800/60 border border-indigo-600 rounded-2xl p-4">
             <label className="block text-indigo-300 text-sm font-semibold mb-2 uppercase tracking-wide">
-              {isSubject ? 'Your Real Answer' : 'Your Lie (or the truth if you dare!)'}
+              {isSubject ? 'Your Real Answer' : isPlaylistRound ? 'שם הפלייליסט (אמיתי או מומצא)' : 'Your Lie (or the truth if you dare!)'}
             </label>
             <input
               type="text"
@@ -193,7 +221,7 @@ export default function PromptScreen() {
               maxLength={50}
               disabled={timeLocked}
               dir="auto"
-              placeholder={isSubject ? 'Type your real answer...' : 'Type a convincing answer...'}
+              placeholder={isSubject ? 'Type your real answer...' : isPlaylistRound ? 'כתבו שם פלייליסט...' : 'Type a convincing answer...'}
               className={`w-full px-4 py-3 bg-indigo-700 border rounded-xl text-white placeholder-indigo-400 focus:outline-none transition-colors text-lg ${timeLocked ? 'border-red-500 opacity-50 cursor-not-allowed' : 'border-indigo-500 focus:border-yellow-400'}`}
               autoFocus
             />

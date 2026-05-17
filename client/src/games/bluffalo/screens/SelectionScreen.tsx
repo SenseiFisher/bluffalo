@@ -14,6 +14,7 @@ export default function SelectionScreen() {
   const isPersonalRound = gameState.is_special_round === true
   const isSubject = isPersonalRound && mySessionId !== null &&
     gameState.personal_question_subject_session_id === mySessionId
+  const isPlaylistRound = gameState.special_round_type === 'playlist_name'
 
   const factTemplate = gameState.current_fact.fact_template
   const parts = factTemplate.split('_______')
@@ -37,8 +38,8 @@ export default function SelectionScreen() {
   const rawEligible = gameState.players.filter(
     (p) => p.is_connected && !p.round.great_minds
   ).length
-  // In personal rounds, subtract 1 for the subject who doesn't vote
-  const eligibleCount = isPersonalRound ? Math.max(0, rawEligible - 1) : rawEligible
+  // In personal rounds (but not playlist rounds), subtract 1 for the subject who doesn't vote
+  const eligibleCount = (isPersonalRound && !isPlaylistRound) ? Math.max(0, rawEligible - 1) : rawEligible
 
   const handleVote = (optionId: string) => {
     if (myOptionIds.has(optionId)) return
@@ -87,8 +88,8 @@ export default function SelectionScreen() {
         </p>
       </div>
 
-      {/* Report fact — not shown for personal question rounds */}
-      {!isPersonalRound && (
+      {/* Report fact — not shown for personal question or playlist rounds */}
+      {!isPersonalRound && !isPlaylistRound && (
         <div className="w-full max-w-lg flex justify-end -mt-2 mb-2">
           <ReportButton
             factId={gameState.current_fact.content_id}
