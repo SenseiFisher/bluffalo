@@ -67,7 +67,7 @@ export const CHARACTER_EXCLUDE_OPTIONS: Record<string, string[]> = {
 
 // Special rounds
 export const SPECIAL_ROUND_PROBABILITY = 0.70;
-export const SPECIAL_ROUND_COOLDOWN = 4;
+export const SPECIAL_ROUND_COOLDOWN = 3;
 
 // Pandamonium phase timers (milliseconds)
 export const PM_WRITING_TIMER_MS = 60_000;
