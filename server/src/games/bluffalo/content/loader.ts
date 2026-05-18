@@ -4,37 +4,75 @@ import { Fact, PersonalQuestionTemplate, PlaylistEntry } from "../../../../../sh
 
 const factsCacheByLang = new Map<string, Fact[]>();
 
-export function loadFacts(lang: string = "en"): Fact[] {
-  if (factsCacheByLang.has(lang)) return factsCacheByLang.get(lang)!;
-
-  // Resolve facts path — works for both ts-node-dev (src/) and compiled (dist/) layouts
+function resolveContentRoot(): string {
   // In dist: __dirname = server/dist/server/src/games/bluffalo/content/ — 7 levels up to project root
   // In src:  __dirname = server/src/games/bluffalo/content/             — 5 levels up to project root
   const isDist = __dirname.includes(`${path.sep}dist${path.sep}`) || __dirname.includes("/dist/");
   const levelsUp = isDist ? "../../../../../../../" : "../../../../../";
+  return path.resolve(__dirname, levelsUp, "content");
+}
 
-  const filename = lang === "en" ? "facts.json" : `facts.${lang}.json`;
-  const factsPath = path.resolve(__dirname, levelsUp, "content", filename);
+function langDir(lang: string): string {
+  return lang === "en" ? "en" : "heb";
+}
 
-  const raw = fs.readFileSync(factsPath, "utf-8");
-  const data = JSON.parse(raw) as Fact[];
+function fixTemplate(fact: string, blank: string): string {
+  if (fact.includes("_______")) return fact;
+  const escaped = blank.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  let fixed = fact.replace(new RegExp(`\\[${escaped}\\]`), "_______");
+  if (!fixed.includes("_______")) fixed = fact.replace(/\[.+?\]/g, "_______");
+  return fixed;
+}
 
-  if (!Array.isArray(data) || data.length === 0) {
-    throw new Error(`${filename} must be a non-empty array`);
+export function loadFacts(lang: string = "en"): Fact[] {
+  if (factsCacheByLang.has(lang)) return factsCacheByLang.get(lang)!;
+
+  const dir = path.join(resolveContentRoot(), langDir(lang));
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".ndjson"));
+
+  if (files.length === 0) throw new Error(`No .ndjson files found in ${dir}`);
+
+  const byId = new Map<string, Fact>();
+  const defaultCategory = lang === "en" ? "General Knowledge" : "ידע כללי";
+
+  for (const file of files) {
+    const lines = fs.readFileSync(path.join(dir, file), "utf-8").split("\n");
+    for (const raw of lines) {
+      const line = raw.trim();
+      if (!line) continue;
+      let entry: Record<string, unknown>;
+      try {
+        entry = JSON.parse(line) as Record<string, unknown>;
+      } catch {
+        continue;
+      }
+      if (entry.status === "skip") continue;
+      const id = entry.id as string;
+      const rawFact = entry.fact as string;
+      const blank = entry.blank as string;
+      if (!id || !rawFact || !blank) continue;
+      const fact_template = fixTemplate(rawFact.replace("[blank]", "_______"), blank);
+      if (!fact_template.includes("_______")) continue;
+      byId.set(id, {
+        content_id: id,
+        fact_template,
+        truth_keyword: blank,
+        metadata: { difficulty: "Hard", category: defaultCategory },
+      });
+    }
   }
 
-  // Validate each fact
-  for (const fact of data) {
+  const facts = Array.from(byId.values());
+  if (facts.length === 0) throw new Error(`No valid facts loaded for lang "${lang}" from ${dir}`);
+
+  for (const fact of facts) {
     if (!fact.content_id || !fact.fact_template || !fact.truth_keyword) {
       throw new Error(`Invalid fact: ${JSON.stringify(fact)}`);
     }
-    if (!fact.fact_template.includes("_______")) {
-      throw new Error(`Fact ${fact.content_id} missing blank placeholder`);
-    }
   }
 
-  factsCacheByLang.set(lang, data);
-  return data;
+  factsCacheByLang.set(lang, facts);
+  return facts;
 }
 
 export function getRandomFact(usedIds: string[], lang: string = "en"): Fact | null {
@@ -50,13 +88,14 @@ const pqCacheByLang = new Map<string, PersonalQuestionTemplate[]>();
 export function loadPersonalQuestions(lang: string = "en"): PersonalQuestionTemplate[] {
   if (pqCacheByLang.has(lang)) return pqCacheByLang.get(lang)!;
 
-  const isDist = __dirname.includes(`${path.sep}dist${path.sep}`) || __dirname.includes("/dist/");
-  const levelsUp = isDist ? "../../../../../../../" : "../../../../../";
-
-  const filename = lang === "en"
-    ? "personal_questions.en.json"
-    : `personal_questions.${lang}.json`;
-  const filePath = path.resolve(__dirname, levelsUp, "content", filename);
+  const filename = lang === "en" ? "personal_questions.en.json" : `personal_questions.${lang}.json`;
+  const filePath = path.join(
+    resolveContentRoot(),
+    langDir(lang),
+    "special",
+    "personal_question",
+    filename
+  );
 
   const data = JSON.parse(fs.readFileSync(filePath, "utf-8")) as PersonalQuestionTemplate[];
 
@@ -100,9 +139,13 @@ let playlistCache: PlaylistEntry[] | null = null;
 
 export function loadPlaylists(): PlaylistEntry[] {
   if (playlistCache !== null) return playlistCache;
-  const isDist = __dirname.includes(`${path.sep}dist${path.sep}`) || __dirname.includes("/dist/");
-  const levelsUp = isDist ? "../../../../../../../" : "../../../../../";
-  const filePath = path.resolve(__dirname, levelsUp, "content", "playlists.he.json");
+  const filePath = path.join(
+    resolveContentRoot(),
+    "heb",
+    "special",
+    "playlist_name",
+    "playlists.he.json"
+  );
   const data = JSON.parse(fs.readFileSync(filePath, "utf-8")) as PlaylistEntry[];
   if (!Array.isArray(data) || data.length === 0) throw new Error("playlists.he.json must be a non-empty array");
   for (const entry of data) {
