@@ -153,54 +153,73 @@ def _parse_verify_results(parsed, originals: list[dict]) -> list[dict]:
     return results
 
 
-async def verify_batch_openrouter(entries: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str, api_key: str) -> list[dict]:
-    from openai import AsyncOpenAI
+async def verify_batch_openrouter(entries: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str, api_key: str, retry_on_ratelimit: bool = False) -> list[dict]:
+    from openai import AsyncOpenAI, RateLimitError
 
     async with semaphore:
         ids = [e["id"] for e in entries]
-        try:
-            batch_input = json.dumps(entries, ensure_ascii=False)
-            client = AsyncOpenAI(api_key=api_key, base_url=OPENROUTER_BASE_URL)
-            response = await client.chat.completions.create(
-                model=model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": batch_input},
-                ],
-            )
-            text = response.choices[0].message.content or ""
-            parsed = extract_json(text)
-            if parsed is None:
-                print(f"[WARN] Could not parse JSON for batch {ids}: {text[:100]}", file=sys.stderr)
+        batch_input = json.dumps(entries, ensure_ascii=False)
+        client = AsyncOpenAI(api_key=api_key, base_url=OPENROUTER_BASE_URL)
+        while True:
+            try:
+                response = await client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": batch_input},
+                    ],
+                )
+                text = response.choices[0].message.content or ""
+                parsed = extract_json(text)
+                if parsed is None:
+                    print(f"[WARN] Could not parse JSON for batch {ids}: {text[:100]}", file=sys.stderr)
+                    return []
+                return _parse_verify_results(parsed, entries)
+            except RateLimitError as e:
+                if not retry_on_ratelimit:
+                    print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
+                    return []
+                print(f"[RATELIMIT] Batch {ids}: retrying in 60s...", file=sys.stderr)
+                await asyncio.sleep(60)
+            except Exception as e:
+                print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
                 return []
-            return _parse_verify_results(parsed, entries)
-        except Exception as e:
-            print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
-            return []
 
 
-async def verify_batch_gemini(entries: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str, api_key: str) -> list[dict]:
+async def verify_batch_gemini(entries: list[dict], semaphore: asyncio.Semaphore, system_prompt: str, model: str, api_key: str, retry_on_ratelimit: bool = False) -> list[dict]:
     import google.genai as genai
     import google.genai.types as genai_types
+    from google.genai.errors import ClientError
 
     async with semaphore:
         ids = [e["id"] for e in entries]
-        try:
-            batch_input = json.dumps(entries, ensure_ascii=False)
-            client = genai.Client(api_key=api_key)
-            response = await client.aio.models.generate_content(
-                model=model,
-                contents=batch_input,
-                config=genai_types.GenerateContentConfig(system_instruction=system_prompt),
-            )
-            parsed = extract_json(response.text)
-            if parsed is None:
-                print(f"[WARN] Could not parse JSON for batch {ids}: {response.text[:100]}", file=sys.stderr)
+        batch_input = json.dumps(entries, ensure_ascii=False)
+        client = genai.Client(api_key=api_key)
+        while True:
+            try:
+                response = await client.aio.models.generate_content(
+                    model=model,
+                    contents=batch_input,
+                    config=genai_types.GenerateContentConfig(system_instruction=system_prompt),
+                )
+                parsed = extract_json(response.text)
+                if parsed is None:
+                    print(f"[WARN] Could not parse JSON for batch {ids}: {response.text[:100]}", file=sys.stderr)
+                    return []
+                return _parse_verify_results(parsed, entries)
+            except ClientError as e:
+                if e.status_code == 429:
+                    if not retry_on_ratelimit:
+                        print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
+                        return []
+                    print(f"[RATELIMIT] Batch {ids}: retrying in 60s...", file=sys.stderr)
+                    await asyncio.sleep(60)
+                else:
+                    print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
+                    return []
+            except Exception as e:
+                print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
                 return []
-            return _parse_verify_results(parsed, entries)
-        except Exception as e:
-            print(f"[ERROR] Batch {ids}: {e}", file=sys.stderr)
-            return []
 
 
 def write_entries(path: Path, entries: list[dict]) -> None:
@@ -218,6 +237,7 @@ async def main():
     parser.add_argument("--model", type=str, default=None, help="Model name (default: haiku / gemini-2.0-flash / openrouter/free)")
     parser.add_argument("--limit", type=int, default=None, help="Stop after processing this many entries")
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Entries per batch (default: {BATCH_SIZE})")
+    parser.add_argument("--retry-on-ratelimit", action="store_true", default=False, help="Retry every 60s on rate-limit errors instead of failing")
     args = parser.parse_args()
 
     provider = args.provider
@@ -276,9 +296,9 @@ async def main():
     for i in range(0, len(batches), CONCURRENCY):
         chunk = batches[i:i + CONCURRENCY]
         if provider == "gemini":
-            tasks = [verify_batch_gemini(b, semaphore, system_prompt, model, gemini_api_key) for b in chunk]
+            tasks = [verify_batch_gemini(b, semaphore, system_prompt, model, gemini_api_key, args.retry_on_ratelimit) for b in chunk]
         else:
-            tasks = [verify_batch_openrouter(b, semaphore, system_prompt, model, openrouter_api_key) for b in chunk]
+            tasks = [verify_batch_openrouter(b, semaphore, system_prompt, model, openrouter_api_key, args.retry_on_ratelimit) for b in chunk]
         all_results = await asyncio.gather(*tasks)
         for batch_idx, results in enumerate(all_results):
             done += len(chunk[batch_idx])
